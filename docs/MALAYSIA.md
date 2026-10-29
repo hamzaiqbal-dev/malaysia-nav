@@ -43,8 +43,10 @@ Week 3    Reports v1: client button + minimal back-end (Malaysia-hosted), 20-use
 Week 4    Play Store internal/closed beta; measure retention (D1, D7) and report volume.
 Decision  5,000 organic installs or strong D7 retention → fund and staff it; otherwise rethink.
 
+## Decisions (founder)
+- App name: **Sampai** (29 Oct 2026). Brand/logo still open.
+
 ## Open decisions (founder)
-- App name and brand.
 - Company/entity that will own the Play Store and App Store accounts.
 - Back-end hosting for reports (Malaysian cloud: e.g. AIMS, Exabytes, or a MY region of a big cloud).
 
@@ -61,3 +63,7 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   unit tests for ETA/speed formatting. Blocker: GitHub Actions has never run on this fork (0 runs) — enable
   workflows in the repo's Actions tab, then CI validates the PR. Next: device check in day/night, portrait/
   landscape; Plus Jakarta Sans; tolls in the ETA sheet (step 5); ExploreSheet (step 2 cont.).
+- 2026-10-30 (night): PR #2 tolls v1 — toll booths come from the map data (libs/my_tolls, JNI
+  app.organicmaps.sdk.my.MyTolls), prices from data/my_tolls.csv (52 open-system plazas, sourced), total in RM in the
+  HUD ETA sheet ("+" when a booth on the route has no price yet). PLUS/LPT closed-system fares and "RM saved when
+  avoiding tolls" still to do. Name decided: Sampai.

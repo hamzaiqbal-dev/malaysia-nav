@@ -45790,3 +45790,15 @@ comment = Line under the remaining time: %1$s is the remaining distance (e.g. 6.
 tags = android-app
 en = %1$s · arrive %2$s
 ms = %1$s · tiba %2$s
+
+[my_nav_toll]
+comment = Label of the toll total in the navigation ETA sheet. Keep very short.
+tags = android-app
+en = Toll
+ms = Tol
+
+[my_nav_toll_amount]
+comment = Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet.
+tags = android-app
+en = RM %s
+ms = RM %s

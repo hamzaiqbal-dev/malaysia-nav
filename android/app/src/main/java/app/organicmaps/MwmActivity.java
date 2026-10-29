@@ -1483,7 +1483,9 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
   @Override
   public void onBuiltRoute()
-  {}
+  {
+    mNavigationController.onRouteBuilt();
+  }
 
   @Override
   public void onCommonBuildError(int lastResultCode, @NonNull String[] lastMissingMaps)

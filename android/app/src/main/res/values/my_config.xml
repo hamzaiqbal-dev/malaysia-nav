@@ -15,11 +15,15 @@
   <dimen name="my_lanes_height">52dp</dimen>
   <dimen name="my_speed_limit_size">56dp</dimen>
   <dimen name="my_hud_button_size">44dp</dimen>
+  <dimen name="my_hud_icon_button_size">40dp</dimen>
 
   <dimen name="my_text_turn_distance">30sp</dimen>
   <dimen name="my_text_turn_street">15sp</dimen>
   <dimen name="my_text_then">12sp</dimen>
   <dimen name="my_text_eta">28sp</dimen>
+  <dimen name="my_text_eta_min">20sp</dimen>
+  <dimen name="my_text_toll_label">11sp</dimen>
+  <dimen name="my_text_toll_amount">14sp</dimen>
   <dimen name="my_text_eta_subtitle">13sp</dimen>
   <dimen name="my_text_speed">22sp</dimen>
   <dimen name="my_text_speed_units">10sp</dimen>

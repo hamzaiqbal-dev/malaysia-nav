@@ -18,4 +18,8 @@
     <string name="my_nav_eta_hours_minutes">%1$d j %2$d min</string>
     <!-- Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time. -->
     <string name="my_nav_eta_subtitle">%1$s · tiba %2$s</string>
+    <!-- Label of the toll total in the navigation ETA sheet. Keep very short. -->
+    <string name="my_nav_toll">Tol</string>
+    <!-- Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet. -->
+    <string name="my_nav_toll_amount">RM %s</string>
 </resources>
