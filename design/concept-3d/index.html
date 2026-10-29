@@ -1,0 +1,204 @@
+<title>Malaysia Nav 3D Concept</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: one phone-sized navigation screen (max 430px) centred on a dark stage; on a phone it fills the screen.
+   Single committed dark look (night navigation) — set explicitly for both host themes. */
+:root{--bg:#0B1220;--panel:#121C2E;--panel2:#1A2740;--ink:#F3F6FB;--muted:#9AA8C0;--line:rgba(255,255,255,.08);
+ --route:#2E8BFF;--accent:#FFC43D;--ok:#2ECC71;--warn:#FF7A45;--danger:#FF4D5E;
+ --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);display:flex;align-items:stretch;justify-content:center;
+ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0;box-sizing:border-box}
+@media(min-width:700px){body{align-items:center;padding-block:24px}}
+.phone{position:relative;width:100%;max-width:430px;height:100%;max-height:100%;overflow:hidden;background:#0a1020;isolation:isolate}
+@media(min-width:700px){.phone{height:860px;border-radius:40px;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 10px #000,0 0 0 12px #2a3345}}
+canvas#map{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hud{position:absolute;inset:0;pointer-events:none}
+.hud>*{pointer-events:auto}
+/* top banner */
+.turn{position:absolute;left:12px;right:12px;top:calc(12px + env(safe-area-inset-top,0px));background:linear-gradient(135deg,#1C8C4E,#13703C);border-radius:20px;padding:14px 16px;display:flex;gap:14px;align-items:center;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.turn .arrow{width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.14);display:grid;place-items:center}
+.turn .dist{font-size:30px;font-weight:800;line-height:1}
+.turn .road{font-size:15px;font-weight:600;opacity:.95;margin-top:4px}
+.turn .then{margin-left:auto;text-align:right;font-size:12px;color:rgba(255,255,255,.8)}
+.turn .then b{display:block;font-size:14px;color:#fff}
+.lanes{position:absolute;left:50%;transform:translateX(-50%);top:calc(104px + env(safe-area-inset-top,0px));display:flex;gap:6px;background:rgba(10,16,32,.75);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:6px 10px}
+.lanes span{width:22px;height:22px;display:grid;place-items:center;border-radius:6px;color:#6b7890;font-weight:800}
+.lanes span.on{background:var(--ok);color:#06331a}
+/* search mode */
+.search{position:absolute;left:12px;right:12px;top:calc(12px + env(safe-area-inset-top,0px));background:rgba(18,28,46,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:12px 14px;display:flex;gap:10px;align-items:center;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.search input{flex:1;background:none;border:0;color:var(--ink);font:600 16px var(--font);outline:none;min-width:0}
+.search input::placeholder{color:var(--muted)}
+.chips{position:absolute;left:12px;right:12px;top:calc(72px + env(safe-area-inset-top,0px));display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:1px solid var(--line);background:rgba(18,28,46,.85);color:var(--ink);font:600 13px var(--font);padding:8px 12px;border-radius:999px;display:flex;gap:6px;align-items:center}
+/* side controls */
+.side{position:absolute;right:12px;top:50%;transform:translateY(-40%);display:flex;flex-direction:column;gap:10px}
+.rbtn,.fab{border:1px solid var(--line);background:rgba(18,28,46,.9);backdrop-filter:blur(8px);color:var(--ink);width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font:700 12px var(--font);cursor:pointer}
+.rbtn:focus-visible,.fab:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.speed{position:absolute;left:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));width:64px;height:64px;border-radius:50%;background:#fff;color:#0b1220;display:grid;place-items:center;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.5);border:4px solid #e23a3a}
+.speed b{font-size:22px;line-height:1}.speed small{font-size:9px;font-weight:700;letter-spacing:.06em}
+.fab{position:absolute;right:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:var(--accent);color:#1a1200;border:0;font-size:26px;box-shadow:0 10px 26px rgba(255,196,61,.4)}
+/* bottom sheet */
+.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--panel);border-radius:24px 24px 0 0;padding:10px 16px calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -12px 40px rgba(0,0,0,.5);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.sheet .grab{width:40px;height:4px;border-radius:2px;background:#3a4a66;margin:0 auto 12px}
+.eta{display:flex;align-items:center;gap:14px}
+.eta .big{font-size:30px;font-weight:800;color:var(--ok);line-height:1}
+.eta .sub{color:var(--muted);font-size:13px;font-weight:600;margin-top:4px}
+.eta .toll{margin-left:auto;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:8px 10px;font-size:12px;font-weight:700;text-align:right}
+.eta .toll b{display:block;font-size:14px;color:var(--accent)}
+.eta .end{background:var(--danger);color:#fff;border:0;border-radius:12px;padding:10px 14px;font:700 14px var(--font)}
+.place h2{margin:0;font-size:20px;text-wrap:balance}
+.place .meta{color:var(--muted);font-size:13px;font-weight:600;margin:4px 0 12px}
+.place .meta b{color:var(--ok)}
+.actions{display:flex;gap:8px}
+.actions button{flex:1;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:14px;padding:12px 8px;font:700 13px var(--font);cursor:pointer}
+.actions button.p{background:var(--route);border-color:var(--route);color:#fff}
+.facts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.facts span{font-size:12px;font-weight:600;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:6px 10px}
+/* report sheet */
+.report{position:absolute;left:0;right:0;bottom:0;background:var(--panel);border-radius:24px 24px 0 0;padding:14px 16px calc(20px + env(safe-area-inset-bottom,0px));transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 -12px 40px rgba(0,0,0,.6)}
+.report.open{transform:none}
+.report h3{margin:4px 0 12px;font-size:16px}
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rgrid button{border:0;background:var(--panel2);color:var(--ink);border-radius:16px;padding:12px 4px;font:700 11.5px var(--font);display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer}
+.rgrid i{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:18px}
+.toast{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(230px + env(safe-area-inset-bottom,0px));background:rgba(46,204,113,.95);color:#06331a;font-weight:800;font-size:13px;padding:10px 16px;border-radius:999px;opacity:0;transition:opacity .3s;white-space:nowrap}
+.toast.show{opacity:1}
+/* top-right mode + language */
+.modes{position:absolute;left:12px;bottom:calc(228px + env(safe-area-inset-bottom,0px));display:flex;gap:6px}
+.modes button{border:1px solid var(--line);background:rgba(18,28,46,.9);color:var(--muted);font:700 12px var(--font);padding:7px 11px;border-radius:999px;cursor:pointer}
+.modes button.on{background:var(--ink);color:#0b1220}
+.pin{position:absolute;padding:4px 8px;border-radius:8px;background:rgba(10,16,32,.85);border:1px solid var(--line);font-size:11px;font-weight:700;transform:translate(-50%,-120%);white-space:nowrap;pointer-events:none}
+.pin::after{content:"";position:absolute;left:50%;bottom:-5px;width:8px;height:8px;background:inherit;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.pin.rep{background:var(--warn);color:#2b1200;border-color:transparent}
+.note{text-align:center;font-size:10px;color:#5d6b85;margin-top:10px}
+@media(prefers-reduced-motion:reduce){.sheet,.report{transition:none}}
+</style>
+
+<div class="phone" id="phone">
+ <canvas id="map"></canvas>
+ <div class="hud" id="hud">
+  <!-- NAVIGATE mode -->
+  <div id="navUI">
+   <div class="turn"><div class="arrow"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20V9a3 3 0 0 0-3-3H5"/><path d="M9 2 5 6l4 4"/></svg></div>
+    <div><div class="dist" id="tDist">180 m</div><div class="road" id="tRoad">Belok kiri ke Jalan Ampang</div></div>
+    <div class="then"><span id="tThenL">Kemudian</span><b id="tThen">↱ Jalan P. Ramlee</b></div></div>
+   <div class="lanes"><span>↰</span><span class="on">↰</span><span>↑</span><span>↑</span><span>↱</span></div>
+   <div class="speed"><b id="spd">58</b><small>km/h · 80</small></div>
+   <button class="fab" id="fab" aria-label="Lapor">＋</button>
+   <div class="modes"><button class="on" id="mNav">Navigasi</button><button id="mExp">Cari</button><button id="lang">EN</button></div>
+   <div class="sheet"><div class="grab"></div>
+    <div class="eta"><div><div class="big" id="eta">14 min</div><div class="sub" id="etaSub">6.4 km · tiba 15:02 · lalu lintas sederhana</div></div>
+     <div class="toll"><span id="tollL">Tol</span><b>RM 2.50</b><span id="tollS">SMART · RFID ok</span></div>
+     <button class="end" id="endL">Tamat</button></div><div class="note">Konsep reka bentuk · peta 3D ilustrasi · data OpenStreetMap akan digunakan dalam aplikasi sebenar</div></div>
+  </div>
+  <!-- EXPLORE mode -->
+  <div id="expUI" hidden>
+   <div class="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9AA8C0" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="Cari di Malaysia Nav" aria-label="Cari"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E8BFF" stroke-width="2.2"><path d="M12 3v8"/><path d="M8 7l4-4 4 4"/><rect x="5" y="13" width="14" height="8" rx="3"/></svg></div>
+   <div class="chips"><button>⛽ Petrol RON95</button><button>🕌 Surau</button><button>🍛 Mamak</button><button>🅿 Parkir</button><button>🔌 EV</button><button>🏥 Klinik</button><button>🛣 R&amp;R</button></div>
+   <div class="side"><button class="rbtn" aria-label="3D">3D</button><button class="rbtn" aria-label="Kompas">N</button><button class="rbtn" aria-label="Lokasi saya">◎</button></div>
+   <div class="modes" style="bottom:calc(248px + env(safe-area-inset-bottom,0px))"><button id="mNav2">Navigasi</button><button class="on" id="mExp2">Cari</button><button id="lang2">EN</button></div>
+   <div class="sheet place"><div class="grab"></div>
+    <h2 id="pName">Petronas Twin Towers</h2><div class="meta" id="pMeta"><b>Buka</b> · 10:00–22:00 · 4.8 ★ (41k) · 2.1 km</div>
+    <div class="actions"><button class="p" id="goL">▲ Mula navigasi</button><button id="saveL">☆ Simpan</button><button id="shareL">↗ Kongsi</button></div>
+    <div class="facts" id="facts"><span>⛽ Petronas Jalan Ampang 400 m</span><span>🕌 Surau KLCC L4</span><span>🅿 RM 4/jam</span><span>⏱ Tol RM 0</span></div></div>
+  </div>
+  <div class="report" id="report"><h3 id="rTitle">Lapor di sini</h3>
+   <div class="rgrid">
+    <button data-r="Kesesakan"><i style="background:#FFC43D22;color:#FFC43D">🚗</i><span>Kesesakan</span></button>
+    <button data-r="Kemalangan"><i style="background:#FF4D5E22;color:#FF4D5E">💥</i><span>Kemalangan</span></button>
+    <button data-r="Sekatan polis"><i style="background:#2E8BFF22;color:#2E8BFF">👮</i><span>Polis / Sekatan</span></button>
+    <button data-r="Kamera AES"><i style="background:#9b5cff22;color:#b48cff">📷</i><span>Kamera AES</span></button>
+    <button data-r="Lubang jalan"><i style="background:#FF7A4522;color:#FF7A45">🕳</i><span>Lubang</span></button>
+    <button data-r="Banjir"><i style="background:#2E8BFF22;color:#6fb3ff">🌊</i><span>Banjir</span></button>
+    <button data-r="Jalan ditutup"><i style="background:#FF4D5E22;color:#FF8a94">⛔</i><span>Jalan ditutup</span></button>
+    <button data-r="Harga minyak"><i style="background:#2ECC7122;color:#2ECC71">⛽</i><span>Harga minyak</span></button>
+   </div></div>
+  <div class="toast" id="toast">Laporan dihantar · terima kasih 🙏</div>
+  <div id="pins"></div>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+// ---------- language ----------
+const T={ms:{dist:"180 m",road:"Belok kiri ke Jalan Ampang",then:"Kemudian",thenV:"↱ Jalan P. Ramlee",eta:"14 min",etaSub:"6.4 km · tiba 15:02 · lalu lintas sederhana",toll:"Tol",tollS:"SMART · RFID ok",end:"Tamat",nav:"Navigasi",exp:"Cari",q:"Cari di Malaysia Nav",meta:"<b>Buka</b> · 10:00–22:00 · 4.8 ★ (41k) · 2.1 km",go:"▲ Mula navigasi",save:"☆ Simpan",share:"↗ Kongsi",rT:"Lapor di sini",toast:"Laporan dihantar · terima kasih 🙏",lang:"EN"},
+ en:{dist:"180 m",road:"Turn left onto Jalan Ampang",then:"Then",thenV:"↱ Jalan P. Ramlee",eta:"14 min",etaSub:"6.4 km · arrive 15:02 · moderate traffic",toll:"Toll",tollS:"SMART · RFID ok",end:"End",nav:"Navigate",exp:"Search",q:"Search Malaysia Nav",meta:"<b>Open</b> · 10:00–22:00 · 4.8 ★ (41k) · 2.1 km",go:"▲ Start navigation",save:"☆ Save",share:"↗ Share",rT:"Report here",toast:"Report sent · thank you 🙏",lang:"BM"}};
+let L="ms";
+const $=id=>document.getElementById(id);
+function applyLang(){const t=T[L];$('tRoad').textContent=t.road;$('tThenL').textContent=t.then;$('tThen').textContent=t.thenV;$('eta').textContent=t.eta;$('etaSub').textContent=t.etaSub;$('tollL').textContent=t.toll;$('tollS').textContent=t.tollS;$('endL').textContent=t.end;$('mNav').textContent=$('mNav2').textContent=t.nav;$('mExp').textContent=$('mExp2').textContent=t.exp;$('q').placeholder=t.q;$('pMeta').innerHTML=t.meta;$('goL').textContent=t.go;$('saveL').textContent=t.save;$('shareL').textContent=t.share;$('rTitle').textContent=t.rT;$('toast').textContent=t.toast;$('lang').textContent=$('lang2').textContent=t.lang}
+[$('lang'),$('lang2')].forEach(b=>b.onclick=()=>{L=L==="ms"?"en":"ms";applyLang()});
+// ---------- modes ----------
+let mode="nav";
+function setMode(m){mode=m;$('navUI').hidden=m!=="nav";$('expUI').hidden=m!=="exp"}
+$('mExp').onclick=$('mExp2').onclick=()=>setMode("exp");$('mNav').onclick=$('mNav2').onclick=$('goL').onclick=()=>setMode("nav");
+// ---------- report ----------
+const rep=$('report');$('fab').onclick=()=>rep.classList.toggle('open');
+rep.querySelectorAll('button').forEach(b=>b.onclick=()=>{rep.classList.remove('open');addPin(b.dataset.r);const t=$('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)});
+// ---------- 3D map ----------
+const cv=$('map');const R=new THREE.WebGLRenderer({canvas:cv,antialias:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene();S.background=new THREE.Color(0x0b1220);S.fog=new THREE.Fog(0x0b1220,60,160);
+const C=new THREE.PerspectiveCamera(58,1,.1,400);
+S.add(new THREE.HemisphereLight(0x8fb3ff,0x0b1220,.9));const sun=new THREE.DirectionalLight(0xffffff,.55);sun.position.set(30,60,20);S.add(sun);
+// ground
+S.add(new THREE.Mesh(new THREE.PlaneGeometry(400,400),new THREE.MeshLambertMaterial({color:0x10192b})).rotateX(-Math.PI/2));
+// roads: grid every 20 units, main avenues wider
+const roadMat=new THREE.MeshLambertMaterial({color:0x1f2a40}),mainMat=new THREE.MeshLambertMaterial({color:0x2a3650}),dash=new THREE.MeshBasicMaterial({color:0x4a5a78});
+for(let i=-10;i<=10;i++){const main=i%4===0;const w=main?7:3.6;
+ const r1=new THREE.Mesh(new THREE.PlaneGeometry(w,400),main?mainMat:roadMat);r1.rotateX(-Math.PI/2);r1.position.set(i*20,.02,0);S.add(r1);
+ const r2=new THREE.Mesh(new THREE.PlaneGeometry(400,w),main?mainMat:roadMat);r2.rotateX(-Math.PI/2);r2.position.set(0,.02,i*20);S.add(r2);
+ if(main){for(let k=-98;k<98;k+=4){const d=new THREE.Mesh(new THREE.PlaneGeometry(.25,1.6),dash);d.rotateX(-Math.PI/2);d.position.set(i*20,.03,k*2);S.add(d);const e=new THREE.Mesh(new THREE.PlaneGeometry(1.6,.25),dash);e.rotateX(-Math.PI/2);e.position.set(k*2,.03,i*20);S.add(e)}}}
+// buildings (procedural, seeded)
+let seed=7;const rnd=()=>{seed=(seed*9301+49297)%233280;return seed/233280};
+const palette=[0x1b2740,0x22304c,0x2b3a5a,0x18233a,0x30405f];
+const bGeo=new THREE.BoxGeometry(1,1,1);bGeo.translate(0,.5,0);
+for(let gx=-9;gx<9;gx++)for(let gz=-9;gz<9;gz++){const cx=gx*20+10,cz=gz*20+10;if(Math.hypot(cx-10,cz-10)<6)continue;
+ const n=2+Math.floor(rnd()*3);for(let b=0;b<n;b++){const w=3+rnd()*5,d=3+rnd()*5;const dist=Math.hypot(cx,cz);const h=(1+rnd()*4)*(dist<60?3.2:1.4);
+  const m=new THREE.Mesh(bGeo,new THREE.MeshLambertMaterial({color:palette[Math.floor(rnd()*palette.length)]}));m.scale.set(w,h,d);
+  m.position.set(cx-6+rnd()*12,0,cz-6+rnd()*12);S.add(m);
+  // lit windows
+  if(h>5&&rnd()>.3){const g=new THREE.Mesh(new THREE.PlaneGeometry(w*.8,h*.7),new THREE.MeshBasicMaterial({color:0x3a4e7a,transparent:true,opacity:.5}));g.position.set(m.position.x,h*.45,m.position.z+d/2+.02);S.add(g)}}}
+// landmarks: twin towers + a tall tower
+function tower(x,z,h,col){const t=new THREE.Mesh(new THREE.CylinderGeometry(2.2,3.2,h,8),new THREE.MeshLambertMaterial({color:col}));t.position.set(x,h/2,z);S.add(t);const sp=new THREE.Mesh(new THREE.ConeGeometry(.6,8,8),new THREE.MeshLambertMaterial({color:0xcfd8e8}));sp.position.set(x,h+4,z);S.add(sp);const glow=new THREE.PointLight(0xaac8ff,.9,40);glow.position.set(x,h*.8,z);S.add(glow)}
+tower(74,-66,46,0xc9d3e6);tower(84,-66,46,0xc9d3e6);const br=new THREE.Mesh(new THREE.BoxGeometry(10,1.2,2),new THREE.MeshLambertMaterial({color:0xdde5f3}));br.position.set(79,22,-66);S.add(br);
+const kl=new THREE.Mesh(new THREE.CylinderGeometry(1.2,2.4,60,10),new THREE.MeshLambertMaterial({color:0x8fa2c4}));kl.position.set(-70,30,-30);S.add(kl);
+// park + river
+const park=new THREE.Mesh(new THREE.PlaneGeometry(26,26),new THREE.MeshLambertMaterial({color:0x173a2f}));park.rotateX(-Math.PI/2);park.position.set(50,.015,30);S.add(park);
+const river=new THREE.Mesh(new THREE.PlaneGeometry(6,400),new THREE.MeshLambertMaterial({color:0x14304f}));river.rotateX(-Math.PI/2);river.position.set(-50,.016,0);river.rotation.z=.08;S.add(river);
+// route along roads
+const pts=[[0,100],[0,40],[0,0],[40,0],[40,-40],[80,-40],[80,-60]].map(p=>new THREE.Vector3(p[0],.06,p[1]));
+const curve=new THREE.CatmullRomCurve3(pts,false,'catmullrom',.05);
+const tube=new THREE.Mesh(new THREE.TubeGeometry(curve,220,1.1,8,false),new THREE.MeshBasicMaterial({color:0x2e8bff}));S.add(tube);
+const halo=new THREE.Mesh(new THREE.TubeGeometry(curve,220,1.8,8,false),new THREE.MeshBasicMaterial({color:0x2e8bff,transparent:true,opacity:.18}));S.add(halo);
+// moving traffic (other cars)
+const cars=[];for(let i=0;i<40;i++){const c=new THREE.Mesh(new THREE.BoxGeometry(1.2,.7,2.2),new THREE.MeshLambertMaterial({color:[0xff4d5e,0xffffff,0xffc43d,0x9aa8c0][i%4]}));const lane=(Math.floor(rnd()*11)-5)*20+(rnd()>.5?1.4:-1.4);const axis=rnd()>.5;c.userData={axis,lane,p:rnd()*400-200,v:(0.08+rnd()*.12)*(rnd()>.5?1:-1)};if(axis)c.rotation.y=Math.PI/2;S.add(c);cars.push(c)}
+// me
+const me=new THREE.Group();const body=new THREE.Mesh(new THREE.BoxGeometry(1.6,.8,3),new THREE.MeshLambertMaterial({color:0x2e8bff}));body.position.y=.5;me.add(body);
+const beam=new THREE.Mesh(new THREE.ConeGeometry(3,7,16,1,true),new THREE.MeshBasicMaterial({color:0x2e8bff,transparent:true,opacity:.14,side:THREE.DoubleSide}));beam.rotation.x=-Math.PI/2;beam.position.set(0,.3,-4.5);me.add(beam);S.add(me);
+// report pins
+const pinsEl=$('pins');const pins=[{t:"👮 Sekatan jalan",p:new THREE.Vector3(40,6,-20),rep:true},{t:"⛽ RON95 RM2.05",p:new THREE.Vector3(14,6,36),rep:false},{t:"🕌 Masjid Jamek",p:new THREE.Vector3(-18,8,8),rep:false},{t:"Petronas Twin Towers",p:new THREE.Vector3(79,56,-66),rep:false}];
+pins.forEach(pn=>{const d=document.createElement('div');d.className='pin'+(pn.rep?' rep':'');d.textContent=pn.t;pinsEl.appendChild(d);pn.el=d});
+function addPin(label){const pos=curve.getPointAt(Math.min(1,u+.03)).clone();pos.y=6;const d=document.createElement('div');d.className='pin rep';d.textContent="⚠ "+label;pinsEl.appendChild(d);pins.push({t:label,p:pos,rep:true,el:d})}
+// camera + loop
+let u=0;const clock=new THREE.Clock();let W=1,Hh=1;
+function size(){const r=cv.getBoundingClientRect();W=r.width;Hh=r.height;R.setSize(W,Hh,false);C.aspect=W/Hh;C.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+const tmp=new THREE.Vector3(),ahead=new THREE.Vector3();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function loop(){const dt=Math.min(clock.getDelta(),.05);if(!reduce)u=(u+dt*.012)%0.96;
+ curve.getPointAt(u,tmp);curve.getPointAt(Math.min(1,u+.01),ahead);me.position.copy(tmp);me.lookAt(ahead.x,tmp.y,ahead.z);
+ const dir=ahead.clone().sub(tmp).normalize();const camPos=tmp.clone().sub(dir.clone().multiplyScalar(mode==="nav"?16:26)).add(new THREE.Vector3(0,mode==="nav"?11:26,0));
+ C.position.lerp(camPos,.08);const look=tmp.clone().add(dir.clone().multiplyScalar(14));C.lookAt(look.x,2,look.z);
+ cars.forEach(c=>{c.userData.p+=c.userData.v;if(c.userData.p>200)c.userData.p=-200;if(c.userData.p<-200)c.userData.p=200;if(c.userData.axis)c.position.set(c.userData.p,.35,c.userData.lane);else c.position.set(c.userData.lane,.35,c.userData.p)});
+ // distance / speed text
+ const remain=(1-u)*curve.getLength();const segEnd=curve.getPointAt(Math.min(1,u+.06));const toTurn=Math.max(20,Math.round(((0.3-u%0.3)*curve.getLength()/6)/10)*10);$('tDist').textContent=toTurn+" m";
+ $('spd').textContent=String(52+Math.round(Math.sin(clock.elapsedTime*.7)*8));$('eta').textContent=Math.max(1,Math.round(remain/460))+" min";
+ // pins projection
+ pins.forEach(pn=>{const v=pn.p.clone().project(C);const vis=v.z<1&&Math.abs(v.x)<1.1&&Math.abs(v.y)<1.1;pn.el.style.display=vis?'block':'none';if(vis){pn.el.style.left=((v.x+1)/2*W)+'px';pn.el.style.top=((1-v.y)/2*Hh)+'px'}});
+ R.render(S,C);requestAnimationFrame(loop)}
+loop();applyLang();
+})();
+</script>

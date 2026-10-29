@@ -48,6 +48,11 @@ Decision  5,000 organic installs or strong D7 retention → fund and staff it; o
 - Company/entity that will own the Play Store and App Store accounts.
 - Back-end hosting for reports (Malaysian cloud: e.g. AIMS, Exabytes, or a MY region of a big cloud).
 
+## UI direction (29 Oct 2026)
+Founder reviewed the stock Organic Maps screens and wants the app recoded with a 3D, Google Maps / Waze-class
+interface. Design concept lives in `design/concept-3d/index.html`; implementation steps in `design/README.md`.
+
 ## Work log
 - 2026-10-24: Forked organicmaps/organicmaps → hamzaiqbal-dev/malaysia-nav. Plan written. Next: CI
   build of Android debug APK, app id and placeholder name, BM default language.
+- 2026-10-29: 3D UI concept added (design/concept-3d). Android redesign plan written. Next: PR 1 = theme tokens + NavHudView.
