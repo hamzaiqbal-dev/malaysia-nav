@@ -407,6 +407,28 @@ UNIT_CLASS_TEST(TestWithClassificator, CategoriesIndex_AllCategories)
   TEST_LESS(index.GetNumTrieNodes(), 900000, ());
 }
 
+// Malaysia Nav: Bahasa Melayu search terms in the shipped categories.txt.
+UNIT_CLASS_TEST(TestWithClassificator, CategoriesHolder_BahasaMelayu)
+{
+  auto const & holder = GetDefaultCategories();
+  int8_t const ms = CategoriesHolder::MapLocaleToInteger("ms");
+  TEST_NOT_EQUAL(ms, CategoriesHolder::kUnsupportedLocaleCode, ());
+  TEST_EQUAL(ms, CategoriesHolder::MapLocaleToInteger("ms-MY"), ());
+
+  auto const typesByName = [&](std::string const & name)
+  {
+    std::vector<uint32_t> types;
+    holder.ForEachTypeByName(ms, strings::MakeUniString(name), [&types](uint32_t type) { types.push_back(type); });
+    return types;
+  };
+
+  TEST(base::IsExist(typesByName("surau"), classif().GetTypeByPath({"amenity", "place_of_worship", "muslim"})), ());
+  TEST(base::IsExist(typesByName("mamak"), classif().GetTypeByPath({"amenity", "restaurant"})), ());
+  TEST(base::IsExist(typesByName("kopitiam"), classif().GetTypeByPath({"amenity", "cafe"})), ());
+  TEST(base::IsExist(typesByName("puspakom"), classif().GetTypeByPath({"amenity", "vehicle_inspection"})), ());
+  TEST(base::IsExist(typesByName("hentian"), classif().GetTypeByPath({"highway", "rest_area"})), ());
+}
+
 // A check that this data structure is not too heavy.
 UNIT_CLASS_TEST(TestWithClassificator, CategoriesIndex_AllCategoriesEnglishName)
 {
