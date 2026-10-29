@@ -1274,6 +1274,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
     final View navBottomSheetNavBar = findViewById(R.id.nav_bottom_sheet_nav_bar);
     if (navBottomSheetLineFrame != null)
       offsetY = Math.max(offsetY, navBottomSheetLineFrame.getHeight() + navBottomSheetNavBar.getHeight());
+    if (mNavigationController != null)
+      offsetY = Math.max(offsetY, mNavigationController.getBottomOverlayHeight());
     if (mDisplayManager.isDeviceDisplayUsed())
     {
       mMapController.updateBottomWidgetsOffset(offsetX, offsetY);

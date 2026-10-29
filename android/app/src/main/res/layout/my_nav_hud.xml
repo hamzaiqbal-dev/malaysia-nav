@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Malaysia Nav navigation HUD, inflated by app.organicmaps.my.NavHudView.
+     Banner and sheet are capped at my_hud_max_width and start-aligned, so one layout serves
+     portrait (fills the width), landscape and tablets (a column at the start edge). -->
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  tools:background="@color/my_bg">
+
+  <!-- Turn banner -->
+  <LinearLayout
+    android:id="@+id/my_turn_banner"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/my_hud_margin"
+    android:layout_marginTop="@dimen/my_hud_margin"
+    android:layout_marginEnd="@dimen/my_hud_margin"
+    android:background="@drawable/my_bg_turn_banner"
+    android:clickable="true"
+    android:elevation="@dimen/my_hud_elevation"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="14dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_max="@dimen/my_hud_max_width">
+
+    <ImageView
+      android:id="@+id/my_turn_icon"
+      android:layout_width="@dimen/my_turn_icon_size"
+      android:layout_height="@dimen/my_turn_icon_size"
+      android:background="@drawable/my_bg_turn_icon"
+      android:contentDescription="@string/my_nav_next_turn"
+      android:padding="@dimen/my_turn_icon_padding"
+      android:scaleType="fitCenter"
+      app:tint="@color/my_on_banner"
+      tools:src="@drawable/ic_turn_left" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="14dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/my_turn_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/my_on_banner"
+        android:textSize="@dimen/my_text_turn_distance"
+        tools:text="180 m" />
+
+      <TextView
+        android:id="@+id/my_turn_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:textColor="@color/my_on_banner"
+        android:textSize="@dimen/my_text_turn_street"
+        tools:text="Jalan Ampang" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/my_then_frame"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:visibility="gone"
+      tools:visibility="visible">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/my_nav_then"
+        android:textColor="@color/my_on_banner_muted"
+        android:textSize="@dimen/my_text_then" />
+
+      <ImageView
+        android:id="@+id/my_then_icon"
+        android:layout_width="@dimen/my_then_icon_size"
+        android:layout_height="@dimen/my_then_icon_size"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/my_nav_then"
+        android:scaleType="fitCenter"
+        app:tint="@color/my_on_banner"
+        tools:src="@drawable/ic_turn_right" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <!-- Lane strip; LanesView hides itself when there is no lane information. -->
+  <app.organicmaps.sdk.widgets.lanes.LanesView
+    android:id="@+id/my_lanes"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/my_lanes_height"
+    android:layout_marginTop="8dp"
+    android:elevation="@dimen/my_hud_elevation"
+    android:padding="8dp"
+    android:visibility="gone"
+    app:lanesActiveLaneTintColor="@color/my_ok"
+    app:lanesBackgroundColor="@color/my_pill_bg"
+    app:lanesCornerRadius="26dp"
+    app:lanesEditModeLanesCount="5"
+    app:lanesInactiveLaneTintColor="@color/my_lane_inactive"
+    app:layout_constraintEnd_toEndOf="@id/my_turn_banner"
+    app:layout_constraintStart_toStartOf="@id/my_turn_banner"
+    app:layout_constraintTop_toBottomOf="@id/my_turn_banner"
+    tools:visibility="visible" />
+
+  <!-- Speed + limit, bottom start, above the ETA sheet -->
+  <LinearLayout
+    android:id="@+id/my_speed_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/my_hud_margin"
+    android:layout_marginBottom="@dimen/my_hud_margin"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@id/my_eta_sheet"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+      android:id="@+id/my_speed_pill"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/my_bg_speed_pill"
+      android:elevation="@dimen/my_hud_elevation"
+      android:gravity="center"
+      android:minWidth="64dp"
+      android:orientation="vertical"
+      android:paddingStart="12dp"
+      android:paddingTop="8dp"
+      android:paddingEnd="12dp"
+      android:paddingBottom="8dp"
+      android:visibility="gone"
+      tools:visibility="visible">
+
+      <TextView
+        android:id="@+id/my_speed_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/my_ink"
+        android:textSize="@dimen/my_text_speed"
+        tools:text="58" />
+
+      <TextView
+        android:id="@+id/my_speed_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.06"
+        android:maxLines="1"
+        android:textColor="@color/my_muted"
+        android:textSize="@dimen/my_text_speed_units"
+        tools:text="km/h" />
+    </LinearLayout>
+
+    <app.organicmaps.sdk.widgets.speedlimit.SpeedLimitView
+      android:id="@+id/my_speed_limit"
+      style="@style/MwmWidget.SpeedLimit"
+      android:layout_width="@dimen/my_speed_limit_size"
+      android:layout_height="@dimen/my_speed_limit_size"
+      android:layout_marginStart="8dp"
+      android:elevation="@dimen/my_hud_elevation"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  </LinearLayout>
+
+  <!-- ETA sheet -->
+  <LinearLayout
+    android:id="@+id/my_eta_sheet"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_bg_eta_sheet"
+    android:clickable="true"
+    android:elevation="@dimen/my_hud_elevation"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintWidth_max="@dimen/my_hud_max_width">
+
+    <!-- Content stays within nav_menu_height (80sp) so the map buttons' bottom margin clears the sheet. -->
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/my_eta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif-black"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:textColor="@color/my_ok"
+          android:textSize="@dimen/my_text_eta"
+          tools:text="14 min" />
+
+        <TextView
+          android:id="@+id/my_eta_subtitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:ellipsize="end"
+          android:fontFamily="sans-serif-medium"
+          android:maxLines="1"
+          android:textColor="@color/my_muted"
+          android:textSize="@dimen/my_text_eta_subtitle"
+          tools:text="6.4 km · tiba 15:02" />
+      </LinearLayout>
+
+      <ImageView
+        android:id="@+id/my_voice"
+        android:layout_width="@dimen/my_hud_button_size"
+        android:layout_height="@dimen/my_hud_button_size"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/my_nav_voice"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_voice_on"
+        app:tint="@color/my_ink" />
+
+      <ImageView
+        android:id="@+id/my_settings"
+        android:layout_width="@dimen/my_hud_button_size"
+        android:layout_height="@dimen/my_hud_button_size"
+        android:layout_marginStart="4dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/settings"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_menu_settings"
+        app:tint="@color/my_ink" />
+
+      <TextView
+        android:id="@+id/my_end"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/my_hud_button_size"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/my_bg_end_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:minWidth="72dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/my_nav_end"
+        android:textColor="@color/my_on_banner"
+        android:textSize="@dimen/my_text_button" />
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+      android:id="@+id/my_progress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:indicatorColor="@color/my_route"
+      app:trackColor="@color/my_line"
+      app:trackCornerRadius="2dp"
+      app:trackThickness="4dp" />
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

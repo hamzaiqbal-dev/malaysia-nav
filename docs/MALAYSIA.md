@@ -56,3 +56,8 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
 - 2026-10-24: Forked organicmaps/organicmaps → hamzaiqbal-dev/malaysia-nav. Plan written. Next: CI
   build of Android debug APK, app id and placeholder name, BM default language.
 - 2026-10-29: 3D UI concept added (design/concept-3d). Android redesign plan written. Next: PR 1 = theme tokens + NavHudView.
+- 2026-10-29 (night): PR #1 feature/nav-hud-redesign = theme tokens (my_colors.xml day/night) + NavHudView
+  (turn banner, lane strip, speed + limit, ETA sheet) behind R.bool.my_nav_hud_enabled; BM + EN strings;
+  unit tests for ETA/speed formatting. Blocker: GitHub Actions has never run on this fork (0 runs) — enable
+  workflows in the repo's Actions tab, then CI validates the PR. Next: device check in day/night, portrait/
+  landscape; Plus Jakarta Sans; tolls in the ETA sheet (step 5); ExploreSheet (step 2 cont.).

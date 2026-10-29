@@ -45740,3 +45740,53 @@ en = Internet terminal
 comment = About dialog: %@ placeholders are paths to license files. Preserve the Qt company name.
 tags = qt
 en = Qt 6 (C) The Qt Company Ltd. and other contributors. License texts: %@ and %@.
+
+[[Malaysia Nav navigation HUD]]
+
+[my_nav_next_turn]
+comment = Accessibility label of the big turn arrow in the navigation HUD.
+tags = android-app
+en = Next turn
+ms = Belokan seterusnya
+
+[my_nav_then]
+comment = Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short.
+tags = android-app
+en = Then
+ms = Kemudian
+
+[my_nav_end]
+comment = Button that ends navigation. Keep very short.
+tags = android-app
+en = End
+ms = Tamat
+
+[my_nav_voice]
+comment = Accessibility label of the voice guidance on/off button in the navigation HUD.
+tags = android-app
+en = Voice guidance
+ms = Panduan suara
+
+[my_nav_eta_minutes]
+comment = Remaining travel time in minutes, e.g. "14 min". Keep very short.
+tags = android-app
+en = %d min
+ms = %d min
+
+[my_nav_eta_hours]
+comment = Remaining travel time in whole hours, e.g. "2 h". Keep very short.
+tags = android-app
+en = %d h
+ms = %d j
+
+[my_nav_eta_hours_minutes]
+comment = Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short.
+tags = android-app
+en = %1$d h %2$d min
+ms = %1$d j %2$d min
+
+[my_nav_eta_subtitle]
+comment = Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time.
+tags = android-app
+en = %1$s · arrive %2$s
+ms = %1$s · tiba %2$s

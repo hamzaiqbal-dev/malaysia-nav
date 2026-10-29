@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle">
+  <gradient
+    android:angle="315"
+    android:startColor="@color/my_turn_banner_start"
+    android:endColor="@color/my_turn_banner_end" />
+  <corners android:radius="@dimen/my_hud_corner" />
+</shape>
