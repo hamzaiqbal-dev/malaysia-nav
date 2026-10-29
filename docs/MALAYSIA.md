@@ -71,3 +71,8 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   Play listing text for en-US and ms-MY rewritten for Sampai (other locales still carry the Organic Maps text;
   rewrite before publishing). Still Organic Maps': launcher icon, splash logo, contact e-mail/website in
   android/app/src/{fdroid,google}/play — trademark: replace before any public build.
+- 2026-10-30: PR #4 Bahasa Melayu search — "ms" added to the category locales (libs/indexer) and BM synonyms for 43
+  categories/groups in data/categories.txt: surau/masjid, hentian rehat (RnR), stesen minyak, pengecas EV, klinik,
+  balai polis, mamak, kopitiam, Puspakom, JPJ/pejabat kerajaan, pasar malam, parkir, tandas, stesen LRT/MRT/KTM…
+  Next for search: 中文 and தமிழ் synonyms, Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99
+  Speedmart, Mydin, KK Mart…).

@@ -96,6 +96,7 @@ ko:어디서 먹을까|음식
 lt:Kur pavalgyti|Maistas
 lv:Kur paēst|Ēst|Ēdiens
 mr:जेवायचे ठिकाण|जेवण|अन्न|भोजन
+ms:3Tempat makan|makan|makanan
 nb:Spisesteder|Mat
 nl:Waar iets gaan eten|Eten
 pl:Gdzie zjeść|Jedzenie
@@ -143,6 +144,7 @@ ko:식료품들|음식|쇼핑
 lt:5Maisto prekės|5bakalėja|4produktai
 lv:Pārtikas preces|Pārtika
 mr:किराणा|मंडई|ग्रोसरी
+ms:3Kedai makanan|runcit
 nb:Dagligvarer|Mat
 nl:Boodschappen|Kruidenier|Eten
 pl:Produkty|Jedzenie
@@ -190,6 +192,7 @@ ko:수송|교통
 lt:5Viešasis transportas
 lv:Transports
 mr:वाहतूक|ट्रान्सपोर्ट
+ms:3Pengangkutan awam|bas|LRT|MRT|KTM
 nb:5Transport
 nl:5Transport
 pl:5Transport
@@ -238,6 +241,7 @@ ko:연료|주유소
 lt:4Degalinė|4Benzinas|4Dyzelis|4Kuras
 lv:3Degvielas uzpildes stacija|3DUS|4Benzīntanks
 mr:इंधन|पेट्रोल|डिझेल
+ms:3Stesen minyak|minyak|petrol
 nb:Drivstoff
 nl:3Benzine
 pl:4Stacja paliw|3Benzyna|4Paliwo
@@ -286,6 +290,7 @@ ko:주차
 lt:5Parkavimas|5Automobilių stovėjimo aikštelė
 lv:5Autostāvvieta|5Parkings
 mr:वाहनतळ|पार्किंग
+ms:3Parkir|tempat letak kereta
 nb:4Parkering
 nl:4Parkeerplaats
 pl:4Parking
@@ -333,6 +338,7 @@ ko:쇼핑
 lt:4Apsipirkimas|5Parduotuvė
 lv:4Iepirkšanās
 mr:खरेदी|शॉपिंग
+ms:3Beli-belah|kedai
 nb:4Shopping
 nl:Winkelen
 pl:Zakupy
@@ -381,6 +387,7 @@ ko:호텔
 lt:5Viešbutis|5Nakvynė
 lv:Viesnīca|Hotelis
 mr:मुक्कामगृह|लॉज|निवासगृह|हॉटेल
+ms:3Hotel|penginapan
 nb:Hotell|Hoteller
 nl:Hotel|Hotels
 pl:Hotel|Hotele
@@ -428,6 +435,7 @@ ko:관광
 lt:Lankytina vieta|4lankytinos vietos|5turizmas|5įžymybės
 lv:3Apskates objekti|Tūrisms
 mr:पर्यटन|टूर|टूरिज्म
+ms:3Tarikan pelancong|pelancongan
 nb:5Severdigheter
 nl:5Bezienswaardigheden|4Toerisme
 pl:4Atrakcje turystyczne|Osobliwości miasta|Turystyka|zwiedzanie
@@ -475,6 +483,7 @@ ko:엔터테인먼트
 lt:5Pramogos
 lv:3Izklaide|Atpūta
 mr:मनोरंजन|मजा
+ms:3Hiburan
 nb:Underholdning
 nl:Amusement|Uitgaan
 pl:Rozrywka
@@ -522,6 +531,7 @@ ko:유흥|나이트 라이프|밤의 생활
 lt:5Naktinis gyvenimas
 lv:Naktsdzīve
 mr:रात्रीजीवन|नाईटलाईफ
+ms:3Hiburan malam
 nb:Nattliv
 nl:Nachtleven
 pl:Życie nocne
@@ -570,6 +580,7 @@ ko:가족 기념일|명절
 lt:4Šeimos atostogos|4Šeimos poilsis|Su vaikais
 lv:Atpūta ģimenei|Ģimene
 mr:कौटुंबिक सुट्टी
+ms:3Kanak-kanak
 nb:Familieferie
 nl:Gezinsvakantie
 pl:Wypoczynek z dziećmi
@@ -618,6 +629,7 @@ ko:ATM|현금 인출기
 lt:4Bankomatas|ATM
 lv:5Bankomāts|3ATM
 mr:ATM|एटीएम
+ms:3ATM|mesin wang
 nb:Minibank
 nl:3Geldautomaat
 pl:5Bankomat
@@ -712,6 +724,7 @@ ko:ATM|돈
 lt:Bankomatas|4pinigai|grynieji
 lv:Bankomāts|nauda
 mr:पैसे|कॅश|नगद|रोकड|रोख
+ms:3ATM|mesin wang
 nb:Minibank|2penger
 nl:Geldautomaat|geld
 pl:Pieniądze|bankomat
@@ -759,6 +772,7 @@ ko:은행
 lt:3Bankas
 lv:3Banka
 mr:बँक|Bank
+ms:3Bank
 nb:2Bank
 nl:2Bank
 pl:2Bank
@@ -852,6 +866,7 @@ ko:은행|돈
 lt:Bankas|4pinigai|grynieji
 lv:Banka|nauda
 mr:पैसे|कॅश|नगद|रोकड|रोख|बँक
+ms:3Bank
 nl:Bank|geld
 pl:Pieniądze|bank
 pt:Banco|dinheiro
@@ -1035,6 +1050,7 @@ ko:1카페|레스토랑|커피
 lt:4Kavinė|3Kava|5Restoranas|5Kavine
 lv:3Kafejnīca|3restorāns
 mr:कॉफी|चहा|कॅफे|अमृततुल्य|नाश्ता|स्नॅक|रसवंतीगृह|उसाचा रस
+ms:3Kafe|kopitiam|kedai kopi|kopi
 nb:2Kafé
 nl:3Tearoom|3brasserie|3café|3restaurant
 pl:3Kawiarnia|4restauracja|kawa
@@ -1124,6 +1140,7 @@ ko:1레스토랑|카페
 lt:5Restoranas|4Kavinė
 lv:3Restorāns|3kafejnīca
 mr:रेस्टोरंट|हॉटेल|उपहारगृह|भोजनालय|खानावळ
+ms:3Restoran|kedai makan|mamak|makan
 nb:3Restaurant
 nl:3Restaurant|3café
 pl:4Restauracja|3kawiarnia
@@ -1166,6 +1183,7 @@ ja:ガスステーション|ガス|燃料|軽油|給油|ガソリンスタンド
 lv:3DUS
 lt:4Degalinė|4Benzinas|4Dyzelis
 mr:पेट्रोल|इंधन|डिझेल|पेट्रोल पंप|पंप
+ms:3Stesen minyak|minyak|petrol|pam minyak
 nb:3Bensinstasjon
 nl:3Tankstation|3brandstof
 pl:3Stacja paliw
@@ -2363,6 +2381,7 @@ ko:수퍼마켓|슈퍼마켓
 lt:4Supermarketas|5maisto parduotuvė|prekybos centras
 lv:4Lielveikals
 mr:सुपरमार्केट|बाजार|महाबाजार
+ms:3Pasar raya|supermarket
 nb:3Supermarked
 nl:3Supermarkt
 pl:4Supermarket|zakupy
@@ -2709,6 +2728,7 @@ ko:1마켓|시장
 lt:4Turgus|5turgelis|turgavietė
 lv:Tirgus
 mr:बाजारपेठ|मार्केट|बाजार
+ms:3Pasar|pasar malam|pasar tani|pasar pagi
 nb:2Torg
 nl:3Markt
 pl:Targ|bazar|targowisko
@@ -3108,6 +3128,7 @@ ko:버스 정류장|버스
 lt:4Autobusų stotelė|5autobusas|autobuso stotelė
 lv:5Autobusu pietura|pietura|autobuss|autobusi
 mr:बस स्टॉप|बस थांबा
+ms:3Perhentian bas|bas
 nb:3Busstopp
 nl:3Bushalte|bus|halte
 pl:2Przystanek autobusowy|autobus
@@ -3233,6 +3254,7 @@ ko:1기차역|철도역|역사
 lt:5Geležinkelio stotis|stotis|5traukinys|5traukiniai|stoties pastatas
 lv:Vilcienu stacija|stacija|vilcieni
 mr:रेल्वे स्थानक|रेल्वे स्टेशन|स्टेशन बिल्डिंग
+ms:3Stesen keretapi|KTM|ETS|stesen
 nb:Togstasjon|stasjonsbygningen
 nl:4Station|4spoorwegen|spoor|3trein|stationsgebouw
 pl:Dworzec kolejowy|stacja kolejowa|pociąg|kolej|przystanek kolejowy|budynek stacji
@@ -3320,6 +3342,7 @@ ko:1지하철|전철
 lt:5Metro|5metropolitenas|metro stotis
 lv:Metro stacija|metro|+1F687
 mr:भुयारी मार्ग|मेट्रो मार्ग
+ms:3Stesen LRT|MRT|LRT|monorel
 nb:2T-bane|undergrunnsbane|3metro
 nl:3Metro|metrostation
 pl:3Metro|kolej podziemna
@@ -3794,6 +3817,7 @@ ko:모스크|사찰
 lt:4Mečetė
 lv:Mošeja|lūgšanu nams|lūgšanu vieta|templis
 mr:मशीद
+ms:4Masjid|surau|tempat ibadat|solat
 nb:4Moské|gudshus
 nl:4Moskee|tempel|gebedsplaats|gebedshuis
 pl:4Meczet|świątynia
@@ -6500,6 +6524,7 @@ ko:병원|개인병원|클리닉|의사|의사가
 lt:4Ligoninė
 lv:4Slimnīca
 mr:रुग्णालय|हॉस्पिटल
+ms:3Hospital|klinik|klinik kesihatan
 nb:5Sykehus
 nl:4Ziekenhuis|4hospitaal
 pl:4Szpital
@@ -6539,6 +6564,7 @@ ko:병원
 lv:Slimnīca|klīnika|poliklīnika|ārsts|dakteris|medicīnas centrs|medicīniskie pakalpojumi|ambulance
 lt:5Ligoninė|5Klinika|5Gydytojas|5Greitoji pagalba
 mr:रुग्णालय|हॉस्पिटल
+ms:3Hospital
 nl:Ziekenhuis|kliniek|hospitaal|3dokter|3eerste hulp
 pl:Szpital|klinika|lekarz|4doktor|leczenie
 pt:3Hospital|2Clínica|3médico|serviços de saúde|primeiros socorros
@@ -6578,6 +6604,7 @@ ja:クリニック|病院、診療所
 lv:Klīnika|slimnīca|poliklīnika
 lt:5Klinika|5Ligoninė|5Gydytojas
 mr:चिकित्सालय|क्लिनिक|दवाखाना
+ms:3Klinik|klinik kesihatan|klinik desa
 nb:4Klinikk|sykehus
 nl:4Kliniek|ziekenhuis|hospitaal
 pl:4Klinika|Szpital
@@ -7240,6 +7267,7 @@ hi:4पार्किंग
 ja:駐車場|パーキング|コインパーキング|駐車場入口
 lt:5Parkavimas|5stovėjimo aikštelė|automobilių stovėjimo aikštelė
 lv:Autostāvvieta
+ms:3Parkir|tempat letak kereta
 nl:3Parkeren|parkeerplaats|parking|parkeeringang
 pt:3Estacionamento
 pt-BR:3Estacionamento
@@ -7282,6 +7310,7 @@ ko:약국
 lt:5Vaistinė
 lv:Aptieka
 mr:औषधालय|फार्मसी|केमिस्ट
+ms:3Farmasi|ubat
 nb:3Apotek
 nl:3Apotheek
 pl:3Apteka
@@ -7323,6 +7352,7 @@ ko:약국|약물 매장|약종상
 lt:5Vaistinė|5Farmacijos parduotuvė|5Vaistai
 lv:Aptieka
 mr:औषधांचे दुकान|औषधालय
+ms:3Farmasi|kedai ubat
 nl:Apotheek|drogist
 pl:Apteka
 pt:Farmácia|parafarmácia
@@ -7366,6 +7396,7 @@ ko:우편
 lt:4Paštas
 lv:3Pasts
 mr:टपाल|पोस्ट
+ms:3Pos|pejabat pos
 nb:Post
 nl:Post
 pl:4Poczta
@@ -7449,6 +7480,7 @@ id:Kantor pos
 it:Ufficio postale
 lv:3Pasts
 mr:टपालघर|पोस्ट ऑफिस
+ms:3Pejabat pos|Pos Malaysia
 nl:3Postkantoor|post agentschap
 pl:Poczta|listy|urząd pocztowy|partner pocztowy
 pt:Estação de correios|Posto de correios|Correios
@@ -7490,6 +7522,7 @@ ko:차량검사
 lt:5Techninė apžiūra|5Transporto priemonių patikra
 lv:Transportlīdzekļu tehniskā apskate|tehniskā apskate|4CSDD
 mr:वाहन तपासणी
+ms:3Puspakom|pemeriksaan kenderaan
 nb:Inspeksjon av kjøretøy
 nl:Voertuiginspectie
 pl:Kontrola pojazdu
@@ -8365,6 +8398,7 @@ ko:화장실
 lt:5Tualetas|WC
 lv:3Tualete
 mr:शौचालय
+ms:3Tandas
 nb:3Toalett
 nl:3Toilet|WC
 pl:3Toaleta
@@ -8403,6 +8437,7 @@ it:WC|servizi igienici
 ja:トイレ|お手洗い|便所|厠
 ko:화장실
 lv:2WC
+ms:3Tandas
 nl:WC|toilet|toiletten
 pl:Toaleta|wc|ubikacja|wychodek
 pt:Casa de banho|WC|Sanitários|lavatório
@@ -9631,6 +9666,7 @@ it:Albergo|hotel
 ja:ホテル
 lv:motelis
 lt:5Viešbutis|5Motelis
+ms:3Hotel
 nl:Motel|hotel
 pl:Hotel
 pt:Motel|hotel
@@ -12063,6 +12099,7 @@ it:6Commissariato|5questura|4caserma|4guardia|5carabinieri|polizia
 ja:警察|1屯所|ポリス|交番|お巡りさん|おまわりさん|通報
 ko:경찰|경찰서|치안대
 lt:5Policija|5Policijos nuovada
+ms:3Balai polis|polis|PDRM
 nl:Politie
 pl:Policja|komisariat|posterunek
 pt:4Polícia|2Guarda Nacional Republicana|2GNR|2PSP|4Seccional
@@ -13094,6 +13131,7 @@ ko:관공서|정부청사|행정관청
 lt:5Valdžios įstaiga|5savivaldybė|valstybinė įstaiga
 lv:Valsts iestāde
 mr:सरकारी कार्यालय
+ms:3Pejabat kerajaan|JPJ|kerajaan|jabatan
 nb:Offentlig kontor
 nl:Overheidskantoor|overheidspand|regeringskantoor
 pl:Biuro instytucji rządowej
@@ -14996,6 +15034,7 @@ ko:세차|세차장
 lt:5Automobilių plovykla|5Automovykla
 lv:4Automazgāšana|4automazgātava|automazgātuve
 mr:कार धुणे|कार वॉश
+ms:3Cuci kereta
 nb:Bilvask
 nl:3Car wash|autowasstraat|wasstraat
 pl:Myjnia samochodowa
@@ -15103,6 +15142,7 @@ zh-Hant:充電站|充電樁|充電
 amenity-charging_station|@charging_station
 ja:充電ステーション
 ko:충전소|충전 역
+ms:3Pengecas EV|stesen pengecas|kereta elektrik
 sl:Polnilna postaja
 th:สถานีชาร์จ
 
@@ -15177,6 +15217,7 @@ ko:자동차 충전소|1전기차 충전소|EV 충전소|테슬라
 lt:5Elektromobilio įkroviklis|5automobilio įkrovimas|EV įkroviklis
 lv:Automobiļu uzlāde|mašīnu uzlāde|elektrouzlāde|e-mobi|ignitis ON
 mr:ईव्ही चार्जिंग स्टेशन|कार चार्जर
+ms:3Pengecas EV kereta|stesen pengecas
 nb:elbillader
 pl:ładowarka do samochodu|Greenway|Orlen Charge
 pt:carregador de carro|Galp Electric
@@ -16319,6 +16360,7 @@ ko:휴게소|고속도로 휴게소
 lt:5Poilsio vieta|5poilsiavietė|poilsio aikštelė|paslaugų zona
 lv:4Atpūtas vieta
 mr:महामार्ग विश्रांती क्षेत्र|विश्रांती क्षेत्र|सेवा क्षेत्र
+ms:3Hentian rehat|RnR|kawasan rehat
 nb:Rasteplass
 nl:Snelweg rustplaats|parkeerplaats|servicegebied
 pl:Miejsce odpoczynku|miejsce wypoczynku
@@ -16350,6 +16392,7 @@ ja:サービスエリア
 lt:5Paslaugų zona|5Aptarnavimo stotis
 lv:4Automobiļu apkalpošanas vieta
 mr:सेवा क्षेत्र
+ms:3Hentian rehat dan rawat|RnR
 nl:4Servicegebied
 pl:Miejsce obsługi podróżnych
 pt:Área de serviço
