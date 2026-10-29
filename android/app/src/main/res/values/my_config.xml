@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Malaysia Nav navigation HUD (NavHudView). Set to false to fall back to the stock Organic Maps HUD. -->
+  <bool name="my_nav_hud_enabled">true</bool>
+
+  <dimen name="my_hud_margin">12dp</dimen>
+  <!-- Portrait phones fill the width; in landscape and on tablets the HUD stays a start-aligned column. -->
+  <dimen name="my_hud_max_width">400dp</dimen>
+  <dimen name="my_hud_corner">20dp</dimen>
+  <dimen name="my_hud_sheet_corner">24dp</dimen>
+  <dimen name="my_hud_elevation">8dp</dimen>
+  <dimen name="my_turn_icon_size">64dp</dimen>
+  <dimen name="my_turn_icon_padding">4dp</dimen>
+  <dimen name="my_then_icon_size">22dp</dimen>
+  <dimen name="my_lanes_height">52dp</dimen>
+  <dimen name="my_speed_limit_size">56dp</dimen>
+  <dimen name="my_hud_button_size">44dp</dimen>
+
+  <dimen name="my_text_turn_distance">30sp</dimen>
+  <dimen name="my_text_turn_street">15sp</dimen>
+  <dimen name="my_text_then">12sp</dimen>
+  <dimen name="my_text_eta">28sp</dimen>
+  <dimen name="my_text_eta_subtitle">13sp</dimen>
+  <dimen name="my_text_speed">22sp</dimen>
+  <dimen name="my_text_speed_units">10sp</dimen>
+  <dimen name="my_text_button">14sp</dimen>
+</resources>
