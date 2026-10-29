@@ -238,6 +238,8 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
       update(RoutingController.get().getCachedRoutingInfo());
     }
     UiUtils.showIf(show, mFrame);
+    if (show && mNavHud != null)
+      mNavHud.refreshTolls();
     if (!show)
     {
       mMapButtonsViewModel.setTopHeaderHeight(0);
@@ -261,6 +263,13 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   {
     if (mNavMenu != null)
       mNavMenu.collapseNavBottomSheet();
+  }
+
+  // A route was built or rebuilt (reroute): the HUD's toll total follows the new geometry.
+  public void onRouteBuilt()
+  {
+    if (mNavHud != null && UiUtils.isVisible(mFrame))
+      mNavHud.refreshTolls();
   }
 
   public void refresh()

@@ -29,6 +29,7 @@ set(SRC
   app/organicmaps/sdk/routing/RoutingJni.hpp
   app/organicmaps/sdk/ChoosePositionMode.cpp
   app/organicmaps/sdk/MapStyle.cpp
+  app/organicmaps/sdk/my/MyTolls.cpp
   app/organicmaps/sdk/OrganicMaps.cpp
   app/organicmaps/sdk/Router.cpp
   app/organicmaps/sdk/core/jni_helper.cpp
@@ -97,6 +98,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE .)
 target_link_libraries(${PROJECT_NAME} PRIVATE
   # Organic Maps libs
   map
+  my_tolls
   # ge0
   # tracking
   # routing

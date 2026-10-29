@@ -54,6 +54,8 @@ class NavHudView @JvmOverloads constructor(context: Context, attrs: AttributeSet
     private val etaSubtitle: TextView
     private val voiceButton: ImageView
     private val progress: LinearProgressIndicator
+    private val tollChip: View
+    private val tollAmount: TextView
 
     private val ttsStateListener = Runnable { refreshVoiceState() }
     private var lastTopContentHeight = -1
@@ -91,6 +93,8 @@ class NavHudView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         etaSubtitle = findViewById(R.id.my_eta_subtitle)
         voiceButton = findViewById(R.id.my_voice)
         progress = findViewById(R.id.my_progress)
+        tollChip = findViewById(R.id.my_toll_chip)
+        tollAmount = findViewById(R.id.my_toll_amount)
 
         // Status bar and display cutouts pad the whole HUD; the ETA sheet alone extends under the navigation bar.
         ViewCompat.setOnApplyWindowInsetsListener(this, BaselinePaddingInsetsListener.excludeBottom())
@@ -108,6 +112,21 @@ class NavHudView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         updateTurn(info, isPedestrian)
         updateSpeed(info, speedMps)
         updateEta(info)
+    }
+
+    /** Recomputes the toll total of the current route; call when a route is built or rebuilt. */
+    fun refreshTolls() {
+        RouteTolls.compute(context) { total -> showTolls(total) }
+    }
+
+    private fun showTolls(total: RouteTollTotal?) {
+        val show = total != null && total.boothCount > 0
+        tollChip.isVisible = show
+        if (!show) return
+        val amount = String.format(Locale.getDefault(), "%.2f", total.amountRm)
+        // A "+" marks a lower bound: some booths on the route have no price in the table yet.
+        val suffix = if (total.unpricedBooths > 0) "+" else ""
+        tollAmount.text = resources.getString(R.string.my_nav_toll_amount, amount) + suffix
     }
 
     fun refreshVoiceState() {
