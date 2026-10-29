@@ -76,3 +76,5 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   balai polis, mamak, kopitiam, Puspakom, JPJ/pejabat kerajaan, pasar malam, parkir, tandas, stesen LRT/MRT/KTM…
   Next for search: 中文 and தமிழ் synonyms, Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99
   Speedmart, Mydin, KK Mart…).
+- 2026-10-30: docs/REPORTS.md — live reports v1 design (data model, TTLs, PDPA, rate limits, API, hosting options with
+  RM costs). Needs the founder's hosting choice and domain before client/back-end code.
