@@ -67,3 +67,7 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   app.organicmaps.sdk.my.MyTolls), prices from data/my_tolls.csv (52 open-system plazas, sourced), total in RM in the
   HUD ETA sheet ("+" when a booth on the route has no price yet). PLUS/LPT closed-system fares and "RM saved when
   avoiding tolls" still to do. Name decided: Sampai.
+- 2026-10-30: PR #3 identity — applicationId my.sampai.app, app name "Sampai" ("Sampai Beta"/"Sampai Debug"),
+  Play listing text for en-US and ms-MY rewritten for Sampai (other locales still carry the Organic Maps text;
+  rewrite before publishing). Still Organic Maps': launcher icon, splash logo, contact e-mail/website in
+  android/app/src/{fdroid,google}/play — trademark: replace before any public build.
