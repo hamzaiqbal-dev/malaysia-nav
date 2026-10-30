@@ -372,7 +372,13 @@ Listed so none of it reads as cleared:
 5. **Transitive dependency CVEs** -- no vulnerability database was consulted.
 6. **CI results for this stack** -- the PRs were opened with checks queued; this environment's proxy blocks
    Actions log storage, so verification was done locally (YAML parsing, XML validity, `git check-ignore`
-   behaviour) rather than by reading CI logs.
+   behaviour) rather than by reading CI logs. #14 and #15 were confirmed green, including both Android debug
+   builds, before the documentation PRs were opened.
+7. **The content of upstream's 45,000-commit history.** The secret scan covered the current working tree in
+   full, every filename ever added across all branches, and the complete added-line content of this fork's own
+   work (`master..feature/sampai-review-url`). It did not scan the diff content of upstream's entire history,
+   which is impractical and is Organic Maps' to audit rather than ours. If a secret of *theirs* is buried in an
+   old upstream commit, this review would not have found it.
 
 ## The short version
 
