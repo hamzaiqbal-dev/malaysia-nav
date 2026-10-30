@@ -239,7 +239,19 @@ mention, and it is the one place where Sampai data leaves the country by default
 disclose it; or exclude `bookmarks/` and accept that users lose saved places when they change phones. I would
 leave it and disclose it.
 
-### S-9 / S-10 (Low) -- Robustness in the fork's own toll code. Deferred
+### S-9 (Low) -- WebView Safe Browsing is disabled app-wide (`upstream`, deliberate). Accepted
+
+The manifest sets `android.webkit.WebView.EnableSafeBrowsing` to `false` and `WebView.MetricsOptOut` to `true`,
+with the comment that this disables Google's checks on visited sites and loaded URLs. That is a deliberate
+privacy trade: Safe Browsing would send URL information to Google for every page a WebView loads.
+
+Accepted as it stands, because the protection it removes is close to redundant here. The two WebViews with
+JavaScript enabled load only `file:///android_asset/` documents shipped inside the APK, and the two that render
+untrusted content run with JavaScript disabled -- and, after #14, can no longer load `http://` subresources
+either. Revisit this if any future feature loads an arbitrary remote URL into a WebView, because at that point
+Safe Browsing stops being redundant.
+
+### S-10 / S-11 (Low) -- Robustness in the fork's own toll code. Deferred
 
 - `Java_app_organicmaps_sdk_my_MyTolls_nativeFindTollBooths` calls `GetArrayLength` on its `jdoubleArray`
   without a null check. Passing `null` from Java is undefined behaviour in JNI rather than a Java exception.
