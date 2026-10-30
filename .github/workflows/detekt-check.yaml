@@ -1,8 +1,9 @@
 name: Static analysis - Kotlin (detekt)
 
 on:
+  workflow_dispatch: # Manual trigger
   pull_request:
-    branches: [ master ]
+    # No branch filter: a stacked PR targets another feature branch and must be checked too.
     paths:
       - '.github/workflows/detekt-check.yaml'
       - 'android/**/*.kt'
