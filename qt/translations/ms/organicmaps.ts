@@ -5,118 +5,118 @@
 <message id="cancel">
 <extracomment>Button text (should be short)</extracomment>
 <source>Cancel</source>
-<translation>Cancel</translation>
+<translation>Batal</translation>
 </message>
 <message id="delete">
 <extracomment>Button which deletes downloaded country</extracomment>
 <source>Delete</source>
-<translation>Delete</translation>
+<translation>Hapus</translation>
 </message>
 <message id="download_maps">
 <source>Download Maps</source>
-<translation>Download Maps</translation>
+<translation>Muat Turun Peta</translation>
 </message>
 <message id="downloading">
 <extracomment>Settings/Downloader - info for country which started downloading</extracomment>
 <source>Downloading…</source>
-<translation>Downloading…</translation>
+<translation>Sedang memuat turun…</translation>
 </message>
 <message id="kilometres">
 <extracomment>Choose measurement on first launch alert - choose metric system button</extracomment>
 <source>Kilometers</source>
-<translation>Kilometers</translation>
+<translation>Kilometer</translation>
 </message>
 <message id="miles">
 <extracomment>Choose measurement on first launch alert - choose imperial system button</extracomment>
 <source>Miles</source>
-<translation>Miles</translation>
+<translation>Batu</translation>
 </message>
 <message id="search">
 <extracomment>View and button titles for accessibility. Also used in iPhone home screen quick actions.</extracomment>
 <source>Search</source>
-<translation>Search</translation>
+<translation>Cari</translation>
 </message>
 <message id="zoom_to_country">
 <extracomment>View and button titles for accessibility</extracomment>
 <source>Show on the map</source>
-<translation>Show on the map</translation>
+<translation>Tunjuk pada peta</translation>
 </message>
 <message id="country_status_download_failed">
 <extracomment>Message to display at the center of the screen when the country download has failed</extracomment>
 <source>Download has failed</source>
-<translation>Download has failed</translation>
+<translation>Muat turun gagal</translation>
 </message>
 <message id="about_menu_title">
 <source>About Organic Maps</source>
-<translation>About Organic Maps</translation>
+<translation>Perihal Organic Maps</translation>
 </message>
 <message id="close">
 <source>Close</source>
-<translation>Close</translation>
+<translation>Tutup</translation>
 </message>
 <message id="download">
 <source>Download</source>
-<translation>Download</translation>
+<translation>Muat turun</translation>
 </message>
 <message id="bookmarks">
 <extracomment>Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied.</extracomment>
 <source>Bookmarks</source>
-<translation>Bookmarks</translation>
+<translation>Tanda Buku</translation>
 </message>
 <message id="bookmarks_and_tracks">
 <extracomment>&quot;Bookmarks and Tracks&quot; dialog title. Also used in iPhone home screen quick actions.</extracomment>
 <source>Bookmarks and Tracks</source>
-<translation>Bookmarks and Tracks</translation>
+<translation>Tanda buku dan trek</translation>
 </message>
 <message id="name">
 <extracomment>Add bookmark dialog - bookmark name</extracomment>
 <source>Name</source>
-<translation>Name</translation>
+<translation>Nama</translation>
 </message>
 <message id="settings">
 <extracomment>Settings button in system menu</extracomment>
 <source>Settings</source>
-<translation>Settings</translation>
+<translation>Tetapan</translation>
 </message>
 <message id="measurement_units">
 <extracomment>Measurement units title in settings activity</extracomment>
 <source>Measurement units</source>
-<translation>Measurement units</translation>
+<translation>Unit ukuran</translation>
 </message>
 <message id="category_eat">
 <extracomment>Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat!</extracomment>
 <source>Where to eat</source>
-<translation>Where to eat</translation>
+<translation>Tempat makan</translation>
 </message>
 <message id="category_food">
 <extracomment>Search category for grocery stores; any changes should be duplicated in categories.txt @category_food!</extracomment>
 <source>Groceries</source>
-<translation>Groceries</translation>
+<translation>Kedai runcit</translation>
 </message>
 <message id="category_transport">
 <extracomment>Search category for public transport; any changes should be duplicated in categories.txt @category_transport!</extracomment>
 <source>Transport</source>
-<translation>Transport</translation>
+<translation>Pengangkutan</translation>
 </message>
 <message id="category_fuel">
 <extracomment>Search category for fuel stations; any changes should be duplicated in categories.txt @category_fuel!</extracomment>
 <source>Gas</source>
-<translation>Gas</translation>
+<translation>Minyak</translation>
 </message>
 <message id="category_parking">
 <extracomment>Search category for parking lots; any changes should be duplicated in categories.txt @category_parking!</extracomment>
 <source>Parking</source>
-<translation>Parking</translation>
+<translation>Tempat letak kereta</translation>
 </message>
 <message id="category_shopping">
 <extracomment>Search category for malls/clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @category_shopping!</extracomment>
 <source>Shopping</source>
-<translation>Shopping</translation>
+<translation>Beli-belah</translation>
 </message>
 <message id="category_secondhand">
 <extracomment>Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @category_secondhand!</extracomment>
 <source>Second Hand</source>
-<translation>Second Hand</translation>
+<translation>Barang terpakai</translation>
 </message>
 <message id="category_hotel">
 <extracomment>Search category for places to stay; any changes should be duplicated in categories.txt @category_hotel!</extracomment>
@@ -126,12 +126,12 @@
 <message id="category_tourism">
 <extracomment>Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @category_tourism!</extracomment>
 <source>Sights</source>
-<translation>Sights</translation>
+<translation>Tempat menarik</translation>
 </message>
 <message id="category_entertainment">
 <extracomment>Search category for entertainment; any changes should be duplicated in categories.txt @category_entertainment! Also a bookmarks list group header when sorting by type.</extracomment>
 <source>Entertainment</source>
-<translation>Entertainment</translation>
+<translation>Hiburan</translation>
 </message>
 <message id="category_atm">
 <extracomment>Search category for ATMs; any changes should be duplicated in categories.txt @category_atm!</extracomment>
@@ -141,12 +141,12 @@
 <message id="category_nightlife">
 <extracomment>Search category for nightclubs/bars; any changes should be duplicated in categories.txt @category_nightlife!</extracomment>
 <source>Nightlife</source>
-<translation>Nightlife</translation>
+<translation>Hiburan malam</translation>
 </message>
 <message id="category_children">
 <extracomment>Search category for water park/disneyland/playground/toys store; any changes should be duplicated in categories.txt @category_children!</extracomment>
 <source>Family holiday</source>
-<translation>Family holiday</translation>
+<translation>Percutian keluarga</translation>
 </message>
 <message id="category_bank">
 <extracomment>Search category for banks; any changes should be duplicated in categories.txt @category_bank!</extracomment>
@@ -156,7 +156,7 @@
 <message id="category_pharmacy">
 <extracomment>Search category for pharmacies; any changes should be duplicated in categories.txt @category_pharmacy!</extracomment>
 <source>Pharmacy</source>
-<translation>Pharmacy</translation>
+<translation>Farmasi</translation>
 </message>
 <message id="category_hospital">
 <extracomment>Search category for hospitals; any changes should be duplicated in categories.txt @category_hospital!</extracomment>
@@ -166,141 +166,141 @@
 <message id="category_toilet">
 <extracomment>Search category for toilets; any changes should be duplicated in categories.txt @category_toilet!</extracomment>
 <source>Toilet</source>
-<translation>Toilet</translation>
+<translation>Tandas</translation>
 </message>
 <message id="category_post">
 <extracomment>Search category for post offices; any changes should be duplicated in categories.txt @category_post!</extracomment>
 <source>Post</source>
-<translation>Post</translation>
+<translation>Pos</translation>
 </message>
 <message id="category_police">
 <extracomment>Search category for police; any changes should be duplicated in categories.txt @category_police!</extracomment>
 <source>Police</source>
-<translation>Police</translation>
+<translation>Polis</translation>
 </message>
 <message id="category_recycling">
 <extracomment>Search category for recycling; any changes should be duplicated in categories.txt @category_recycling!</extracomment>
 <source>Recycling</source>
-<translation>Recycling</translation>
+<translation>Kitar semula</translation>
 </message>
 <message id="category_water">
 <extracomment>Search category for water; any changes should be duplicated in categories.txt @category_water! Also a bookmarks list group header when sorting by type.</extracomment>
 <source>Water</source>
-<translation>Water</translation>
+<translation>Air</translation>
 </message>
 <message id="category_rv">
 <extracomment>Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv!</extracomment>
 <source>RV Facilities</source>
-<translation>RV Facilities</translation>
+<translation>Kemudahan RV</translation>
 </message>
 <message id="share">
 <extracomment>Share button text which opens menu with more buttons, like Message, EMail, Facebook etc.</extracomment>
 <source>Share</source>
-<translation>Share</translation>
+<translation>Kongsi</translation>
 </message>
 <message id="share_my_position">
 <extracomment>Text shown before a shared &quot;my position&quot; link, and the email subject when sharing the current location.</extracomment>
 <source>I am here on Organic Maps</source>
-<translation>I am here on Organic Maps</translation>
+<translation>Saya di sini pada Organic Maps</translation>
 </message>
 <message id="share_place_subject">
 <extracomment>Email subject when sharing a place. %1$@ is the place name or address.</extracomment>
 <source>%1 on Organic Maps</source>
-<translation>%1 on Organic Maps</translation>
+<translation>%1 pada Organic Maps</translation>
 </message>
 <message id="share_place_subject_default">
 <extracomment>Email subject when sharing a place that has no name or address.</extracomment>
 <source>A place on Organic Maps</source>
-<translation>A place on Organic Maps</translation>
+<translation>Satu tempat pada Organic Maps</translation>
 </message>
 <message id="share_open_in_om_or_browser">
 <extracomment>Shared email link text; opens the shared place in Organic Maps or in a web browser.</extracomment>
 <source>Open in Organic Maps or in a browser</source>
-<translation>Open in Organic Maps or in a browser</translation>
+<translation>Buka dalam Organic Maps atau dalam pelayar</translation>
 </message>
 <message id="share_get_om">
 <extracomment>Shared email link text; leads to the Organic Maps download page.</extracomment>
 <source>Get Organic Maps</source>
-<translation>Get Organic Maps</translation>
+<translation>Dapatkan Organic Maps</translation>
 </message>
 <message id="open_in_app">
 <extracomment>Title for the &quot;Open in Another App&quot; button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app.</extracomment>
 <source>Open in Another App</source>
-<translation>Open in Another App</translation>
+<translation>Buka dalam Aplikasi Lain</translation>
 </message>
 <message id="email">
 <extracomment>Share by email button text, also used in editor and About.</extracomment>
 <source>Email</source>
-<translation>Email</translation>
+<translation>E-mel</translation>
 </message>
 <message id="tracks_title">
 <extracomment>Title for tracks category in bookmarks manager</extracomment>
 <source>Tracks</source>
-<translation>Tracks</translation>
+<translation>Trek</translation>
 </message>
 <message id="prefs_group_route">
 <source>Navigation</source>
-<translation>Navigation</translation>
+<translation>Navigasi</translation>
 </message>
 <message id="pref_map_style_title">
 <extracomment>Settings «Map» category: «Night style» title</extracomment>
 <source>Night Mode</source>
-<translation>Night Mode</translation>
+<translation>Mod Malam</translation>
 </message>
 <message id="off">
 <extracomment>Generic «Off» string</extracomment>
 <source>Off</source>
-<translation>Off</translation>
+<translation>Mati</translation>
 </message>
 <message id="on">
 <extracomment>Generic «On» string</extracomment>
 <source>On</source>
-<translation>On</translation>
+<translation>Hidup</translation>
 </message>
 <message id="pref_bg_tiles_title">
 <extracomment>Settings: title of the satellite imagery (custom raster tiles) screen</extracomment>
 <source>Satellite Imagery</source>
-<translation>Satellite Imagery</translation>
+<translation>Imej Satelit</translation>
 </message>
 <message id="pref_bg_tiles_url_title">
 <extracomment>Settings «Satellite Imagery»: title of the tile server URL input field</extracomment>
 <source>Server URL</source>
-<translation>Server URL</translation>
+<translation>URL pelayan</translation>
 </message>
 <message id="pref_bg_tiles_size_title">
 <extracomment>Settings «Satellite Imagery»: title of the on-disk tile cache size limit (in megabytes)</extracomment>
 <source>Cache size (MB)</source>
-<translation>Cache size (MB)</translation>
+<translation>Saiz cache (MB)</translation>
 </message>
 <message id="pref_bg_tiles_opacity_title">
 <extracomment>Settings «Satellite Imagery»: opacity of vector area objects drawn over the imagery (0% hides them)</extracomment>
 <source>Area objects opacity</source>
-<translation>Area objects opacity</translation>
+<translation>Kelegapan objek kawasan</translation>
 </message>
 <message id="pref_bg_tiles_disclaimer">
 <extracomment>Settings «Satellite Imagery»: legal note that the user is responsible for the custom tile source they configure</extracomment>
 <source>Custom tile sources are provided by you. Use only services you are allowed to access. You are responsible for attribution, license terms, API keys, quotas, and usage limits.</source>
-<translation>Custom tile sources are provided by you. Use only services you are allowed to access. You are responsible for attribution, license terms, API keys, quotas, and usage limits.</translation>
+<translation>Sumber jubin tersuai disediakan oleh anda. Gunakan hanya perkhidmatan yang anda dibenarkan mengaksesnya. Anda bertanggungjawab atas atribusi, terma lesen, kunci API, kuota dan had penggunaan.</translation>
 </message>
 <message id="website">
 <extracomment>Text in menu</extracomment>
 <source>Website</source>
-<translation>Website</translation>
+<translation>Laman web</translation>
 </message>
 <message id="help">
 <extracomment>Text in menu</extracomment>
 <source>Help</source>
-<translation>Help</translation>
+<translation>Bantuan</translation>
 </message>
 <message id="downloader_queued">
 <extracomment>Country queued for download</extracomment>
 <source>Queued</source>
-<translation>Queued</translation>
+<translation>Dalam baris gilir</translation>
 </message>
 <message id="downloader_retry">
 <extracomment>Item status in downloader.</extracomment>
 <source>Retry</source>
-<translation>Retry</translation>
+<translation>Cuba lagi</translation>
 </message>
 <message id="version">
 <extracomment>Prints version number in About dialog</extracomment>
@@ -314,7 +314,7 @@
 </message>
 <message id="categories">
 <source>Categories</source>
-<translation>Categories</translation>
+<translation>Kategori</translation>
 </message>
 <message id="read_in_wikipedia">
 <extracomment>Place Page link to Wikipedia article (if map object has it).</extracomment>
@@ -328,87 +328,87 @@
 </message>
 <message id="p2p_from_here">
 <source>Route from</source>
-<translation>Route from</translation>
+<translation>Laluan dari</translation>
 </message>
 <message id="p2p_to_here">
 <source>Route to</source>
-<translation>Route to</translation>
+<translation>Laluan ke</translation>
 </message>
 <message id="editor_time_title">
 <source>Business Hours</source>
-<translation>Business Hours</translation>
+<translation>Waktu Operasi</translation>
 </message>
 <message id="login">
 <source>Login</source>
-<translation>Login</translation>
+<translation>Masuk</translation>
 </message>
 <message id="login_osm">
 <source>Login to OpenStreetMap</source>
-<translation>Login to OpenStreetMap</translation>
+<translation>Masuk ke OpenStreetMap</translation>
 </message>
 <message id="password">
 <source>Password</source>
-<translation>Password</translation>
+<translation>Kata laluan</translation>
 </message>
 <message id="logout">
 <source>Log Out</source>
-<translation>Log Out</translation>
+<translation>Keluar</translation>
 </message>
 <message id="edit_place">
 <source>Edit Place</source>
-<translation>Edit Place</translation>
+<translation>Sunting Tempat</translation>
 </message>
 <message id="street">
 <source>Street</source>
-<translation>Street</translation>
+<translation>Jalan</translation>
 </message>
 <message id="house_number">
 <extracomment>Editable House Number text field (in address block).</extracomment>
 <source>Building number</source>
-<translation>Building number</translation>
+<translation>Nombor bangunan</translation>
 </message>
 <message id="cuisine">
 <source>Cuisine</source>
-<translation>Cuisine</translation>
+<translation>Masakan</translation>
 </message>
 <message id="email_or_username">
 <extracomment>login text field</extracomment>
 <source>Email or username</source>
-<translation>Email or username</translation>
+<translation>E-mel atau nama pengguna</translation>
 </message>
 <message id="level">
 <source>Floor</source>
-<translation>Floor</translation>
+<translation>Tingkat</translation>
 </message>
 <message id="editor_edit_place_category_title">
 <source>Category</source>
-<translation>Category</translation>
+<translation>Kategori</translation>
 </message>
 <message id="downloader_of">
 <extracomment>Downloaded 10 **of** 20 &lt;- it is that &quot;of&quot;</extracomment>
 <source>%1 of %2</source>
-<translation>%1 of %2</translation>
+<translation>%1 daripada %2</translation>
 </message>
 <message id="editor_storey_number">
 <source>Number of floors (maximum of %1)</source>
-<translation>Number of floors (maximum of %1)</translation>
+<translation>Bilangan tingkat (maksimum %1)</translation>
 </message>
 <message id="editor_operator">
 <source>Operator</source>
-<translation>Operator</translation>
+<translation>Pengendali</translation>
 </message>
 <message id="kilometers_per_hour">
 <extracomment>abbreviation for kilometers per hour</extracomment>
 <source>km/h</source>
-<translation>km/h</translation>
+<translation>km/j</translation>
 </message>
 <message id="miles_per_hour">
 <source>mph</source>
-<translation>mph</translation>
+<translation>bsj</translation>
 </message>
 <message id="hour">
 <source>h</source>
-<translation>h</translation>
+<translation>j</translation>
 </message>
 <message id="minute">
 <source>min</source>
@@ -416,7 +416,7 @@
 </message>
 <message id="day">
 <source>d</source>
-<translation>d</translation>
+<translation>h</translation>
 </message>
 <message id="second">
 <source>s</source>
@@ -424,141 +424,141 @@
 </message>
 <message id="placepage_more_button">
 <source>More</source>
-<translation>More</translation>
+<translation>Lagi</translation>
 </message>
 <message id="editor_remove_place_button">
 <source>Delete</source>
-<translation>Delete</translation>
+<translation>Hapus</translation>
 </message>
 <message id="accept">
 <extracomment>For the first routing</extracomment>
 <source>Accept</source>
-<translation>Accept</translation>
+<translation>Terima</translation>
 </message>
 <message id="decline">
 <extracomment>For the first routing</extracomment>
 <source>Decline</source>
-<translation>Decline</translation>
+<translation>Tolak</translation>
 </message>
 <message id="big_font">
 <source>Increase size for map labels</source>
-<translation>Increase size for map labels</translation>
+<translation>Besarkan saiz label peta</translation>
 </message>
 <message id="transliteration_title">
 <source>Transliterate into Latin alphabet</source>
-<translation>Transliterate into Latin alphabet</translation>
+<translation>Transliterasi ke abjad Latin</translation>
 </message>
 <message id="placepage_add_stop">
 <extracomment>Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route.</extracomment>
 <source>Add Stop</source>
-<translation>Add Stop</translation>
+<translation>Tambah Perhentian</translation>
 </message>
 <message id="bookmarks_import">
 <extracomment>Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files</extracomment>
 <source>Import Bookmarks and Tracks</source>
-<translation>Import Bookmarks and Tracks</translation>
+<translation>Import Tanda Buku dan Trek</translation>
 </message>
 <message id="please_wait">
 <source>Please wait…</source>
-<translation>Please wait…</translation>
+<translation>Sila tunggu…</translation>
 </message>
 <message id="button_layer_traffic">
 <source>Traffic</source>
-<translation>Traffic</translation>
+<translation>Lalu lintas</translation>
 </message>
 <message id="button_layer_hiking">
 <extracomment>Hiking routes layer name in the Styles and Layers dialog</extracomment>
 <source>Hiking</source>
-<translation>Hiking</translation>
+<translation>Mendaki</translation>
 </message>
 <message id="button_layer_cycling">
 <extracomment>Cycling routes layer name in the Styles and Layers dialog</extracomment>
 <source>Cycling</source>
-<translation>Cycling</translation>
+<translation>Berbasikal</translation>
 </message>
 <message id="button_layer_subway">
 <source>Subway</source>
-<translation>Subway</translation>
+<translation>Transit rel</translation>
 </message>
 <message id="export_file">
 <extracomment>Menu title for exporting a file in the default KMZ format</extracomment>
 <source>Export KMZ</source>
-<translation>Export KMZ</translation>
+<translation>Eksport KMZ</translation>
 </message>
 <message id="export_file_gpx">
 <extracomment>Menu title for exporting a file in GPX format</extracomment>
 <source>Export GPX</source>
-<translation>Export GPX</translation>
+<translation>Eksport GPX</translation>
 </message>
 <message id="export_file_geojson">
 <extracomment>Menu title for exporting a file in GeoJSON format</extracomment>
 <source>Export GeoJSON</source>
-<translation>Export GeoJSON</translation>
+<translation>Eksport GeoJSON</translation>
 </message>
 <message id="bookmarks_text_placement_title">
 <extracomment>Settings/Bookmark Text Placement</extracomment>
 <source>Bookmark names on the map</source>
-<translation>Bookmark names on the map</translation>
+<translation>Nama tanda buku pada peta</translation>
 </message>
 <message id="show_to_the_right">
 <source>Show to the right</source>
-<translation>Show to the right</translation>
+<translation>Tunjukkan di sebelah kanan</translation>
 </message>
 <message id="show_at_the_bottom">
 <source>Show at the bottom</source>
-<translation>Show at the bottom</translation>
+<translation>Tunjukkan di bahagian bawah</translation>
 </message>
 <message id="routing_options_driving">
 <extracomment>Driving profile in routing options settings.</extracomment>
 <source>Driving</source>
-<translation>Driving</translation>
+<translation>Memandu</translation>
 </message>
 <message id="routing_options_cycling">
 <extracomment>Cycling profile in routing options settings.</extracomment>
 <source>Cycling</source>
-<translation>Cycling</translation>
+<translation>Berbasikal</translation>
 </message>
 <message id="routing_options_walking">
 <extracomment>Walking profile in routing options settings.</extracomment>
 <source>Walking</source>
-<translation>Walking</translation>
+<translation>Berjalan kaki</translation>
 </message>
 <message id="toll_road">
 <source>Toll road</source>
-<translation>Toll road</translation>
+<translation>Jalan bertol</translation>
 </message>
 <message id="unpaved_road">
 <source>Unpaved road</source>
-<translation>Unpaved road</translation>
+<translation>Jalan tanah</translation>
 </message>
 <message id="ferry_crossing">
 <source>Ferry crossing</source>
-<translation>Ferry crossing</translation>
+<translation>Perkhidmatan feri</translation>
 </message>
 <message id="road_warning_steps">
 <extracomment>Route warning shown on the map for this obstacle type.</extracomment>
 <source>Stairs</source>
-<translation>Stairs</translation>
+<translation>Tangga</translation>
 </message>
 <message id="road_warning_gate">
 <extracomment>Route warning shown on the map for this obstacle type.</extracomment>
 <source>Gate</source>
-<translation>Gate</translation>
+<translation>Pintu pagar</translation>
 </message>
 <message id="road_warning_lift_gate">
 <extracomment>Route warning shown on the map for this obstacle type.</extracomment>
 <source>Lift Gate</source>
-<translation>Lift Gate</translation>
+<translation>Palang</translation>
 </message>
 <message id="yes">
 <extracomment>A generic &quot;Yes&quot; button in dialogs</extracomment>
 <source>Yes</source>
-<translation>Yes</translation>
+<translation>Ya</translation>
 </message>
 <message id="no">
 <extracomment>A generic &quot;No&quot; button in dialogs</extracomment>
 <source>No</source>
-<translation>No</translation>
+<translation>Tidak</translation>
 </message>
 <message id="ok">
 <source>OK</source>
@@ -566,27 +566,27 @@
 </message>
 <message id="week_ago_sorttype">
 <source>A week ago</source>
-<translation>A week ago</translation>
+<translation>Seminggu lalu</translation>
 </message>
 <message id="month_ago_sorttype">
 <source>A month ago</source>
-<translation>A month ago</translation>
+<translation>Sebulan lalu</translation>
 </message>
 <message id="moremonth_ago_sorttype">
 <source>More than a month ago</source>
-<translation>More than a month ago</translation>
+<translation>Lebih sebulan lalu</translation>
 </message>
 <message id="moreyear_ago_sorttype">
 <source>More than a year ago</source>
-<translation>More than a year ago</translation>
+<translation>Lebih setahun lalu</translation>
 </message>
 <message id="near_me_sorttype">
 <source>Near me</source>
-<translation>Near me</translation>
+<translation>Berdekatan saya</translation>
 </message>
 <message id="others_sorttype">
 <source>Others</source>
-<translation>Others</translation>
+<translation>Lain-lain</translation>
 </message>
 <message id="invalid_username_or_password">
 <source>Invalid username or password.</source>
@@ -614,72 +614,72 @@
 </message>
 <message id="food_places">
 <source>Food</source>
-<translation>Food</translation>
+<translation>Makanan</translation>
 </message>
 <message id="tourist_places">
 <source>Sights</source>
-<translation>Sights</translation>
+<translation>Tempat menarik</translation>
 </message>
 <message id="museums">
 <source>Museums</source>
-<translation>Museums</translation>
+<translation>Muzium</translation>
 </message>
 <message id="parks">
 <source>Parks</source>
-<translation>Parks</translation>
+<translation>Taman</translation>
 </message>
 <message id="swim_places">
 <source>Swim</source>
-<translation>Swim</translation>
+<translation>Tempat mandi</translation>
 </message>
 <message id="mountains">
 <source>Mountains</source>
-<translation>Mountains</translation>
+<translation>Gunung</translation>
 </message>
 <message id="animals">
 <source>Animals</source>
-<translation>Animals</translation>
+<translation>Haiwan</translation>
 </message>
 <message id="hotels">
 <source>Hotels</source>
-<translation>Hotels</translation>
+<translation>Hotel</translation>
 </message>
 <message id="buildings">
 <source>Buildings</source>
-<translation>Buildings</translation>
+<translation>Bangunan</translation>
 </message>
 <message id="money">
 <source>Money</source>
-<translation>Money</translation>
+<translation>Wang</translation>
 </message>
 <message id="shops">
 <source>Shops</source>
-<translation>Shops</translation>
+<translation>Kedai</translation>
 </message>
 <message id="parkings">
 <source>Parking</source>
-<translation>Parking</translation>
+<translation>Tempat letak kereta</translation>
 </message>
 <message id="fuel_places">
 <source>Gas Stations</source>
-<translation>Gas Stations</translation>
+<translation>Stesen minyak</translation>
 </message>
 <message id="medicine">
 <source>Medicine</source>
-<translation>Medicine</translation>
+<translation>Perubatan</translation>
 </message>
 <message id="religious_places">
 <source>Religious places</source>
-<translation>Religious places</translation>
+<translation>Tempat ibadat</translation>
 </message>
 <message id="button_layer_isolines">
 <source>Contour Lines</source>
-<translation>Contour Lines</translation>
+<translation>Garis Kontur</translation>
 </message>
 <message id="change_map_locale">
 <extracomment>Current language of the map!</extracomment>
 <source>Map language</source>
-<translation>Map language</translation>
+<translation>Bahasa peta</translation>
 </message>
 <message id="translated_om_site_url">
 <extracomment>Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content</extracomment>
@@ -689,45 +689,45 @@
 <message id="button_layer_outdoor">
 <extracomment>Outdoors/hiking map style (activity) name in the Styles and Layers dialog</extracomment>
 <source>Outdoors</source>
-<translation>Outdoors</translation>
+<translation>Aktiviti luar</translation>
 </message>
 <message id="drive_through">
 <source>Drive-through</source>
-<translation>Drive-through</translation>
+<translation>Pandu lalu</translation>
 </message>
 <message id="zoom_in">
 <extracomment>Accessibility text for the zoom-in button on the map and visible title for the CarPlay dashboard button. Keep it short.</extracomment>
 <source>Zoom in</source>
-<translation>Zoom in</translation>
+<translation>Zum masuk</translation>
 </message>
 <message id="zoom_out">
 <extracomment>Accessibility text for the zoom-out button on the map and visible title for the CarPlay dashboard button. Keep it short.</extracomment>
 <source>Zoom out</source>
-<translation>Zoom out</translation>
+<translation>Zum keluar</translation>
 </message>
 <message id="website_menu">
 <extracomment>Restaurant or other food place&#x27;s menu URL field in the Editor</extracomment>
 <source>Menu Link</source>
-<translation>Menu Link</translation>
+<translation>Pautan Menu</translation>
 </message>
 <message id="self_service">
 <extracomment>To indicate if the place proposed self service…</extracomment>
 <source>Self-service</source>
-<translation>Self-service</translation>
+<translation>Layan diri</translation>
 </message>
 <message id="outdoor_seating">
 <extracomment>To indicate if restaurant or other place has outdoor seating</extracomment>
 <source>Outdoor seating</source>
-<translation>Outdoor seating</translation>
+<translation>Tempat duduk di luar</translation>
 </message>
 <message id="choose_color">
 <source>Choose Color</source>
-<translation>Choose Color</translation>
+<translation>Pilih Warna</translation>
 </message>
 <message id="follow_system">
 <extracomment>Setting option to sync the app&#x27;s theme with the operating system&#x27;s dark/light mode</extracomment>
 <source>Follow the system</source>
-<translation>Follow the system</translation>
+<translation>Ikut sistem</translation>
 </message>
 <message id="clear">
 <extracomment>Title for the &quot;Clear&quot; button on the Recently Deleted Lists screen.</extracomment>
@@ -741,12 +741,12 @@
 <message id="core_my_position">
 <extracomment>A text for current gps location point/arrow selected on the map</extracomment>
 <source>My Position</source>
-<translation>My Position</translation>
+<translation>Posisi Saya</translation>
 </message>
 <message id="core_my_places">
 <extracomment>Default bookmark list name</extracomment>
 <source>My Places</source>
-<translation>My Places</translation>
+<translation>Tempat Saya</translation>
 </message>
 <message id="category_wifi">
 <extracomment>Search category for WiFi access; any changes should be duplicated in categories.txt @category_wifi!</extracomment>
@@ -755,12 +755,12 @@
 </message>
 <message id="postal_code">
 <source>Postal Code</source>
-<translation>Postal Code</translation>
+<translation>Kod Pos</translation>
 </message>
 <message id="core_placepage_unknown_place">
 <extracomment>Place Page title for long tap</extracomment>
 <source>Map Point</source>
-<translation>Map Point</translation>
+<translation>Titik Peta</translation>
 </message>
 <message id="m">
 <extracomment>abbreviation for meters</extracomment>
@@ -775,21 +775,21 @@
 <message id="mi">
 <extracomment>abbreviation for mile(s)</extracomment>
 <source>mi</source>
-<translation>mi</translation>
+<translation>bt</translation>
 </message>
 <message id="ft">
 <extracomment>A unit of measure</extracomment>
 <source>ft</source>
-<translation>ft</translation>
+<translation>kaki</translation>
 </message>
 <message id="core_exit">
 <extracomment>Subway exits for public transport marks on the map</extracomment>
 <source>Exit</source>
-<translation>Exit</translation>
+<translation>Keluar</translation>
 </message>
 <message id="core_entrance">
 <source>Entrance</source>
-<translation>Entrance</translation>
+<translation>Masuk</translation>
 </message>
 <message id="download_region_with_size">
 <extracomment>Download button: first placeholder is the region, second is the formatted size.</extracomment>
@@ -1154,12 +1154,12 @@
 <message id="choose_start_location">
 <extracomment>Search field hint and full-screen map point picker title shown while choosing the starting point of a route. Kept short because shortcut and voice-search buttons narrow the field</extracomment>
 <source>Start point</source>
-<translation>Start point</translation>
+<translation>Titik mula</translation>
 </message>
 <message id="choose_destination">
 <extracomment>Search field hint and full-screen map point picker title shown while choosing the destination of a route. Kept short because shortcut and voice-search buttons narrow the field</extracomment>
 <source>Destination</source>
-<translation>Destination</translation>
+<translation>Destinasi</translation>
 </message>
 <message id="routing_coordinates_hint">
 <extracomment>Placeholder for a routing endpoint, entered as a latitude and longitude pair.</extracomment>
