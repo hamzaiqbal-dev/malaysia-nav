@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
-  <base-config cleartextTrafficPermitted="true">
+  <!-- Map downloads carry no hash, so TLS is the only thing standing between a route and tampered
+       map data. The download servers are read from the metaserver at runtime, which means allowing
+       cleartext would let a network attacker hand the app plain-HTTP mirrors of its own choosing.
+       If a mirror ever turns out to be HTTP-only, add a domain-config for that one domain rather
+       than permitting cleartext everywhere. -->
+  <base-config cleartextTrafficPermitted="false">
     <trust-anchors>
       <!-- Certificates are required for Android 7 and below. See the link for details:
            https://community.letsencrypt.org/t/letsencrypt-certificates-fails-on-android-phones-running-android-7-or-older/205686 -->
@@ -13,8 +18,4 @@
       <certificates src="system" />
     </trust-anchors>
   </base-config>
-  <domain-config cleartextTrafficPermitted="true">
-    <domain includeSubdomains="true">organicmaps.app</domain>
-    <domain includeSubdomains="true">omaps.app</domain>
-  </domain-config>
 </network-security-config>
