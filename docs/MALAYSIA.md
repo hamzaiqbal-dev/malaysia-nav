@@ -78,3 +78,18 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   Speedmart, Mydin, KK Mart…).
 - 2026-10-30: docs/REPORTS.md — live reports v1 design (data model, TTLs, PDPA, rate limits, API, hosting options with
   RM costs). Needs the founder's hosting choice and domain before client/back-end code.
+- 2026-10-30 (late): PR #7 Bahasa Melayu UI — 616 new ms definitions in data/strings/strings.txt, so the Android app,
+  SDK, Android Auto, routing, downloader and Wear modules are fully BM (values-ms: 19 → 582 strings in the app module,
+  plus new values-ms folders for the five other modules). PR #8 BM voice guidance — all 68 TTS phrases in sound.txt,
+  data/sound-strings/ms.json generated, "Bahasa Melayu" added to the voice picker (libs/platform/languages.hpp).
+  Open decision for the founder: whether values/ (the default locale, today English) should become BM, which is step 4
+  of design/README.md. Until then BM is a selectable locale and English is the fallback for anything untranslated.
+- 2026-10-30 (late): CI audit. The "Android Check" failure mailed for cfa6909 on feature/sampai-identity was the
+  app-id rename: android/app/build.gradle's checkApkPermissions allow-list still matched
+  app.organicmaps…DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, so both debug builds failed on the renamed
+  my.sampai.app permission. Already fixed in c086a9d (head of that branch), which builds green.
+  Two gaps found and worked around: (a) the kotlin style, detekt and clang-format workflows only trigger on
+  pull_request with branches: [master], so a stacked PR never runs them — ktlint 1.8.0, detekt 1.23.8 and
+  clang-format 23 were run locally over the whole chain instead and are clean; (b) only Android Check had ever been
+  dispatched, so the C++ of libs/my_tolls had never been compiled by CI — the CMake workflow was dispatched for the
+  chain and passes. Worth making those three workflows run on every PR base, not just master.
