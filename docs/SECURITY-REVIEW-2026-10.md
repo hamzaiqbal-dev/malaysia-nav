@@ -13,7 +13,7 @@ security property, and findings in it are marked `upstream`. Upstream code was n
 
 | ID | Severity | Finding | Status |
 |---|---|---|---|
-| S-1 | **Critical** | Live OSM OAuth secrets committed in a tracked `private.h` in a public repository | **Needs your action** |
+| S-1 | Medium | Sampai inherits Organic Maps' OpenStreetMap OAuth credentials via the tracked `private.h` | **Blocks release** |
 | S-2 | High | Cleartext HTTP permitted for all domains, while map downloads have no integrity hash | Fixed in #14 |
 | S-3 | Medium | 14 CI workflows declared no `permissions:`, falling back to the repository default | Fixed in #15 |
 | S-4 | Medium | Nine third-party GitHub Actions pinned to mutable tags, not commit SHAs | Deferred -- see below |
@@ -29,56 +29,74 @@ security property, and findings in it are marked `upstream`. Upstream code was n
 | S-14 | Info | `mpandroidchart` is an alpha of a community fork | Monitor |
 | S-15 | **Decision** | Privacy notice and PDPA position required before public release | **Needs your decision** |
 
-## S-1 (Critical) -- OSM OAuth secrets are committed in a public repository
+## S-1 (Medium) -- Sampai inherits Organic Maps' OpenStreetMap OAuth credentials
 
-`private.h` at the repository root is tracked by git. `docs/CREDENTIALS.md` in this same repository documents
-that file as the `PRIVATE_H` CI secret, injected from GitHub Actions -- so by the project's own convention it is
-a secret file and must never be committed. It is committed anyway.
-
-Three of its macros hold live-looking credential values (24+ characters, token-shaped, no placeholder wording):
+`private.h` at the repository root is tracked by git and three of its macros hold real-looking credential
+values -- 24+ characters, token-shaped, not placeholder or filler text:
 
 - `OSM_CONSUMER_KEY`
 - `OSM_CONSUMER_SECRET`
 - `OSM_OAUTH2_CLIENT_SECRET`
 
-The remaining sensitive macros (`USER_BINDING_PKCS12`, `USER_BINDING_PKCS12_PASSWORD`) are empty, and the other
-non-empty macros are endpoint URLs, an OAuth2 client id, an OAuth2 redirect URI and scope, and a Kayak affiliate
-id.
+The other sensitive macros (`USER_BINDING_PKCS12`, `USER_BINDING_PKCS12_PASSWORD`) are empty. The remaining
+non-empty macros are endpoint URLs, an OAuth2 client id, a redirect URI and scope, and a Kayak affiliate id.
+`TRAFFIC_DATA_BASE_URL`, `DIFF_LIST_URL` and `MWM_GEOLOCATION_SERVER` are empty.
 
 **No value is reproduced here, or anywhere in this review, or in any commit or pull request description.**
 
-Exposure:
+### These are upstream's credentials, not ours, and nothing of ours is exposed
 
-- The repository is **public** (`"private": false, "visibility": "public"`).
-- The file arrived in commit `287b97d6bca46dd6ccd50a809c6415e02b6fec2b`, the squashed upstream import that is
-  the repository's root commit (dated 15 Oct 2026). It is therefore present on `master`, on every one of the
-  twelve stacked feature branches, and in every clone and fork anyone has taken.
-- Removing the file in a new commit would **not** help. The value stays in history and in the GitHub API for
-  the old commits.
+This was initially assessed as a leak introduced by this fork. It is not. The evidence:
 
-Required, in this order -- all of it is yours to do, not mine:
+- The blob at the stack tip (`a4002ef75ff758d8081ba78c74377a981fedc193`) is byte-identical to the blob
+  committed by upstream commit `08598e1417` ("Refactor product and meta configs", 13 Aug 2025), which is an
+  ancestor of our `master`.
+- All six commits that have ever touched `private.h`, from 2021 to 2025, are by Organic Maps maintainers
+  (Alexander Borsuk, Roman Tsisyk, Viktor Govako). **This fork has never modified the file.**
 
-1. **Rotate the three credentials.** This is the only step that actually ends the exposure; everything else is
-   cleanup. Treat them as compromised from 15 Oct 2026.
-2. **Establish who owns them.** I could not verify whether these are Organic Maps' own OSM application
-   credentials that came in with the upstream snapshot, or credentials generated for Sampai. This determines who
-   must rotate: if they are Organic Maps', you cannot rotate them and should notify the Organic Maps
-   maintainers privately so that they can, and you should treat it as having inadvertently republished their
-   secret. Check the OSM account that registered the OAuth application before acting.
-3. **Register Sampai's own OSM OAuth application** regardless of the above. Shipping a public app that
-   authenticates to OpenStreetMap with another project's client credentials is not viable for release.
-4. **Purge the file from history** (`git filter-repo --path private.h --invert-paths`, or a fresh squashed
-   import), then force-push and ask GitHub Support to expire the cached blobs. Note this rewrites every commit
-   hash and will require re-creating the stacked PRs, so do it deliberately and probably after the current stack
-   lands.
-5. **Restore the intended build flow.** `tools/unix/build_omim.sh` checks that `private.h` defines
-   `DEFAULT_URLS_JSON`, so builds need the file to exist. Upstream's mechanism is a committed template with
-   empty secrets, copied to `private.h` locally and injected from the `PRIVATE_H` secret in CI. After the purge
-   you will need an equivalent, or local builds break. I have not added one, because the right shape depends on
-   decision 2.
+So these values have been public in upstream's public repository by upstream's own hand, and they are published
+there independently of anything we do. There is consequently:
 
-PR #13 adds `/private.h` to `.gitignore` so that it cannot be re-added after the purge. That is prevention only
--- it does not untrack the committed copy, and I have deliberately left the removal to you.
+- **nothing for you to rotate** -- the credentials are not yours, and you have no access to the OSM account
+  that registered that application;
+- **no point purging history** -- a rewrite of this fork would not unpublish values that remain in upstream's
+  repository;
+- **no secret of yours exposed** -- `secure.properties`, the release keystore and `google-services.json` are
+  all correctly gitignored and absent, and the twelve-PR stack added no secrets at all.
+
+This is a common and deliberate trade-off in open-source apps: a mobile app is a public OAuth client and cannot
+truly hold a client secret, so the credentials ship in the open repository. Upstream separately moved its
+genuinely private material to GitHub Secrets in Dec 2024 (`e00f33a076`), which is consistent with the tracked
+`private.h` holding only the values they accept as public.
+
+### Why it still blocks release
+
+1. **Identity.** A released Sampai would authenticate to OpenStreetMap *as the Organic Maps application*. Edits
+   made by Sampai users would be attributed to Organic Maps' OAuth client, which misattributes your users' work
+   and amounts to presenting your app as theirs.
+2. **Silent breakage.** Organic Maps can rotate those credentials whenever they like. If they do, the
+   OpenStreetMap login and editing features in Sampai stop working with no warning and nothing you can do
+   except ship an update.
+3. **Terms.** Using another project's OAuth client credentials in a published application is not acceptable
+   practice and is very likely outside both the OpenStreetMap API terms and Organic Maps' expectations.
+
+### What to do before public release
+
+1. **Register Sampai's own OAuth 2 application** at openstreetmap.org, under an account you control, with its
+   own redirect URI. This is the whole fix.
+2. **Supply your values through the `PRIVATE_H` CI secret**, as `docs/CREDENTIALS.md` already describes, and
+   keep them out of commits locally with `git update-index --skip-worktree private.h`. Do **not** rely on
+   `.gitignore`: `private.h` is a tracked file, so an ignore rule has no effect on it, which is why #13
+   deliberately does not add one.
+3. **Do not commit your own credentials** even though upstream commits theirs. Upstream's keys are already
+   public and theirs to expose; yours would be a new disclosure, and unlike upstream you have no reason to make
+   it.
+4. Until you have your own application registered, keep OpenStreetMap editing out of any build you publish.
+
+Optional courtesy, not a requirement: if you want certainty that upstream intends those values to be public,
+ask the Organic Maps maintainers. **Upstream's intent is inferred here, not verified** -- the inference rests on
+the file being committed and refreshed repeatedly by maintainers over four years, alongside a separate move of
+private material into GitHub Secrets. There is no indication of an accident, but it is their call to confirm.
 
 ## S-2 (High) -- Cleartext HTTP was permitted everywhere. Fixed in #14
 
@@ -154,7 +172,8 @@ actions are first-party and lower risk.
 `android/app/.gitignore` lists `release.keystore`, `secure.properties`, `google-services.json` and the other
 names upstream uses. A release keystore under any other name -- `sampai-release.jks`, which is exactly what you
 are likely to create -- an `.env` file, or a PKCS#12 certificate was not covered, and a single `git add -A`
-would have committed it. Given S-1, this is not a hypothetical failure mode for this repository.
+would have committed it. You will be creating exactly such a keystore, and S-1 means you will also be editing
+`private.h` by hand, so this is a live failure mode rather than a hypothetical one.
 
 #13 ignores the credential file *types* repo-wide while leaving `android/gradle.properties`,
 `gradle-wrapper.properties` and the bundled CA roots tracked.
@@ -255,7 +274,8 @@ not a git repository.
   my_tolls.csv`) and the map's own toll-booth nodes via JNI. No endpoint, no key, no remote fetch. `my_config.xml`
   contains only booleans and dimensions.
 - **Secrets in the 12-PR stack.** Scanned every added line across `master..feature/sampai-review-url` for
-  key-, token- and private-key-shaped strings: zero hits. The stack is clean; S-1 came in with the import.
+  key-, token- and private-key-shaped strings: zero hits. The stack is clean; S-1 is upstream's file, inherited
+  and never modified here.
 
 ## Privacy -- what leaves the device
 
@@ -341,7 +361,10 @@ Two notes rather than findings:
 
 Listed so none of it reads as cleared:
 
-1. **Who owns the S-1 credentials** -- upstream Organic Maps' or Sampai's. Determines who can rotate them.
+1. **Whether upstream intends the S-1 credentials to be public.** Established by git: the file is upstream's,
+   byte-identical to their commit, never touched by this fork. Inferred, not confirmed: that they are content
+   for those values to be public. Only the Organic Maps maintainers can confirm that, and it does not change
+   what you need to do (register your own OAuth application).
 2. **The repository's default workflow token permission** -- the Actions API is blocked by this environment's
    proxy. #15 removes the dependency on it either way.
 3. **Whether every map mirror supports HTTPS** -- S-2's fix needs a real device test of a map download.
@@ -357,5 +380,11 @@ The fork's own twelve PRs are clean: no secrets added, no new network surface, n
 and the toll code is sound. Upstream Organic Maps is a careful codebase -- immutable PendingIntents, no
 loosened TLS, no over-exported components, proportionate permissions, telemetry off by default.
 
-One thing matters far more than everything else on this list: **three OAuth secrets are sitting in a public
-repository and have been since 15 Oct 2026. Rotate them.** The rest is hardening.
+No secret of yours is exposed anywhere in this repository, and there is nothing here you need to rotate. The
+credential finding (S-1) turned out to be upstream's own published OAuth credentials, inherited untouched by
+the fork.
+
+Two things to carry forward. Before Sampai is public, **register its own OpenStreetMap OAuth application**
+(S-1) and **publish a privacy notice, with a decided PDPA position** (S-15) -- Google Play requires the former
+of any app requesting location, regardless of Malaysian law. Everything else on this list is hardening, and the
+highest-value remaining item is pinning the two credential-handling GitHub Actions to commit SHAs (S-4).
