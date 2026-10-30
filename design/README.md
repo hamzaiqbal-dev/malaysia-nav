@@ -17,6 +17,10 @@ jalan ditutup, harga minyak). BM first, EN toggle.
    - `ReportSheet` + `ReportMarkers` (client side first; backend later)
    - Theme tokens in `res/values/my_colors.xml`, Plus Jakarta Sans in `res/font/`
 3. Default to 3D perspective + 3D buildings in navigation; follow-and-rotate camera with tilt.
+   Done upstream: `Framework::Load3dMode` already defaults both to on and `OnRouteFollow` enters the 3D navigation
+   scale with the arrow glued to the route, so this step needs no code — only a look on a device.
 4. Strings: `strings.xml` BM (`values-ms`) is the default; EN, ZH, TA follow.
+   BM now covers the whole UI and the voice guidance (PR #7, #8). Making BM the *default* locale instead of a
+   selectable one is still open — see docs/MALAYSIA.md.
 5. Tolls dataset `data/my_tolls.csv` → route toll total in the ETA sheet.
 Each step is its own PR; CI (android-check) must stay green.
