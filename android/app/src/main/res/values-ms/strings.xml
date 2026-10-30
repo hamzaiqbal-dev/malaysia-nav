@@ -22,4 +22,22 @@
     <string name="my_nav_toll">Tol</string>
     <!-- Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet. -->
     <string name="my_nav_toll_amount">RM %s</string>
+    <!-- Quick search chip on the map (petrol stations). Keep to one short word. -->
+    <string name="my_chip_fuel">Minyak</string>
+    <!-- Quick search chip on the map (mosques and prayer rooms). Keep to one short word. -->
+    <string name="my_chip_surau">Surau</string>
+    <!-- Quick search chip on the map (restaurants). Keep to one short word. -->
+    <string name="my_chip_mamak">Mamak</string>
+    <!-- Quick search chip on the map (parking). Keep to one short word. -->
+    <string name="my_chip_parking">Parkir</string>
+    <!-- Quick search chip on the map (EV chargers). Keep to one short word. -->
+    <string name="my_chip_ev">EV</string>
+    <!-- Quick search chip on the map (clinics). Keep to one short word. -->
+    <string name="my_chip_clinic">Klinik</string>
+    <!-- Quick search chip on the map (highway rest areas). Keep to one short word. -->
+    <string name="my_chip_rest_area">R&amp;R</string>
+    <!-- Quick search chip on the map (toilets). Keep to one short word. -->
+    <string name="my_chip_toilet">Tandas</string>
+    <!-- Quick search chip on the map (ATMs). Keep to one short word. -->
+    <string name="my_chip_atm">ATM</string>
 </resources>
