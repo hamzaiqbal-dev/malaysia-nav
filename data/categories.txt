@@ -1050,7 +1050,7 @@ ko:1카페|레스토랑|커피
 lt:4Kavinė|3Kava|5Restoranas|5Kavine
 lv:3Kafejnīca|3restorāns
 mr:कॉफी|चहा|कॅफे|अमृततुल्य|नाश्ता|स्नॅक|रसवंतीगृह|उसाचा रस
-ms:3Kafe|kopitiam|kedai kopi|kopi
+ms:3Kafe|kopitiam|kopi tiam|kedai kopi|kopi
 nb:2Kafé
 nl:3Tearoom|3brasserie|3café|3restaurant
 pl:3Kawiarnia|4restauracja|kawa
@@ -1063,12 +1063,13 @@ sl:3Kavarna|restavracija
 sr:Кафе|кафић|4ресторан|kafe|kafić|4restoran
 sv:3Café|3restaurang
 sw:Mgahawa|hoteli|chakula
+ta:காபிக்கடை|கோபிட்டியாம்|டீ கடை|உணவகம்
 th:3 คาเฟ่|ร้านอาหาร่|คาเฟ่
 tr:4Kafeterya|kafe|restoran|2Cafe
 uk:3Кафе|3ресторан
 vi:Cà phê|quán ăn
-zh-Hans:1咖啡馆|餐厅|食物
-zh-Hant:2咖啡廳|咖啡|3cafe|餐廳|飲食
+zh-Hans:1咖啡馆|餐厅|食物|咖啡店|茶餐室|茶室
+zh-Hant:2咖啡廳|咖啡|3cafe|餐廳|飲食|咖啡店|茶餐室|茶室
 
 
 amenity-fast_food|@category_eat
@@ -1096,6 +1097,7 @@ ko:1패스트 푸드|레스토랑|카페|테이크 아웃|푸드|패스트푸드
 lt:4Greitas maistas|5Restoranas|5Išsinešti
 lv:Ātrā ēdināšana|ātrais ēdiens|līdzņemšana|3restorāns|3kafejnīca
 mr:फास्टफूड|चायनीज|पार्सल|कॅफे|पिझ्झा|बर्गर|फास्ट फूड
+ms:4Makanan segera|mamak|kedai mamak|gerai|bungkus
 nb:3Hurtigmat
 nl:4Fast food|3frituur|fritkot|3restaurant|afhaaleten
 pl:4Fast food|restauracja szybkiej obsługi|5na wynos
@@ -1107,12 +1109,13 @@ sk:2Rýchle občerstvenie|4fastfood|3kaviareň|reštaurácia
 sl:Hitra hrana|restavracija|hitra prehrana
 sr:4Брза храна|4ресторан|4brza hrana|4restoran
 sv:4Snabbmat|3restaurang|3café|takeaway
+ta:விரைவு உணவு|மாமாக்|மாமாக் கடை
 th:1อาหารจานด่วน|ร้านอาหาร|คาเฟ่|นำกลับ
 tr:4Fast food|3restoran|3kafeterya|lokanta|hazır yemek
 uk:3Фастфуд|3ресторан|3кафе|2їсти
 vi:Thức ăn nhanh|quán ăn
-zh-Hans:1快餐|餐厅|外卖|食物|快餐店
-zh-Hant:1速食店|麥當勞|肯德雞|漢堡王|頂呱呱|薯條|速食|用餐|飲食
+zh-Hans:1快餐|餐厅|外卖|食物|快餐店|嘛嘛档
+zh-Hant:1速食店|麥當勞|肯德雞|漢堡王|頂呱呱|薯條|速食|用餐|飲食|嘛嘛檔
 
 
 amenity-restaurant|@category_eat
@@ -1140,7 +1143,7 @@ ko:1레스토랑|카페
 lt:5Restoranas|4Kavinė
 lv:3Restorāns|3kafejnīca
 mr:रेस्टोरंट|हॉटेल|उपहारगृह|भोजनालय|खानावळ
-ms:3Restoran|kedai makan|mamak|makan
+ms:3Restoran|kedai makan|mamak|kedai mamak|nasi kandar|makan
 nb:3Restaurant
 nl:3Restaurant|3café
 pl:4Restauracja|3kawiarnia
@@ -1153,12 +1156,13 @@ sl:3Restavracija|gostilna
 sr:4Ресторан|4restoran
 sv:3Restaurang|3café
 sw:Hoteli|restorenti|mgahawa|chakula
+ta:உணவகம்|மாமாக்|மாமாக் கடை|நாசி கண்டார்|சாப்பாடு
 th:3ร้านอาหาร
 tr:3Restoran|3kafeterya|3lokanta|3kafe
 uk:3Ресторан|3кафе
 vi:Quán ăn|cà phê
-zh-Hans:1餐厅|咖啡馆|食物|餐馆
-zh-Hant:1餐廳|餐館|吃飯|餐點|早餐|午餐|晚餐|食堂|飲食|用餐
+zh-Hans:1餐厅|咖啡馆|食物|餐馆|嘛嘛档|印度餐馆
+zh-Hant:1餐廳|餐館|吃飯|餐點|早餐|午餐|晚餐|食堂|飲食|用餐|嘛嘛檔|印度餐館
 
 
 amenity-fuel|@category_fuel
@@ -3817,7 +3821,7 @@ ko:모스크|사찰
 lt:4Mečetė
 lv:Mošeja|lūgšanu nams|lūgšanu vieta|templis
 mr:मशीद
-ms:4Masjid|surau|tempat ibadat|solat
+ms:4Masjid|surau|musolla|tempat ibadat|tempat solat|solat
 nb:4Moské|gudshus
 nl:4Moskee|tempel|gebedsplaats|gebedshuis
 pl:4Meczet|świątynia
@@ -3829,12 +3833,13 @@ sk:4Mešita|chrám|svätyňa|posvätné miesto
 sl:4Mošeja|bogoslužno mesto|tempelj
 sr:Џамија|Džamija
 sv:4Moské|plats för tillbedjan|tempel
+ta:பள்ளிவாசல்|மசூதி|சுராவ்|தொழுகை இடம்
 th:มัสยิด|สถานที่ประกอบพิธีกรรม
 tr:3Cami|ibadet yerleri|tapınak
 uk:4Мечеть
 vi:Nhà thờ Hồi Giáo|chùa
-zh-Hans:清真寺|礼拜场所|庙|景点
-zh-Hant:清真寺|寺廟|禱告|寺|禪寺|旅遊景點
+zh-Hans:清真寺|礼拜场所|庙|景点|回教堂|祈祷室
+zh-Hant:清真寺|寺廟|禱告|寺|禪寺|旅遊景點|回教堂|祈禱室
 
 amenity-place_of_worship-buddhist
 en:3Temple|place of worship|U+1F64F|U+26EA|u+2638|buddhist temple
@@ -6604,7 +6609,7 @@ ja:クリニック|病院、診療所
 lv:Klīnika|slimnīca|poliklīnika
 lt:5Klinika|5Ligoninė|5Gydytojas
 mr:चिकित्सालय|क्लिनिक|दवाखाना
-ms:3Klinik|klinik kesihatan|klinik desa
+ms:3Klinik|klinik kesihatan|klinik kerajaan|klinik desa
 nb:4Klinikk|sykehus
 nl:4Kliniek|ziekenhuis|hospitaal
 pl:4Klinika|Szpital
@@ -6616,12 +6621,13 @@ sk:5Poliklinika|nemocnica|zdravotné stredisko
 sl:5Poliklinika|zdravstveni dom|4klinika
 sr:Поликлиника|дом здравља|poliklinika|dom zdravlja
 sv:4Klinik|sjukhus
+ta:கிளினிக்|சுகாதார கிளினிக்|அரசு கிளினிக்|மருத்துவமனை
 th:คลินิก|โรงพยาบาล
 tr:4Klinik|hastane
 uk:5Поліклініка|клініка|4лікарня
 vi:Phòng khám|bịnh viện|dưỡng đường|Bệnh viện|BV
-zh-Hans:诊所|医院
-zh-Hant:診所|醫院
+zh-Hans:诊所|医院|政府诊所|卫生诊所
+zh-Hant:診所|醫院|政府診所|衛生診所
 
 amenity-doctors|@category_hospital
 en:4Doctor|clinic|U+1F489|U+1F3E5|U+1F691
@@ -7497,7 +7503,7 @@ vi:Bưu điện|bưu cục
 zh-Hant:郵筒|郵局|郵件代辦所
 
 amenity-vehicle_inspection
-en:Vehicle Inspection
+en:Vehicle Inspection|Puspakom|car inspection|U+1F527
 ar:فحص المركبة
 be:Тэхагляд аўтамабіля
 bg:Проверка на автомобила
@@ -7522,7 +7528,7 @@ ko:차량검사
 lt:5Techninė apžiūra|5Transporto priemonių patikra
 lv:Transportlīdzekļu tehniskā apskate|tehniskā apskate|4CSDD
 mr:वाहन तपासणी
-ms:3Puspakom|pemeriksaan kenderaan
+ms:3Puspakom|pemeriksaan kenderaan|pusat pemeriksaan kenderaan
 nb:Inspeksjon av kjøretøy
 nl:Voertuiginspectie
 pl:Kontrola pojazdu
@@ -7534,12 +7540,13 @@ sl:5Tehnični pregled|Pregled vozila
 sr:8Технички преглед возила|8tehnički pregled vozila|контрола возила
 sv:Fordonsinspektion
 sw:Ukaguzi wa Gari
+ta:வாகன ஆய்வு|புஸ்பாகோம்|வாகன பரிசோதனை
 th:การตรวจสอบยานพาหนะ
 tr:Araç muayenesi
 uk:Техогляд автомобіля
 vi:Kiểm tra xe
-zh-Hans:车辆检验
-zh-Hant:車輛檢驗
+zh-Hans:车辆检验|验车|验车中心
+zh-Hant:車輛檢驗|驗車|驗車中心
 
 amenity-waste_disposal
 en:4Dumpster|4Trash bin|4garbage bin|waste disposal|U+1F6AE
@@ -12099,7 +12106,7 @@ it:6Commissariato|5questura|4caserma|4guardia|5carabinieri|polizia
 ja:警察|1屯所|ポリス|交番|お巡りさん|おまわりさん|通報
 ko:경찰|경찰서|치안대
 lt:5Policija|5Policijos nuovada
-ms:3Balai polis|polis|PDRM
+ms:3Balai polis|polis|PDRM|pondok polis|IPD
 nl:Politie
 pl:Policja|komisariat|posterunek
 pt:4Polícia|2Guarda Nacional Republicana|2GNR|2PSP|4Seccional
@@ -12110,11 +12117,12 @@ sk:Polícia|3policajná stanica
 sl:4Policija|Policijska postaja
 sr:Полицијска станица|policijska stanica|полиција
 sv:Polisstation|polis
+ta:காவல் நிலையம்|போலிஸ்|பொலிஸ் நிலையம்|காவல்
 th:ตำรวจ
 tr:Polis
 uk:Поліція
-zh-Hans:警察局
-zh-Hant:警察局|警察|警員
+zh-Hans:警察局|警局|警察|警亭
+zh-Hant:警察局|警察|警員|警局|警亭
 
 office-diplomatic
 en:4Embassy
@@ -13108,7 +13116,7 @@ zh-Hans:公司办公室|企业公司
 zh-Hant:公司辦公室
 
 office-government
-en:Government Office
+en:Government Office|JPJ|road transport department|U+1F3DB
 ar:مكتب حكومي
 bg:офис|администрация|правителство
 cs:Úřad vlády
@@ -13131,7 +13139,7 @@ ko:관공서|정부청사|행정관청
 lt:5Valdžios įstaiga|5savivaldybė|valstybinė įstaiga
 lv:Valsts iestāde
 mr:सरकारी कार्यालय
-ms:3Pejabat kerajaan|JPJ|kerajaan|jabatan
+ms:3Pejabat kerajaan|JPJ|jabatan pengangkutan jalan|kerajaan|jabatan
 nb:Offentlig kontor
 nl:Overheidskantoor|overheidspand|regeringskantoor
 pl:Biuro instytucji rządowej
@@ -13144,12 +13152,13 @@ sl:5Vladni urad|državna ustanova|vladna pisarna
 sr:Владина канцеларија|Vladina kancelarija
 sv:Ämbetsverk|myndighet
 sw:Ofisi ya serikali
+ta:அரசு அலுவலகம்|சாலைப் போக்குவரத்து துறை|ஜேபிஜே
 th:หน่วยงานราชการ
 tr:Devlet dairesi
 uk:Держустанова|адміністративна установа
 vi:Văn phòng chính phủ
-zh-Hans:政府机构|政府办公点
-zh-Hant:政府辦公室|政府機關
+zh-Hans:政府机构|政府办公点|陆路交通局|交通局
+zh-Hant:政府辦公室|政府機關|陸路交通局|交通局
 
 office-lawyer
 en:3Lawyer|advocate|attorney|4barrister|counsel|councellor|4solicitor
@@ -15132,6 +15141,7 @@ sk:Nabíjacia stanica|nabíjací bod|dobíjanie
 sl:4Polnilnica|Polnjenje
 sr:Станица за пуњење
 sv:Laddstation|laddning
+ta:மின்னேற்று நிலையம்|சார்ஜிங் நிலையம்|சார்ஜர்
 th:สถานีชาร์จ|จุดชาร์จ
 tr:Şarj istasyonu
 uk:4Зарядна станція|зарядка|електрозарядка|зарядити
@@ -15144,7 +15154,10 @@ ja:充電ステーション
 ko:충전소|충전 역
 ms:3Pengecas EV|stesen pengecas|kereta elektrik
 sl:Polnilna postaja
+ta:மின்சார வாகன சார்ஜிங்|மின்சார கார்
 th:สถานีชาร์จ
+zh-Hans:电动车充电站|电车充电
+zh-Hant:電動車充電站|電車充電
 
 amenity-charging_station-bicycle|@charging_station
 en:4Bicycle Charging|4Bike Charging
@@ -16337,7 +16350,7 @@ zh-Hans:车库|独立车库
 zh-Hant:車庫
 
 highway-rest_area|highway-services
-en:4Rest Area|service area
+en:4Rest Area|service area|R&R|RnR|rest and service area
 ar:استراحة|موقف الراحة
 be:4Зона адпачынку|зона абслугоўвання
 bg:Почивка|магистрала|почивна зона
@@ -16360,7 +16373,7 @@ ko:휴게소|고속도로 휴게소
 lt:5Poilsio vieta|5poilsiavietė|poilsio aikštelė|paslaugų zona
 lv:4Atpūtas vieta
 mr:महामार्ग विश्रांती क्षेत्र|विश्रांती क्षेत्र|सेवा क्षेत्र
-ms:3Hentian rehat|RnR|kawasan rehat
+ms:3Hentian rehat|RnR|R&R|kawasan rehat|hentian sebelah|tempat rehat
 nb:Rasteplass
 nl:Snelweg rustplaats|parkeerplaats|servicegebied
 pl:Miejsce odpoczynku|miejsce wypoczynku
@@ -16372,15 +16385,16 @@ sk:Odpočívadlo|účelová oblasť
 sl:5Počivališče|odmor|servisno območje
 sr:Одмориште|odmorište|сервисна зона
 sv:Viloplats|rastplats
+ta:ஓய்வு இடம்|ஓய்வு நிலையம்|R&R
 th:บริเวณพักผ่อน
 tr:Otoyol Dinlenme Alanı|dinlenme alanı|servis alanı
 uk:4Зона відпочинку|зона обслуговування
 vi:Khu Vực Thụt Vào Để Đỗ Xe
-zh-Hans:休息区|服务区
-zh-Hant:休息區|服務區
+zh-Hans:休息区|服务区|休息站|R&R
+zh-Hant:休息區|服務區|休息站|R&R
 
 highway-services
-en:4Service Area|service station
+en:4Service Area|service station|R&R|RnR
 be:4Зона абслугоўвання
 ca:Àrea de servei
 cy:4Ardal Wasanaeth|gwasanaethau|gorsaf wasanaeth
@@ -16392,7 +16406,7 @@ ja:サービスエリア
 lt:5Paslaugų zona|5Aptarnavimo stotis
 lv:4Automobiļu apkalpošanas vieta
 mr:सेवा क्षेत्र
-ms:3Hentian rehat dan rawat|RnR
+ms:3Hentian rehat dan rawat|RnR|R&R|hentian rehat
 nl:4Servicegebied
 pl:Miejsce obsługi podróżnych
 pt:Área de serviço
@@ -16400,10 +16414,11 @@ pt-BR:Área de serviços de estrada
 ru:4Зона обслуживания
 sl:5Servisna cona|postaja za storitve|servisno območje
 sr:Сервисна станица|servisna stanica|сервисна зона
+ta:சேவை இடம்|ஓய்வு நிலையம்|R&R
 tr:4Servis Alanı
 uk:4Зона обслуговування
-zh-Hans:服务区
-zh-Hant:服務區
+zh-Hans:服务区|休息站|R&R
+zh-Hant:服務區|休息站|R&R
 
 man_made-chimney
 en:Factory Chimney|chimney
