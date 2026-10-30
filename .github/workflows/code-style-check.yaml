@@ -1,8 +1,9 @@
 name: Code style check
 
 on:
+  workflow_dispatch: # Manual trigger
   pull_request:
-    branches: [ master ]
+    # No branch filter: a stacked PR targets another feature branch and must be checked too.
     # Match extensions to keep new and moved modules covered. Keep in sync with
     # CLANG_FORMAT_TARGETS in tools/hooks/format-config.bash.
     paths:
