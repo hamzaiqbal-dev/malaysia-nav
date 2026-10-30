@@ -9,7 +9,10 @@ compile_commands.json
 # secrets or kept on the developer's machine, and must never be committed. The per-name rules in
 # android/app/.gitignore only cover the names upstream uses, so keep these patterns by extension
 # too -- a release keystore called sampai-release.jks is just as sensitive as release.keystore.
-/private.h
+#
+# private.h deliberately has no rule here. It is tracked upstream, and .gitignore does not apply
+# to a tracked file, so a rule would imply a protection it cannot give. To keep local OSM OAuth
+# credentials out of commits, use: git update-index --skip-worktree private.h
 *.jks
 *.keystore
 *.p12
