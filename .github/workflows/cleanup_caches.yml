@@ -5,6 +5,10 @@ on:
     types:
       - closed
 
+permissions:
+  contents: read
+  actions: write  # To delete the PR's caches.
+
 jobs:
   cleanup:
     runs-on: ubuntu-latest
