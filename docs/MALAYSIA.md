@@ -93,3 +93,13 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   clang-format 23 were run locally over the whole chain instead and are clean; (b) only Android Check had ever been
   dispatched, so the C++ of libs/my_tolls had never been compiled by CI — the CMake workflow was dispatched for the
   chain and passes. Worth making those three workflows run on every PR base, not just master.
+- 2026-10-30 (night): PR #18 Malaysian POI search categories — 中文 and தமிழ் synonyms for the ten categories
+  Malaysians search for (surau/masjid, R&R, mamak, kopitiam, JPJ, PDRM, Puspakom, klinik kesihatan, EV charging),
+  "ta" registered as a category locale (libs/indexer, code 50), and the Malay/English lines widened with the
+  colloquial spellings: musolla, kedai mamak, nasi kandar, kopi tiam, pondok polis, IPD, klinik kerajaan,
+  hentian sebelah, R&R. Three concepts have no exact OSM tag and are mapped to the nearest real ones: R&R →
+  highway=rest_area/services, mamak → amenity=restaurant + fast_food, kopitiam → amenity=cafe; JPJ has no
+  government=transportation subtype in the classificator, so it sits on office=government, and klinik kesihatan
+  on amenity=clinic. New test CategoriesHolder_MalaysianCategories checks all four languages against the shipped
+  file. Next for search: Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99 Speedmart, Mydin,
+  KK Mart…), and ms/ta names in types_strings.txt so place pages are not English-only.
