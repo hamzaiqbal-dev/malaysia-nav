@@ -24,6 +24,10 @@ env:
   FDROID_VERSION: android/app/src/fdroid/play/version.yaml
   JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64  # Java 21 is required by Android Gradle plugin lint
 
+permissions:
+  contents: read  # The android-release job raises this to write for GitHub Releases;
+                  # the tag job pushes over SSH with RELEASE_SSH_KEY, not this token.
+
 jobs:
   setup:
     name: Setup

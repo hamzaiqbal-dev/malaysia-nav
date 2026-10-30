@@ -2,6 +2,9 @@ name: iOS Release
 on:
   workflow_dispatch: # Manual trigger
 
+permissions:
+  contents: read
+
 jobs:
   ios-release:
     name: iOS Release
