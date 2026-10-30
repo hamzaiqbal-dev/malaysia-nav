@@ -32,6 +32,9 @@ on:
       - tools/**
       - track_generator/**
 
+permissions:
+  contents: read
+
 jobs:
   ios-beta:
     name: Apple TestFlight
