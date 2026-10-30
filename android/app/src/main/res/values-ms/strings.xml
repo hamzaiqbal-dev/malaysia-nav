@@ -270,9 +270,9 @@
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Lapor pepijat</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
-    <string name="compass_calibration_recommended">Perbaiki arah anak panah dengan menggerakkan telefon dalam bentuk angka lapan untuk mentauliah kompas.</string>
+    <string name="compass_calibration_recommended">Perbaiki arah anak panah dengan menggerakkan telefon dalam bentuk angka lapan untuk mengkalibrasi kompas.</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
-    <string name="compass_calibration_required">Gerakkan telefon dalam bentuk angka lapan untuk mentauliah kompas dan membetulkan arah anak panah pada peta.</string>
+    <string name="compass_calibration_required">Gerakkan telefon dalam bentuk angka lapan untuk mengkalibrasi kompas dan membetulkan arah anak panah pada peta.</string>
     <!-- Toast text when user hides UI with a long tap anywhere on the map -->
     <string name="long_tap_toast">Ketik lama pada peta sekali lagi untuk melihat antara muka</string>
     <!-- Update all button text -->
@@ -311,11 +311,11 @@
     <!-- Settings «Map» category: «Appearance» title -->
     <string name="pref_appearance_title">Penampilan</string>
     <!-- Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. -->
-    <string name="pref_appearance_light">Cerah</string>
+    <string name="pref_appearance_light">Terang</string>
     <!-- Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_dark">Gelap</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
-    <string name="pref_appearance_scheduled">Cerah dari subuh hingga senja</string>
+    <string name="pref_appearance_scheduled">Terang dari subuh hingga senja</string>
     <!-- Tex label above the Donate button -->
     <string name="donate_description">Hadiahkan peta percuma tanpa iklan kepada berjuta-juta pengguna!</string>
 
@@ -476,7 +476,7 @@
     <string name="current_location_unknown_error_title">Lokasi sekarang tidak diketahui.</string>
     <!-- abbreviation for kilometers per hour -->
     <string name="kilometers_per_hour">km/j</string>
-    <string name="miles_per_hour">bsj</string>
+    <string name="miles_per_hour">mph</string>
     <string name="hour">j</string>
     <string name="minute">min</string>
     <string name="day">h</string>
@@ -693,7 +693,7 @@
     <string name="tourist_places">Tempat menarik</string>
     <string name="museums">Muzium</string>
     <string name="parks">Taman</string>
-    <string name="swim_places">Tempat mandi</string>
+    <string name="swim_places">Tempat berenang</string>
     <string name="mountains">Gunung</string>
     <string name="animals">Haiwan</string>
     <string name="hotels">Hotel</string>

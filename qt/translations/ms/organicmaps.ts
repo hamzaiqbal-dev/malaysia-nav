@@ -404,7 +404,7 @@
 </message>
 <message id="miles_per_hour">
 <source>mph</source>
-<translation>bsj</translation>
+<translation>mph</translation>
 </message>
 <message id="hour">
 <source>h</source>
@@ -630,7 +630,7 @@
 </message>
 <message id="swim_places">
 <source>Swim</source>
-<translation>Tempat mandi</translation>
+<translation>Tempat berenang</translation>
 </message>
 <message id="mountains">
 <source>Mountains</source>
@@ -775,7 +775,7 @@
 <message id="mi">
 <extracomment>abbreviation for mile(s)</extracomment>
 <source>mi</source>
-<translation>bt</translation>
+<translation>mi</translation>
 </message>
 <message id="ft">
 <extracomment>A unit of measure</extracomment>
