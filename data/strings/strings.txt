@@ -45802,3 +45802,57 @@ comment = Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A t
 tags = android-app
 en = RM %s
 ms = RM %s
+
+[my_chip_fuel]
+comment = Quick search chip on the map (petrol stations). Keep to one short word.
+tags = android-app
+en = Petrol
+ms = Minyak
+
+[my_chip_surau]
+comment = Quick search chip on the map (mosques and prayer rooms). Keep to one short word.
+tags = android-app
+en = Surau
+ms = Surau
+
+[my_chip_mamak]
+comment = Quick search chip on the map (restaurants). Keep to one short word.
+tags = android-app
+en = Mamak
+ms = Mamak
+
+[my_chip_parking]
+comment = Quick search chip on the map (parking). Keep to one short word.
+tags = android-app
+en = Parking
+ms = Parkir
+
+[my_chip_ev]
+comment = Quick search chip on the map (EV chargers). Keep to one short word.
+tags = android-app
+en = EV
+ms = EV
+
+[my_chip_clinic]
+comment = Quick search chip on the map (clinics). Keep to one short word.
+tags = android-app
+en = Clinic
+ms = Klinik
+
+[my_chip_rest_area]
+comment = Quick search chip on the map (highway rest areas). Keep to one short word.
+tags = android-app
+en = R&R
+ms = R&R
+
+[my_chip_toilet]
+comment = Quick search chip on the map (toilets). Keep to one short word.
+tags = android-app
+en = Toilets
+ms = Tandas
+
+[my_chip_atm]
+comment = Quick search chip on the map (ATMs). Keep to one short word.
+tags = android-app
+en = ATM
+ms = ATM

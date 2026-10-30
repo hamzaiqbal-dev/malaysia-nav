@@ -2,6 +2,8 @@
 <resources>
   <!-- Malaysia Nav navigation HUD (NavHudView). Set to false to fall back to the stock Organic Maps HUD. -->
   <bool name="my_nav_hud_enabled">true</bool>
+  <!-- Quick search chips (Malaysian places) above the map buttons. -->
+  <bool name="my_explore_chips_enabled">true</bool>
 
   <dimen name="my_hud_margin">12dp</dimen>
   <!-- Portrait phones fill the width; in landscape and on tablets the HUD stays a start-aligned column. -->

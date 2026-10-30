@@ -2,14 +2,26 @@
 <RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/map_buttons_bottom"
   android:layout_width="match_parent"
   android:layout_height="wrap_content">
+  <!-- Malaysia Nav quick search chips (app.organicmaps.my.ExploreChips), above the button row. -->
+  <app.organicmaps.my.ExploreChipsView
+    android:id="@+id/my_explore_chips"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/map_buttons_bottom_row"
+    android:layout_marginBottom="@dimen/margin_half"
+    android:clipChildren="false"
+    android:visibility="gone"
+    tools:visibility="visible" />
   <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/map_buttons_bottom_row"
     style="@style/MwmWidget.MapButton.Bottom"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
+    android:layout_alignParentBottom="true"
     android:clipChildren="false"
     android:clipToPadding="false">
     <include

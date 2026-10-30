@@ -23,6 +23,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.R;
+import app.organicmaps.my.ExploreChipsView;
 import app.organicmaps.routing.RoutingPlanViewModel;
 import app.organicmaps.sdk.Framework;
 import app.organicmaps.sdk.downloader.MapManager;
@@ -34,6 +35,7 @@ import app.organicmaps.sdk.maplayer.traffic.TrafficManager;
 import app.organicmaps.sdk.routing.RoutingController;
 import app.organicmaps.sdk.util.Config;
 import app.organicmaps.search.SearchPageViewModel;
+import app.organicmaps.search.SearchRequest;
 import app.organicmaps.util.ThemeUtils;
 import app.organicmaps.util.UiUtils;
 import app.organicmaps.util.Utils;
@@ -127,6 +129,12 @@ public class MapButtonsController extends Fragment
       mToggleMapLayerButton.setOnClickListener(
           view -> mMapButtonClickListener.onMapButtonClick(MapButtons.toggleMapLayer));
       mToggleMapLayerButton.setVisibility(View.VISIBLE);
+    }
+    final ExploreChipsView exploreChips = mFrame.findViewById(R.id.my_explore_chips);
+    if (exploreChips != null && getResources().getBoolean(R.bool.my_explore_chips_enabled))
+    {
+      exploreChips.setListener(this::onExploreChipClicked);
+      exploreChips.setVisibility(View.VISIBLE);
     }
     mMapButtonsViewModel.setTopButtonsMarginTop(-1);
     mTrackRecordingStatusButton = mFrame.findViewById(R.id.track_recording_status);
@@ -233,6 +241,11 @@ public class MapButtonsController extends Fragment
   private static int dpToPx(float dp, Context context)
   {
     return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
+  }
+
+  private void onExploreChipClicked(@NonNull String query, @NonNull String locale)
+  {
+    mSearchPageViewModel.setSearchEnabled(true, new SearchRequest(query, locale, true));
   }
 
   private void updateTopButtonsMargin(int margin)
