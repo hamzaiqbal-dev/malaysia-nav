@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Quick search chip (ExploreChipsView). The view is 48dp tall for the touch target; my_bg_chip draws a 36dp pill. -->
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="wrap_content"
-  android:layout_height="36dp"
+  android:layout_height="@dimen/my_touch_target"
   android:layout_marginStart="4dp"
   android:layout_marginEnd="4dp"
   android:background="@drawable/my_bg_chip"
@@ -13,8 +14,8 @@
   android:gravity="center"
   android:includeFontPadding="false"
   android:maxLines="1"
-  android:paddingStart="12dp"
-  android:paddingEnd="12dp"
+  android:paddingStart="@dimen/my_hud_padding"
+  android:paddingEnd="@dimen/my_hud_padding"
   android:textColor="@color/my_ink"
-  android:textSize="13sp"
+  android:textSize="@dimen/my_text_chip"
   tools:text="⛽ Minyak" />
