@@ -1929,6 +1929,35 @@ UNIT_CLASS_TEST(ProcessorTest, BrandTest)
   }
 }
 
+// Malaysia Nav: a feature whose brand metadata is a key from categories_brands.txt is found by
+// every synonym of that brand, including the Chinese name.
+UNIT_CLASS_TEST(ProcessorTest, MalaysianBrandTest)
+{
+  TestBrandFeature petronas({0, 0}, "petronas", "en");
+  TestBrandFeature speedmart({1.0, 1.0}, "99_speedmart", "en");
+
+  auto countryId = BuildCountry("Malaysia", [&](TestMwmBuilder & builder)
+  {
+    builder.Add(petronas);
+    builder.Add(speedmart);
+  });
+
+  SetViewport(m2::RectD(-1, -1, 1, 1));
+
+  {
+    Rules rules{ExactMatch(countryId, petronas)};
+    TEST(ResultsMatch("Petronas", rules, "en"), ());
+    TEST(ResultsMatch("Mesra", rules, "en"), ());
+    TEST(ResultsMatch("国油", rules, "zh"), ());
+  }
+
+  {
+    Rules rules{ExactMatch(countryId, speedmart)};
+    TEST(ResultsMatch("99 Speedmart", rules, "en"), ());
+    TEST(ResultsMatch("Speedmart", rules, "en"), ());
+  }
+}
+
 UNIT_CLASS_TEST(ProcessorTest, SquareAsStreetTest)
 {
   TestSquare square(m2::RectD(0.0, 0.0, 1.0, 1.0), "revolution square", "en");
