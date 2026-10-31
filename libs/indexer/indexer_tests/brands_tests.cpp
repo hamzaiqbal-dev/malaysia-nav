@@ -31,6 +31,66 @@ UNIT_TEST(LoadDefaultBrands)
   TEST(!brands.GetKeys().empty(), ());
 }
 
+// Malaysia Nav: the Malaysian brands in the shipped categories_brands.txt, keyed the way
+// generator/brands_loader.cpp derives keys from the English brand name.
+UNIT_TEST(LoadDefaultBrands_Malaysia)
+{
+  auto const & brands = GetDefaultBrands();
+  auto const & keys = brands.GetKeys();
+
+  for (char const * key : {"petronas",
+                           "petron",
+                           "shell",
+                           "caltex",
+                           "bhpetrol",
+                           "99_speedmart",
+                           "kk_super_mart",
+                           "mynews",
+                           "7_eleven",
+                           "familymart",
+                           "mydin",
+                           "lotus_s",
+                           "aeon",
+                           "giant_hypermarket",
+                           "jaya_grocer",
+                           "econsave",
+                           "nsk_trade_city",
+                           "mr_diy",
+                           "watsons",
+                           "guardian",
+                           "tealive",
+                           "zus_coffee",
+                           "secret_recipe",
+                           "marrybrown",
+                           "maybank",
+                           "cimb_bank",
+                           "public_bank",
+                           "rhb_bank",
+                           "hong_leong_bank",
+                           "bank_islam",
+                           "bank_simpanan_nasional",
+                           "ambank"})
+    TEST(keys.count(key), (key));
+
+  auto const names = [&brands](char const * key, char const * lang)
+  {
+    set<string> res;
+    brands.ForEachNameByKeyAndLang(key, lang, [&res](string const & name) { res.insert(name); });
+    return res;
+  };
+
+  // The first English name is the OSM brand=* value; the rest are what Malaysians type.
+  TEST(names("petronas", "en").count("Petronas"), ());
+  TEST(names("petronas", "zh").count("国油"), ());
+  TEST(names("99_speedmart", "en").count("99 Speedmart"), ());
+  TEST(names("kk_super_mart", "en").count("KK Mart"), ());
+  TEST(names("lotus_s", "en").count("Tesco"), ());
+  TEST(names("mr_diy", "en").count("MR.DIY"), ());
+  TEST(names("bank_simpanan_nasional", "en").count("BSN"), ());
+  TEST(names("public_bank", "zh").count("大众银行"), ());
+  TEST(names("watsons", "zh").count("屈臣氏"), ());
+}
+
 UNIT_TEST(LoadBrands)
 {
   BrandsHolder const holder(make_unique<MemReader>(g_testBrandsTxt, sizeof(g_testBrandsTxt) - 1));
