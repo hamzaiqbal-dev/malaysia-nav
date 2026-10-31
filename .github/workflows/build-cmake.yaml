@@ -219,6 +219,14 @@ jobs:
         # CTest 3.29+ (provided by the CI images) selects the parallelism itself.
         run: ctest --preset "$PRESET" --parallel
 
+      # The job log is not always reachable (e.g. from behind a proxy), so surface the
+      # failing unit tests themselves as annotations, which the Checks API exposes.
+      - name: Annotate failing unit tests
+        if: ${{ failure() && matrix.environment.run-tests != 'OFF' }}
+        run: |
+          command -v python3 >/dev/null || exit 0
+          python3 tools/unix/ctest_failures_to_annotations.py build
+
       # Run drape tests separately. They require offscreen rendering support.
       # The drape test presets set QT_QPA_PLATFORM=offscreen; setting it
       # globally breaks network tests on macOS.

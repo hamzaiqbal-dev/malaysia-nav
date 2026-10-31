@@ -3,6 +3,7 @@
 #include "indexer/categories_holder.hpp"
 #include "indexer/categories_index.hpp"
 #include "indexer/classificator.hpp"
+#include "indexer/search_string_utils.hpp"
 
 #include "generator/generator_tests_support/test_with_classificator.hpp"
 
@@ -403,8 +404,177 @@ UNIT_CLASS_TEST(TestWithClassificator, CategoriesIndex_AllCategories)
 
   index.AddAllCategoriesInAllLangs();
   // Consider deprecating this method if this bound rises as high as a million.
+  // Malaysia Nav raised it from upstream's 900000: the fork adds two locales (ms, ta) plus the
+  // Malaysian Chinese synonyms, which cost about 7000 nodes.
   LOG(LINFO, ("Number of nodes in the CategoriesIndex trie:", index.GetNumTrieNodes()));
-  TEST_LESS(index.GetNumTrieNodes(), 900000, ());
+  TEST_LESS(index.GetNumTrieNodes(), 950000, ());
+}
+
+// Malaysia Nav: Bahasa Melayu search terms in the shipped categories.txt.
+UNIT_CLASS_TEST(TestWithClassificator, CategoriesHolder_BahasaMelayu)
+{
+  auto const & holder = GetDefaultCategories();
+  int8_t const ms = CategoriesHolder::MapLocaleToInteger("ms");
+  TEST_NOT_EQUAL(ms, CategoriesHolder::kUnsupportedLocaleCode, ());
+  TEST_EQUAL(ms, CategoriesHolder::MapLocaleToInteger("ms-MY"), ());
+
+  auto const typesByName = [&](std::string const & name)
+  {
+    std::vector<uint32_t> types;
+    holder.ForEachTypeByName(ms, strings::MakeUniString(name), [&types](uint32_t type) { types.push_back(type); });
+    return types;
+  };
+
+  TEST(base::IsExist(typesByName("surau"), classif().GetTypeByPath({"amenity", "place_of_worship", "muslim"})), ());
+  TEST(base::IsExist(typesByName("mamak"), classif().GetTypeByPath({"amenity", "restaurant"})), ());
+  TEST(base::IsExist(typesByName("kopitiam"), classif().GetTypeByPath({"amenity", "cafe"})), ());
+  TEST(base::IsExist(typesByName("puspakom"), classif().GetTypeByPath({"amenity", "vehicle_inspection"})), ());
+  TEST(base::IsExist(typesByName("hentian"), classif().GetTypeByPath({"highway", "rest_area"})), ());
+}
+
+// Malaysia Nav: the Malaysian POI categories, searchable in Bahasa Melayu, English, 中文 and தமிழ்.
+UNIT_CLASS_TEST(TestWithClassificator, CategoriesHolder_MalaysianCategories)
+{
+  auto const & holder = GetDefaultCategories();
+
+  // The holder keys one normalized token at a time, so every term below is a single token.
+  auto const resolves = [&holder](char const * locale, std::string_view term, vector<string> const & path)
+  {
+    int8_t const code = CategoriesHolder::MapLocaleToInteger(locale);
+    TEST_NOT_EQUAL(code, CategoriesHolder::kUnsupportedLocaleCode, (locale));
+
+    vector<uint32_t> types;
+    holder.ForEachTypeByName(code, search::NormalizeAndSimplifyString(term),
+                             [&types](uint32_t type) { types.push_back(type); });
+    return base::IsExist(types, classif().GetTypeByPath(path));
+  };
+
+  vector<string> const kMosque = {"amenity", "place_of_worship", "muslim"};
+  vector<string> const kRestaurant = {"amenity", "restaurant"};
+  vector<string> const kFastFood = {"amenity", "fast_food"};
+  vector<string> const kCafe = {"amenity", "cafe"};
+  vector<string> const kPolice = {"amenity", "police"};
+  vector<string> const kClinic = {"amenity", "clinic"};
+  vector<string> const kInspection = {"amenity", "vehicle_inspection"};
+  vector<string> const kGovernment = {"office", "government"};
+  vector<string> const kCharging = {"amenity", "charging_station"};
+  vector<string> const kRestArea = {"highway", "rest_area"};
+
+  // surau / masjid
+  TEST(resolves("ms", "musolla", kMosque), ());
+  TEST(resolves("zh-Hans", "回教堂", kMosque), ());
+  TEST(resolves("ta", "பள்ளிவாசல்", kMosque), ());
+
+  // R&R (rest and service area)
+  TEST(resolves("en", "rnr", kRestArea), ());
+  TEST(resolves("ms", "rehat", kRestArea), ());
+  TEST(resolves("zh-Hans", "休息站", kRestArea), ());
+  TEST(resolves("ta", "ஓய்வு", kRestArea), ());
+
+  // mamak
+  TEST(resolves("ms", "kandar", kRestaurant), ());
+  TEST(resolves("ms", "mamak", kFastFood), ());
+  TEST(resolves("zh-Hant", "嘛嘛檔", kRestaurant), ());
+  TEST(resolves("ta", "மாமாக்", kRestaurant), ());
+
+  // kopitiam
+  TEST(resolves("zh-Hans", "茶餐室", kCafe), ());
+  TEST(resolves("ta", "கோபிட்டியாம்", kCafe), ());
+
+  // JPJ (road transport department)
+  TEST(resolves("en", "jpj", kGovernment), ());
+  TEST(resolves("zh-Hans", "陆路交通局", kGovernment), ());
+  TEST(resolves("ta", "ஜேபிஜே", kGovernment), ());
+
+  // PDRM
+  TEST(resolves("ms", "pdrm", kPolice), ());
+  TEST(resolves("zh-Hans", "警亭", kPolice), ());
+  TEST(resolves("ta", "போலிஸ்", kPolice), ());
+
+  // Puspakom
+  TEST(resolves("en", "puspakom", kInspection), ());
+  TEST(resolves("zh-Hans", "验车", kInspection), ());
+  TEST(resolves("ta", "புஸ்பாகோம்", kInspection), ());
+
+  // klinik kesihatan (government health clinic)
+  TEST(resolves("ms", "kesihatan", kClinic), ());
+  TEST(resolves("zh-Hans", "政府诊所", kClinic), ());
+  TEST(resolves("ta", "கிளினிக்", kClinic), ());
+
+  // EV charging station
+  TEST(resolves("ms", "pengecas", kCharging), ());
+  TEST(resolves("zh-Hans", "电动车充电站", kCharging), ());
+  TEST(resolves("ta", "சார்ஜர்", kCharging), ());
+}
+
+// Malaysia Nav: 中文 (Malaysian usage) and தமிழ் synonyms for the everyday categories.
+UNIT_CLASS_TEST(TestWithClassificator, CategoriesHolder_MalaysianChineseTamil)
+{
+  auto const & holder = GetDefaultCategories();
+
+  // The holder keys one normalized token at a time, so every term below is a single token.
+  auto const resolves = [&holder](char const * locale, std::string_view term, vector<string> const & path)
+  {
+    int8_t const code = CategoriesHolder::MapLocaleToInteger(locale);
+    TEST_NOT_EQUAL(code, CategoriesHolder::kUnsupportedLocaleCode, (locale));
+
+    vector<uint32_t> types;
+    holder.ForEachTypeByName(code, search::NormalizeAndSimplifyString(term),
+                             [&types](uint32_t type) { types.push_back(type); });
+    return base::IsExist(types, classif().GetTypeByPath(path));
+  };
+
+  // {locale, term, type path}
+  struct Case
+  {
+    char const * m_locale;
+    std::string_view m_term;
+    vector<string> m_path;
+  };
+  Case const cases[] = {
+      {"zh-Hans", "油站", {"amenity", "fuel"}},
+      {"ta", "பெட்ரோல்", {"amenity", "fuel"}},
+      {"zh-Hans", "神庙", {"amenity", "place_of_worship", "buddhist"}},
+      {"zh-Hans", "大伯公庙", {"amenity", "place_of_worship", "taoist"}},
+      {"ms", "tokong", {"amenity", "place_of_worship", "taoist"}},
+      {"zh-Hans", "兴都庙", {"amenity", "place_of_worship", "hindu"}},
+      {"ta", "கோவில்", {"amenity", "place_of_worship", "hindu"}},
+      {"ms", "kuil", {"amenity", "place_of_worship", "hindu"}},
+      {"zh-Hans", "政府医院", {"amenity", "hospital"}},
+      {"ta", "ஆஸ்பத்திரி", {"amenity", "hospital"}},
+      {"ta", "டாக்டர்", {"amenity", "doctors"}},
+      {"ta", "போலிஸ்", {"amenity", "police"}},
+      {"zh-Hans", "提款机", {"amenity", "atm"}},
+      {"ta", "ஏடிஎம்", {"amenity", "atm"}},
+      {"ta", "வங்கி", {"amenity", "bank"}},
+      {"ta", "பார்க்கிங்", {"amenity", "parking"}},
+      {"zh-Hans", "洗手间", {"amenity", "toilets"}},
+      {"ta", "கழிப்பறை", {"amenity", "toilets"}},
+      {"zh-Hans", "轻快铁", {"railway", "station", "subway"}},
+      {"zh-Hans", "mrt", {"railway", "station", "subway"}},
+      {"ta", "எல்ஆர்டி", {"railway", "station", "subway"}},
+      {"zh-Hans", "ktm", {"railway", "station"}},
+      {"ta", "ரயில்", {"railway", "station"}},
+      {"zh-Hans", "巴士站", {"highway", "bus_stop"}},
+      {"ta", "பஸ்", {"highway", "bus_stop"}},
+      {"en", "hawker", {"amenity", "food_court"}},
+      {"ms", "selera", {"amenity", "food_court"}},
+      {"zh-Hans", "小贩中心", {"amenity", "food_court"}},
+      {"ta", "ஃபுட்", {"amenity", "food_court"}},
+      {"zh-Hans", "夜市", {"amenity", "marketplace"}},
+      {"zh-Hans", "巴刹", {"amenity", "marketplace"}},
+      {"ta", "சந்தை", {"amenity", "marketplace"}},
+      {"zh-Hans", "ev充电", {"amenity", "charging_station", "motorcar"}},
+      {"ta", "சார்ஜர்", {"amenity", "charging_station", "motorcar"}},
+      {"zh-Hans", "药房", {"amenity", "pharmacy"}},
+      {"ta", "மருந்தகம்", {"amenity", "pharmacy"}},
+      {"ta", "பார்மசி", {"shop", "chemist"}},
+      {"ms", "serbaneka", {"shop", "convenience"}},
+      {"zh-Hans", "杂货店", {"shop", "convenience"}},
+      {"ta", "மளிகைக்", {"shop", "convenience"}},
+  };
+  for (auto const & c : cases)
+    TEST(resolves(c.m_locale, c.m_term, c.m_path), (c.m_locale, c.m_term, c.m_path));
 }
 
 // A check that this data structure is not too heavy.

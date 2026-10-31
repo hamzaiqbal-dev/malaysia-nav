@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Malaysia Nav theme tokens, day palette (design/concept-3d). Night values: values-night/my_colors.xml. -->
+<resources>
+  <color name="my_bg">#FFF4F6FA</color>
+  <color name="my_panel">#FFFFFFFF</color>
+  <color name="my_panel_2">#FFF1F4F9</color>
+  <color name="my_ink">#FF0B1220</color>
+  <color name="my_muted">#FF5A6880</color>
+  <color name="my_line">#14000000</color>
+  <color name="my_route">#FF2E8BFF</color>
+  <color name="my_accent">#FFFFC43D</color>
+  <color name="my_ok">#FF1E9E5A</color>
+  <color name="my_warn">#FFE56A33</color>
+  <color name="my_danger">#FFE03548</color>
+
+  <!-- Turn banner: the same green in both themes, white text on top of it. -->
+  <color name="my_turn_banner_start">#FF1C8C4E</color>
+  <color name="my_turn_banner_end">#FF13703C</color>
+  <color name="my_on_banner">#FFFFFFFF</color>
+  <color name="my_on_banner_muted">#CCFFFFFF</color>
+  <color name="my_banner_icon_bg">#24FFFFFF</color>
+
+  <!-- Translucent pills floating over the map (lanes, speed). -->
+  <color name="my_pill_bg">#E6FFFFFF</color>
+  <color name="my_lane_inactive">#FF8A96AA</color>
+</resources>

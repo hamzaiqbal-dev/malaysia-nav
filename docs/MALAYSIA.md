@@ -43,8 +43,10 @@ Week 3    Reports v1: client button + minimal back-end (Malaysia-hosted), 20-use
 Week 4    Play Store internal/closed beta; measure retention (D1, D7) and report volume.
 Decision  5,000 organic installs or strong D7 retention → fund and staff it; otherwise rethink.
 
+## Decisions (founder)
+- App name: **Sampai** (29 Oct 2026). Brand/logo still open.
+
 ## Open decisions (founder)
-- App name and brand.
 - Company/entity that will own the Play Store and App Store accounts.
 - Back-end hosting for reports (Malaysian cloud: e.g. AIMS, Exabytes, or a MY region of a big cloud).
 
@@ -56,3 +58,70 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
 - 2026-10-24: Forked organicmaps/organicmaps → hamzaiqbal-dev/malaysia-nav. Plan written. Next: CI
   build of Android debug APK, app id and placeholder name, BM default language.
 - 2026-10-29: 3D UI concept added (design/concept-3d). Android redesign plan written. Next: PR 1 = theme tokens + NavHudView.
+- 2026-10-29 (night): PR #1 feature/nav-hud-redesign = theme tokens (my_colors.xml day/night) + NavHudView
+  (turn banner, lane strip, speed + limit, ETA sheet) behind R.bool.my_nav_hud_enabled; BM + EN strings;
+  unit tests for ETA/speed formatting. Blocker: GitHub Actions has never run on this fork (0 runs) — enable
+  workflows in the repo's Actions tab, then CI validates the PR. Next: device check in day/night, portrait/
+  landscape; Plus Jakarta Sans; tolls in the ETA sheet (step 5); ExploreSheet (step 2 cont.).
+- 2026-10-30 (night): PR #2 tolls v1 — toll booths come from the map data (libs/my_tolls, JNI
+  app.organicmaps.sdk.my.MyTolls), prices from data/my_tolls.csv (52 open-system plazas, sourced), total in RM in the
+  HUD ETA sheet ("+" when a booth on the route has no price yet). PLUS/LPT closed-system fares and "RM saved when
+  avoiding tolls" still to do. Name decided: Sampai.
+- 2026-10-30: PR #3 identity — applicationId my.sampai.app, app name "Sampai" ("Sampai Beta"/"Sampai Debug"),
+  Play listing text for en-US and ms-MY rewritten for Sampai (other locales still carry the Organic Maps text;
+  rewrite before publishing). Still Organic Maps': launcher icon, splash logo, contact e-mail/website in
+  android/app/src/{fdroid,google}/play — trademark: replace before any public build.
+- 2026-10-30: PR #4 Bahasa Melayu search — "ms" added to the category locales (libs/indexer) and BM synonyms for 43
+  categories/groups in data/categories.txt: surau/masjid, hentian rehat (RnR), stesen minyak, pengecas EV, klinik,
+  balai polis, mamak, kopitiam, Puspakom, JPJ/pejabat kerajaan, pasar malam, parkir, tandas, stesen LRT/MRT/KTM…
+  Next for search: 中文 and தமிழ் synonyms, Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99
+  Speedmart, Mydin, KK Mart…).
+- 2026-10-30: docs/REPORTS.md — live reports v1 design (data model, TTLs, PDPA, rate limits, API, hosting options with
+  RM costs). Needs the founder's hosting choice and domain before client/back-end code.
+- 2026-10-30 (late): PR #7 Bahasa Melayu UI — 616 new ms definitions in data/strings/strings.txt, so the Android app,
+  SDK, Android Auto, routing, downloader and Wear modules are fully BM (values-ms: 19 → 582 strings in the app module,
+  plus new values-ms folders for the five other modules). PR #8 BM voice guidance — all 68 TTS phrases in sound.txt,
+  data/sound-strings/ms.json generated, "Bahasa Melayu" added to the voice picker (libs/platform/languages.hpp).
+  Open decision for the founder: whether values/ (the default locale, today English) should become BM, which is step 4
+  of design/README.md. Until then BM is a selectable locale and English is the fallback for anything untranslated.
+- 2026-10-30 (late): CI audit. The "Android Check" failure mailed for cfa6909 on feature/sampai-identity was the
+  app-id rename: android/app/build.gradle's checkApkPermissions allow-list still matched
+  app.organicmaps…DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, so both debug builds failed on the renamed
+  my.sampai.app permission. Already fixed in c086a9d (head of that branch), which builds green.
+  Two gaps found and worked around: (a) the kotlin style, detekt and clang-format workflows only trigger on
+  pull_request with branches: [master], so a stacked PR never runs them — ktlint 1.8.0, detekt 1.23.8 and
+  clang-format 23 were run locally over the whole chain instead and are clean; (b) only Android Check had ever been
+  dispatched, so the C++ of libs/my_tolls had never been compiled by CI — the CMake workflow was dispatched for the
+  chain and passes. Worth making those three workflows run on every PR base, not just master.
+- 2026-10-30 (night): PR #18 Malaysian POI search categories — 中文 and தமிழ் synonyms for the ten categories
+  Malaysians search for (surau/masjid, R&R, mamak, kopitiam, JPJ, PDRM, Puspakom, klinik kesihatan, EV charging),
+  "ta" registered as a category locale (libs/indexer, code 50), and the Malay/English lines widened with the
+  colloquial spellings: musolla, kedai mamak, nasi kandar, kopi tiam, pondok polis, IPD, klinik kerajaan,
+  hentian sebelah, R&R. Three concepts have no exact OSM tag and are mapped to the nearest real ones: R&R →
+  highway=rest_area/services, mamak → amenity=restaurant + fast_food, kopitiam → amenity=cafe; JPJ has no
+  government=transportation subtype in the classificator, so it sits on office=government, and klinik kesihatan
+  on amenity=clinic. New test CategoriesHolder_MalaysianCategories checks all four languages against the shipped
+  file. Next for search: Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99 Speedmart, Mydin,
+  KK Mart…), and ms/ta names in types_strings.txt so place pages are not English-only.
+- 2026-10-31: PR search/my-brands-zh-ta — 中文 and தமிழ் synonyms for the rest of the everyday categories (petrol
+  station, Chinese/Hindu temples, hospital, doctor, police, ATM, bank, parking, toilet, KTM/LRT/MRT, bus stop, food
+  court, pasar malam, EV charger, pharmacy, convenience store: 181 synonyms, incl. a few missing ms lines such as
+  tokong, kuil, medan selera, kedai serbaneka) and 31 Malaysian brands in data/categories_brands.txt (fuel, grocery,
+  retail, F&B, banks; first en name = the OSM brand=* value from the name-suggestion-index, then the spellings
+  Malaysians type, zh names where common). Caring Pharmacy and Pak Li left out — no brand=* value in the index.
+  Finding: FMD_BRAND holds the raw OSM brand value and libs/indexer's ForEachLocalizedBrands looks it up as an
+  exact key (petronas, 99_speedmart…), and feature_builder drops the brand when name == brand, so the brand
+  synonyms only fire where brand != name and the value matches the key; generator/brands_loader.cpp (brand-ID
+  pipeline) is not wired into any stage. Upstream's own brands have the same limitation. Next for search: either
+  normalise the raw brand to a key in ForEachLocalizedBrands or wire brands_loader into the generator, then
+  ms/ta names in types_strings.txt so place pages are not English-only.
+- 2026-10-31: PR brand — original Sampai launcher icon (route dots arriving at a blue pin with an amber tick on
+  navy #0B1220; adaptive vector + monochrome + legacy PNGs, debug on grid paper, beta on orange), new splash and
+  about logo, Play icon 512 and feature graphic 1024x500 (rendered by design/brand/render_icons.py). Organic Maps
+  contact e-mail/website/social links replaced by placeholders support@sampai.my and https://sampai.my (FOUNDER TO
+  CONFIRM; domain not registered). Apache-2.0 / OpenStreetMap attribution untouched.
+- 2026-11-01: M1 integration branch integration/m1 — merges the whole stacked chain (PRs #1–#18) plus #19 brand,
+  #20 中文/தமிழ் synonyms and brands, #21 CI test annotations and #22 geo URL parser fix / fuzz harnesses /
+  pentest report into one PR against master, so the owner reviews and merges once. Conflicts: build.gradle (kept the
+  single support@sampai.my SUPPORT_MAIL and the appId-based REVIEW_URL), strings.txt (kept the Sampai addresses and
+  the BM line), regenerated strings committed separately.

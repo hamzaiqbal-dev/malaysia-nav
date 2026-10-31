@@ -11,6 +11,9 @@ on:
 env:
   JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64  # Java 21 is required by Android Gradle plugin lint
 
+permissions:
+  contents: read
+
 jobs:
   android-sdk-release:
     name: Android SDK Release

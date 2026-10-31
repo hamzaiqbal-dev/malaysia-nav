@@ -1,0 +1,58 @@
+# Malaysia Nav toll prices, v1 (open-system plazas with a fixed price per crossing; PLUS/LPT closed-system fares are
+# distance based and are not covered yet). Prices in RM per vehicle class (1 = car, 2 = light lorry/van, 3 = 3+ axles,
+# 4 = taxi, 5 = bus). The plaza name is matched against the toll-booth names in the map data (OpenStreetMap) after
+# stripping "Plaza Tol" / "Toll Plaza"; aliases are extra names separated by "|". source = where the price was read,
+# checked = the date that source showed. Lines starting with # are comments.
+plaza,highway,road_ref,concession,aliases,class1,class2,class3,class4,class5,source,checked
+Penchala,LDP,E11,Litrak,Bukit Lanjan,2.10,4.20,6.30,1.10,1.60,https://litrak.com.my/our-highways/litrak/toll-fares/,2026-05-22
+Petaling Jaya,LDP,E11,Litrak,Petaling Jaya Selatan|PJS|Petaling Jaya South,2.10,4.20,6.30,1.10,1.60,https://litrak.com.my/our-highways/litrak/toll-fares/,2026-05-22
+Puchong Barat,LDP,E11,Litrak,Puchong Jaya|Puchong West,2.10,4.20,6.30,1.10,1.60,https://litrak.com.my/our-highways/litrak/toll-fares/,2026-05-22
+Puchong Selatan,LDP,E11,Litrak,Puchong South,2.10,4.20,6.30,1.10,1.60,https://litrak.com.my/our-highways/litrak/toll-fares/,2026-05-22
+Bukit Kiara,SPRINT,E23,Litrak,Kerinchi Link|Penchala Link,3.00,4.60,6.90,1.20,1.60,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Damansara,SPRINT,E23,Litrak,Damansara Link,2.00,4.00,6.00,1.00,1.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Pantai,SPRINT,E23,Litrak,Kerinchi,2.50,7.00,10.50,1.80,1.80,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Sunway,KESAS,E5,KESAS Sdn Bhd,,2.00,3.00,4.00,1.00,1.50,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kemuning,KESAS,E5,KESAS Sdn Bhd,,2.00,3.00,4.00,1.00,1.50,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Batu Tiga,KESAS,E5,KESAS Sdn Bhd,Besar East|Besar Barat|Besar Timur|Besar West,2.00,3.00,4.00,1.00,1.50,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Ayer Panas,DUKE,E33,Ekovest,Air Panas,2.50,3.80,5.00,1.30,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Batu,DUKE,E33,Ekovest,Batu Caves,2.50,3.80,5.00,1.30,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Segambut,DUKE,E33,Ekovest,,2.50,3.80,5.00,1.30,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Sentul Pasar,DUKE,E33,Ekovest,Sentul Pasar Tambahan,2.50,3.80,5.00,1.30,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+SMART,SMART,E38,Syarikat Mengurus Air Banjir dan Terowong,SMART Tunnel|Terowong SMART,3.00,0.00,0.00,3.00,0.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Putrajaya,MEX,E20,Maju Expressway,Putrajaya Utama,3.50,7.00,10.50,1.80,2.50,https://www.mex.com.my/?p=116,2026-05-22
+Salak Selatan,MEX,E20,Maju Expressway,Salak South,2.00,4.00,6.00,1.00,1.50,https://www.mex.com.my/?p=116,2026-05-22
+Seri Kembangan,MEX,E20,Maju Expressway,,2.20,4.40,6.60,1.10,2.20,https://www.mex.com.my/?p=116,2026-05-22
+Pantai Dalam,NPE,E10,NPE Sdn Bhd,,2.30,4.60,6.90,1.20,1.60,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+PJS 2,NPE,E10,NPE Sdn Bhd,Petaling Jaya (S) 2|Petaling Jaya Selatan 2,1.00,4.60,6.90,1.20,1.60,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+PJS 5,NPE,E10,NPE Sdn Bhd,Petaling Jaya (S) 5|Petaling Jaya Selatan 5,2.30,4.60,6.90,1.20,1.60,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Mines,Besraya,E9,Besraya Sdn Bhd,Mines North|Mines South|Mines Utara|Mines Selatan,1.85,3.70,3.70,1.85,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Loke Yew,Besraya,E9,Besraya Sdn Bhd,,1.85,3.70,3.70,1.85,1.85,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Sungai Ramal,SILK,E18,Prolintas,,1.66,3.60,5.40,0.83,0.92,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Sungai Long,SILK,E18,Prolintas,,1.66,3.60,5.40,0.83,0.92,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Sungai Balak,SILK,E18,Prolintas,,1.66,3.60,5.40,0.83,0.92,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Bukit Kajang,SILK,E18,Prolintas,,1.66,3.60,5.40,0.83,0.92,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Lagong,Guthrie,E35,Prolintas,,1.75,3.80,5.70,0.83,1.29,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Bukit Jelutong,Guthrie,E35,Prolintas,,1.75,3.80,5.70,0.83,1.29,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Elmina,Guthrie,E35,Prolintas,,1.75,3.80,5.70,0.83,1.29,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Alam Impian,LKSA,E13,Prolintas,,0.83,1.80,2.70,0.83,0.55,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Seri Muda,LKSA,E13,Prolintas,,1.56,3.40,5.10,0.83,1.10,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Ampang,SUKE,E19,Prolintas,,2.30,4.60,6.90,1.20,2.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Bukit Teratai,SUKE,E19,Prolintas,,2.30,4.60,6.90,1.20,2.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Keramat,AKLEH,E12,Prolintas,,2.13,7.00,10.50,1.53,1.53,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Ijok,LATAR,E25,KL-Kuala Selangor Expressway Bhd,,2.50,5.00,7.50,1.30,2.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kuang Barat,LATAR,E25,KL-Kuala Selangor Expressway Bhd,Kuang West,2.50,5.00,7.50,1.30,2.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kuang Timur,LATAR,E25,KL-Kuala Selangor Expressway Bhd,Kuang East,2.50,5.00,7.50,1.30,2.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Taman Rimba Templer,LATAR,E25,KL-Kuala Selangor Expressway Bhd,Templer,2.50,5.00,7.50,1.30,2.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kundang Barat,LATAR,E25,KL-Kuala Selangor Expressway Bhd,Kundang West,1.30,2.60,3.90,0.70,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kundang Timur,LATAR,E25,KL-Kuala Selangor Expressway Bhd,Kundang East,1.30,2.60,3.90,0.70,1.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Batu 9,Grand Saga,E7,Grand Saga,Batu 9 Cheras,1.30,2.60,2.60,0.70,1.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Batu 11,Grand Saga,E7,Grand Saga,Batu 11 Cheras,1.30,2.60,2.60,0.70,0.90,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Gombak,KLK,E8,ANIH,,6.00,12.00,18.00,3.00,5.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Bentong,KLK,E8,ANIH,,3.50,7.00,10.50,1.80,3.00,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Bukit Raja,NNKSB,E30,NNKSB,,0.60,1.10,1.60,0.30,0.30,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Kapar,NNKSB,E30,NNKSB,,2.70,4.80,6.80,1.40,2.40,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Lima Kedai,LINKEDUA,E3,Linkedua,,3.19,7.80,9.80,1.64,3.19,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Perling,LINKEDUA,E3,Linkedua,,1.88,4.60,5.70,0.90,1.88,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Tanjung Kupang,LINKEDUA,E3,Linkedua,Tg Kupang|Second Link,6.14,17.10,34.30,4.67,7.45,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Lukut,SPDH,E29,Seremban-Port Dickson Highway,,0.65,1.40,2.20,0.65,1.14,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22
+Mambau,SPDH,E29,Seremban-Port Dickson Highway,,2.62,6.30,9.50,2.62,5.16,https://www.motorist.my/article/2829/list-of-malaysia-highway-toll-rates-plus-klk-lpt-and-others-2026-edition,2026-05-22

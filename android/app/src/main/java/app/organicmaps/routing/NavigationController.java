@@ -18,6 +18,7 @@ import androidx.lifecycle.ViewModelProvider;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
 import app.organicmaps.maplayer.MapButtonsViewModel;
+import app.organicmaps.my.NavHudView;
 import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.maplayer.traffic.TrafficManager;
 import app.organicmaps.sdk.routing.RoutingController;
@@ -35,7 +36,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 public class NavigationController implements TrafficManager.TrafficCallback, NavMenu.NavMenuListener
 {
-  private final View mFrame;
+  private final ViewGroup mFrame;
 
   private final ImageView mNextTurnImage;
   private final TextView mNextTurnDistance;
@@ -55,7 +56,12 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   private final View mTopFrame;
   private final View mNextTurnContainer;
 
+  // Exactly one of the two is set: the Malaysia Nav HUD when R.bool.my_nav_hud_enabled, else the stock menu.
+  @Nullable
   private final NavMenu mNavMenu;
+  @Nullable
+  private final NavHudView mNavHud;
+  private final NavMenu.OnMenuSizeChangedListener mOnMenuSizeChangedListener;
   View.OnClickListener mOnSettingsClickListener;
   View.OnClickListener mOnVoiceSettingsClickListener;
 
@@ -66,7 +72,28 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     mMapButtonsViewModel = new ViewModelProvider(activity).get(MapButtonsViewModel.class);
 
     mFrame = activity.findViewById(R.id.navigation_frame);
-    mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
+    mOnMenuSizeChangedListener = onMenuSizeChangedListener;
+    if (activity.getResources().getBoolean(R.bool.my_nav_hud_enabled))
+    {
+      mNavMenu = null;
+      mNavHud = new NavHudView(activity);
+      mNavHud.setListener(this);
+      mNavHud.setOnContentHeightChanged(() -> {
+        final int topHeight = mNavHud.getTopContentHeight();
+        mMapButtonsViewModel.setTopHeaderHeight(topHeight);
+        mMapButtonsViewModel.setTopButtonsMarginTop(topHeight + dimen(activity, R.dimen.nav_frame_padding));
+        mOnMenuSizeChangedListener.OnMenuSizeChange();
+      });
+      mFrame.addView(mNavHud);
+      // The stock HUD stays in the layout as the fallback but is hidden.
+      UiUtils.hide(mFrame.findViewById(R.id.nav_top_frame), mFrame.findViewById(R.id.nav_bottom_sheet_coordinator),
+                   mFrame.findViewById(R.id.nav_bottom_sheet_nav_bar));
+    }
+    else
+    {
+      mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
+      mNavHud = null;
+    }
     mOnSettingsClickListener = onSettingsClickListener;
     mOnVoiceSettingsClickListener = onVoiceSettingsClickListener;
 
@@ -170,7 +197,15 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     if (info == null)
       return;
 
-    if (Router.get() == Router.Pedestrian)
+    final boolean isPedestrian = Router.get() == Router.Pedestrian;
+    if (mNavHud != null)
+    {
+      final Location location = MwmApplication.from(mFrame.getContext()).getLocationHelper().getSavedLocation();
+      mNavHud.update(info, isPedestrian, location == null ? null : (double) location.getSpeed());
+      return;
+    }
+
+    if (isPedestrian)
       updatePedestrian(info);
     else
       updateVehicle(info);
@@ -203,28 +238,53 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
       update(RoutingController.get().getCachedRoutingInfo());
     }
     UiUtils.showIf(show, mFrame);
+    if (show && mNavHud != null)
+      mNavHud.refreshTolls();
     if (!show)
+    {
       mMapButtonsViewModel.setTopHeaderHeight(0);
+      // The HUD's ETA sheet is gone, so map widgets may move back down.
+      if (mNavHud != null)
+        mOnMenuSizeChangedListener.OnMenuSizeChange();
+    }
   }
 
   public boolean isNavMenuCollapsed()
   {
-    return mNavMenu.getBottomSheetState() == BottomSheetBehavior.STATE_COLLAPSED;
+    return mNavMenu == null || mNavMenu.getBottomSheetState() == BottomSheetBehavior.STATE_COLLAPSED;
   }
 
   public boolean isNavMenuHidden()
   {
-    return mNavMenu.getBottomSheetState() == BottomSheetBehavior.STATE_HIDDEN;
+    return mNavMenu != null && mNavMenu.getBottomSheetState() == BottomSheetBehavior.STATE_HIDDEN;
   }
 
   public void collapseNavMenu()
   {
-    mNavMenu.collapseNavBottomSheet();
+    if (mNavMenu != null)
+      mNavMenu.collapseNavBottomSheet();
+  }
+
+  // A route was built or rebuilt (reroute): the HUD's toll total follows the new geometry.
+  public void onRouteBuilt()
+  {
+    if (mNavHud != null && UiUtils.isVisible(mFrame))
+      mNavHud.refreshTolls();
   }
 
   public void refresh()
   {
-    mNavMenu.refreshTts();
+    if (mNavMenu != null)
+      mNavMenu.refreshTts();
+    if (mNavHud != null)
+      mNavHud.refreshVoiceState();
+  }
+
+  // Height of the HUD's ETA sheet that map widgets must stay above; 0 with the stock bottom sheet,
+  // whose header height MwmActivity reads directly.
+  public int getBottomOverlayHeight()
+  {
+    return mNavHud != null && UiUtils.isVisible(mFrame) ? mNavHud.getBottomSheetHeight() : 0;
   }
 
   @Override

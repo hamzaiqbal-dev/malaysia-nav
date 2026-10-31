@@ -7,6 +7,9 @@ on:
       - iphone/metadata/**
       - tools/python/check_store_metadata.py
 
+permissions:
+  contents: read
+
 jobs:
   ios-check-metadata:
     name: Check app metadata

@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SECTION: Strings -->
+    <!-- Button text (should be short) -->
+    <string name="back">Kembali</string>
+    <!-- Button text (should be short) -->
+    <string name="cancel">Batal</string>
+    <!-- Button which deletes downloaded country -->
+    <string name="delete">Hapus</string>
+    <string name="download_maps">Muat Turun Peta</string>
+    <!-- Settings/Downloader - info for country when download fails -->
+    <string name="download_has_failed">Muat turun gagal. Ketik untuk cuba lagi.</string>
+    <!-- Settings/Downloader - info for country which started downloading -->
+    <string name="downloading">Sedang memuat turun…</string>
+    <!-- Choose measurement on first launch alert - choose metric system button -->
+    <string name="kilometres">Kilometer</string>
+    <!-- Choose measurement on first launch alert - choose imperial system button -->
+    <string name="miles">Batu</string>
+    <!-- Update maps later button text -->
+    <string name="later">Kemudian</string>
+    <!-- View and button titles for accessibility. Also used in iPhone home screen quick actions. -->
+    <string name="search">Cari</string>
+    <!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
+    <string name="search_map">Cari Peta</string>
+    <!-- Location services are disabled by user alert - message -->
+    <string name="location_is_disabled_long_text">Semua Perkhidmatan Lokasi untuk peranti atau aplikasi ini dimatikan. Sila aktifkannya dalam Tetapan.</string>
+    <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
+    <string name="limited_accuracy">Ketepatan Terhad</string>
+    <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
+    <string name="precise_location_is_disabled_long_text">Untuk navigasi yang tepat, aktifkan Lokasi Tepat dalam tetapan.</string>
+    <!-- View and button titles for accessibility -->
+    <string name="zoom_to_country">Tunjuk pada peta</string>
+    <!-- Message to display at the center of the screen when the country download has failed -->
+    <string name="country_status_download_failed">Muat turun gagal</string>
+    <!-- Button text for the button under the country_status_download_failed message -->
+    <string name="try_again">Cuba Lagi</string>
+    <string name="about_menu_title">Perihal Organic Maps</string>
+    <!-- Text in About screen -->
+    <string name="about_headline">Percuma untuk semua, dibina dengan sepenuh hati</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_1">• Tiada iklan, tiada penjejakan, tiada pengumpulan data</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_2">• Tidak menghabiskan bateri, berfungsi luar talian</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_3">• Pantas, ringkas, dibangunkan oleh komuniti</string>
+    <!-- Text in About screen -->
+    <string name="about_developed_by_enthusiasts">Aplikasi sumber terbuka yang dibina oleh peminat dan sukarelawan.</string>
+    <!-- The button that opens system location settings -->
+    <string name="location_settings">Tetapan lokasi</string>
+    <string name="close">Tutup</string>
+    <string name="unsupported_phone">Aplikasi ini memerlukan OpenGL berpecutan perkakasan. Malangnya peranti anda tidak disokong.</string>
+    <string name="download">Muat turun</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disconnect_usb_cable">Sila cabut kabel USB atau masukkan kad memori untuk menggunakan Organic Maps</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="not_enough_free_space_on_sdcard">Sila kosongkan sedikit ruang pada kad SD/storan USB dahulu untuk menggunakan aplikasi ini</string>
+    <string name="download_resources">Sebelum anda mula menggunakan aplikasi ini, sila muat turun peta gambaran dunia ke peranti anda.\nIa menggunakan %s storan.</string>
+    <string name="download_resources_continue">Pergi ke Peta</string>
+    <string name="downloading_country_can_proceed">Sedang memuat turun %s. Anda kini boleh\nteruskan ke peta.</string>
+    <string name="download_country_ask">Muat turun %s?</string>
+    <string name="update_country_ask">Kemas kini %s?</string>
+    <!-- REMOVE THIS STRING AFTER REFACTORING -->
+    <string name="pause">Jeda</string>
+    <!-- REMOVE THIS STRING AFTER REFACTORING -->
+    <string name="continue_button">Teruskan</string>
+    <!-- Show popup notification on top of the map when country download has failed. -->
+    <string name="download_country_failed">Muat turun %s gagal</string>
+    <!-- "Add new bookmark list" dialog title -->
+    <string name="add_new_set">Tambah Senarai Baharu</string>
+    <!-- Add Bookmark list dialog - hint when the list name is empty -->
+    <string name="bookmark_set_name">Nama Senarai Tanda Buku</string>
+    <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
+    <string name="bookmarks">Tanda Buku</string>
+    <!-- "Bookmarks and Tracks" dialog title. Also used in iPhone home screen quick actions. -->
+    <string name="bookmarks_and_tracks">Tanda buku dan trek</string>
+    <!-- Add bookmark dialog - bookmark name -->
+    <string name="name">Nama</string>
+    <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
+    <string name="address">Alamat</string>
+    <!-- Add Bookmark dialog/Bookmark list; Bookmarks dialog/Bookmark list cell. -->
+    <string name="list">Senarai</string>
+    <!-- Settings button in system menu -->
+    <string name="settings">Tetapan</string>
+    <!-- Header of settings activity where user defines storage path -->
+    <string name="maps_storage">Simpan peta ke</string>
+    <!-- Detailed description of Maps Storage settings button -->
+    <string name="maps_storage_summary">Pilih folder untuk memuat turun peta.</string>
+    <!-- E.g. "Downloaded maps: 500Mb" in Maps Storage settings -->
+    <string name="maps_storage_downloaded">Peta yang dimuat turun</string>
+    <!-- Free space out of total storage size in Maps Storage settings, e.g. "300 MB free of 2 GB" -->
+    <string name="maps_storage_free_size">%1$s bebas daripada %2$s</string>
+    <!-- Question dialog for transferring maps from one storage to another -->
+    <string name="move_maps">Pindahkan peta?</string>
+    <!-- Error moving map files from one storage to another -->
+    <string name="move_maps_error">Ralat memindahkan fail peta</string>
+    <!-- Ask user to wait several minutes (some long process in modal dialog). -->
+    <string name="wait_several_minutes">Ini mungkin mengambil masa beberapa minit.\nSila tunggu…</string>
+    <!-- Measurement units title in settings activity -->
+    <string name="measurement_units">Unit ukuran</string>
+    <!-- Detailed description of Measurement Units settings button -->
+    <string name="measurement_units_summary">Pilih antara batu dan kilometer</string>
+
+    <!-- SECTION: Search categories -->
+    <!-- Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! -->
+    <string name="category_eat">Tempat makan</string>
+    <!-- Search category for grocery stores; any changes should be duplicated in categories.txt @category_food! -->
+    <string name="category_food">Kedai runcit</string>
+    <!-- Search category for public transport; any changes should be duplicated in categories.txt @category_transport! -->
+    <string name="category_transport">Pengangkutan</string>
+    <!-- Search category for fuel stations; any changes should be duplicated in categories.txt @category_fuel! -->
+    <string name="category_fuel">Minyak</string>
+    <!-- Search category for parking lots; any changes should be duplicated in categories.txt @category_parking! -->
+    <string name="category_parking">Tempat letak kereta</string>
+    <!-- Search category for malls/clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @category_shopping! -->
+    <string name="category_shopping">Beli-belah</string>
+    <!-- Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @category_secondhand! -->
+    <string name="category_secondhand">Barang terpakai</string>
+    <!-- Search category for places to stay; any changes should be duplicated in categories.txt @category_hotel! -->
+    <string name="category_hotel">Hotel</string>
+    <!-- Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @category_tourism! -->
+    <string name="category_tourism">Tempat menarik</string>
+    <!-- Search category for entertainment; any changes should be duplicated in categories.txt @category_entertainment! Also a bookmarks list group header when sorting by type. -->
+    <string name="category_entertainment">Hiburan</string>
+    <!-- Search category for ATMs; any changes should be duplicated in categories.txt @category_atm! -->
+    <string name="category_atm">ATM</string>
+    <!-- Search category for nightclubs/bars; any changes should be duplicated in categories.txt @category_nightlife! -->
+    <string name="category_nightlife">Hiburan malam</string>
+    <!-- Search category for water park/disneyland/playground/toys store; any changes should be duplicated in categories.txt @category_children! -->
+    <string name="category_children">Percutian keluarga</string>
+    <!-- Search category for banks; any changes should be duplicated in categories.txt @category_bank! -->
+    <string name="category_bank">Bank</string>
+    <!-- Search category for pharmacies; any changes should be duplicated in categories.txt @category_pharmacy! -->
+    <string name="category_pharmacy">Farmasi</string>
+    <!-- Search category for hospitals; any changes should be duplicated in categories.txt @category_hospital! -->
+    <string name="category_hospital">Hospital</string>
+    <!-- Search category for toilets; any changes should be duplicated in categories.txt @category_toilet! -->
+    <string name="category_toilet">Tandas</string>
+    <!-- Search category for post offices; any changes should be duplicated in categories.txt @category_post! -->
+    <string name="category_post">Pos</string>
+    <!-- Search category for police; any changes should be duplicated in categories.txt @category_police! -->
+    <string name="category_police">Polis</string>
+    <!-- Search category for recycling; any changes should be duplicated in categories.txt @category_recycling! -->
+    <string name="category_recycling">Kitar semula</string>
+    <!-- Search category for water; any changes should be duplicated in categories.txt @category_water! Also a bookmarks list group header when sorting by type. -->
+    <string name="category_water">Air</string>
+    <!-- Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! -->
+    <string name="category_rv">Kemudahan RV</string>
+
+    <!-- SECTION: Other translations -->
+    <!-- Notes field in Bookmarks view -->
+    <string name="description">Nota</string>
+    <!-- Email Subject when sharing bookmark list -->
+    <string name="share_bookmarks_email_subject">Tanda buku Organic Maps telah dikongsi dengan anda</string>
+    <string name="share_bookmarks_email_body">Hai!\n\nDilampirkan tanda buku saya; sila buka dalam Organic Maps. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://omaps.app/get?kmz\n\nSelamat mengembara dengan Organic Maps!</string>
+    <!-- message title of loading file -->
+    <string name="load_kmz_title">Memuatkan Tanda Buku</string>
+    <!-- Kmz file successful loading -->
+    <string name="load_kmz_successful">Tanda buku berjaya dimuatkan! Anda boleh menemuinya pada peta atau pada skrin Pengurus Tanda Buku.</string>
+    <!-- Kml file loading failed -->
+    <string name="load_kmz_failed">Gagal memuatkan tanda buku. Fail mungkin rosak atau tidak sah.</string>
+    <!-- Failed to recognize the format of a bookmarks or tracks file. -->
+    <string name="unknown_file_type">Jenis fail ini tidak dikenali oleh aplikasi:\n%1$s</string>
+    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <string name="failed_to_open_file">Gagal membuka fail %1$s\n\n%2$s</string>
+    <!-- resource for context menu -->
+    <string name="edit">Sunting</string>
+    <!-- Warning message when doing search around current position -->
+    <string name="unknown_current_position">Lokasi anda belum ditentukan</string>
+    <!-- Alert message that we can't run Map Storage settings due to some reasons. -->
+    <string name="cant_change_this_setting">Maaf, tetapan Storan Peta sedang dimatikan.</string>
+    <!-- Alert message that downloading is in progress. -->
+    <string name="downloading_is_active">Muat turun peta sedang berjalan.</string>
+    <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
+    <string name="share">Kongsi</string>
+    <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
+    <string name="share_place_subject">%1$s pada Organic Maps</string>
+    <!-- Email subject when sharing a place that has no name or address. -->
+    <string name="share_place_subject_default">Satu tempat pada Organic Maps</string>
+    <!-- Share by email button text, also used in editor and About. -->
+    <string name="email">E-mel</string>
+    <!-- Text for message when used successfully copied something -->
+    <string name="copied_to_clipboard">Disalin ke papan klip: %s</string>
+    <!-- Used for bookmark editing -->
+    <string name="done">Selesai</string>
+    <!-- Data version in «About» screen, %@ is replaced by a local, human readable date. -->
+    <string name="data_version">Data OpenStreetMap: %s</string>
+    <!-- Confirmation for OpenStreetMap log out. -->
+    <string name="osm_log_out_confirmation">Adakah anda pasti mahu keluar daripada akaun OpenStreetMap anda?</string>
+    <!-- Title for tracks category in bookmarks manager -->
+    <string name="tracks_title">Trek</string>
+    <!-- Length of track in cell that describes route -->
+    <string name="length">Panjang</string>
+    <string name="share_my_location">Kongsi Lokasi Saya</string>
+    <!-- Settings general group in settings screen -->
+    <string name="prefs_group_general">Tetapan umum</string>
+    <!-- Settings information group in settings screen -->
+    <string name="prefs_group_information">Maklumat</string>
+    <string name="prefs_group_route">Navigasi</string>
+    <!-- Setting name which enables or disables zoom buttons on the map screen. -->
+    <string name="pref_zoom_title">Butang “+” dan “-” pada peta</string>
+    <string name="pref_zoom_summary">Tunjukkan pada peta</string>
+    <string name="pref_auto_night_in_navigation_title">Gaya malam semasa navigasi dalam gelap</string>
+    <!-- Settings «Map» category: «Night style» title -->
+    <string name="pref_map_style_title">Mod Malam</string>
+    <!-- Generic «Off» string -->
+    <string name="off">Mati</string>
+    <!-- Generic «On» string -->
+    <string name="on">Hidup</string>
+    <!-- Generic «Auto» string -->
+    <string name="auto">Auto</string>
+    <!-- Settings «Map» category: «Perspective view» title -->
+    <string name="pref_map_3d_title">Pandangan perspektif</string>
+    <!-- Settings «Map» category: «3D buildings» title -->
+    <string name="pref_map_3d_buildings_title">Bangunan 3D</string>
+    <!-- A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled -->
+    <string name="pref_map_3d_buildings_disabled_summary">Bangunan 3D dimatikan dalam mod penjimatan kuasa</string>
+    <!-- Settings: title of the satellite imagery (custom raster tiles) screen -->
+    <string name="pref_bg_tiles_title">Imej Satelit</string>
+    <!-- Settings «Satellite Imagery»: title of the tile server URL input field -->
+    <string name="pref_bg_tiles_url_title">URL pelayan</string>
+    <!-- Settings «Satellite Imagery»: shown under the Server URL field when its value is malformed (must start with http(s):// and contain the {z}/{x}/{y} placeholders) -->
+    <string name="pref_bg_tiles_url_error">Masukkan URL yang sah dengan {z}/{x}/{y}</string>
+    <!-- Settings «Satellite Imagery»: title of the on-disk tile cache size limit (in megabytes) -->
+    <string name="pref_bg_tiles_size_title">Saiz cache (MB)</string>
+    <!-- Settings «Satellite Imagery»: opacity of vector area objects drawn over the imagery (0% hides them) -->
+    <string name="pref_bg_tiles_opacity_title">Kelegapan objek kawasan</string>
+    <!-- Settings «Satellite Imagery»: legal note that the user is responsible for the custom tile source they configure -->
+    <string name="pref_bg_tiles_disclaimer">Sumber jubin tersuai disediakan oleh anda. Gunakan hanya perkhidmatan yang anda dibenarkan mengaksesnya. Anda bertanggungjawab atas atribusi, terma lesen, kunci API, kuota dan had penggunaan.</string>
+    <!-- Settings «Route» category: «Tts enabled» title -->
+    <string name="pref_tts_enable_title">Arahan Suara</string>
+    <!-- Settings «Route» category: «Tts announce street names» title -->
+    <string name="pref_tts_street_names_title">Sebut Nama Jalan</string>
+    <!-- Settings «Route» category: «Tts announce street names» description -->
+    <string name="pref_tts_street_names_description">Apabila dihidupkan, nama jalan atau susur keluar yang perlu dibelok akan disebut dengan kuat.</string>
+    <!-- Settings «Route» category: «Tts language» title -->
+    <string name="pref_tts_language_title">Bahasa Suara</string>
+    <!-- Settings «Route» category: «Test Voice Directions» title -->
+    <string name="pref_tts_test_voice_title">Uji Arahan Suara (TTS, Teks-ke-Suara)</string>
+    <!-- Settings «Route» category: Pop-up message when clicking «Test Voice Directions» -->
+    <string name="pref_tts_playing_test_voice">Periksa kelantangan atau tetapan Teks-ke-Suara sistem jika anda tidak mendengar suara sekarang.</string>
+    <!-- Settings «Route» category: «Tts unavailable» subtitle. Also used as a CarToast in Android Auto when the user taps the muted voice icon. -->
+    <string name="pref_tts_unavailable">Tidak Tersedia</string>
+    <string name="pref_map_auto_zoom">Zum automatik</string>
+    <string name="placepage_distance">Jarak</string>
+    <string name="search_show_on_map">Lihat pada peta</string>
+    <!-- Menu button -->
+    <string name="menu">Menu</string>
+    <!-- Text in menu -->
+    <string name="website">Laman web</string>
+    <!-- Text in About menu, opens Organic Maps news website -->
+    <string name="news">Berita</string>
+    <!-- Settings: Send feedback button and dialog title -->
+    <string name="feedback">Maklum balas</string>
+    <!-- Text in menu -->
+    <string name="rate_the_app">Beri nilai aplikasi</string>
+    <!-- Text in menu -->
+    <string name="help">Bantuan</string>
+    <!-- Button in the main Help dialog -->
+    <string name="faq">Soalan Lazim</string>
+    <!-- Button in the main menu -->
+    <string name="donate">Menderma</string>
+    <string name="already_donated">Sudah menderma</string>
+    <string name="remind_me_later">Ingatkan kemudian</string>
+    <string name="support_organic_maps">Sokong Organic Maps</string>
+    <!-- Button in the main Help dialog -->
+    <string name="how_to_support_us">Sokong projek ini</string>
+    <!-- Button in the main Help dialog -->
+    <string name="copyright">Hak cipta</string>
+    <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
+    <string name="report_a_bug">Lapor pepijat</string>
+    <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+    <string name="compass_calibration_recommended">Perbaiki arah anak panah dengan menggerakkan telefon dalam bentuk angka lapan untuk mengkalibrasi kompas.</string>
+    <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+    <string name="compass_calibration_required">Gerakkan telefon dalam bentuk angka lapan untuk mengkalibrasi kompas dan membetulkan arah anak panah pada peta.</string>
+    <!-- Toast text when user hides UI with a long tap anywhere on the map -->
+    <string name="long_tap_toast">Ketik lama pada peta sekali lagi untuk melihat antara muka</string>
+    <!-- Update all button text -->
+    <string name="downloader_update_all_button">Kemas Kini Semua</string>
+    <!-- Cancel all button text -->
+    <string name="downloader_cancel_all">Batalkan Semua</string>
+    <!-- Downloaded maps list header -->
+    <string name="downloader_downloaded_subtitle">Dimuat turun</string>
+    <!-- Country queued for download -->
+    <string name="downloader_queued">Dalam baris gilir</string>
+    <string name="downloader_near_me_subtitle">Berdekatan saya</string>
+    <!-- In maps downloader and country place page shows how many maps are downloaded / to download, e.g. "Maps: 3 of 10" -->
+    <string name="downloader_status_maps">Peta</string>
+    <string name="downloader_download_all_button">Muat Turun Semua</string>
+    <string name="downloader_downloading">Sedang memuat turun:</string>
+    <!-- Displayed in a dialog that appears when a user tries to delete a map while the app is in the follow route mode -->
+    <string name="downloader_delete_map_while_routing_dialog">Untuk menghapus peta, sila hentikan navigasi.</string>
+    <!-- Context menu item for downloader. -->
+    <string name="downloader_download_map">Muat turun peta</string>
+    <!-- Item status in downloader. -->
+    <string name="downloader_retry">Cuba lagi</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_delete_map">Hapus Peta</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_update_map">Kemas Kini Peta</string>
+    <!-- Preference title -->
+    <string name="google_play_services">Perkhidmatan Lokasi Google Play</string>
+    <!-- Preference text -->
+    <string name="pref_use_google_play">Tentukan lokasi anggaran anda dengan pantas menggunakan Bluetooth, WiFi atau rangkaian mudah alih</string>
+    <!-- Text for routing error dialog -->
+    <string name="routing_not_enough_space">Ruang tidak cukup</string>
+    <!-- location service disabled -->
+    <string name="enable_location_services">Sila aktifkan Perkhidmatan Lokasi</string>
+    <string name="save">Simpan</string>
+    <string name="create">buat</string>
+    <!-- Settings «Map» category: «Appearance» title -->
+    <string name="pref_appearance_title">Penampilan</string>
+    <!-- Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_light">Terang</string>
+    <!-- Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_dark">Gelap</string>
+    <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_scheduled">Terang dari subuh hingga senja</string>
+    <!-- Tex label above the Donate button -->
+    <string name="donate_description">Hadiahkan peta percuma tanpa iklan kepada berjuta-juta pengguna!</string>
+
+    <!-- SECTION: Routing dialogs strings -->
+    <string name="dialog_routing_disclaimer_title">Semasa mengikut laluan, sila ingat:</string>
+    <string name="dialog_routing_disclaimer_priority">— Keadaan jalan, undang-undang lalu lintas dan papan tanda jalan sentiasa diutamakan berbanding panduan navigasi;</string>
+    <string name="dialog_routing_disclaimer_precision">— Peta mungkin tidak tepat, dan laluan yang dicadangkan mungkin bukan cara terbaik untuk sampai ke destinasi;</string>
+    <string name="dialog_routing_disclaimer_recommendations">— Laluan yang dicadangkan hanya patut difahami sebagai saranan;</string>
+    <string name="dialog_routing_disclaimer_borders">— Berhati-hati dengan laluan di zon sempadan: laluan yang dibina oleh aplikasi kami kadangkala melintasi sempadan negara di tempat yang tidak dibenarkan.</string>
+    <string name="dialog_routing_disclaimer_beware">Sentiasa berwaspada dan selamat di jalan raya!</string>
+    <string name="dialog_routing_location_turn_wifi">Sila periksa isyarat GPS anda. Menghidupkan Wi-Fi akan meningkatkan ketepatan lokasi anda.</string>
+    <string name="dialog_routing_system_error">Ralat sistem</string>
+    <string name="not_now">Bukan Sekarang</string>
+
+    <!-- SECTION: Strings for downloading map from search -->
+    <string name="search_without_internet_advertisement">Untuk mula mencari dan membina laluan, sila muat turun peta. Selepas itu anda tidak lagi memerlukan sambungan Internet.</string>
+    <string name="search_select_map">Pilih Peta</string>
+    <!-- «Show» context menu -->
+    <string name="show">Tunjuk</string>
+    <!-- «Hide» context menu -->
+    <string name="hide">Sembunyi</string>
+    <string name="categories">Kategori</string>
+    <string name="history">Sejarah</string>
+    <string name="search_not_found">Alamak, tiada hasil ditemui.</string>
+    <!-- The message when user did not find anything in the search. -->
+    <string name="search_not_found_query">Muat turun wilayah yang anda cari atau cuba tambah nama bandar/kampung berdekatan.</string>
+    <string name="search_history_title">Sejarah Carian</string>
+    <!-- Tracks are recorded or imported GPS paths. -->
+    <string name="bookmarks_backup_title">Sandaran tanda buku dan trek</string>
+    <!-- Tracks are recorded or imported GPS paths. -->
+    <string name="bookmarks_backup_description">Tanda buku dan trek boleh disertakan dalam sandaran sistem Android apabila sandaran dihidupkan pada peranti ini dan ia tidak melebihi had saiznya.</string>
+    <string name="search_history_text">Lihat carian terbaharu anda.</string>
+    <string name="clear_search">Kosongkan Sejarah Carian</string>
+    <!-- Place Page link to Wikipedia article (if map object has it). -->
+    <string name="read_in_wikipedia">Wikipedia</string>
+    <!-- Source attribution for Wikipedia articles displayed in the place description screen. -->
+    <string name="article_from_wikipedia">Artikel daripada wikipedia.org</string>
+    <!-- Place Page link to Wikimedia Commons. -->
+    <string name="wikimedia_commons">Wikimedia Commons</string>
+    <string name="p2p_your_location">Lokasi Anda</string>
+    <string name="p2p_start">Mula</string>
+    <string name="p2p_from_here">Laluan dari</string>
+    <string name="p2p_to_here">Laluan ke</string>
+    <string name="p2p_only_from_current">Navigasi hanya tersedia dari lokasi anda sekarang.</string>
+    <string name="p2p_reroute_from_current">Adakah anda mahu merancang laluan dari lokasi anda sekarang?</string>
+    <!-- Edit open hours/set time and minutes dialog -->
+    <string name="next_button">Seterusnya</string>
+    <!-- Tab title in the Edit Opening Hours time picker -->
+    <string name="editor_time_from">Dari</string>
+    <!-- Tab title in the Edit Opening Hours time picker -->
+    <string name="editor_time_to">Hingga</string>
+    <string name="editor_time_add">Tambah Jadual</string>
+    <string name="editor_time_delete">Hapus Jadual</string>
+    <!-- Text for allday switch. -->
+    <string name="editor_time_allday">Sepanjang Hari (24 jam)</string>
+    <string name="editor_time_open">Buka</string>
+    <string name="editor_time_close">Tutup</string>
+    <string name="editor_time_add_closed">Tambah Waktu Tutup</string>
+    <string name="editor_time_title">Waktu Operasi</string>
+    <string name="editor_time_advanced">Mod Lanjutan</string>
+    <string name="editor_time_simple">Mod Ringkas</string>
+    <string name="editor_hours_closed">Waktu Tutup</string>
+    <string name="editor_example_values">Contoh Nilai</string>
+    <string name="editor_correct_mistake">Betulkan kesilapan</string>
+    <string name="editor_add_select_location">Pilih Lokasi</string>
+    <string name="editor_report_problem_send_button">Hantar</string>
+    <string name="autodownload">Muat turun peta secara automatik</string>
+    <!-- Place Page opening hours text -->
+    <string name="daily">Setiap hari</string>
+    <string name="twentyfour_seven">24/7</string>
+    <string name="day_off_today">Tutup hari ini</string>
+    <string name="day_off">Tutup</string>
+    <string name="midnight">Tengah malam</string>
+    <string name="noon">Tengah hari</string>
+    <string name="opens_in">Buka dalam %s</string>
+    <string name="closes_in">Tutup dalam %s</string>
+    <string name="closed">Tutup</string>
+    <string name="edit_opening_hours">Sunting waktu operasi</string>
+    <string name="no_osm_account">Tiada akaun OpenStreetMap?</string>
+    <string name="register_at_openstreetmap">Daftar di OpenStreetMap</string>
+    <string name="login">Masuk</string>
+    <!-- Status message indicating that user did not login to OSM profile yet. -->
+    <string name="not_signed_in">Belum masuk</string>
+    <string name="login_osm">Masuk ke OpenStreetMap</string>
+    <string name="password">Kata laluan</string>
+    <string name="forgot_password">Lupa kata laluan anda?</string>
+    <string name="logout">Keluar</string>
+    <string name="edit_place">Sunting Tempat</string>
+    <string name="add_language">Tambah bahasa</string>
+    <string name="street">Jalan</string>
+    <!-- Editable House Number text field (in address block). -->
+    <string name="house_number">Nombor bangunan</string>
+    <string name="details">Perincian</string>
+    <string name="social_media">Media Sosial</string>
+    <string name="building">Bangunan</string>
+    <!-- Text field to enter non-existing street name, below list of known streets around -->
+    <string name="add_street">Tambah jalan</string>
+    <!-- Error to display when a new street name is not entered in the New street dialog -->
+    <string name="empty_street_name_error">Sila masukkan nama jalan</string>
+    <string name="choose_language">Pilih bahasa</string>
+    <string name="choose_street">Pilih jalan</string>
+    <string name="cuisine">Masakan</string>
+    <string name="select_cuisine">Pilih masakan</string>
+    <!-- login text field -->
+    <string name="email_or_username">E-mel atau nama pengguna</string>
+    <string name="editor_add_phone">Tambah Telefon</string>
+    <string name="level">Tingkat</string>
+    <!-- Building level -->
+    <string name="level_value_generic">Tingkat: %s</string>
+    <string name="downloader_delete_map_dialog">Semua suntingan peta anda akan dihapus bersama peta itu.</string>
+    <string name="downloader_update_maps">Kemas Kini Peta</string>
+    <string name="downloader_search_field_hint">Cari peta</string>
+    <string name="common_check_internet_connection_dialog">Sila pastikan peranti anda disambungkan ke Internet.</string>
+    <string name="downloader_no_space_title">Ruang tidak cukup</string>
+    <!-- Message shown when there is not enough space to download maps -->
+    <string name="downloader_no_space_message">Sila hapus data yang tidak diperlukan</string>
+    <string name="editor_profile_changes">Perubahan Disahkan</string>
+    <string name="editor_focus_map_on_location">Tarik peta untuk meletakkan pangkah di lokasi tempat atau perniagaan itu.</string>
+    <string name="editor_edit_place_title">Menyunting</string>
+    <string name="editor_add_place_title">Menambah</string>
+    <string name="editor_edit_place_name_hint">Nama tempat</string>
+    <!-- The second part of the editor_edit_place_name_hint to explain that name should be entered in a local language, see https://wiki.openstreetmap.org/wiki/Key:name -->
+    <string name="editor_default_language_hint">Seperti yang tertulis dalam bahasa tempatan</string>
+    <string name="editor_edit_place_category_title">Kategori</string>
+    <string name="placepage_add_business_button">Tambah perniagaan</string>
+    <string name="message_invalid_feature_position">Tiada objek boleh diletakkan di sini</string>
+    <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
+    <string name="osm_presentation">Data OpenStreetMap yang dibina oleh komuniti setakat %s. Ketahui lebih lanjut cara menyunting dan mengemas kini peta di OpenStreetMap.org</string>
+    <!-- OSM explanation on Android login screen -->
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ialah projek komuniti untuk membina peta yang bebas dan terbuka. Ia sumber utama data peta dalam Organic Maps dan berfungsi seperti Wikipedia. Anda boleh menambah atau menyunting tempat dan ia menjadi tersedia kepada berjuta-juta pengguna di seluruh dunia.\nSertai komuniti dan bantu membina peta yang lebih baik untuk semua!</string>
+    <string name="login_to_make_edits_visible">Buat akaun OpenStreetMap atau masuk untuk menerbitkan suntingan peta anda kepada dunia.</string>
+    <!-- Downloaded 10 **of** 20 <- it is that "of" -->
+    <string name="downloader_of">%1$d daripada %2$d</string>
+    <string name="download_over_mobile_header">Muat turun menggunakan rangkaian selular?</string>
+    <string name="download_over_mobile_message">Ini mungkin mahal dengan sesetengah pelan atau semasa perayauan.</string>
+    <string name="error_enter_correct_house_number">Masukkan nombor bangunan yang sah</string>
+    <string name="editor_storey_number">Bilangan tingkat (maksimum %d)</string>
+    <!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+    <string name="error_enter_correct_storey_number">Bilangan tingkat tidak boleh melebihi %d</string>
+    <string name="editor_zip_code">Kod Pos</string>
+    <string name="error_enter_correct_zip_code">Masukkan kod pos yang sah</string>
+    <!-- Title for OSM note section in the editor -->
+    <string name="editor_other_info">Nota kepada sukarelawan OpenStreetMap (pilihan)</string>
+    <!-- Hint of the input field in the OSM note section of the editor -->
+    <string name="editor_note_hint">Terangkan kesilapan pada peta atau perkara yang tidak boleh disunting dengan Organic Maps</string>
+    <!-- Information about OSM at the top of the editing page -->
+    <string name="editor_about_osm">Suntingan anda dimuat naik ke pangkalan data <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> yang terbuka kepada umum. Sila jangan tambah maklumat peribadi atau berhak cipta.</string>
+    <string name="editor_more_about_osm">Lanjut tentang OpenStreetMap</string>
+    <string name="editor_osm_history">Sejarah suntingan anda</string>
+    <string name="editor_osm_notes">Nota data peta anda</string>
+    <string name="editor_operator">Pengendali</string>
+    <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
+    <string name="operator">Pengendali: %s</string>
+    <string name="editor_category_unsuitable_title">Tidak menemui kategori yang sesuai?</string>
+    <string name="editor_category_unsuitable_text">Organic Maps hanya membenarkan penambahan kategori titik yang ringkas, bermaksud tiada bandar, jalan, tasik, garis bangunan dan sebagainya. Sila tambah kategori sedemikian terus ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lihat <a href="https://organicmaps.app/faq/editing/advanced-map-editing">panduan</a> kami untuk arahan langkah demi langkah.</string>
+    <string name="downloader_no_downloaded_maps_title">Anda belum memuat turun sebarang peta</string>
+    <string name="downloader_no_downloaded_maps_message">Muat turun peta untuk mencari dan bernavigasi luar talian.</string>
+    <string name="current_location_unknown_error_title">Lokasi sekarang tidak diketahui.</string>
+    <!-- abbreviation for kilometers per hour -->
+    <string name="kilometers_per_hour">km/j</string>
+    <string name="miles_per_hour">mph</string>
+    <string name="hour">j</string>
+    <string name="minute">min</string>
+    <string name="day">h</string>
+    <string name="second">s</string>
+    <string name="placepage_more_button">Lagi</string>
+    <!-- Toolbar title of the Edit Bookmark screen. -->
+    <string name="placepage_edit_bookmark_button">Sunting Tanda Buku</string>
+    <string name="placepage_personal_notes_hint">Nota peribadi (teks atau html)</string>
+    <string name="editor_comment_hint">Komen…</string>
+    <string name="editor_reset_edits_message">Buang semua perubahan tempatan?</string>
+    <string name="editor_reset_edits_button">Buang</string>
+    <string name="editor_remove_place_message">Hapus tempat yang ditambah?</string>
+    <string name="editor_remove_place_button">Hapus</string>
+    <string name="editor_place_doesnt_exist">Tempat ini tidak ada</string>
+    <!-- Error message for "Place doesn't exist" dialog when comment is empty -->
+    <string name="delete_place_empty_comment_error">Sila nyatakan sebab menghapus tempat ini</string>
+    <!-- Phone number error message -->
+    <string name="error_enter_correct_phone">Masukkan nombor telefon yang sah</string>
+    <string name="error_enter_correct_web">Masukkan alamat web yang sah</string>
+    <string name="error_enter_correct_email">Masukkan e-mel yang sah</string>
+    <string name="error_enter_correct_facebook_page">Masukkan alamat web, akaun atau nama halaman Facebook yang sah</string>
+    <string name="error_enter_correct_instagram_page">Masukkan nama pengguna atau alamat web Instagram yang sah</string>
+    <string name="error_enter_correct_twitter_page">Masukkan nama pengguna atau alamat web Twitter yang sah</string>
+    <string name="error_enter_correct_vk_page">Masukkan nama pengguna atau alamat web VK yang sah</string>
+    <string name="error_enter_correct_line_page">Masukkan ID LINE atau alamat web yang sah</string>
+    <string name="placepage_add_place_button">Tambah Tempat ke OpenStreetMap</string>
+    <string name="osm_note_hint">Atau, sebagai pilihan lain, tinggalkan nota kepada komuniti OpenStreetMap supaya orang lain boleh menambah atau membetulkan tempat di sini.</string>
+    <string name="osm_note_toast">Nota akan dihantar ke OpenStreetMap</string>
+    <!-- Displayed when saving some edits to the map to warn against publishing personal data -->
+    <string name="editor_share_to_all_dialog_title">Adakah anda mahu menghantarnya kepada semua pengguna?</string>
+    <!-- Dialog before publishing the modifications to the public map. -->
+    <string name="editor_share_to_all_dialog_message_1">Pastikan anda tidak memasukkan data persendirian atau peribadi.</string>
+    <string name="editor_share_to_all_dialog_message_2">Penyunting OpenStreetMap akan memeriksa perubahan itu dan menghubungi anda jika ada pertanyaan.</string>
+    <string name="navigation_stop_button">Henti</string>
+    <!-- Shown while a track is being recorded: the start toast, the notification title and the home screen widget status. -->
+    <string name="track_recording">Merekod trek</string>
+    <!-- For the first routing -->
+    <string name="accept">Terima</string>
+    <!-- For the first routing -->
+    <string name="decline">Tolak</string>
+    <string name="mobile_data_dialog">Guna internet mudah alih untuk menunjukkan maklumat terperinci?</string>
+    <string name="mobile_data_option_always">Sentiasa Guna</string>
+    <string name="mobile_data_option_today">Hari Ini Sahaja</string>
+    <string name="mobile_data_option_not_today">Jangan Guna Hari Ini</string>
+    <string name="mobile_data">Internet Mudah Alih</string>
+    <!-- NOTE to translators: please synchronize your translation with the English one. -->
+    <string name="mobile_data_description">Internet mudah alih diperlukan untuk pemberitahuan kemas kini peta dan memuat naik suntingan.</string>
+    <string name="mobile_data_option_never">Jangan Guna</string>
+    <string name="mobile_data_option_ask">Sentiasa Tanya</string>
+    <string name="big_font">Besarkan saiz label peta</string>
+    <string name="enable_logging">Aktifkan pengelogan</string>
+    <!-- Settings: "Send general feedback" button -->
+    <string name="feedback_general">Maklum Balas Umum</string>
+    <string name="prefs_languages_information">Kami menggunakan TTS sistem untuk arahan suara. Banyak peranti Android menggunakan Google TTS, anda boleh memuat turun atau mengemas kininya dari Google Play</string>
+    <string name="prefs_languages_information_off">Untuk sesetengah bahasa, anda perlu memasang penyintesis suara atau pek bahasa tambahan dari gedung aplikasi (Google Play, Galaxy Store, App Gallery, FDroid).\nBuka tetapan peranti anda → Language and input → Speech → Text to speech output.\nDi sini anda boleh menguruskan tetapan sintesis suara (contohnya memuat turun pek bahasa untuk kegunaan luar talian) dan memilih enjin teks-ke-suara yang lain.</string>
+    <string name="prefs_languages_information_off_link">Untuk maklumat lanjut, sila lihat panduan ini.</string>
+    <string name="transliteration_title">Transliterasi ke abjad Latin</string>
+    <string name="learn_more">Ketahui lebih lanjut</string>
+    <string name="placepage_remove_stop">Buang Perhentian</string>
+    <!-- Keep it short: route planner button below the destination, PlacePage button, search field hint and full-screen map point picker title shown while choosing another destination. The picked place becomes the new destination, the previous one becomes a stop. -->
+    <string name="route_add_destination">Tambah destinasi</string>
+    <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
+    <string name="placepage_add_stop">Tambah Perhentian</string>
+    <string name="drag_to_reorder">Susun semula</string>
+    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
+    <string name="alert_reauth_message">Sila masuk ke OpenStreetMap untuk memuat naik semua suntingan peta anda secara automatik. Ketahui lebih lanjut <a href="https://github.com/organicmaps/organicmaps/issues/6144">di sini</a>.</string>
+    <string name="dialog_error_storage_title">Masalah akses storan</string>
+    <string name="dialog_error_storage_message">Storan luaran tidak boleh diakses. Kad SD mungkin telah dicabut, rosak, atau sistem failnya baca sahaja. Sila periksa kad SD anda atau hubungi kami di support\@sampai.my</string>
+    <string name="setting_emulate_bad_storage">Tiru storan yang rosak</string>
+    <string name="error_enter_correct_name">Sila masukkan nama yang betul</string>
+    <string name="bookmark_lists">Senarai</string>
+    <!-- Do not display all bookmark lists on the map -->
+    <string name="bookmark_lists_hide_all">Sembunyikan semua</string>
+    <string name="bookmark_lists_show_all">Tunjukkan semua</string>
+    <string name="bookmarks_create_new_group">Buat senarai baharu</string>
+    <!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
+    <string name="bookmarks_import">Import Tanda Buku dan Trek</string>
+    <string name="bookmarks_error_message_share_general">Tidak dapat berkongsi kerana ralat aplikasi</string>
+    <string name="bookmarks_error_title_share_empty">Ralat perkongsian</string>
+    <string name="bookmarks_error_message_share_empty">Tidak boleh berkongsi senarai yang kosong</string>
+    <string name="bookmarks_error_title_empty_list_name">Nama tidak boleh kosong</string>
+    <string name="bookmarks_error_message_empty_list_name">Sila masukkan nama senarai</string>
+    <string name="bookmarks_new_list_hint">Senarai baharu</string>
+    <string name="bookmarks_error_title_list_name_already_taken">Nama ini sudah digunakan</string>
+    <string name="bookmarks_error_message_list_name_already_taken">Sila pilih nama lain</string>
+    <string name="please_wait">Sila tunggu…</string>
+    <string name="phone_number">Nombor telefon</string>
+    <string name="profile">Profil OpenStreetMap</string>
+    <string name="restore">Pulihkan</string>
+    <!-- Settings privacy group in settings screen -->
+    <string name="privacy">Privasi</string>
+    <string name="privacy_policy">Dasar privasi</string>
+    <string name="terms_of_use">Terma penggunaan</string>
+    <string name="button_layer_traffic">Lalu lintas</string>
+    <!-- Hiking routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_hiking">Mendaki</string>
+    <!-- Cycling routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_cycling">Berbasikal</string>
+    <!-- Map layers menu: toggle button for the satellite imagery layer -->
+    <string name="button_layer_satellite">Satelit</string>
+    <string name="button_layer_subway">Transit rel</string>
+    <string name="layers_title">Gaya dan Lapisan Peta</string>
+    <string name="bookmarks_empty_list_title">Senarai ini kosong</string>
+    <string name="bookmarks_empty_list_message">Untuk menambah tanda buku, ketik satu tempat pada peta kemudian ketik ikon bintang</string>
+    <!-- Button to change the color of all bookmarks in the current list -->
+    <string name="change_all_bookmarks_color">Tukar warna semua tanda buku</string>
+    <!-- Button to change the color of all tracks in the current list -->
+    <string name="change_all_tracks_color">Tukar warna semua trek</string>
+    <string name="category_desc_more">…lagi</string>
+    <!-- Menu title for exporting a file in the default KMZ format -->
+    <string name="export_file">Eksport KMZ</string>
+    <!-- Menu title for exporting a file in GPX format -->
+    <string name="export_file_gpx">Eksport GPX</string>
+    <!-- Menu title for exporting a file in GeoJSON format -->
+    <string name="export_file_geojson">Eksport GeoJSON</string>
+    <string name="delete_list">Hapus senarai</string>
+    <string name="speedcams_alert_title">Kamera laju</string>
+    <string name="place_description_title">Perihal Tempat</string>
+    <!-- this text will be shown in application notification preferences opposite checkbox which enable/disable downloader notifications. Devices on Android 8+ are affected. -->
+    <string name="notification_channel_downloader">Pemuat turun peta</string>
+    <!-- "Speed cameras" settings menu option (should be short! no more than 47-50 chars) to warn a driver if there is a risk of exceeding the speed limit -->
+    <string name="pref_tts_speedcams_auto">Beri amaran jika memandu laju</string>
+    <!-- Speed camera settings menu option - Always warn (about speedcams) -->
+    <string name="pref_tts_speedcams_always">Sentiasa beri amaran</string>
+    <!-- Speed camera settings menu option - Never warn (about speedcams) -->
+    <string name="pref_tts_speedcams_never">Jangan beri amaran</string>
+    <string name="power_managment_title">Mod penjimatan kuasa</string>
+    <string name="power_managment_description">Cuba kurangkan penggunaan kuasa dengan mengorbankan sebahagian fungsi.</string>
+    <string name="power_managment_setting_never">Jangan sekali</string>
+    <string name="power_managment_setting_auto">Apabila bateri lemah</string>
+    <string name="power_managment_setting_manual_max">Sentiasa</string>
+    <!-- Settings/Bookmark Text Placement -->
+    <string name="bookmarks_text_placement_title">Nama tanda buku pada peta</string>
+    <string name="bookmarks_text_placement_description">Jika terdapat terlalu banyak tanda buku, menunjukkan namanya pada peta boleh memperlahankan aplikasi.</string>
+    <string name="show_to_the_right">Tunjukkan di sebelah kanan</string>
+    <string name="show_at_the_bottom">Tunjukkan di bahagian bawah</string>
+    <string name="enable_logging_warning_message">Aktifkan pilihan ini sementara untuk merekod dan menghantar log diagnostik terperinci tentang masalah anda kepada kami menggunakan \"Lapor pepijat\" dalam dialog Bantuan. Log mungkin mengandungi maklumat lokasi.</string>
+    <!-- Driving profile in routing options settings. -->
+    <string name="routing_options_driving">Memandu</string>
+    <!-- Cycling profile in routing options settings. -->
+    <string name="routing_options_cycling">Berbasikal</string>
+    <!-- Walking profile in routing options settings. -->
+    <string name="routing_options_walking">Berjalan kaki</string>
+    <!-- Section heading for routing settings shared by every routing mode. -->
+    <string name="routing_options_all_modes">Semua mod laluan</string>
+    <string name="driving_options_title">Pilihan laluan</string>
+    <!-- Routing setting that automatically reorders intermediate stops -->
+    <string name="route_optimization">Pengoptimuman laluan</string>
+    <!-- Explains that route optimization automatically reorders intermediate stops -->
+    <string name="route_optimization_description">Menyusun semula perhentian perantaraan secara automatik untuk membina laluan yang lebih cekap.</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_tolls">Elak tol</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_unpaved">Elak jalan tanah</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_ferry">Elak feri</string>
+    <string name="avoid_motorways">Elak lebuh raya</string>
+    <string name="unable_to_calc_alert_title">Tidak dapat mengira laluan</string>
+    <string name="unable_to_calc_alert_subtitle">Laluan tidak ditemui. Ini mungkin disebabkan pilihan laluan anda atau data OpenStreetMap yang tidak lengkap. Sila ubah pilihan laluan anda dan cuba lagi.</string>
+    <string name="toll_road">Jalan bertol</string>
+    <string name="unpaved_road">Jalan tanah</string>
+    <string name="ferry_crossing">Perkhidmatan feri</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_steps">Tangga</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_gate">Pintu pagar</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_lift_gate">Palang</string>
+    <!-- A generic "Yes" button in dialogs -->
+    <string name="yes">Ya</string>
+    <!-- A generic "No" button in dialogs -->
+    <string name="no">Tidak</string>
+    <!-- E.g. "WiFi:Yes" -->
+    <string name="yes_available">Ya</string>
+    <!-- E.g. "WiFi:No" -->
+    <string name="no_available">Tidak</string>
+    <!-- To indicate the capacity of car parkings, bicycle parkings, electric vehicle charging stations… -->
+    <string name="capacity">Kapasiti: %s</string>
+    <!-- To indicate the network of ATMs, bicycle rentals, electric vehicle charging stations… -->
+    <string name="network">Rangkaian: %s</string>
+    <string name="trip_finished">Anda telah sampai!</string>
+    <string name="ok">OK</string>
+    <!-- max. 10 symbols, both iOS and Android -->
+    <string name="sort">Susun…</string>
+    <!-- Android, title, max 20-22 symbols -->
+    <string name="sort_bookmarks">Susun tanda buku</string>
+    <!-- Android -->
+    <string name="by_default">Lalai</string>
+    <!-- Android -->
+    <string name="by_type">Mengikut jenis</string>
+    <!-- Android -->
+    <string name="by_distance">Mengikut jarak</string>
+    <!-- Android -->
+    <string name="by_date">Mengikut tarikh</string>
+    <!-- Android -->
+    <string name="by_name">Mengikut nama</string>
+    <string name="week_ago_sorttype">Seminggu lalu</string>
+    <string name="month_ago_sorttype">Sebulan lalu</string>
+    <string name="moremonth_ago_sorttype">Lebih sebulan lalu</string>
+    <string name="moreyear_ago_sorttype">Lebih setahun lalu</string>
+    <string name="near_me_sorttype">Berdekatan saya</string>
+    <string name="others_sorttype">Lain-lain</string>
+    <!-- Place Page opening hours text -->
+    <string name="closed_now">Tutup sekarang</string>
+    <string name="opens_tomorrow_at">Buka esok pada %s</string>
+    <string name="opens_dayoftheweek_at">Buka %1$s pada %2$s</string>
+    <string name="opens_at">Buka pada %s</string>
+    <string name="closes_at">Tutup pada %s</string>
+    <string name="editor_add_select_category_all_subtitle">Semua Kategori</string>
+    <string name="placepage_replace_stop">Ganti Perhentian</string>
+
+    <!-- SECTION: Bookmark types used for sorting -->
+    <string name="food_places">Makanan</string>
+    <string name="tourist_places">Tempat menarik</string>
+    <string name="museums">Muzium</string>
+    <string name="parks">Taman</string>
+    <string name="swim_places">Tempat berenang</string>
+    <string name="mountains">Gunung</string>
+    <string name="animals">Haiwan</string>
+    <string name="hotels">Hotel</string>
+    <string name="buildings">Bangunan</string>
+    <string name="money">Wang</string>
+    <string name="shops">Kedai</string>
+    <string name="parkings">Tempat letak kereta</string>
+    <string name="fuel_places">Stesen minyak</string>
+    <string name="medicine">Perubatan</string>
+    <string name="search_in_the_list">Cari dalam senarai</string>
+    <string name="religious_places">Tempat ibadat</string>
+    <!-- Button that starts multi-selection in a bookmark list. -->
+    <string name="select">Pilih</string>
+    <!-- Action that selects every bookmark and track in a bookmark list. -->
+    <string name="select_all">Pilih Semua</string>
+    <!-- Action that clears the multi-selection in a bookmark list. -->
+    <string name="deselect_all">Buang Semua Pilihan</string>
+    <string name="select_list">Pilih senarai</string>
+    <string name="button_layer_isolines">Garis Kontur</string>
+    <string name="isolines_activation_error_dialog">Mengaktifkan garis kontur memerlukan muat turun data peta bagi kawasan ini</string>
+    <string name="isolines_location_error_dialog">Garis kontur belum tersedia di kawasan ini</string>
+    <string name="elevation_profile_ascent">Pendakian</string>
+    <string name="elevation_profile_descent">Penurunan</string>
+    <string name="elevation_profile_min_elevation">Ketinggian min.</string>
+    <string name="elevation_profile_max_elevation">Ketinggian maks.</string>
+    <string name="elevation_profile_difficulty">Kesukaran</string>
+    <string name="isolines_toast_zooms_1_10">Zum masuk untuk meneliti garis kontur</string>
+    <string name="downloader_loading_ios">Sedang memuat turun</string>
+    <string name="download_map_title">Muat turun peta gambaran dunia</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disk_error">Tidak dapat membuat folder dan memindahkan fail dalam memori peranti atau kad SD</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disk_error_title">Ralat cakera</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="connection_failure">Sambungan gagal</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disconnect_usb_cable_title">Cabut kabel USB</string>
+    <string name="enable_keep_screen_on">Biarkan skrin menyala</string>
+    <!-- Description in preferences -->
+    <string name="enable_keep_screen_on_description">Apabila dihidupkan, skrin akan sentiasa menyala semasa peta dipaparkan.</string>
+    <!-- A preference title; keep short! -->
+    <string name="enable_show_on_lock_screen">Tunjukkan pada skrin kunci</string>
+    <!-- Description in preferences -->
+    <string name="enable_show_on_lock_screen_description">Apabila dihidupkan, aplikasi akan berfungsi pada skrin kunci walaupun peranti berkunci.</string>
+    <!-- Current language of the map! -->
+    <string name="change_map_locale">Bahasa peta</string>
+    <!-- OpenStreetMap text on splash screen -->
+    <string name="splash_subtitle">Data peta daripada OpenStreetMap</string>
+    <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
+    <string name="comma_separated_pair">%1$s, %2$s</string>
+    <!-- App Tip #00 -->
+    <string name="app_tip_00">Terima kasih kerana menggunakan peta yang dibina oleh komuniti kami!</string>
+    <!-- App tip #01 -->
+    <string name="app_tip_01">Dengan derma dan sokongan anda, kami boleh membina peta terbaik di dunia!</string>
+    <!-- App tip #02 -->
+    <string name="app_tip_02">Sukakan aplikasi kami? Sila menderma untuk menyokong pembangunannya! Belum suka? Beritahu kami sebabnya dan kami akan perbaikinya!</string>
+    <!-- App tip #03 -->
+    <string name="app_tip_03">Jika anda mengenali pembangun perisian, anda boleh memintanya membina ciri yang anda perlukan.</string>
+    <!-- App tip #04 -->
+    <string name="app_tip_04">Ketik di mana-mana pada peta untuk memilih sesuatu. Ketik lama untuk menyembunyikan dan menunjukkan antara muka.</string>
+    <!-- App tip #05 -->
+    <string name="app_tip_05">Tahukah anda lokasi anda sekarang pada peta juga boleh dipilih?</string>
+    <!-- App tip #06 -->
+    <string name="app_tip_06">Anda boleh membantu menterjemah aplikasi kami ke dalam bahasa anda.</string>
+    <!-- App tip #07 -->
+    <string name="app_tip_07">Aplikasi kami dibangunkan oleh beberapa peminat dan komuniti.</string>
+    <!-- App tip #08 -->
+    <string name="app_tip_08">Anda boleh membetulkan dan menambah baik data peta dengan mudah.</string>
+    <!-- App tip #09 -->
+    <string name="app_tip_09">Matlamat utama kami ialah membina peta yang pantas, menjaga privasi dan mudah digunakan yang anda akan sukai.</string>
+    <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
+    <string name="car_used_on_the_phone_screen">Anda kini menggunakan Organic Maps pada skrin telefon</string>
+    <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
+    <string name="car_used_on_the_car_screen">Anda kini menggunakan Organic Maps pada skrin kereta</string>
+    <!-- Displayed on the phone screen. Android Auto connected -->
+    <string name="aa_connected_title">Anda bersambung ke Android Auto</string>
+    <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
+    <string name="car_continue_on_the_phone">Teruskan pada telefon</string>
+    <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
+    <string name="car_continue_in_the_car">Ke skrin kereta</string>
+    <!-- Ask user to grant location permissions -->
+    <string name="aa_location_permissions_request">Organic Maps memerlukan akses lokasi. Apabila selamat, periksa pemberitahuan pada telefon anda.</string>
+    <!-- Notification title for permission request from AA. -->
+    <string name="aa_request_permission_notification">Aplikasi ini memerlukan kebenaran anda</string>
+    <!-- Grant Permissions button. -->
+    <string name="aa_grant_permissions">Beri Kebenaran</string>
+    <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
+    <string name="button_layer_outdoor">Aktiviti luar</string>
+    <!-- Text displayed when a webview or a browser are disabled, and external links can't be opened. -->
+    <string name="browser_not_available">Pelayar web tidak tersedia</string>
+    <string name="volume">Kelantangan</string>
+    <!-- Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks -->
+    <string name="bookmarks_export">Eksport semua Tanda Buku dan Trek</string>
+    <!-- button in (app) TTS settings, to open the system TTS settings. -->
+    <string name="pref_tts_open_system_settings">Tetapan sistem sintesis suara</string>
+    <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
+    <string name="pref_tts_no_system_tts">Tetapan Sintesis Suara tidak ditemui, adakah anda pasti peranti anda menyokongnya?</string>
+    <string name="drive_through">Pandu lalu</string>
+    <string name="clear_the_search">Kosongkan carian</string>
+    <!-- Accessibility text for the zoom-in button on the map and visible title for the CarPlay dashboard button. Keep it short. -->
+    <string name="zoom_in">Zum masuk</string>
+    <!-- Accessibility text for the zoom-out button on the map and visible title for the CarPlay dashboard button. Keep it short. -->
+    <string name="zoom_out">Zum keluar</string>
+    <!-- Restaurant or other food place's menu URL field in the Editor -->
+    <string name="website_menu">Pautan Menu</string>
+    <!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
+    <string name="view_menu">Lihat Menu</string>
+    <!-- To indicate if the place proposed self service… -->
+    <string name="self_service">Layan diri</string>
+    <string name="select_option">Pilih pilihan</string>
+    <!-- To indicate if restaurant or other place has outdoor seating -->
+    <string name="outdoor_seating">Tempat duduk di luar</string>
+    <!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+    <string name="power_save_dialog_summary">Untuk navigasi yang paling tepat, kami cadangkan anda mematikan mod penjimatan kuasa dalam tetapan bateri telefon.</string>
+    <!-- Prompt to start recording a track. -->
+    <string name="start_track_recording">Rekod Trek</string>
+    <!-- Prompt for stopping a track recording. -->
+    <string name="stop_track_recording">Hentikan Rakaman Trek</string>
+    <!-- Subtitle of the place page of the track being recorded, and the name and title of the home screen widget. -->
+    <string name="track_recording_title">Rakaman Trek</string>
+    <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
+    <string name="track_recording_toast_nothing_to_save">Trek kosong — tiada apa untuk disimpan</string>
+    <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->
+    <string name="error_no_file_manager_app">Tidak dapat memaparkan dialog pemilihan folder kerana tiada aplikasi yang sesuai dipasang pada peranti anda. Sila pasang aplikasi pengurus fail dan cuba lagi.</string>
+    <string name="choose_color">Pilih Warna</string>
+    <string name="edit_track">Sunting Trek</string>
+    <string name="uri_open_location_failed">Tiada aplikasi dipasang yang boleh membuka lokasi ini</string>
+    <!-- Setting option to sync the app's theme with the operating system's dark/light mode -->
+    <string name="follow_system">Ikut sistem</string>
+    <!-- Title of the bottom sheet when sharing the track -->
+    <string name="share_track">Kongsi Trek</string>
+    <!-- Title for the dialog when deleting a track with the track name passed in %@ -->
+    <string name="delete_track_dialog_title">Hapus %s?</string>
+    <!-- move track or bookmark from the list button text -->
+    <string name="move">Pindah</string>
+    <!-- Text for the editing the Track's color button. -->
+    <string name="change_color">Tukar Warna</string>
+    <!-- Text for the hiding track. -->
+    <string name="hide_track">Sembunyikan trek</string>
+    <!-- Text for the showing track. -->
+    <string name="show_track">Tunjukkan trek</string>
+
+    <!-- SECTION: Uncategorized -->
+    <!-- Short label of the user's position marker on the elevation profile chart. Where a bare pronoun would be unnatural or gendered, a location noun ("My location") is preferred. -->
+    <string name="you">Anda</string>
+
+    <!-- SECTION: gps strings -->
+    <!-- Editor section title that shows recently used categories (types of objects) when adding a place on the map -->
+    <string name="editor_add_select_category_recent_subtitle">Baru Digunakan</string>
+    <!-- Toast message shown when bookmark colors are changed in category settings -->
+    <string name="toast_bookmarks_color_changed">Warna tanda buku ditukar</string>
+    <!-- Toast message shown when track colors are changed in category settings -->
+    <string name="toast_tracks_color_changed">Warna trek ditukar</string>
+    <!-- Tab label for the spectrum color picker mode -->
+    <string name="color_picker_spectrum">Spektrum</string>
+    <!-- Tab label for the RGB sliders color picker mode -->
+    <string name="color_picker_sliders">Penggelangsar</string>
+    <!-- Label for the red channel slider in the color picker -->
+    <string name="color_picker_red">MERAH</string>
+    <!-- Label for the green channel slider in the color picker -->
+    <string name="color_picker_green">HIJAU</string>
+    <!-- Label for the blue channel slider in the color picker -->
+    <string name="color_picker_blue">BIRU</string>
+    <!-- Label for the hex color input field in the color picker -->
+    <string name="color_picker_hex_label">Warna Heks sRGB #</string>
+    <!-- Tab label for the grid color picker mode -->
+    <string name="color_picker_grid">Grid</string>
+    <!-- Accessibility label for the voice-search mic button in the search bar -->
+    <string name="voice_search">Carian suara</string>
+    <!-- Accessibility label of the icon-only button beside the search field, shown while choosing or replacing a route point; it opens a full-screen map picker with a crosshair -->
+    <string name="choose_on_map">Pilih pada peta</string>
+    <!-- Search field hint and full-screen map point picker title shown while choosing the starting point of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="choose_start_location">Titik mula</string>
+    <!-- Search field hint and full-screen map point picker title shown while choosing the destination of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="choose_destination">Destinasi</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing the already set starting point of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_start_location">Tukar titik mula</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing the already set destination of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_destination">Tukar destinasi</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing an already added intermediate stop of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_stop_along_route">Tukar perhentian</string>
+    <!-- Toast shown when the user tries to add one more intermediate stop to a route that already holds the maximum allowed number -->
+    <string name="routing_max_stops_reached">Bilangan perhentian maksimum telah dicapai</string>
+    <!-- Hint under the title of the full-screen route point picker: a crosshair stays fixed in the centre of the screen while the user moves the map under it -->
+    <string name="choose_point_on_map_hint">Gerakkan dan zum peta untuk meletakkan pangkah</string>
+    <!-- Track recording notification button: stops the recording and saves the recorded track. -->
+    <string name="track_recording_stop_and_save">Henti dan Simpan</string>
+    <!-- Track recording home screen widget button: opens the app to save or delete the recorded track. -->
+    <string name="track_recording_finish">Selesai</string>
+    <!-- Accessibility label for the button that reverses the complete planned route, including intermediate stops. -->
+    <string name="reverse_route">Balikkan laluan</string>
+
+    <!-- SECTION: Malaysia Nav navigation HUD -->
+    <!-- Accessibility label of the big turn arrow in the navigation HUD. -->
+    <string name="my_nav_next_turn">Belokan seterusnya</string>
+    <!-- Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short. -->
+    <string name="my_nav_then">Kemudian</string>
+    <!-- Button that ends navigation. Keep very short. -->
+    <string name="my_nav_end">Tamat</string>
+    <!-- Accessibility label of the voice guidance on/off button in the navigation HUD. -->
+    <string name="my_nav_voice">Panduan suara</string>
+    <!-- Remaining travel time in minutes, e.g. "14 min". Keep very short. -->
+    <string name="my_nav_eta_minutes">%d min</string>
+    <!-- Remaining travel time in whole hours, e.g. "2 h". Keep very short. -->
+    <string name="my_nav_eta_hours">%d j</string>
+    <!-- Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short. -->
+    <string name="my_nav_eta_hours_minutes">%1$d j %2$d min</string>
+    <!-- Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time. -->
+    <string name="my_nav_eta_subtitle">%1$s · tiba %2$s</string>
+    <!-- Label of the toll total in the navigation ETA sheet. Keep very short. -->
+    <string name="my_nav_toll">Tol</string>
+    <!-- Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet. -->
+    <string name="my_nav_toll_amount">RM %s</string>
+    <!-- Quick search chip on the map (petrol stations). Keep to one short word. -->
+    <string name="my_chip_fuel">Minyak</string>
+    <!-- Quick search chip on the map (mosques and prayer rooms). Keep to one short word. -->
+    <string name="my_chip_surau">Surau</string>
+    <!-- Quick search chip on the map (restaurants). Keep to one short word. -->
+    <string name="my_chip_mamak">Mamak</string>
+    <!-- Quick search chip on the map (parking). Keep to one short word. -->
+    <string name="my_chip_parking">Parkir</string>
+    <!-- Quick search chip on the map (EV chargers). Keep to one short word. -->
+    <string name="my_chip_ev">EV</string>
+    <!-- Quick search chip on the map (clinics). Keep to one short word. -->
+    <string name="my_chip_clinic">Klinik</string>
+    <!-- Quick search chip on the map (highway rest areas). Keep to one short word. -->
+    <string name="my_chip_rest_area">R&amp;R</string>
+    <!-- Quick search chip on the map (toilets). Keep to one short word. -->
+    <string name="my_chip_toilet">Tandas</string>
+    <!-- Quick search chip on the map (ATMs). Keep to one short word. -->
+    <string name="my_chip_atm">ATM</string>
+</resources>

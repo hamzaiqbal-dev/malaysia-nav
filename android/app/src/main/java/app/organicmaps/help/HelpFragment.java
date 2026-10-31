@@ -57,12 +57,10 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     setupItem(R.id.web, true, root);
     setupItem(R.id.email, true, root);
     setupItem(R.id.github, true, root);
-    setupItem(R.id.telegram, false, root);
-    setupItem(R.id.instagram, false, root);
-    setupItem(R.id.facebook, false, root);
-    setupItem(R.id.twitter, true, root);
-    setupItem(R.id.matrix, true, root);
-    setupItem(R.id.mastodon, false, root);
+    // TODO(FOUNDER TO CONFIRM): Sampai has no community channels yet, so the Organic Maps ones are hidden.
+    for (int socialId :
+         new int[] {R.id.telegram, R.id.instagram, R.id.facebook, R.id.twitter, R.id.matrix, R.id.mastodon})
+      root.findViewById(socialId).setVisibility(View.GONE);
     setupItem(R.id.openstreetmap, true, root);
     setupItem(R.id.faq, true, root);
     setupItem(R.id.report, isLandscape, root);
@@ -96,10 +94,8 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     setupItem(R.id.copyright, false, root);
     View termOfUseView = root.findViewById(R.id.term_of_use_link);
     View privacyPolicyView = root.findViewById(R.id.privacy_policy);
-    termOfUseView.setOnClickListener(
-        v -> Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "terms/"));
-    privacyPolicyView.setOnClickListener(
-        v -> Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "privacy/"));
+    termOfUseView.setOnClickListener(v -> Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "terms/"));
+    privacyPolicyView.setOnClickListener(v -> Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "privacy/"));
 
     shareLauncher = SharingUtils.RegisterLauncher(this);
 
@@ -113,25 +109,13 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
   {
     final int id = v.getId();
     if (id == R.id.web)
-      Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url));
+      Utils.openUrl(requireActivity(), Constants.Url.WEBSITE);
     else if (id == R.id.news)
-      Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "news/");
+      Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "news/");
     else if (id == R.id.email)
-      Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Organic Maps");
+      Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Sampai");
     else if (id == R.id.github)
       Utils.openUrl(requireActivity(), Constants.Url.GITHUB);
-    else if (id == R.id.telegram)
-      Utils.openUrl(requireActivity(), getString(R.string.telegram_url));
-    else if (id == R.id.instagram)
-      Utils.openUrl(requireActivity(), getString(R.string.instagram_url));
-    else if (id == R.id.facebook)
-      Utils.showFacebookPage(requireActivity());
-    else if (id == R.id.twitter)
-      Utils.openUrl(requireActivity(), Constants.Url.TWITTER);
-    else if (id == R.id.matrix)
-      Utils.openUrl(requireActivity(), Constants.Url.MATRIX);
-    else if (id == R.id.mastodon)
-      Utils.openUrl(requireActivity(), Constants.Url.MASTODON);
     else if (id == R.id.openstreetmap)
       Utils.openUrl(requireActivity(), getString(R.string.osm_wiki_about_url));
     else if (id == R.id.faq)
@@ -139,7 +123,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     else if (id == R.id.report)
       Utils.sendBugReport(shareLauncher, requireActivity(), "", "");
     else if (id == R.id.support_us)
-      Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "support-us/");
+      Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "support-us/");
     else if (id == R.id.rate)
       Utils.openAppInMarket(requireActivity(), BuildConfig.REVIEW_URL);
     else if (id == R.id.copyright)

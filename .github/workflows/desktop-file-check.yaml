@@ -6,6 +6,9 @@ on:
       - qt/res/linux/app.organicmaps.desktop.desktop
       - .github/workflows/desktop-file-check.yaml  # Run check on self change
 
+permissions:
+  contents: read
+
 jobs:
   validate-desktop-file:
     name: Validate .desktop file

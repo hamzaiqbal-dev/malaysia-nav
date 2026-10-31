@@ -8,6 +8,9 @@ on:
       - android/app/src/google/**
       - tools/python/check_store_metadata.py
 
+permissions:
+  contents: read
+
 jobs:
   android-check-metadata:
     name: Check app metadata

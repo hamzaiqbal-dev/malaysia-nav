@@ -112,6 +112,8 @@ public:
       {"vi", 46},
       {"zh-Hans", kSimplifiedChineseCode},
       {"zh-Hant", kTraditionalChineseCode},
+      {"ms", 49},
+      {"ta", 50},
   });
 
   explicit CategoriesHolder(std::unique_ptr<Reader> && reader);

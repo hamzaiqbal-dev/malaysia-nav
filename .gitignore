@@ -5,6 +5,24 @@
 /screenlog.0
 compile_commands.json
 
+# Credentials, keys and signing material. See docs/CREDENTIALS.md: these are injected from CI
+# secrets or kept on the developer's machine, and must never be committed. The per-name rules in
+# android/app/.gitignore only cover the names upstream uses, so keep these patterns by extension
+# too -- a release keystore called sampai-release.jks is just as sensitive as release.keystore.
+/private.h
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+secure.properties
+google-services.json
+agconnect-services.json
+.env
+.env.*
+
 # Styles and colors edited by the built-in designer (see qt/build_style)
 data/symbols/*/design/
 data/drules_design.bin
