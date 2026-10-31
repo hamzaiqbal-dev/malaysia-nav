@@ -544,7 +544,7 @@
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
     <string name="alert_reauth_message">Sila masuk ke OpenStreetMap untuk memuat naik semua suntingan peta anda secara automatik. Ketahui lebih lanjut <a href="https://github.com/organicmaps/organicmaps/issues/6144">di sini</a>.</string>
     <string name="dialog_error_storage_title">Masalah akses storan</string>
-    <string name="dialog_error_storage_message">Storan luaran tidak boleh diakses. Kad SD mungkin telah dicabut, rosak, atau sistem failnya baca sahaja. Sila periksa kad SD anda atau hubungi kami di support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">Storan luaran tidak boleh diakses. Kad SD mungkin telah dicabut, rosak, atau sistem failnya baca sahaja. Sila periksa kad SD anda atau hubungi kami di support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Tiru storan yang rosak</string>
     <string name="error_enter_correct_name">Sila masukkan nama yang betul</string>
     <string name="bookmark_lists">Senarai</string>
