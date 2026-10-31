@@ -299,4 +299,22 @@ UNIT_TEST(GeoURL_BadZoom)
   TEST_ALMOST_EQUAL_ABS(info.m_lon, 21.01547, kEps, ());
   TEST_GREATER_OR_EQUAL(info.m_zoom, 0.0, ());
 }
+
+// Regression: the coordinate regexes accept a leading '+', but strings::to_double rejects it. The
+// coordinate was only VERIFY-checked, so these URLs aborted the app in asserts-on builds and read an
+// unparsed value in Release. Found by fuzzing (security/pentest-oct31); must now be rejected cleanly.
+UNIT_TEST(GeoURL_MalformedCoordinatesDoNotCrash)
+{
+  UnifiedParser parser;
+  GeoURLInfo info;
+
+  // Leading '+' in the host coordinates.
+  TEST(!parser.Parse("geo:0,+0", info), ());
+  // Leading '+' in the q= coordinates: falls back to treating q= as a free-text query.
+  TEST(parser.Parse("geo:1.0,2.0?q=0,+0", info), ());
+  // Leading '+' in a provider's lat/lon query parameter.
+  TEST(!parser.Parse("https://2gis.ru/geo/+0,+0", info), ());
+  // Embedded NUL byte between the coordinates.
+  TEST(!parser.Parse(std::string("geo:0,\0000", 8), info), ());
+}
 }  // namespace geo_url_tests
