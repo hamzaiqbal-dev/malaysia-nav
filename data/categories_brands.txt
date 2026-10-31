@@ -12,9 +12,23 @@
 # <translation>      ::= translation into corresponding language
 # <lang>             ::= 'en'|'cs'|'sk'|'de'|'es'|'fr'|'it'|'ja' etc.
 
+brand.7_eleven
+en:7-Eleven|7 Eleven|7Eleven|Seven Eleven|7E
+
+brand.99_speedmart
+en:99 Speedmart|99 Speed Mart|Speedmart|99 Mart
+
+brand.aeon
+en:AEON|Aeon|AEON BiG|AEON Big|Jusco
+zh:永旺|吉之岛
+
 brand.aiya
 en:Aiya
 ja:藍屋
+
+brand.ambank
+en:AmBank|Am Bank|Arab-Malaysian Bank
+zh:大马银行
 
 brand.anrakutei
 en:Anrakutei|Anraku-tei
@@ -35,9 +49,20 @@ ja:バーミヤン|ばーみやん
 brand.banana_leaf
 en:Banana Leaf
 
+brand.bank_islam
+en:Bank Islam|Bank Islam Malaysia|BIMB
+zh:伊斯兰银行
+
+brand.bank_simpanan_nasional
+en:Bank Simpanan Nasional|BSN
+zh:国民储蓄银行
+
 brand.baskin_robbins
 en:Baskin-Robbins|BaskinRobbins
 ru:Баскин Роббинс|БаскинРоббинс
+
+brand.bhpetrol
+en:BHPetrol|BH Petrol|BHP|Boustead Petroleum
 
 brand.big_boy
 en:Big Boy|BigBoy
@@ -73,6 +98,10 @@ brand.cafe_de_crie
 en:Cafe de Crie|Cafe de Crie Plus
 ja:カフェドクリエ|カフェ・ド・クリエプラス|Kafe do Kurie|Kafe Do Kurie Pulasu
 
+brand.caltex
+en:Caltex
+zh:加德士
+
 brand.capricchosa
 en:Capricchosa
 ja:カプリチョーザ|Kapurichoza
@@ -100,6 +129,10 @@ en:Chipotle
 
 brand.chowking
 en:Chowking|Chow King
+
+brand.cimb_bank
+en:CIMB Bank|CIMB|CIMB Islamic
+zh:联昌银行|联昌国际银行
 
 brand.cinnabon
 en:Cinnabon
@@ -171,12 +204,20 @@ en:Dunkin Donuts|DunkinDonuts
 ru:Данкин Донатс
 ar:دنكن دونتس
 
+brand.econsave
+en:Econsave|Econ Save|Pasar Ekonomi Econsave
+zh:宜康省
+
 brand.espresso_house
 en:Espresso House
 
 brand.excelsior_caffe
 en:Excelsior Caffe
 ja:エクセルシオール カフェ|エクセルシオールカフェ|Ekuserusiohru Kafe|Ekuserusiōru Kafe
+
+brand.familymart
+en:FamilyMart|Family Mart
+zh:全家
 
 brand.first_kitchen
 en:First Kitchen
@@ -190,12 +231,20 @@ brand.fujisoba
 en:Fujisoba|Fuji-soba
 ja:富士そば
 
+brand.giant_hypermarket
+en:Giant Hypermarket|Giant|Giant Mini|Giant Mall
+zh:巨人霸级市场|巨人
+
 brand.glowsubs
 en:GlowSubs|Glow Subs
 
 brand.grazie_gardens
 en:Grazie Gardens
 ja:グラッチェガーデンズ|Guraccye Gardenzu
+
+brand.guardian
+en:Guardian|Guardian Pharmacy
+zh:佳宁
 
 brand.gusto
 en:Gusto
@@ -237,6 +286,10 @@ brand.hokkahokka_tei
 en:Hokka-Hokka Tei|Hokkahokka-tei
 ja:ほっかほっか亭|ほっかほっかてい
 
+brand.hong_leong_bank
+en:Hong Leong Bank|Hong Leong|HLB
+zh:丰隆银行
+
 brand.honkekamadoya
 en:Honkekamadoya|Honke Kamadoya|Honke Kamado-ya
 ja:本家かまどや|ほんけかまどや
@@ -258,6 +311,9 @@ ru:IL Патио|Иль Патио|ИльПатио
 
 brand.jack_in_the_box
 en:Jack in the Box
+
+brand.jaya_grocer
+en:Jaya Grocer
 
 brand.jiyu_kukan
 en:Jiyu Kukan
@@ -300,6 +356,9 @@ brand.kisoji
 en:Kisoji
 ja:木曽路
 
+brand.kk_super_mart
+en:KK Super Mart|KK Mart|KK Supermart|KKMart
+
 brand.kobeya_restaurant
 en:Kobeya Restaurant
 ja:神戸屋レストラン|Koubeya Resutoran
@@ -335,6 +394,10 @@ brand.lotteria
 en:Lotteria
 ja:ロッテリア|Rotteria
 
+brand.lotus_s
+en:Lotus's|Lotuss|Lotus|Lotus's go fresh|Tesco
+zh:莲花
+
 brand.maido_ohkini
 en:Maido-Ohkini|Maidoohkini
 ja:まいどおおきに
@@ -355,6 +418,10 @@ ja:松乃家|松のや
 brand.matsuya
 en:Matsuya
 ja:まつや|松屋
+
+brand.maybank
+en:Maybank|May Bank|Malayan Banking|Maybank Islamic
+zh:马来亚银行
 
 brand.mcdonalds
 en:McDonald's|Mc Donald's|McDonalds|Mc Donalds
@@ -391,6 +458,9 @@ en:MOS BURGER|Mosburger
 ja:もすばーがー|モスバーガー|モス・バーガー|Mosu Bahga|Mosu Bāgā
 zh:摩斯漢堡
 
+brand.mr_diy
+en:MR.DIY|Mr DIY|Mr. DIY|MrDIY|MR DIY
+
 brand.mr_sub
 en:Mr. Sub
 
@@ -398,9 +468,18 @@ brand.mu_mu
 en:Mu-Mu|MuMu
 ru:Му-Му|МуМу
 
+brand.mydin
+en:Mydin|Mydin Mall|Mydin Hypermarket
+
+brand.mynews
+en:myNEWS|myNEWS.com|my news|mynews
+
 brand.nakau
 en:Nakau
 ja:なかう|なか卯
+
+brand.nsk_trade_city
+en:NSK Trade City|NSK|NSK Grocer
 
 brand.ohsho
 en:Ohsho|Gyoza no Ohsho
@@ -430,6 +509,13 @@ ru:Папа Джонс
 brand.perkins
 en:Perkins
 
+brand.petron
+en:Petron
+
+brand.petronas
+en:Petronas|PETRONAS|Petronas Mesra|Mesra
+zh:国油|国家石油
+
 brand.pizza_hut
 en:Pizza Hut|PizzaHut
 ru:Пицца Хат|ПиццаХат
@@ -449,11 +535,19 @@ brand.pronto
 en:Pronto
 ja:Puronto
 
+brand.public_bank
+en:Public Bank|Public Bank Berhad|PBB
+zh:大众银行
+
 brand.quiznos
 en:Quiznos
 
 brand.red_lobster
 en:Red Lobster
+
+brand.rhb_bank
+en:RHB Bank|RHB|RHB Islamic
+zh:兴业银行
 
 brand.ringer_hut
 en:RingerHut|Ringer Hut
@@ -478,11 +572,18 @@ brand.sato
 en:Sato
 ja:和食さと
 
+brand.secret_recipe
+en:Secret Recipe
+
 brand.segafredo
 en:Segafredo
 
 brand.shake_shack
 en:Shake Shack|ShakeShack
+
+brand.shell
+en:Shell|Shell Select|Shell Express
+zh:蚬壳
 
 brand.shokoladnitsa
 en:Shokoladnitsa
@@ -548,6 +649,9 @@ brand.taco_bell
 en:Taco Bell|Tacobell
 ja:タコベル|たこべる
 
+brand.tealive
+en:Tealive|Tea live
+
 brand.telepizza
 en:Telepizza|Tele Pizza
 
@@ -595,6 +699,10 @@ ja:ヴィクトリアステーション
 brand.waffle_house
 en:Waffle House
 
+brand.watsons
+en:Watsons|Watson's|Watson
+zh:屈臣氏
+
 brand.wendys
 en:Wendy's|Wendys
 
@@ -622,3 +730,6 @@ ja:ゆで太郎
 brand.yumean
 en:Yumean|Yume-an
 ja:夢庵|ゆめあん
+
+brand.zus_coffee
+en:ZUS Coffee|ZUS|Zus Coffee
