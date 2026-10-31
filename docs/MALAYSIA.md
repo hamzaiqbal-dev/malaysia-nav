@@ -120,3 +120,8 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   about logo, Play icon 512 and feature graphic 1024x500 (rendered by design/brand/render_icons.py). Organic Maps
   contact e-mail/website/social links replaced by placeholders support@sampai.my and https://sampai.my (FOUNDER TO
   CONFIRM; domain not registered). Apache-2.0 / OpenStreetMap attribution untouched.
+- 2026-11-01: M1 integration branch integration/m1 — merges the whole stacked chain (PRs #1–#18) plus #19 brand,
+  #20 中文/தமிழ் synonyms and brands, #21 CI test annotations and #22 geo URL parser fix / fuzz harnesses /
+  pentest report into one PR against master, so the owner reviews and merges once. Conflicts: build.gradle (kept the
+  single support@sampai.my SUPPORT_MAIL and the appId-based REVIEW_URL), strings.txt (kept the Sampai addresses and
+  the BM line), regenerated strings committed separately.
