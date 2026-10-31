@@ -544,7 +544,7 @@
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
     <string name="alert_reauth_message">Acceda a OpenStreetMap para cargar automáticamente todas sus ediciones al mapa. Más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.</string>
     <string name="dialog_error_storage_title">Problema de acceso al almacenamiento</string>
-    <string name="dialog_error_storage_message">El almacenamiento externo no está disponible; puede que se haya quitado o dañado la tarjeta SD, o el sistema de archivos solo permite lectura. Compruébelo o escríbanos a support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">El almacenamiento externo no está disponible; puede que se haya quitado o dañado la tarjeta SD, o el sistema de archivos solo permite lectura. Compruébelo o escríbanos a support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Emular almacenamiento dañado</string>
     <string name="error_enter_correct_name">Introduzca el nombre correcto</string>
     <string name="bookmark_lists">Listas</string>
@@ -760,10 +760,6 @@
     <string name="change_map_locale">Idioma del mapa</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Datos cartográficos de OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
     <!-- A link to the TTS FAQ -->
     <string name="tts_info_link">https://organicmaps.app/es/faq/voice/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
