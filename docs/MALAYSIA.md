@@ -71,3 +71,8 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   Play listing text for en-US and ms-MY rewritten for Sampai (other locales still carry the Organic Maps text;
   rewrite before publishing). Still Organic Maps': launcher icon, splash logo, contact e-mail/website in
   android/app/src/{fdroid,google}/play — trademark: replace before any public build.
+- 2026-10-31: PR brand — original Sampai launcher icon (route dots arriving at a blue pin with an amber tick on
+  navy #0B1220; adaptive vector + monochrome + legacy PNGs, debug on grid paper, beta on orange), new splash and
+  about logo, Play icon 512 and feature graphic 1024x500 (rendered by design/brand/render_icons.py). Organic Maps
+  contact e-mail/website/social links replaced by placeholders support@sampai.my and https://sampai.my (FOUNDER TO
+  CONFIRM; domain not registered). Apache-2.0 / OpenStreetMap attribution untouched.
