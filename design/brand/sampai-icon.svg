@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <!-- Sampai app icon. 108x108 adaptive-icon canvas; keep art inside the 66dp safe circle. -->
+  <!-- Background: navy (design/concept-3d bg token). Route dots -> destination pin with a tick = "sampai" (arrived). -->
+  <rect width="108" height="108" fill="#0B1220"/>
+  <!-- route dots -->
+  <path fill="#FFFFFF" d="M30.25,79 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z M37.65,73.1 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z M46.55,69.5 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z"/>
+  <!-- landing mark -->
+  <path fill="#FFC43D" d="M49,77 a11,3.5 0 1,0 22,0 a11,3.5 0 1,0 -22,0 Z"/>
+  <!-- pin -->
+  <path fill="#2E8BFF" d="M60,76 C60,76 38,53 38,40 A22,22 0 1 1 82,40 C82,53 60,76 60,76 Z"/>
+  <!-- tick -->
+  <path fill="none" stroke="#FFC43D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M50,41 L57,48 L71,34"/>
+</svg>

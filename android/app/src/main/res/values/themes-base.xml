@@ -37,7 +37,7 @@
     <item name="colorAccentTransparent">@color/base_accent_transparent</item>
     <item name="colorBtnHighlight">@color/white_38</item>
     <item name="panel">@color/bg_panel</item>
-    <item name="colorLogo">@color/bg_primary</item>
+    <item name="colorLogo">@color/logo</item>
     <item name="iconTint">@color/black_54</item>
     <item name="iconTintDisabled">@color/black_12</item>
     <item name="iconTintActive">@color/yellow</item>

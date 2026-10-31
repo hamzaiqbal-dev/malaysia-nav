@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds: the Sampai mark drawn on grid paper so they are easy to tell apart from release. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <path
+      android:fillColor="#F7E8C9"
+      android:pathData="M0,0 h108 v108 h-108 Z" />
+  <path
+      android:strokeColor="#E0A98A"
+      android:strokeWidth="0.8"
+      android:pathData="M9,0 V108 M18,0 V108 M27,0 V108 M36,0 V108 M45,0 V108 M54,0 V108 M63,0 V108 M72,0 V108 M81,0 V108 M90,0 V108 M99,0 V108 M0,9 H108 M0,18 H108 M0,27 H108 M0,36 H108 M0,45 H108 M0,54 H108 M0,63 H108 M0,72 H108 M0,81 H108 M0,90 H108 M0,99 H108" />
+  <path
+      android:fillColor="#8A5A3C"
+      android:pathData="M30.25,79 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z M37.65,73.1 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z M46.55,69.5 a2.75,2.75 0 1,0 5.5,0 a2.75,2.75 0 1,0 -5.5,0 Z" />
+  <path
+      android:fillColor="#E0A040"
+      android:pathData="M49,77 a11,3.5 0 1,0 22,0 a11,3.5 0 1,0 -22,0 Z" />
+  <path
+      android:fillColor="#1F6FD6"
+      android:pathData="M60,76 C60,76 38,53 38,40 A22,22 0 1 1 82,40 C82,53 60,76 60,76 Z" />
+  <path
+      android:strokeColor="#F7E8C9"
+      android:strokeWidth="6"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M50,41 L57,48 L71,34" />
+</vector>

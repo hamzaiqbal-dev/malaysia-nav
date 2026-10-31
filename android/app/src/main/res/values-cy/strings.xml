@@ -544,7 +544,7 @@
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
     <string name="alert_reauth_message">Mewngofnodwch i OpenStreetMap i uwchlwytho\'ch holl olygiadau map yn awtomatig. Dysgwch fwy <a href="https://github.com/organicmaps/organicmaps/issues/6144">yma</a>.</string>
     <string name="dialog_error_storage_title">Problem mynediad i\'r storfa</string>
-    <string name="dialog_error_storage_message">Nid yw\'r storfa allanol yn hygyrch. Efallai fod y cerdyn SD wedi\'i dynnu neu ei ddifrodi, neu fod y system ffeiliau\'n caniatáu darllen yn unig. Gwiriwch eich cerdyn SD neu cysylltwch â ni yn support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">Nid yw\'r storfa allanol yn hygyrch. Efallai fod y cerdyn SD wedi\'i dynnu neu ei ddifrodi, neu fod y system ffeiliau\'n caniatáu darllen yn unig. Gwiriwch eich cerdyn SD neu cysylltwch â ni yn support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Efelychu storfa wael</string>
     <string name="error_enter_correct_name">Rhowch enw cywir</string>
     <string name="bookmark_lists">Rhestrau</string>
@@ -766,10 +766,6 @@
     <string name="change_map_locale">Iaith y map</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Data map o OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
     <!-- A link to the TTS FAQ -->
     <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
