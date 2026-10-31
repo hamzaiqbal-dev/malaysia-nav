@@ -115,3 +115,8 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   pipeline) is not wired into any stage. Upstream's own brands have the same limitation. Next for search: either
   normalise the raw brand to a key in ForEachLocalizedBrands or wire brands_loader into the generator, then
   ms/ta names in types_strings.txt so place pages are not English-only.
+- 2026-10-31: PR brand — original Sampai launcher icon (route dots arriving at a blue pin with an amber tick on
+  navy #0B1220; adaptive vector + monochrome + legacy PNGs, debug on grid paper, beta on orange), new splash and
+  about logo, Play icon 512 and feature graphic 1024x500 (rendered by design/brand/render_icons.py). Organic Maps
+  contact e-mail/website/social links replaced by placeholders support@sampai.my and https://sampai.my (FOUNDER TO
+  CONFIRM; domain not registered). Apache-2.0 / OpenStreetMap attribution untouched.
