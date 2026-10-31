@@ -103,3 +103,15 @@ interface. Design concept lives in `design/concept-3d/index.html`; implementatio
   on amenity=clinic. New test CategoriesHolder_MalaysianCategories checks all four languages against the shipped
   file. Next for search: Malaysian brands in categories_brands.txt (Petronas, Petron, Shell, 99 Speedmart, Mydin,
   KK Mart…), and ms/ta names in types_strings.txt so place pages are not English-only.
+- 2026-10-31: PR search/my-brands-zh-ta — 中文 and தமிழ் synonyms for the rest of the everyday categories (petrol
+  station, Chinese/Hindu temples, hospital, doctor, police, ATM, bank, parking, toilet, KTM/LRT/MRT, bus stop, food
+  court, pasar malam, EV charger, pharmacy, convenience store: 181 synonyms, incl. a few missing ms lines such as
+  tokong, kuil, medan selera, kedai serbaneka) and 31 Malaysian brands in data/categories_brands.txt (fuel, grocery,
+  retail, F&B, banks; first en name = the OSM brand=* value from the name-suggestion-index, then the spellings
+  Malaysians type, zh names where common). Caring Pharmacy and Pak Li left out — no brand=* value in the index.
+  Finding: FMD_BRAND holds the raw OSM brand value and libs/indexer's ForEachLocalizedBrands looks it up as an
+  exact key (petronas, 99_speedmart…), and feature_builder drops the brand when name == brand, so the brand
+  synonyms only fire where brand != name and the value matches the key; generator/brands_loader.cpp (brand-ID
+  pipeline) is not wired into any stage. Upstream's own brands have the same limitation. Next for search: either
+  normalise the raw brand to a key in ForEachLocalizedBrands or wire brands_loader into the generator, then
+  ms/ta names in types_strings.txt so place pages are not English-only.
