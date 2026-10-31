@@ -20,3 +20,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 omim_add_test_subdirectory(ge0_tests)
+
+if (USE_LIBFUZZER)
+  add_subdirectory(ge0_fuzz_tests)
+endif()
