@@ -12,6 +12,6 @@ Sampai is a navigation app made in Malaysia for Malaysians: Bahasa Melayu first,
 
 <b>PRIVATE:</b> No account, no tracking, no ads. Your location and your trips stay on your phone.
 
-Sampai is built on the open-source Organic Maps engine and OpenStreetMap data, improved every day by volunteers across Malaysia. Found a missing road or a wrong name? Fix it in the app and help every other Malaysian driver.
+Sampai uses OpenStreetMap data, improved every day by volunteers across Malaysia. Found a missing road or a wrong name? Fix it in the app and help every other Malaysian driver.
 
 Sampai is in early development: the Bahasa Melayu interface and voice are being completed, and live road reports (jams, accidents, police, floods) are on the way.
