@@ -4,7 +4,9 @@ import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import androidx.annotation.MainThread
+import app.organicmaps.R
 import app.organicmaps.sdk.my.MyTolls
+import java.util.Locale
 import java.util.concurrent.Executors
 
 /**
@@ -43,6 +45,17 @@ object RouteTolls {
             val total = tollTable.priceRoute(booths)
             mainHandler.post { if (id == requestId) onResult(total) }
         }
+    }
+
+    /** The amount with its currency, e.g. "RM 4.20+". */
+    fun amountText(context: Context, total: RouteTollTotal): String =
+        context.getString(R.string.my_nav_toll_amount, NavHudFormat.tollAmount(total, Locale.getDefault()))
+
+    /** Route summary text: "Toll RM 4.20", only "Toll" with no priced booth, null on a toll-free route. */
+    fun summary(context: Context, total: RouteTollTotal?): String? {
+        if (total == null || total.boothCount == 0) return null
+        val label = context.getString(R.string.my_nav_toll)
+        return if (total.hasPrice) "$label ${amountText(context, total)}" else label
     }
 
     private fun loadTable(context: Context): TollTable =

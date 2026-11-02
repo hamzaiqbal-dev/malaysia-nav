@@ -65,4 +65,10 @@ class NavHudFormatTest {
         assertEquals(SpeedState.CAMERA_AHEAD, NavHudFormat.speedState(90 / 3.6, 80 / 3.6, true))
         assertEquals(SpeedState.CAMERA_AHEAD, NavHudFormat.speedState(null, -1.0, true))
     }
+
+    @Test
+    fun tollAmountMarksALowerBound() {
+        assertEquals("4.20", NavHudFormat.tollAmount(RouteTollTotal(4.2, 2, 0), Locale.US))
+        assertEquals("4.20+", NavHudFormat.tollAmount(RouteTollTotal(4.2, 2, 1), Locale.US))
+    }
 }
