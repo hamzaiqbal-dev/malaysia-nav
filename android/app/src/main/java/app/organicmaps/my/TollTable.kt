@@ -95,7 +95,7 @@ class TollTable(val plazas: List<TollPlaza>) {
         private val PARENTHESES = Regex("\\([^)]*\\)")
         private val NON_WORD = Regex("[^\\p{L}\\p{N}]+")
 
-        /** Lower-case plaza name without "Plaza Tol"/"Toll Plaza", bracketed directions, punctuation and short forms. */
+        /** Lower-case plaza name with short forms expanded, without "Plaza Tol", brackets or punctuation. */
         fun normalizeBoothName(name: String): String = name
             .replace(PARENTHESES, " ")
             .lowercase()
