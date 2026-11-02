@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">正在下载</string>
     <string name="download_map_title">下载世界地图</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto 中的 Organic Maps 需要位置权限才能有效工作</string>
+    <string name="aa_request_permission_activity_text">Android Auto 中的 Sampai 需要位置权限才能有效工作</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">授予权限</string>
 </resources>

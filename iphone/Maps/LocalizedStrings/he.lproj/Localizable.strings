@@ -32,7 +32,7 @@
 "country_status_download_failed" = "ההורדה נכשלה";
 
 /* Text in About screen */
-"about_headline" = "חינם לכולם, מיוצרים באהבה";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• ללא מודעות, ללא מעקב, ללא איסוף נתונים";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• אין ריקון סוללה, עובד במצב לא מקוון";
 
 /* Text in About screen */
-"about_proposition_3" = "• מהיר, מינימליסטי, שפותח על ידי הקהילה";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "סגור";
 "download" = "הורדה";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Organic Maps. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://omaps.app/get?kmz\n\nתהנו לנווט עם Organic Maps!";
+"share_bookmarks_email_body" = "שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Sampai. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://sampai.my/\n\nתהנו לנווט עם Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "טוען סימניות";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "מיקומך לא אותר עדיין";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "אני כאן ב-Organic Maps";
+"share_my_position" = "אני כאן ב-Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ ב-Organic Maps";
+"share_place_subject" = "%1$@ ב-Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "מקום ב-Organic Maps";
+"share_place_subject_default" = "מקום ב-Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "פתיחה ב-Organic Maps או בדפדפן";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "פתיחה ב-Sampai או בדפדפן";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "קבלו את Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "קבלו את Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "פתח באפליקציה אחרת";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "אתר";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "חדשות";
-
 /* Text in menu */
 "rate_the_app" = "דרגו את האפליקציה";
 
@@ -295,10 +292,10 @@
 "donate" = "לתרום";
 "already_donated" = "כבר נתרם";
 "remind_me_later" = "הזכר מאוחר יותר";
-"support_organic_maps" = "לתמוך ב-Organic Maps";
+"support_organic_maps" = "לתמוך ב-Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "זכויות יוצרים";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "דווח על באג";
@@ -393,7 +390,7 @@
 "blue_gray" = "כחול אפרפר";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps גרסה: %@";
+"version" = "Sampai גרסה: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "מראה";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "דווח או תקן נתוני מפה שגויים";
-
-/* Button in the About screen */
-"volunteer" = "להתנדב";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "עקבו ופנו אלינו:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "מַפעִיל: %@";
 "editor_category_unsuitable_title" = "לא מוצאים קטגוריה מתאימה?";
-"editor_category_unsuitable_text" = "באמצעות Organic Maps ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. עיינו <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">במדריך</a> שלנו לקבלת הוראות מפורטות.";
+"editor_category_unsuitable_text" = "באמצעות Sampai ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. עיינו <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">במדריך</a> שלנו לקבלת הוראות מפורטות.";
 "downloader_no_downloaded_maps_title" = "לא הורדת אף מפה";
 "downloader_no_downloaded_maps_message" = "הורד מפה כדי לחפש ולנווט ללא חיבור לאינטרנט.";
 "current_location_unknown_error_title" = "המיקום הנוכחי לא ידוע.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "כדי להוריד, צריך עוד מקום. נא למחוק מידע שאינו הכרחי.";
-"editor_sharing_title" = "אני משפר את המפות של Organic Maps";
+"editor_sharing_title" = "אני משפר את המפות של Sampai";
 "editor_detailed_description_hint" = "הערה מפורטת";
-"editor_detailed_description" = "ההצעות שלך לשינוי המפה יישלחו לקהילת OpenStreetMap. יש לתאר פרטים נוספים שלא ניתן לערוך ב-Organic Maps.";
+"editor_detailed_description" = "ההצעות שלך לשינוי המפה יישלחו לקהילת OpenStreetMap. יש לתאר פרטים נוספים שלא ניתן לערוך ב-Sampai.";
 "current_location_unknown_error_message" = "אירעה שגיאה בעת איתור המיקום שלך. יש לוודא שהמכשיר שלך פועל כראוי ולנסות שנית מאוחר יותר.";
 "location_services_disabled_header" = "שירותי מיקום לא מופעלים";
 "location_services_disabled_message" = "אפשרו גישה למיקום בהגדרות המכשיר";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. בחר פרטיות";
 "location_services_disabled_on_device_3" = "3. בחר שירותי מיקום";
 "location_services_disabled_on_device_4" = "4. הפעל את שירותי המיקום";
-"location_services_disabled_on_device_additional_message" = "או המשך להשתמש ב-Organic Maps ללא מיקום";
+"location_services_disabled_on_device_additional_message" = "או המשך להשתמש ב-Sampai ללא מיקום";
 "placepage_call_button" = "התקשר";
 "placepage_bookmark_name_hint" = "שם סימניה";
 "placepage_delete_bookmark_button" = "מחק סימניה";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "להשבית הקלטה של המסלול האחרון שלך?";
 "off_recent_track_background_button" = "השבת";
-"recent_track_background_dialog_message" = "האפליקצייה Organic Maps משתמשת במיקום שלך ברקע כדי להקליט את המסלול האחרון שלך.";
+"recent_track_background_dialog_message" = "האפליקצייה Sampai משתמשת במיקום שלך ברקע כדי להקליט את המסלול האחרון שלך.";
 "general_settings" = "הגדרות כלליות";
 
 /* "traffic" as in road congestion */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "התקרב כדי לחקור קווי מתאר";
 "downloader_loading_ios" = "מוריד";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "תודה על השימוש במפות שנבנו בקהילה שלנו!";
-
-/* App tip #01 */
-"app_tip_01" = "עם התרומות והתמיכה שלך, נוכל ליצור את המפות הטובות בעולם!";
-
-/* App tip #02 */
-"app_tip_02" = "האם אתה אוהב את האפליקציה שלנו? אנא תרמו כדי לתמוך בפיתוח! לא אוהב את זה עדיין? אנא הודע לנו, ואנחנו נתקן את זה!";
 
 /* App tip #03 */
 "app_tip_03" = "אם אתה מכיר מפתח תוכנה, אתה יכול לבקש ממנו ליישם תכונה שאתה צריך.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "אתה יכול לעזור לתרגם את האפליקציה שלנו לשפה שלך.";
 
-/* App tip #07 */
-"app_tip_07" = "האפליקציה שלנו פותחה על ידי כמה חובבים והקהילה.";
-
 /* App tip #08 */
 "app_tip_08" = "אתה יכול בקלות לתקן ולשפר את נתוני המפה.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "המטרה העיקרית שלנו היא לבנות מפות מהירות, ממוקדות פרטיות, קלות לשימוש שתאהבו.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "אתה משתמש כעת ב-Organic Maps במסך הטלפון";
+"car_used_on_the_phone_screen" = "אתה משתמש כעת ב-Sampai במסך הטלפון";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "אתה משתמש כעת ב-Organic Maps במסך המכונית";
+"car_used_on_the_car_screen" = "אתה משתמש כעת ב-Sampai במסך המכונית";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "המשך בטלפון";
@@ -1082,7 +1061,7 @@
 "map" = "מפה";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "האם ברצונך לשלוח דיווח על תקלה למפתחים?\nאנו מסתמכים על המשתמשים שלנו, שכן Organic Maps אינה אוספת מידע על תקלות באופן אוטומטי. תודה מראש על תמיכתך ב-Organic Maps!";
+"bugreport_alert_message" = "האם ברצונך לשלוח דיווח על תקלה למפתחים?\nאנו מסתמכים על המשתמשים שלנו, שכן Sampai אינה אוספת מידע על תקלות באופן אוטומטי. תודה מראש על תמיכתך ב-Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "הפעל סנכרון iCloud";

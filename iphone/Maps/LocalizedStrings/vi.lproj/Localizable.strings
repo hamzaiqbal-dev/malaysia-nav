@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Tải xuống đã thất bại";
 
 /* Text in About screen */
-"about_headline" = "Miễn phí cho mọi người, được làm bằng tình yêu";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Không có quảng cáo, không theo dõi, không thu thập dữ liệu";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Không hao pin, hoạt động offline";
 
 /* Text in About screen */
-"about_proposition_3" = "• Nhanh chóng, tối giản, được phát triển bởi cộng đồng";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Đóng";
 "download" = "Tải xuống";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Xin chào!\n\nĐính kèm là các dấu trang của tôi; vui lòng mở chúng trong Organic Maps. Nếu bạn chưa cài đặt ứng dụng này, bạn có thể tải xuống tại đây: https://omaps.app/get?kmz\n\nChúc bạn có những chuyến đi thú vị cùng Organic Maps!";
+"share_bookmarks_email_body" = "Xin chào!\n\nĐính kèm là các dấu trang của tôi; vui lòng mở chúng trong Sampai. Nếu bạn chưa cài đặt ứng dụng này, bạn có thể tải xuống tại đây: https://sampai.my/\n\nChúc bạn có những chuyến đi thú vị cùng Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Tải Điểm đánh dấu";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Chưa xác định được vị trí của bạn";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Tôi đang ở đây trên Organic Maps";
+"share_my_position" = "Tôi đang ở đây trên Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ trên Organic Maps";
+"share_place_subject" = "%1$@ trên Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Một địa điểm trên Organic Maps";
+"share_place_subject_default" = "Một địa điểm trên Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Mở trong Organic Maps hoặc trình duyệt";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Mở trong Sampai hoặc trình duyệt";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Tải Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Tải Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Mở trong ứng dụng khác";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Trang web";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Tin tức";
-
 /* Text in menu */
 "rate_the_app" = "Cho điểm ứng dụng";
 
@@ -295,10 +292,10 @@
 "donate" = "Quyên tặng";
 "already_donated" = "Đã quyên góp";
 "remind_me_later" = "Nhắc sau";
-"support_organic_maps" = "Hỗ trợ Organic Maps";
+"support_organic_maps" = "Hỗ trợ Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Bản quyền";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Báo cáo lỗi";
@@ -393,7 +390,7 @@
 "blue_gray" = "Xám xanh da trời";
 
 /* Prints version number in About dialog */
-"version" = "Phiên bản Organic Maps: %@";
+"version" = "Phiên bản Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Giao diện";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Báo cáo hoặc sửa dữ liệu bản đồ không chính xác";
-
-/* Button in the About screen */
-"volunteer" = "Tình nguyện";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Theo dõi và liên hệ với chúng tôi:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Toán tử: %@";
 "editor_category_unsuitable_title" = "Không thể tìm thấy một danh mục phù hợp?";
-"editor_category_unsuitable_text" = "Organic Maps chỉ cho phép thêm các loại điểm đơn giản, tức là không bao gồm các thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các loại này trực tiếp vào <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Hãy tham khảo <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">hướng dẫn</a> của chúng tôi để biết các bước thực hiện chi tiết.";
+"editor_category_unsuitable_text" = "Sampai chỉ cho phép thêm các loại điểm đơn giản, tức là không bao gồm các thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các loại này trực tiếp vào <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Hãy tham khảo <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">hướng dẫn</a> của chúng tôi để biết các bước thực hiện chi tiết.";
 "downloader_no_downloaded_maps_title" = "Bạn chưa tải về bất kỳ bản đồ nào";
 "downloader_no_downloaded_maps_message" = "Tải về bản đồ để tìm địa điểm và định hướng ngoại tuyến.";
 "current_location_unknown_error_title" = "Chưa biết địa điểm hiện tại.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "Nếu có quá nhiều dấu trang, việc hiển thị tên của chúng trên bản đồ có thể làm chậm ứng dụng.";
 "show_to_the_right" = "Hiển thị ở bên phải";
 "show_at_the_bottom" = "Hiển thị ở phía dưới";
-"enable_logging_warning_message" = "Tùy chọn này được kích hoạt để ghi nhật ký đăng nhập cho mục đích chẩn đoán. Điều này sẽ giúp nhóm chúng tôi làm rõ các vấn đề liên quan đến ứng dụng. Hãy bật tùy chọn này chỉ khi nào có yêu cầu hỗ trợ từ Organic Maps.";
+"enable_logging_warning_message" = "Tùy chọn này được kích hoạt để ghi nhật ký đăng nhập cho mục đích chẩn đoán. Điều này sẽ giúp nhóm chúng tôi làm rõ các vấn đề liên quan đến ứng dụng. Hãy bật tùy chọn này chỉ khi nào có yêu cầu hỗ trợ từ Sampai.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "Lái xe";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Để tải xuống, bạn cần thêm dung lượng. Xin xóa mọi dữ liệu không cần thiết.";
-"editor_sharing_title" = "Tôi đã cải thiện các bản đồ Organic Maps";
+"editor_sharing_title" = "Tôi đã cải thiện các bản đồ Sampai";
 "editor_detailed_description_hint" = "Nhận xét chi tiết";
-"editor_detailed_description" = "Những thay đổi đề nghị của bạn sẽ được gửi đến cộng đồng OpenStreetMap. Mô tả các chi tiết không thể sửa trong Organic Maps.";
+"editor_detailed_description" = "Những thay đổi đề nghị của bạn sẽ được gửi đến cộng đồng OpenStreetMap. Mô tả các chi tiết không thể sửa trong Sampai.";
 "current_location_unknown_error_message" = "Có lỗi khi tìm kiếm địa điểm của bạn. Đảm bảo rằng thiết bị của bạn hoạt động tốt và thử lại sau.";
 "location_services_disabled_header" = "Chức năng nhận biết địa điểm bị tắt";
 "location_services_disabled_message" = "Bật truy cập định vị địa lý trong thiết lập thiết bị";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Chọn Quyền riêng tư";
 "location_services_disabled_on_device_3" = "3. Chọn Dịch vụ định vị";
 "location_services_disabled_on_device_4" = "4. Bật Dịch vụ định vị";
-"location_services_disabled_on_device_additional_message" = "Hoặc tiếp tục sử dụng Organic Maps mà không cần định vị";
+"location_services_disabled_on_device_additional_message" = "Hoặc tiếp tục sử dụng Sampai mà không cần định vị";
 "placepage_call_button" = "Gọi";
 "placepage_bookmark_name_hint" = "Tên Dấu Trang";
 "placepage_delete_bookmark_button" = "Xóa Dấu Trang";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Tắt ghi lại tuyến đường đã đi gần đây của bạn?";
 "off_recent_track_background_button" = "Tắt";
-"recent_track_background_dialog_message" = "Organic Maps sử dụng định vị của bạn trong ứng dụng chạy nền để ghi lại tuyến đường đã đi gần đây của bạn.";
+"recent_track_background_dialog_message" = "Sampai sử dụng định vị của bạn trong ứng dụng chạy nền để ghi lại tuyến đường đã đi gần đây của bạn.";
 "general_settings" = "Thiết lập chung";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Chuyển sang điện thoại để xem tất cả dấu trang";
 "speedcams_alert_title_carplay_1" = "Camera bắn tốc độ";
 "speedcams_alert_title_carplay_2" = "Cảnh báo tốc độ";
-"download_map_carplay" = "Vui lòng tải xuống bản đồ trong ứng dụng Organic Maps trên thiết bị của bạn";
+"download_map_carplay" = "Vui lòng tải xuống bản đồ trong ứng dụng Sampai trên thiết bị của bạn";
 "carplay_roundabout_exit" = "Lối ra %@ của vòng xuyến";
 
 /* iOS */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Phóng bản đồ để nhìn rõ đường đồng mức";
 "downloader_loading_ios" = "Tải xuống";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "Cảm ơn bạn đã sử dụng bản đồ do cộng đồng xây dựng của chúng tôi!";
-
-/* App tip #01 */
-"app_tip_01" = "Với sự đóng góp và hỗ trợ của bạn, chúng tôi có thể tạo ra những bản đồ tốt nhất trên Thế giới!";
-
-/* App tip #02 */
-"app_tip_02" = "Bạn có thích ứng dụng của chúng tôi không? Hãy quyên góp để hỗ trợ sự phát triển! Bạn chưa thích nó? Vui lòng cho chúng tôi biết và chúng tôi sẽ khắc phục nó!";
 
 /* App tip #03 */
 "app_tip_03" = "Nếu bạn biết một nhà phát triển phần mềm, bạn có thể yêu cầu họ triển khai một tính năng mà bạn cần.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Bạn có thể giúp dịch ứng dụng của chúng tôi sang ngôn ngữ của bạn.";
 
-/* App tip #07 */
-"app_tip_07" = "Ứng dụng của chúng tôi được phát triển bởi một số người đam mê và cộng đồng.";
-
 /* App tip #08 */
 "app_tip_08" = "Bạn có thể dễ dàng sửa chữa và cải thiện dữ liệu bản đồ.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Mục tiêu chính của chúng tôi là xây dựng các bản đồ nhanh chóng, tập trung vào quyền riêng tư, dễ sử dụng mà bạn sẽ yêu thích.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Bạn hiện đang sử dụng Organic Maps trên màn hình điện thoại";
+"car_used_on_the_phone_screen" = "Bạn hiện đang sử dụng Sampai trên màn hình điện thoại";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Bạn hiện đang sử dụng Organic Maps trên màn hình xe hơi";
+"car_used_on_the_car_screen" = "Bạn hiện đang sử dụng Sampai trên màn hình xe hơi";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Tiếp tục trên điện thoại";
@@ -1082,7 +1061,7 @@
 "map" = "Bản đồ";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì Bản đồ không phải trả tiền không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ Organic Maps!";
+"bugreport_alert_message" = "Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì Bản đồ không phải trả tiền không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Kích hoạt đồng bộ hóa iCloud";

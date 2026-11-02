@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Sæki</string>
     <string name="download_map_title">Sækja heims-yfirlitskortið</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps í Android Auto þarf heimildir fyrir staðsetningar til að virka eðlilega</string>
+    <string name="aa_request_permission_activity_text">Sampai í Android Auto þarf heimildir fyrir staðsetningar til að virka eðlilega</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Veita heimildir</string>
 </resources>

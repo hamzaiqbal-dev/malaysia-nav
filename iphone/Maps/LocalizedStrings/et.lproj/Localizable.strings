@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Allalaadimine ei õnnestunud";
 
 /* Text in About screen */
-"about_headline" = "Tasuta ja vaba kõigi jaoks, tehtud armastusega";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Pole reklaame, jälitamist ega andmekogumist";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Ei tühjenda akut, töötab võrguühenduseta";
 
 /* Text in About screen */
-"about_proposition_3" = "• Kiire, minimalistlik, kogukonna poolt väljatöötatud";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Sulge";
 "download" = "Laadi alla";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Tere!\n\nManuses on minu järjehoidjad rakendusest Organic Maps. Palun ava need kui Sul on Organic Maps paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https:omaps.appget?kmz\n\nNaudi reisimist Organic Mapsiga!";
+"share_bookmarks_email_body" = "Tere!\n\nManuses on minu järjehoidjad rakendusest Sampai. Palun ava need kui Sul on Sampai paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https://sampai.my/\n\nNaudi reisimist Sampaiiga!";
 
 /* message title of loading file */
 "load_kmz_title" = "Järjehoidjate laadimine";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Sinu asukoht ei ole veel tuvastatud";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Olen siin Organic Mapsis";
+"share_my_position" = "Olen siin Sampaiis";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ Organic Mapsis";
+"share_place_subject" = "%1$@ Sampaiis";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Koht Organic Mapsis";
+"share_place_subject_default" = "Koht Sampaiis";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Ava Organic Mapsis või brauseris";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Ava Sampaiis või brauseris";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Hangi Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Hangi Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Ava teises rakenduses";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Veebisait";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Uudised";
-
 /* Text in menu */
 "rate_the_app" = "Hinda rakendust";
 
@@ -295,10 +292,10 @@
 "donate" = "Anneta";
 "already_donated" = "Juba annetasin";
 "remind_me_later" = "Meenuta hiljem";
-"support_organic_maps" = "Toeta Organic Mapsi";
+"support_organic_maps" = "Toeta Sampaii";
 
-/* Button in the main Help dialog */
-"copyright" = "Autoriõigused";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Teata veast";
@@ -393,7 +390,7 @@
 "blue_gray" = "Sinakashall";
 
 /* Prints version number in About dialog */
-"version" = "Organic Mapsi versioon: %@";
+"version" = "Sampaii versioon: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Välimus";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Paranda vigaseid kaardiandmeid või teata neist";
-
-/* Button in the About screen */
-"volunteer" = "Vabatahtlik kaastöö";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Jälgi ja võta meiega ühendust:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Käitaja: %@";
 "editor_category_unsuitable_title" = "Ei leia sobivat kategooriat?";
-"editor_category_unsuitable_text" = "Organic Maps võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saidis. Vaata meie <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.";
+"editor_category_unsuitable_text" = "Sampai võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saidis. Vaata meie <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.";
 "downloader_no_downloaded_maps_title" = "Sa ei ole kaarte alla laadinud";
 "downloader_no_downloaded_maps_message" = "Laadi alla kaardid asukoha otsimiseks ja võrguühenduseta tee juhatamiseks.";
 "current_location_unknown_error_title" = "Hetkeasukoht on teadmata.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Allalaadimiseks vajad rohkem andmeruumi. Palun kustuta ebavajalikke andmeid.";
-"editor_sharing_title" = "Parandasin Organic Maps kaarte";
+"editor_sharing_title" = "Parandasin Sampai kaarte";
 "editor_detailed_description_hint" = "Üksikasjalik kommentaar";
-"editor_detailed_description" = "Sinu soovitatud kaardimuudatused saadetakse OpenStreetMapi kogukonnale. Kirjelda kõiki täiendavaid üksikasju, mida ei saa Organic Mapsis muuta.";
+"editor_detailed_description" = "Sinu soovitatud kaardimuudatused saadetakse OpenStreetMapi kogukonnale. Kirjelda kõiki täiendavaid üksikasju, mida ei saa Sampaiis muuta.";
 "current_location_unknown_error_message" = "Sinu asukoha otsimisel ilmnes viga. Kontrolli, kas sinu nutiseade töötab korralikult ja proovi hiljem uuesti.";
 "location_services_disabled_header" = "Asukohateenused on keelatud";
 "location_services_disabled_message" = "Luba nutiseadme seadistustes juurdepääs geograafilisele asukohale";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Vali „Privaatsus“";
 "location_services_disabled_on_device_3" = "3. Vali „Asukohateenused“";
 "location_services_disabled_on_device_4" = "4. Lülita sisse asukohateenused";
-"location_services_disabled_on_device_additional_message" = "Või jätka Organic Mapsi kasutamist ilma asukohata";
+"location_services_disabled_on_device_additional_message" = "Või jätka Sampaii kasutamist ilma asukohata";
 "placepage_call_button" = "Helista";
 "placepage_bookmark_name_hint" = "Järjehoidja nimi";
 "placepage_delete_bookmark_button" = "Kustuta järjehoidja";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Kas keelame hiljuti läbitud teekonna salvestamine?";
 "off_recent_track_background_button" = "Keela";
-"recent_track_background_dialog_message" = "Organic Maps kasutab Sinu geograafilist asukohta taustal Sinu hiljuti läbitud teekonna salvestamiseks.";
+"recent_track_background_dialog_message" = "Sampai kasutab Sinu geograafilist asukohta taustal Sinu hiljuti läbitud teekonna salvestamiseks.";
 "general_settings" = "Üldseadistused";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Kõigi järjehoidjate nägemiseks suundu telefoni vaatesse";
 "speedcams_alert_title_carplay_1" = "Kiiruskaamerad";
 "speedcams_alert_title_carplay_2" = "Kiiruse hoiatused";
-"download_map_carplay" = "Palun laadi alla kaardid oma nutiseadme Organic Maps rakenduses";
+"download_map_carplay" = "Palun laadi alla kaardid oma nutiseadme Sampai rakenduses";
 "carplay_roundabout_exit" = "%@ ärapööre";
 
 /* iOS */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Samakõrgusjoonte sirvimiseks suurenda kaarti";
 "downloader_loading_ios" = "Allalaadimisel";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/et/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "Aitäh, et kasutad meie kogukonna koostatud kaarte!";
-
-/* App tip #01 */
-"app_tip_01" = "Sinu annetuste ja toetusega saame luua maailma parimaid kaarte!";
-
-/* App tip #02 */
-"app_tip_02" = "Kas sulle meeldib meie rakendus? Palun anneta arendustöö toetamiseks! Ei meeldi veel? Palun anna põhjusest meile teada ja me parandame selle!";
 
 /* App tip #03 */
 "app_tip_03" = "Kui tead mõnda tarkvaraarendajat, võid paluda tal osaleda vajaliku funktsionaalsuse loomisel.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Saad aidata meie rakendust oma keelde tõlkida.";
 
-/* App tip #07 */
-"app_tip_07" = "Meie rakenduse on loonud mõned entusiastid ja kogukond.";
-
 /* App tip #08 */
 "app_tip_08" = "Saad hõlpsasti kaardiandmeid parandada ja täiustada.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Meie põhieesmärk on luua kiireid, privaatsusele keskenduvaid ja hõlpsasti kasutatavaid kaarte, mis sulle meeldivad.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Nüüd kasutad telefoni ekraanil Organic Mapsi";
+"car_used_on_the_phone_screen" = "Nüüd kasutad telefoni ekraanil Sampaii";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Nüüd kasutad auto ekraanil Organic Mapsi";
+"car_used_on_the_car_screen" = "Nüüd kasutad auto ekraanil Sampaii";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Jätka telefonis";
@@ -1082,7 +1061,7 @@
 "map" = "Kaart";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Kas soovid saata arendajatele veateate?\nMe toetume oma kasutajatele, kuna Organic Maps ei kogu automaatselt mingit veateavet. Täname sind juba ette Organic Mapsi toetamise eest!";
+"bugreport_alert_message" = "Kas soovid saata arendajatele veateate?\nMe toetume oma kasutajatele, kuna Sampai ei kogu automaatselt mingit veateavet. Täname sind juba ette Sampaii toetamise eest!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Luba iCloudi sünkroniseerimine";

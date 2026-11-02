@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Methodd y lawrlwythiad";
 
 /* Text in About screen */
-"about_headline" = "Am ddim i bawb, wedi'i wneud gyda chariad";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Dim hysbysebion, dim olrhain, dim casglu data";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Dim draenio batri, yn gweithio all-lein";
 
 /* Text in About screen */
-"about_proposition_3" = "• Cyflym, minimalaidd, wedi'i ddatblygu gan y gymuned";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Cau";
 "download" = "Lawrlwytho";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Helo!\n\nWedi'u hatodi mae fy nodau tudalen; agorwch nhw yn Organic Maps. Os nad oes gennych chi'r ap gallwch ei lawrlwytho yma: https://omaps.app/get?kmz\n\nMwynhewch deithio gydag Organic Maps!";
+"share_bookmarks_email_body" = "Helo!\n\nWedi'u hatodi mae fy nodau tudalen; agorwch nhw yn Sampai. Os nad oes gennych chi'r ap gallwch ei lawrlwytho yma: https://sampai.my/\n\nMwynhewch deithio gydag Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Llwytho nodau tudalen";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Nid yw eich lleoliad wedi'i bennu eto";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Rwyf yma ar Organic Maps";
+"share_my_position" = "Rwyf yma ar Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ ar Organic Maps";
+"share_place_subject" = "%1$@ ar Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Lle ar Organic Maps";
+"share_place_subject_default" = "Lle ar Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Agor yn Organic Maps neu mewn porwr";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Agor yn Sampai neu mewn porwr";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Cael Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Cael Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Agor mewn ap arall";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Gwefan";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Newyddion";
-
 /* Text in menu */
 "rate_the_app" = "Rhoi sgôr i'r ap";
 
@@ -295,10 +292,10 @@
 "donate" = "Cyfrannu";
 "already_donated" = "Wedi cyfrannu eisoes";
 "remind_me_later" = "Atgoffwch fi'n ddiweddarach";
-"support_organic_maps" = "Cefnogi Organic Maps";
+"support_organic_maps" = "Cefnogi Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Hawlfraint";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Rhoi gwybod am fyg";
@@ -393,7 +390,7 @@
 "blue_gray" = "Glas llwyd";
 
 /* Prints version number in About dialog */
-"version" = "Fersiwn Organic Maps: %@";
+"version" = "Fersiwn Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Ymddangosiad";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Rhoi gwybod am ddata map anghywir neu ei gywiro";
-
-/* Button in the About screen */
-"volunteer" = "Gwirfoddoli";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Dilyn a chysylltu â ni:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Gweithredwr: %@";
 "editor_category_unsuitable_title" = "Allwch chi ddim dod o hyd i gategori addas?";
-"editor_category_unsuitable_text" = "Mae Organic Maps yn caniatáu ychwanegu categorïau pwynt syml yn unig, sy'n golygu dim trefi, ffyrdd, llynnoedd, amlinelliadau adeiladau, ac ati. Ychwanegwch gategorïau o'r fath yn uniongyrchol at <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Edrychwch ar ein <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">canllaw</a> am gyfarwyddiadau manwl cam wrth gam.";
+"editor_category_unsuitable_text" = "Mae Sampai yn caniatáu ychwanegu categorïau pwynt syml yn unig, sy'n golygu dim trefi, ffyrdd, llynnoedd, amlinelliadau adeiladau, ac ati. Ychwanegwch gategorïau o'r fath yn uniongyrchol at <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Edrychwch ar ein <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">canllaw</a> am gyfarwyddiadau manwl cam wrth gam.";
 "downloader_no_downloaded_maps_title" = "Nid ydych wedi lawrlwytho unrhyw fapiau";
 "downloader_no_downloaded_maps_message" = "Lawrlwythwch fapiau i chwilio a llywio all-lein.";
 "current_location_unknown_error_title" = "Mae'r lleoliad presennol yn anhysbys.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "I lawrlwytho, mae angen mwy o le arnoch. Dilëwch unrhyw ddata diangen.";
-"editor_sharing_title" = "Rwyf wedi gwella mapiau Organic Maps";
+"editor_sharing_title" = "Rwyf wedi gwella mapiau Sampai";
 "editor_detailed_description_hint" = "Sylw manwl";
-"editor_detailed_description" = "Bydd eich newidiadau map awgrymedig yn cael eu hanfon at gymuned OpenStreetMap. Disgrifiwch unrhyw fanylion ychwanegol na ellir eu golygu yn Organic Maps.";
+"editor_detailed_description" = "Bydd eich newidiadau map awgrymedig yn cael eu hanfon at gymuned OpenStreetMap. Disgrifiwch unrhyw fanylion ychwanegol na ellir eu golygu yn Sampai.";
 "current_location_unknown_error_message" = "Digwyddodd gwall wrth bennu eich lleoliad. Gwiriwch fod eich dyfais yn gweithio'n iawn a cheisiwch eto yn nes ymlaen.";
 "location_services_disabled_header" = "Mae gwasanaethau lleoliad wedi'u hanalluogi";
 "location_services_disabled_message" = "Galluogwch fynediad at geoleoliad yng ngosodiadau'r ddyfais";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Dewiswch “Preifatrwydd”";
 "location_services_disabled_on_device_3" = "3. Dewiswch “Gwasanaethau lleoliad”";
 "location_services_disabled_on_device_4" = "4. Trowch wasanaethau lleoliad ymlaen";
-"location_services_disabled_on_device_additional_message" = "Neu parhewch i ddefnyddio Organic Maps heb leoliad";
+"location_services_disabled_on_device_additional_message" = "Neu parhewch i ddefnyddio Sampai heb leoliad";
 "placepage_call_button" = "Ffonio";
 "placepage_bookmark_name_hint" = "Enw'r nod tudalen";
 "placepage_delete_bookmark_button" = "Dileu nod tudalen";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Analluogi recordio eich llwybr a deithiwyd yn ddiweddar?";
 "off_recent_track_background_button" = "Analluogi";
-"recent_track_background_dialog_message" = "Mae Organic Maps yn defnyddio eich lleoliad yn y cefndir i recordio eich llwybr a deithiwyd yn ddiweddar.";
+"recent_track_background_dialog_message" = "Mae Sampai yn defnyddio eich lleoliad yn y cefndir i recordio eich llwybr a deithiwyd yn ddiweddar.";
 "general_settings" = "Gosodiadau cyffredinol";
 
 /* "traffic" as in road congestion */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Chwyddwch i mewn i archwilio'r llinellau cyfuchlin";
 "downloader_loading_ios" = "Wrthi'n lawrlwytho";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/cy/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "Diolch i chi am ddefnyddio ein mapiau a adeiladwyd gan y gymuned!";
-
-/* App tip #01 */
-"app_tip_01" = "Gyda'ch rhoddion a'ch cefnogaeth, gallwn greu'r mapiau gorau yn y byd!";
-
-/* App tip #02 */
-"app_tip_02" = "Ydych chi'n hoffi ein ap? Cyfrannwch i gefnogi'r datblygiad! Ddim yn ei hoffi eto? Rhowch wybod i ni pam, a byddwn yn ei drwsio!";
 
 /* App tip #03 */
 "app_tip_03" = "Os ydych chi'n adnabod datblygydd meddalwedd, gallwch ofyn iddo neu iddi weithredu nodwedd sydd ei hangen arnoch.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Gallwch chi helpu i gyfieithu ein ap i'ch iaith.";
 
-/* App tip #07 */
-"app_tip_07" = "Mae ein ap wedi'i ddatblygu gan ychydig o selogion a'r gymuned.";
-
 /* App tip #08 */
 "app_tip_08" = "Gallwch chi drwsio a gwella data'r map yn hawdd.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Ein prif nod yw creu mapiau cyflym, hawdd eu defnyddio sy'n parchu eich preifatrwydd ac y byddwch yn eu caru.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Rydych chi nawr yn defnyddio Organic Maps ar sgrin y ffôn";
+"car_used_on_the_phone_screen" = "Rydych chi nawr yn defnyddio Sampai ar sgrin y ffôn";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Rydych chi nawr yn defnyddio Organic Maps ar sgrin y car";
+"car_used_on_the_car_screen" = "Rydych chi nawr yn defnyddio Sampai ar sgrin y car";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Parhewch ar y ffôn";
@@ -1082,7 +1061,7 @@
 "map" = "Map";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Hoffech chi anfon adroddiad am fyg at y datblygwyr?\nRydym yn dibynnu ar ein defnyddwyr gan nad yw Organic Maps yn casglu unrhyw wybodaeth am wallau yn awtomatig. Diolch ymlaen llaw am gefnogi Organic Maps!";
+"bugreport_alert_message" = "Hoffech chi anfon adroddiad am fyg at y datblygwyr?\nRydym yn dibynnu ar ein defnyddwyr gan nad yw Sampai yn casglu unrhyw wybodaeth am wallau yn awtomatig. Diolch ymlaen llaw am gefnogi Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Galluogi cydamseru iCloud";

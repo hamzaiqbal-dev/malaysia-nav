@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Sikertelen letöltés";
 
 /* Text in About screen */
-"about_headline" = "Mindenki számára ingyenes – szeretettel készült";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Nincs hirdetés, nyomon követés és adatgyűjtés";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Nem merül le az akkumulátor – offline is működik";
 
 /* Text in About screen */
-"about_proposition_3" = "• Gyors, minimalista – a közösség által fejlesztett";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Bezárás";
 "download" = "Letöltés";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az Organic Maps alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://omaps.app/get?kmz\n\nJó utat kívánok az Organic Maps alkalmazással!";
+"share_bookmarks_email_body" = "Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket a Sampai alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://sampai.my/\n\nJó utat kívánok a Sampai alkalmazással!";
 
 /* message title of loading file */
 "load_kmz_title" = "Könyvjelzők betöltése";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Az Ön tartózkodási helye még nincs meghatározva";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Itt vagyok az Organic Mapsben";
+"share_my_position" = "Itt vagyok a Sampaiben";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ az Organic Mapsben";
+"share_place_subject" = "%1$@ a Sampaiben";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Egy hely az Organic Mapsben";
+"share_place_subject_default" = "Egy hely a Sampaiben";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Megnyitás az Organic Mapsben vagy böngészőben";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Megnyitás a Sampaiben vagy böngészőben";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Organic Maps letöltése";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sampai letöltése";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Megnyitás másik alkalmazásban";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Honlap";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Hírek";
-
 /* Text in menu */
 "rate_the_app" = "Értékelje az alkalmazást";
 
@@ -295,10 +292,10 @@
 "donate" = "Adományozás";
 "already_donated" = "Már adományozott";
 "remind_me_later" = "Emlékeztessen később";
-"support_organic_maps" = "Támogassa az Organic Maps-et";
+"support_organic_maps" = "Támogassa a Sampai-et";
 
-/* Button in the main Help dialog */
-"copyright" = "Szerzői jogok";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Hibajelentés";
@@ -393,7 +390,7 @@
 "blue_gray" = "Kékes szürke";
 
 /* Prints version number in About dialog */
-"version" = "Az Organic Maps verziója: %@";
+"version" = "A Sampai verziója: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Megjelenés";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Hibás térképadatok jelentése vagy javítása";
-
-/* Button in the About screen */
-"volunteer" = "Önkéntes";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Kövessen és lépjen kapcsolatba velünk:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Üzemeltető: %@";
 "editor_category_unsuitable_title" = "Nem találja a megfelelő kategóriát?";
-"editor_category_unsuitable_text" = "Az Organic Maps csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">útmutatónkat</a>.";
+"editor_category_unsuitable_text" = "A Sampai csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">útmutatónkat</a>.";
 "downloader_no_downloaded_maps_title" = "Még nem töltött le térképet";
 "downloader_no_downloaded_maps_message" = "Térképek letöltése az offline kereséshez és navigáláshoz.";
 "current_location_unknown_error_title" = "A jelenlegi tartózkodási hely ismeretlen.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "A letöltéshez több szabad tárhelyre van szükség. Törölje a szükségtelen adatokat.";
-"editor_sharing_title" = "Fejlesztettem a Organic Maps térképeket";
+"editor_sharing_title" = "Fejlesztettem a Sampai térképeket";
 "editor_detailed_description_hint" = "Részletes megjegyzés";
-"editor_detailed_description" = "Az Ön által javasolt térképmódosításokat elküldjük az OpenStreetMap közösségnek. Írja le azokat a további részleteket, amelyek nem szerkeszthetők az Organic Mapsben.";
+"editor_detailed_description" = "Az Ön által javasolt térképmódosításokat elküldjük az OpenStreetMap közösségnek. Írja le azokat a további részleteket, amelyek nem szerkeszthetők a Sampaiben.";
 "current_location_unknown_error_message" = "Hiba történt tartózkodási helye keresésekor. Ellenőrizze készüléke működését és próbálkozzon újra.";
 "location_services_disabled_header" = "Helymeghatározás kikapcsolva";
 "location_services_disabled_message" = "Engedélyezze a hozzáférést a földrajzi helymeghatározáshoz a készülék beállításaiban";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Válassza az „Adatvédelem” menüpontot";
 "location_services_disabled_on_device_3" = "3. Válassza a „Helymeghatározási szolgáltatások” menüpontot";
 "location_services_disabled_on_device_4" = "4. Engedélyezze a „Helymeghatározási szolgáltatások lehetőséget";
-"location_services_disabled_on_device_additional_message" = "Vagy folytassa az Organic Maps használatát helymeghatározás nélkül";
+"location_services_disabled_on_device_additional_message" = "Vagy folytassa a Sampai használatát helymeghatározás nélkül";
 "placepage_call_button" = "Hívás";
 "placepage_bookmark_name_hint" = "Könyvjelző neve";
 "placepage_delete_bookmark_button" = "Könyvjelző törlése";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Megszakítod a legutóbb megtett utad rögzítését?";
 "off_recent_track_background_button" = "Letiltás";
-"recent_track_background_dialog_message" = "Az Organic Maps a háttérben az Ön tartózkodási helyét használja a nemrég megtett útvonal rögzítéséhez.";
+"recent_track_background_dialog_message" = "A Sampai a háttérben az Ön tartózkodási helyét használja a nemrég megtett útvonal rögzítéséhez.";
 "general_settings" = "Általános beállítások";
 
 /* "traffic" as in road congestion */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Nagyítás az izovonalak felfedezéséhez";
 "downloader_loading_ios" = "Letöltés";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/hu/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Hu:Névjegy";
 
 /* App Tip #00 */
 "app_tip_00" = "Köszönjük, hogy használja a közösség által készített térképeinket!";
-
-/* App tip #01 */
-"app_tip_01" = "Adományaival és támogatásával létrehozhatjuk a világ legjobb térképes alkalmazását!";
-
-/* App tip #02 */
-"app_tip_02" = "Tetszik az alkalmazásunk? Adományozzon, hogy támogassa a fejlesztést! – Mégsem tetszik? Jelezze felénk, hogy miért nem, és mi kijavítjuk!";
 
 /* App tip #03 */
 "app_tip_03" = "Ha ismer egy szoftverfejlesztőt, megkérheti őt egy olyan funkció megvalósítására, amelyre szüksége van.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Segítsen lefordítani az alkalmazást az Ön nyelvére.";
 
-/* App tip #07 */
-"app_tip_07" = "Ezt az alkalmazást néhány lelkes közreműködő és a közösség fejleszti.";
-
 /* App tip #08 */
 "app_tip_08" = "Könnyedén javíthatja a térképadatokat.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "A fő célunk az, hogy gyors, az adatvédelemre fókuszáló, könnyen használható térképeket készítsünk, amelyeket szeretni fog.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Ön most az Organic Maps alkalmazást használja az eszköz képernyőjén";
+"car_used_on_the_phone_screen" = "Ön most a Sampai alkalmazást használja az eszköz képernyőjén";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Ön most az Organic Maps alkalmazást használja az autó képernyőjén";
+"car_used_on_the_car_screen" = "Ön most a Sampai alkalmazást használja az autó képernyőjén";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Folytatás a hordozható eszközön";
@@ -1082,7 +1061,7 @@
 "map" = "Térkép";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Szeretne hibajelentést küldeni a fejlesztőknek?\nA felhasználóinkra támaszkodunk, mivel az Organic Maps nem gyűjt automatikusan hibainformációkat. Előre is köszönjük, hogy támogatja az Organic Maps csapatát!";
+"bugreport_alert_message" = "Szeretne hibajelentést küldeni a fejlesztőknek?\nA felhasználóinkra támaszkodunk, mivel a Sampai nem gyűjt automatikusan hibainformációkat. Előre is köszönjük, hogy támogatja a Sampai csapatát!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "iCloud-szinkronizálás engedélyezése";

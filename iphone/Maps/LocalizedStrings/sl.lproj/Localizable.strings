@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Prenos ni uspel";
 
 /* Text in About screen */
-"about_headline" = "Brezplačno za vse, narejeno z ljubeznijo";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Brez oglasov, brez sledenja, brez zbiranja podatkov";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Ne prazni baterije, deluje brez povezave";
 
 /* Text in About screen */
-"about_proposition_3" = "• Hitro, minimalistično, razvito s strani skupnosti";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Zapri";
 "download" = "Prenesi";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Živjo!\n\nV priponki so moji zaznamki; odprite jih v Organic Maps. Če aplikacije nimate nameščene, jo lahko prenesete tukaj: https://omaps.app/get?kmz\n\nUživajte v potovanju z Organic Maps!";
+"share_bookmarks_email_body" = "Živjo!\n\nV priponki so moji zaznamki; odprite jih v Sampai. Če aplikacije nimate nameščene, jo lahko prenesete tukaj: https://sampai.my/\n\nUživajte v potovanju z Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Nalaganje zaznamkov";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Vaša lokacija še ni bila določena";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Tukaj sem na zemljevidu Organic Maps";
+"share_my_position" = "Tukaj sem na zemljevidu Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ v Organic Maps";
+"share_place_subject" = "%1$@ v Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Kraj v Organic Maps";
+"share_place_subject_default" = "Kraj v Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Odpri v Organic Maps ali v brskalniku";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Odpri v Sampai ali v brskalniku";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Prenesi Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Prenesi Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Odpri v drugi aplikaciji";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Spletna stran";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Novice";
-
 /* Text in menu */
 "rate_the_app" = "Oceni aplikacijo";
 
@@ -295,10 +292,10 @@
 "donate" = "Doniraj";
 "already_donated" = "Že donirano";
 "remind_me_later" = "Opomni me kasneje";
-"support_organic_maps" = "Podprite Organic Maps";
+"support_organic_maps" = "Podprite Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Avtorske pravice";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Prijavi napako";
@@ -393,7 +390,7 @@
 "blue_gray" = "Modro siva";
 
 /* Prints version number in About dialog */
-"version" = "Različica Organic Maps: %@";
+"version" = "Različica Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Videz";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Prijavite ali popravite napačne podatke zemljevida";
-
-/* Button in the About screen */
-"volunteer" = "Prostovoljec";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Sledite nam in nas kontaktirajte:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Upravljavec: %@";
 "editor_category_unsuitable_title" = "Ne najdete primerne kategorije?";
-"editor_category_unsuitable_text" = "Organic Maps omogoča dodajanje samo preprostih točkovnih kategorij, kar pomeni, da ni mest, cest, jezer, obrisov zgradb itd. Takšne kategorije dodajte neposredno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Preverite naš <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">vodnik</a> za podrobna navodila po korakih.";
+"editor_category_unsuitable_text" = "Sampai omogoča dodajanje samo preprostih točkovnih kategorij, kar pomeni, da ni mest, cest, jezer, obrisov zgradb itd. Takšne kategorije dodajte neposredno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Preverite naš <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">vodnik</a> za podrobna navodila po korakih.";
 "downloader_no_downloaded_maps_title" = "Niste prenesli nobenega zemljevida";
 "downloader_no_downloaded_maps_message" = "Prenesite zemljevide za iskanje in navigacijo brez povezave.";
 "current_location_unknown_error_title" = "Trenutna lokacija ni znana.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Za prenos potrebujete več prostora. Izbrišite nepotrebne podatke.";
-"editor_sharing_title" = "Izboljšal sem zemljevide Organic Maps";
+"editor_sharing_title" = "Izboljšal sem zemljevide Sampai";
 "editor_detailed_description_hint" = "Podroben komentar";
-"editor_detailed_description" = "Vaše predlagane spremembe zemljevida bodo poslane skupnosti OpenStreetMap. Prosimo, opišite vse dodatne podrobnosti, ki jih ni mogoče urejati v Organic Maps.";
+"editor_detailed_description" = "Vaše predlagane spremembe zemljevida bodo poslane skupnosti OpenStreetMap. Prosimo, opišite vse dodatne podrobnosti, ki jih ni mogoče urejati v Sampai.";
 "current_location_unknown_error_message" = "Pri določanju vaše lokacije je prišlo do napake. Preverite, ali vaša naprava deluje pravilno, in poskusite znova pozneje.";
 "location_services_disabled_header" = "Lokacijske storitve so onemogočene";
 "location_services_disabled_message" = "Omogočite dostop do geolokacije v nastavitvah naprave";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Izberite Zasebnost";
 "location_services_disabled_on_device_3" = "3. Izberite Lokacijske storitve";
 "location_services_disabled_on_device_4" = "4. Vklopite Lokacijske storitve";
-"location_services_disabled_on_device_additional_message" = "Ali pa nadaljujte z uporabo Organic Maps brez lokacije";
+"location_services_disabled_on_device_additional_message" = "Ali pa nadaljujte z uporabo Sampai brez lokacije";
 "placepage_call_button" = "Kliči";
 "placepage_bookmark_name_hint" = "Ime zaznamka";
 "placepage_delete_bookmark_button" = "Izbriši zaznamek";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Onemogočim snemanje vaše nedavno prevožene poti?";
 "off_recent_track_background_button" = "Onemogoči";
-"recent_track_background_dialog_message" = "Organic Maps uporablja vašo lokacijo v ozadju za snemanje vaše nedavno prevožene poti.";
+"recent_track_background_dialog_message" = "Sampai uporablja vašo lokacijo v ozadju za snemanje vaše nedavno prevožene poti.";
 "general_settings" = "Splošne nastavitve";
 
 /* "traffic" as in road congestion */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Povečajte za raziskovanje plastnic";
 "downloader_loading_ios" = "Prenašanje";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "Hvala, ker uporabljate naše zemljevide, ki jih je ustvarila skupnost!";
-
-/* App tip #01 */
-"app_tip_01" = "Z vašimi donacijami in podporo lahko ustvarimo najboljše zemljevide na svetu!";
-
-/* App tip #02 */
-"app_tip_02" = "Vam je všeč naša aplikacija? Prosimo, donirajte za podporo razvoju! Vam še ni všeč? Sporočite nam, zakaj, in popravili bomo!";
 
 /* App tip #03 */
 "app_tip_03" = "Če poznate razvijalca programske opreme, ga lahko prosite, da implementira funkcijo, ki jo potrebujete.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Lahko pomagate prevesti našo aplikacijo v vaš jezik.";
 
-/* App tip #07 */
-"app_tip_07" = "Našo aplikacijo razvija nekaj navdušencev in skupnost.";
-
 /* App tip #08 */
 "app_tip_08" = "Podatke zemljevida lahko enostavno popravite in izboljšate.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Naš glavni cilj je zgraditi hitre, zasebnosti prijazne in enostavne zemljevide, ki jih boste vzljubili.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Zdaj uporabljate Organic Maps na zaslonu telefona";
+"car_used_on_the_phone_screen" = "Zdaj uporabljate Sampai na zaslonu telefona";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Zdaj uporabljate Organic Maps na zaslonu avtomobila";
+"car_used_on_the_car_screen" = "Zdaj uporabljate Sampai na zaslonu avtomobila";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Nadaljuj na telefonu";
@@ -1082,7 +1061,7 @@
 "map" = "Zemljevid";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Ali želite poslati poročilo o napaki razvijalcem?\nZanašamo se na naše uporabnike, saj Organic Maps ne zbira samodejno nobenih informacij o napakah. Hvala vnaprej za podporo Organic Maps!";
+"bugreport_alert_message" = "Ali želite poslati poročilo o napaki razvijalcem?\nZanašamo se na naše uporabnike, saj Sampai ne zbira samodejno nobenih informacij o napakah. Hvala vnaprej za podporo Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Omogoči sinhronizacijo z iCloud";

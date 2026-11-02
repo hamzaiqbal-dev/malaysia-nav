@@ -32,7 +32,7 @@
 "country_status_download_failed" = "فشلت عملية تنزيل";
 
 /* Text in About screen */
-"about_headline" = "مجاني للجميع ، مصنوع من الحب";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• لا إعلانات ، لا تتبع ، لا جمع البيانات";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• لا يوجد استنزاف للبطارية، يعمل دون اتصال بالإنترنت";
 
 /* Text in About screen */
-"about_proposition_3" = "• سريع وبسيط، تم تطويره بواسطة المجتمع";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "إغلاق";
 "download" = "تنزيل";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "مرحباً! ْ\n\n تم إرفاق إشاراتي المرجعية من تطبيق Organic Maps. الرجاء فتحهم إذا لديك تطبيق Organic Maps مثبتاً. أو، إذا لم يكن مثبتاً، قم بتنزيل التطبيق لنظام iOS أو أندرويد من خلال الضغط على هذا الرابط: https://omaps.app/get?kmz \n\nاستمتع بالسفر مع Organic Maps!";
+"share_bookmarks_email_body" = "مرحباً! ْ\n\n تم إرفاق إشاراتي المرجعية من تطبيق Sampai. الرجاء فتحهم إذا لديك تطبيق Sampai مثبتاً. أو، إذا لم يكن مثبتاً، قم بتنزيل التطبيق لنظام iOS أو أندرويد من خلال الضغط على هذا الرابط: https://sampai.my/ \n\nاستمتع بالسفر مع Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "يتم تحميل الإشارات المرجعية";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "لم يتم تحديد موقعك بعد";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "أنا هنا على Organic Maps";
+"share_my_position" = "أنا هنا على Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ على Organic Maps";
+"share_place_subject" = "%1$@ على Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "مكان على Organic Maps";
+"share_place_subject_default" = "مكان على Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "افتح في Organic Maps أو في المتصفح";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "افتح في Sampai أو في المتصفح";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "احصل على Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "احصل على Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "فتح في تطبيق آخر";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "الموقع الإلكتروني";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "أخبار";
-
 /* Text in menu */
 "rate_the_app" = "قيّم التطبيق";
 
@@ -295,10 +292,10 @@
 "donate" = "تبرع";
 "already_donated" = "تم التبرع";
 "remind_me_later" = "ذكر لاحقاً";
-"support_organic_maps" = "ادعموا Organic Maps";
+"support_organic_maps" = "ادعموا Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "حقوق النشر";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "الإبلاغ عن خطأ";
@@ -393,7 +390,7 @@
 "blue_gray" = "رمادي أزرق";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps الإصدار: %@";
+"version" = "Sampai الإصدار: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "المظهر";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "الإبلاغ عن بيانات الخريطة غير الصحيحة أو إصلاحها";
-
-/* Button in the About screen */
-"volunteer" = "للتطوع";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "تابعنا وتواصل معنا:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "المشغل: %@";
 "editor_category_unsuitable_title" = "لا يمكن العثور على فئة مناسبة؟";
-"editor_category_unsuitable_text" = "Organic Maps تسمح بإضافة فئات النقاط البسيطة فقط، وهذا يعني عدم إضافة المدن والطرق والبحيرات وخطوط المباني، إلخ. يرجى إضافة هذه الفئات مباشرة إلى <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. راجع <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">دليلنا</a> للحصول على إرشادات تفصيلية خطوة بخطوة.";
+"editor_category_unsuitable_text" = "Sampai تسمح بإضافة فئات النقاط البسيطة فقط، وهذا يعني عدم إضافة المدن والطرق والبحيرات وخطوط المباني، إلخ. يرجى إضافة هذه الفئات مباشرة إلى <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. راجع <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">دليلنا</a> للحصول على إرشادات تفصيلية خطوة بخطوة.";
 "downloader_no_downloaded_maps_title" = "لم تقم بتنزيل أية خرائط";
 "downloader_no_downloaded_maps_message" = "قم بتنزيل خرائط للبحث عن مكان واستخدام الملاحة بدون اتصال بالإنترنت.";
 "current_location_unknown_error_title" = "الموقع الحالي غير معروف.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "إذا كان هناك عدد كبير جدًا من الإشارات المرجعية، فقد يؤدي عرض أسمائها على الخريطة إلى إبطاء التطبيق.";
 "show_to_the_right" = "عرض إلى اليمين";
 "show_at_the_bottom" = "اعرض في الأسفل";
-"enable_logging_warning_message" = "هذا الخيار يقوم ببدأ تسجيل سجلات التطبيق لإغراض التشخيصة. يمكن أن يكون مفيدًا لفريق الدعم الخاص بنا لحل المشاكل التي تواجهكم داخل التطبيق. قم بتفعيل هذا الخيار بشكل مؤقت فقط في حالة طلب الدعم من Organic Maps.";
+"enable_logging_warning_message" = "هذا الخيار يقوم ببدأ تسجيل سجلات التطبيق لإغراض التشخيصة. يمكن أن يكون مفيدًا لفريق الدعم الخاص بنا لحل المشاكل التي تواجهكم داخل التطبيق. قم بتفعيل هذا الخيار بشكل مؤقت فقط في حالة طلب الدعم من Sampai.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "القيادة";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "للتنزيل، فأنت تحتاج إلى توفير مساحة أكبر. من فضلك، الرجاء قم بحذف البيانات غير الضرورية.";
-"editor_sharing_title" = "لقد قمت بتحسين خرائط تطبيق Organic Maps";
+"editor_sharing_title" = "لقد قمت بتحسين خرائط تطبيق Sampai";
 "editor_detailed_description_hint" = "تعليق مفصّل";
-"editor_detailed_description" = "سيتم إرسال التغييرات التي اقترحتها إلى مجتمع خريطة الشارع المفتوحة. اذكر التفاصيل التي لا يمكن تحريرها في Organic Maps";
+"editor_detailed_description" = "سيتم إرسال التغييرات التي اقترحتها إلى مجتمع خريطة الشارع المفتوحة. اذكر التفاصيل التي لا يمكن تحريرها في Sampai";
 "current_location_unknown_error_message" = "حدث خطأ أثناء البحث عن موقعك. تأكد من أن جهازك يعمل بشكل صحيح وأعد المحاولة لاحقًا.";
 "location_services_disabled_header" = "تم تعطيل خدمات تحديد الموقع الجغرافي";
 "location_services_disabled_message" = "قم بإعطاء التطبيق السماحية بالوصول إلى الموقع الجغرافي في إعدادات الجهاز";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. حدد الخصوصية";
 "location_services_disabled_on_device_3" = "3. حدد خدمات الموقع";
 "location_services_disabled_on_device_4" = "4. قم بتشغيل خدمات الموقع";
-"location_services_disabled_on_device_additional_message" = "أو استمر في استخدام Organic Maps بدون تحديد الموقع";
+"location_services_disabled_on_device_additional_message" = "أو استمر في استخدام Sampai بدون تحديد الموقع";
 "placepage_call_button" = "اتصال";
 "placepage_bookmark_name_hint" = "اسم العلامة المرجعية";
 "placepage_delete_bookmark_button" = "حذف العلامة المرجعية";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "هل تريد تعطيل تسجيل مسارات سفرك؟";
 "off_recent_track_background_button" = "تعطيل";
-"recent_track_background_dialog_message" = "يستخدم Organic Maps موقعك الجغرافي في الخلفية لتسجيل مسار سفرك الأخير.";
+"recent_track_background_dialog_message" = "يستخدم Sampai موقعك الجغرافي في الخلفية لتسجيل مسار سفرك الأخير.";
 "general_settings" = "الإعدادات العامة";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "قم بالتبديل إلى الهاتف لرؤية جميع الإشارات المرجعية";
 "speedcams_alert_title_carplay_1" = "كاميرات السرعة";
 "speedcams_alert_title_carplay_2" = "تحذير بشأن السرعة";
-"download_map_carplay" = "يُرجى تحميل الخرائط في تطبيق Organic Maps على جهازك";
+"download_map_carplay" = "يُرجى تحميل الخرائط في تطبيق Sampai على جهازك";
 "carplay_roundabout_exit" = "المخرج رقم %@";
 
 /* iOS */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "قم بالتقريب لتكتشف خطوط الكنتور";
 "downloader_loading_ios" = "جاري التنزيل";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/ar/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Ar:About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "شكرًا لك على استخدام الخرائط التي أنشأها مجتمعنا!";
-
-/* App tip #01 */
-"app_tip_01" = "بتبرعاتكم ودعمكم، يمكننا إنشاء أفضل الخرائط في العالم!";
-
-/* App tip #02 */
-"app_tip_02" = "هل تحب التطبيق لدينا؟ يرجى التبرع لدعم التنمية! لا أحب ذلك حتى الآن؟ واسمحوا لنا أن نعرف، وسوف نقوم بإصلاحه!";
 
 /* App tip #03 */
 "app_tip_03" = "إذا كنت تعرف أحد مطوري البرامج، فيمكنك أن تطلب منه تنفيذ الميزة التي تحتاجها.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "يمكنك المساعدة في ترجمة تطبيقنا إلى لغتك.";
 
-/* App tip #07 */
-"app_tip_07" = "تم تطوير تطبيقنا من قبل عدد قليل من المتحمسين والمجتمع.";
-
 /* App tip #08 */
 "app_tip_08" = "يمكنك بسهولة إصلاح وتحسين بيانات الخريطة.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "هدفنا الرئيسي هو إنشاء خرائط سريعة وسهلة الاستخدام تركز على الخصوصية والتي ستعجبك.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "أنت تستخدم الآن Organic Maps على شاشة الهاتف";
+"car_used_on_the_phone_screen" = "أنت تستخدم الآن Sampai على شاشة الهاتف";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "أنت تستخدم الآن Organic Maps على شاشة السيارة";
+"car_used_on_the_car_screen" = "أنت تستخدم الآن Sampai على شاشة السيارة";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "تواصل على الهاتف";
@@ -1082,7 +1061,7 @@
 "map" = "الخريطة";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Organic Maps لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم الخرائط العضوية!";
+"bugreport_alert_message" = "هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Sampai لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم الخرائط العضوية!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "تمكين مزامنة iCloud";

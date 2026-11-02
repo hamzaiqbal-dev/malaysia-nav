@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Hentning mislykket</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Prøv igen</string>
-    <string name="about_menu_title">Om Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratis for alle, lavet med kærlighed</string>
+    <string name="about_menu_title">Om Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Ingen annoncer, ingen sporing, ingen dataindsamling</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Intet batteridræn, fungerer offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Hurtig, minimalistisk, udviklet i fællesskab</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Open source-applikation skabt af entusiaster og frivillige.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Indstillinger for placering</string>
     <string name="close">Luk</string>
     <string name="unsupported_phone">Appen kræver hardwareaccelereret OpenGL. Din enhed er desværre ikke understøttet.</string>
     <string name="download">Hent</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Frakobl venligst USB-kabel, eller indsæt et hukommelseskort for at bruge Organic Maps</string>
+    <string name="disconnect_usb_cable">Frakobl venligst USB-kabel, eller indsæt et hukommelseskort for at bruge Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Frigør først noget plads på dit SD-kort/USB lager for at bruge denne app</string>
     <string name="download_resources">Før du begynder at bruge appen, skal du hente oversigtskortet over verden til din enhed.\nDet vil bruge %s lagerplads.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Noter</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps bogmærker er blevet delt med dig</string>
-    <string name="share_bookmarks_email_body">Hej!\n\nVedhæftet er mine bogmærker; åbn dem venligst i Organic Maps. Hvis du ikke har den installeret, kan du downloade den her: https://omaps.app/get?kmz\n \nGod rejse med Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Sampai bogmærker er blevet delt med dig</string>
+    <string name="share_bookmarks_email_body">Hej!\n\nVedhæftet er mine bogmærker; åbn dem venligst i Sampai. Hvis du ikke har den installeret, kan du downloade den her: https://sampai.my/\n \nGod rejse med Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Indlæser bogmærker</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Bogmærkerne kunne ikke indlæses. Filen kan være skadet eller defekt.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Filtypen genkendes ikke af appen:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Kunne ikke åbne filen %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Rediger</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Del</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s på Organic Maps</string>
+    <string name="share_place_subject">%1$s på Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Et sted på Organic Maps</string>
+    <string name="share_place_subject_default">Et sted på Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mail</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Hjemmeside</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Nyheder</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Hjælp</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Spørgsmål og svar</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Doner</string>
     <string name="already_donated">Allerede doneret</string>
     <string name="remind_me_later">Påmind mig senere</string>
-    <string name="support_organic_maps">Støt Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Støt projektet</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Ophavsret</string>
+    <string name="support_organic_maps">Støt Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Rapportér fejl</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Mørk</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Lys fra daggry til skumring</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Giv gratis kort uden reklamer til millioner af brugere!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Når du følger ruten, skal du være opmærksom på følgende:</string>
@@ -409,7 +393,6 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Husnummer</string>
     <string name="details">Detaljer</string>
-    <string name="social_media">Sociale medier</string>
     <string name="building">Bygning</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Tilføj en gade</string>
@@ -445,7 +428,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Fællesskabsskabte OpenStreetMap-data fra %s. Få mere at vide om, hvordan du redigerer og opdaterer kortet på OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) er et fællesskabsprojekt til opbygning af et gratis og åbent kort. Det er hovedkilden til kortdata i Organic Maps og fungerer på samme måde som Wikipedia. Du kan tilføje eller redigere steder, og de bliver tilgængelige for millioner af brugere over hele verden.\nSlut dig til fællesskabet og vær med til at skabe et bedre kort for alle!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) er et fællesskabsprojekt til opbygning af et gratis og åbent kort. Det er hovedkilden til kortdata i Sampai og fungerer på samme måde som Wikipedia. Du kan tilføje eller redigere steder, og de bliver tilgængelige for millioner af brugere over hele verden.\nSlut dig til fællesskabet og vær med til at skabe et bedre kort for alle!</string>
     <string name="login_to_make_edits_visible">Opret en OpenStreetMap-konto eller log ind for at offentliggøre dine kortredigeringer til hele verden.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d af %2$d</string>
@@ -460,7 +443,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Note til OpenStreetMap-frivillige (valgfrit)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Beskriv fejl på kortet eller ting, der ikke kan redigeres med Organic Maps</string>
+    <string name="editor_note_hint">Beskriv fejl på kortet eller ting, der ikke kan redigeres med Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Dine ændringer uploades til den offentlige <a href="https://wiki.openstreetmap.org/wiki/Da:Om_OpenStreetMap">OpenStreetMap</a>-database. Tilføj venligst ikke personlige eller ophavsretligt beskyttede oplysninger.</string>
     <string name="editor_more_about_osm">Mere om OpenStreetMap</string>
@@ -470,7 +453,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operatør: %s</string>
     <string name="editor_category_unsuitable_title">Kan du ikke finde en passende kategori?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps giver kun mulighed for at tilføje simple punktkategorier, dvs. ingen byer, veje, søer, bygningsomrids osv. Tilføj sådanne kategorier direkte til <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Se vores <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detaljerede trin for trin-instruktioner.</string>
+    <string name="editor_category_unsuitable_text">Sampai giver kun mulighed for at tilføje simple punktkategorier, dvs. ingen byer, veje, søer, bygningsomrids osv. Tilføj sådanne kategorier direkte til <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Se vores <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">guide</a> for detaljerede trin for trin-instruktioner.</string>
     <string name="downloader_no_downloaded_maps_title">Du har ikke downloadet nogen kort</string>
     <string name="downloader_no_downloaded_maps_message">Download kort for at søge og navigere offline.</string>
     <string name="current_location_unknown_error_title">Aktuel placering er ukendt.</string>
@@ -542,7 +525,7 @@
     <string name="placepage_add_stop">Tilføj stop</string>
     <string name="drag_to_reorder">Omordn</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Log ind på OpenStreetMap for automatisk at uploade alle dine kortredigeringer. Få mere at vide <a href="https://github.com/organicmaps/organicmaps/issues/6144">her</a>.</string>
+    <string name="alert_reauth_message">Log ind på OpenStreetMap for automatisk at uploade alle dine kortredigeringer.</string>
     <string name="dialog_error_storage_title">Problem med lageradgang</string>
     <string name="dialog_error_storage_message">Eksternt lager er ikke tilgængeligt. SD-kortet kan være blevet fjernet eller beskadiget, eller filsystemet er skrivebeskyttet. Kontroller dit SD-kort eller kontakt os på support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Emulér beskadiget lager</string>
@@ -754,18 +737,12 @@
     <string name="change_map_locale">Sprog på kort</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Kortdata fra OpenStreetMap</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Da:Om_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Tak, fordi du bruger vores fællesskabsskabte kort!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Med dine donationer og støtte kan vi skabe de bedste kort i verden!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Kan du lide vores app? Donér venligst for at støtte udviklingen! Kan du ikke lide det endnu? Fortæl os det, så ordner vi det!</string>
     <!-- App tip #03 -->
     <string name="app_tip_03">Hvis du kender en softwareudvikler, kan du bede ham eller hende om at implementere en funktion, som du har brug for.</string>
     <!-- App tip #04 -->
@@ -774,16 +751,14 @@
     <string name="app_tip_05">Ved du, at du kan vælge din nuværende placering på kortet?</string>
     <!-- App tip #06 -->
     <string name="app_tip_06">Du kan hjælpe med at oversætte vores app til dit sprog.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Vores app er udviklet af nogle få entusiaster og fællesskabet.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Du kan nemt rette og forbedre kortdataene.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Vores hovedmål er at bygge hurtige, privatlivsfokuserede, brugervenlige kort, som du vil elske.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Du bruger nu Organic Maps på telefonens skærm</string>
+    <string name="car_used_on_the_phone_screen">Du bruger nu Sampai på telefonens skærm</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Du bruger nu Organic Maps på bilens skærm</string>
+    <string name="car_used_on_the_car_screen">Du bruger nu Sampai på bilens skærm</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Du er forbundet til Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -791,7 +766,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Til bilens skærm</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps har brug for placeringsadgang. Når det er sikkert, kan du tjekke notifikationen på din telefon.</string>
+    <string name="aa_location_permissions_request">Sampai har brug for placeringsadgang. Når det er sikkert, kan du tjekke notifikationen på din telefon.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Denne app har brug for din tilladelse</string>
     <!-- Grant Permissions button. -->

@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Збой спампоўвання</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Паспрабаваць зноў</string>
-    <string name="about_menu_title">Аб праграме Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Бясплатная для ўсіх, зробленая з любоўю</string>
+    <string name="about_menu_title">Аб праграме Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Без рэкламы, без трэкінгу, без збірання вашых даных</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Без празмернай разрадкі батарэі, працуе ў аўтаномным рэжыме</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Хуткая, мінімалістычная, распрацаваная супольнасцю</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Праграма з адкрытым зыходным кодам, створаная энтузіястамі і валанцёрамі.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Налады месцазнаходжання</string>
     <string name="close">Закрыць</string>
     <string name="unsupported_phone">Для працы праграмы патрабуецца апаратнае паскарэнне OpenGL. На жаль, ваша прылада не падтрымліваецца.</string>
     <string name="download">Спампаваць</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Адключыце кабель USB або ўстаўце карту памяці, каб карыстацца Organic Maps</string>
+    <string name="disconnect_usb_cable">Адключыце кабель USB або ўстаўце карту памяці, каб карыстацца Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Вызваліце месца на SD-карце/USB-сховішчы, каб карыстацца праграмай</string>
     <string name="download_resources">Перш чым пачаць карыстацца праграмай, спампуйце на сваю прыладу аглядную мапу свету. \nДля яе спатрэбіцца %s у сховішчы.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Нататкі</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">З вамі падзяліліся закладкамі Organic Maps</string>
-    <string name="share_bookmarks_email_body">Вітаю!\n\nУ далучаным файле мае закладкі, яны адкрываюцца праграмай Organic Maps. Калі такая праграма ў вас не ўсталявана, яе можна спампаваць тут: https://omaps.app/get?kmz\n\nПрыемных падарожжаў з Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">З вамі падзяліліся закладкамі Sampai</string>
+    <string name="share_bookmarks_email_body">Вітаю!\n\nУ далучаным файле мае закладкі, яны адкрываюцца праграмай Sampai. Калі такая праграма ў вас не ўсталявана, яе можна спампаваць тут: https://sampai.my/\n\nПрыемных падарожжаў з Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Загрузка закладак</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Не ўдалося загрузіць закладкі. Файл можа быць пашкоджаны або няспраўны.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Праграма не распазнае тып файла: \n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Не ўдалося адкрыць файл %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Рэдагаваць</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Абагуліць</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s у Organic Maps</string>
+    <string name="share_place_subject">%1$s у Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Месца ў Organic Maps</string>
+    <string name="share_place_subject_default">Месца ў Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">Электронная пошта</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Меню</string>
     <!-- Text in menu -->
     <string name="website">Вэб-сайт</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Навіны</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Водгук</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Даведка</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Пытанні і адказы</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Падтрымаць грашыма</string>
     <string name="already_donated">Ужо ахвяравана</string>
     <string name="remind_me_later">Нагадаць пазней</string>
-    <string name="support_organic_maps">Падтрымаць Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Падтрымаць праект</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Аўтарскія правы</string>
+    <string name="support_organic_maps">Падтрымаць Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Паведаміць аб памылцы</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Цёмны</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Светлая ад світання да змяркання</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Падарыце бясплатныя мапы без рэкламы мільёнам карыстальнікаў!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Падчас руху па маршруце памятайце:</string>
@@ -409,7 +393,6 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Нумар будынка</string>
     <string name="details">Падрабязнасці</string>
-    <string name="social_media">Сацыяльныя сеткі</string>
     <string name="building">Будынак</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Дадаць вуліцу</string>
@@ -445,7 +428,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Створаныя супольнасцю даныя OpenStreetMap па стане на %s. Даведайцеся больш пра тое, як рэдагаваць і абнаўляць мапу на OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) - гэта грамадскі праект па стварэнні бясплатнай і адкрытай мапы, і асноўная крыніца картаграфічных даных у Organic Maps, якая працуе падобна на Вікіпедыю. Кожны можа дадаваць або рэдагаваць месцы, якія ўбачаць мільёны карыстальнікаў па ўсім свеце. \nДалучайцеся да супольнасці і дапамажыце зрабіць лепшую мапу для ўсіх!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) - гэта грамадскі праект па стварэнні бясплатнай і адкрытай мапы, і асноўная крыніца картаграфічных даных у Sampai, якая працуе падобна на Вікіпедыю. Кожны можа дадаваць або рэдагаваць месцы, якія ўбачаць мільёны карыстальнікаў па ўсім свеце. \nДалучайцеся да супольнасці і дапамажыце зрабіць лепшую мапу для ўсіх!</string>
     <string name="login_to_make_edits_visible">Стварыце ўліковы запіс OpenStreetMap або ўвайдзіце ў сістэму, каб апублікаваць праўкі мапы ўсім на свеце.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d з %2$d</string>
@@ -460,7 +443,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Заўвага для валанцёраў OpenStreetMap (неабавязкова)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Апішыце памылкі на карце або рэчы, якія немагчыма адрэдагаваць з дапамогай Organic Maps</string>
+    <string name="editor_note_hint">Апішыце памылкі на карце або рэчы, якія немагчыма адрэдагаваць з дапамогай Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Вашы праўкі запампоўваюцца ў публічную базу даных <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Не дадавайце асабістую інфармацыю або інфармацыю, якая абаронена аўтарскім правам.</string>
     <string name="editor_more_about_osm">Падрабязней пра OpenStreetMap</string>
@@ -470,7 +453,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Аператар: %s</string>
     <string name="editor_category_unsuitable_title">Няма прыдатнай катэгорыі?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps дазваляе дадаваць на мапу толькі простыя тыпы аб\'ектаў, гэта значыць без гарадоў, дарог, азёр і будынкаў. Калі ласка, дадавайце такія катэгорыі на сайце <a href="https://www.openstreetmap.org/">OpenStreetMap.org </a>. Мы таксама рэкамендуем азнаёміцца з <a href="https://organicmaps.app/faq/editing/advanced-map-editing/">падрабязнымі інструкцыямі і іншымі праграмамі для рэдагавання мапы</a>.</string>
+    <string name="editor_category_unsuitable_text">Sampai дазваляе дадаваць на мапу толькі простыя тыпы аб\'ектаў, гэта значыць без гарадоў, дарог, азёр і будынкаў. Калі ласка, дадавайце такія катэгорыі на сайце <a href="https://www.openstreetmap.org/">OpenStreetMap.org </a>. Мы таксама рэкамендуем азнаёміцца з <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">падрабязнымі інструкцыямі і іншымі праграмамі для рэдагавання мапы</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Вы не спампавалі ніводнай мапы</string>
     <string name="downloader_no_downloaded_maps_message">Спампуйце мапы, каб шукаць месцы і карыстацца навігацыяй без інтэрнэту.</string>
     <string name="current_location_unknown_error_title">Месцазнаходжанне невядома.</string>
@@ -542,7 +525,7 @@
     <string name="placepage_add_stop">Дадаць прыпынак</string>
     <string name="drag_to_reorder">Перарадкаваць</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Увайдзіце ў OpenStreetMap, каб аўтаматычна запампоўваць усе свае праўкі мапы. Даведайцеся больш <a href="https://github.com/organicmaps/organicmaps/issues/6144">тут</a>.</string>
+    <string name="alert_reauth_message">Увайдзіце ў OpenStreetMap, каб аўтаматычна запампоўваць усе свае праўкі мапы.</string>
     <string name="dialog_error_storage_title">Праблема з доступам да сховішча</string>
     <string name="dialog_error_storage_message">Знешняе сховішча недаступна. Магчыма, SD-карта была вынята або пашкоджана ці файлавая сістэма даступна толькі для чытання. Праверце SD-карту або зважыцеся з намі праз support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Эмуляваць дрэннае сховішча</string>
@@ -763,20 +746,12 @@
     <string name="change_map_locale">Мова мапы</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Даныя мапы з OpenStreetMap</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/ru/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Дзякуй за выкарыстанне нашых мап, створаных супольнасцю!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Дзякуючы вашым ахвяраванням і падтрымцы мы можам стварыць лепшыя мапы ў свеце!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Вам падабаецца наша праграма? Калі ласка, ахвяруйце, каб падтрымаць яе распрацоўку. Яшчэ не падабаецца? Напішыце чаму, і мы гэта выправім!</string>
     <!-- App tip #03 -->
     <string name="app_tip_03">Калі вы ведаеце распрацоўшчыка праграмнага забеспячэння, вы можаце папрасіць яго рэалізаваць неабходную вам функцыю.</string>
     <!-- App tip #04 -->
@@ -785,16 +760,14 @@
     <string name="app_tip_05">А вы ведалі, што сваё месцазнаходжанне на карце можна выбраць?</string>
     <!-- App tip #06 -->
     <string name="app_tip_06">Вы можаце дапамагчы перакласці нашу праграму на вашу мову.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Наша праграма распрацавана некалькімі энтузіястамі і супольнасцю.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Вы можаце лёгка выпраўляць і палепшаць даныя мапы.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Наша галоўная мэта - ствараць хуткія, арыентаваныя на прыватнасць і простыя ў выкарыстанні мапы, якія вам спадабаюцца.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Вы выкарыстоўваеце Organic Maps на экране тэлефона</string>
+    <string name="car_used_on_the_phone_screen">Вы выкарыстоўваеце Sampai на экране тэлефона</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Вы выкарыстоўваеце Organic Maps на экране аўтамабіля</string>
+    <string name="car_used_on_the_car_screen">Вы выкарыстоўваеце Sampai на экране аўтамабіля</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Вы падключаны да Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -802,7 +775,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">На экран аўто</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps патрабуе доступу да месцазнаходжання. Калі будзе бяспечна, праверце апавяшчэнне на тэлефоне.</string>
+    <string name="aa_location_permissions_request">Sampai патрабуе доступу да месцазнаходжання. Калі будзе бяспечна, праверце апавяшчэнне на тэлефоне.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Гэтай праграме патрабуецца ваш дазвол</string>
     <!-- Grant Permissions button. -->

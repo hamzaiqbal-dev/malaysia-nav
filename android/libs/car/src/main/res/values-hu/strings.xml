@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Letöltés</string>
     <string name="download_map_title">Áttekintő világtérkép letöltése</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Az Organic Maps az Android Autoban helymeghatározási engedélyeket igényel a hatékony működéshez</string>
+    <string name="aa_request_permission_activity_text">A Sampai az Android Autoban helymeghatározási engedélyeket igényel a hatékony működéshez</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Engedélyek megadása</string>
 </resources>

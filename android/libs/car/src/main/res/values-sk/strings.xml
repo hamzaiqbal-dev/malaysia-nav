@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Sťahovanie</string>
     <string name="download_map_title">Stiahnuť mapu sveta</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps v službe Android Auto potrebujú na efektívnu prácu povolenie na určenie polohy</string>
+    <string name="aa_request_permission_activity_text">Sampai v službe Android Auto potrebujú na efektívnu prácu povolenie na určenie polohy</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Udelenie oprávnení</string>
 </resources>

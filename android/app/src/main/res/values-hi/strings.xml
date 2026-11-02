@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">डाउनलोड विफल हो गया है</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">पुनः प्रयास करें</string>
-    <string name="about_menu_title">Organic Maps के बारे में</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">सभी के लिए मुफ़्त, प्यार से बनाया गया</string>
+    <string name="about_menu_title">Sampai के बारे में</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई डेटा संग्रह नहीं</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• कोई बैटरी ख़त्म नहीं, ऑफ़लाइन काम करता है</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• तेज़, न्यूनतम, समुदाय द्वारा विकसित</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">उत्साही और स्वयंसेवकों द्वारा बनाया गया ओपन-सोर्स एप्लिकेशन।</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">स्थान सेटिंग्स</string>
     <string name="close">बंद करना</string>
     <string name="unsupported_phone">ऐप को हार्डवेयर त्वरित ओपनजीएल की आवश्यकता है। दुर्भाग्य से, आपका डिवाइस समर्थित नहीं है.</string>
     <string name="download">डाउन लोड करना</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Organic Maps का उपयोग करने के लिए कृपया USB केबल डिस्कनेक्ट करें या मेमोरी कार्ड डालें।</string>
+    <string name="disconnect_usb_cable">Sampai का उपयोग करने के लिए कृपया USB केबल डिस्कनेक्ट करें या मेमोरी कार्ड डालें।</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">ऐप का उपयोग करने के लिए कृपया पहले एसडी कार्ड/यूएसबी स्टोरेज पर कुछ जगह खाली कर लें</string>
     <string name="download_resources">ऐप का उपयोग शुरू करने से पहले, कृपया अपने डिवाइस पर सामान्य विश्व मानचित्र डाउनलोड करें।\nयह %s स्टोरेज का उपयोग करेगा।</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">टिप्पणियाँ</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps बुकमार्क आपके साथ साझा किए गए थे</string>
-    <string name="share_bookmarks_email_body">नमस्ते!\n\nसंलग्न हैं मेरे बुकमार्क; कृपया उन्हें Organic Maps में खोलें। यदि आपने इसे इंस्टॉल नहीं किया है तो आप इसे यहाँ डाउनलोड कर सकते हैं: https://omaps.app/get?kmz\n\nOrganic Maps के साथ यात्रा का आनंद लें!</string>
+    <string name="share_bookmarks_email_subject">Sampai बुकमार्क आपके साथ साझा किए गए थे</string>
+    <string name="share_bookmarks_email_body">नमस्ते!\n\nसंलग्न हैं मेरे बुकमार्क; कृपया उन्हें Sampai में खोलें। यदि आपने इसे इंस्टॉल नहीं किया है तो आप इसे यहाँ डाउनलोड कर सकते हैं: https://sampai.my/\n\nSampai के साथ यात्रा का आनंद लें!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">बुकमार्क लोड हो रहे हैं</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">बुकमार्क लोड करने में विफल. फ़ाइल दूषित या दोषपूर्ण हो सकती है.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">फ़ाइल प्रकार ऐप द्वारा पहचाना नहीं गया है:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">फ़ाइल खोलने में असफल %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">संपादन करना</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">साझा करें</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s Organic Maps पर</string>
+    <string name="share_place_subject">%1$s Sampai पर</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Organic Maps पर एक स्थान</string>
+    <string name="share_place_subject_default">Sampai पर एक स्थान</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">ईमेल</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">मेन्यू</string>
     <!-- Text in menu -->
     <string name="website">वेबसाइट</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">समाचार</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">प्रतिक्रिया</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">सहायता</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">अक्सर पूछे जाने वाले प्रश्नों</string>
-    <!-- Button in the main menu -->
-    <string name="donate">दान देना</string>
     <string name="already_donated">पहले से दान</string>
     <string name="remind_me_later">बाद में याद दिलाना</string>
-    <string name="support_organic_maps">Organic Maps का समर्थन करें</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">परियोजना का समर्थन करें</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">कॉपीराइट</string>
+    <string name="support_organic_maps">Sampai का समर्थन करें</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">एक बग रिपोर्ट करो</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">गहरा</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">भोर से शाम तक लाइट</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">लाखों उपयोगकर्ताओं को बिना विज्ञापनों वाले मुफ़्त नक्शे उपहार में दें!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">मार्ग का अनुसरण करते समय कृपया ध्यान रखें:</string>
@@ -409,7 +393,6 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">भवन का नंबर</string>
     <string name="details">विवरण</string>
-    <string name="social_media">सोशल मीडिया</string>
     <string name="building">इमारत</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">एक सड़क जोड़ें</string>
@@ -445,7 +428,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">समुदाय-निर्मित OpenStreetMap डेटा %s तक। OpenStreetMap.org पर मानचित्र को संपादित और अपडेट करने के तरीके के बारे में और जानें</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) एक समुदाय परियोजना है जो एक मुफ्त और खुले नक्शे का निर्माण करती है। यह Organic Maps में नक्शा डेटा का मुख्य स्रोत है और विकिपीडिया की तरह काम करती है। आप स्थान जोड़ या संपादित कर सकते हैं और वे दुनिया भर के लाखों उपयोगकर्ताओं के लिए उपलब्ध हो जाते हैं।\nसमुदाय में शामिल हों और सभी के लिए एक बेहतर नक्शा बनाने में मदद करें!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) एक समुदाय परियोजना है जो एक मुफ्त और खुले नक्शे का निर्माण करती है। यह Sampai में नक्शा डेटा का मुख्य स्रोत है और विकिपीडिया की तरह काम करती है। आप स्थान जोड़ या संपादित कर सकते हैं और वे दुनिया भर के लाखों उपयोगकर्ताओं के लिए उपलब्ध हो जाते हैं।\nसमुदाय में शामिल हों और सभी के लिए एक बेहतर नक्शा बनाने में मदद करें!</string>
     <string name="login_to_make_edits_visible">अपने मानचित्र संपादनों को दुनिया भर में प्रकाशित करने के लिए एक OpenStreetMap खाता बनाएं या लॉग इन करें।</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%2$d में से %1$d</string>
@@ -460,7 +443,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap स्वयंसेवकों के लिए नोट (वैकल्पिक)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">नक्शे पर त्रुटियों या ऐसी चीज़ों का वर्णन करें जिन्हें Organic Maps के साथ संपादित नहीं किया जा सकता।</string>
+    <string name="editor_note_hint">नक्शे पर त्रुटियों या ऐसी चीज़ों का वर्णन करें जिन्हें Sampai के साथ संपादित नहीं किया जा सकता।</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">आपके संपादन सार्वजनिक <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> डेटाबेस पर अपलोड किए जाते हैं। कृपया व्यक्तिगत या कॉपीराइट जानकारी न जोड़ें।</string>
     <string name="editor_more_about_osm">OpenStreetMap के बारे में अधिक जानकारी</string>
@@ -470,7 +453,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">ऑपरेटर: %s</string>
     <string name="editor_category_unsuitable_title">कोई उपयुक्त श्रेणी नहीं मिल रही?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps केवल सरल बिंदु श्रेणियाँ जोड़ने की अनुमति देता है, जिसका अर्थ है कि शहर, सड़कें, झीलें, इमारतों की रूपरेखा आदि नहीं। कृपया ऐसी श्रेणियाँ सीधे <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> पर जोड़ें। विस्तृत चरण-दर-चरण निर्देशों के लिए हमारी <a href="https://organicmaps.app/faq/editing/advanced-map-editing">गाइड</a> देखें।</string>
+    <string name="editor_category_unsuitable_text">Sampai केवल सरल बिंदु श्रेणियाँ जोड़ने की अनुमति देता है, जिसका अर्थ है कि शहर, सड़कें, झीलें, इमारतों की रूपरेखा आदि नहीं। कृपया ऐसी श्रेणियाँ सीधे <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> पर जोड़ें। विस्तृत चरण-दर-चरण निर्देशों के लिए हमारी <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">गाइड</a> देखें।</string>
     <string name="downloader_no_downloaded_maps_title">आपने कोई भी नक्शा डाउनलोड नहीं किया है</string>
     <string name="downloader_no_downloaded_maps_message">ऑफ़लाइन खोज और नेविगेशन के लिए मानचित्र डाउनलोड करें।</string>
     <string name="current_location_unknown_error_title">वर्तमान स्थान अज्ञात है।</string>
@@ -542,7 +525,7 @@
     <string name="placepage_add_stop">स्टॉप जोड़ें</string>
     <string name="drag_to_reorder">पुनःक्रमबद्ध करें</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">कृपया अपने सभी मानचित्र संपादनों को स्वचालित रूप से अपलोड करने के लिए OpenStreetMap पर लॉगिन करें। अधिक जानें <a href="https://github.com/organicmaps/organicmaps/issues/6144">यहां</a>।</string>
+    <string name="alert_reauth_message">कृपया अपने सभी मानचित्र संपादनों को स्वचालित रूप से अपलोड करने के लिए OpenStreetMap पर लॉगिन करें।</string>
     <string name="dialog_error_storage_title">भंडारण पहुँच समस्या</string>
     <string name="dialog_error_storage_message">बाहरी भंडारण तक पहुँच नहीं मिल पा रही है। हो सकता है कि एसडी कार्ड हटा दिया गया हो, क्षतिग्रस्त हो, या फ़ाइल सिस्टम केवल-पठन (read-only) मोड में हो। कृपया अपना एसडी कार्ड जांचें या support\@sampai.my पर हमसे संपर्क करें।</string>
     <string name="setting_emulate_bad_storage">खराब स्टोरेज का अनुकरण करें</string>
@@ -745,16 +728,10 @@
     <string name="change_map_locale">मानचित्र भाषा</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMap से मानचित्र डेटा</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/hi/</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">हमारे समुदाय-निर्मित मानचित्रों का उपयोग करने के लिए धन्यवाद!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">आपके दान और समर्थन से, हम दुनिया में सबसे अच्छे मानचित्र बना सकते हैं!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">क्या आपको हमारा ऐप पसंद है? कृपया विकास का समर्थन करने के लिए दान करें! अभी तक यह पसंद नहीं आया? कृपया हमें बताएं, और हम इसे ठीक कर देंगे!</string>
     <!-- App tip #03 -->
     <string name="app_tip_03">यदि आप किसी सॉफ़्टवेयर डेवलपर को जानते हैं, तो आप उससे वह सुविधा लागू करने के लिए कह सकते हैं जिसकी आपको आवश्यकता है।</string>
     <!-- App tip #04 -->
@@ -763,16 +740,14 @@
     <string name="app_tip_05">क्या आप जानते हैं कि आप मानचित्र पर अपना वर्तमान स्थान चुन सकते हैं?</string>
     <!-- App tip #06 -->
     <string name="app_tip_06">आप हमारे ऐप को अपनी भाषा में अनुवाद करने में मदद कर सकते हैं।</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">हमारा ऐप कुछ उत्साही लोगों और समुदाय द्वारा विकसित किया गया है।</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">आप मानचित्र डेटा को आसानी से ठीक और सुधार सकते हैं।</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">हमारा मुख्य लक्ष्य तेज़, गोपनीयता-केंद्रित, उपयोग में आसान मानचित्र बनाना है जो आपको पसंद आएंगे।</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">आप अब फोन स्क्रीन पर Organic Maps का उपयोग कर रहे हैं</string>
+    <string name="car_used_on_the_phone_screen">आप अब फोन स्क्रीन पर Sampai का उपयोग कर रहे हैं</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">आप अब कार स्क्रीन पर Organic Maps का उपयोग कर रहे हैं</string>
+    <string name="car_used_on_the_car_screen">आप अब कार स्क्रीन पर Sampai का उपयोग कर रहे हैं</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">आप Android Auto से कनेक्ट हैं</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -780,7 +755,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">कार स्क्रीन पर</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps इसे स्थान तक पहुंच की आवश्यकता है। जब यह सुरक्षित हो, तो अपने फोन पर सूचना देखें।</string>
+    <string name="aa_location_permissions_request">Sampai इसे स्थान तक पहुंच की आवश्यकता है। जब यह सुरक्षित हो, तो अपने फोन पर सूचना देखें।</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">इस ऐप को आपकी अनुमति की आवश्यकता है</string>
     <!-- Grant Permissions button. -->

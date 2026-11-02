@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Помилка завантаження";
 
 /* Text in About screen */
-"about_headline" = "Безкоштовно для всіх, зроблене з любов'ю";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Без реклами, без трекінгу, без стеження";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Не розряджає батарею, працює в автономному режимі";
 
 /* Text in About screen */
-"about_proposition_3" = "• Швидкий, мінімалістичний, розроблений спільнотою";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Закрити";
 "download" = "Завантажити";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Привіт!\n\nДодаю мої мітки; відкрийте їх у Organic Maps. Якщо застосунок не встановлено, ви можете завантажити його тут: https://omaps.app/get?kmz\n\nНасолоджуйтесь подорожами з Organic Maps!";
+"share_bookmarks_email_body" = "Привіт!\n\nДодаю мої мітки; відкрийте їх у Sampai. Якщо застосунок не встановлено, ви можете завантажити його тут: https://sampai.my/\n\nНасолоджуйтесь подорожами з Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Завантаження міток";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Ваше місце розташування не визначено";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Я тут на мапі Organic Maps";
+"share_my_position" = "Я тут на мапі Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ в Organic Maps";
+"share_place_subject" = "%1$@ в Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Місце в Organic Maps";
+"share_place_subject_default" = "Місце в Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Відкрити в Organic Maps або браузері";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Відкрити в Sampai або браузері";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Завантажити Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Завантажити Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Відкрити в іншому застосунку";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Вебсайт";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Новини";
-
 /* Text in menu */
 "rate_the_app" = "Оцінити застосунок";
 
@@ -295,10 +292,10 @@
 "donate" = "Підтримати грошима";
 "already_donated" = "Вже пожертвувано";
 "remind_me_later" = "Нагадати пізніше";
-"support_organic_maps" = "Підтримати Organic Maps";
+"support_organic_maps" = "Підтримати Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Копірайт";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Сповістити про помилку";
@@ -393,7 +390,7 @@
 "blue_gray" = "Сіро-блакитний";
 
 /* Prints version number in About dialog */
-"version" = "Версія Organic Maps: %@";
+"version" = "Версія Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Вигляд";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Повідомляйте або виправляйте невірні картографічні дані";
-
-/* Button in the About screen */
-"volunteer" = "Стати волонтером";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Підписуйтесь та зв'язуйтесь з нами:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Оператор: %@";
 "editor_category_unsuitable_title" = "Не можете знайти відповідну категорію?";
-"editor_category_unsuitable_text" = "Organic Maps дозволяють додавати до мапи лише прості типи об'єктів, тобто без міст, доріг, озер та контурів будівель. Будь ласка, додайте такі категорії на сайті <a href=\"https://www.openstreetmap.org/\">OpenStreetMap.org</a>. Ми також рекомендуємо ознайомитися із <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing/\">детальними інструкціями та іншими додатками для редагування мапи</a>.";
+"editor_category_unsuitable_text" = "Sampai дозволяють додавати до мапи лише прості типи об'єктів, тобто без міст, доріг, озер та контурів будівель. Будь ласка, додайте такі категорії на сайті <a href=\"https://www.openstreetmap.org/\">OpenStreetMap.org</a>. Ми також рекомендуємо ознайомитися із <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">детальними інструкціями та іншими додатками для редагування мапи</a>.";
 "downloader_no_downloaded_maps_title" = "Ви не маєте завантажених мап";
 "downloader_no_downloaded_maps_message" = "Завантажте необхідні мапи, щоб знаходити місця та користуватися навігацією без інтернету.";
 "current_location_unknown_error_title" = "Місцезнаходження не знайдено.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Для завантаження бракує вільного місця. Будь ласка, звільніть місце на пристрої.";
-"editor_sharing_title" = "Я покращив мапи Organic Maps";
+"editor_sharing_title" = "Я покращив мапи Sampai";
 "editor_detailed_description_hint" = "Детальний коментар";
-"editor_detailed_description" = "Зміни, що ви запропонували, буде відправлено до OpenStreetMap. Опишіть подробиці про об'єкт, які не можна редагувати в Organic Maps.";
+"editor_detailed_description" = "Зміни, що ви запропонували, буде відправлено до OpenStreetMap. Опишіть подробиці про об'єкт, які не можна редагувати в Sampai.";
 "current_location_unknown_error_message" = "Не вдалося визначити місцезнаходження через невідому помилку. Перевірте налаштування пристрою та спробуйте ще раз пізніше.";
 "location_services_disabled_header" = "Ідентифікацію місцезнаходження відключено";
 "location_services_disabled_message" = "Дозвольте доступ до геолокації в параметрах пристрою";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Виберіть Конфіденційність";
 "location_services_disabled_on_device_3" = "3. Виберіть Служби визначення місцезнаходження";
 "location_services_disabled_on_device_4" = "4. Увімкніть служби визначення місцезнаходження";
-"location_services_disabled_on_device_additional_message" = "Або продовжуйте використовувати Organic Maps без відстеження місцезнаходження";
+"location_services_disabled_on_device_additional_message" = "Або продовжуйте використовувати Sampai без відстеження місцезнаходження";
 "placepage_call_button" = "Виклик";
 "placepage_bookmark_name_hint" = "Назва мітки";
 "placepage_delete_bookmark_button" = "Видалити мітку";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Вимкнути запис нещодавно пройденого шляху?";
 "off_recent_track_background_button" = "Вимкнути";
-"recent_track_background_dialog_message" = "Organic Maps використовує вашу геопозицію у фоновому режимі для запису нещодавно пройденого шляху.";
+"recent_track_background_dialog_message" = "Sampai використовує вашу геопозицію у фоновому режимі для запису нещодавно пройденого шляху.";
 "general_settings" = "Загальні налаштування";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Перейдіть на телефон, щоб побачити всі мітки";
 "speedcams_alert_title_carplay_1" = "Камери";
 "speedcams_alert_title_carplay_2" = "Інфо о камерах";
-"download_map_carplay" = "Завантажте мапи в додатку Organic Maps на своєму пристрої";
+"download_map_carplay" = "Завантажте мапи в додатку Sampai на своєму пристрої";
 "carplay_roundabout_exit" = "%@ з’їзд";
 
 /* iOS */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Збільште мапу, щоб побачити ізолінії";
 "downloader_loading_ios" = "Завантаження";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/uk/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Uk:Про_проект";
 
 /* App Tip #00 */
 "app_tip_00" = "Дякуємо, що користуєтесь нашими мапами, створеними спільнотою!";
-
-/* App tip #01 */
-"app_tip_01" = "Завдяки вашим пожертвам і підтримці ми зможемо створити найкращі мапи світу!";
-
-/* App tip #02 */
-"app_tip_02" = "Вам подобається наш додаток? Підтримайте його розвиток грошима! Поки ще не подобається? Будь ласка, повідомте нам, чому, і ми це виправимо!";
 
 /* App tip #03 */
 "app_tip_03" = "Якщо у вас є знайомий розробник програмного забезпечення, ви можете попросити його реалізувати потрібну вам функцію.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Ви можете допомогти перекласти наш додаток на вашу мову.";
 
-/* App tip #07 */
-"app_tip_07" = "Наша програма розроблена кількома ентузіастами та спільнотою.";
-
 /* App tip #08 */
 "app_tip_08" = "Ви можете легко виправити та покращити дані мапи.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Наша головна мета – створити швидкі, конфіденційні та прості у використанні мапи, які вам сподобаються.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Зараз ви використовуєте Organic Maps на екрані телефону";
+"car_used_on_the_phone_screen" = "Зараз ви використовуєте Sampai на екрані телефону";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Ви використовуєте Organic Maps на екрані автомобіля";
+"car_used_on_the_car_screen" = "Ви використовуєте Sampai на екрані автомобіля";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Продовжуйте в телефоні";
@@ -1082,7 +1061,7 @@
 "map" = "Мапа";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Бажаєте надіслати розробникам звіт про помилку?\nМи покладаємося на наших користувачів, оскільки Organic Maps не збирає інформацію про помилки автоматично. Заздалегідь дякуємо за підтримку Organic Maps!";
+"bugreport_alert_message" = "Бажаєте надіслати розробникам звіт про помилку?\nМи покладаємося на наших користувачів, оскільки Sampai не збирає інформацію про помилки автоматично. Заздалегідь дякуємо за підтримку Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Увімкнути синхронізацію з iCloud";

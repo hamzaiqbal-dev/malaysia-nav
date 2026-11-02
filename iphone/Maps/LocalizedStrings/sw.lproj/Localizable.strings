@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Upakuaji umeshindikana";
 
 /* Text in About screen */
-"about_headline" = "Bure kwa kila mtu, iliyotengenezwa na upendo";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Hakuna matangazo, hakuna ufuatiliaji, hakuna mkusanyiko wa data";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Hakuna betri kuisha, inafanya kazi nje ya mtandao";
 
 /* Text in About screen */
-"about_proposition_3" = "• Haraka, minimalist, iliyotengenezwa na jumuiya";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Funga";
 "download" = "Pakua";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Habari!\n\nNimeambatanisha alamisho zangu; tafadhali zifungue kwenye Organic Maps. Ikiwa haujaweka, unaweza kupakua hapa: https://omaps.app/get?kmz\n\nFurahia kusafiri na Organic Maps!";
+"share_bookmarks_email_body" = "Habari!\n\nNimeambatanisha alamisho zangu; tafadhali zifungue kwenye Sampai. Ikiwa haujaweka, unaweza kupakua hapa: https://sampai.my/\n\nFurahia kusafiri na Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Inapakia alamisho";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Mahali pako bado halijabainishwa";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Niko hapa kwenye Organic Maps";
+"share_my_position" = "Niko hapa kwenye Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ kwenye Organic Maps";
+"share_place_subject" = "%1$@ kwenye Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Mahali kwenye Organic Maps";
+"share_place_subject_default" = "Mahali kwenye Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Fungua kwenye Organic Maps au kwenye kivinjari";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Fungua kwenye Sampai au kwenye kivinjari";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Pata Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Pata Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Fungua Katika Programu Nyingine";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Tovuti";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Habari";
-
 /* Text in menu */
 "rate_the_app" = "Tathmini programu";
 
@@ -295,10 +292,10 @@
 "donate" = "Changia";
 "already_donated" = "Tayari kutoa";
 "remind_me_later" = "Kumbusha baadaye";
-"support_organic_maps" = "Usaidizi Organic Maps";
+"support_organic_maps" = "Usaidizi Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Hakimiliki";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Ripoti hitilafu";
@@ -393,7 +390,7 @@
 "blue_gray" = "Kijivu Buluu";
 
 /* Prints version number in About dialog */
-"version" = "Toleo la Organic Maps: %@";
+"version" = "Toleo la Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Muonekano";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Ripoti au urekebishe data isiyo sahihi ya ramani";
-
-/* Button in the About screen */
-"volunteer" = "Kujitolea";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Fuata na uwasiliane nasi:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Mwendeshaji: %@";
 "editor_category_unsuitable_title" = "Je, huwezi kupata aina inayofaa?";
-"editor_category_unsuitable_text" = "Organic Maps inakuwezesha kuongeza tu aina rahisi za alama, ikimaanisha hakuna miji, barabara, maziwa, mipaka ya majengo, n.k. Tafadhali ongeza aina hizo moja kwa moja kwenye <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Angalia <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">mwongozo</a> wetu kwa maelekezo ya kina hatua kwa hatua.";
+"editor_category_unsuitable_text" = "Sampai inakuwezesha kuongeza tu aina rahisi za alama, ikimaanisha hakuna miji, barabara, maziwa, mipaka ya majengo, n.k. Tafadhali ongeza aina hizo moja kwa moja kwenye <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Angalia <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">mwongozo</a> wetu kwa maelekezo ya kina hatua kwa hatua.";
 "downloader_no_downloaded_maps_title" = "Haujapakua ramani yoyote";
 "downloader_no_downloaded_maps_message" = "Pakua ramani ili kutafuta na kuvinjari bila muunganisho.";
 "current_location_unknown_error_title" = "Mahali pa sasa halijulikani.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "Ikiwa kuna alamisho nyingi sana, kuonyesha majina yao kwenye ramani kunaweza kupunguza kasi ya programu.";
 "show_to_the_right" = "Onyesha upande wa kulia";
 "show_at_the_bottom" = "Onyesha chini";
-"enable_logging_warning_message" = "Chaguo huwasha data kwa madhumuni ya uchunguzi. Itakuwa muhimu kwa wafanyakazi wetu ambao wanatatua matatizo ya programu. Washa chaguo hili kwa maombi ya mhudumu wa Organic Maps tu.";
+"enable_logging_warning_message" = "Chaguo huwasha data kwa madhumuni ya uchunguzi. Itakuwa muhimu kwa wafanyakazi wetu ambao wanatatua matatizo ya programu. Washa chaguo hili kwa maombi ya mhudumu wa Sampai tu.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "Kwa gari";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Ili kupakua, unahitaji nafasi zaidi. Tafadhali futa data yoyote isiyo ya lazima.";
-"editor_sharing_title" = "Niliboresha ramani za 'Organic Maps'";
+"editor_sharing_title" = "Niliboresha ramani za 'Sampai'";
 "editor_detailed_description_hint" = "Maoni ya kina";
-"editor_detailed_description" = "Mabadiliko ya ramani uliyopendekeza yatawasilishwa kwa jamii ya OpenStreetMap. Tafadhali elezea maelezo yoyote ya ziada ambayo hayawezi kuhaririwa katika Organic Maps.";
+"editor_detailed_description" = "Mabadiliko ya ramani uliyopendekeza yatawasilishwa kwa jamii ya OpenStreetMap. Tafadhali elezea maelezo yoyote ya ziada ambayo hayawezi kuhaririwa katika Sampai.";
 "current_location_unknown_error_message" = "Hitilafu ilitokea wakati wa kubaini eneo lako. Hakikisha kifaa chako kinafanya kazi ipasavyo na jaribu tena baadaye.";
 "location_services_disabled_header" = "Huduma za eneo zimezimwa";
 "location_services_disabled_message" = "Wezesha upatikanaji wa geolocation katika mipangilio ya kifaa";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Chagua Faragha";
 "location_services_disabled_on_device_3" = "3. Chagua Huduma za Mahali";
 "location_services_disabled_on_device_4" = "4. Washa Huduma za Mahali";
-"location_services_disabled_on_device_additional_message" = "Au endelea kutumia Organic Maps bila Mahali";
+"location_services_disabled_on_device_additional_message" = "Au endelea kutumia Sampai bila Mahali";
 "placepage_call_button" = "Piga simu";
 "placepage_bookmark_name_hint" = "Jina la alama ya ukurasa";
 "placepage_delete_bookmark_button" = "Futa alama ya ukurasa";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Zima kurekodi njia yako uliyopita hivi karibuni?";
 "off_recent_track_background_button" = "Zima";
-"recent_track_background_dialog_message" = "Organic Maps inatumia eneo lako kwa nyuma ili kurekodi njia uliyopita hivi karibuni.";
+"recent_track_background_dialog_message" = "Sampai inatumia eneo lako kwa nyuma ili kurekodi njia uliyopita hivi karibuni.";
 "general_settings" = "Mipangilio ya jumla";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Badili utumie simu ili kuona alamisho zote";
 "speedcams_alert_title_carplay_1" = "Kam za kasi";
 "speedcams_alert_title_carplay_2" = "Onyo la kasi";
-"download_map_carplay" = "Tafadhali pakua ramani katika programu tumizi ya Organic Maps kwenye kifaa chako";
+"download_map_carplay" = "Tafadhali pakua ramani katika programu tumizi ya Sampai kwenye kifaa chako";
 "carplay_roundabout_exit" = "Kutoka kwa %@";
 
 /* iOS */
@@ -956,26 +950,14 @@
 "isolines_toast_zooms_1_10" = "Vuta karibu kutalii mistari ya kontua";
 "downloader_loading_ios" = "Inapakua";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 
 /* App Tip #00 */
 "app_tip_00" = "Asante kwa kutumia ramani zetu zilizojengwa na jumuiya!";
-
-/* App tip #01 */
-"app_tip_01" = "Kwa michango na usaidizi wako, tunaweza kuunda ramani bora zaidi Duniani!";
-
-/* App tip #02 */
-"app_tip_02" = "Je, unapenda programu yetu? Tafadhali toa mchango ili kusaidia maendeleo! Je, huipendi bado? Tafadhali tujulishe, na tutarekebisha!";
 
 /* App tip #03 */
 "app_tip_03" = "Ikiwa unajua msanidi programu, unaweza kumwomba kutekeleza kipengele unachohitaji.";
@@ -989,9 +971,6 @@
 /* App tip #06 */
 "app_tip_06" = "Unaweza kusaidia kutafsiri programu yetu katika lugha yako.";
 
-/* App tip #07 */
-"app_tip_07" = "Programu yetu imeundwa na washiriki wachache na jamii.";
-
 /* App tip #08 */
 "app_tip_08" = "Unaweza kurekebisha na kuboresha data ya ramani kwa urahisi.";
 
@@ -999,10 +978,10 @@
 "app_tip_09" = "Lengo letu kuu ni kujenga ramani za haraka, zinazozingatia faragha, na rahisi kutumia ambazo utapenda.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Sasa unatumia Organic Maps kwenye skrini ya simu";
+"car_used_on_the_phone_screen" = "Sasa unatumia Sampai kwenye skrini ya simu";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Sasa unatumia Organic Maps kwenye skrini ya gari";
+"car_used_on_the_car_screen" = "Sasa unatumia Sampai kwenye skrini ya gari";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Endelea kwenye simu";
@@ -1082,7 +1061,7 @@
 "map" = "Ramani";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Je, ungependa kutuma ripoti ya hitilafu kwa watengenezaji?\nTunategemea watumiaji wetu kwani Organic Maps haikusanyi taarifa yoyote ya hitilafu kiotomatiki. Asante mapema kwa kuunga mkono Organic Maps!";
+"bugreport_alert_message" = "Je, ungependa kutuma ripoti ya hitilafu kwa watengenezaji?\nTunategemea watumiaji wetu kwani Sampai haikusanyi taarifa yoyote ya hitilafu kiotomatiki. Asante mapema kwa kuunga mkono Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Washa Usawazishaji wa iCloud";

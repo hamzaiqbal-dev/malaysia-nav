@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Preuzimanje nije uspjelo</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Pokušaj ponovo</string>
-    <string name="about_menu_title">O Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Besplatno za sve, napravljeno sa ljubavi</string>
+    <string name="about_menu_title">O Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Nema reklama, nema praćenja, nema prikupljanja podataka</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Nema pražnjenja baterije, radi izvan mreže</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Brzo, minimalističko, razvijeno od zajednice</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Otvorenog koda aplikacija napravljena od entuzijasta i volontera.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Postavke lokacije</string>
     <string name="close">Zatvori</string>
     <string name="unsupported_phone">Aplikacija zahtijeva hardverski ubrzani OpenGL. Nažalost, vaš uređaj nije podržan.</string>
     <string name="download">Preuzmi</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Isključite USB kabel ili umetnite memorijsku karticu kako biste koristili Organic Maps</string>
+    <string name="disconnect_usb_cable">Isključite USB kabel ili umetnite memorijsku karticu kako biste koristili Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Prvo oslobodite prostor na SD kartici/USB memoriji kako biste mogli koristiti aplikaciju</string>
     <string name="download_resources">Prije nego što počnete koristiti aplikaciju, preuzmite svjetsku preglednu kartu na vaš uređaj.\nIskoristit će %s memorije.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Bilješke</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps zabilješke su s tobom dijeljene</string>
-    <string name="share_bookmarks_email_body">Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Organic Maps. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Sampai zabilješke su s tobom dijeljene</string>
+    <string name="share_bookmarks_email_body">Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Sampai. Ako nije instalirana, možeš je preuzeti na: https://sampai.my/ \n \nUživaj u putovanju s Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Učitavanje zabilješki</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Neuspjelo učitavanje zabilješki. Datoteka je možda oštećena ili neispravna.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Aplikacija ne prepoznaje vrstu datoteke:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Neuspjelo otvaranje datoteke %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Uredi</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Dijeli</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s na Organic Maps</string>
+    <string name="share_place_subject">%1$s na Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Mjesto na Organic Maps</string>
+    <string name="share_place_subject_default">Mjesto na Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mail adresa</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Izbornik</string>
     <!-- Text in menu -->
     <string name="website">Web stranica</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Novosti</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Povratne informacije</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Pomoć</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Često postavljena pitanja</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Doniraj</string>
     <string name="already_donated">Već si donirao/la</string>
     <string name="remind_me_later">Podsjeti me kasnije</string>
-    <string name="support_organic_maps">Podrži Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Podrži projekt</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Autorska prava</string>
+    <string name="support_organic_maps">Podrži Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Prijavi grešku</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Tamna</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Svijetlo od zore do sumraka</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Poklonite besplatne karte bez oglasa milijunima korisnika!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Prilikom praćenja rute, imajte sljedeće na umu:</string>
@@ -409,7 +393,6 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Kućni broj</string>
     <string name="details">Detalji</string>
-    <string name="social_media">Društveni mediji</string>
     <string name="building">Zgrada</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Dodaj ulicu</string>
@@ -445,7 +428,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Podaci OpenStreetMapa koje je zajednica kreirala na dan %s. Saznajte više o tome kako uređivati i ažurirati kartu na OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je projekt zajednice za izradu slobodne i otvorene karte. To je glavni izvor kartnih podataka u Organic Mapsu i funkcionira slično kao Wikipedia. Možete dodavati ili uređivati mjesta i ona postaju dostupna milijunima korisnika diljem svijeta. Pridružite se zajednici i pomozite u izradi bolje karte za sve!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je projekt zajednice za izradu slobodne i otvorene karte. To je glavni izvor kartnih podataka u Sampaiu i funkcionira slično kao Wikipedia. Možete dodavati ili uređivati mjesta i ona postaju dostupna milijunima korisnika diljem svijeta. Pridružite se zajednici i pomozite u izradi bolje karte za sve!</string>
     <string name="login_to_make_edits_visible">Kreirajte OpenStreetMap račun ili se prijavite kako biste objavili svoje izmjene karte svijetu.</string>
     <string name="download_over_mobile_header">Preuzimanje putem mobilne mreže?</string>
     <string name="download_over_mobile_message">Ovo može biti znatno skupo s nekim tarifama ili ako ste u roamingu.</string>
@@ -458,7 +441,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Napomena za volontere OpenStreetMapa (neobavezno)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Opisujte pogreške na karti ili stavke koje se ne mogu uređivati pomoću Organic Maps</string>
+    <string name="editor_note_hint">Opisujte pogreške na karti ili stavke koje se ne mogu uređivati pomoću Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Vaše izmjene se učitavaju u javnu bazu podataka <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Molimo vas da ne dodajete osobne podatke ili podatke zaštićene autorskim pravima.</string>
     <string name="editor_more_about_osm">Više o OpenStreetMapu</string>
@@ -468,7 +451,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operater: %s</string>
     <string name="editor_category_unsuitable_title">Ne možete pronaći odgovarajuću kategoriju?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vodič</a> za detaljne upute.</string>
+    <string name="editor_category_unsuitable_text">Sampai omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">vodič</a> za detaljne upute.</string>
     <string name="downloader_no_downloaded_maps_title">Niste preuzeli nijednu kartu</string>
     <string name="downloader_no_downloaded_maps_message">Preuzmite karte za pretraživanje i navigaciju izvan mreže.</string>
     <string name="current_location_unknown_error_title">Trenutna lokacija je nepoznata.</string>
@@ -540,7 +523,7 @@
     <string name="placepage_add_stop">Dodaj stajalište</string>
     <string name="drag_to_reorder">Prelagranje</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Molimo prijavite se na OpenStreetMap kako biste automatski učitali sve svoje izmjene karte. Saznajte više <a href="https://github.com/organicmaps/organicmaps/issues/6144">ovdje</a>.</string>
+    <string name="alert_reauth_message">Molimo prijavite se na OpenStreetMap kako biste automatski učitali sve svoje izmjene karte.</string>
     <string name="dialog_error_storage_title">Problem s pristupom pohrani</string>
     <string name="dialog_error_storage_message">Vanjska pohrana nije dostupna. SD kartica je možda uklonjena, oštećena ili je datotečni sustav samo za čitanje. Molimo provjerite svoju SD karticu ili nas kontaktirajte na support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Emuliraj loše pohranjivanje</string>
@@ -752,18 +735,12 @@
     <string name="change_map_locale">Jezik karte</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Podaci karte od OpenStreetMapa</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Hvala što koristiš karte koje je izradila naša zajednica!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Uz vaše donacije i podršku možemo stvoriti najbolje karte na svijetu!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Sviđa li vam se naša aplikacija? Molimo donirajte kako biste podržali razvoj! Još vam se ne sviđa? Recite nam zašto i mi ćemo to popraviti!</string>
     <!-- App tip #03 -->
     <string name="app_tip_03">Ako poznajete programera, možete ga ili je zamoliti da implementira značajku koja vam je potrebna.</string>
     <!-- App tip #04 -->
@@ -772,16 +749,14 @@
     <string name="app_tip_05">Jeste li znali da se vaša trenutna lokacija na karti može odabrati?</string>
     <!-- App tip #06 -->
     <string name="app_tip_06">Možete pomoći u prevođenju naše aplikacije na svoj jezik.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Našu je aplikaciju razvilo nekoliko entuzijasta i zajednica.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Možete jednostavno popraviti i poboljšati podatke karte.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Naš glavni cilj je izraditi brze karte usmjerene na privatnost i jednostavne za korištenje koje ćete voljeti.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Sada koristiš Organic Maps na ekranu telefona</string>
+    <string name="car_used_on_the_phone_screen">Sada koristiš Sampai na ekranu telefona</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Sada koristiš Organic Maps na ekranu auta</string>
+    <string name="car_used_on_the_car_screen">Sada koristiš Sampai na ekranu auta</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Povezan/a si s Android Autom</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -789,7 +764,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Na ekran auta</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps treba pristup lokacijama. Kada je sigurno, provjeri obavijest na telefonu.</string>
+    <string name="aa_location_permissions_request">Sampai treba pristup lokacijama. Kada je sigurno, provjeri obavijest na telefonu.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Ova aplikacija treba tvoju dozvolu</string>
     <!-- Grant Permissions button. -->
