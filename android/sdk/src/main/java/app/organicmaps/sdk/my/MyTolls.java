@@ -12,7 +12,8 @@ public final class MyTolls
   @Nullable
   public static native double[] nativeGetRoutePolyline();
 
-  // Toll booths (mName is empty when unnamed) within maxDistanceM of the polyline, ordered from the route start. Any thread.
+  // Toll booths (mName is empty when unnamed) within maxDistanceM of the polyline, ordered from the route start.
+  // Any thread.
   @NonNull
   public static native TollBooth[] nativeFindTollBooths(@NonNull double[] latLons, double maxDistanceM);
 }
