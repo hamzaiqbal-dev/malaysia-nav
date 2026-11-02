@@ -445,7 +445,5 @@ public class Framework
 
   public static native void nativeSaveRoute();
 
-
-
   public static native void nativeResetDonations();
 }
