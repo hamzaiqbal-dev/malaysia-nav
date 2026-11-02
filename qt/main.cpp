@@ -161,16 +161,16 @@ int main(int argc, char * argv[])
   InitializeWindowsLogging(platform);
 #endif
 
-  LOG(LINFO, ("Organic Maps", platform.Version(), "built with QT:", QT_VERSION_STR, "runtime QT:", qVersion(),
+  LOG(LINFO, ("Sampai", platform.Version(), "built with QT:", QT_VERSION_STR, "runtime QT:", qVersion(),
               "detected CPU cores:", platform.CpuCores()));
 
   QApplication app(argc, argv);
   app.setDesktopFileName("app.organicmaps.desktop");
 
 #ifdef BUILD_DESIGNER
-  QApplication::setApplicationName("Organic Maps Designer");
+  QApplication::setApplicationName("Sampai Designer");
 #else
-  QApplication::setApplicationName("Organic Maps");
+  QApplication::setApplicationName("Sampai");
 #endif
   auto const & preferred = languages::GetSystemPreferred();
   auto qtTranslator = qt::InstallTranslator(app, {preferred.data(), preferred.size()});
@@ -316,6 +316,6 @@ int main(int argc, char * argv[])
   }
 #endif  // BUILD_DESIGNER
 
-  LOG_SHORT(LINFO, ("Organic Maps finished with code", returnCode));
+  LOG_SHORT(LINFO, ("Sampai finished with code", returnCode));
   return returnCode;
 }
