@@ -34,7 +34,7 @@ final class MailComposer: NSObject {
       UIApplication.shared.hideLoadingOverlay {
         sendEmailWith(subject: subject(),
                       body: body(),
-                      toRecipients: [SocialMedia.organicMapsEmail.link],
+                      toRecipients: [SocialMedia.email.link],
                       attachmentFileURL: logFileURL)
       }
     }
