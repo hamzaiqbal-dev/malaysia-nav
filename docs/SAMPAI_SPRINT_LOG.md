@@ -81,3 +81,8 @@ Left to do:
 Lessons: read `DATA_LICENSE.txt` and the README licence section before any attribution change. Local Android builds aren't
 possible: dl.google.com, maven.google.com, services.gradle.org and repo1.maven.org all return 403. npm and PyPI work.
 `gh` isn't logged in here; use the GitHub MCP tools.
+
+CI at the end of run 2 (22:15 UTC on 2 Nov): style checks pass on #32 to #35 after the follow-up commits. #32's
+`Build Android Debug (WebDebug)` failed twice in emulator setup with `Error on ZipFile unknown archive`, first on the system
+image and then on the emulator package, before any unit test ran. Next run: check whether that step passes, because the new
+`TollTableTest` cases have not run yet. Don't call #32 or #35 tested until they do. If it still fails, compare other PRs.
