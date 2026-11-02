@@ -30,8 +30,8 @@ struct Projection
 };
 Projection ProjectOnPolyline(std::vector<m2::PointD> const & polyline, m2::PointD const & point);
 
-// Named toll booths of the loaded maps lying within |maxDistanceM| of |polyline| (mercator), ordered
-// from the route start. Unnamed booths are skipped: they cannot be priced. Safe to call from any
+// Toll booths of the loaded maps lying within |maxDistanceM| of |polyline| (mercator), ordered from
+// the route start. |m_name| is the local name, empty for an unnamed booth. Safe to call from any
 // thread; reads only the map data.
 std::vector<TollBooth> FindTollBoothsAlongRoute(DataSource const & dataSource, std::vector<m2::PointD> const & polyline,
                                                 double maxDistanceM);

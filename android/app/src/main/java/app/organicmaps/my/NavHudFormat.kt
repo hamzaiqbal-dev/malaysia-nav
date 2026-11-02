@@ -47,6 +47,12 @@ object NavHudFormat {
         else -> SpeedState.WITHIN_LIMIT
     }
 
+    /** Toll amount in RM, e.g. "4.20"; a trailing "+" marks a lower bound: some booths have no price yet. */
+    fun tollAmount(total: RouteTollTotal, locale: Locale): String {
+        val amount = String.format(locale, "%.2f", total.amountRm)
+        return if (total.unpricedBooths > 0) "$amount+" else amount
+    }
+
     private const val SECONDS_PER_MINUTE = 60
     private const val MINUTES_PER_HOUR = 60
 }

@@ -34,7 +34,7 @@ JNIEXPORT jdoubleArray JNICALL Java_app_organicmaps_sdk_my_MyTolls_nativeGetRout
   return result;
 }
 
-// Named toll booths of the loaded maps within |maxDistanceM| of the polyline [lat0, lon0, ...].
+// Toll booths of the loaded maps within |maxDistanceM| of the polyline [lat0, lon0, ...].
 // Reads map data only, so it may run on a background thread.
 JNIEXPORT jobjectArray JNICALL Java_app_organicmaps_sdk_my_MyTolls_nativeFindTollBooths(JNIEnv * env, jclass,
                                                                                         jdoubleArray latLons,
