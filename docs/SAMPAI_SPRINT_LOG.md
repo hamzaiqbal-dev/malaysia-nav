@@ -32,3 +32,10 @@ Left to do:
 - Dependencies on upstream servers in `private.h`: `meta.omaps.app`, `cdn*.organicmaps.app`, and the OSM
   OAuth client. Map downloads still come from Organic Maps' servers.
 - Polish next: nav HUD vs `design/concept-3d`, Malaysian map style (`data/styles/my`), BM FAQ read-through.
+
+CI at the end of run 1 (20:00 UTC, 3 Nov MYT): #27, #29, #31 green. #26, #28, #30 green except macOS, whose jobs
+were cancelled because no hosted macOS runner picked them up, on all three PRs (capacity, not code). #26 still had
+one Linux job running. Re-runs requested for #28 and #30; re-run #26 once its run ends.
+
+Lessons: `strings_validate_keys.sh` does not see `@string/` references in layouts, so before deleting a key grep
+the Android resources too (#26 broke the build on `social_media`). Grep Swift for renamed enum cases.
