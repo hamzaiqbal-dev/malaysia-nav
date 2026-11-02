@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Kućni broj</string>
     <string name="details">Detalji</string>
+    <string name="social_media">Društveni mediji</string>
     <string name="building">Zgrada</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Dodaj ulicu</string>

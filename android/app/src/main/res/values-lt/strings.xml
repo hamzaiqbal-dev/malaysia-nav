@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Namo numeris</string>
     <string name="details">Išsamesnė informacija</string>
+    <string name="social_media">Socialiniai tinklai</string>
     <string name="building">Pastatas</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Pridėti gatvę</string>

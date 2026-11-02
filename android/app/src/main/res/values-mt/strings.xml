@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Numru tal-bini</string>
     <string name="details">Dettalji</string>
+    <string name="social_media">Midja Soċjali</string>
     <string name="building">Bini</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Żid triq</string>

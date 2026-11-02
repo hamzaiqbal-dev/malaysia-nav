@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Շենքի համարը</string>
     <string name="details">Մանրամասներ</string>
+    <string name="social_media">Սոցիալական ցանցեր</string>
     <string name="building">Շենք</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Ավելացնել փողոց</string>

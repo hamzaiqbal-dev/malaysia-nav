@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Majanumber</string>
     <string name="details">Üksikasjad</string>
+    <string name="social_media">Sotsiaalmeedia</string>
     <string name="building">Hoone</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Lisa tänav</string>

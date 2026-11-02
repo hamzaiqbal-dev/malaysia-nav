@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">भवन का नंबर</string>
     <string name="details">विवरण</string>
+    <string name="social_media">सोशल मीडिया</string>
     <string name="building">इमारत</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">एक सड़क जोड़ें</string>

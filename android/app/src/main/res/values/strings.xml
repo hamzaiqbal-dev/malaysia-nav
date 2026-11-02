@@ -401,6 +401,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Building number</string>
     <string name="details">Details</string>
+    <string name="social_media">Social Media</string>
     <string name="building">Building</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Add a street</string>

@@ -270,6 +270,7 @@
     <string name="edit_place">Editar local</string>
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">N.º do endereço</string>
+    <string name="social_media">Mídia social</string>
     <!-- Error to display when a new street name is not entered in the New street dialog -->
     <string name="empty_street_name_error">Por favor, digite o nome da rua</string>
     <string name="choose_language">Escolha um idioma</string>

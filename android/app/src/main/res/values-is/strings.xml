@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Bygging númer</string>
     <string name="details">Nánar</string>
+    <string name="social_media">Samfélagsmiðlar</string>
     <string name="building">Bygging</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Bæta við götu</string>

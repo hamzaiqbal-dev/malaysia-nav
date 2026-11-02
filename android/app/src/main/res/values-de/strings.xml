@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Hausnummer</string>
     <string name="details">Einzelheiten</string>
+    <string name="social_media">Soziale Medien</string>
     <string name="building">Gebäude</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Eine Straße hinzufügen</string>

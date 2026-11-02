@@ -347,6 +347,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">ເລກທີອາຄານ</string>
     <string name="details">ລາຍລະອຽດ</string>
+    <string name="social_media">ສື່ສັງຄົມອອນລາຍ</string>
     <string name="building">ອາຄານ</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">ເພີ່ມຖະໜົນ</string>

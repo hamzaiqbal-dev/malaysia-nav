@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Rhif adeilad</string>
     <string name="details">Manylion</string>
+    <string name="social_media">Cyfryngau cymdeithasol</string>
     <string name="building">Adeilad</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Ychwanegu stryd</string>

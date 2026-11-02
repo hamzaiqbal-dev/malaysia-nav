@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Bina numarası</string>
     <string name="details">Ayrıntılar</string>
+    <string name="social_media">Sosyal Medya</string>
     <string name="building">Bina</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Sokak ekle</string>

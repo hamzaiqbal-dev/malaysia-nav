@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Talon numero</string>
     <string name="details">Lisätiedot</string>
+    <string name="social_media">Sosiaalinen media</string>
     <string name="building">Rakennus</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Lisää katu</string>

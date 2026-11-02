@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Nambari ya jengo</string>
     <string name="details">Maelezo</string>
+    <string name="social_media">Mitandao ya Kijamii</string>
     <string name="building">Jengo</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Ongeza barabara</string>

@@ -393,6 +393,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Ēkas numurs</string>
     <string name="details">Vairāk</string>
+    <string name="social_media">Sociālie tīkli</string>
     <string name="building">Ēka</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Pievienot ielu</string>
