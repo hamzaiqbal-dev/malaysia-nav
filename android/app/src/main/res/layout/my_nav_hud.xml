@@ -250,7 +250,7 @@
           tools:text="6.4 km · tiba 15:02" />
       </LinearLayout>
 
-      <!-- Toll total of the route (data/my_tolls.csv); hidden until the route has a priced booth. -->
+      <!-- Toll total of the route (data/my_tolls.csv); hidden on toll-free routes, label only when no booth is priced. -->
       <LinearLayout
         android:id="@+id/my_toll_chip"
         android:layout_width="wrap_content"
