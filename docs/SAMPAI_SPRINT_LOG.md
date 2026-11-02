@@ -39,3 +39,45 @@ one Linux job running. Re-runs requested for #28 and #30; re-run #26 once its ru
 
 Lessons: `strings_validate_keys.sh` does not see `@string/` references in layouts, so before deleting a key grep
 the Android resources too (#26 broke the build on `social_media`). Grep Swift for renamed enum cases.
+
+## Run 2: Tue 3 Nov, 04:47 MYT
+
+### Blocker for Hamza: Organic Maps' data licence
+The sprint brief says the Apache notices and the OSM credit are enough. That holds for the code only. `DATA_LICENSE.txt`
+covers `.mwm`, `packed_polygons.bin` and other `.bin` files and requires:
+- "Map data © OpenStreetMap and Organic Maps" on the map, in About and in the main menu, with links to both sites.
+- Explicit written permission for any white-labelling or branding removal (legal@organicmaps.app).
+
+Sampai bundles `data/World.mwm`, `WorldCoasts.mwm` and `packed_polygons.bin`, and downloads maps from `cdn*.organicmaps.app`
+through `meta.omaps.app`. The README also asks forks to contact upstream before using its servers. #30 removes the on-map
+credit, and the licences page (#28) doesn't have the required wording or the main menu mention. Nothing is merged or
+published. Hamza was notified on 3 Nov and #30 carries a warning.
+
+His options: (1) written permission; (2) own maps generated from OSM with `tools/python/maps_generator` and his own hosting,
+which also means rebuilding or replacing the bundled data files; (3) keep the required credit. Not legal advice.
+
+Until he decides: never tell him the rebrand is legally sufficient, don't remove any more attribution or licence text, and
+don't add the credit back either, since that undoes what he asked for. Put this first in `SAMPAI_FRIDAY_REVIEW.md`.
+
+### PRs opened against `integration/m1`
+- #32 `fix/toll-booths`: booths use the local name instead of the device language, unnamed booths count as unpriced, no more
+  "RM 0.00+" (chip shows just "Toll"), Sg/Bkt/Kg/Jln short forms match.
+- #33 `rebrand/leftovers`: OSM note, iOS mail body, iCloud folder, `Sampai-*` APK name and workflows, desktop and Windows
+  metadata, Qt welcome page, FUNDING.yml, issue template links.
+- #34 `polish/sampai-font`: Plus Jakarta Sans in the HUD and chips (OFL, credited).
+- #35 `feature/toll-preview`: toll cost in the route preview. Depends on #32. Its commit message says Google Maps and Waze
+  show no RM totals; that comes from docs/MALAYSIA.md and wasn't verified, so don't reuse it in store text.
+- #30: added a commit for the share default string, moved from #33 to avoid a conflict.
+
+Checked: run 1's six PRs and these four merge cleanly together. No open issues. The red CMake runs on #26 and #30 are only
+macOS jobs with no runner; every other job passed. The upstream products popup is already off (`ShouldShowProducts` is false).
+
+Left to do:
+- Branding: `omaps.app` share links, `om://` and the KML namespace need a real domain. README, AppStream screenshots and old
+  release notes still say Organic Maps. The OSM login shows upstream's OAuth client until Hamza registers his own.
+- Bugs and data: closed-system PLUS/LPT fares, Sungai Besi is missing from `data/my_tolls.csv`.
+- Polish next: wider use of the font (only after a device check), `data/styles/my`, HUD vs `design/concept-3d`.
+
+Lessons: read `DATA_LICENSE.txt` and the README licence section before any attribution change. Local Android builds aren't
+possible: dl.google.com, maven.google.com, services.gradle.org and repo1.maven.org all return 403. npm and PyPI work.
+`gh` isn't logged in here; use the GitHub MCP tools.
