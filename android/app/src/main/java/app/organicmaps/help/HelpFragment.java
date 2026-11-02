@@ -2,7 +2,6 @@ package app.organicmaps.help;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,11 +21,9 @@ import app.organicmaps.util.Graphics;
 import app.organicmaps.util.SharingUtils;
 import app.organicmaps.util.Utils;
 import app.organicmaps.util.WindowInsetUtils.ScrollableContentInsetsListener;
-import app.organicmaps.widget.DonationView;
 
 public class HelpFragment extends BaseMwmFragment implements View.OnClickListener
 {
-  private String mDonateUrl;
   private ActivityResultLauncher<SharingUtils.SharingIntent> shareLauncher;
 
   private TextView setupItem(@IdRes int id, boolean tint, @NonNull View frame)
@@ -41,7 +38,6 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
   {
-    mDonateUrl = Utils.getDonateUrl(requireContext());
     View root = inflater.inflate(R.layout.about, container, false);
 
     ((TextView) root.findViewById(R.id.version)).setText(BuildConfig.VERSION_NAME);
@@ -53,38 +49,11 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     if (osmPresentationView != null)
       osmPresentationView.setText(getString(R.string.osm_presentation, dataVersion));
 
-    setupItem(R.id.news, true, root);
     setupItem(R.id.web, true, root);
     setupItem(R.id.email, true, root);
-    setupItem(R.id.github, true, root);
-    // TODO(FOUNDER TO CONFIRM): Sampai has no community channels yet, so the Organic Maps ones are hidden.
-    for (int socialId :
-         new int[] {R.id.telegram, R.id.instagram, R.id.facebook, R.id.twitter, R.id.matrix, R.id.mastodon})
-      root.findViewById(socialId).setVisibility(View.GONE);
     setupItem(R.id.openstreetmap, true, root);
     setupItem(R.id.faq, true, root);
     setupItem(R.id.report, isLandscape, root);
-
-    final TextView supportUsView = root.findViewById(R.id.support_us);
-    if (BuildConfig.FLAVOR.equals("google") && !TextUtils.isEmpty(mDonateUrl))
-      supportUsView.setVisibility(View.GONE);
-    else
-      setupItem(R.id.support_us, true, root);
-
-    DonationView donationView = root.findViewById(R.id.donate);
-    if (TextUtils.isEmpty(mDonateUrl))
-    {
-      donationView.setVisibility(View.GONE);
-      donationView.setOnDonateClickListener(null);
-    }
-    else
-    {
-      donationView.setVisibility(View.VISIBLE);
-      donationView.setOnDonateClickListener(() -> {
-        Utils.openUrl(requireActivity(), mDonateUrl);
-        Framework.nativeDidShowDonationPage();
-      });
-    }
 
     if (BuildConfig.REVIEW_URL.isEmpty())
       root.findViewById(R.id.rate).setVisibility(View.GONE);
@@ -110,23 +79,17 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     final int id = v.getId();
     if (id == R.id.web)
       Utils.openUrl(requireActivity(), Constants.Url.WEBSITE);
-    else if (id == R.id.news)
-      Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "news/");
     else if (id == R.id.email)
       Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Sampai");
-    else if (id == R.id.github)
-      Utils.openUrl(requireActivity(), Constants.Url.GITHUB);
     else if (id == R.id.openstreetmap)
       Utils.openUrl(requireActivity(), getString(R.string.osm_wiki_about_url));
     else if (id == R.id.faq)
       ((HelpActivity) requireActivity()).stackFragment(FaqFragment.class, getString(R.string.faq), null);
     else if (id == R.id.report)
       Utils.sendBugReport(shareLauncher, requireActivity(), "", "");
-    else if (id == R.id.support_us)
-      Utils.openUrl(requireActivity(), Constants.Url.WEBSITE + "support-us/");
     else if (id == R.id.rate)
       Utils.openAppInMarket(requireActivity(), BuildConfig.REVIEW_URL);
     else if (id == R.id.copyright)
-      ((HelpActivity) requireActivity()).stackFragment(CopyrightFragment.class, getString(R.string.copyright), null);
+      ((HelpActivity) requireActivity()).stackFragment(CopyrightFragment.class, getString(R.string.open_source_licences), null);
   }
 }
