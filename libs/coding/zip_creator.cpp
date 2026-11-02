@@ -81,9 +81,9 @@ bool CreateZipFromFiles(std::vector<std::string> const & files, std::vector<std:
       if (!strings::IsASCIIString(fileInArchive))
       {
         if (suffix == 0)
-          fileInArchive = "OrganicMaps.kml";
+          fileInArchive = "Sampai.kml";
         else
-          fileInArchive = "OrganicMaps_" + std::to_string(suffix) + ".kml";
+          fileInArchive = "Sampai_" + std::to_string(suffix) + ".kml";
         ++suffix;
       }
       zip::FileInfo fileInfo = {};

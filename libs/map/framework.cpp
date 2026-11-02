@@ -362,9 +362,9 @@ Framework::Framework(FrameworkParams const & params, bool loadMaps)
   m_stringsBundle.SetDefaultString("open_in_app", "Open in Another App");
   m_stringsBundle.SetDefaultString("postal_code", "Postal Code");
   // Placeholder-free labels used by GetShareData; platforms override with localized values.
-  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Organic Maps");
+  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Sampai");
   m_stringsBundle.SetDefaultString("share_open_in_om_or_browser", "Open in Organic Maps or in a browser");
-  m_stringsBundle.SetDefaultString("share_get_om", "Get Organic Maps");
+  m_stringsBundle.SetDefaultString("share_get_om", "Get Sampai");
 
   m_featuresFetcher.InitClassificator();
   m_featuresFetcher.SetOnMapDeregisteredCallback(std::bind(&Framework::OnMapDeregistered, this, _1));
