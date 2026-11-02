@@ -166,7 +166,6 @@ public class MwmActivity extends BaseMwmFragmentActivity
   @Nullable
   private OnmapDownloader mOnmapDownloader;
 
-
   private int mNavBarHeight;
 
   private RoutingPlanViewModel mRoutingPlanViewModel;

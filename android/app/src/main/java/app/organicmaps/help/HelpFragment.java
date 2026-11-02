@@ -90,6 +90,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     else if (id == R.id.rate)
       Utils.openAppInMarket(requireActivity(), BuildConfig.REVIEW_URL);
     else if (id == R.id.copyright)
-      ((HelpActivity) requireActivity()).stackFragment(CopyrightFragment.class, getString(R.string.open_source_licences), null);
+      ((HelpActivity) requireActivity())
+          .stackFragment(CopyrightFragment.class, getString(R.string.open_source_licences), null);
   }
 }
