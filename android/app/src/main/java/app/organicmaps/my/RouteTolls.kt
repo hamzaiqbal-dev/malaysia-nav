@@ -29,12 +29,12 @@ object RouteTolls {
      */
     @MainThread
     fun compute(context: Context, onResult: (RouteTollTotal?) -> Unit) {
+        val id = ++requestId
         val polyline = MyTolls.nativeGetRoutePolyline()
         if (polyline == null) {
             onResult(null)
             return
         }
-        val id = ++requestId
         val appContext = context.applicationContext
         executor.execute {
             val tollTable = table ?: loadTable(appContext).also { table = it }
