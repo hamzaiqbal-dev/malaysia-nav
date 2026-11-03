@@ -127,3 +127,8 @@ be assumed to contain #27 just because it contains #32 or #35; test-merge after 
 
 Mistake this run: fetched `organicmaps/organicmaps` master directly to compare assets, which breaks the "only this repo" limit.
 It was read-only, nothing from it was used and FETCH_HEAD was overwritten. `origin/master` already has upstream's history, so use that.
+
+CI at the end of run 3 (18:55 UTC on 3 Nov): nothing red on a current head. #32's Android Check is green on its third attempt, so
+its emulator failure was setup, not code. #34 is green except CMake, which is still queued. #36 to #38 and #40 are mostly queued:
+GitHub runners are slow to pick up this many PRs. Next run: read their results first. #32 and #35 still show a red CMake run,
+from the macOS Release job with no runner, as logged in run 2.
