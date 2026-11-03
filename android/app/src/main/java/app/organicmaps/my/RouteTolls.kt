@@ -6,6 +6,7 @@ import android.os.Looper
 import androidx.annotation.MainThread
 import app.organicmaps.R
 import app.organicmaps.sdk.my.MyTolls
+import app.organicmaps.sdk.routing.RoutingController
 import java.util.Locale
 import java.util.concurrent.Executors
 
@@ -26,17 +27,18 @@ object RouteTolls {
     private var requestId = 0
 
     /**
-     * Prices the route currently built; [onResult] gets null when there is no route. A newer call
-     * cancels the delivery of an older one, so a rerouted trip never shows the previous total.
+     * Prices the route currently built; [onResult] gets null without a car route, since walkers
+     * and cyclists pay no toll. A newer call cancels the delivery of an older one, so a rerouted trip
+     * never shows the previous total.
      */
     @MainThread
     fun compute(context: Context, onResult: (RouteTollTotal?) -> Unit) {
-        val polyline = MyTolls.nativeGetRoutePolyline()
+        val id = ++requestId
+        val polyline = if (RoutingController.get().isVehicleRouterType) MyTolls.nativeGetRoutePolyline() else null
         if (polyline == null) {
             onResult(null)
             return
         }
-        val id = ++requestId
         val appContext = context.applicationContext
         executor.execute {
             val tollTable = table ?: loadTable(appContext).also { table = it }

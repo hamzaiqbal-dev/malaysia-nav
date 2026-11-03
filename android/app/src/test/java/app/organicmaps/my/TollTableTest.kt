@@ -39,17 +39,26 @@ class TollTableTest {
     }
 
     @Test
-    fun findsByNameAliasAndContainedName() {
+    fun findsByNameAliasAndDirection() {
         assertEquals("Penchala", table.find("Plaza Tol Penchala")?.name)
         assertEquals("Penchala", table.find("Bukit Lanjan Toll Plaza")?.name)
         assertEquals("Sunway", table.find("Plaza Tol Sunway Arah Klang")?.name)
+        assertEquals("Sunway", table.find("Sunway Toll Plaza to Klang")?.name)
+    }
+
+    @Test
+    fun otherPlazasWithAPricedWordInTheirNameAreNotPriced() {
+        val batu = TollTable.parse(sequenceOf("Batu,DUKE,E33,Ekovest,,2.50,3.80,5.00,1.30,1.30,https://example.org,x"))
+        assertEquals("Batu", batu.find("Plaza Tol Batu")?.name)
+        assertNull(batu.find("Plaza Tol Batu Pahat"))
+        assertNull(batu.find("Plaza Tol Batu Kawan Arah Pulau Pinang"))
+        assertNull(table.find("Plaza Tol Kota Sunway"))
     }
 
     @Test
     fun ambiguousOrUnknownNamesAreNotPriced() {
-        // "sungai besi tambahan" contains both PLUS plazas by name: the exact key wins.
+        // Both PLUS plazas start with "sungai besi": the whole name decides.
         assertEquals("Sungai Besi Tambahan", table.find("Plaza Tol Sungai Besi Tambahan")?.name)
-        // Nothing contains "sungai besi" uniquely once a direction suffix is added without an exact key.
         assertNull(table.find("Plaza Tol Sungai Besi Tambahan Utara"))
         assertNull(table.find("Plaza Tol Jalan Duta"))
         assertNull(table.find("Toll Plaza"))
