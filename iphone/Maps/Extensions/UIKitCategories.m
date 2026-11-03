@@ -118,17 +118,6 @@
 
 @end
 
-@implementation UIApplication (URLs)
-
-- (void)rateApp
-{
-  NSString * urlString = @"https://apps.apple.com/app/id1567437057?action=write-review";
-  NSURL * url = [NSURL URLWithString:urlString];
-  [self openURL:url options:@{} completionHandler:nil];
-}
-
-@end
-
 @implementation SolidTouchView
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

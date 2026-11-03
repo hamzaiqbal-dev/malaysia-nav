@@ -5,7 +5,7 @@ final class RateUsManager: NSObject {
   static let shared = RateUsManager()
 
   func showAppStoreReviewRequest() {
-    UIApplication.shared.rateApp()
+    SKStoreReviewController.requestReviewInCurrentScene()
   }
 
   func showSKStoreReviewRequest() {

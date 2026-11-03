@@ -28,12 +28,6 @@
 
 @end
 
-@interface UIApplication (URLs)
-
-- (void)rateApp;
-
-@end
-
 @interface SolidTouchView : UIView
 
 @end
