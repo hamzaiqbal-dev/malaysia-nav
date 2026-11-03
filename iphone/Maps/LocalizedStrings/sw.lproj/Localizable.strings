@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Asante kwa kutumia ramani zetu zilizojengwa na jumuiya!";
 
-/* App tip #03 */
-"app_tip_03" = "Ikiwa unajua msanidi programu, unaweza kumwomba kutekeleza kipengele unachohitaji.";
-
 /* App tip #04 */
 "app_tip_04" = "Gusa popote kwenye ramani ili kuchagua chochote. Gusa kwa muda mrefu ili kuficha na kuonyesha kiolesura.";
 
 /* App tip #05 */
 "app_tip_05" = "Je, unajua kwamba unaweza kuchagua eneo lako la sasa kwenye ramani?";
-
-/* App tip #06 */
-"app_tip_06" = "Unaweza kusaidia kutafsiri programu yetu katika lugha yako.";
 
 /* App tip #08 */
 "app_tip_08" = "Unaweza kurekebisha na kuboresha data ya ramani kwa urahisi.";

@@ -744,14 +744,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">İcma tərəfindən yaradılmış xəritələrimizdən istifadə etdiyiniz üçün təşəkkür edirik!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Əgər proqram tərtibatçısını tanıyırsınızsa, ona ehtiyac duyduğunuz funksiyanı əlavə etməsini xahiş edə bilərsiniz.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Nəyisə seçmək üçün xəritədə istənilən yerə toxunun. Gizlətmək və interfeysi geri göstərmək üçün uzun müddət toxunun.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Xəritədə cari yerinizi seçə biləcəyinizi bilirdinizmi?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Tətbiqimizi dilinizə tərcümə etməyə kömək edə bilərsiniz.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Xəritə məlumatlarını asanlıqla düzəldə və təkmilləşdirə bilərsiniz.</string>
     <!-- App tip #09 -->

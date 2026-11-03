@@ -519,14 +519,10 @@
     <string name="splash_subtitle">Dados do mapa do OpenStreetMap</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Obrigado por você usar nossos mapas criados pela comunidade!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Se você conhece algum desenvolvedor de software, pode lhe pedir que implemente um recurso de que você precisa.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Toque em qualquer lugar do mapa para selecionar qualquer coisa. Toque longamente para ocultar e mostrar a interface.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Você sabia que sua posição atual no mapa pode ser selecionada?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Você pode ajudar a traduzir nosso aplicativo para o seu idioma.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Você pode corrigir e melhorar facilmente os dados do mapa.</string>
     <!-- App tip #09 -->

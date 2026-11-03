@@ -739,14 +739,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Dankie dat u ons gemeenskapsgeboude kaarte gebruik!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">As jy \'n sagtewareontwikkelaar ken, kan jy hom of haar vra om \'n funksie te implementeer wat jy nodig het.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tik enige plek op die kaart om enigiets te kies. Tik lank om te versteek en om die koppelvlak terug te wys.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Het jy geweet dat jou huidige ligging op die kaart gekies kan word?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Jy kan help om ons app in jou taal te vertaal.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Jy kan maklik die kaartdata regstel en verbeter.</string>
     <!-- App tip #09 -->

@@ -396,14 +396,10 @@
     <string name="enable_show_on_lock_screen_description">Si está activada, la aplicación funcionará en la pantalla de bloqueo aunque el dispositivo esté bloqueado.</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Gracias por utilizar nuestros mapas comunitarios.</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Si conoces a un desarrollador de software, puedes pedirle que implemente una función que necesites.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Pulse en cualquier lugar del mapa para seleccionar cualquier cosa. Un toque prolongado sirve para ocultar y mostrar la interfaz.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">¿Sabías que puedes seleccionar tu ubicación actual en el mapa?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Puedes ayudar a traducir nuestra aplicación a tu idioma.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Puedes corregir y mejorar fácilmente los datos del mapa.</string>
     <!-- App tip #09 -->

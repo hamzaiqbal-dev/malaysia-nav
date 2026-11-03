@@ -747,14 +747,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Bedankt voor het gebruik van onze door de community gemaakte kaarten!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Als u een softwareontwikkelaar kent, kunt u hem of haar vragen een functie te implementeren die u nodig heeft.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tik ergens op de kaart om iets te selecteren. Tik lang om de interface te verbergen en weer te geven.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Wist u dat u uw huidige locatie op de kaart kunt selecteren?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">U kunt helpen onze app in uw taal te vertalen.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">U kunt de kaartgegevens eenvoudig corrigeren en verbeteren.</string>
     <!-- App tip #09 -->

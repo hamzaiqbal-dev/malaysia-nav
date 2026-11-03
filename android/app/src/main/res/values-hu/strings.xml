@@ -747,14 +747,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Köszönjük, hogy használja a közösség által készített térképeinket!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Ha ismer egy szoftverfejlesztőt, megkérheti őt egy olyan funkció megvalósítására, amelyre szüksége van.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Koppintson a térképen bárhová, hogy bármit kiválaszthasson. Hosszú koppintással elrejtheti és visszahozhatja a felületet.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Tudja, hogy kijelölheti pozícióját a térképen?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Segítsen lefordítani az alkalmazást az Ön nyelvére.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Könnyedén javíthatja a térképadatokat.</string>
     <!-- App tip #09 -->

@@ -747,14 +747,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Grazas por utilizar os nosos mapas creados pola comunidade!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Se coñece a algún desarrollador ou desarrolladora de software, pódelle pedir que implemente algunha funcionalidade que vostede necesite.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Toque en calquera lugar do mapa para seleccionar calquera elemento. Manteña pulsado para ocultar e volver amosar a interface.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Sabía que a súa localización actual no mapa pódese seleccionar?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Pode axudar a traducir a nosa aplicación ao seu idioma.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Pode arranxar e mellorar facilmente os datos do mapa.</string>
     <!-- App tip #09 -->

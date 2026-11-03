@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Diolch i chi am ddefnyddio ein mapiau a adeiladwyd gan y gymuned!";
 
-/* App tip #03 */
-"app_tip_03" = "Os ydych chi'n adnabod datblygydd meddalwedd, gallwch ofyn iddo neu iddi weithredu nodwedd sydd ei hangen arnoch.";
-
 /* App tip #04 */
 "app_tip_04" = "Tapiwch unrhyw le ar y map i ddewis unrhyw beth. Defnyddir tap hir i guddio a dangos y rhyngwyneb.";
 
 /* App tip #05 */
 "app_tip_05" = "Oeddech chi'n gwybod y gellir dewis eich lleoliad presennol ar y map?";
-
-/* App tip #06 */
-"app_tip_06" = "Gallwch chi helpu i gyfieithu ein ap i'ch iaith.";
 
 /* App tip #08 */
 "app_tip_08" = "Gallwch chi drwsio a gwella data'r map yn hawdd.";

@@ -748,14 +748,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Merci d\'utiliser nos cartes créées par la communauté !</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Si vous connaissez un développeur de logiciels, vous pouvez lui demander d\'implémenter une fonctionnalité dont vous avez besoin.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tapez n\'importe où sur la carte pour sélectionner quelque chose. Touchez longuement pour masquer et réafficher l\'interface.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Savez-vous que vous pouvez sélectionner votre position actuelle sur la carte ?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Vous pouvez nous aider à traduire notre application dans votre langue.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Vous pouvez facilement corriger et améliorer les données cartographiques.</string>
     <!-- App tip #09 -->

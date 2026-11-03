@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Vă mulțumim că utilizați hărțile create de comunitatea noastră!";
 
-/* App tip #03 */
-"app_tip_03" = "Dacă cunoașteți un dezvoltator de software, îi puteți cere să implementeze o caracteristică de care aveți nevoie.";
-
 /* App tip #04 */
 "app_tip_04" = "Atingeți oriunde pe hartă pentru a selecta orice. Atingeți lung pentru a ascunde și a reda interfața.";
 
 /* App tip #05 */
 "app_tip_05" = "Știți că vă puteți selecta locația curentă pe hartă?";
-
-/* App tip #06 */
-"app_tip_06" = "Puteți ajuta la traducerea aplicației noastre în limba dvs.";
 
 /* App tip #08 */
 "app_tip_08" = "Puteți remedia și îmbunătăți cu ușurință datele hărții.";

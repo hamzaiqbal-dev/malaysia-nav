@@ -745,14 +745,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">感謝您使用我們社區構建的地圖！</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">如果您認識軟體開發人員，您可以要求他實現您需要的功能。</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">點擊地圖上的任何位置即可選擇任何內容。長按可隱藏和顯示介面。</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">您知道您可以在地圖上選擇您目前的位置嗎？</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">您可以幫助將我們的應用程序翻譯成您的語言。</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">您可以輕鬆修復和改進地圖數據。</string>
     <!-- App tip #09 -->

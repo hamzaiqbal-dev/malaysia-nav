@@ -749,14 +749,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Grazie per utilizzare le nostre mappe create dalla comunità!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Se conosci uno sviluppatore di software, puoi chiedergli di implementare una funzionalità di cui hai bisogno.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tocca un punto qualsiasi della mappa per selezionare qualsiasi cosa. Toccare a lungo per nascondere e mostrare l\'interfaccia.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Lo sapevi che puoi selezionare la tua posizione attuale sulla mappa?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Puoi aiutare a tradurre la nostra app nella tua lingua.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Puoi correggere e migliorare facilmente i dati della mappa.</string>
     <!-- App tip #09 -->

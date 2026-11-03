@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Eskerrik asko gure komunitateak eraikitako mapak erabiltzeagatik!";
 
-/* App tip #03 */
-"app_tip_03" = "Software garatzaile bat ezagutzen baduzu, behar duzun funtzio bat ezartzeko eska diezaiokezu.";
-
 /* App tip #04 */
 "app_tip_04" = "Sakatu mapako edozein tokitan edozer hautatzeko. Luze sakatu interfazea ezkutatzeko eta berriro erakusteko.";
 
 /* App tip #05 */
 "app_tip_05" = "Ba al dakizu zure uneko kokapena mapan hauta dezakezula?";
-
-/* App tip #06 */
-"app_tip_06" = "Gure aplikazioa zure hizkuntzara itzultzen lagun dezakezu.";
 
 /* App tip #08 */
 "app_tip_08" = "Maparen datuak erraz konpondu eta hobetu ditzakezu.";

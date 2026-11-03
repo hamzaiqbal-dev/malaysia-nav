@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Köszönjük, hogy használja a közösség által készített térképeinket!";
 
-/* App tip #03 */
-"app_tip_03" = "Ha ismer egy szoftverfejlesztőt, megkérheti őt egy olyan funkció megvalósítására, amelyre szüksége van.";
-
 /* App tip #04 */
 "app_tip_04" = "Koppintson a térképen bárhová, hogy bármit kiválaszthasson. Hosszú koppintással elrejtheti és visszahozhatja a felületet.";
 
 /* App tip #05 */
 "app_tip_05" = "Tudja, hogy kijelölheti pozícióját a térképen?";
-
-/* App tip #06 */
-"app_tip_06" = "Segítsen lefordítani az alkalmazást az Ön nyelvére.";
 
 /* App tip #08 */
 "app_tip_08" = "Könnyedén javíthatja a térképadatokat.";

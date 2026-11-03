@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Merci d'utiliser nos cartes créées par la communauté !";
 
-/* App tip #03 */
-"app_tip_03" = "Si vous connaissez un développeur de logiciels, vous pouvez lui demander d'implémenter une fonctionnalité dont vous avez besoin.";
-
 /* App tip #04 */
 "app_tip_04" = "Tapez n'importe où sur la carte pour sélectionner quelque chose. Touchez longuement pour masquer et réafficher l'interface.";
 
 /* App tip #05 */
 "app_tip_05" = "Savez-vous que vous pouvez sélectionner votre position actuelle sur la carte ?";
-
-/* App tip #06 */
-"app_tip_06" = "Vous pouvez nous aider à traduire notre application dans votre langue.";
 
 /* App tip #08 */
 "app_tip_08" = "Vous pouvez facilement corriger et améliorer les données cartographiques.";

@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Tack för att du använder våra community-byggda kartor!";
 
-/* App tip #03 */
-"app_tip_03" = "Om du känner en mjukvaruutvecklare kan du be honom eller henne att implementera en funktion som du behöver.";
-
 /* App tip #04 */
 "app_tip_04" = "Tryck var som helst på kartan för att välja något. Tryck länge för att dölja och visa gränssnittet igen.";
 
 /* App tip #05 */
 "app_tip_05" = "Vet du att du kan välja din nuvarande plats på kartan?";
-
-/* App tip #06 */
-"app_tip_06" = "Du kan hjälpa till att översätta vår app till ditt språk.";
 
 /* App tip #08 */
 "app_tip_08" = "Du kan enkelt fixa och förbättra kartdata.";

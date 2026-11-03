@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Paldies, ka izmantojat mūsu kopienas veidotās kartes!";
 
-/* App tip #03 */
-"app_tip_03" = "Ja pazīstat kādu programmatūras izstrādātāju, varat viņam vai viņai palūgt ieviest funkciju, kas jums pietrūkst.";
-
 /* App tip #04 */
 "app_tip_04" = "Pieskarieties jebkurai vietai kartē, lai atlasītu jebkuru objektu. Garš pieskāriens tiek izmantots, lai paslēptu un parādītu saskarni.";
 
 /* App tip #05 */
 "app_tip_05" = "Vai zinājāt, ka ir iespējams atlasīt jūsu pašreizējo atrašanās vietu kartē?";
-
-/* App tip #06 */
-"app_tip_06" = "Varat palīdzēt tulkot lietotni savā valodā.";
 
 /* App tip #08 */
 "app_tip_08" = "Kartes datus varat viegli labot un papildināt.";

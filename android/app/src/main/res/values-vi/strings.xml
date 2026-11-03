@@ -740,14 +740,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Cảm ơn bạn đã sử dụng bản đồ do cộng đồng xây dựng của chúng tôi!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Nếu bạn biết một nhà phát triển phần mềm, bạn có thể yêu cầu họ triển khai một tính năng mà bạn cần.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Nhấn vào bất cứ nơi nào trên bản đồ để chọn bất cứ thứ gì. Nhấn và giữ để ẩn và hiển thị lại giao diện.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Bạn có biết rằng bạn có thể chọn vị trí hiện tại của mình trên bản đồ không?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Bạn có thể giúp dịch ứng dụng của chúng tôi sang ngôn ngữ của bạn.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Bạn có thể dễ dàng sửa chữa và cải thiện dữ liệu bản đồ.</string>
     <!-- App tip #09 -->

@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Aitäh, et kasutad meie kogukonna koostatud kaarte!";
 
-/* App tip #03 */
-"app_tip_03" = "Kui tead mõnda tarkvaraarendajat, võid paluda tal osaleda vajaliku funktsionaalsuse loomisel.";
-
 /* App tip #04 */
 "app_tip_04" = "Puuduta kaardil ükskõik kus, et valida midagi. Pika puudutusega saad peita ja kuvada kasutajaliidest.";
 
 /* App tip #05 */
 "app_tip_05" = "Kas tead, et saad kaardil valida oma praeguse asukoha?";
-
-/* App tip #06 */
-"app_tip_06" = "Saad aidata meie rakendust oma keelde tõlkida.";
 
 /* App tip #08 */
 "app_tip_08" = "Saad hõlpsasti kaardiandmeid parandada ja täiustada.";

@@ -742,14 +742,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Hvala što koristiš karte koje je izradila naša zajednica!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Ako poznajete programera, možete ga ili je zamoliti da implementira značajku koja vam je potrebna.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Dodirnite bilo koje mjesto na karti da biste odabrali bilo što. Dugi dodir služi za skrivanje i prikazivanje sučelja.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Jeste li znali da se vaša trenutna lokacija na karti može odabrati?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Možete pomoći u prevođenju naše aplikacije na svoj jezik.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Možete jednostavno popraviti i poboljšati podatke karte.</string>
     <!-- App tip #09 -->

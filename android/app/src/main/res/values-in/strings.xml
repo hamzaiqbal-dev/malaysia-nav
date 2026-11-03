@@ -740,14 +740,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Terima kasih telah menggunakan peta buatan komunitas kami!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Jika Anda mengenal seorang pengembang perangkat lunak, Anda dapat memintanya untuk mengimplementasikan fitur yang Anda perlukan.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Ketuk di mana saja pada peta untuk memilih apa pun. Ketuk lama untuk menyembunyikan dan menampilkan kembali antarmuka.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Tahukah Anda bahwa Anda dapat memilih lokasi Anda saat ini di peta?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Anda dapat membantu menerjemahkan aplikasi kami ke dalam bahasa Anda.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Anda dapat dengan mudah memperbaiki dan meningkatkan data peta.</string>
     <!-- App tip #09 -->

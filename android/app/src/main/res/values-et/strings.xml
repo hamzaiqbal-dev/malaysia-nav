@@ -747,14 +747,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Aitäh, et kasutad meie kogukonna koostatud kaarte!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Kui tead mõnda tarkvaraarendajat, võid paluda tal osaleda vajaliku funktsionaalsuse loomisel.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Puuduta kaardil ükskõik kus, et valida midagi. Pika puudutusega saad peita ja kuvada kasutajaliidest.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Kas tead, et saad kaardil valida oma praeguse asukoha?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Saad aidata meie rakendust oma keelde tõlkida.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Saad hõlpsasti kaardiandmeid parandada ja täiustada.</string>
     <!-- App tip #09 -->

@@ -738,14 +738,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Terima kasih kerana menggunakan peta yang dibina oleh komuniti kami!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Jika anda mengenali pembangun perisian, anda boleh memintanya membina ciri yang anda perlukan.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Ketik di mana-mana pada peta untuk memilih sesuatu. Ketik lama untuk menyembunyikan dan menunjukkan antara muka.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Tahukah anda lokasi anda sekarang pada peta juga boleh dipilih?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Anda boleh membantu menterjemah aplikasi kami ke dalam bahasa anda.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Anda boleh membetulkan dan menambah baik data peta dengan mudah.</string>
     <!-- App tip #09 -->

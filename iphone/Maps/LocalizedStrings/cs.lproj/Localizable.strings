@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Děkujeme, že používáte naše komunitní mapy!";
 
-/* App tip #03 */
-"app_tip_03" = "Pokud znáte vývojáře softwaru, můžete ho požádat, aby implementoval funkci, kterou potřebujete.";
-
 /* App tip #04 */
 "app_tip_04" = "Klepnutím na libovolné místo na mapě můžete cokoli vybrat. Dlouhým klepnutím skryjete a znovu zobrazíte rozhraní.";
 
 /* App tip #05 */
 "app_tip_05" = "Víte, že si na mapě můžete vybrat svou aktuální polohu?";
-
-/* App tip #06 */
-"app_tip_06" = "Můžete pomoci přeložit naši aplikaci do vašeho jazyka.";
 
 /* App tip #08 */
 "app_tip_08" = "Mapová data můžete snadno opravit a vylepšit.";

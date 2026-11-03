@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Dėkojame, kad naudojatės mūsų bendruomenės sukurtais žemėlapiais!";
 
-/* App tip #03 */
-"app_tip_03" = "Jeigu turite pažįstamą programuotoją, galite jo(s) paprašyti realizuoti funkciją, kurios jums reikia.";
-
 /* App tip #04 */
 "app_tip_04" = "Bakstelėkite bet kurį žemėlapio tašką norimam objektui pasirinkti. Bakstelėkite ir palaikykite, kad paslėptumėte ar vėl pamatytumėte programėlės sąsają.";
 
 /* App tip #05 */
 "app_tip_05" = "Ar žinote, jog galite pasirinkti savo dabartinę vietą žemėlapyje?";
-
-/* App tip #06 */
-"app_tip_06" = "Galite padėti išversti šią programėlę į savo kalbą.";
 
 /* App tip #08 */
 "app_tip_08" = "Galite pataisyti ar papildyti žemėlapio duomenis.";

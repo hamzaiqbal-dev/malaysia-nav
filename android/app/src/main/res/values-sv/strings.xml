@@ -744,14 +744,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Tack för att du använder våra community-byggda kartor!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Om du känner en mjukvaruutvecklare kan du be honom eller henne att implementera en funktion som du behöver.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tryck var som helst på kartan för att välja något. Tryck länge för att dölja och visa gränssnittet igen.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Vet du att du kan välja din nuvarande plats på kartan?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Du kan hjälpa till att översätta vår app till ditt språk.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Du kan enkelt fixa och förbättra kartdata.</string>
     <!-- App tip #09 -->

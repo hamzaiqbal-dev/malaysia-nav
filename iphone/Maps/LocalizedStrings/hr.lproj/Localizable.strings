@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Hvala što koristiš karte koje je izradila naša zajednica!";
 
-/* App tip #03 */
-"app_tip_03" = "Ako poznajete programera, možete ga ili je zamoliti da implementira značajku koja vam je potrebna.";
-
 /* App tip #04 */
 "app_tip_04" = "Dodirnite bilo koje mjesto na karti da biste odabrali bilo što. Dugi dodir služi za skrivanje i prikazivanje sučelja.";
 
 /* App tip #05 */
 "app_tip_05" = "Jeste li znali da se vaša trenutna lokacija na karti može odabrati?";
-
-/* App tip #06 */
-"app_tip_06" = "Možete pomoći u prevođenju naše aplikacije na svoj jezik.";
 
 /* App tip #08 */
 "app_tip_08" = "Možete jednostavno popraviti i poboljšati podatke karte.";

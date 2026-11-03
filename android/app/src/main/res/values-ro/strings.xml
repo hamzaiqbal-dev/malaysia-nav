@@ -742,14 +742,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Vă mulțumim că utilizați hărțile create de comunitatea noastră!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Dacă cunoașteți un dezvoltator de software, îi puteți cere să implementeze o caracteristică de care aveți nevoie.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Atingeți oriunde pe hartă pentru a selecta orice. Atingeți lung pentru a ascunde și a reda interfața.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Știți că vă puteți selecta locația curentă pe hartă?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Puteți ajuta la traducerea aplicației noastre în limba dvs.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Puteți remedia și îmbunătăți cu ușurință datele hărții.</string>
     <!-- App tip #09 -->

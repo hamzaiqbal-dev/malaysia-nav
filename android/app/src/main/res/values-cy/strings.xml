@@ -756,14 +756,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Diolch i chi am ddefnyddio ein mapiau a adeiladwyd gan y gymuned!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Os ydych chi\'n adnabod datblygydd meddalwedd, gallwch ofyn iddo neu iddi weithredu nodwedd sydd ei hangen arnoch.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Tapiwch unrhyw le ar y map i ddewis unrhyw beth. Defnyddir tap hir i guddio a dangos y rhyngwyneb.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Oeddech chi\'n gwybod y gellir dewis eich lleoliad presennol ar y map?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Gallwch chi helpu i gyfieithu ein ap i\'ch iaith.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Gallwch chi drwsio a gwella data\'r map yn hawdd.</string>
     <!-- App tip #09 -->

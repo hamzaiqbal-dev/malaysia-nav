@@ -753,14 +753,10 @@
     <string name="comma_separated_pair">%1$s，%2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">感谢您使用我们社区构建的地图！</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">如果您认识软件开发人员，您可以要求他实现您需要的功能。</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">轻点地图上的任意位置可选择任何内容。长按可隐藏或显示界面。</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">您知道您可以在地图上选择您当前的位置吗？</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">您可以帮助将我们的应用程序翻译成您的语言。</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">您可以轻松修复和改进地图数据。</string>
     <!-- App tip #09 -->

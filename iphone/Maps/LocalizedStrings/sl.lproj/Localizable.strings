@@ -959,17 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Hvala, ker uporabljate naše zemljevide, ki jih je ustvarila skupnost!";
 
-/* App tip #03 */
-"app_tip_03" = "Če poznate razvijalca programske opreme, ga lahko prosite, da implementira funkcijo, ki jo potrebujete.";
-
 /* App tip #04 */
 "app_tip_04" = "Dotaknite se kjerkoli na zemljevidu, da izberete karkoli. Dolg dotik se uporablja za skrivanje in prikaz vmesnika.";
 
 /* App tip #05 */
 "app_tip_05" = "Ali ste vedeli, da je mogoče izbrati vašo trenutno lokacijo na zemljevidu?";
-
-/* App tip #06 */
-"app_tip_06" = "Lahko pomagate prevesti našo aplikacijo v vaš jezik.";
 
 /* App tip #08 */
 "app_tip_08" = "Podatke zemljevida lahko enostavno popravite in izboljšate.";

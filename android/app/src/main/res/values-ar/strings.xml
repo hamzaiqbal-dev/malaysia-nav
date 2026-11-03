@@ -756,14 +756,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">شكرًا لك على استخدام الخرائط التي أنشأها مجتمعنا!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">إذا كنت تعرف أحد مطوري البرامج، فيمكنك أن تطلب منه تنفيذ الميزة التي تحتاجها.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">اضغط على أي مكان على الخريطة لتحديد أي شيء. اضغط لفترة طويلة لإخفاء الواجهة وإظهارها مرة أخرى.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">هل تعلم أنه يمكنك تحديد موقعك الحالي على الخريطة؟</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">يمكنك المساعدة في ترجمة تطبيقنا إلى لغتك.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">يمكنك بسهولة إصلاح وتحسين بيانات الخريطة.</string>
     <!-- App tip #09 -->

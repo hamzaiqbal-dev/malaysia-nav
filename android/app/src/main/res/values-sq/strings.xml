@@ -732,14 +732,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Faleminderit që përdorni hartat tona të ndërtuara nga komuniteti!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Nëse njihni një zhvillues softuerësh, mund t\'i kërkoni atij ose asaj të zbatojë një veçori që ju nevojitet.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Prekni kudo në hartë për të zgjedhur çdo gjë. Një prekje e gjatë përdoret për të fshehur dhe shfaqur ndërfaqen.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">A e dinit që vendndodhja juaj aktuale në hartë mund të zgjidhet?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Ju mund të ndihmoni në përkthimin e aplikacionit tonë në gjuhën tuaj.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Ju mund të rregulloni dhe përmirësoni lehtësisht të dhënat e hartës.</string>
     <!-- App tip #09 -->

@@ -741,14 +741,10 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Paldies, ka izmantojat mūsu kopienas veidotās kartes!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Ja pazīstat kādu programmatūras izstrādātāju, varat viņam vai viņai palūgt ieviest funkciju, kas jums pietrūkst.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Pieskarieties jebkurai vietai kartē, lai atlasītu jebkuru objektu. Garš pieskāriens tiek izmantots, lai paslēptu un parādītu saskarni.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Vai zinājāt, ka ir iespējams atlasīt jūsu pašreizējo atrašanās vietu kartē?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Varat palīdzēt tulkot lietotni savā valodā.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Kartes datus varat viegli labot un papildināt.</string>
     <!-- App tip #09 -->

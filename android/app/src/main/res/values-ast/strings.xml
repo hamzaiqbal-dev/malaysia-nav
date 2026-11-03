@@ -352,8 +352,6 @@
     <string name="change_map_locale">Llingua del mapa</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Datos cartográficos d’OpenStreetMap</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Pues ayudar a traducir la nuesa aplicación na to llingua.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
     <string name="car_used_on_the_phone_screen">Agora tas utilizando Sampai na pantalla del teléfonu</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
