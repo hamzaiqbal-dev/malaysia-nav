@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Atsiuntimas nepavyko";
 
 /* Text in About screen */
-"about_headline" = "Nemokama visiems, sukurta su meile";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Jokių reklamų, sekimo, duomenų rinkimo";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Neiškrauna akumuliatoriaus, nes veikia neprisijungus prie interneto";
 
 /* Text in About screen */
-"about_proposition_3" = "• Sparti, minimalistinė, vystoma bendruomenės";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Užverti";
 "download" = "Atsiųsti";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Labas! \n \nČia prisegtas mano žymių sąrašas iš „Organic Maps“ programėlės. Jei jos neturi, gali ją parsisiųsti iš https://omaps.app/get?kmz \n \nSmagių kelionių su „Organic Maps“!";
+"share_bookmarks_email_body" = "Labas! \n \nČia prisegtas mano žymių sąrašas iš „Sampai“ programėlės. Jei jos neturi, gali ją parsisiųsti iš https://sampai.my/ \n \nSmagių kelionių su „Sampai“!";
 
 /* message title of loading file */
 "load_kmz_title" = "Žymių sąrašas įkeliamas";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Jūsų vieta dar nenustatyta";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Esu čia per „Organic Maps“";
+"share_my_position" = "Esu čia per „Sampai“";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ per „Organic Maps“";
+"share_place_subject" = "%1$@ per „Sampai“";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Vieta per „Organic Maps“";
+"share_place_subject_default" = "Vieta per „Sampai“";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Atidaryti „Organic Maps“ arba naršyklėje";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Atidaryti „Sampai“ arba naršyklėje";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Gauti „Organic Maps“";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Gauti „Sampai“";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Atverti kitoje programėlėje";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Svetainė";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Naujienos";
-
 /* Text in menu */
 "rate_the_app" = "Įvertinti šią programėlę";
 
@@ -295,10 +292,10 @@
 "donate" = "Paaukoti";
 "already_donated" = "Jau paaukojau";
 "remind_me_later" = "Priminti vėliau";
-"support_organic_maps" = "Paremti „Organic Maps“";
+"support_organic_maps" = "Paremti „Sampai“";
 
-/* Button in the main Help dialog */
-"copyright" = "Autorių teisės";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Pranešti apie klaidą";
@@ -393,7 +390,7 @@
 "blue_gray" = "Mėlynai pilkas";
 
 /* Prints version number in About dialog */
-"version" = "„Organic Maps“ versija: %@";
+"version" = "„Sampai“ versija: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Išvaizda";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Ištaisyti arba pranešti apie neteisingus duomenis žemėlapyje";
-
-/* Button in the About screen */
-"volunteer" = "Prisidėti";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Sekite ar susisiekite su mumis:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operatorius: %@";
 "editor_category_unsuitable_title" = "Nerandate tinkamos kategorijos?";
-"editor_category_unsuitable_text" = "„Organic Maps“ leidžia pridėti tik paprastų kategorijas taškus – jokių miestų, kelių, ežerų, pastatų kontūrų ir pan. šia programėle pridėti negalima. Šių kategorijų objektus pridėkite naudodamiesi <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> svetaine. Žvilgtelėkite į mūsų <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">vadovą</a>, kuriame rasite išsamias pažingsnines instrukcijas.";
+"editor_category_unsuitable_text" = "„Sampai“ leidžia pridėti tik paprastų kategorijas taškus – jokių miestų, kelių, ežerų, pastatų kontūrų ir pan. šia programėle pridėti negalima. Šių kategorijų objektus pridėkite naudodamiesi <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> svetaine. Žvilgtelėkite į mūsų <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">vadovą</a>, kuriame rasite išsamias pažingsnines instrukcijas.";
 "downloader_no_downloaded_maps_title" = "Nesate atsiuntę jokių žemėlapių";
 "downloader_no_downloaded_maps_message" = "Atsiųskite žemėlapius, kad galėtumėte ieškoti vietų ir keliauti neprisijungę prie tinklo.";
 "current_location_unknown_error_title" = "Dabartinė vieta nežinoma.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Žemėlapiams atsiųsti reikia daugiau laisvos vietos. Pašalinkite nereikalingus duomenis.";
-"editor_sharing_title" = "Aš patobulinau „Organic Maps“ žemėlapius";
+"editor_sharing_title" = "Aš patobulinau „Sampai“ žemėlapius";
 "editor_detailed_description_hint" = "Išsamus komentaras";
-"editor_detailed_description" = "Jūsų pasiūlyti žemėlapio pakeitimai bus išsiųsti „OpenStreetMap“ bendruomenei. Paminėkite papildomą informaciją, kurios negalėjote pataisyti naudodamiesi „Organic Maps“.";
+"editor_detailed_description" = "Jūsų pasiūlyti žemėlapio pakeitimai bus išsiųsti „OpenStreetMap“ bendruomenei. Paminėkite papildomą informaciją, kurios negalėjote pataisyti naudodamiesi „Sampai“.";
 "current_location_unknown_error_message" = "Įvyko klaida ieškant jūsų vietos. Įsitikinkite,kad jūsų įrenginys veikia tinkamai ir bandykite iš naujo.";
 "location_services_disabled_header" = "Vietovės tarnybos yra išjungtos";
 "location_services_disabled_message" = "Suteikite prieigą prie vietos nustatymo duomenų įrenginio nustatymuose";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Pasirinkite „Privatumas ir sauga“";
 "location_services_disabled_on_device_3" = "3. Pasirinkite „Vietos nustatymo paslaugos“";
 "location_services_disabled_on_device_4" = "4. Įjunkite vietos nustatymo paslaugas";
-"location_services_disabled_on_device_additional_message" = "Arba toliau naudokitės „Organic Maps“ be vietos nustatymo";
+"location_services_disabled_on_device_additional_message" = "Arba toliau naudokitės „Sampai“ be vietos nustatymo";
 "placepage_call_button" = "Skambinti";
 "placepage_bookmark_name_hint" = "Žymės pavadinimas";
 "placepage_delete_bookmark_button" = "Naikinti žymę";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Išjungti paskiausiai keliautų trasų įrašymą?";
 "off_recent_track_background_button" = "Išjungti";
-"recent_track_background_dialog_message" = "„Organic Maps“ naudota jūsų vietos duomenis fone, kad įrašytų jūsų paskiausiai keliautą trasą.";
+"recent_track_background_dialog_message" = "„Sampai“ naudota jūsų vietos duomenis fone, kad įrašytų jūsų paskiausiai keliautą trasą.";
 "general_settings" = "Bendrieji nustatymai";
 
 /* "traffic" as in road congestion */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Priartinkite, jei norite patyrinėti izolinijas";
 "downloader_loading_ios" = "Atsiunčiama";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/lt/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Dėkojame, kad naudojatės mūsų bendruomenės sukurtais žemėlapiais!";
 
-/* App tip #01 */
-"app_tip_01" = "Su jūsų parama ir palaikymu mes galime sukurti geriausius žemėlapius pasaulyje!";
-
-/* App tip #02 */
-"app_tip_02" = "Patinka šį programėlė? Paremkite, paaukodami jos vystymui! Dar ne? Papasakokite mums, kodėl, ir mes pasistengsime tai pataisyti!";
-
-/* App tip #03 */
-"app_tip_03" = "Jeigu turite pažįstamą programuotoją, galite jo(s) paprašyti realizuoti funkciją, kurios jums reikia.";
-
 /* App tip #04 */
 "app_tip_04" = "Bakstelėkite bet kurį žemėlapio tašką norimam objektui pasirinkti. Bakstelėkite ir palaikykite, kad paslėptumėte ar vėl pamatytumėte programėlės sąsają.";
 
 /* App tip #05 */
 "app_tip_05" = "Ar žinote, jog galite pasirinkti savo dabartinę vietą žemėlapyje?";
-
-/* App tip #06 */
-"app_tip_06" = "Galite padėti išversti šią programėlę į savo kalbą.";
-
-/* App tip #07 */
-"app_tip_07" = "Šią programėlę vysto keletas entuziastų ir suburta bendruomenė.";
 
 /* App tip #08 */
 "app_tip_08" = "Galite pataisyti ar papildyti žemėlapio duomenis.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Mūsų pagrindinis tikslas – sukurti spartų, privatų ir paprastą naudotis žemėlapį, kuris patiktų visiems.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Dabar naudojatės „Organic Maps“ telefono ekrane";
+"car_used_on_the_phone_screen" = "Dabar naudojatės „Sampai“ telefono ekrane";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Dabar naudojatės „Organic Maps“ automobilio ekrane";
+"car_used_on_the_car_screen" = "Dabar naudojatės „Sampai“ automobilio ekrane";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Tęsti telefone";
@@ -1082,7 +1055,7 @@
 "map" = "Žemėlapis";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Ar norite išsiųsti pranešimą apie klaidą programos kūrėjams?\nTokių pranešimų mes tikimės iš savo naudotojų, nes \"Organic Maps\" nerenka jokios informacijos apie klaidas automatiškai. Iš anksto dėkojame, kad prisidedate prie „Organic Maps“ tobulinimo!";
+"bugreport_alert_message" = "Ar norite išsiųsti pranešimą apie klaidą programos kūrėjams?\nTokių pranešimų mes tikimės iš savo naudotojų, nes \"Sampai\" nerenka jokios informacijos apie klaidas automatiškai. Iš anksto dėkojame, kad prisidedate prie „Sampai“ tobulinimo!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "„iCloud“ sinchronizavimo įjungimas";

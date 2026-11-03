@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Η λήψη απέτυχε";
 
 /* Text in About screen */
-"about_headline" = "Δωρεάν για όλους, φτιαγμένα με αγάπη";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Χωρίς διαφημίσεις, χωρίς tracking, χωρίς συλλογή δεδομένων";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Δεν εξαντλεί τη μπαταρία, λειτουργεί εκτός σύνδεσης";
 
 /* Text in About screen */
-"about_proposition_3" = "• Γρήγορο, μινιμαλιστικό, αναπτυγμένο από την κοινότητα";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Κλείσιμο";
 "download" = "Λήψη";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Γειa!\n\nΣου επισυνάπτω τα αγαπημένα μου. Παρακαλώ άνοιξέ τα με το Organic Maps. Αν δεν το έχεις εγκαταστήσει, μπορείς να το κατεβάσεις από εδώ: https://omaps.app/get?kmz\n\nΚαλή διασκέδαση ταξιδεύοντας με το Organic Maps!";
+"share_bookmarks_email_body" = "Γειa!\n\nΣου επισυνάπτω τα αγαπημένα μου. Παρακαλώ άνοιξέ τα με το Sampai. Αν δεν το έχεις εγκαταστήσει, μπορείς να το κατεβάσεις από εδώ: https://sampai.my/\n\nΚαλή διασκέδαση ταξιδεύοντας με το Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Φορτώνονται τα αγαπημένα";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Η τοποθεσία σας δεν έχει προσδιοριστεί ακόμη";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Είμαι εδώ στο Organic Maps";
+"share_my_position" = "Είμαι εδώ στο Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ στο Organic Maps";
+"share_place_subject" = "%1$@ στο Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Ένα μέρος στο Organic Maps";
+"share_place_subject_default" = "Ένα μέρος στο Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Άνοιγμα στο Organic Maps ή σε πρόγραμμα περιήγησης";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Άνοιγμα στο Sampai ή σε πρόγραμμα περιήγησης";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Λήψη του Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Λήψη του Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Άνοιγμα σε άλλη εφαρμογή";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Ιστότοπος";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Νέα";
-
 /* Text in menu */
 "rate_the_app" = "Βαθμολογήστε την εφαρμογή";
 
@@ -295,10 +292,10 @@
 "donate" = "Δωρεά";
 "already_donated" = "Ήδη δωρεά";
 "remind_me_later" = "Υπενθύμισε αργότερα";
-"support_organic_maps" = "Υποστήριξε το Organic Maps";
+"support_organic_maps" = "Υποστήριξε το Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Πνευματικά δικαιώματα";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Αναφορά σφάλματος";
@@ -393,7 +390,7 @@
 "blue_gray" = "Γκρίζο μπλε";
 
 /* Prints version number in About dialog */
-"version" = "Έκδοση Organic Maps: %@";
+"version" = "Έκδοση Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Εμφάνιση";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Αναφορά ή διόρθωση λανθασμένων δεδομένων χάρτη";
-
-/* Button in the About screen */
-"volunteer" = "Γίνετε εθελοντής";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Ακολουθήστε και επικοινωνήστε μαζί μας:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Χειριστής: %@";
 "editor_category_unsuitable_title" = "Δεν μπορείτε να βρείτε την κατάλληλη κατηγορία;";
-"editor_category_unsuitable_text" = "Organic Maps επιτρέπει την προσθήκη μόνο απλών κατηγοριών σημείων, δηλαδή όχι πόλεων, δρόμων, λιμνών, περιγραμμάτων κτιρίων κ.λπ. Παρακαλούμε προσθέστε τέτοιες κατηγορίες απευθείας στο <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Ανατρέξτε <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">στον οδηγό</a> μας για λεπτομερείς οδηγίες βήμα προς βήμα.";
+"editor_category_unsuitable_text" = "Sampai επιτρέπει την προσθήκη μόνο απλών κατηγοριών σημείων, δηλαδή όχι πόλεων, δρόμων, λιμνών, περιγραμμάτων κτιρίων κ.λπ. Παρακαλούμε προσθέστε τέτοιες κατηγορίες απευθείας στο <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Ανατρέξτε <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">στον οδηγό</a> μας για λεπτομερείς οδηγίες βήμα προς βήμα.";
 "downloader_no_downloaded_maps_title" = "Δεν έχετε κατεβάσει χάρτες";
 "downloader_no_downloaded_maps_message" = "Κατεβάστε χάρτες για να αναζητήσετε μια τοποθεσία και να χρησιμοποιήσετε την πλοήγησης χωρίς σύνδεση.";
 "current_location_unknown_error_title" = "Η τρέχουσα τοποθεσία είναι άγνωστη.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "Εάν έχετε πάρα πολλούς σελιδοδείκτες, η προβολή των ονομάτων τους στο χάρτη θα κάνει αργή την εφαρμογή.";
 "show_to_the_right" = "Εμφάνισε στα δεξιά";
 "show_at_the_bottom" = "Εμφάνισε στο κάτω μέρος";
-"enable_logging_warning_message" = "Αυτή η λειτουργία είναι ενεργοποιημένη για την καταγραφή ενεργειών για διαγνωστικούς σκοπούς. Αυτό βοηθά την ομάδα να εντοπίζει προβλήματα με την εφαρμογή. Να ενεργοποιείτε τη λειτουργία μόνο κατόπιν αιτήματος της υποστήριξης του Organic Maps.";
+"enable_logging_warning_message" = "Αυτή η λειτουργία είναι ενεργοποιημένη για την καταγραφή ενεργειών για διαγνωστικούς σκοπούς. Αυτό βοηθά την ομάδα να εντοπίζει προβλήματα με την εφαρμογή. Να ενεργοποιείτε τη λειτουργία μόνο κατόπιν αιτήματος της υποστήριξης του Sampai.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "Οδήγηση";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Για να το κατεβάσετε, χρειάζεστε περισσότερο χώρο. Διαγράψτε μη απαραίτητα δεδομένα.";
-"editor_sharing_title" = "Βελτίωσα τους χάρτες Organic Maps";
+"editor_sharing_title" = "Βελτίωσα τους χάρτες Sampai";
 "editor_detailed_description_hint" = "Λεπτομερές σχόλιο";
-"editor_detailed_description" = "Οι προτεινόμενες αλλαγές θα σταλούν στην Κοινότητα του OpenStreetMap. Περιγράψτε τυχόν πρόσθετα στοιχεία που δεν μπορείτε να επεξεργαστείτε στο Organic Maps.";
+"editor_detailed_description" = "Οι προτεινόμενες αλλαγές θα σταλούν στην Κοινότητα του OpenStreetMap. Περιγράψτε τυχόν πρόσθετα στοιχεία που δεν μπορείτε να επεξεργαστείτε στο Sampai.";
 "current_location_unknown_error_message" = "Παρουσιάστηκε σφάλμα κατά την αναζήτηση της τοποθεσίας σας. Ελέγξτε αν η συσκευή σας λειτουργεί κανονικά και δοκιμάστε ξανά αργότερα.";
 "location_services_disabled_header" = "Οι υπηρεσίες εντοπισμού τοποθεσίας είναι απενεργοποιημένες";
 "location_services_disabled_message" = "Ενεργοποιήστε την υπηρεσία γεωεντοπισμού στις ρυθμίσεις της συσκευής";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Επιλέξτε Απόρρητο";
 "location_services_disabled_on_device_3" = "3. Επιλέξτε Υπηρεσίες τοποθεσίας";
 "location_services_disabled_on_device_4" = "4. Ενεργοποιήστε τις Υπηρεσίες τοποθεσίας";
-"location_services_disabled_on_device_additional_message" = "Ή συνεχίστε να χρησιμοποιείτε το Organic Maps χωρίς Τοποθεσία";
+"location_services_disabled_on_device_additional_message" = "Ή συνεχίστε να χρησιμοποιείτε το Sampai χωρίς Τοποθεσία";
 "placepage_call_button" = "Κλήση";
 "placepage_bookmark_name_hint" = "Όνομα αγαπημένου";
 "placepage_delete_bookmark_button" = "Διαγραφή αγαπημένου";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Θέλετε να απενεργοποιήσετε την καταγραφή της πρόσφατης διαδρομής σας;";
 "off_recent_track_background_button" = "Απενεργοποίηση";
-"recent_track_background_dialog_message" = "Το Organic Maps χρησιμοποιεί την τοποθεσία σας στο παρασκήνιο για την καταγραφή των πρόσφατων διαδρομών σας.";
+"recent_track_background_dialog_message" = "Το Sampai χρησιμοποιεί την τοποθεσία σας στο παρασκήνιο για την καταγραφή των πρόσφατων διαδρομών σας.";
 "general_settings" = "Γενικές ρυθμίσεις";
 
 /* "traffic" as in road congestion */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Μεγεθύνετε για να δείτε περιγράμματα";
 "downloader_loading_ios" = "Κατέβασμα";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/el/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/El:About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Σας ευχαριστούμε που χρησιμοποιείτε τους χάρτες μας που δημιουργήθηκαν από την κοινότητα!";
 
-/* App tip #01 */
-"app_tip_01" = "Με τις δωρεές και την υποστήριξή σας, μπορούμε να δημιουργήσουμε τους καλύτερους χάρτες στον κόσμο!";
-
-/* App tip #02 */
-"app_tip_02" = "Σας αρέσει η εφαρμογή μας; Παρακαλούμε κάντε μια δωρεά για να στηρίξετε την ανάπτυξη! Ακόμα δεν σας αρέσει; Ενημερώστε μας και θα το διορθώσουμε!";
-
-/* App tip #03 */
-"app_tip_03" = "Εάν γνωρίζετε έναν προγραμματιστή λογισμικού, μπορείτε να του ζητήσετε να υλοποιήσει μια λειτουργία που χρειάζεστε.";
-
 /* App tip #04 */
 "app_tip_04" = "Πατήστε οπουδήποτε στο χάρτη για να επιλέξετε οτιδήποτε. Πατήστε παρατεταμένα για να αποκρύψετε και να εμφανίσετε ξανά το περιβάλλον εργασίας.";
 
 /* App tip #05 */
 "app_tip_05" = "Γνωρίζετε ότι μπορείτε να επιλέξετε την τρέχουσα τοποθεσία σας στο χάρτη;";
-
-/* App tip #06 */
-"app_tip_06" = "Μπορείτε να βοηθήσετε στη μετάφραση της εφαρμογής μας στη γλώσσα σας.";
-
-/* App tip #07 */
-"app_tip_07" = "Η εφαρμογή μας έχει αναπτυχθεί από λίγους θιασώτες και την κοινότητα.";
 
 /* App tip #08 */
 "app_tip_08" = "Μπορείτε εύκολα να διορθώσετε και να βελτιώσετε τα δεδομένα χάρτη.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Ο κύριος στόχος μας είναι να δημιουργήσουμε γρήγορους, εύχρηστους και με σεβασμό στην ιδιωτικότητα χάρτες που θα λατρέψετε.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Αυτή τη στιγμή το Organic Maps βρίσκεται στην οθόνη του κινητού";
+"car_used_on_the_phone_screen" = "Αυτή τη στιγμή το Sampai βρίσκεται στην οθόνη του κινητού";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Αυτή τη στιγμή το Organic Maps βρίσκεται στην οθόνη του αυτοκινήτου";
+"car_used_on_the_car_screen" = "Αυτή τη στιγμή το Sampai βρίσκεται στην οθόνη του αυτοκινήτου";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Συνέχεια στο κινητό";
@@ -1082,7 +1055,7 @@
 "map" = "Χάρτης";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Θα θέλατε να στείλετε μια αναφορά σφάλματος στους προγραμματιστές;\nΒασιζόμαστε στους χρήστες μας, καθώς οι Organic Maps δεν συλλέγουν αυτόματα καμία πληροφορία σφάλματος. Σας ευχαριστούμε εκ των προτέρων για την υποστήριξη των Organic Maps!";
+"bugreport_alert_message" = "Θα θέλατε να στείλετε μια αναφορά σφάλματος στους προγραμματιστές;\nΒασιζόμαστε στους χρήστες μας, καθώς οι Sampai δεν συλλέγουν αυτόματα καμία πληροφορία σφάλματος. Σας ευχαριστούμε εκ των προτέρων για την υποστήριξη των Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Ενεργοποίηση συγχρονισμού iCloud";

@@ -32,7 +32,7 @@
 "country_status_download_failed" = "下載失敗";
 
 /* Text in About screen */
-"about_headline" = "對每個人都免費，用愛製成";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• 沒有廣告，不會跟蹤您，更不會收集您的數據";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• 無需耗費太多電量，可離線工作";
 
 /* Text in About screen */
-"about_proposition_3" = "• 快速且簡約，由社群開發";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "關閉";
 "download" = "下載";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "您好！\n\n附件是我的書籤，請在 Organic Maps 中打開。如果您沒有安裝 Organic Maps，可以在這裡下載: https://omaps.app/get?kmz\n\n祝您使用 Organic Maps 旅行愉快！";
+"share_bookmarks_email_body" = "您好！\n\n附件是我的書籤，請在 Sampai 中打開。如果您沒有安裝 Sampai，可以在這裡下載: https://sampai.my/\n\n祝您使用 Sampai 旅行愉快！";
 
 /* message title of loading file */
 "load_kmz_title" = "正在載入書籤";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "您的位置尚未確定";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "我在 Organic Maps 上的位置";
+"share_my_position" = "我在 Sampai 上的位置";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ - Organic Maps";
+"share_place_subject" = "%1$@ - Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Organic Maps 上的地點";
+"share_place_subject_default" = "Sampai 上的地點";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "在 Organic Maps 或瀏覽器中開啟";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "在 Sampai 或瀏覽器中開啟";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "取得 Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "取得 Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "在另一個應用程式中開啟";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "網站";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "新聞";
-
 /* Text in menu */
 "rate_the_app" = "為我們評分";
 
@@ -295,10 +292,10 @@
 "donate" = "捐助我們";
 "already_donated" = "已捐贈";
 "remind_me_later" = "稍後提醒";
-"support_organic_maps" = "支援 Organic Maps";
+"support_organic_maps" = "支援 Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "版權";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "報告問題";
@@ -393,7 +390,7 @@
 "blue_gray" = "藍灰色";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps 版本：%@";
+"version" = "Sampai 版本：%@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "外觀";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "回報或修復不正確的地圖數據";
-
-/* Button in the About screen */
-"volunteer" = "志願者";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "追蹤並聯絡我們：";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "運營方: %@";
 "editor_category_unsuitable_title" = "找不到合適的類別？";
-"editor_category_unsuitable_text" = "Organic Maps 只允許添加簡單的點類別，即無法添加城鎮、道路、湖泊、建築輪廓等類別。請直接向 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> 新增此類類別。請查看我們的<a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">指南</a>，以了解詳細的步驟說明。";
+"editor_category_unsuitable_text" = "Sampai 只允許添加簡單的點類別，即無法添加城鎮、道路、湖泊、建築輪廓等類別。請直接向 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> 新增此類類別。請查看我們的<a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">指南</a>，以了解詳細的步驟說明。";
 "downloader_no_downloaded_maps_title" = "您尚未下載任何地圖";
 "downloader_no_downloaded_maps_message" = "下載地圖來尋找位置和離線瀏覽。";
 "current_location_unknown_error_title" = "目前位置未知。";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "為了下載，您需要更多的儲存空間。請刪除不必要的檔案。";
-"editor_sharing_title" = "我改進了 Organic Maps 地圖";
+"editor_sharing_title" = "我改進了 Sampai 地圖";
 "editor_detailed_description_hint" = "詳細註釋";
-"editor_detailed_description" = "您建議的變更將傳送至 OpenStreetMap 社群。說明無法在 Organic Maps 中編輯的詳細資料。";
+"editor_detailed_description" = "您建議的變更將傳送至 OpenStreetMap 社群。說明無法在 Sampai 中編輯的詳細資料。";
 "current_location_unknown_error_message" = "定位到您的當前位置時出錯。請檢查您的裝置是否正常運作，然後再試一次。";
 "location_services_disabled_header" = "定位服務已被禁用";
 "location_services_disabled_message" = "啟用裝置設定中的定位服務";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. 點擊“隱私權”";
 "location_services_disabled_on_device_3" = "3. 選擇“定位服務”";
 "location_services_disabled_on_device_4" = "4. 開啟“定位服務”";
-"location_services_disabled_on_device_additional_message" = "或繼續使用 Organic Maps，但無法定位到您目前所在的位置";
+"location_services_disabled_on_device_additional_message" = "或繼續使用 Sampai，但無法定位到您目前所在的位置";
 "placepage_call_button" = "呼叫";
 "placepage_bookmark_name_hint" = "書籤名稱";
 "placepage_delete_bookmark_button" = "刪除書籤";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "取消記錄您最近去過的路線嗎？";
 "off_recent_track_background_button" = "禁用";
-"recent_track_background_dialog_message" = "Organic Maps 在後臺使用您的位置記錄您最近去過的路線。";
+"recent_track_background_dialog_message" = "Sampai 在後臺使用您的位置記錄您最近去過的路線。";
 "general_settings" = "一般設定";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "切換到手機以查看所有書籤";
 "speedcams_alert_title_carplay_1" = "測速照相";
 "speedcams_alert_title_carplay_2" = "超速警告";
-"download_map_carplay" = "將Organic Maps 應用程式中的地圖下載至個人裝置中";
+"download_map_carplay" = "將Sampai 應用程式中的地圖下載至個人裝置中";
 "carplay_roundabout_exit" = "第 %@ 个出口";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "放大地圖以查看等高線";
 "downloader_loading_ios" = "正在下載";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/zh-Hans/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Zh-hant:關於OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "感謝您使用我們社區構建的地圖！";
 
-/* App tip #01 */
-"app_tip_01" = "有了您的捐贈和支持，我們可以創造世界上最好的地圖！";
-
-/* App tip #02 */
-"app_tip_02" = "您喜歡我們的應用程式嗎？請捐款以支持發展！還不喜歡嗎？請告訴我們，我們會修復您提到的問題！";
-
-/* App tip #03 */
-"app_tip_03" = "如果您認識軟體開發人員，您可以要求他實現您需要的功能。";
-
 /* App tip #04 */
 "app_tip_04" = "點擊地圖上的任何位置即可選擇任何內容。長按可隱藏和顯示介面。";
 
 /* App tip #05 */
 "app_tip_05" = "您知道您可以在地圖上選擇您目前的位置嗎？";
-
-/* App tip #06 */
-"app_tip_06" = "您可以幫助將我們的應用程序翻譯成您的語言。";
-
-/* App tip #07 */
-"app_tip_07" = "我們的應用程序是由一些愛好者和社區開發的。";
 
 /* App tip #08 */
 "app_tip_08" = "您可以輕鬆修復和改進地圖數據。";
@@ -999,10 +972,10 @@
 "app_tip_09" = "我們的主要目標是構建您會喜歡的快速、注重隱私、易於使用的地圖。";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "您現在正在手機螢幕上使用 Organic Maps";
+"car_used_on_the_phone_screen" = "您現在正在手機螢幕上使用 Sampai";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "您現在正在汽車螢幕上使用 Organic Maps";
+"car_used_on_the_car_screen" = "您現在正在汽車螢幕上使用 Sampai";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "在手機上繼續";
@@ -1082,7 +1055,7 @@
 "map" = "地圖";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "您想向開發人員發送錯誤報告嗎？\n由於 Organic Maps 不會自動收集任何錯誤資訊，因此我們只能依靠用戶的協助。感謝您對 Organic Maps 的支持！";
+"bugreport_alert_message" = "您想向開發人員發送錯誤報告嗎？\n由於 Sampai 不會自動收集任何錯誤資訊，因此我們只能依靠用戶的協助。感謝您對 Sampai 的支持！";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "啟用 iCloud 同步";

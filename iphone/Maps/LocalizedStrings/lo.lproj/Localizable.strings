@@ -32,7 +32,7 @@
 "country_status_download_failed" = "ການດາວໂຫລດລົ້ມເຫຼວ";
 
 /* Text in About screen */
-"about_headline" = "ຟຣີສຳລັບທຸກຄົນ, ສ້າງດ້ວຍຄວາມຮັກ";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• ບໍ່ມີໂຄສະນາ, ບໍ່ມີການຕິດຕາມ, ບໍ່ມີການເກັບກຳຂໍ້ມູນ";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• ບໍ່ເປືອງແບັດເຕີຣີ, ໃຊ້ງານໄດ້ແບບອອບລາຍ";
 
 /* Text in About screen */
-"about_proposition_3" = "• ໄວ, ງ່າຍດາຍ, ພັດທະນາໂດຍຊຸມຊົນ";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "ປິດ";
 "download" = "ດາວໂຫລດ";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "ສະບາຍດີ!\n\nນີ້ແມ່ນບຸກມາກຂອງຂ້ອຍ; ກະລຸນາເປີດໃນ Organic Maps. ຫາກທ່ານຍັງບໍ່ໄດ້ຕິດຕັ້ງ, ສາມາດດາວໂຫລດໄດ້ທີ່ນີ້: https://omaps.app/get?kmz\n\nຂໍໃຫ້ມ່ວນກັບການເດີນທາງດ້ວຍ Organic Maps!";
+"share_bookmarks_email_body" = "ສະບາຍດີ!\n\nນີ້ແມ່ນບຸກມາກຂອງຂ້ອຍ; ກະລຸນາເປີດໃນ Sampai. ຫາກທ່ານຍັງບໍ່ໄດ້ຕິດຕັ້ງ, ສາມາດດາວໂຫລດໄດ້ທີ່ນີ້: https://sampai.my/\n\nຂໍໃຫ້ມ່ວນກັບການເດີນທາງດ້ວຍ Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "ກຳລັງໂຫລດບຸກມາກ";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "ຍັງບໍ່ທັນສາມາດລະບຸຕຳແໜ່ງຂອງທ່ານໄດ້";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "ຂ້ອຍຢູ່ທີ່ນີ້ໃນ Organic Maps";
+"share_my_position" = "ຂ້ອຍຢູ່ທີ່ນີ້ໃນ Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ ໃນ Organic Maps";
+"share_place_subject" = "%1$@ ໃນ Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "ສະຖານທີ່ໃນ Organic Maps";
+"share_place_subject_default" = "ສະຖານທີ່ໃນ Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "ເປີດໃນ Organic Maps ຫຼືໃນບຣາວເຊີ";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "ເປີດໃນ Sampai ຫຼືໃນບຣາວເຊີ";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "ຮັບ Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "ຮັບ Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "ເປີດໃນແອັບອື່ນ";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "ເວັບໄຊ";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "ຂ່າວສານ";
-
 /* Text in menu */
 "rate_the_app" = "ໃຫ້ຄະແນນແອັບ";
 
@@ -295,10 +292,10 @@
 "donate" = "ບໍລິຈາກ";
 "already_donated" = "ບໍລິຈາກແລ້ວ";
 "remind_me_later" = "ເຕືອນພາຍຫຼັງ";
-"support_organic_maps" = "ສະໜັບສະໜູນ Organic Maps";
+"support_organic_maps" = "ສະໜັບສະໜູນ Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "ລິຂະສິດ";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "ລາຍງານຂໍ້ຜິດພາດ";
@@ -393,7 +390,7 @@
 "blue_gray" = "ສີເທົາຟ້າ";
 
 /* Prints version number in About dialog */
-"version" = "ເວີຊັນ Organic Maps: %@";
+"version" = "ເວີຊັນ Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "ຮູບລັກສະນະ";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "ແຈ້ງ ຫຼື ແກ້ໄຂຂໍ້ມູນແຜນທີ່ທີ່ບໍ່ຖືກຕ້ອງ";
-
-/* Button in the About screen */
-"volunteer" = "ອາສາສະໝັກ";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "ຕິດຕາມ ແລະ ຕິດຕໍ່ພວກເຮົາ:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "ຜູ້ດຳເນີນການ: %@";
 "editor_category_unsuitable_title" = "ບໍ່ພົບໝວດໝູ່ທີ່ເໝາະສົມບໍ່?";
-"editor_category_unsuitable_text" = "Organic Maps ອະນຸຍາດໃຫ້ເພີ່ມສະເພາະໝວດໝູ່ຈຸດທີ່ງ່າຍດາຍເທົ່ານັ້ນ, ນັ້ນໝາຍຄວາມວ່າບໍ່ລວມເຖິງ ຕົວເມືອງ, ຖະໜົນ, ໜອງນ້ຳ, ຂອບເຂດອາຄານ ແລະ ອື່ນໆ. ກະລຸນາເພີ່ມໝວດໝູ່ດັ່ງກ່າວໂດຍກົງທີ່ <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. ກວດເບິ່ງ <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">ຄຳແນະນຳ</a> ຂອງພວກເຮົາສຳລັບຂັ້ນຕອນໂດຍລະອຽດ.";
+"editor_category_unsuitable_text" = "Sampai ອະນຸຍາດໃຫ້ເພີ່ມສະເພາະໝວດໝູ່ຈຸດທີ່ງ່າຍດາຍເທົ່ານັ້ນ, ນັ້ນໝາຍຄວາມວ່າບໍ່ລວມເຖິງ ຕົວເມືອງ, ຖະໜົນ, ໜອງນ້ຳ, ຂອບເຂດອາຄານ ແລະ ອື່ນໆ. ກະລຸນາເພີ່ມໝວດໝູ່ດັ່ງກ່າວໂດຍກົງທີ່ <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. ກວດເບິ່ງ <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">ຄຳແນະນຳ</a> ຂອງພວກເຮົາສຳລັບຂັ້ນຕອນໂດຍລະອຽດ.";
 "downloader_no_downloaded_maps_title" = "ທ່ານຍັງບໍ່ໄດ້ດາວໂຫລດແຜນທີ່ໃດໆ";
 "downloader_no_downloaded_maps_message" = "ດາວໂຫລດແຜນທີ່ເພື່ອຄົ້ນຫາ ແລະ ນຳທາງແບບອອບລາຍ.";
 "current_location_unknown_error_title" = "ບໍ່ຮູ້ຕຳແໜ່ງປັດຈຸບັນ.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "ທ່ານຕ້ອງການພື້ນທີ່ຈັດເກັບເພີ່ມເຕີມເພື່ອດາວໂຫຼດ. ກະລຸນາລຶບຂໍ້ມູນທີ່ບໍ່ຈຳເປັນອອກ.";
-"editor_sharing_title" = "ຂ້ອຍໄດ້ຊ່ວຍປັບປຸງແຜນທີ່ໃນ Organic Maps";
+"editor_sharing_title" = "ຂ້ອຍໄດ້ຊ່ວຍປັບປຸງແຜນທີ່ໃນ Sampai";
 "editor_detailed_description_hint" = "ຄວາມຄິດເຫັນລະອຽດ";
-"editor_detailed_description" = "ການປ່ຽນແປງທີ່ທ່ານແນະນຳຈະຖືກສົ່ງໄປຫາຊຸມຊົນ OpenStreetMap. ກະລຸນາອະທິບາຍລາຍລະອຽດເພີ່ມເຕີມທີ່ບໍ່ສາມາດແກ້ໄຂໄດ້ໃນ Organic Maps.";
+"editor_detailed_description" = "ການປ່ຽນແປງທີ່ທ່ານແນະນຳຈະຖືກສົ່ງໄປຫາຊຸມຊົນ OpenStreetMap. ກະລຸນາອະທິບາຍລາຍລະອຽດເພີ່ມເຕີມທີ່ບໍ່ສາມາດແກ້ໄຂໄດ້ໃນ Sampai.";
 "current_location_unknown_error_message" = "ເກີດຂໍ້ຜິດພາດໃນການລະບຸຕຳແໜ່ງຂອງທ່ານ. ກະລຸນາກວດສອບວ່າອຸປະກອນເຮັດງານປົກກະຕິ ແລະ ລອງໃໝ່ອີກຄັ້ງ.";
 "location_services_disabled_header" = "ບໍລິການຕຳແໜ່ງຖືກປິດຢູ່";
 "location_services_disabled_message" = "ເປີດໃຊ້ການເຂົ້າເຖິງຕຳແໜ່ງໃນການຕັ້ງຄ່າອຸປະກອນ";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. ເລືອກ ຄວາມເປັນສ່ວນຕົວ";
 "location_services_disabled_on_device_3" = "3. ເລືອກ ບໍລິການຕຳແໜ່ງ";
 "location_services_disabled_on_device_4" = "4. ເປີດ ບໍລິການຕຳແໜ່ງ";
-"location_services_disabled_on_device_additional_message" = "ຫຼື ໃຊ້ Organic Maps ຕໍ່ໄປໂດຍບໍ່ໃຊ້ຕຳແໜ່ງ";
+"location_services_disabled_on_device_additional_message" = "ຫຼື ໃຊ້ Sampai ຕໍ່ໄປໂດຍບໍ່ໃຊ້ຕຳແໜ່ງ";
 "placepage_call_button" = "ໂທ";
 "placepage_bookmark_name_hint" = "ຊື່ບຸກມາກ";
 "placepage_delete_bookmark_button" = "ລຶບບຸກມາກ";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "ປິດການບັນທຶກເສັ້ນທາງການເດີນທາງຫຼ້າສຸດຂອງທ່ານຫຼືບໍ່?";
 "off_recent_track_background_button" = "ປິດໃຊ້ງານ";
-"recent_track_background_dialog_message" = "Organic Maps ໃຊ້ຕຳແໜ່ງຂອງທ່ານໃນເບື້ອງຫຼັງເພື່ອບັນທຶກເສັ້ນທາງການເດີນທາງຫຼ້າສຸດຂອງທ່ານ.";
+"recent_track_background_dialog_message" = "Sampai ໃຊ້ຕຳແໜ່ງຂອງທ່ານໃນເບື້ອງຫຼັງເພື່ອບັນທຶກເສັ້ນທາງການເດີນທາງຫຼ້າສຸດຂອງທ່ານ.";
 "general_settings" = "ການຕັ້ງຄ່າທົ່ວໄປ";
 
 /* "traffic" as in road congestion */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "ຊູມເຂົ້າເພື່ອເບິ່ງເສັ້ນລະດັບຄວາມສູງ";
 "downloader_loading_ios" = "ກຳລັງດາວໂຫລດ";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "ຂອບໃຈທີ່ໃຊ້ແຜນທີ່ທີ່ສ້າງໂດຍຊຸມຊົນຂອງພວກເຮົາ!";
 
-/* App tip #01 */
-"app_tip_01" = "ດ້ວຍການບໍລິຈາກ ແລະ ການສະໜັບສະໜູນຂອງທ່ານ, ພວກເຮົາສາມາດສ້າງແຜນທີ່ທີ່ດີທີ່ສຸດໃນໂລກໄດ້!";
-
-/* App tip #02 */
-"app_tip_02" = "ທ່ານມັກແອັບຂອງພວກເຮົາບໍ່? ກະລຸນາບໍລິຈາກເພື່ອສະໜັບສະໜູນການພັດທະນາ! ຫາກຍັງບໍ່ມັກ? ກະລຸນາບອກໃຫ້ພວກເຮົາຮູ້ເຫດຜົນ, ແລ້ວພວກເຮົາຈະແກ້ໄຂໃຫ້!";
-
-/* App tip #03 */
-"app_tip_03" = "ຫາກທ່ານຮູ້ຈັກນັກພັດທະນາຊອບແວ, ທ່ານສາມາດຂໍໃຫ້ລາວຊ່ວຍພັດທະນາຟີເຈີທີ່ທ່ານຕ້ອງການໄດ້.";
-
 /* App tip #04 */
 "app_tip_04" = "ແຕະບ່ອນໃດກໍໄດ້ໃນແຜນທີ່ເພື່ອເລືອກສິ່ງຕ່າງໆ. ການແຕະຄ້າງແມ່ນໃຊ້ເພື່ອເຊື່ອງ ແລະ ສະແດງອິນເຕີເຟດ.";
 
 /* App tip #05 */
 "app_tip_05" = "ທ່ານຮູ້ບໍ່ວ່າຕຳແໜ່ງປັດຈຸບັນຂອງທ່ານໃນແຜນທີ່ສາມາດຖືກເລືອກໄດ້?";
-
-/* App tip #06 */
-"app_tip_06" = "ທ່ານສາມາດຊ່ວຍແປແອັບຂອງພວກເຮົາເປັນພາສາຂອງທ່ານໄດ້.";
-
-/* App tip #07 */
-"app_tip_07" = "ແອັບຂອງພວກເຮົາຖືກພັດທະນາໂດຍຜູ້ມີໃຈຮັກພຽງບໍ່ເທົ່າໃດຄົນ ແລະ ຊຸມຊົນ.";
 
 /* App tip #08 */
 "app_tip_08" = "ທ່ານສາມາດແກ້ໄຂ ແລະ ປັບປຸງຂໍ້ມູນແຜນທີ່ໄດ້ຢ່າງງ່າຍດາຍ.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "ເປົ້າໝາຍຫຼັກຂອງພວກເຮົາແມ່ນເພື່ອສ້າງແຜນທີ່ທີ່ໄວ, ເນັ້ນຄວາມເປັນສ່ວນຕົວ, ແລະ ໃຊ້ງານງ່າຍທີ່ທ່ານຈະມັກ.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "ຕອນນີ້ທ່ານກຳລັງໃຊ້ Organic Maps ໃນໜ້າຈໍໂທລະສັບ";
+"car_used_on_the_phone_screen" = "ຕອນນີ້ທ່ານກຳລັງໃຊ້ Sampai ໃນໜ້າຈໍໂທລະສັບ";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "ຕອນນີ້ທ່ານກຳລັງໃຊ້ Organic Maps ໃນໜ້າຈໍລົດ";
+"car_used_on_the_car_screen" = "ຕອນນີ້ທ່ານກຳລັງໃຊ້ Sampai ໃນໜ້າຈໍລົດ";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "ຕໍ່ໄປໃນໂທລະສັບ";
@@ -1082,7 +1055,7 @@
 "map" = "ແຜນທີ່";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "ທ່ານຕ້ອງການສົ່ງລາຍງານບັນຫາໃຫ້ກັບນັກພັດທະນາຫຼືບໍ່?\nເນື່ອງຈາກ Organic Maps ບໍ່ໄດ້ເກັບກຳຂໍ້ມູນຂໍ້ຜິດພາດໂດຍອັດຕະໂນມັດ ພວກເຮົາຈຶ່ງຕ້ອງອາໄສຂໍ້ມູນຈາກຜູ້ໃຊ້. ຂອບໃຈລ່ວງໜ້າທີ່ສະໜັບສະໜູນ Organic Maps!";
+"bugreport_alert_message" = "ທ່ານຕ້ອງການສົ່ງລາຍງານບັນຫາໃຫ້ກັບນັກພັດທະນາຫຼືບໍ່?\nເນື່ອງຈາກ Sampai ບໍ່ໄດ້ເກັບກຳຂໍ້ມູນຂໍ້ຜິດພາດໂດຍອັດຕະໂນມັດ ພວກເຮົາຈຶ່ງຕ້ອງອາໄສຂໍ້ມູນຈາກຜູ້ໃຊ້. ຂອບໃຈລ່ວງໜ້າທີ່ສະໜັບສະໜູນ Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "ເປີດໃຊ້ການຊິງໂຄໄນຊ໌ກັບ iCloud";

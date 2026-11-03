@@ -89,7 +89,7 @@
     <string name="downloader_loading_ios">ກຳລັງດາວໂຫລດ</string>
     <string name="download_map_title">ດາວໂຫລດແຜນທີ່ພາບລວມຂອງໂລກ</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps ໃນ Android Auto ຕ້ອງການການອະນຸຍາດຕຳແໜ່ງທີ່ຕັ້ງເພື່ອໃຫ້ເຮັດວຽກໄດ້ຢ່າງມີປະສິດທິພາບ</string>
+    <string name="aa_request_permission_activity_text">Sampai ໃນ Android Auto ຕ້ອງການການອະນຸຍາດຕຳແໜ່ງທີ່ຕັ້ງເພື່ອໃຫ້ເຮັດວຽກໄດ້ຢ່າງມີປະສິດທິພາບ</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">ໃຫ້ການອະນຸຍາດ</string>
 </resources>

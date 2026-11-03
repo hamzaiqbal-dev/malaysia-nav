@@ -35,24 +35,24 @@
     <string name="country_status_download_failed">Muat turun gagal</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Cuba Lagi</string>
-    <string name="about_menu_title">Perihal Organic Maps</string>
+    <string name="about_menu_title">Perihal Sampai</string>
     <!-- Text in About screen -->
-    <string name="about_headline">Percuma untuk semua, dibina dengan sepenuh hati</string>
+    <string name="about_headline">Dibina di Malaysia, untuk rakyat Malaysia</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Tiada iklan, tiada penjejakan, tiada pengumpulan data</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Tidak menghabiskan bateri, berfungsi luar talian</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_3">• Pantas, ringkas, dibangunkan oleh komuniti</string>
+    <string name="about_proposition_3">• Pantas, ringkas, Bahasa Melayu diutamakan</string>
     <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplikasi sumber terbuka yang dibina oleh peminat dan sukarelawan.</string>
+    <string name="about_developed_by_enthusiasts">Navigasi untuk setiap jalan di Malaysia, dari Lembah Klang hingga ke Sabah dan Sarawak.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Tetapan lokasi</string>
     <string name="close">Tutup</string>
     <string name="unsupported_phone">Aplikasi ini memerlukan OpenGL berpecutan perkakasan. Malangnya peranti anda tidak disokong.</string>
     <string name="download">Muat turun</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Sila cabut kabel USB atau masukkan kad memori untuk menggunakan Organic Maps</string>
+    <string name="disconnect_usb_cable">Sila cabut kabel USB atau masukkan kad memori untuk menggunakan Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Sila kosongkan sedikit ruang pada kad SD/storan USB dahulu untuk menggunakan aplikasi ini</string>
     <string name="download_resources">Sebelum anda mula menggunakan aplikasi ini, sila muat turun peta gambaran dunia ke peranti anda.\nIa menggunakan %s storan.</string>
@@ -151,8 +151,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Nota</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Tanda buku Organic Maps telah dikongsi dengan anda</string>
-    <string name="share_bookmarks_email_body">Hai!\n\nDilampirkan tanda buku saya; sila buka dalam Organic Maps. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://omaps.app/get?kmz\n\nSelamat mengembara dengan Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Tanda buku Sampai telah dikongsi dengan anda</string>
+    <string name="share_bookmarks_email_body">Hai!\n\nDilampirkan tanda buku saya; sila buka dalam Sampai. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://sampai.my/\n\nSelamat mengembara dengan Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Memuatkan Tanda Buku</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +161,7 @@
     <string name="load_kmz_failed">Gagal memuatkan tanda buku. Fail mungkin rosak atau tidak sah.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Jenis fail ini tidak dikenali oleh aplikasi:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Gagal membuka fail %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Sunting</string>
@@ -174,9 +174,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Kongsi</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s pada Organic Maps</string>
+    <string name="share_place_subject">%1$s pada Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Satu tempat pada Organic Maps</string>
+    <string name="share_place_subject_default">Satu tempat pada Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mel</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +248,6 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Laman web</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Berita</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Maklum balas</string>
     <!-- Text in menu -->
@@ -258,15 +256,11 @@
     <string name="help">Bantuan</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Soalan Lazim</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Menderma</string>
     <string name="already_donated">Sudah menderma</string>
     <string name="remind_me_later">Ingatkan kemudian</string>
-    <string name="support_organic_maps">Sokong Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Sokong projek ini</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Hak cipta</string>
+    <string name="support_organic_maps">Sokong Sampai</string>
+    <!-- Button in the main Help dialog; opens the list of open-source components and their licences -->
+    <string name="open_source_licences">Lesen sumber terbuka</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Lapor pepijat</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +310,6 @@
     <string name="pref_appearance_dark">Gelap</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Terang dari subuh hingga senja</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Hadiahkan peta percuma tanpa iklan kepada berjuta-juta pengguna!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Semasa mengikut laluan, sila ingat:</string>
@@ -445,7 +437,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Data OpenStreetMap yang dibina oleh komuniti setakat %s. Ketahui lebih lanjut cara menyunting dan mengemas kini peta di OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ialah projek komuniti untuk membina peta yang bebas dan terbuka. Ia sumber utama data peta dalam Organic Maps dan berfungsi seperti Wikipedia. Anda boleh menambah atau menyunting tempat dan ia menjadi tersedia kepada berjuta-juta pengguna di seluruh dunia.\nSertai komuniti dan bantu membina peta yang lebih baik untuk semua!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ialah projek komuniti untuk membina peta yang bebas dan terbuka. Ia sumber utama data peta dalam Sampai dan berfungsi seperti Wikipedia. Anda boleh menambah atau menyunting tempat dan ia menjadi tersedia kepada berjuta-juta pengguna di seluruh dunia.\nSertai komuniti dan bantu membina peta yang lebih baik untuk semua!</string>
     <string name="login_to_make_edits_visible">Buat akaun OpenStreetMap atau masuk untuk menerbitkan suntingan peta anda kepada dunia.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d daripada %2$d</string>
@@ -460,7 +452,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Nota kepada sukarelawan OpenStreetMap (pilihan)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Terangkan kesilapan pada peta atau perkara yang tidak boleh disunting dengan Organic Maps</string>
+    <string name="editor_note_hint">Terangkan kesilapan pada peta atau perkara yang tidak boleh disunting dengan Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Suntingan anda dimuat naik ke pangkalan data <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> yang terbuka kepada umum. Sila jangan tambah maklumat peribadi atau berhak cipta.</string>
     <string name="editor_more_about_osm">Lanjut tentang OpenStreetMap</string>
@@ -470,7 +462,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Pengendali: %s</string>
     <string name="editor_category_unsuitable_title">Tidak menemui kategori yang sesuai?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps hanya membenarkan penambahan kategori titik yang ringkas, bermaksud tiada bandar, jalan, tasik, garis bangunan dan sebagainya. Sila tambah kategori sedemikian terus ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lihat <a href="https://organicmaps.app/faq/editing/advanced-map-editing">panduan</a> kami untuk arahan langkah demi langkah.</string>
+    <string name="editor_category_unsuitable_text">Sampai hanya membenarkan penambahan kategori titik yang ringkas, bermaksud tiada bandar, jalan, tasik, garis bangunan dan sebagainya. Sila tambah kategori sedemikian terus ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lihat <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">panduan</a> kami untuk arahan langkah demi langkah.</string>
     <string name="downloader_no_downloaded_maps_title">Anda belum memuat turun sebarang peta</string>
     <string name="downloader_no_downloaded_maps_message">Muat turun peta untuk mencari dan bernavigasi luar talian.</string>
     <string name="current_location_unknown_error_title">Lokasi sekarang tidak diketahui.</string>
@@ -542,7 +534,7 @@
     <string name="placepage_add_stop">Tambah Perhentian</string>
     <string name="drag_to_reorder">Susun semula</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Sila masuk ke OpenStreetMap untuk memuat naik semua suntingan peta anda secara automatik. Ketahui lebih lanjut <a href="https://github.com/organicmaps/organicmaps/issues/6144">di sini</a>.</string>
+    <string name="alert_reauth_message">Sila masuk ke OpenStreetMap untuk memuat naik semua suntingan peta anda secara automatik.</string>
     <string name="dialog_error_storage_title">Masalah akses storan</string>
     <string name="dialog_error_storage_message">Storan luaran tidak boleh diakses. Kad SD mungkin telah dicabut, rosak, atau sistem failnya baca sahaja. Sila periksa kad SD anda atau hubungi kami di support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Tiru storan yang rosak</string>
@@ -746,28 +738,18 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Terima kasih kerana menggunakan peta yang dibina oleh komuniti kami!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Dengan derma dan sokongan anda, kami boleh membina peta terbaik di dunia!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Sukakan aplikasi kami? Sila menderma untuk menyokong pembangunannya! Belum suka? Beritahu kami sebabnya dan kami akan perbaikinya!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Jika anda mengenali pembangun perisian, anda boleh memintanya membina ciri yang anda perlukan.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Ketik di mana-mana pada peta untuk memilih sesuatu. Ketik lama untuk menyembunyikan dan menunjukkan antara muka.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Tahukah anda lokasi anda sekarang pada peta juga boleh dipilih?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Anda boleh membantu menterjemah aplikasi kami ke dalam bahasa anda.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Aplikasi kami dibangunkan oleh beberapa peminat dan komuniti.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Anda boleh membetulkan dan menambah baik data peta dengan mudah.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Matlamat utama kami ialah membina peta yang pantas, menjaga privasi dan mudah digunakan yang anda akan sukai.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Anda kini menggunakan Organic Maps pada skrin telefon</string>
+    <string name="car_used_on_the_phone_screen">Anda kini menggunakan Sampai pada skrin telefon</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Anda kini menggunakan Organic Maps pada skrin kereta</string>
+    <string name="car_used_on_the_car_screen">Anda kini menggunakan Sampai pada skrin kereta</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Anda bersambung ke Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -775,7 +757,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Ke skrin kereta</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps memerlukan akses lokasi. Apabila selamat, periksa pemberitahuan pada telefon anda.</string>
+    <string name="aa_location_permissions_request">Sampai memerlukan akses lokasi. Apabila selamat, periksa pemberitahuan pada telefon anda.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Aplikasi ini memerlukan kebenaran anda</string>
     <!-- Grant Permissions button. -->

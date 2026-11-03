@@ -32,7 +32,7 @@
 "country_status_download_failed" = "It-tniżżil falla";
 
 /* Text in About screen */
-"about_headline" = "B' xejn għal kulħadd, magħmul bl-imħabba";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Bla reklami, bla traċċar, bla kollezjoni ta' data";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Bla ħela ta' batterija, jaħdem offline";
 
 /* Text in About screen */
-"about_proposition_3" = "• Malajr, minimalista, żvillupat mill-komunità";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Ġħalaq";
 "download" = "Niżżel";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Organic Maps. Jekk mhuwiex installat tista tniżżlu min hawn: https://omaps.app/get?kmz\n\nĦu pjaċir ivvjaġġa ġo Organic Maps!";
+"share_bookmarks_email_body" = "Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Sampai. Jekk mhuwiex installat tista tniżżlu min hawn: https://sampai.my/\n\nĦu pjaċir ivvjaġġa ġo Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Tgħobijja tal-bookmarks";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Il-lokażżjoni tiegħek mhuwiex determinat s'issa";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Jien hawn fuq Organic Maps";
+"share_my_position" = "Jien hawn fuq Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ fuq Organic Maps";
+"share_place_subject" = "%1$@ fuq Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Post fuq Organic Maps";
+"share_place_subject_default" = "Post fuq Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Iftaħ f'Organic Maps jew fil-browser";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Iftaħ f'Sampai jew fil-browser";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Ikseb Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Ikseb Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Iftaħ f’ Applikazzjoni Oħra";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Websajt";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Aħbarijiet";
-
 /* Text in menu */
 "rate_the_app" = "Għati rata lill-app";
 
@@ -295,10 +292,10 @@
 "donate" = "Donazzjoni";
 "already_donated" = "Ġa mogħtija id-donazzjoni";
 "remind_me_later" = "Fakkar aktar tard";
-"support_organic_maps" = "Appoġġja lill-Organic Maps";
+"support_organic_maps" = "Appoġġja lill-Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Drittijiet tal-awtur";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Irrapporta problemi bl-app";
@@ -393,7 +390,7 @@
 "blue_gray" = "Blu Griż";
 
 /* Prints version number in About dialog */
-"version" = "Verżjoni ta' Organic Maps: %@";
+"version" = "Verżjoni ta' Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Dehra";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Irrapporta jew sewwi informazzjoni żbaljata tal-mappa";
-
-/* Button in the About screen */
-"volunteer" = "Voluntier";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Segwi u kkuntattjana:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operatur: %@";
 "editor_category_unsuitable_title" = "Ma tistax isib kategorija adattata?";
-"editor_category_unsuitable_text" = "Organic Maps jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Iċċekkja l-<a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">gwida</a> tagħna għal struzzjonijiet dettaljati.";
+"editor_category_unsuitable_text" = "Sampai jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Iċċekkja l-<a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">gwida</a> tagħna għal struzzjonijiet dettaljati.";
 "downloader_no_downloaded_maps_title" = "Ma niżżilt l-ebda mapep";
 "downloader_no_downloaded_maps_message" = "Niżżel mapep biex tfittex u tinnaviga mingħajr l-użu tal-Internet.";
 "current_location_unknown_error_title" = "Il-post attwali mhux magħruf.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Biex tniżżel, għandek bżonn aktar spazju. Jekk jogħġbok ħassar kwalunkwe data mhux meħtieġa.";
-"editor_sharing_title" = "Ittejjibt il-mappijiet tal-Organic Maps";
+"editor_sharing_title" = "Ittejjibt il-mappijiet tal-Sampai";
 "editor_detailed_description_hint" = "Kumment dettaljat";
-"editor_detailed_description" = "Il-bidliet fil-mappa li ssuġġerejt se jintbagħtu lill-komunità ta' OpenStreetMap. Jekk jogħġbok, iddeskrivi kwalunkwe dettalji addizzjonali li ma jistgħux jiġu editjati f'Organic Maps.";
+"editor_detailed_description" = "Il-bidliet fil-mappa li ssuġġerejt se jintbagħtu lill-komunità ta' OpenStreetMap. Jekk jogħġbok, iddeskrivi kwalunkwe dettalji addizzjonali li ma jistgħux jiġu editjati f'Sampai.";
 "current_location_unknown_error_message" = "Seħħ żball waqt id-determinazzjoni tal-post tiegħek. Iċċekkja li t-tagħmir tiegħek qed jaħdem kif suppost u ipprova mill-ġdid aktar tard.";
 "location_services_disabled_header" = "Is-servizzi tal-lokazzjoni huma diżattivati";
 "location_services_disabled_message" = "Ippermetti l-aċċess għall-ġeolokazzjoni fl-issettjarijiet tal-apparat";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Agħżel Privatità";
 "location_services_disabled_on_device_3" = "3. Agħżel Servizzi tal-Post";
 "location_services_disabled_on_device_4" = "4. Ixgħel is-Servizzi tal-Post";
-"location_services_disabled_on_device_additional_message" = "Jew kompli tuża Organic Maps mingħajr il-pożizzjoni";
+"location_services_disabled_on_device_additional_message" = "Jew kompli tuża Sampai mingħajr il-pożizzjoni";
 "placepage_call_button" = "Sejħa";
 "placepage_bookmark_name_hint" = "Isem tal-marka tal-paġna";
 "placepage_delete_bookmark_button" = "Ħassar il-marka tal-paġna";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Tiddiżattiva r-reġistrazzjoni tar-rotta li għadek kemm għaddejtha?";
 "off_recent_track_background_button" = "Diżattiva";
-"recent_track_background_dialog_message" = "Organic Maps tuża l-lokazzjoni tiegħek fil-isfond biex tirreġistra r-rotta li għadek kemm għaddejt minnha.";
+"recent_track_background_dialog_message" = "Sampai tuża l-lokazzjoni tiegħek fil-isfond biex tirreġistra r-rotta li għadek kemm għaddejt minnha.";
 "general_settings" = "Is-settings ġenerali";
 
 /* "traffic" as in road congestion */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Iżżumja ’l ġewwa biex tesplora l-isolines";
 "downloader_loading_ios" = "Tniżżil";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Grazzi talli użajtu l-mapep tagħna mibnija mill-komunita’!";
 
-/* App tip #01 */
-"app_tip_01" = "Bid-donazzjonijiet u l-appoġġ tiegħek, nistgħu noħolqu l-aqwa mapep fid-dinja!";
-
-/* App tip #02 */
-"app_tip_02" = "Togħġbok l-app tagħna? Jekk jogħġbok agħti donazzjoni biex tappoġġja l-iżvilupp! Għadha ma togħġbokx? Jekk jogħġbok għidilna għaliex, u nirranġawha!";
-
-/* App tip #03 */
-"app_tip_03" = "Jekk taf żviluppatur tas-softwer, tista’ titolbu jimplimenta il-karatteristika li għandek bżonn.";
-
 /* App tip #04 */
 "app_tip_04" = "Għafas kullimkien fuq il-mappa biex tagħżel xi ħaġa. Tgħafisa twila tista' tintuża biex taħbi u turi l-interface.";
 
 /* App tip #05 */
 "app_tip_05" = "Kont taf li l-post attwali tiegħek fuq il-mappa jista’ jintgħażel?";
-
-/* App tip #06 */
-"app_tip_06" = "Tista’ tgħin sabiex tittraduċi l-applikazzjoni tagħna fil-lingwa tiegħek.";
-
-/* App tip #07 */
-"app_tip_07" = "L-app tagħna hija żviluppata minn ftit dilettanti u l-komunita’.";
 
 /* App tip #08 */
 "app_tip_08" = "Tista’ faċilment tirranġa u ttejjeb l-informazzjoni tal-mappa.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "L-għan ewlieni tagħna huwa li nibnu mapep veloċi, iffukati fuq il-privatezza, u faċli biex jintużaw li se jinħabbu.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Issa qed tuża Organic Maps fuq l-iskrin tat-telefown";
+"car_used_on_the_phone_screen" = "Issa qed tuża Sampai fuq l-iskrin tat-telefown";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Issa qed tuża Organic Maps fuq l-iskrin tal-karozza";
+"car_used_on_the_car_screen" = "Issa qed tuża Sampai fuq l-iskrin tal-karozza";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Kompli fuq il-mowbajl";
@@ -1082,7 +1055,7 @@
 "map" = "Mappa";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Tixtieq tibgħat rapport ta' żball lill-iżviluppaturi?\nAħna niddependu fuq l-utenti tagħna għax Organic Maps ma jiġborx awtomatikament l-ebda informazzjoni dwar żbalji. Grazzi minn qabel talli tappoġġja Organic Maps!";
+"bugreport_alert_message" = "Tixtieq tibgħat rapport ta' żball lill-iżviluppaturi?\nAħna niddependu fuq l-utenti tagħna għax Sampai ma jiġborx awtomatikament l-ebda informazzjoni dwar żbalji. Grazzi minn qabel talli tappoġġja Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Iattiva s-sinkronizzazzjoni tal-iCloud";

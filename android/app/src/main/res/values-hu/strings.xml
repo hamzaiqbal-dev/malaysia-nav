@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Sikertelen letöltés</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Újrapróbálkozás</string>
-    <string name="about_menu_title">Az Organic Maps névjegye</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Mindenki számára ingyenes – szeretettel készült</string>
+    <string name="about_menu_title">A Sampai névjegye</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Nincs hirdetés, nyomon követés és adatgyűjtés</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Nem merül le az akkumulátor – offline is működik</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Gyors, minimalista – a közösség által fejlesztett</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">A rajongók és az önkéntesek által létrehozott nyílt forráskódú alkalmazás.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Helymeghatározási beállítások</string>
     <string name="close">Bezárás</string>
     <string name="unsupported_phone">Hardveres gyorsítású OpenGL szükséges. Sajnos az Ön eszköze nem támogatott.</string>
     <string name="download">Letöltés</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Bontsa az USB-kapcsolatot vagy helyezzen be egy memóriakártyát az Organic Maps használatához</string>
+    <string name="disconnect_usb_cable">Bontsa az USB-kapcsolatot vagy helyezzen be egy memóriakártyát a Sampai használatához</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Az alkalmazás használatához először szabadítson fel némi helyet az SD-kártyán/USB-tárolón</string>
     <string name="download_resources">Mielőtt elkezdené használni az alkalmazást, töltse le az áttekintő világtérképet az eszközére. \nEz %s tárhelyet fog igénybe venni.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Jegyzetek</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Egy Organic Maps könyvjelzőt osztottak meg Önnel</string>
-    <string name="share_bookmarks_email_body">Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az Organic Maps alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://omaps.app/get?kmz\n\nJó utat kívánok az Organic Maps alkalmazással!</string>
+    <string name="share_bookmarks_email_subject">Egy Sampai könyvjelzőt osztottak meg Önnel</string>
+    <string name="share_bookmarks_email_body">Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket a Sampai alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://sampai.my/\n\nJó utat kívánok a Sampai alkalmazással!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Könyvjelzők betöltése</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Nem sikerült betölteni a könyvjelzőket. A fájl sérült vagy hibás lehet.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Az alkalmazás nem ismeri fel a következő fájltípust:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Nem sikerült megnyitni a(z) %1$s fájlt\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Szerkesztés</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Megosztás</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s az Organic Mapsben</string>
+    <string name="share_place_subject">%1$s a Sampaiben</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Egy hely az Organic Mapsben</string>
+    <string name="share_place_subject_default">Egy hely a Sampaiben</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mail-cím</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menü</string>
     <!-- Text in menu -->
     <string name="website">Honlap</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Hírek</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Visszajelzés</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Súgó</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">GYIK</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Adományozás</string>
     <string name="already_donated">Már adományozott</string>
     <string name="remind_me_later">Emlékeztessen később</string>
-    <string name="support_organic_maps">Támogassa az Organic Maps-et</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Támogatás</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Szerzői jogok</string>
+    <string name="support_organic_maps">Támogassa a Sampai-et</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Hibajelentés</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Sötét</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Világos hajnaltól alkonyatig</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Ajándékozzon ingyenes, hirdetésmentes térképeket felhasználók millióinak!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Az útvonal követése során vegye figyelembe az alábbiakat:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">A közösségi OpenStreetMap adatok frissítésének időpontja: %s. Tudjon meg többet a térkép szerkesztéséről és frissítéséről az OpenStreetMap.org oldalon</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">Az OpenStreetMap.org (OSM) egy közösségi projekt, amelynek célja egy ingyenes és nyílt térkép létrehozása. Ez az Organic Maps alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé. \nCsatlakozzon a közösséghez, és segítsen egy jobb térképet készíteni mindenki számára!</string>
+    <string name="login_osm_presentation">Az OpenStreetMap.org (OSM) egy közösségi projekt, amelynek célja egy ingyenes és nyílt térkép létrehozása. Ez a Sampai alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé. \nCsatlakozzon a közösséghez, és segítsen egy jobb térképet készíteni mindenki számára!</string>
     <string name="login_to_make_edits_visible">Hozzon létre egy fiókot az OpenStreetMapen, vagy jelentkezzen be, hogy közzétehesse térképszerkesztéseit a világ számára.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d / %2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Megjegyzés az OpenStreetMap közreműködőinek (nem kötelező)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Írja le a térképen található hibákat vagy olyan dolgokat, amelyeket nem lehet az Organic Maps segítségével szerkeszteni</string>
+    <string name="editor_note_hint">Írja le a térképen található hibákat vagy olyan dolgokat, amelyeket nem lehet a Sampai segítségével szerkeszteni</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">A szerkesztései feltöltődnek a nyilvános <a href="https://wiki.openstreetmap.org/wiki/Hu:Névjegy">OpenStreetMap</a> adatbázisba. Ne adjon hozzá személyes vagy szerzői jogvédelem alatt álló információkat.</string>
     <string name="editor_more_about_osm">További részletek az OpenStreetMap adatbázisról</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Üzemeltető: %s</string>
     <string name="editor_category_unsuitable_title">Nem találja a megfelelő kategóriát?</string>
-    <string name="editor_category_unsuitable_text">Az Organic Maps csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href="https://organicmaps.app/faq/editing/advanced-map-editing">útmutatónkat</a>.</string>
+    <string name="editor_category_unsuitable_text">A Sampai csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">útmutatónkat</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Még nem töltött le térképet</string>
     <string name="downloader_no_downloaded_maps_message">Térképek letöltése az offline kereséshez és navigáláshoz.</string>
     <string name="current_location_unknown_error_title">A jelenlegi tartózkodási hely ismeretlen.</string>
@@ -530,7 +514,7 @@
     <string name="enable_logging">Naplózás engedélyezése</string>
     <!-- Settings: "Send general feedback" button -->
     <string name="feedback_general">Általános visszajelzés</string>
-    <string name="prefs_languages_information">Az Organic Maps TTS-rendszert használ a hangnavigációhoz. Sok androidos eszköz használja a Google TTS-t; töltse le vagy frissítse a Google Play áruházból</string>
+    <string name="prefs_languages_information">A Sampai TTS-rendszert használ a hangnavigációhoz. Sok androidos eszköz használja a Google TTS-t; töltse le vagy frissítse a Google Play áruházból</string>
     <string name="prefs_languages_information_off">Egyes nyelveknél másik beszédszintetizátort vagy további nyelvi csomagot kell telepítenie az alkalmazás-áruházból (Google Play, Galaxy Store, App Gallery, FDroid). \nNyissa meg az eszköz beállításait → Nyelv és bevitel → Beszéd → Szöveg-beszéd átalakító kimenet. \nItt kezelheti a beszédszintézis beállításokat (például: nyelvi csomag letöltése a kapcsolat nélküli használathoz) és másik szövegfelolvasót jelölhet ki.</string>
     <string name="prefs_languages_information_off_link">További tájékoztatást találhat még ebben az útmutatóban.</string>
     <string name="transliteration_title">Átírás latin betűkre</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Új megálló</string>
     <string name="drag_to_reorder">Átsorolás</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Jelentkezzen be az OpenStreetMap rendszerébe, hogy automatikusan feltölthesse az összes térképszerkesztését. További információ <a href="https://github.com/organicmaps/organicmaps/issues/6144">itt</a>.</string>
+    <string name="alert_reauth_message">Jelentkezzen be az OpenStreetMap rendszerébe, hogy automatikusan feltölthesse az összes térképszerkesztését.</string>
     <string name="dialog_error_storage_title">Tárhelyhozzáférési probléma</string>
     <string name="dialog_error_storage_message">Külső tárhely nem áll rendelkezésre, valószínűleg az SD-kártyát eltávolították vagy sérült, vagy rendszerfájl csak olvasható. Ellenőrizze, és lépjen kapcsolatba velünk a support\@sampai.my címen</string>
     <string name="setting_emulate_bad_storage">Sérült tároló emulálása</string>
@@ -757,38 +741,24 @@
     <string name="change_map_locale">Térkép nyelve</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Térképadatok az OpenStreetMap adatbázisából</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/hu/faq/voice/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/hu/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Hu:Névjegy</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Köszönjük, hogy használja a közösség által készített térképeinket!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Adományaival és támogatásával létrehozhatjuk a világ legjobb térképes alkalmazását!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Tetszik az alkalmazásunk? Adományozzon, hogy támogassa a fejlesztést! – Mégsem tetszik? Jelezze felénk, hogy miért nem, és mi kijavítjuk!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Ha ismer egy szoftverfejlesztőt, megkérheti őt egy olyan funkció megvalósítására, amelyre szüksége van.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Koppintson a térképen bárhová, hogy bármit kiválaszthasson. Hosszú koppintással elrejtheti és visszahozhatja a felületet.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Tudja, hogy kijelölheti pozícióját a térképen?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Segítsen lefordítani az alkalmazást az Ön nyelvére.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Ezt az alkalmazást néhány lelkes közreműködő és a közösség fejleszti.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Könnyedén javíthatja a térképadatokat.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">A fő célunk az, hogy gyors, az adatvédelemre fókuszáló, könnyen használható térképeket készítsünk, amelyeket szeretni fog.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Ön most az Organic Maps alkalmazást használja az eszköz képernyőjén</string>
+    <string name="car_used_on_the_phone_screen">Ön most a Sampai alkalmazást használja az eszköz képernyőjén</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Ön most az Organic Maps alkalmazást használja az autó képernyőjén</string>
+    <string name="car_used_on_the_car_screen">Ön most a Sampai alkalmazást használja az autó képernyőjén</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Ön kapcsolódik az Android Auto rendszerhez</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -796,7 +766,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Az autó képernyőjére</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Az Organic Maps alkalmazásnak szüksége van a helymeghatározáshoz való hozzáférésre. Ha biztonságos, ellenőrizze az értesítést az eszközén.</string>
+    <string name="aa_location_permissions_request">A Sampai alkalmazásnak szüksége van a helymeghatározáshoz való hozzáférésre. Ha biztonságos, ellenőrizze az értesítést az eszközén.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Ennek az alkalmazásnak szüksége van az Ön engedélyére</string>
     <!-- Grant Permissions button. -->
