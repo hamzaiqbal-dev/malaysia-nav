@@ -94,8 +94,8 @@ jobs:
       - name: Upload beta apk to GitHub artifacts
         uses: actions/upload-artifact@v7
         with:
-          name: OrganicMaps-${{ env.ANDROID_CODE }}-google-beta.apk
-          path: android/app/build/outputs/apk/google/beta/OrganicMaps-${{ env.ANDROID_CODE }}-google-beta.apk
+          name: Sampai-${{ env.ANDROID_CODE }}-google-beta.apk
+          path: android/app/build/outputs/apk/google/beta/Sampai-${{ env.ANDROID_CODE }}-google-beta.apk
           if-no-files-found: error
 
       - name: Upload beta debug symbols to GitHub artifacts
