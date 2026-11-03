@@ -3,7 +3,7 @@ import WebKit
 final class PlacePageUserDescriptionWebView: UIView {
   private enum Constants {
     static let previewHeight: CGFloat = 70
-    static let baseURL = URL(string: "https://organicmaps.app")
+    static let baseURL = URL(string: AppConstants.openStreetMapURL)
     static let contentHeightRatioScript = """
     (() => {
       const root = document.documentElement;
