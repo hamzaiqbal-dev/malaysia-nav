@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the Sampai launcher PNGs and store graphics from the Android vector drawables.
+"""Render the Sampai launcher PNGs, store graphics and iOS and desktop icons from the Android vector drawables.
 
 Run from the repo root after changing android/libs/branding/src/*/res/drawable/ic_launcher_*.xml:
 
@@ -13,6 +13,7 @@ PNGs can never drift from the vectors.
 import io
 import os
 import re
+import struct
 import xml.etree.ElementTree as ET
 
 import cairosvg
@@ -22,6 +23,10 @@ ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', '..'))
 BRANDING = os.path.join(ROOT, 'android', 'libs', 'branding', 'src')
 LISTING = os.path.join(ROOT, 'android', 'app', 'src', 'fdroid', 'play', 'listings', 'en-US', 'graphics')
 OUT = os.path.dirname(os.path.abspath(__file__))
+
+IOS_ASSETS = os.path.join(ROOT, 'iphone', 'Maps', 'Resources', 'Images.xcassets')
+IOS_WIDGET_ASSETS = os.path.join(ROOT, 'iphone', 'Maps', 'OMapsWidgetExtension', 'Assets.xcassets')
+QT_RES = os.path.join(ROOT, 'qt', 'res')
 
 ANDROID = '{http://schemas.android.com/apk/res/android}'
 DENSITIES = {'mdpi': 1, 'hdpi': 1.5, 'xhdpi': 2, 'xxhdpi': 3, 'xxxhdpi': 4}
@@ -114,6 +119,49 @@ def feature_graphic(full):
   return img.convert('RGB')
 
 
+def write_icns(path, icon):
+  """PNG-only .icns: the type codes for 128, 256, 512 and 1024 px."""
+  chunks = b''
+  for code, size in ((b'ic07', 128), (b'ic08', 256), (b'ic09', 512), (b'ic10', 1024)):
+    data = io.BytesIO()
+    icon.resize((size, size), Image.LANCZOS).save(data, 'PNG', optimize=True)
+    chunks += code + struct.pack('>I', len(data.getvalue()) + 8) + data.getvalue()
+  with open(path, 'wb') as out:
+    out.write(b'icns' + struct.pack('>I', len(chunks) + 8) + chunks)
+
+
+def centered(full):
+  """Square crop that centres the mark, which sits right of and above the middle of the adaptive canvas."""
+  big = full.size[0]
+  scale = big / 108
+  # The art spans x 30..82 and y 18..80.5, so its centre is about (56, 49).
+  return full.crop((round(16 * scale), round(9 * scale), round(96 * scale), round(89 * scale)))
+
+
+def write_apple_and_desktop(main_full, beta_full, debug_full):
+  drawable = os.path.join(BRANDING, 'main', 'res', 'drawable')
+  size = 1024
+  app_icon = os.path.join(IOS_ASSETS, 'AppIcon.appiconset')
+  bare = render(vector_to_svg(os.path.join(drawable, 'ic_launcher_foreground.xml')), main_full.size[0])
+  mono = render(vector_to_svg(os.path.join(drawable, 'ic_launcher_monochrome.xml')), main_full.size[0])
+  centered(main_full).resize((size, size), Image.LANCZOS).save(os.path.join(app_icon, '1024.png'), optimize=True)
+  centered(bare).resize((size, size), Image.LANCZOS).save(os.path.join(app_icon, 'appicon_dark.png'), optimize=True)
+  centered(mono).resize((size, size), Image.LANCZOS).save(os.path.join(app_icon, 'appicon_tinted.png'), optimize=True)
+  centered(debug_full).resize((size, size), Image.LANCZOS).convert('RGB').save(
+    os.path.join(IOS_ASSETS, 'AppIconDebug.appiconset', '1024.png'), optimize=True)
+
+  logo_svg = vector_to_svg(os.path.join(drawable, 'logo.xml'))
+  with open(os.path.join(IOS_ASSETS, 'logo.imageset', 'logo.svg'), 'w', encoding='utf-8') as out:
+    out.write(logo_svg + '\n')
+  render(logo_svg, 512).save(os.path.join(IOS_WIDGET_ASSETS, 'logo.imageset', 'logo.png'), optimize=True)
+
+  desktop = legacy(main_full, 1024, False)
+  desktop.resize((512, 512), Image.LANCZOS).save(os.path.join(QT_RES, 'logo.png'), optimize=True)
+  desktop.save(os.path.join(QT_RES, 'windows', 'windows.ico'), sizes=[(s, s) for s in (16, 24, 32, 48, 256)])
+  write_icns(os.path.join(QT_RES, 'mac', 'mac.icns'), desktop)
+  write_icns(os.path.join(QT_RES, 'mac', 'designer.icns'), legacy(beta_full, 1024, False))
+
+
 def main():
   main_svg = vector_to_svg(os.path.join(BRANDING, 'main', 'res', 'drawable', 'ic_launcher_foreground.xml'), NAVY)
   beta_svg = vector_to_svg(os.path.join(BRANDING, 'main', 'res', 'drawable', 'ic_launcher_foreground.xml'), BETA_BG)
@@ -135,6 +183,8 @@ def main():
   store.save(os.path.join(ROOT, 'android', 'app', 'ic_launcher-playstore.png'), optimize=True)
   feature = feature_graphic(main_full)
   feature.save(os.path.join(LISTING, 'feature-graphic', '1.png'), optimize=True)
+
+  write_apple_and_desktop(main_full, beta_full, debug_full)
 
   # Previews for design/brand and the PR.
   store.save(os.path.join(OUT, 'sampai-icon-512.png'), optimize=True)
