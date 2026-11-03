@@ -83,9 +83,11 @@ std::vector<TollBooth> FindTollBoothsAlongRoute(DataSource const & dataSource, s
       if (!seen.insert(ft.GetID()).second)
         return;
 
-      std::string name(ft.GetReadableName());
+      // Prices are keyed by the local name, which the user's language must not replace. A booth with
+      // no name stays in: the route still pays it, so the total has to read as a lower bound.
+      std::string name(ft.GetDefaultName());
       if (name.empty())
-        return;
+        name = ft.GetReadableName();
 
       m2::PointD const center = ft.GetCenter();
       Projection const projection = ProjectOnPolyline(polyline, center);

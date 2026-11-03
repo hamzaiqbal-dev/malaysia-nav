@@ -2,6 +2,7 @@ package app.organicmaps.my
 
 import java.io.File
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -68,6 +69,32 @@ class TollTableTest {
         assertEquals(3, total.pricedBooths)
         assertEquals(1, total.unpricedBooths)
         assertEquals(4, total.boothCount)
+    }
+
+    @Test
+    fun unnamedBoothsCountOnceAsUnpriced() {
+        val booths = listOf(
+            RouteTollBooth("", 1000.0),
+            RouteTollBooth("", 1020.0),
+            RouteTollBooth("Plaza Tol Sunway", 9000.0),
+            RouteTollBooth("", 20000.0),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(1, total.pricedBooths)
+        assertEquals(2, total.unpricedBooths)
+    }
+
+    @Test
+    fun hasPriceOnlyWithAPricedBooth() {
+        assertFalse(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Ayer Keroh", 0.0))).hasPrice)
+        assertTrue(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 0.0))).hasPrice)
+    }
+
+    @Test
+    fun abbreviatedNamesMatch() {
+        assertEquals(TollTable.normalizeBoothName("Sungai Ramal"), TollTable.normalizeBoothName("Sg. Ramal"))
+        assertEquals("bukit kajang", TollTable.normalizeBoothName("Plaza Tol Bkt Kajang"))
+        assertEquals("sungai besi tambahan", TollTable.normalizeBoothName("PLAZA TOL SG BESI TAMBAHAN (ARAH KL)"))
     }
 
     @Test

@@ -21,6 +21,9 @@ data class RouteTollBooth(val name: String, val distanceAlongRouteM: Double)
  */
 data class RouteTollTotal(val amountRm: Double, val pricedBooths: Int, val unpricedBooths: Int) {
     val boothCount: Int get() = pricedBooths + unpricedBooths
+
+    /** False when no booth has a price (closed-system highways): [amountRm] says nothing about the trip. */
+    val hasPrice: Boolean get() = pricedBooths > 0
 }
 
 /**
@@ -86,16 +89,19 @@ class TollTable(val plazas: List<TollPlaza>) {
         const val DEDUPE_DISTANCE_M = 1500.0
 
         private val NOISE_WORDS = setOf("plaza", "tol", "toll", "tempat", "pungutan")
+
+        /** Signposts abbreviate these, so OpenStreetMap has both spellings. "Bt" is left out: Batu or Bukit. */
+        private val ABBREVIATIONS = mapOf("sg" to "sungai", "bkt" to "bukit", "kg" to "kampung", "jln" to "jalan")
         private val PARENTHESES = Regex("\\([^)]*\\)")
         private val NON_WORD = Regex("[^\\p{L}\\p{N}]+")
 
-        /** Lower-case plaza name without "Plaza Tol"/"Toll Plaza", bracketed directions and punctuation. */
+        /** Lower-case plaza name with short forms expanded, without "Plaza Tol", brackets or punctuation. */
         fun normalizeBoothName(name: String): String = name
             .replace(PARENTHESES, " ")
             .lowercase()
             .split(NON_WORD)
             .filter { it.isNotEmpty() && it !in NOISE_WORDS }
-            .joinToString(" ")
+            .joinToString(" ") { ABBREVIATIONS[it] ?: it }
 
         /** Parses the CSV text of data/my_tolls.csv; comment and header lines are skipped. */
         fun parse(lines: Sequence<String>): TollTable {
