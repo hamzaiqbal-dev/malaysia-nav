@@ -75,6 +75,8 @@ void AppendText(std::string & html, std::string_view text)
   html += "<br>\n";
 }
 
+std::string_view constexpr kGetAppUrl = "https://play.google.com/store/apps/details?id=my.sampai.app";
+
 void AppendAnchor(std::string & html, std::string_view href, std::string_view text)
 {
   html += "<a href=\"";
@@ -133,18 +135,8 @@ Result Build(Place const & place, Strings const & strings)
   result.m_isMyPosition = place.m_isMyPosition;
   result.m_subjectBasis = !place.m_name.empty() ? place.m_name : place.m_address;
 
-  // Staged rollout of the human-readable link, see https://github.com/organicmaps/organicmaps/pull/13100.
-  //
-  // Every app released before Ge0Parser::ParseClearCoordinates shipped claims omaps.app links
-  // (Android app links, iOS universal links) and decodes them as ge0 base64 only, so a
-  // "https://omaps.app/<lat>,<lon>" link silently opens such an app on the wrong place. Until that
-  // parser is out in the wild we keep sharing the ge0 short link, which every version understands.
-  //
-  // TODO: when enough users run a version with ParseClearCoordinates (~a year after its release):
-  //   1. call ge0::GenerateClearShowMapUrl(lat, lon, place.m_zoom, place.m_name) here;
-  //   2. drop the coordinates line from the plain body below - the link then carries them itself;
-  //   3. update the share_tests expectations.
-  result.m_url = ge0::GenerateHttpShowMapUrl(place.m_ll.m_lat, place.m_ll.m_lon, place.m_zoom, place.m_name);
+  // Not an app-specific domain: everyone can open it, with or without the app.
+  result.m_url = ge0::GenerateOsmShowMapUrl(place.m_ll.m_lat, place.m_ll.m_lon, place.m_zoom);
 
   std::string const geoUri = ge0::GenerateGeoUri(place.m_ll.m_lat, place.m_ll.m_lon, place.m_zoom, place.m_name);
   std::string const coords = measurement_utils::FormatLatLon(place.m_ll.m_lat, place.m_ll.m_lon, true /* withComma */);
@@ -196,7 +188,7 @@ Result Build(Place const & place, Strings const & strings)
   html += "<br>\n";
   AppendText(html, coords);
   html += "<br>\n";
-  AppendAnchor(html, "https://omaps.app/get", strings.m_getApp);
+  AppendAnchor(html, kGetAppUrl, strings.m_getApp);
 
   return result;
 }

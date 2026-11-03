@@ -277,6 +277,12 @@ UNIT_TEST(GeoURL_OpenStreetMap)
   TEST_ALMOST_EQUAL_ABS(info.m_lat, 48.277222, kEps, ());
   TEST_ALMOST_EQUAL_ABS(info.m_lon, 24.152222, kEps, ());
   TEST_ALMOST_EQUAL_ABS(info.m_zoom, 15.0, kEps, ());
+
+  // The link the app itself shares, see GenerateOsmShowMapUrl.
+  TEST(parser.Parse("https://www.openstreetmap.org/?mlat=3.139000&mlon=101.686900&zoom=16", info), ());
+  TEST_ALMOST_EQUAL_ABS(info.m_lat, 3.139, kEps, ());
+  TEST_ALMOST_EQUAL_ABS(info.m_lon, 101.6869, kEps, ());
+  TEST_ALMOST_EQUAL_ABS(info.m_zoom, 16.0, kEps, ());
 }
 
 UNIT_TEST(GeoURL_BadZoom)
