@@ -26,7 +26,7 @@
 
 /* 1.BASEMAP */
 
-@background: #0f0f0f;
+@background: #0E1626;
 
 /* 2.BOUNDARY */
 
@@ -38,10 +38,10 @@
 /* 3.1 Main natural */
 
 @glacier: #111111;
-@water: #002222;
-@water_bad: #00261e;
-@water_intermittent: #001818;
-@river: #3FA7C0;
+@water: #0C2C52;
+@water_bad: #0D2A47;
+@water_intermittent: #0A2240;
+@river: #4F9BE0;
 @wetland: #5C747F;
 @beach: #28281A;
 @barerock: #302A2A;
@@ -50,27 +50,27 @@
 
 /*3.2 Vegetation*/
 
-@forest: #363d19;
-@green0: #1f2310;
-@green1: #262a13;
-@green1b: #2a2f14;
-@green2: #2d3216;
-@green3: #313715;
-@green4: #383e19;
-@green5: #39401c;
-@green6: #47491d;
+@forest: #14301F;
+@green0: #101F1E;
+@green1: #112320;
+@green1b: #122522;
+@green2: #122723;
+@green3: #132A25;
+@green4: #142D26;
+@green5: #142E27;
+@green6: #1F3B2B;
 @flowers: #3d451c;
 
 /* 4.LANDUSE */
 /*4.1 Main landuse*/
 
-@pedestrian_area: #262222;
-@pedestrian_area_light: #262222;
+@pedestrian_area: #1A2438;
+@pedestrian_area_light: #1A2438;
 @platform: #262222;
-@leisure: #262222;
+@leisure: #16263A;
 @university: #2e1f05;
 @hospital: #2b0808;
-@industrial: #17151e;
+@industrial: #141C2E;
 @sport0: #24220f;
 @sport1: #292814;
 @sport2: #2f2c19;
@@ -96,10 +96,10 @@
 
 /* 4.4 Buildings */
 
-@building0: #3B3B3B;
-@building1: #424242;
-@building_border0: #616161;
-@building_border1: #696969;
+@building0: #232E45;
+@building1: #293550;
+@building_border0: #3A4865;
+@building_border1: #42506E;
 
 /* 5.ROADS */
 /* 5.1 All roads */
@@ -111,9 +111,9 @@
 @primary2: #753800;
 @secondary0: #754b00;
 @secondary1: #754900;
-@tertiary: #4d4d4d;
-@residential: #454545;
-@pedestrian: #454545;
+@tertiary: #3D4A63;
+@residential: #354259;
+@pedestrian: #354259;
 @footway: #454545;
 @cycleway: #6E3D47;
 @construction: #332F2D;
@@ -124,7 +124,7 @@
 
 /* 5.2 Bridges */
 
-@bridge_background: #2C2C1A;
+@bridge_background: #16213A;
 @bridge_casing: #505050;
 
 /* 5.3 Tunnels */
@@ -135,9 +135,9 @@
 @primary_tunnel_casing: #000000;
 @secondary_tunnel: #4d3100;
 @secondary_tunnel_casing:  #000000;
-@tertiary_tunnel: #383838;
+@tertiary_tunnel: #2C374C;
 @tertiary_tunnel_casing:  #000000;
-@residential_tunnel: #303030;
+@residential_tunnel: #262F42;
 @residential_tunnel_casing: #000000;
 
 /* 5.4 Piste */
@@ -168,14 +168,14 @@
 @label_dark: #a1a1a1;
 @label_medium: #919191;
 @label_light: #808080;
-@label_halo_medium: #111100;
-@label_halo_light: #060600;
+@label_halo_medium: #0E1626;
+@label_halo_light: #0B1220;
 
 /* 6.2 Natural labels */
 
-@water_label: #004A59;
-@park_label: #2B4918;
-@halo_park_label: #111;
+@water_label: #5C9BD6;
+@park_label: #5FA777;
+@halo_park_label: #0B1220;
 
 /* 6.3 Place labels */
 
