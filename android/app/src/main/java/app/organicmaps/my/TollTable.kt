@@ -39,20 +39,13 @@ class TollTable(val plazas: List<TollPlaza>) {
         }
     }
 
-    /** The plaza a booth name refers to, or null when it is unknown or ambiguous. */
+    /**
+     * The plaza a booth name refers to, or null when it is unknown. Only a direction may follow the plaza
+     * name: "Batu Pahat" is not the plaza "Batu", and a wrong price is worse than none.
+     */
     fun find(boothName: String): TollPlaza? {
         val key = normalizeBoothName(boothName)
-        return when {
-            key.isEmpty() -> null
-
-            key in byKey -> byKey.getValue(key)
-
-            else -> {
-                // "sunway" inside "sunway arah klang": a contained plaza name counts only when it is unique.
-                val padded = " $key "
-                byKey.filterKeys { padded.contains(" $it ") }.values.distinct().singleOrNull()
-            }
-        }
+        return byKey[key] ?: byKey[withoutDirection(key)]
     }
 
     /**
@@ -92,6 +85,9 @@ class TollTable(val plazas: List<TollPlaza>) {
 
         /** Signposts abbreviate these, so OpenStreetMap has both spellings. "Bt" is left out: Batu or Bukit. */
         private val ABBREVIATIONS = mapOf("sg" to "sungai", "bkt" to "bukit", "kg" to "kampung", "jln" to "jalan")
+
+        /** A direction starts here: "sunway arah klang", "gombak to kuantan". */
+        private val DIRECTION_WORDS = setOf("arah", "hala", "ke", "to", "towards")
         private val PARENTHESES = Regex("\\([^)]*\\)")
         private val NON_WORD = Regex("[^\\p{L}\\p{N}]+")
 
@@ -102,6 +98,9 @@ class TollTable(val plazas: List<TollPlaza>) {
             .split(NON_WORD)
             .filter { it.isNotEmpty() && it !in NOISE_WORDS }
             .joinToString(" ") { ABBREVIATIONS[it] ?: it }
+
+        private fun withoutDirection(key: String): String =
+            key.split(" ").takeWhile { it !in DIRECTION_WORDS }.joinToString(" ")
 
         /** Parses the CSV text of data/my_tolls.csv; comment and header lines are skipped. */
         fun parse(lines: Sequence<String>): TollTable {
