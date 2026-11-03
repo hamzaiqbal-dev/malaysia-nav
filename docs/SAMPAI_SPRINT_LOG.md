@@ -132,3 +132,42 @@ CI at the end of run 3 (18:55 UTC on 3 Nov): nothing red on a current head. #32'
 its emulator failure was setup, not code. #34 is green except CMake, which is still queued. #36 to #38 and #40 are mostly queued:
 GitHub runners are slow to pick up this many PRs. Next run: read their results first. #32 and #35 still show a red CMake run,
 from the macOS Release job with no runner, as logged in run 2.
+
+## Run 4: Wed 4 Nov, 04:47 MYT
+
+Status of the data licence blocker: unchanged. No reply from Hamza on GitHub, and #30 has no comments. The rules from run 2 still apply.
+
+Checked first: every red CMake run on #28, #34, #35, #37, #38 is only a macOS job cancelled with no runner (job lists read for #28 and #38; all
+compile and test jobs passed). #39 is docs-only. No open issues. No code failure on any open PR at the start of the run.
+
+### PRs opened
+- #41 `polish/map-palette` (design step 1): Sampai colours for the map, day and night, in `default` and `vehicle`. Not seen on a real map or a
+  device, only a schematic mock. Needs a phone check before merging. Nothing depends on it.
+- #42 `ci/sprint-rollup` (draft, DO NOT MERGE): all 18 open sprint PRs merged together, so CI builds the combined app for the first time. All merged
+  with no conflict and no auto-resolution. Refresh it with merge commits after pushing to any sprint PR. Close it after Friday's review.
+
+### Updated PRs
+- #26: the Japanese bug report text still spelled the old brand in katakana, which Latin scans miss. Removed `app_tip_03` and `app_tip_06` ("ask a
+  software developer", "help translate our app"): the voice preview reads these aloud. Moved the removal of the unused iOS `omapsURL` here.
+- #33: release notes no longer link upstream's news page and Obtainium guide; iOS place descriptions use OpenStreetMap as the base URL.
+
+Checked and found fine, don't redo: HUD null safety with `mNavMenu` null, landscape (the HUD is a capped start-aligned column), `MyTolls` JNI, chips in
+navigation (that layout has no bottom row), no HTTP user-agent string exists to rebrand, `KAYAK_AFFILIATE_ID` in `private.h` is unused, every Android
+resource reference resolves on the combined tree.
+
+Left to do:
+- Branding, desktop only: `packaging/*.metainfo.xml` has upstream screenshots and old changelog, `.desktop` Keywords and the binary name still say
+  OrganicMaps. Left because no Linux store release is planned.
+- Polish: `Route-color` #0087FF vs the app's `my_route` #2E8BFF; whether chips should show while planning a route (needs a device to judge).
+- Needs Hamza: BM as the default language (open decision in docs/MALAYSIA.md); privacy and terms pages, because About links `sampai.my/privacy/` and
+  `/terms/`, and the voice help link is under the same placeholder domain.
+
+Lessons:
+- `tools/unix/regenerate_twine.sh` is the wrong script: it rewrites `data/strings/*.txt` from the generated files. Use `tools/unix/generate_localizations.sh`.
+- Scan translations for transliterated brand names, not just Latin ones.
+- Always cap brand scans by path, not with `head`: run 4's first scan was cut off before `packaging/` and `qt/`.
+- Style work: `git submodule update --init --depth 1 tools/kothic`, then `tools/unix/generate_drules.sh` (about 20 s) reproduces the committed drules
+  byte for byte. A palette change needs contrast numbers for roads and labels: the first draft dropped night residential roads from 2.84 to 1.85.
+
+External repos: `tools/python/twine` and `tools/kothic` are submodules cloned from `organicmaps/*` at the commits this repo pins, read-only, because the
+required generators need them. Nothing else outside this repo was read.
