@@ -26,7 +26,7 @@
 
 /* 1.BASEMAP */
 
-@background: #050505;
+@background: #0B1220;
 
 /* 2.BOUNDARY */
 
@@ -37,10 +37,10 @@
 /* 3.1 Main natural */
 
 @glacier: #111111;
-@water: #002222;
-@water_bad: #00261e;
-@water_intermittent: #001818;
-@river: #3FA7C0;
+@water: #0C2C52;
+@water_bad: #0D2A47;
+@water_intermittent: #0A2240;
+@river: #4F9BE0;
 @wetland: #001919;
 @beach: #28281A;
 @barerock: #302A2A;
@@ -48,16 +48,16 @@
 
 /*3.2 Vegetation*/
 
-@forest: #090F0A;
-@green0: #090F0A;
-@green1: #090F0A;
-@green2: #090F0A;
-@green3: #090F0A;
-@green4: #090F0A;
-@green5: #090F0A;
-@green6: #2F4000;
+@forest: #14301F;
+@green0: #101F1E;
+@green1: #112320;
+@green2: #122723;
+@green3: #132A25;
+@green4: #142D26;
+@green5: #142E27;
+@green6: #1F3B2B;
 
-@leisure: #262222;
+@leisure: #16263A;
 
 /* 4.LANDUSE */
 /*4.1 Main landuse*/
@@ -66,7 +66,7 @@
 @university: #261F13;
 @hospital: #261916;
 */
-@industrial: #0D0A0D;
+@industrial: #141C2E;
 @sport: #070F0A;
 @military: #B71C1C;
 @prison: #7f7f7f;
@@ -91,9 +91,9 @@
 
 /* 4.4 Buildings */
 
-@building0: #191919;
-@building1: #1D1D1D;
-@building_border0: #1C1C1C;
+@building0: #232E45;
+@building1: #293550;
+@building_border0: #3A4865;
 
 /* 5.ROADS */
 /* 5.1 All roads */
@@ -104,10 +104,10 @@
 @primary1: #8A5A3D;
 @primary2: #8A5A3D;
 @secondary0: #7A6A57;
-@residential: #5A5755;
+@residential: #565C68;
 @unclassified: #4F4D4B;
-@pedestrian: #4D4744;
-@footway: #2B2827;
+@pedestrian: #494F5B;
+@footway: #2A2E38;
 @cycleway: #6E3D47;
 @construction: #332F2D;
 @track: #5F532D;
@@ -116,9 +116,9 @@
 
 /* 5.2 Bridges */
 
-@bridge_background: #121212;
+@bridge_background: #16213A;
 @bridge_casing: #252525;
-@casing_road:  #252525;
+@casing_road:  #1C2434;
 
 /* 5.3 Tunnels */
 
@@ -149,15 +149,15 @@
 
 @label_dark: #888888;
 @label_medium: #8C8C8C;
-@label_light: #666666;
-@label_halo_medium: #111100;
-@label_halo_light: #060600;
+@label_light: #8E97A8;
+@label_halo_medium: #0E1626;
+@label_halo_light: #0B1220;
 
 /* 6.2 Natural labels */
 
-@water_label: #004A59;
-@park_label: #2B4918;
-@halo_park_label: #111;
+@water_label: #5C9BD6;
+@park_label: #5FA777;
+@halo_park_label: #0B1220;
 
 /* 6.3 Place labels */
 
@@ -167,7 +167,7 @@
 @district_label: #555555;
 @housenumber: #6C6C6C;
 @building_label: #737373;
-@poi_label: #666666;
+@poi_label: #8E97A8;
 @subway_label: #555555;
 
 /* 6.4 Road labels */
