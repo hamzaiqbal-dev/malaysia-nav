@@ -1061,7 +1061,7 @@
 "map" = "地図";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "開発者にバグレポートを送りたいか？\nオーガニック・マップはエラー情報を自動収集しないため、我々はユーザーに依存している。Sampaiを応援してくださりありがとう！";
+"bugreport_alert_message" = "開発者にバグレポートを送りたいか？\nSampaiはエラー情報を自動収集しないため、我々はユーザーに依存している。Sampaiを応援してくださりありがとう！";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "iCloud同期を有効にする";
