@@ -20,8 +20,15 @@ inline static int const kMaxCoordBits = kMaxPointBytes * 3;
 std::string GenerateShortShowMapUrl(double lat, double lon, double zoomLevel, std::string const & name);
 
 // Same ge0 short url, but with the "https://omaps.app/" prefix, so it also opens the web landing
-// page in a browser. This is the format shared by share::Build today - see the switch note there.
+// page in a browser.
 std::string GenerateHttpShowMapUrl(double lat, double lon, double zoomLevel, std::string const & name);
+
+// Generates an openstreetmap.org link with a marker, which opens in any browser and in the app.
+// This is the format shared by share::Build.
+//
+// URL format:
+//   https://www.openstreetmap.org/?mlat=<lat>&mlon=<lon>[&zoom=<zoom>]
+std::string GenerateOsmShowMapUrl(double lat, double lon, int zoom);
 
 // Generates a shareable https://omaps.app/ url with human-readable decimal coordinates.
 //
