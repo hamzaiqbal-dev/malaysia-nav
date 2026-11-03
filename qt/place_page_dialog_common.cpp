@@ -109,7 +109,7 @@ QToolBar * createActionToolBar(QWidget * parent, qt::DrawWidget * drawWidget, pl
                      [drawWidget, featureId] { drawWidget->EditPlace(featureId); });
   }
 
-  // Share: copy the omaps.app link or the full text, or start an email with the location. The core
+  // Share: copy the map link or the full text, or start an email with the location. The core
   // builds the same payload the mobile apps share. Tracks are shared as a file on mobile, and a
   // single-point link would misrepresent them, so they get no Share menu here.
   if (!info.IsTrack())

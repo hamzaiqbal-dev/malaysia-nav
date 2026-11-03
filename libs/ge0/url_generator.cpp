@@ -143,6 +143,15 @@ std::string GenerateHttpShowMapUrl(double lat, double lon, double zoom, std::str
   return GenerateShowMapUrl("https://omaps.app/", lat, lon, zoom, name);
 }
 
+std::string GenerateOsmShowMapUrl(double lat, double lon, int zoom)
+{
+  std::ostringstream oss;
+  oss << "https://www.openstreetmap.org/?mlat=" << std::fixed << std::setprecision(6) << lat << "&mlon=" << lon;
+  if (zoom > 0)
+    oss << "&zoom=" << zoom;
+  return oss.str();
+}
+
 std::string GenerateClearShowMapUrl(double lat, double lon, int zoom, std::string const & name)
 {
   std::ostringstream oss;

@@ -374,6 +374,14 @@ UNIT_TEST(GenerateGeoUri_SmokeTest)
   TEST_EQUAL(info.m_label, "Falafel M. Sahyoun", ());
 }
 
+UNIT_TEST(GenerateOsmShowMapUrl_SmokeTest)
+{
+  TEST_EQUAL(GenerateOsmShowMapUrl(3.139, 101.6869, 16),
+             "https://www.openstreetmap.org/?mlat=3.139000&mlon=101.686900&zoom=16", ());
+  TEST_EQUAL(GenerateOsmShowMapUrl(-33.9, 151.2, 0), "https://www.openstreetmap.org/?mlat=-33.900000&mlon=151.200000",
+             ());
+}
+
 UNIT_TEST(GenerateClearShowMapUrl_SmokeTest)
 {
   TEST_EQUAL(GenerateClearShowMapUrl(48.858093, 2.294694, 16, "Eiffel Tower"),

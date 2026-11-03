@@ -42,7 +42,7 @@ struct Place
 
 struct Result
 {
-  std::string m_url;   // omaps.app link (also used as the "copy link" value)
+  std::string m_url;   // openstreetmap.org link (also used as the "copy link" value)
   std::string m_text;  // plain body for messengers
   std::string m_html;  // rich body for email
   // Place name, else address, else empty. Platforms build the email subject from it (they own the
