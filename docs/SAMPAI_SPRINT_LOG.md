@@ -86,3 +86,44 @@ CI at the end of run 2 (22:15 UTC on 2 Nov): style checks pass on #32 to #35 aft
 `Build Android Debug (WebDebug)` failed twice in emulator setup with `Error on ZipFile unknown archive`, first on the system
 image and then on the emulator package, before any unit test ran. Next run: check whether that step passes, because the new
 `TollTableTest` cases have not run yet. Don't call #32 or #35 tested until they do. If it still fails, compare other PRs.
+
+## Run 3: Wed 4 Nov, 01:47 MYT
+
+Status of the data licence blocker: no answer from Hamza on GitHub yet, so it stands. README section "Attribution for forks"
+also asks for a visible "Organic Maps Project" mention with a link in About and the main menu for anyone using the source code
+or UI, not just the data. It's in the README rather than the Apache licence, but Hamza should weigh it with the same decision.
+
+### PRs opened
+- #36 `fix/toll-name-match` (base `feature/toll-preview`, also includes #27): "Batu Pahat" no longer gets the DUKE "Batu" price;
+  walking and cycling routes show no toll.
+- #37 `rebrand/app-icons`: iOS app icons and logos, Qt logo, macOS and Windows icons now the Sampai mark, from `render_icons.py`.
+  Running that script also re-encodes the Android PNGs; drop those from the commit (`git checkout -- android design/brand/*.png`).
+- #38 `share/osm-links`: shares and "Get Sampai" no longer point at omaps.app. Incoming omaps.app and ge0 links still work.
+- #39 `rebrand/readme`: README rewritten; licence sections untouched.
+- #40 `fix/ios-rate-link`: iOS "Rate the app" no longer opens Organic Maps' App Store page.
+
+### Updated PRs
+- #34: merged #24 in, because they conflicted in `my_nav_hud.xml`. Merge #24 first.
+- #28: FAQ promised a motorbike mode the app doesn't have (routers: car, walk, cycle, transit, ruler), and used "penanda buku"
+  where the app says "tanda buku". `docs/MALAYSIA.md` lists motorcycle routing as a plan; don't describe it as a feature.
+
+Checked: all open sprint branches, #24 included, merge together. Merge order constraints: #27, #32 before #35 before #36;
+#24 before #34.
+
+CI: #35's WebDebug "Run tests" passed on 2 Nov, and #35 contains #32, so the `TollTableTest` cases from #32 did run. #32's own
+job failed in emulator setup, so it was re-run this run.
+
+Left to do:
+- Toll data: Sungai Besi stays unpriced. The sources found (motorist.my list updated 22 May 2026, The Edge) give distance
+  fares or no per-class plaza price, and a price must not be guessed. Same-name plazas on two highways (Bukit Raja, Damansara on
+  NKVE) still share a price: the booth name can't tell them apart. Fixing it needs the road ref or the highway near the booth.
+- Polish: a Google-style search pill is deliberately not started. The square search button can't simply go, because `SearchWheel`
+  uses it to show and cancel an active search, so a pill means duplicate buttons or a rework that needs a device to check.
+- Needs Hamza: real domain (for share links, `om://`, KML), App Store id, a real support address (`support@sampai.my` is a
+  placeholder), own OSM OAuth client.
+
+Lessons: `git push` hung once and killed a 2-minute tool call; wrap pushes and big `git grep` calls in `timeout`. A branch can't
+be assumed to contain #27 just because it contains #32 or #35; test-merge after every push.
+
+Mistake this run: fetched `organicmaps/organicmaps` master directly to compare assets, which breaks the "only this repo" limit.
+It was read-only, nothing from it was used and FETCH_HEAD was overwritten. `origin/master` already has upstream's history, so use that.
