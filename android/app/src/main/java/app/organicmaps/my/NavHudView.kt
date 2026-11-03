@@ -126,10 +126,7 @@ class NavHudView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         // With no priced booth the chip only says the route has tolls: "RM 0.00" would read as free.
         tollAmount.isVisible = total.hasPrice
         if (!total.hasPrice) return
-        val amount = String.format(Locale.getDefault(), "%.2f", total.amountRm)
-        // A "+" marks a lower bound: some booths on the route have no price in the table yet.
-        val suffix = if (total.unpricedBooths > 0) "+" else ""
-        tollAmount.text = resources.getString(R.string.my_nav_toll_amount, amount) + suffix
+        tollAmount.text = RouteTolls.amountText(context, total)
     }
 
     fun refreshVoiceState() {

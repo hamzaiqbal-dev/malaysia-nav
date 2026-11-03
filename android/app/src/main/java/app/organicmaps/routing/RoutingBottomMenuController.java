@@ -24,6 +24,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.R;
+import app.organicmaps.my.RouteTolls;
 import app.organicmaps.sdk.Framework;
 import app.organicmaps.sdk.bookmarks.data.DistanceAndAzimut;
 import app.organicmaps.sdk.routing.RouteAltitudeData;
@@ -42,6 +43,7 @@ import app.organicmaps.widget.recycler.DotDividerItemDecoration;
 import app.organicmaps.widget.recycler.MultilineLayoutManager;
 import java.util.LinkedList;
 import java.util.List;
+import kotlin.Unit;
 
 final class RoutingBottomMenuController
 {
@@ -433,6 +435,7 @@ final class RoutingBottomMenuController
       hideAltitudeChartAndRoutingDetails();
       UiUtils.show(mTimeVehicle);
       mTimeVehicle.setText(spanned);
+      showRouteTolls(spanned);
     }
     else
     {
@@ -445,6 +448,25 @@ final class RoutingBottomMenuController
       String arrivalTime = Utils.formatArrivalTime(rinfo.totalTimeInSeconds);
       mArrival.setText(arrivalTime);
     }
+  }
+
+  // The total arrives after a map scan; RouteTolls drops the result of a superseded route.
+  private void showRouteTolls(@NonNull Spanned routeDetails)
+  {
+    if (!RoutingController.get().isPlanning())
+      return;
+
+    RouteTolls.INSTANCE.compute(mContext, total -> {
+      final String tolls = RouteTolls.INSTANCE.summary(mContext, total);
+      if (tolls != null)
+      {
+        final SpannableStringBuilder builder = new SpannableStringBuilder(routeDetails);
+        initDotBuilderSequence(mContext, "\u00A0• ", builder);
+        initDistanceBuilderSequence(mContext, tolls, builder);
+        mTimeVehicle.setText(builder);
+      }
+      return Unit.INSTANCE;
+    });
   }
 
   @NonNull
