@@ -8,6 +8,7 @@ final class AppConstants: NSObject {
   // The last 5% are left for applying diffs.
   static let maxProgress: Float = 0.95
   static let openStreetMapURL = "https://www.openstreetmap.org/"
+  static let omapsURL = "https://omaps.app"
   static let contactEmail = "ios@organicmaps.app"
 }
 
