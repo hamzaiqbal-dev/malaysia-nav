@@ -12,6 +12,6 @@ Sampai ialah aplikasi navigasi buatan Malaysia untuk rakyat Malaysia: Bahasa Mel
 
 <b>PERIBADI:</b> Tiada akaun, tiada penjejakan, tiada iklan. Lokasi dan perjalanan anda kekal dalam telefon anda.
 
-Sampai dibina di atas enjin sumber terbuka Organic Maps dan data OpenStreetMap, yang ditambah baik setiap hari oleh sukarelawan di seluruh Malaysia. Jumpa jalan yang tiada atau nama yang salah? Betulkan terus dalam aplikasi dan bantu semua pemandu Malaysia yang lain.
+Sampai menggunakan data OpenStreetMap, yang ditambah baik setiap hari oleh sukarelawan di seluruh Malaysia. Jumpa jalan yang tiada atau nama yang salah? Betulkan terus dalam aplikasi dan bantu semua pemandu Malaysia yang lain.
 
 Sampai masih di peringkat awal pembangunan: antara muka dan suara Bahasa Melayu sedang dilengkapkan, dan laporan jalan secara langsung (kesesakan, kemalangan, polis, banjir) sedang dalam pembangunan.
