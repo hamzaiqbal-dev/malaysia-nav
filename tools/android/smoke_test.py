@@ -2,8 +2,9 @@
 """Walks an installed debug build through its main screens on an emulator, then runs monkey.
 
 Needs a connected emulator and the app installed. Screenshots, UI dumps, logcat and report.md go to
-the output directory. Exits with 1 when the app crashed. The device is kept offline: the point is an offline
-first start, and CI must not download maps from a third-party server.
+the output directory. Exits with 1 when the app crashed, or when the bottom bar is so tall that the map draws
+its OpenStreetMap credit under the status bar. The device is kept offline: the point is an offline first start,
+and CI must not download maps from a third-party server.
 """
 
 import argparse
@@ -37,6 +38,16 @@ class Walker:
         self.out = out
         self.step = 0
         self.brand_hits = []
+        self.bar_height = None
+
+    def bottom_bar_height(self):
+        """Height of the bar the map keeps its ruler and OpenStreetMap credit above, or None."""
+        for node in NODE.findall(self.nodes()):
+            attrs = dict(ATTR.findall(node))
+            if attrs.get("resource-id", "").endswith(":id/map_buttons_bottom"):
+                _, y1, _, y2 = map(int, BOUNDS.search(attrs["bounds"]).groups())
+                return y2 - y1
+        return None
 
     def nodes(self):
         for _ in range(3):
@@ -104,6 +115,7 @@ class Walker:
         self.launch()
         self.get_past_first_start()
         self.shot("map")
+        self.bar_height = self.bottom_bar_height()
         self.visit("about", "help_button", then=(
             ("faq", r"FAQ|Soalan"),
             ("licences", r"licen[cs]e|lesen"),
@@ -154,6 +166,7 @@ def main():
     adb("logcat", "-c")
 
     hits = []
+    bar_heights = []
     for locale in args.locales.split(","):
         out = args.out / locale
         out.mkdir(parents=True, exist_ok=True)
@@ -161,6 +174,7 @@ def main():
         walker = Walker(package, out)
         walker.walk()
         hits += [f"{locale}/{hit}" for hit in walker.brand_hits]
+        bar_heights.append(walker.bar_height)
 
     monkey_failed = False
     for seed, events in MONKEY_ROUNDS:
@@ -179,19 +193,23 @@ def main():
     crash_lines = crashes(package, crash_log)
     anrs = [line for line in full_log.splitlines() if f"ANR in {package}" in line]
 
+    screen_height = int(re.search(r"\d+x(\d+)", adb("shell", "wm", "size"))[1])
+    bar_too_tall = any(height and height > screen_height // 3 for height in bar_heights)
+
     report = [
         "# Android smoke test",
         f"- Package: {package}",
         f"- Crashes: {len(crash_lines)}",
         f"- ANRs: {len(anrs)}",
         f"- Monkey finished every round: {not monkey_failed}",
+        f"- Bottom bar heights: {bar_heights} of {screen_height}",
         f"- Old brand on screen: {len(hits)}",
         *[f"  - {hit}" for hit in sorted(set(hits))],
         *[f"  - {line}" for line in crash_lines[:20]],
     ]
     (args.out / "report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
-    return 1 if crash_lines or monkey_failed else 0
+    return 1 if crash_lines or monkey_failed or bar_too_tall else 0
 
 
 if __name__ == "__main__":
