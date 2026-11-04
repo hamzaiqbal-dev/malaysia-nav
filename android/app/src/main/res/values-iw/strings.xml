@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">ההורדה נכשלה</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">נסה שוב</string>
-    <string name="about_menu_title">אודות Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">חינם לכולם, מיוצרים באהבה</string>
+    <string name="about_menu_title">אודות Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• ללא מודעות, ללא מעקב, ללא איסוף נתונים</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• אין ריקון סוללה, עובד במצב לא מקוון</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• מהיר, מינימליסטי, שפותח על ידי הקהילה</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">אפליקציית קוד פתוח שנוצרה על ידי חובבים ומתנדבים.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">הגדרות מיקום</string>
     <string name="close">סגור</string>
     <string name="unsupported_phone">נדרש מאיץ חומרה OpenGL. לצערינו מכשיר זה אינו נתמך.</string>
     <string name="download">הורדה</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">אנא נתק כבל USB או הכנס כרטיס זכרון כדי להשתמש ב-Organic Maps.</string>
+    <string name="disconnect_usb_cable">אנא נתק כבל USB או הכנס כרטיס זכרון כדי להשתמש ב-Sampai.</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">אנא פנה שטח אחסון בכרטיס הזיכרון או בכונן USB כדי להשתמש בישום</string>
     <string name="download_resources">תחילה, נוריד למכשירך מפה כללית של העולם.\nמפה זו דורשת נפח אחסון של %s.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">הערות</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">סימניות של Organic Maps שותפו איתך</string>
-    <string name="share_bookmarks_email_body">שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Organic Maps. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://omaps.app/get?kmz\n\nתהנו לנווט עם Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">סימניות של Sampai שותפו איתך</string>
+    <string name="share_bookmarks_email_body">שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Sampai. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://sampai.my/\n\nתהנו לנווט עם Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">טוען סימניות</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">טעינת הסימניות נכשלה. יתכן שהקובץ פגום.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">סוג הקובץ אינו מזוהה על ידי האפליקציה:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">נכשל בפתיחת הקובץ %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">ערוך</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">שיתוף</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s ב-Organic Maps</string>
+    <string name="share_place_subject">%1$s ב-Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">מקום ב-Organic Maps</string>
+    <string name="share_place_subject_default">מקום ב-Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">דוא\"ל</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">תפריט</string>
     <!-- Text in menu -->
     <string name="website">אתר</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">חדשות</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">משוב</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">עזרה</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">שאלות ותשובות</string>
-    <!-- Button in the main menu -->
-    <string name="donate">לתרום</string>
     <string name="already_donated">כבר נתרם</string>
     <string name="remind_me_later">הזכר מאוחר יותר</string>
-    <string name="support_organic_maps">לתמוך ב-Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">תמכו בפרויקט</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">זכויות יוצרים</string>
+    <string name="support_organic_maps">לתמוך ב-Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">דווח על באג</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">כהה</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">בהיר משחר עד שקיעה</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">העניקו במתנה מפות חינמיות וללא פרסומות למיליוני משתמשים!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">בעת נסיעה לאורך המסלול, שים לב לדברים הבאים:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">נתוני OpenStreetMap שנוצרו על ידי הקהילה החל מ-%s. למידע נוסף על איך לערוך ולעדכן את המפה ב-OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">\u200FOpenStreetMap.org (OSM) הוא פרויקט קהילתי לבניית מפה חופשית ופתוחה. זהו המקור העיקרי לנתוני מפות ב-Organic Maps והוא פועל בדומה לוויקיפדיה. ניתן להוסיף או לערוך מקומות והם הופכים לזמינים למיליוני משתמשים בכל רחבי העולם.\nהצטרף לקהילה ועזור ליצור מפה טובה יותר לכולם!</string>
+    <string name="login_osm_presentation">\u200FOpenStreetMap.org (OSM) הוא פרויקט קהילתי לבניית מפה חופשית ופתוחה. זהו המקור העיקרי לנתוני מפות ב-Sampai והוא פועל בדומה לוויקיפדיה. ניתן להוסיף או לערוך מקומות והם הופכים לזמינים למיליוני משתמשים בכל רחבי העולם.\nהצטרף לקהילה ועזור ליצור מפה טובה יותר לכולם!</string>
     <string name="login_to_make_edits_visible">צור חשבון OpenStreetMap או היכנס כדי לפרסם את עריכות המפה שלך לעולם.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d מתוך %2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">הערה למתנדבי OpenStreetMap (אופציונלי)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">תארו שגיאות במפה או דברים שלא ניתן לערוך באמצעות Organic Maps</string>
+    <string name="editor_note_hint">תארו שגיאות במפה או דברים שלא ניתן לערוך באמצעות Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">העריכות שלך מועלות למסד הנתונים הציבורי של <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. נא לא להוסיף מידע אישי או מוגן בזכויות יוצרים.</string>
     <string name="editor_more_about_osm">עוד על OpenStreetMap</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">מַפעִיל: %s</string>
     <string name="editor_category_unsuitable_title">לא מוצאים קטגוריה מתאימה?</string>
-    <string name="editor_category_unsuitable_text">באמצעות Organic Maps ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו\'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. עיינו <a href="https://organicmaps.app/faq/editing/advanced-map-editing">במדריך</a> שלנו לקבלת הוראות מפורטות.</string>
+    <string name="editor_category_unsuitable_text">באמצעות Sampai ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו\'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. עיינו <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">במדריך</a> שלנו לקבלת הוראות מפורטות.</string>
     <string name="downloader_no_downloaded_maps_title">לא הורדת אף מפה</string>
     <string name="downloader_no_downloaded_maps_message">הורד מפה כדי לחפש ולנווט ללא חיבור לאינטרנט.</string>
     <string name="current_location_unknown_error_title">המיקום הנוכחי לא ידוע.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">הוספת עצירה</string>
     <string name="drag_to_reorder">סידור מחדש</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">התחבר ל-OpenStreetMap כדי להעלות אוטומטית את כל עריכות המפה שלך. למידע נוסף <a href="https://github.com/organicmaps/organicmaps/issues/6144">כאן</a>.</string>
+    <string name="alert_reauth_message">התחבר ל-OpenStreetMap כדי להעלות אוטומטית את כל עריכות המפה שלך.</string>
     <string name="dialog_error_storage_title">בעיית גישה לאחסון</string>
     <string name="dialog_error_storage_message">לא ניתן לגשת לאחסון החיצוני. ייתכן כי כרטיס הזיכרון הוסר, נפגם, או שמערכת הקבצים היא לקריאה בלבד. נא לבדוק את כרטיס הזיכרון או ליצור איתנו קשר בכתובת support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">בצע אמולציה לאחסון רע</string>
@@ -758,28 +742,18 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">תודה על השימוש במפות שנבנו בקהילה שלנו!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">עם התרומות והתמיכה שלך, נוכל ליצור את המפות הטובות בעולם!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">האם אתה אוהב את האפליקציה שלנו? אנא תרמו כדי לתמוך בפיתוח! לא אוהב את זה עדיין? אנא הודע לנו, ואנחנו נתקן את זה!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">אם אתה מכיר מפתח תוכנה, אתה יכול לבקש ממנו ליישם תכונה שאתה צריך.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">הקש בכל מקום במפה כדי לבחור משהו. הקש ארוכות כדי להסתיר ולהציג בחזרה את הממשק.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">האם אתה יודע שאתה יכול לבחור את המיקום הנוכחי שלך על המפה?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">אתה יכול לעזור לתרגם את האפליקציה שלנו לשפה שלך.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">האפליקציה שלנו פותחה על ידי כמה חובבים והקהילה.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">אתה יכול בקלות לתקן ולשפר את נתוני המפה.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">המטרה העיקרית שלנו היא לבנות מפות מהירות, ממוקדות פרטיות, קלות לשימוש שתאהבו.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">אתה משתמש כעת ב-Organic Maps במסך הטלפון</string>
+    <string name="car_used_on_the_phone_screen">אתה משתמש כעת ב-Sampai במסך הטלפון</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">אתה משתמש כעת ב-Organic Maps במסך המכונית</string>
+    <string name="car_used_on_the_car_screen">אתה משתמש כעת ב-Sampai במסך המכונית</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">אתה מחובר ל-Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -787,7 +761,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">למסך המכונית</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps זקוק לגישה למיקום. כאשר זה בטוח, בדוק את ההודעה בטלפון שלך.</string>
+    <string name="aa_location_permissions_request">Sampai זקוק לגישה למיקום. כאשר זה בטוח, בדוק את ההודעה בטלפון שלך.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">אפליקציה זו זקוקה לאישור שלך</string>
     <!-- Grant Permissions button. -->

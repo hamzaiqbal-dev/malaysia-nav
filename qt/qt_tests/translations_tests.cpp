@@ -80,7 +80,7 @@ UNIT_TEST(Translations_CoreStringsAndFeatureTypesUseTheSelectedCatalog)
   std::string const language = "fr";
   {
     auto translator = qt::InstallTranslator(App(), {&language, 1});
-    TEST_EQUAL(platform::GetLocalizedString("share_my_position"), "Je suis ici sur Organic Maps", ());
+    TEST_EQUAL(platform::GetLocalizedString("share_my_position"), "Je suis ici sur Sampai", ());
     TEST_EQUAL(platform::GetLocalizedTypeName("amenity-restaurant"), "Restaurant", ());
     TEST_EQUAL(platform::GetLocalizedTypeName("cuisine-italian"), "Cuisine italienne", ());
   }

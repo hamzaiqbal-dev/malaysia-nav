@@ -62,13 +62,8 @@ final class TTSVoicePreviewPlayer {
                                                      forPreferences: [languageCode]).first ?? languageCode
     return [
       L("app_tip_00", languageCode: localization),
-      L("app_tip_01", languageCode: localization),
-      L("app_tip_02", languageCode: localization),
-      L("app_tip_03", languageCode: localization),
       L("app_tip_04", languageCode: localization),
       L("app_tip_05", languageCode: localization),
-      L("app_tip_06", languageCode: localization),
-      L("app_tip_07", languageCode: localization),
       L("app_tip_08", languageCode: localization),
       L("app_tip_09", languageCode: localization),
     ]

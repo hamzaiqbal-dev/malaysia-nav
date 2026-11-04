@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Yükləmə uğursuz oldu";
 
 /* Text in About screen */
-"about_headline" = "Hər kəs üçün ödənişsiz və sevgi ilə hazırlanmış xəritə";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Reklam yoxdur, izləmə yoxdur, məlumatların toplanması yoxdur";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Batareyanın boşalması yoxdur, oflayn işləyir";
 
 /* Text in About screen */
-"about_proposition_3" = "• Sürətli, minimalist, icma tərəfindən hazırlanmışdır";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Yaxın";
 "download" = "Yüklə";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Salam!\n\nOrganic Maps əlfəcinlərim əlavə olunub. Zəhmət olmasa Organic Maps-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://omaps.app/get?kmz\n\nOrganic Maps ilə səyahətdən həzz alın!";
+"share_bookmarks_email_body" = "Salam!\n\nSampai əlfəcinlərim əlavə olunub. Zəhmət olmasa Sampai-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://sampai.my/\n\nSampai ilə səyahətdən həzz alın!";
 
 /* message title of loading file */
 "load_kmz_title" = "Əlfəcinlər yüklənir";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Məkanınız hələ müəyyən edilməyib";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Mən Organic Maps-də buradayam";
+"share_my_position" = "Mən Sampai-də buradayam";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ Organic Maps-də";
+"share_place_subject" = "%1$@ Sampai-də";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Organic Maps-də məkan";
+"share_place_subject_default" = "Sampai-də məkan";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Organic Maps-də və ya brauzerdə aç";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Sampai-də və ya brauzerdə aç";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Organic Maps əldə edin";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sampai əldə edin";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Başqa Tətbiqdə Açın";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Veb sayt";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Xəbərlər";
-
 /* Text in menu */
 "rate_the_app" = "Proqramı qiymətləndirin";
 
@@ -295,10 +292,10 @@
 "donate" = "Bağışlamaq";
 "already_donated" = "Artıq ianə edildi";
 "remind_me_later" = "Daha sonra xatırlat";
-"support_organic_maps" = "Organic Maps-i dəstəkləmək";
+"support_organic_maps" = "Sampai-i dəstəkləmək";
 
-/* Button in the main Help dialog */
-"copyright" = "Müəllif hüququ";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Problemi bildirin";
@@ -393,7 +390,7 @@
 "blue_gray" = "Mavi-boz";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps versiyası: %@";
+"version" = "Sampai versiyası: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Görünüş";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Yanlış xəritə məlumatlarını bildirin və ya düzəldin";
-
-/* Button in the About screen */
-"volunteer" = "Könüllü olmaq";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "İzləyin və bizimlə əlaqə saxlayın:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Uyğun kateqoriya tapa bilmirsiniz?";
-"editor_category_unsuitable_text" = "Organic Maps yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">bələdç</a>imizə baxın.";
+"editor_category_unsuitable_text" = "Sampai yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">bələdç</a>imizə baxın.";
 "downloader_no_downloaded_maps_title" = "Siz heç bir xəritə endirməmisiniz";
 "downloader_no_downloaded_maps_message" = "Ünvanları tapmaq və oflayn naviqasiya etmək üçün xəritələri endirin.";
 "current_location_unknown_error_title" = "Cari yer məlum deyil.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Endirmək üçün daha çox yerə ehtiyacınız var. Zəhmət olmasa önəmli olmayan məlumatları silin.";
-"editor_sharing_title" = "Organic Maps xəritələrini təkmilləşdirdim";
+"editor_sharing_title" = "Sampai xəritələrini təkmilləşdirdim";
 "editor_detailed_description_hint" = "Ətraflı şərh";
-"editor_detailed_description" = "Təklif etdiyiniz dəyişikliklər OpenStreetMap icmasına yerləşdiriləcək. Zəhmət olmasa Organic Maps'da redaktə edilə bilməyən əlavə detalları izah edin.";
+"editor_detailed_description" = "Təklif etdiyiniz dəyişikliklər OpenStreetMap icmasına yerləşdiriləcək. Zəhmət olmasa Sampai'da redaktə edilə bilməyən əlavə detalları izah edin.";
 "current_location_unknown_error_message" = "Məkanınızı axtararkən xəta baş verdi. Cihazınızın düzgün işlədiyini yoxlayın və sonra yenidən cəhd edin.";
 "location_services_disabled_header" = "Məkan xidmətləri deaktiv edilib";
 "location_services_disabled_message" = "Cihaz parametrlərində geolokasiyaya girişi aktiv edin";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Məxfilik seçin";
 "location_services_disabled_on_device_3" = "3. Məkan Xidmətləri seçin";
 "location_services_disabled_on_device_4" = "4. Məkan Xidmətlərini yandırın";
-"location_services_disabled_on_device_additional_message" = "Yoxsa Location olmadan Organic Maps-dən istifadə etməyə davam edin";
+"location_services_disabled_on_device_additional_message" = "Yoxsa Location olmadan Sampai-dən istifadə etməyə davam edin";
 "placepage_call_button" = "Zəng";
 "placepage_bookmark_name_hint" = "Əlfəcin Adı";
 "placepage_delete_bookmark_button" = "Əlfəcini silin";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Son səyahət etdiyiniz marşrutun qeydə alınması deaktiv edilsin?";
 "off_recent_track_background_button" = "Deaktiv edin";
-"recent_track_background_dialog_message" = "Organic Maps son səyahət etdiyiniz marşrutu qeyd etmək üçün arxa fonda geolokasiyadan istifadə edir.";
+"recent_track_background_dialog_message" = "Sampai son səyahət etdiyiniz marşrutu qeyd etmək üçün arxa fonda geolokasiyadan istifadə edir.";
 "general_settings" = "Ümumi Parametrlər";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Bütün əlfəcinləri görmək üçün telefona keçin";
 "speedcams_alert_title_carplay_1" = "Sürət kameraları";
 "speedcams_alert_title_carplay_2" = "Sürət xəbərdarlıqları";
-"download_map_carplay" = "Organic Maps tətbiqindən xəritələri cihazınıza endirin";
+"download_map_carplay" = "Sampai tətbiqindən xəritələri cihazınıza endirin";
 "carplay_roundabout_exit" = "%@ çıxın";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "İzohipləri görmək üçün xəritəni böyüdün";
 "downloader_loading_ios" = "Endirilir";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsTR";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Tr:About";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "İcma tərəfindən yaradılmış xəritələrimizdən istifadə etdiyiniz üçün təşəkkür edirik!";
 
-/* App tip #01 */
-"app_tip_01" = "Sizin ianələriniz və dəstəyinizlə biz dünyanın ən yaxşı xəritələrini yarada bilərik!";
-
-/* App tip #02 */
-"app_tip_02" = "Tətbiqimizi bəyənirsiniz? İnkişafı dəstəkləmək üçün ianə edin! Hələ bəyənmirsiniz? Niyə belə olduğunu bizə bildirin, biz də düzəldək!";
-
-/* App tip #03 */
-"app_tip_03" = "Əgər proqram tərtibatçısını tanıyırsınızsa, ona ehtiyac duyduğunuz funksiyanı əlavə etməsini xahiş edə bilərsiniz.";
-
 /* App tip #04 */
 "app_tip_04" = "Nəyisə seçmək üçün xəritədə istənilən yerə toxunun. Gizlətmək və interfeysi geri göstərmək üçün uzun müddət toxunun.";
 
 /* App tip #05 */
 "app_tip_05" = "Xəritədə cari yerinizi seçə biləcəyinizi bilirdinizmi?";
-
-/* App tip #06 */
-"app_tip_06" = "Tətbiqimizi dilinizə tərcümə etməyə kömək edə bilərsiniz.";
-
-/* App tip #07 */
-"app_tip_07" = "Tətbiqimiz bir neçə həvəskar və icma tərəfindən hazırlanıb.";
 
 /* App tip #08 */
 "app_tip_08" = "Xəritə məlumatlarını asanlıqla düzəldə və təkmilləşdirə bilərsiniz.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Əsas məqsədimiz sizin sevəcəyiniz sürətli, məxfiliyə yönəlmiş, istifadəsi asan xəritələr yaratmaqdır.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "İndi telefon ekranında Organic Maps istifadə edirsiniz";
+"car_used_on_the_phone_screen" = "İndi telefon ekranında Sampai istifadə edirsiniz";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Hazırda avtomobil ekranında Organic Maps istifadə edirsiniz";
+"car_used_on_the_car_screen" = "Hazırda avtomobil ekranında Sampai istifadə edirsiniz";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Telefonda davam edin";
@@ -1082,7 +1055,7 @@
 "map" = "Xəritə";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "İnkişaf etdiricilərə səhv hesabatı göndərmək istərdinizmi?\nOrganic Maps heç bir səhv məlumatını avtomatik olaraq toplamadığından, biz istifadəçilərimizin köməyinə güvənirik. Organic Maps-ı dəstəklədiyiniz üçün əvvəlcədən təşəkkür edirik!";
+"bugreport_alert_message" = "İnkişaf etdiricilərə səhv hesabatı göndərmək istərdinizmi?\nSampai heç bir səhv məlumatını avtomatik olaraq toplamadığından, biz istifadəçilərimizin köməyinə güvənirik. Sampai-ı dəstəklədiyiniz üçün əvvəlcədən təşəkkür edirik!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "iCloud Sinxronizasiyasını aktivləşdirin";

@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">It-tniżżil falla</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Erġa prova</string>
-    <string name="about_menu_title">Dwar Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">B\' xejn għal kulħadd, magħmul bl-imħabba</string>
+    <string name="about_menu_title">Dwar Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Bla reklami, bla traċċar, bla kollezjoni ta\' data</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Bla ħela ta\' batterija, jaħdem offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Malajr, minimalista, żvillupat mill-komunità</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Apliażżjoni tas-sors miftuħ magħmula min dilettanti u il-voluntiera</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Settings tal-lokażżjoni</string>
     <string name="close">Ġħalaq</string>
     <string name="unsupported_phone">L-applikazzjoni għanda bżonn \'hardware accelerated OpenGL\'. Sfortunatament, l-apparat tiegħek ma jappoġġjax dan.</string>
     <string name="download">Niżżel</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Jekk jogħġbok neħħi il-USB kejbil jew daħħal karta tal-memorja biex tuża Organic Maps</string>
+    <string name="disconnect_usb_cable">Jekk jogħġbok neħħi il-USB kejbil jew daħħal karta tal-memorja biex tuża Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Jekk jogħġbok żid ftit spazju fuq il-karta tal-memorja jew il-ħażna tal-USB biex tkun tista tuża l-applikazzjoni</string>
     <string name="download_resources">Qabel ma tibda tuża l-applikazzjoni, niżżel il-mappa ġenerali tad-dinja fuq l-apparat. \nDan ser juża %s ta\' storage.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Noti</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps bookmarks maqsuma miegħek</string>
-    <string name="share_bookmarks_email_body">Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Organic Maps. Jekk mhuwiex installat tista tniżżlu min hawn: https://omaps.app/get?kmz\n\nĦu pjaċir ivvjaġġa ġo Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Sampai bookmarks maqsuma miegħek</string>
+    <string name="share_bookmarks_email_body">Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Sampai. Jekk mhuwiex installat tista tniżżlu min hawn: https://sampai.my/\n\nĦu pjaċir ivvjaġġa ġo Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Tgħobijja tal-bookmarks</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">It-tgħobbija tal-bookmarks falliet. Il-fajl jista jkun korrott jew difettuż.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">It-tip tal-fajl mhuwiex rikonoxxut mill-applikazzjoni:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Il-fajl falla biex jiftaħ %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Editja</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Aqsam</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s fuq Organic Maps</string>
+    <string name="share_place_subject">%1$s fuq Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Post fuq Organic Maps</string>
+    <string name="share_place_subject_default">Post fuq Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mejl</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Websajt</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Aħbarijiet</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Għajnuna</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Mistoqsijiet Frekwenti</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Donazzjoni</string>
     <string name="already_donated">Ġa mogħtija id-donazzjoni</string>
     <string name="remind_me_later">Fakkar aktar tard</string>
-    <string name="support_organic_maps">Appoġġja lill-Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Appoġġja lill-proġett</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Drittijiet tal-awtur</string>
+    <string name="support_organic_maps">Appoġġja lill-Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Irrapporta problemi bl-app</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Skur</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Ċar mill-għodwa sal-għaxija</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Agħti mapep b\'xejn u bla reklami lil miljuni ta\' utenti!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Meta ssegwi r-rotta, jekk jogħġbok żomm f’ moħħok:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Dejta tal-OpenStreetMap maħluqa mill-komunita’ fl-%s. Sir af aktar dwar kif teditja u taġġorna l-mappa f’ OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) huwa proġett komunitarju biex jinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mappa fl-Organic Maps, u jaħdem b\'mod simili għal Wikipedia. Tista\' żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta\' utenti madwar id-dinja. Ingħaqad mal-komunità u għin biex toħloq mappa aħjar għal kulħadd!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) huwa proġett komunitarju biex jinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mappa fl-Sampai, u jaħdem b\'mod simili għal Wikipedia. Tista\' żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta\' utenti madwar id-dinja. Ingħaqad mal-komunità u għin biex toħloq mappa aħjar għal kulħadd!</string>
     <string name="login_to_make_edits_visible">Oħloq kont OpenStreetMap jew idħol biex tippubblika l-editjar tal-mapep tiegħek fid-dinja.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d ta\' %2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Nota lill-voluntiera ta’ OpenStreetMap (fakultattiva)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Iddeskrivi l-iżbalji fuq il-mappa jew l-affarijiet li ma jistgħux jiġu editjati ġewwa Organic Maps</string>
+    <string name="editor_note_hint">Iddeskrivi l-iżbalji fuq il-mappa jew l-affarijiet li ma jistgħux jiġu editjati ġewwa Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">L-editjar tiegħek jittella’ fid-database pubblika <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">ta’ OpenStreetMap</a>. Jekk jogħġbok iżżidx informazzjoni personali jew bid-drittijiet tal-awtur.</string>
     <string name="editor_more_about_osm">Aktar dwar OpenStreetMap</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operatur: %s</string>
     <string name="editor_category_unsuitable_title">Ma tistax isib kategorija adattata?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://organicmaps.app/faq/editing/advanced-map-editing">gwida</a> tagħna għal struzzjonijiet dettaljati.</string>
+    <string name="editor_category_unsuitable_text">Sampai jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">gwida</a> tagħna għal struzzjonijiet dettaljati.</string>
     <string name="downloader_no_downloaded_maps_title">Ma niżżilt l-ebda mapep</string>
     <string name="downloader_no_downloaded_maps_message">Niżżel mapep biex tfittex u tinnaviga mingħajr l-użu tal-Internet.</string>
     <string name="current_location_unknown_error_title">Il-post attwali mhux magħruf.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Żid waqfa</string>
     <string name="drag_to_reorder">Irranġa mill-ġdid</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Illoggja f’ OpenStreetMap biex awtomatikament ittella’ l-editjar kollu tal-mappa tiegħek. Tgħallem aktar <a href="https://github.com/organicmaps/organicmaps/issues/6144">hawn</a>.</string>
+    <string name="alert_reauth_message">Illoggja f’ OpenStreetMap biex awtomatikament ittella’ l-editjar kollu tal-mappa tiegħek.</string>
     <string name="dialog_error_storage_title">Problema tal-aċċess għall-ħażna</string>
     <string name="dialog_error_storage_message">Il-ħżin estern mhuwiex aċċessibbli. Il-kard tal-SD setgħet tneħħiet, saritilha l-ħsara, jew is-sistema tal-fajl tinqara biss. Jekk jogħġbok, iċċekkja l-karta tal-SD tiegħek jew ikkuntattjana fuq support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Imita ħażna ħażina</string>
@@ -761,28 +745,18 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Grazzi talli użajtu l-mapep tagħna mibnija mill-komunita’!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Bid-donazzjonijiet u l-appoġġ tiegħek, nistgħu noħolqu l-aqwa mapep fid-dinja!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Togħġbok l-app tagħna? Jekk jogħġbok agħti donazzjoni biex tappoġġja l-iżvilupp! Għadha ma togħġbokx? Jekk jogħġbok għidilna għaliex, u nirranġawha!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Jekk taf żviluppatur tas-softwer, tista’ titolbu jimplimenta il-karatteristika li għandek bżonn.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Għafas kullimkien fuq il-mappa biex tagħżel xi ħaġa. Tgħafisa twila tista\' tintuża biex taħbi u turi l-interface.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Kont taf li l-post attwali tiegħek fuq il-mappa jista’ jintgħażel?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Tista’ tgħin sabiex tittraduċi l-applikazzjoni tagħna fil-lingwa tiegħek.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">L-app tagħna hija żviluppata minn ftit dilettanti u l-komunita’.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Tista’ faċilment tirranġa u ttejjeb l-informazzjoni tal-mappa.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">L-għan ewlieni tagħna huwa li nibnu mapep veloċi, iffukati fuq il-privatezza, u faċli biex jintużaw li se jinħabbu.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Issa qed tuża Organic Maps fuq l-iskrin tat-telefown</string>
+    <string name="car_used_on_the_phone_screen">Issa qed tuża Sampai fuq l-iskrin tat-telefown</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Issa qed tuża Organic Maps fuq l-iskrin tal-karozza</string>
+    <string name="car_used_on_the_car_screen">Issa qed tuża Sampai fuq l-iskrin tal-karozza</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Int imqabbad ma’ Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -790,7 +764,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Lejn l-iskrin tal-karozza</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps teħtieġ aċċess għall-post. Meta jkun sigur, iċċekkja n-notifika fuq il-mowbajl tiegħek.</string>
+    <string name="aa_location_permissions_request">Sampai teħtieġ aċċess għall-post. Meta jkun sigur, iċċekkja n-notifika fuq il-mowbajl tiegħek.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Din l-applikazzjoni teħtieġ il-permess tiegħek</string>
     <!-- Grant Permissions button. -->

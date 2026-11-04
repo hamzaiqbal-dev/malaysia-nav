@@ -47,8 +47,8 @@
 <translation>Tải xuống đã thất bại</translation>
 </message>
 <message id="about_menu_title">
-<source>About Organic Maps</source>
-<translation>Giới thiệu về Organic Maps</translation>
+<source>About Sampai</source>
+<translation>Giới thiệu về Sampai</translation>
 </message>
 <message id="close">
 <source>Close</source>
@@ -200,28 +200,28 @@
 </message>
 <message id="share_my_position">
 <extracomment>Text shown before a shared &quot;my position&quot; link, and the email subject when sharing the current location.</extracomment>
-<source>I am here on Organic Maps</source>
-<translation>Tôi đang ở đây trên Organic Maps</translation>
+<source>I am here on Sampai</source>
+<translation>Tôi đang ở đây trên Sampai</translation>
 </message>
 <message id="share_place_subject">
 <extracomment>Email subject when sharing a place. %1$@ is the place name or address.</extracomment>
-<source>%1 on Organic Maps</source>
-<translation>%1 trên Organic Maps</translation>
+<source>%1 on Sampai</source>
+<translation>%1 trên Sampai</translation>
 </message>
 <message id="share_place_subject_default">
 <extracomment>Email subject when sharing a place that has no name or address.</extracomment>
-<source>A place on Organic Maps</source>
-<translation>Một địa điểm trên Organic Maps</translation>
+<source>A place on Sampai</source>
+<translation>Một địa điểm trên Sampai</translation>
 </message>
 <message id="share_open_in_om_or_browser">
-<extracomment>Shared email link text; opens the shared place in Organic Maps or in a web browser.</extracomment>
-<source>Open in Organic Maps or in a browser</source>
-<translation>Mở trong Organic Maps hoặc trình duyệt</translation>
+<extracomment>Shared email link text; opens the shared place in Sampai or in a web browser.</extracomment>
+<source>Open in Sampai or in a browser</source>
+<translation>Mở trong Sampai hoặc trình duyệt</translation>
 </message>
 <message id="share_get_om">
-<extracomment>Shared email link text; leads to the Organic Maps download page.</extracomment>
-<source>Get Organic Maps</source>
-<translation>Tải Organic Maps</translation>
+<extracomment>Shared email link text; leads to the Sampai download page.</extracomment>
+<source>Get Sampai</source>
+<translation>Tải Sampai</translation>
 </message>
 <message id="open_in_app">
 <extracomment>Title for the &quot;Open in Another App&quot; button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app.</extracomment>
@@ -304,8 +304,8 @@
 </message>
 <message id="version">
 <extracomment>Prints version number in About dialog</extracomment>
-<source>Organic Maps version: %1</source>
-<translation>Phiên bản Organic Maps: %1</translation>
+<source>Sampai version: %1</source>
+<translation>Phiên bản Sampai: %1</translation>
 </message>
 <message id="bookmark">
 <extracomment>bookmark button text</extracomment>
@@ -680,11 +680,6 @@
 <extracomment>Current language of the map!</extracomment>
 <source>Map language</source>
 <translation>Ngôn ngữ bản đồ</translation>
-</message>
-<message id="translated_om_site_url">
-<extracomment>Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content</extracomment>
-<source>https://organicmaps.app/</source>
-<translation>https://organicmaps.app/</translation>
 </message>
 <message id="button_layer_outdoor">
 <extracomment>Outdoors/hiking map style (activity) name in the Styles and Layers dialog</extracomment>

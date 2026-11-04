@@ -35,24 +35,24 @@
     <string name="country_status_download_failed">下载失败</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">再试一次</string>
-    <string name="about_menu_title">关于 Organic Maps</string>
+    <string name="about_menu_title">关于 Sampai</string>
     <!-- Text in About screen -->
-    <string name="about_headline">对每个人都免费，用爱制成</string>
+    <string name="about_headline">马来西亚制造，为马来西亚人而生</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• 没有广告，不会跟踪您，更不会收集您的数据</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• 无需耗费太多电量，可离线工作</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_3">• 快速且简约，由社区开发</string>
+    <string name="about_proposition_3">• 快速、简洁，马来语优先</string>
     <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">由爱好者和志愿者开发的开源应用程序。</string>
+    <string name="about_developed_by_enthusiasts">为马来西亚的每一条道路导航，从巴生谷到沙巴和砂拉越。</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">位置设置</string>
     <string name="close">关闭</string>
     <string name="unsupported_phone">该应用程序需要硬件加速的 OpenGL。很遗憾，您的设备不受支持。</string>
     <string name="download">下载</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">请拔除 USB 线或插入 SD 卡以使用 Organic Maps</string>
+    <string name="disconnect_usb_cable">请拔除 USB 线或插入 SD 卡以使用 Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">请先释放一些 SD 卡 / USB 存储空间以使用本应用</string>
     <string name="download_resources">在您开始使用此应用程序之前，请下载全球地图到您的设备。\n它将使用 %s 的存储空间。</string>
@@ -151,8 +151,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">注释</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">已与您分享 Organic Maps 书签</string>
-    <string name="share_bookmarks_email_body">您好！\n\n附件是我的书签，请在 Organic Maps 中打开。如果您没有安装 Organic Maps，可以在这里下载: https://omaps.app/get?kmz\n\n祝您使用 Organic Maps 旅行愉快！</string>
+    <string name="share_bookmarks_email_subject">已与您分享 Sampai 书签</string>
+    <string name="share_bookmarks_email_body">您好！\n\n附件是我的书签，请在 Sampai 中打开。如果您没有安装 Sampai，可以在这里下载: https://sampai.my/\n\n祝您使用 Sampai 旅行愉快！</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">正在加载书签</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +161,7 @@
     <string name="load_kmz_failed">书签载入失败，文件可能已损坏或不完整。</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">应用程序无法识别该文件类型：\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">无法打开文件 %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">编辑</string>
@@ -174,9 +174,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">分享</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s - Organic Maps</string>
+    <string name="share_place_subject">%1$s - Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Organic Maps 上的地点</string>
+    <string name="share_place_subject_default">Sampai 上的地点</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">电子邮件</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +248,6 @@
     <string name="menu">菜单</string>
     <!-- Text in menu -->
     <string name="website">网站</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">新闻</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">反馈</string>
     <!-- Text in menu -->
@@ -258,15 +256,11 @@
     <string name="help">帮助</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">问题和解答</string>
-    <!-- Button in the main menu -->
-    <string name="donate">捐助我们</string>
     <string name="already_donated">已捐赠</string>
     <string name="remind_me_later">稍后提醒</string>
-    <string name="support_organic_maps">支持 Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">支持本项目</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">版权</string>
+    <string name="support_organic_maps">支持 Sampai</string>
+    <!-- Button in the main Help dialog; opens the list of open-source components and their licences -->
+    <string name="open_source_licences">开源许可</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">报告问题</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +310,6 @@
     <string name="pref_appearance_dark">深色</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">从黎明到黄昏使用浅色</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">向数百万用户赠送无广告的免费地图！</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">按照路线行进时，请谨记：</string>
@@ -445,7 +437,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">截至 %s 的社区创建的 OpenStreetMap 数据。请访问 OpenStreetMap.org 详细了解如何编辑和更新地图</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org（OSM）是一个构建自由开放地图的社区项目。它是 Organic Maps 地图数据的主要来源，其工作原理类似于维基百科。您可以添加或编辑地点，全世界数以百万计的用户都可以使用它们！\n加入社区，共同完善地图数据，造福每个人！</string>
+    <string name="login_osm_presentation">OpenStreetMap.org（OSM）是一个构建自由开放地图的社区项目。它是 Sampai 地图数据的主要来源，其工作原理类似于维基百科。您可以添加或编辑地点，全世界数以百万计的用户都可以使用它们！\n加入社区，共同完善地图数据，造福每个人！</string>
     <string name="login_to_make_edits_visible">创建 OpenStreetMap 账号或登录，向全世界发布您编辑的地图。</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d / %2$d</string>
@@ -460,7 +452,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap 志愿者须知（可选）</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">描述地图上的错误或无法使用 Organic Maps 编辑的内容</string>
+    <string name="editor_note_hint">描述地图上的错误或无法使用 Sampai 编辑的内容</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">您的编辑内容将上传到公共<a href="https://wiki.openstreetmap.org/wiki/Zh-hans:关于">OpenStreetMap</a>数据库。请勿添加个人或受版权保护的信息。</string>
     <string name="editor_more_about_osm">关于 OpenStreetMap 的更多信息</string>
@@ -470,7 +462,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">运营方: %s</string>
     <string name="editor_category_unsuitable_title">找不到合适的类别？</string>
-    <string name="editor_category_unsuitable_text">Organic Maps 只允许添加简单的点类别，即无法添加城镇、道路、湖泊、建筑轮廓等类别。请直接向 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> 添加此类类别。请查看我们的<a href="https://organicmaps.app/faq/editing/advanced-map-editing">指南</a>，了解详细的步骤说明。</string>
+    <string name="editor_category_unsuitable_text">Sampai 只允许添加简单的点类别，即无法添加城镇、道路、湖泊、建筑轮廓等类别。请直接向 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> 添加此类类别。请查看我们的<a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">指南</a>，了解详细的步骤说明。</string>
     <string name="downloader_no_downloaded_maps_title">您尚未下载任何地图</string>
     <string name="downloader_no_downloaded_maps_message">下载地图来查找位置和离线浏览。</string>
     <string name="current_location_unknown_error_title">当前位置未知。</string>
@@ -542,7 +534,7 @@
     <string name="placepage_add_stop">添加途经点</string>
     <string name="drag_to_reorder">重新排序</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">请登录 OpenStreetMap 以自动上传您的所有地图编辑。若要了解更多信息请点击<a href="https://github.com/organicmaps/organicmaps/issues/6144">这里</a>。</string>
+    <string name="alert_reauth_message">请登录 OpenStreetMap 以自动上传您的所有地图编辑。</string>
     <string name="dialog_error_storage_title">存储空间访问问题</string>
     <string name="dialog_error_storage_message">外部存储空间不可用，很可能是因为 SD 卡已移除、损毁，或者文件系统为只读状态。请进行检查，然后通过 support\@sampai.my 联系我们</string>
     <string name="setting_emulate_bad_storage">模拟不良存储空间</string>
@@ -755,38 +747,24 @@
     <string name="change_map_locale">地图语言</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">地图数据来自 OpenStreetMap</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/zh-Hans/faq/voice/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/zh-Hans/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Zh-hans:关于</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s，%2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">感谢您使用我们社区构建的地图！</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">有了您的捐赠和支持，我们可以创造世界上最好的地图！</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">您喜欢我们的应用程序吗？请捐款以支持发展！还不喜欢吗？请告诉我们，我们会修复您提到的问题！</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">如果您认识软件开发人员，您可以要求他实现您需要的功能。</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">轻点地图上的任意位置可选择任何内容。长按可隐藏或显示界面。</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">您知道您可以在地图上选择您当前的位置吗？</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">您可以帮助将我们的应用程序翻译成您的语言。</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">我们的应用程序是由一些爱好者和社区开发的。</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">您可以轻松修复和改进地图数据。</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">我们的主要目标是构建您会喜欢的快速、注重隐私、易于使用的地图。</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">您现在正在手机屏幕上使用 Organic Maps</string>
+    <string name="car_used_on_the_phone_screen">您现在正在手机屏幕上使用 Sampai</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">您现在正在汽车屏幕上使用 Organic Maps</string>
+    <string name="car_used_on_the_car_screen">您现在正在汽车屏幕上使用 Sampai</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">您已连接到 Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -794,7 +772,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">转到汽车屏幕</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps 需要位置访问权限。在安全的情况下，请查看手机上的通知。</string>
+    <string name="aa_location_permissions_request">Sampai 需要位置访问权限。在安全的情况下，请查看手机上的通知。</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">此应用程序需要您的许可</string>
     <!-- Grant Permissions button. -->
@@ -914,4 +892,44 @@
     <string name="track_recording_finish">结束</string>
     <!-- Accessibility label for the button that reverses the complete planned route, including intermediate stops. -->
     <string name="reverse_route">反转路线</string>
+
+    <!-- SECTION: Malaysia Nav navigation HUD -->
+    <!-- Accessibility label of the big turn arrow in the navigation HUD. -->
+    <string name="my_nav_next_turn">下一个转弯</string>
+    <!-- Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short. -->
+    <string name="my_nav_then">然后</string>
+    <!-- Button that ends navigation. Keep very short. -->
+    <string name="my_nav_end">结束</string>
+    <!-- Accessibility label of the voice guidance on/off button in the navigation HUD. -->
+    <string name="my_nav_voice">语音导航</string>
+    <!-- Remaining travel time in minutes, e.g. "14 min". Keep very short. -->
+    <string name="my_nav_eta_minutes">%d 分钟</string>
+    <!-- Remaining travel time in whole hours, e.g. "2 h". Keep very short. -->
+    <string name="my_nav_eta_hours">%d 小时</string>
+    <!-- Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short. -->
+    <string name="my_nav_eta_hours_minutes">%1$d 小时 %2$d 分钟</string>
+    <!-- Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time. -->
+    <string name="my_nav_eta_subtitle">%1$s · %2$s 到达</string>
+    <!-- Label of the toll total in the navigation ETA sheet. Keep very short. -->
+    <string name="my_nav_toll">过路费</string>
+    <!-- Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet. -->
+    <string name="my_nav_toll_amount">RM %s</string>
+    <!-- Quick search chip on the map (petrol stations). Keep to one short word. -->
+    <string name="my_chip_fuel">油站</string>
+    <!-- Quick search chip on the map (mosques and prayer rooms). Keep to one short word. -->
+    <string name="my_chip_surau">祈祷室</string>
+    <!-- Quick search chip on the map (restaurants). Keep to one short word. -->
+    <string name="my_chip_mamak">嘛嘛档</string>
+    <!-- Quick search chip on the map (parking). Keep to one short word. -->
+    <string name="my_chip_parking">停车</string>
+    <!-- Quick search chip on the map (EV chargers). Keep to one short word. -->
+    <string name="my_chip_ev">充电</string>
+    <!-- Quick search chip on the map (clinics). Keep to one short word. -->
+    <string name="my_chip_clinic">诊所</string>
+    <!-- Quick search chip on the map (highway rest areas). Keep to one short word. -->
+    <string name="my_chip_rest_area">休息站</string>
+    <!-- Quick search chip on the map (toilets). Keep to one short word. -->
+    <string name="my_chip_toilet">厕所</string>
+    <!-- Quick search chip on the map (ATMs). Keep to one short word. -->
+    <string name="my_chip_atm">ATM</string>
 </resources>

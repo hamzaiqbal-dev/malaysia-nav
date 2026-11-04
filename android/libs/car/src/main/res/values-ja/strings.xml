@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">ダウンロード中</string>
     <string name="download_map_title">おおまかな世界地図をダウンロード</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android AutoのOrganic Mapsを有効に機能させるには、位置情報の許可が必要です</string>
+    <string name="aa_request_permission_activity_text">Android AutoのSampaiを有効に機能させるには、位置情報の許可が必要です</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">許可を与える</string>
 </resources>

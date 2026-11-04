@@ -16,7 +16,6 @@ public final class Constants
 
     // TODO(FOUNDER TO CONFIRM): placeholder website until the Sampai domain is registered.
     public static final String WEBSITE = "https://sampai.my/";
-    public static final String GITHUB = "https://github.com/hamzaiqbal-dev/malaysia-nav";
 
     public static final String COPYRIGHT = "file:///android_asset/copyright.html";
     public static final String FAQ = "file:///android_asset/faq.html";

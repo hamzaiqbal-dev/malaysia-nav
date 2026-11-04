@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Изтегляне</string>
     <string name="download_map_title">Изтегляне на осноената картата на света</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps в Android Auto се нуждае от разрешение за местоположение, за да работи ефективно</string>
+    <string name="aa_request_permission_activity_text">Sampai в Android Auto се нуждае от разрешение за местоположение, за да работи ефективно</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Предоставяне на разрешения</string>
 </resources>

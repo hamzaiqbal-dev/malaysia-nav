@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Descărcarea a eșuat</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Mai încearcă</string>
-    <string name="about_menu_title">Despre Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratuit pentru toată lumea, făcut cu dragoste</string>
+    <string name="about_menu_title">Despre Sampai</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Fără reclame, fără urmărire, fără colectare de date</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Nu consumă baterie, funcționează offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Rapid, minimalist, dezvoltat de comunitate</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplicație open-source creată de entuziaști și voluntari.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Setări de locație</string>
     <string name="close">Închide</string>
     <string name="unsupported_phone">Această aplicație necesită accelerarea hardware OpenGL. Din păcate, dispozitivul tău nu este compatibil.</string>
     <string name="download">Descarcă</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Deconectează cablul USB sau introdu un card de memorie pentru a utiliza Organic Maps</string>
+    <string name="disconnect_usb_cable">Deconectează cablul USB sau introdu un card de memorie pentru a utiliza Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Spațiul de stocare de pe cardul SD/memoria USB este insuficient pentru a putea utiliza aplicația</string>
     <string name="download_resources">Înainte de a începe, trebuie descărcată harta generală a lumii în dispozitivul tău.\nSe vor descărca %s.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Detalii</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Îți trimit locurile mele preferate din Organic Maps</string>
-    <string name="share_bookmarks_email_body">Bună!\n\nȚi-am atașat locurile mele preferate din aplicația Organic Maps. Deschide-le dacă ai instalată Organic Maps. Dacă nu, o poți descărca pentru iOS sau Android de aici: https://organicmaps.app/</string>
+    <string name="share_bookmarks_email_subject">Îți trimit locurile mele preferate din Sampai</string>
+    <string name="share_bookmarks_email_body">Bună!\n\nȚi-am atașat locurile mele preferate din aplicația Sampai. Deschide-le dacă ai instalată Sampai. Dacă nu, o poți descărca pentru iOS sau Android de aici: https://sampai.my/</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Se încarcă locurile preferate</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Încărcarea locurilor preferate a eșuat. Fișierul poate fi defect.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Tipul de fișier nu este recunoscut de aplicație:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Nu a reușit să deschidă fișierul %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Modifică</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Trimite</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s pe Organic Maps</string>
+    <string name="share_place_subject">%1$s pe Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Un loc pe Organic Maps</string>
+    <string name="share_place_subject_default">Un loc pe Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-mail</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Meniu</string>
     <!-- Text in menu -->
     <string name="website">Site web</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Știri</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Părere</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Ajutor</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Întrebări frecvente</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Donează</string>
     <string name="already_donated">Deja donat</string>
     <string name="remind_me_later">Amintește mai târziu</string>
-    <string name="support_organic_maps">Susține Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Susține proiectul</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Drepturi de autor</string>
+    <string name="support_organic_maps">Susține Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Raportează o eroare</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Întunecat</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Deschis de la răsărit până la apus</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Oferiți hărți gratuite fără reclame pentru milioane de utilizatori!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Când parcurgi traseul, ai în vedere următoarele:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Date OpenStreetMap create de comunitate la data de %s. Aflați mai multe despre cum să editați și să actualizați harta la OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) este un proiect comunitar pentru construirea unei hărți libere și deschise. Este principala sursă de date cartografice în Organic Maps și funcționează similar cu Wikipedia. Puteți adăuga sau edita locuri, iar acestea devin disponibile pentru milioane de utilizatori din întreaga lume.\nAlăturați-vă comunității și ajutați la crearea unei hărți mai bune pentru toată lumea!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) este un proiect comunitar pentru construirea unei hărți libere și deschise. Este principala sursă de date cartografice în Sampai și funcționează similar cu Wikipedia. Puteți adăuga sau edita locuri, iar acestea devin disponibile pentru milioane de utilizatori din întreaga lume.\nAlăturați-vă comunității și ajutați la crearea unei hărți mai bune pentru toată lumea!</string>
     <string name="login_to_make_edits_visible">Creați un cont OpenStreetMap sau conectați-vă pentru a vă publica edițiile de hartă în întreaga lume.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d din %2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Notă pentru voluntarii OpenStreetMap (opțional)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Descrieți erorile de pe hartă sau lucrurile care nu pot fi editate cu Organic Maps</string>
+    <string name="editor_note_hint">Descrieți erorile de pe hartă sau lucrurile care nu pot fi editate cu Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Edițiile dvs. sunt încărcate în baza de date publică <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Vă rugăm să nu adăugați informații personale sau protejate prin drepturi de autor.</string>
     <string name="editor_more_about_osm">Mai multe despre OpenStreetMap</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Nu găsiți o categorie potrivită?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps permite adăugarea doar a unor categorii de puncte simple, ceea ce înseamnă că nu există orașe, drumuri, lacuri, contururi de clădiri, etc. Vă rugăm să adăugați astfel de categorii direct la <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultați <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ghidul nostru</a> pentru instrucțiuni detaliate pas cu pas.</string>
+    <string name="editor_category_unsuitable_text">Sampai permite adăugarea doar a unor categorii de puncte simple, ceea ce înseamnă că nu există orașe, drumuri, lacuri, contururi de clădiri, etc. Vă rugăm să adăugați astfel de categorii direct la <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultați <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">ghidul nostru</a> pentru instrucțiuni detaliate pas cu pas.</string>
     <string name="downloader_no_downloaded_maps_title">Nu ai descărcat nicio hartă</string>
     <string name="downloader_no_downloaded_maps_message">Descarcă hărți pentru a căuta un loc și a naviga fără conectare la internet.</string>
     <string name="current_location_unknown_error_title">Poziția actuală este necunoscută.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Adaugă oprire</string>
     <string name="drag_to_reorder">Reordonare</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Vă rugăm să vă conectați la OpenStreetMap pentru a încărca automat toate modificările aduse hărții. Aflați mai multe <a href="https://github.com/organicmaps/organicmaps/issues/6144">aici</a>.</string>
+    <string name="alert_reauth_message">Vă rugăm să vă conectați la OpenStreetMap pentru a încărca automat toate modificările aduse hărții.</string>
     <string name="dialog_error_storage_title">Problemă de acces la spațiul de stocare</string>
     <string name="dialog_error_storage_message">Spațiul de stocare extern nu este disponibil. Probabil cardul SD nu este introdus, este deteriorat sau sistemul de fișiere este doar pentru citire. Verifică sau contactează-ne la support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Simulare arhivă deteriorată</string>
@@ -758,28 +742,18 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Vă mulțumim că utilizați hărțile create de comunitatea noastră!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Cu donațiile și sprijinul dumneavoastră, putem crea cele mai bune hărți din lume!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Îți place aplicația noastră? Vă rugăm să donați pentru a sprijini dezvoltarea! Nu-ți place încă? Vă rugăm să ne anunțați și vom remedia!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Dacă cunoașteți un dezvoltator de software, îi puteți cere să implementeze o caracteristică de care aveți nevoie.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Atingeți oriunde pe hartă pentru a selecta orice. Atingeți lung pentru a ascunde și a reda interfața.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Știți că vă puteți selecta locația curentă pe hartă?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Puteți ajuta la traducerea aplicației noastre în limba dvs.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Aplicația noastră este dezvoltată de câțiva entuziaști și de comunitate.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Puteți remedia și îmbunătăți cu ușurință datele hărții.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Scopul nostru principal este să construim hărți rapide, axate pe confidențialitate și ușor de utilizat, care să vă placă.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Acum utilizați Organic Maps pe ecranul telefonului</string>
+    <string name="car_used_on_the_phone_screen">Acum utilizați Sampai pe ecranul telefonului</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Acum utilizați Organic Maps pe ecranul mașinii</string>
+    <string name="car_used_on_the_car_screen">Acum utilizați Sampai pe ecranul mașinii</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Sunteți conectat la Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -787,7 +761,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">La ecranul mașinii</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps are nevoie de acces la locație. Când este sigur, verificați notificarea de pe telefon.</string>
+    <string name="aa_location_permissions_request">Sampai are nevoie de acces la locație. Când este sigur, verificați notificarea de pe telefon.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Această aplicație are nevoie de permisiunea dvs.</string>
     <!-- Grant Permissions button. -->

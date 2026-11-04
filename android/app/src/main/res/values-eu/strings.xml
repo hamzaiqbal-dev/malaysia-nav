@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Deskargak huts egin du</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Saiatu berriro</string>
-    <string name="about_menu_title">Organic Maps-i buruz</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Denontzat doan, maitasunez egina</string>
+    <string name="about_menu_title">Sampai-i buruz</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Ez iragarkirik, ez jarraipenik, ez datu-bilketarik</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Ez da bateria deskargatzen, konexiorik gabe funtzionatzen du</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Azkarra, minimalista, komunitateak garatua</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Zale eta bolondresek sortutako kode irekiko aplikazioa.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Kokapen ezarpenak</string>
     <string name="close">Itxi</string>
     <string name="unsupported_phone">Aplikazioak hardwarez azeleratutako OpenGL behar du. Zoritxarrez, zure gailuak ez du hau eskaintzen.</string>
     <string name="download">Deskargatu</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Mesedez, deskonektatu USB kablea edo sartu SD memoria Organic Maps erabiltzeko</string>
+    <string name="disconnect_usb_cable">Mesedez, deskonektatu USB kablea edo sartu SD memoria Sampai erabiltzeko</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Mesedez, egin lekua SD memorian/USB biltegian aplikazioa erabiltzeko</string>
     <string name="download_resources">Hasi aurretik deskargatu mesedez mundu-mapa orokorra zure gailura.\nMemorian %s erabiliko ditu.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Oharrak</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps-eko markagailuak zurekin partekatu dira</string>
-    <string name="share_bookmarks_email_body">Kaixo!\nNire markagailuak Organic Maps aplikazioan erantsi ditut. Mesedez, ireki itzazu Organic Maps instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://omaps.app/get?kmz\n\nGozatu bidaiatzen Organic Maps-ekin!</string>
+    <string name="share_bookmarks_email_subject">Sampai-eko markagailuak zurekin partekatu dira</string>
+    <string name="share_bookmarks_email_body">Kaixo!\nNire markagailuak Sampai aplikazioan erantsi ditut. Mesedez, ireki itzazu Sampai instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://sampai.my/\n\nGozatu bidaiatzen Sampai-ekin!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Markagailuak kargatzen</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Ezin izan dira markagailuak kargatu. Fitxategia akastuna izan daiteke.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Aplikazioak ez du fitxategi mota ezagutzen:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Ezin izan da fitxategia ireki %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Editatu</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Partekatu</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s Organic Maps-en</string>
+    <string name="share_place_subject">%1$s Sampai-en</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Leku bat Organic Maps-en</string>
+    <string name="share_place_subject_default">Leku bat Sampai-en</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">Posta elektronikoa</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menua</string>
     <!-- Text in menu -->
     <string name="website">Webgunea</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Albisteak</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Iruzkinak</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Laguntza</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Ohiko galderak</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Dohaintza eman</string>
     <string name="already_donated">Dohaintza jada emana</string>
     <string name="remind_me_later">Gogoratu geroago</string>
-    <string name="support_organic_maps">Sustatu Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Proiektuari laguntza eman</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Egile eskubideak</string>
+    <string name="support_organic_maps">Sustatu Sampai</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Errore baten berri eman</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Iluna</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Argi egunsentitik iluntzerarte</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Oparitu doako mapak iragarkirik gabe milioika erabiltzaileri!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Arrastoa jarraitzean, kontuan izan:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Komunitateak sortutako OpenStreetMap datuak %s-tik aurrera. Lortu informazio gehiago mapa editatu eta eguneratzeari buruz OpenStreetMap.org helbidean</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) mapa libre eta irekia eraikitzeko komunitateko proiektu bat da. Organic Maps-en mapen datuen iturri nagusia da eta Wikipediaren antzera funtzionatzen du. Tokiak gehitu edo edita ditzakezu eta mundu osoko milioika erabiltzailerentzat eskuragarri egongo dira.\nSartu komunitatean eta lagundu mapa hobea egiten guztiontzat!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) mapa libre eta irekia eraikitzeko komunitateko proiektu bat da. Sampai-en mapen datuen iturri nagusia da eta Wikipediaren antzera funtzionatzen du. Tokiak gehitu edo edita ditzakezu eta mundu osoko milioika erabiltzailerentzat eskuragarri egongo dira.\nSartu komunitatean eta lagundu mapa hobea egiten guztiontzat!</string>
     <string name="login_to_make_edits_visible">Sortu OpenStreetMap kontu bat edo hasi saioa zure maparen aldaketak munduan argitaratzeko.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap-eko boluntarioentzako oharra (aukerakoa)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Deskribatu mapako akatsak edo editatu ezin diren gauzakOrganic Maps erabiliz.</string>
+    <string name="editor_note_hint">Deskribatu mapako akatsak edo editatu ezin diren gauzakSampai erabiliz.</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Zure aldaketak <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> datu-base publikora kargatzen dira. Mesedez, ez gehitu informazio pertsonalik edo copyrightdun informaziorik.</string>
     <string name="editor_more_about_osm">OpenStreetMap-i buruzko informazio gehiago</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operadorea: %s</string>
     <string name="editor_category_unsuitable_title">Ezin duzu kategoria egokirik aurkitu?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Begiratu gure <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gida</a> urratsez urrats argibide zehatzak lortzeko.</string>
+    <string name="editor_category_unsuitable_text">Sampai-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Begiratu gure <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">gida</a> urratsez urrats argibide zehatzak lortzeko.</string>
     <string name="downloader_no_downloaded_maps_title">Ez duzu maparik deskargatu</string>
     <string name="downloader_no_downloaded_maps_message">Deskargatu mapak kokapena aurkitzeko eta lineaz kanpo nabigatzeko.</string>
     <string name="current_location_unknown_error_title">Uneko kokapena ezezaguna da.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Gehitu geldialdia</string>
     <string name="drag_to_reorder">Berrantolatu</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Hasi saioa OpenStreetMap-en zure mapen aldaketa guztiak automatikoki kargatzeko. Lortu informazio gehiago <a href="https://github.com/organicmaps/organicmaps/issues/6144">hemen</a>.</string>
+    <string name="alert_reauth_message">Hasi saioa OpenStreetMap-en zure mapen aldaketa guztiak automatikoki kargatzeko.</string>
     <string name="dialog_error_storage_title">Biltegiratze sarbidearen arazoa</string>
     <string name="dialog_error_storage_message">Kanpoko biltegiratzea ez dago erabilgarri; Baliteke SD txartela kendu edo hondatuta egotea, edo fitxategi sistema irakurtzeko soilik izatea. Mesedez, begiratu edo idatzi iezaguzu support\@sampai.my helbidera</string>
     <string name="setting_emulate_bad_storage">Emulatu kaltetutako biltegiratzea</string>
@@ -625,7 +609,7 @@
     <string name="bookmarks_text_placement_description">Laster-marka gehiegi badaude, mapan laster-markak bistaratzeak aplikazioa moteldu dezake.</string>
     <string name="show_to_the_right">Erakutsi eskuinean</string>
     <string name="show_at_the_bottom">Erakutsi behean</string>
-    <string name="enable_logging_warning_message">Aukera hau diagnostiko helburua duten erregistro ekintzetarako gaituta dago. Honek gure taldeari aplikazioarekin arazoak identifikatzen laguntzen dio. Gaitu aukera Organic Maps laguntzari eskatuta soilik.</string>
+    <string name="enable_logging_warning_message">Aukera hau diagnostiko helburua duten erregistro ekintzetarako gaituta dago. Honek gure taldeari aplikazioarekin arazoak identifikatzen laguntzen dio. Gaitu aukera Sampai laguntzari eskatuta soilik.</string>
     <!-- Driving profile in routing options settings. -->
     <string name="routing_options_driving">Autoz</string>
     <!-- Cycling profile in routing options settings. -->
@@ -754,38 +738,24 @@
     <string name="change_map_locale">Maparen hizkuntza</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMap-eko mapa-datuak</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/eu/faq/voice/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/eu/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Eskerrik asko gure komunitateak eraikitako mapak erabiltzeagatik!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Zure dohaintza eta laguntzarekin, Munduko mapa onenak sor ditzakegu!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Gure aplikazioa gustatzen zaizu? Mesedez, eman dohaintza garapena laguntzeko! Oraindik ez al zaizu gustatzen? Mesedez, jakinarazi iezaguzu, eta konponduko dugu!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Software garatzaile bat ezagutzen baduzu, behar duzun funtzio bat ezartzeko eska diezaiokezu.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Sakatu mapako edozein tokitan edozer hautatzeko. Luze sakatu interfazea ezkutatzeko eta berriro erakusteko.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Ba al dakizu zure uneko kokapena mapan hauta dezakezula?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Gure aplikazioa zure hizkuntzara itzultzen lagun dezakezu.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Gure aplikazioa zale gutxi batzuek eta komunitateak garatzen dute.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Maparen datuak erraz konpondu eta hobetu ditzakezu.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Gure helburu nagusia maite dituzun mapa azkarrak, pribatutasunari begira eta erabilerrazak sortzea da.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Organic Maps telefonoaren pantailan erabiltzen ari zara</string>
+    <string name="car_used_on_the_phone_screen">Sampai telefonoaren pantailan erabiltzen ari zara</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Organic Maps autoaren pantailan erabiltzen ari zara</string>
+    <string name="car_used_on_the_car_screen">Sampai autoaren pantailan erabiltzen ari zara</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Android Auto-ra konektatuta zaude</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -793,7 +763,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Autoaren pantailara</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps-ek kokapenerako sarbidea behar du. Seguru dagoenean, egiaztatu zure telefonoko jakinarazpena.</string>
+    <string name="aa_location_permissions_request">Sampai-ek kokapenerako sarbidea behar du. Seguru dagoenean, egiaztatu zure telefonoko jakinarazpena.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Aplikazio honek zure baimena behar du</string>
     <!-- Grant Permissions button. -->

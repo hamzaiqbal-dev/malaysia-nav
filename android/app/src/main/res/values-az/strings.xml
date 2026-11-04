@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Yükləmə uğursuz oldu</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Yenidən cəhd et</string>
-    <string name="about_menu_title">Organic Maps Haqqında</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Hər kəs üçün ödənişsiz və sevgi ilə hazırlanmış xəritə</string>
+    <string name="about_menu_title">Sampai Haqqında</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Reklam yoxdur, izləmə yoxdur, məlumatların toplanması yoxdur</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Batareyanın boşalması yoxdur, oflayn işləyir</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Sürətli, minimalist, icma tərəfindən hazırlanmışdır</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Həvəskarlar və könüllülər tərəfindən yaradılan açıq mənbə proqramı.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Məkan parametrləri</string>
     <string name="close">Yaxın</string>
     <string name="unsupported_phone">Tətbiq aparatla sürətləndirilmiş OpenGL tələb edir. Təəssüf ki, cihazınız dəstəklənmir.</string>
     <string name="download">Yüklə</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Organic Maps\'dan istifadə etmək üçün zəhmət olmasa USB kabeli ayırın və ya yaddaş kartı daxil edin</string>
+    <string name="disconnect_usb_cable">Sampai\'dan istifadə etmək üçün zəhmət olmasa USB kabeli ayırın və ya yaddaş kartı daxil edin</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Tətbiqdən istifadə etmək üçün SD kartda/USB yaddaş cihazında bir qədər yer boşaldın.</string>
     <string name="download_resources">Başlamazdan əvvəl gəlin ümumi dünya xəritəsini cihazınıza endirək.\n%s yer tələb olunur.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Qeydlər</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps əlfəcinləri sizinlə paylaşıldı</string>
-    <string name="share_bookmarks_email_body">Salam!\n\nOrganic Maps əlfəcinlərim əlavə olunub. Zəhmət olmasa Organic Maps-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://omaps.app/get?kmz\n\nOrganic Maps ilə səyahətdən həzz alın!</string>
+    <string name="share_bookmarks_email_subject">Sampai əlfəcinləri sizinlə paylaşıldı</string>
+    <string name="share_bookmarks_email_body">Salam!\n\nSampai əlfəcinlərim əlavə olunub. Zəhmət olmasa Sampai-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://sampai.my/\n\nSampai ilə səyahətdən həzz alın!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Əlfəcinlər yüklənir</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Əlfəcinlərin quraşdırılması uğursuz oldu. Fayl zədələnmiş və ya qüsurlu ola bilər.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Fayl növü tətbiq tərəfindən tanınmır:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Faylı açmaq alınmadı %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Redaktə et</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Paylaşın</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s Organic Maps-də</string>
+    <string name="share_place_subject">%1$s Sampai-də</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Organic Maps-də məkan</string>
+    <string name="share_place_subject_default">Sampai-də məkan</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-poçt</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menyu</string>
     <!-- Text in menu -->
     <string name="website">Veb sayt</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Xəbərlər</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Rəy</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Yardım</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Tez-tez soruşulan suallar</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Bağışlamaq</string>
     <string name="already_donated">Artıq ianə edildi</string>
     <string name="remind_me_later">Daha sonra xatırlat</string>
-    <string name="support_organic_maps">Organic Maps-i dəstəkləmək</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Bu layihəni dəstəkləyin</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Müəllif hüququ</string>
+    <string name="support_organic_maps">Sampai-i dəstəkləmək</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Problemi bildirin</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Tünd</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Şəfəqdən gün batana qədər açıq</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Milyonlarla istifadəçiyə reklamsız, pulsuz xəritələr hədiyyə edin!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Marşrutunuzu izləyərkən aşağıdakıları yadda saxlayın:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">%s tarixinə icma tərəfindən yaradılmış OpenStreetMap datası. OpenStreetMap.org saytında xəritəni necə redaktə etmək və yeniləmək haqqında ətraflı məlumat əldə edin</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) pulsuz və açıq xəritə yaratmaq üçün icma layihəsidir. Bu, Organic Maps xəritə məlumatlarının əsas mənbəyidir və Vikipediya kimi fəaliyyət göstərir. Siz yerlər əlavə edib və ya redaktə edə bilərsiniz və onlar bütün dünyada milyonlarla istifadəçi üçün əlçatan olur. İcmaya qoşulun və hər kəs üçün daha yaxşı xəritə yaratmağa kömək edin!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) pulsuz və açıq xəritə yaratmaq üçün icma layihəsidir. Bu, Sampai xəritə məlumatlarının əsas mənbəyidir və Vikipediya kimi fəaliyyət göstərir. Siz yerlər əlavə edib və ya redaktə edə bilərsiniz və onlar bütün dünyada milyonlarla istifadəçi üçün əlçatan olur. İcmaya qoşulun və hər kəs üçün daha yaxşı xəritə yaratmağa kömək edin!</string>
     <string name="login_to_make_edits_visible">OpenStreetMap hesabı yaradın və ya xəritə redaktələrinizi dünyada dərc etmək üçün daxil olun.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap könüllüləri üçün qeyd (isteğe bağlı)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Xəritədəki səhvləri və ya redaktə edilə bilməyən elementləri təsvir edinOrganic Maps</string>
+    <string name="editor_note_hint">Xəritədəki səhvləri və ya redaktə edilə bilməyən elementləri təsvir edinSampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Redaktələriniz ictimai <a href="https://wiki.openstreetmap.org/wiki/Tr:About">OpenStreetMap</a> verilənlər bazasına yüklənir. Zəhmət olmasa şəxsi və ya müəllif hüquqları ilə qorunan məlumatları əlavə etməyin.</string>
     <string name="editor_more_about_osm">OpenStreetMap haqqında əlavə məlumat</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Uyğun kateqoriya tapa bilmirsiniz?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href="https://organicmaps.app/faq/editing/advanced-map-editing">bələdç</a>imizə baxın.</string>
+    <string name="editor_category_unsuitable_text">Sampai yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">bələdç</a>imizə baxın.</string>
     <string name="downloader_no_downloaded_maps_title">Siz heç bir xəritə endirməmisiniz</string>
     <string name="downloader_no_downloaded_maps_message">Ünvanları tapmaq və oflayn naviqasiya etmək üçün xəritələri endirin.</string>
     <string name="current_location_unknown_error_title">Cari yer məlum deyil.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Dayanacaq əlavə et</string>
     <string name="drag_to_reorder">Yenidən sırala</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Bütün xəritə redaktələrinizi avtomatik yükləmək üçün OpenStreetMap-a daxil olun. <a href="https://github.com/organicmaps/organicmaps/issues/6144">burada</a> ətraflı məlumat əldə edin.</string>
+    <string name="alert_reauth_message">Bütün xəritə redaktələrinizi avtomatik yükləmək üçün OpenStreetMap-a daxil olun.</string>
     <string name="dialog_error_storage_title">Yaddaş giriş problemi</string>
     <string name="dialog_error_storage_message">Xarici yaddaş mövcud deyil, ola bilsin ki, SD Kart çıxarılıb, zədələnib və ya fayl sistemi yalnız oxunur. Zəhmət olmasa yoxlayın və ya support\@sampai.my ünvanında bizimlə əlaqə saxlayın</string>
     <string name="setting_emulate_bad_storage">Zədələnmiş yaddaşı təqlid edin</string>
@@ -760,28 +744,18 @@
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">İcma tərəfindən yaradılmış xəritələrimizdən istifadə etdiyiniz üçün təşəkkür edirik!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Sizin ianələriniz və dəstəyinizlə biz dünyanın ən yaxşı xəritələrini yarada bilərik!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Tətbiqimizi bəyənirsiniz? İnkişafı dəstəkləmək üçün ianə edin! Hələ bəyənmirsiniz? Niyə belə olduğunu bizə bildirin, biz də düzəldək!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Əgər proqram tərtibatçısını tanıyırsınızsa, ona ehtiyac duyduğunuz funksiyanı əlavə etməsini xahiş edə bilərsiniz.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Nəyisə seçmək üçün xəritədə istənilən yerə toxunun. Gizlətmək və interfeysi geri göstərmək üçün uzun müddət toxunun.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Xəritədə cari yerinizi seçə biləcəyinizi bilirdinizmi?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Tətbiqimizi dilinizə tərcümə etməyə kömək edə bilərsiniz.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Tətbiqimiz bir neçə həvəskar və icma tərəfindən hazırlanıb.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Xəritə məlumatlarını asanlıqla düzəldə və təkmilləşdirə bilərsiniz.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Əsas məqsədimiz sizin sevəcəyiniz sürətli, məxfiliyə yönəlmiş, istifadəsi asan xəritələr yaratmaqdır.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">İndi telefon ekranında Organic Maps istifadə edirsiniz</string>
+    <string name="car_used_on_the_phone_screen">İndi telefon ekranında Sampai istifadə edirsiniz</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Hazırda avtomobil ekranında Organic Maps istifadə edirsiniz</string>
+    <string name="car_used_on_the_car_screen">Hazırda avtomobil ekranında Sampai istifadə edirsiniz</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Siz Android Auto-a qoşulmusunuz</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -789,7 +763,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Avtomobil ekranına</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps Məkan məlumatlarına giriş tələb olunur. Təhlükəsiz olduqda telefonunuzdakı bildirişi yoxlayın.</string>
+    <string name="aa_location_permissions_request">Sampai Məkan məlumatlarına giriş tələb olunur. Təhlükəsiz olduqda telefonunuzdakı bildirişi yoxlayın.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Bu tətbiq sizin icazənizə ehtiyac duyur</string>
     <!-- Grant Permissions button. -->
