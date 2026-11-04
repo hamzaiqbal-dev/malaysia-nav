@@ -244,3 +244,5 @@ Lessons:
 Left to do:
 - Getting a Malaysia map onto the emulator would let the smoke test cover routing, the HUD and tolls. It needs a map not fetched from upstream's CDN: generating one here is heavy, and using upstream's CDN from CI is what the blocker forbids.
 - Native Tamil read of #46; Tamil voice, type names and iOS; the iOS and Android listings say Tamil voice is "one tap away" (#29).
+
+Run 6 close (07:00 MYT): #47 confirmed on the emulator: bottom bar 299 of 2400 px on the rollup, ruler above the chips, 0 crashes. The OSM credit itself fades soon after start and wasn't photographed in its new place. #46 and #47 all green, #46 including both macOS jobs. #42's main CI on 47647cb9 was still running, so next run read it first. #45's last smoke run was also not read.
