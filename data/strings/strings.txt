@@ -4775,7 +4775,7 @@ ja = こんにちは！\n\n添付ファイルSampaiのお気に入りリスト�
 ko = 안녕하세요!\n\n제 북마크를 첨부했습니다. Sampai에서 열어주세요. 설치되어 있지 않다면 여기에서 다운로드할 수 있습니다: https://sampai.my/\n\nSampai와 함께 즐거운 여행 되세요!
 lo = ສະບາຍດີ!\n\nນີ້ແມ່ນບຸກມາກຂອງຂ້ອຍ; ກະລຸນາເປີດໃນ Sampai. ຫາກທ່ານຍັງບໍ່ໄດ້ຕິດຕັ້ງ, ສາມາດດາວໂຫລດໄດ້ທີ່ນີ້: https://sampai.my/\n\nຂໍໃຫ້ມ່ວນກັບການເດີນທາງດ້ວຍ Sampai!
 lt = Labas! \n \nČia prisegtas mano žymių sąrašas iš „Sampai“ programėlės. Jei jos neturi, gali ją parsisiųsti iš https://sampai.my/ \n \nSmagių kelionių su „Sampai“!
-lv = Sveiki!\n\nPielikumā ir grāmatzīmes. Lūdzu, atveriet tās „Sampai“ lietotnē. Ja Jums tā nav instalēta, instalējiet to te: https://sampai.my/\n\nBaudiet ceļošanu ar „Oranic Maps“!
+lv = Sveiki!\n\nPielikumā ir grāmatzīmes. Lūdzu, atveriet tās „Sampai“ lietotnē. Ja Jums tā nav instalēta, instalējiet to te: https://sampai.my/\n\nBaudiet ceļošanu ar „Sampai“!
 mr = नमस्कार!\n\nSampai ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही Sampai इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://sampai.my/\n\nSampai सह प्रवासाचा आनंद घ्या!
 ms = Hai!\n\nDilampirkan tanda buku saya; sila buka dalam Sampai. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://sampai.my/\n\nSelamat mengembara dengan Sampai!
 mt = Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Sampai. Jekk mhuwiex installat tista tniżżlu min hawn: https://sampai.my/\n\nĦu pjaċir ivvjaġġa ġo Sampai!
@@ -41092,7 +41092,7 @@ comment = Message for the bug report alert.
 tags = apple-maps
 en = Would you like to send a bug report to the developers?\nWe rely on our users as Sampai doesn't collect any error information automatically. Thank you in advance for supporting Sampai!
 af = Wil jy 'n foutverslag aan die ontwikkelaars stuur?\nOns maak staat op ons gebruikers aangesien Sampai nie outomaties enige foutinligting insamel nie. By voorbaat dankie vir die ondersteuning van Sampai!
-ar = هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Sampai لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم الخرائط العضوية!
+ar = هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Sampai لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم Sampai!
 az = İnkişaf etdiricilərə səhv hesabatı göndərmək istərdinizmi?\nSampai heç bir səhv məlumatını avtomatik olaraq toplamadığından, biz istifadəçilərimizin köməyinə güvənirik. Sampai-ı dəstəklədiyiniz üçün əvvəlcədən təşəkkür edirik!
 be = Хочаце адправіць справаздачу пра памылку распрацоўшчыкам?\nМы разлічваем на нашых карыстальнікаў, бо Sampai не збірае ніякай інфармацыі пра памылкі аўтаматычна. Загадзя дзякуем за падтрымку Sampai!
 bg = Искате ли да изпратите доклад за грешка на разработчиците?\nРазчитаме на нашите потребители, тъй като Sampai не събира информация за грешки автоматично. Благодарим ви предварително, че подкрепяте Sampai!
@@ -41115,7 +41115,7 @@ hi = क्या आप डेवलपर्स को बग रिपोर�
 hr = Želite li poslati izvještaj o grešci programerima?\nOslanjamo se na naše korisnike jer Sampai ne prikuplja automatski nikakve informacije o pogreškama. Unaprijed hvala što podržavate Sampai!
 hu = Szeretne hibajelentést küldeni a fejlesztőknek?\nA felhasználóinkra támaszkodunk, mivel a Sampai nem gyűjt automatikusan hibainformációkat. Előre is köszönjük, hogy támogatja a Sampai csapatát!
 hy = Ցանկանու՞մ եք ուղարկել սխալի մասին հաշվետվություն մշակողներին?\nՄենք ապավինում ենք մեր օգտատերերին, քանի որ Sampai-ը ավտոմատ կերպով չի հավաքում սխալների մասին տեղեկատվություն։ Կանխավ շնորհակալություն Sampai-ին աջակցելու համար!
-id = Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena Sampai tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung Peta Organik!
+id = Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena Sampai tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung Sampai!
 is = Myndirðu vilja senda villuskýrslu til hönnuðanna?\nVið reiðum okkur á notendurna þar sem Sampai safnar ekki sjálfkrafa neinum villuupplýsingum. Fyrirfram þakkir fyrir að styðja við Sampai!
 it = Vuoi inviare una segnalazione di bug agli sviluppatori?\nCi affidiamo ai nostri utenti perché Sampai non raccoglie automaticamente informazioni sugli errori. Ti ringraziamo in anticipo per il supporto a Sampai!
 ja = 開発者にバグレポートを送りたいか？\nSampaiはエラー情報を自動収集しないため、我々はユーザーに依存している。Sampaiを応援してくださりありがとう！
@@ -41136,12 +41136,12 @@ sk = Chcete poslať vývojárom hlásenie o chybe?\nSpoliehame sa na našich pou
 sl = Ali želite poslati poročilo o napaki razvijalcem?\nZanašamo se na naše uporabnike, saj Sampai ne zbira samodejno nobenih informacij o napakah. Hvala vnaprej za podporo Sampai!
 sq = A dëshironi të dërgoni një raport gabimi te zhvilluesit?\nNe mbështetemi te përdoruesit tanë pasi Sampai nuk mbledh asnjë informacion gabimi automatikisht. Faleminderit paraprakisht për mbështetjen e Sampai!
 sr = Да ли желите да пошаљете пријаву бага програмерима?\nОслањамо се на кориснике пошто Sampai не прикупља податке о грешкама аутоматски. Хвала унапред што подржавате Sampai!
-sv = Vill du skicka en felrapport till utvecklarna?\nVi förlitar oss på våra användare eftersom organiska kartor inte samlar in någon felinformation automatiskt. Tack på förhand för att du stöder Sampai!
+sv = Vill du skicka en felrapport till utvecklarna?\nVi förlitar oss på våra användare eftersom Sampai inte samlar in någon felinformation automatiskt. Tack på förhand för att du stöder Sampai!
 sw = Je, ungependa kutuma ripoti ya hitilafu kwa watengenezaji?\nTunategemea watumiaji wetu kwani Sampai haikusanyi taarifa yoyote ya hitilafu kiotomatiki. Asante mapema kwa kuunga mkono Sampai!
 th = คุณต้องการส่งรายงานข้อผิดพลาดไปยังนักพัฒนาหรือไม่?\nเราไว้วางใจผู้ใช้ของเราเนื่องจาก Sampai จะไม่รวบรวมข้อมูลข้อผิดพลาดใด ๆ โดยอัตโนมัติ ขอขอบคุณล่วงหน้าสำหรับการสนับสนุน Sampai!
 tr = Geliştiricilere bir hata raporu göndermek ister misiniz?\nSampai otomatik olarak herhangi bir hata bilgisi toplamadığı için bu konuda kullanıcılarımıza güveniyoruz. Sampai'i desteklediğiniz için şimdiden teşekkür ederiz!
 uk = Бажаєте надіслати розробникам звіт про помилку?\nМи покладаємося на наших користувачів, оскільки Sampai не збирає інформацію про помилки автоматично. Заздалегідь дякуємо за підтримку Sampai!
-vi = Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì Bản đồ không phải trả tiền không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ Sampai!
+vi = Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì Sampai không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ Sampai!
 zh-Hans = 您想向开发人员发送错误报告吗？\n由于 Sampai 不会自动收集任何错误信息，因此我们只能依靠我们的用户。感谢您对 Sampai 的支持！
 zh-Hant = 您想向開發人員發送錯誤報告嗎？\n由於 Sampai 不會自動收集任何錯誤資訊，因此我們只能依靠用戶的協助。感謝您對 Sampai 的支持！
 
@@ -44683,6 +44683,8 @@ tags = android-wear
 en = Open Sampai on your phone to start navigation.
 cy = Agorwch Sampai ar eich ffôn i ddechrau llywio.
 ms = Buka Sampai pada telefon anda untuk mula bernavigasi.
+zh-Hans = 在手机上打开 Sampai 以开始导航。
+zh-Hant = 在手機上開啟 Sampai 以開始導航。
 
 [wear_navigation_active_message]
 comment = Displayed in the Wear OS app when navigation is active on the phone.
@@ -44690,6 +44692,8 @@ tags = android-wear
 en = Navigation is running on your phone.
 cy = Mae llywio yn rhedeg ar eich ffôn.
 ms = Navigasi sedang berjalan pada telefon anda.
+zh-Hans = 导航正在手机上运行。
+zh-Hant = 導航正在手機上運行。
 
 [voice_search]
 comment = Accessibility label for the voice-search mic button in the search bar
@@ -45531,111 +45535,149 @@ comment = Accessibility label of the big turn arrow in the navigation HUD.
 tags = android-app
 en = Next turn
 ms = Belokan seterusnya
+zh-Hans = 下一个转弯
+zh-Hant = 下一個轉彎
 
 [my_nav_then]
 comment = Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short.
 tags = android-app
 en = Then
 ms = Kemudian
+zh-Hans = 然后
+zh-Hant = 然後
 
 [my_nav_end]
 comment = Button that ends navigation. Keep very short.
 tags = android-app
 en = End
 ms = Tamat
+zh-Hans = 结束
+zh-Hant = 結束
 
 [my_nav_voice]
 comment = Accessibility label of the voice guidance on/off button in the navigation HUD.
 tags = android-app
 en = Voice guidance
 ms = Panduan suara
+zh-Hans = 语音导航
+zh-Hant = 語音導航
 
 [my_nav_eta_minutes]
 comment = Remaining travel time in minutes, e.g. "14 min". Keep very short.
 tags = android-app
 en = %d min
 ms = %d min
+zh-Hans = %d 分钟
+zh-Hant = %d 分鐘
 
 [my_nav_eta_hours]
 comment = Remaining travel time in whole hours, e.g. "2 h". Keep very short.
 tags = android-app
 en = %d h
 ms = %d j
+zh-Hans = %d 小时
+zh-Hant = %d 小時
 
 [my_nav_eta_hours_minutes]
 comment = Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short.
 tags = android-app
 en = %1$d h %2$d min
 ms = %1$d j %2$d min
+zh-Hans = %1$d 小时 %2$d 分钟
+zh-Hant = %1$d 小時 %2$d 分鐘
 
 [my_nav_eta_subtitle]
 comment = Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time.
 tags = android-app
 en = %1$s · arrive %2$s
 ms = %1$s · tiba %2$s
+zh-Hans = %1$s · %2$s 到达
+zh-Hant = %1$s · %2$s 到達
 
 [my_nav_toll]
 comment = Label of the toll total in the navigation ETA sheet. Keep very short.
 tags = android-app
 en = Toll
 ms = Tol
+zh-Hans = 过路费
+zh-Hant = 過路費
 
 [my_nav_toll_amount]
 comment = Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet.
 tags = android-app
 en = RM %s
 ms = RM %s
+zh-Hans = RM %s
+zh-Hant = RM %s
 
 [my_chip_fuel]
 comment = Quick search chip on the map (petrol stations). Keep to one short word.
 tags = android-app
 en = Petrol
 ms = Minyak
+zh-Hans = 油站
+zh-Hant = 油站
 
 [my_chip_surau]
 comment = Quick search chip on the map (mosques and prayer rooms). Keep to one short word.
 tags = android-app
 en = Surau
 ms = Surau
+zh-Hans = 祈祷室
+zh-Hant = 祈禱室
 
 [my_chip_mamak]
 comment = Quick search chip on the map (restaurants). Keep to one short word.
 tags = android-app
 en = Mamak
 ms = Mamak
+zh-Hans = 嘛嘛档
+zh-Hant = 嘛嘛檔
 
 [my_chip_parking]
 comment = Quick search chip on the map (parking). Keep to one short word.
 tags = android-app
 en = Parking
 ms = Parkir
+zh-Hans = 停车
+zh-Hant = 停車
 
 [my_chip_ev]
 comment = Quick search chip on the map (EV chargers). Keep to one short word.
 tags = android-app
 en = EV
 ms = EV
+zh-Hans = 充电
+zh-Hant = 充電
 
 [my_chip_clinic]
 comment = Quick search chip on the map (clinics). Keep to one short word.
 tags = android-app
 en = Clinic
 ms = Klinik
+zh-Hans = 诊所
+zh-Hant = 診所
 
 [my_chip_rest_area]
 comment = Quick search chip on the map (highway rest areas). Keep to one short word.
 tags = android-app
 en = R&R
 ms = R&R
+zh-Hans = 休息站
+zh-Hant = 休息站
 
 [my_chip_toilet]
 comment = Quick search chip on the map (toilets). Keep to one short word.
 tags = android-app
 en = Toilets
 ms = Tandas
+zh-Hans = 厕所
+zh-Hant = 廁所
 
 [my_chip_atm]
 comment = Quick search chip on the map (ATMs). Keep to one short word.
 tags = android-app
 en = ATM
 ms = ATM
+zh-Hans = ATM
+zh-Hant = ATM

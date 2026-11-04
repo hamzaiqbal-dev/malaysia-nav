@@ -149,6 +149,9 @@ def write_apple_and_desktop(main_full, beta_full, debug_full):
   centered(mono).resize((size, size), Image.LANCZOS).save(os.path.join(app_icon, 'appicon_tinted.png'), optimize=True)
   centered(debug_full).resize((size, size), Image.LANCZOS).convert('RGB').save(
     os.path.join(IOS_ASSETS, 'AppIconDebug.appiconset', '1024.png'), optimize=True)
+  for scale, suffix in ((1, ''), (2, '@2x'), (3, '@3x')):
+    centered(main_full).resize((120 * scale, 120 * scale), Image.LANCZOS).save(
+      os.path.join(IOS_ASSETS, 'Settings', 'imgLogo.imageset', f'imgLogo{suffix}.png'), optimize=True)
 
   logo_svg = vector_to_svg(os.path.join(drawable, 'logo.xml'))
   with open(os.path.join(IOS_ASSETS, 'logo.imageset', 'logo.svg'), 'w', encoding='utf-8') as out:
