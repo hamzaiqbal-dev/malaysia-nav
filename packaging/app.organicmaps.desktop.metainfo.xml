@@ -35,4 +35,12 @@
   <url type="vcs-browser">https://github.com/hamzaiqbal-dev/malaysia-nav</url>
 
   <launchable type="desktop-id">app.organicmaps.desktop.desktop</launchable>
+
+  <releases>
+    <release version="2026.11.04" date="2026-11-04" type="development">
+      <description>
+        <p>First Sampai build.</p>
+      </description>
+    </release>
+  </releases>
 </component>
