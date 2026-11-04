@@ -49,7 +49,7 @@ jobs:
         env:
           CMAKE_C_COMPILER_LAUNCHER: ccache
           CMAKE_CXX_COMPILER_LAUNCHER: ccache
-        run: ./gradlew -Px86_64 assembleWebDebug
+        run: ./gradlew -Px86_64 assembleGoogleDebug
 
       - name: Free disk space for emulator
         run: |
