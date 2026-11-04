@@ -210,3 +210,25 @@ Run 5 close (02:40 MYT): `Validate appstream metadata xml` and `Validate .deskto
 WebDebug build and unit tests, and Linux gcc-15 Debug all passed; other jobs were still running. #42's CMake and Android runs on 20ec1a7c hadn't finished.
 Lesson: a session that opened a PR stays subscribed after its run ends. Run 4's session fixed #44 while run 5 was making the same fix, so `git fetch` before fixing a
 red check, and if a push is rejected, read what landed instead of forcing it.
+
+## Run 6: Thu 5 Nov, 04:47 MYT
+
+Status of the data licence blocker: unchanged. No reply from Hamza on GitHub, and #30 has no comments. The rules from run 2 still apply.
+
+Checked first: rollup #42 (20ec1a7c) fully green, Android, iOS, Linux, Windows, macOS Debug. #43 fully green, so run 5's open items are closed. macOS Release has `runner_id` 0, so it really is "no runner". No open issues.
+
+### PRs opened
+- #45 `ci/android-smoke`: `tools/android/smoke_test.py` on an emulator, in the `Android Smoke` workflow. First runtime check of the app. Offline on purpose: it must not download from upstream's CDN.
+- #46 `strings/tamil-ui` (base #26): Tamil UI for Android. The listings say Tamil is "one tap away", but the app had no `values-ta` and no `ta` locale. 626 strings, machine translated by a subagent, unread by a native speaker. Map type names, Tamil voice and iOS are not done.
+
+### Updated PRs
+- #26: five translations held the old brand as a phrase ("organiska kartor", "Peta Organik", "الخرائط العضوية", a Vietnamese one, typo "Oranic Maps"). Chinese added for the HUD, chips and Wear (`zh-Hans`, `zh-Hant`): those keys showed in English.
+- #37: iOS `imgLogo` was still the upstream logo (map update screen, share sheet). Now in `render_icons.py`.
+
+Lessons:
+- To find a translated brand, compare how often "Sampai" appears per language with `en`. Per-language word lists miss literal translations.
+- To find a leftover logo, scan images by dominant colour, not by filename.
+- `tools/unix/generate_localizations.sh` only writes a language whose `values-xx` folder exists: `mkdir` it first for a new language, Wear included.
+- Artifact blobs (`*.blob.core.windows.net`) return 403 from the proxy, so `download_workflow_run_artifact` URLs are useless here. Smoke output goes to `ci/smoke-screens-<PR>` instead; `git fetch` that.
+- Never call `get_job_logs` with a big `tail_lines`: 200+ lines are checkout cleanup. Use `get_workflow_job` step timings, then at most 60 lines.
+- Each rollup push queues a full CI, and smoke then waits behind it. Batch rollup pushes.
