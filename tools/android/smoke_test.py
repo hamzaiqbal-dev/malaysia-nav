@@ -108,16 +108,20 @@ class Walker:
             ("faq", r"FAQ|Soalan"),
             ("licences", r"licen[cs]e|lesen"),
         ))
-        self.visit("search", "search_button")
-        self.visit("bookmarks", "bookmarks_button")
+        self.visit("search", "btn_search")
+        self.visit("bookmarks", "btn_bookmarks")
         self.visit("layers", "layers_button")
         if self.tap("menu_button"):
             self.shot("menu")
             self.visit("settings", text=r"^(Settings|Tetapan)$")
-        self.back()
         if self.tap("menu_button"):
-            self.visit("downloader", text=r"Download maps|Muat turun|peta")
+            self.visit("downloader", text=r"Download Maps|Muat Turun")
+        self.visit("chip_results", text=r"Petrol|Minyak")
         self.back()
+        self.tap("my_position")
+        for _ in range(7):
+            self.tap("nav_zoom_in")
+        self.shot("malaysia_no_map")
         self.long_press_map()
 
     def long_press_map(self):
