@@ -221,6 +221,14 @@ Checked first: rollup #42 (20ec1a7c) fully green, Android, iOS, Linux, Windows, 
 - #45 `ci/android-smoke`: `tools/android/smoke_test.py` on an emulator, in the `Android Smoke` workflow. First runtime check of the app. Offline on purpose: it must not download from upstream's CDN.
 - #46 `strings/tamil-ui` (base #26): Tamil UI for Android. The listings say Tamil is "one tap away", but the app had no `values-ta` and no `ta` locale. 626 strings, machine translated by a subagent, unread by a native speaker. Map type names, Tamil voice and iOS are not done.
 
+- #47 `fix/map-buttons-height` (base #24): found by the emulator. The chips bar measured 2209 of 2400 px, so the scale ruler and the "© OpenStreetMap" credit sat under the status bar on every map screen since #6. Merge order adds: #24 before #47, #26 before #46.
+
+### First look at the running app (rollup, Google debug, emulator, no network)
+- 0 crashes, 0 ANRs, two monkey rounds of 1500 events, no old brand on any screen walked, in English and Malay. Only the world map: there's no country map, so routing, the HUD and tolls were NOT exercised.
+- Screens seen: map, About, FAQ, search, bookmarks, layers, menu, settings, downloader, chip results, Malaysia download card. To view: `git fetch origin ci/smoke-screens-42`, `git archive`, then Read the PNGs.
+- Only Google and Huawei flavors bundle the world maps. The Web and F-Droid builds open on a 69 MB download from upstream's CDN and can't start offline.
+- Small: on Malay the map says "Asia / 亚洲" at world zoom, and oceans stay in English. Not looked into. Long press on the map with no country map showed no place page; the tap may have hit the download card.
+
 ### Updated PRs
 - #26: five translations held the old brand as a phrase ("organiska kartor", "Peta Organik", "الخرائط العضوية", a Vietnamese one, typo "Oranic Maps"). Chinese added for the HUD, chips and Wear (`zh-Hans`, `zh-Hant`): those keys showed in English.
 - #37: iOS `imgLogo` was still the upstream logo (map update screen, share sheet). Now in `render_icons.py`.
@@ -232,3 +240,7 @@ Lessons:
 - Artifact blobs (`*.blob.core.windows.net`) return 403 from the proxy, so `download_workflow_run_artifact` URLs are useless here. Smoke output goes to `ci/smoke-screens-<PR>` instead; `git fetch` that.
 - Never call `get_job_logs` with a big `tail_lines`: 200+ lines are checkout cleanup. Use `get_workflow_job` step timings, then at most 60 lines.
 - Each rollup push queues a full CI, and smoke then waits behind it. Batch rollup pushes.
+
+Left to do:
+- Getting a Malaysia map onto the emulator would let the smoke test cover routing, the HUD and tolls. It needs a map not fetched from upstream's CDN: generating one here is heavy, and using upstream's CDN from CI is what the blocker forbids.
+- Native Tamil read of #46; Tamil voice, type names and iOS; the iOS and Android listings say Tamil voice is "one tap away" (#29).
