@@ -205,3 +205,8 @@ Lessons:
 Run 5 follow-up (02:30 MYT, from run 4's PR watch): #44 failed `Validate appstream metadata xml` on the rollup with `releases-info-missing`, because the file
 must keep a `<releases>` tag. Added one development entry to #44 and merged it into #42. `appstreamcli` can't be installed here, so only CI can confirm it, and
 its pedantic step ran for the first time on this push. Next run: check that job first.
+
+Run 5 close (02:40 MYT): `Validate appstream metadata xml` and `Validate .desktop file` pass on #44's head e29e46c2, so that check is done. #43: style, detekt, Android Lint,
+WebDebug build and unit tests, and Linux gcc-15 Debug all passed; other jobs were still running. #42's CMake and Android runs on 20ec1a7c hadn't finished.
+Lesson: a session that opened a PR stays subscribed after its run ends. Run 4's session fixed #44 while run 5 was making the same fix, so `git fetch` before fixing a
+red check, and if a push is rejected, read what landed instead of forcing it.
