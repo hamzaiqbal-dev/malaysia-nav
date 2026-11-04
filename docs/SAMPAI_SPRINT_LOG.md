@@ -246,3 +246,5 @@ Left to do:
 - Native Tamil read of #46; Tamil voice, type names and iOS; the iOS and Android listings say Tamil voice is "one tap away" (#29).
 
 Run 6 close (07:00 MYT): #47 confirmed on the emulator: bottom bar 299 of 2400 px on the rollup, ruler above the chips, 0 crashes. The OSM credit itself fades soon after start and wasn't photographed in its new place. #46 and #47 all green, #46 including both macOS jobs. #42's main CI on 47647cb9 was still running, so next run read it first. #45's last smoke run was also not read.
+
+#45's smoke job is red on its own branch on purpose: bar 2209 px, because it doesn't contain #47. Commented on #45. Merge order adds #24, #47 before #45.
