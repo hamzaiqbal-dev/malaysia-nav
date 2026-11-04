@@ -16,6 +16,8 @@ jobs:
   smoke:
     name: Walk the app on an emulator
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Only to publish screenshots to a ci/smoke-screens-* branch
     concurrency:
       group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
       cancel-in-progress: true
@@ -85,3 +87,18 @@ jobs:
           path: smoke-out
           if-no-files-found: warn
           retention-days: 14
+
+      # Artifacts need a login to open; a branch can be browsed on GitHub and read by later CI work.
+      - name: Publish screenshots to a branch
+        if: always() && github.event.pull_request.head.repo.full_name == github.repository
+        continue-on-error: true
+        working-directory: smoke-out
+        env:
+          TOKEN: ${{ github.token }}
+          BRANCH: ci/smoke-screens-${{ github.event.pull_request.number }}
+        run: |
+          find . -name logcat.txt -delete
+          git init -q -b screens
+          git -c user.name=ci -c user.email=ci@localhost add -A
+          git -c user.name=ci -c user.email=ci@localhost commit -qm "Smoke test screenshots of ${GITHUB_SHA}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}" "screens:refs/heads/${BRANCH}"
