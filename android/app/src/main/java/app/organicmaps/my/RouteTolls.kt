@@ -43,7 +43,7 @@ object RouteTolls {
         executor.execute {
             val tollTable = table ?: loadTable(appContext).also { table = it }
             val booths = MyTolls.nativeFindTollBooths(polyline, MAX_DISTANCE_M)
-                .map { RouteTollBooth(it.mName, it.mDistanceAlongRouteM) }
+                .map { RouteTollBooth(it.mName, it.mDistanceAlongRouteM, TollTable.parseRoadRefs(it.mRoadRefs)) }
             val total = tollTable.priceRoute(booths)
             mainHandler.post { if (id == requestId) onResult(total) }
         }

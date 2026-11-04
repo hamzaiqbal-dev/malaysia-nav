@@ -19,6 +19,8 @@ struct TollBooth
   ms::LatLon m_latLon;
   // Distance from the route start to the booth's projection on the route, in meters.
   double m_distanceAlongRouteM = 0.0;
+  // Road numbers of the ways at the booth, ';'-separated: the name alone can't tell plazas of two highways apart.
+  std::string m_roadRefs;
 };
 
 // Projection of |point| on |polyline| (both in mercator): the polyline length before the nearest

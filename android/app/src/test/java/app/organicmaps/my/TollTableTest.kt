@@ -24,6 +24,7 @@ class TollTableTest {
         val penchala = table.plazas[0]
         assertEquals("Penchala", penchala.name)
         assertEquals("LDP", penchala.highway)
+        assertEquals("E11", penchala.roadRef)
         assertEquals(listOf("Bukit Lanjan"), penchala.aliases)
         assertEquals(2.10, penchala.price(TollTable.CLASS_CAR), 0.0)
         assertEquals(1.60, penchala.price(5), 0.0)
@@ -94,6 +95,85 @@ class TollTableTest {
     }
 
     @Test
+    fun spellingsOfOnePlazaCountOnce() {
+        val booths = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("Plaza Tol Sunway Arah Klang", 1020.0),
+            RouteTollBooth("Penchala Toll Plaza", 9000.0),
+            RouteTollBooth("Plaza Tol Bukit Lanjan", 9030.0),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(2.00 + 2.10, total.amountRm, 1e-9)
+        assertEquals(2, total.pricedBooths)
+        assertEquals(0, total.unpricedBooths)
+    }
+
+    @Test
+    fun unnamedLaneOfANamedPlazaAddsNothing() {
+        val after = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 1020.0))
+        val before = listOf(RouteTollBooth("", 1000.0), RouteTollBooth("Plaza Tol Sunway", 1020.0))
+        val between = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("", 1010.0),
+            RouteTollBooth("Plaza Tol Sunway", 1020.0),
+        )
+        for (booths in listOf(after, before, between)) {
+            val total = table.priceRoute(booths)
+            assertEquals(2.00, total.amountRm, 1e-9)
+            assertEquals(1, total.boothCount)
+        }
+    }
+
+    @Test
+    fun unnamedBoothFarFromAPlazaStaysUnpriced() {
+        val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 2000.0)))
+        assertEquals(1, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun differentPlazasCloseTogetherBothCount() {
+        val booths = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("Plaza Tol Penchala", 1100.0))
+        assertEquals(2.00 + 2.10, table.priceRoute(booths).amountRm, 1e-9)
+    }
+
+    @Test
+    fun parsesRoadRefs() {
+        assertEquals(listOf("E23", "AH2"), TollTable.parseRoadRefs("E 23;ah2"))
+        assertEquals(listOf("E1", "FT2"), TollTable.parseRoadRefs("E1/FT2"))
+        assertEquals(emptyList<String>(), TollTable.parseRoadRefs(""))
+    }
+
+    @Test
+    fun plazaOfTheSameNameOnAnotherExpresswayIsNotPriced() {
+        val onLdp = RouteTollBooth("Plaza Tol Penchala", 0.0, listOf("E11"))
+        val onNkve = RouteTollBooth("Plaza Tol Penchala", 0.0, listOf("E1"))
+        assertEquals(1, table.priceRoute(listOf(onLdp)).pricedBooths)
+        val total = table.priceRoute(listOf(onNkve))
+        assertEquals(0, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun boothWithNoExpresswayNumberKeepsItsPlaza() {
+        for (refs in listOf(emptyList(), listOf("FT54"), listOf("E11", "E1"))) {
+            val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Penchala", 0.0, refs)))
+            assertEquals(refs.toString(), 1, total.pricedBooths)
+        }
+    }
+
+    @Test
+    fun oneLaneOnAnotherExpresswayUnpricesThePlaza() {
+        val booths = listOf(
+            RouteTollBooth("Plaza Tol Penchala", 1000.0),
+            RouteTollBooth("Plaza Tol Penchala", 1020.0, listOf("E1")),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(0, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
     fun hasPriceOnlyWithAPricedBooth() {
         assertFalse(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Ayer Keroh", 0.0))).hasPrice)
         assertTrue(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 0.0))).hasPrice)
@@ -120,6 +200,7 @@ class TollTableTest {
         for (plaza in shipped.plazas) {
             assertEquals(TollTable.CLASS_COUNT, plaza.prices.size)
             assertTrue("${plaza.name} has no source", plaza.source.startsWith("https://"))
+            assertTrue("${plaza.name} has road ${plaza.roadRef}", TollTable.EXPRESSWAY_REF.matches(plaza.roadRef))
         }
         assertEquals("Penchala", shipped.find("Plaza Tol Penchala")?.name)
     }
