@@ -52,12 +52,13 @@ JNIEXPORT jobjectArray JNICALL Java_app_organicmaps_sdk_my_MyTolls_nativeFindTol
   auto const booths = my_tolls::FindTollBoothsAlongRoute(frm()->GetDataSource(), polyline, maxDistanceM);
 
   static jclass const clazz = jni::GetGlobalClassRef(env, "app/organicmaps/sdk/my/TollBooth");
-  // Java signature : TollBooth(String name, double lat, double lon, double distanceAlongRouteM)
-  static jmethodID const ctor = jni::GetConstructorID(env, clazz, "(Ljava/lang/String;DDD)V");
+  // Java signature : TollBooth(String name, String roadRefs, double lat, double lon, double distanceAlongRouteM)
+  static jmethodID const ctor = jni::GetConstructorID(env, clazz, "(Ljava/lang/String;Ljava/lang/String;DDD)V");
   return jni::ToJavaArray(env, clazz, booths, [](JNIEnv * env, my_tolls::TollBooth const & booth)
   {
     jni::TScopedLocalRef const name(env, jni::ToJavaString(env, booth.m_name));
-    return env->NewObject(clazz, ctor, name.get(), booth.m_latLon.m_lat, booth.m_latLon.m_lon,
+    jni::TScopedLocalRef const roadRefs(env, jni::ToJavaString(env, booth.m_roadRefs));
+    return env->NewObject(clazz, ctor, name.get(), roadRefs.get(), booth.m_latLon.m_lat, booth.m_latLon.m_lon,
                           booth.m_distanceAlongRouteM);
   });
 }

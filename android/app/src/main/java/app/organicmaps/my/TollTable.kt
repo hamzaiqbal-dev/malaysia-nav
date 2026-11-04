@@ -4,16 +4,32 @@ package app.organicmaps.my
 data class TollPlaza(
     val name: String,
     val highway: String,
+    /** Expressway number, e.g. "E23". */
+    val roadRef: String,
     val aliases: List<String>,
     /** Price in RM for vehicle classes 1 to 5, in that order. */
     val prices: List<Double>,
     val source: String,
 ) {
     fun price(vehicleClass: Int): Double = prices[vehicleClass - 1]
+
+    /**
+     * False when [boothRoadRefs] put the booth on another expressway: NKVE has its own Damansara and Bukit Raja
+     * plazas. Slip roads often have no number, so a booth with no expressway number keeps the plaza.
+     */
+    fun servesBoothOn(boothRoadRefs: List<String>): Boolean {
+        val expressways = boothRoadRefs.filter { TollTable.EXPRESSWAY_REF.matches(it) }
+        return expressways.isEmpty() || roadRef in expressways
+    }
 }
 
 /** A toll booth the route passes, as named in the map data. */
-data class RouteTollBooth(val name: String, val distanceAlongRouteM: Double)
+data class RouteTollBooth(
+    val name: String,
+    val distanceAlongRouteM: Double,
+    /** Numbers of the roads at the booth, see [TollTable.parseRoadRefs]. */
+    val roadRefs: List<String> = emptyList(),
+)
 
 /**
  * Toll total of a route. [unpricedBooths] counts booths the table has no price for, so the total is a
@@ -58,7 +74,8 @@ class TollTable(val plazas: List<TollPlaza>) {
         val stops = ArrayList<TollStop>()
         for (booth in booths.sortedBy { it.distanceAlongRouteM }) {
             val plaza = find(booth.name)
-            addStop(stops, TollStop(normalizeBoothName(plaza?.name ?: booth.name), plaza, booth.distanceAlongRouteM))
+            val key = normalizeBoothName(plaza?.name ?: booth.name)
+            addStop(stops, TollStop(key, plaza?.takeIf { it.servesBoothOn(booth.roadRefs) }, booth.distanceAlongRouteM))
         }
         val plazas = stops.mapNotNull { it.plaza }
         return RouteTollTotal(plazas.sumOf { it.price(vehicleClass) }, plazas.size, stops.size - plazas.size)
@@ -68,7 +85,7 @@ class TollTable(val plazas: List<TollPlaza>) {
         val samePlaza = stops.lastOrNull { it.key == stop.key && stop.distanceM - it.distanceM <= DEDUPE_DISTANCE_M }
         val beside = stops.lastOrNull()?.takeIf { stop.distanceM - it.distanceM <= SAME_PLAZA_DISTANCE_M }
         when {
-            samePlaza != null -> samePlaza.distanceM = stop.distanceM
+            samePlaza != null -> samePlaza.absorb(stop)
             beside != null && stop.key.isEmpty() -> beside.distanceM = stop.distanceM
             beside != null && beside.key.isEmpty() -> stops[stops.lastIndex] = stop
             else -> stops.add(stop)
@@ -76,7 +93,13 @@ class TollTable(val plazas: List<TollPlaza>) {
     }
 
     /** A plaza the route crosses; [key] is empty for a booth with no usable name. */
-    private class TollStop(val key: String, val plaza: TollPlaza?, var distanceM: Double)
+    private class TollStop(val key: String, var plaza: TollPlaza?, var distanceM: Double) {
+        fun absorb(lane: TollStop) {
+            distanceM = lane.distanceM
+            // One lane on another expressway settles it: a wrong price is worse than none.
+            if (lane.plaza == null) plaza = null
+        }
+    }
 
     companion object {
         const val CLASS_CAR = 1
@@ -93,6 +116,8 @@ class TollTable(val plazas: List<TollPlaza>) {
         private val DIRECTION_WORDS = setOf("arah", "hala", "ke", "to", "towards")
         private val PARENTHESES = Regex("\\([^)]*\\)")
         private val NON_WORD = Regex("[^\\p{L}\\p{N}]+")
+        private val ROAD_REF_SEPARATOR = Regex("[;/,]")
+        val EXPRESSWAY_REF = Regex("E\\d+")
 
         /** Lower-case plaza name with short forms expanded, without "Plaza Tol", brackets or punctuation. */
         fun normalizeBoothName(name: String): String = name
@@ -101,6 +126,10 @@ class TollTable(val plazas: List<TollPlaza>) {
             .split(NON_WORD)
             .filter { it.isNotEmpty() && it !in NOISE_WORDS }
             .joinToString(" ") { ABBREVIATIONS[it] ?: it }
+
+        /** Splits the OpenStreetMap road numbers of a booth, "E 23;AH2", into ["E23", "AH2"]. */
+        fun parseRoadRefs(refs: String): List<String> =
+            refs.split(ROAD_REF_SEPARATOR).map { it.replace(" ", "").uppercase() }.filter { it.isNotEmpty() }
 
         private fun withoutDirection(key: String): String =
             key.split(" ").takeWhile { it !in DIRECTION_WORDS }.joinToString(" ")
@@ -120,9 +149,17 @@ class TollTable(val plazas: List<TollPlaza>) {
             require(fields.size >= COLUMN_COUNT) { "Bad toll line: $line" }
             val aliases = fields[COLUMN_ALIASES].split("|").map { it.trim() }.filter { it.isNotEmpty() }
             val prices = (0 until CLASS_COUNT).map { fields[COLUMN_CLASS1 + it].trim().toDouble() }
-            return TollPlaza(fields[0].trim(), fields[1].trim(), aliases, prices, fields[COLUMN_SOURCE].trim())
+            return TollPlaza(
+                fields[0].trim(),
+                fields[1].trim(),
+                fields[COLUMN_ROAD_REF].trim(),
+                aliases,
+                prices,
+                fields[COLUMN_SOURCE].trim(),
+            )
         }
 
+        private const val COLUMN_ROAD_REF = 2
         private const val COLUMN_ALIASES = 4
         private const val COLUMN_CLASS1 = 5
         private const val COLUMN_SOURCE = 10
