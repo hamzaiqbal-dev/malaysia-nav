@@ -70,7 +70,7 @@ jobs:
           target: google_apis
           profile: pixel_6
           script: >-
-            adb install -g $(find android/app/build/outputs/apk -name 'Sampai-*.apk' | head -1) &&
+            adb install -g $(find android/app/build/outputs/apk -name '*.apk' | head -1) &&
             python3 tools/android/smoke_test.py --out smoke-out
 
       - name: Add the report to the job summary
