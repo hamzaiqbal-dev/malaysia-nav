@@ -49,37 +49,40 @@ class TollTable(val plazas: List<TollPlaza>) {
     }
 
     /**
-     * Sums the booths of a route for [vehicleClass]. Booths with the same name within
-     * [DEDUPE_DISTANCE_M] of each other are one plaza (the map has a node per carriageway or lane).
+     * Sums the plazas of a route for [vehicleClass]. The map has a node per carriageway or lane, so booths of the
+     * same plaza within [DEDUPE_DISTANCE_M] count once, whatever spelling, alias or direction each node carries,
+     * and an unnamed node within [SAME_PLAZA_DISTANCE_M] of a plaza is one of its lanes.
      */
     fun priceRoute(booths: List<RouteTollBooth>, vehicleClass: Int = CLASS_CAR): RouteTollTotal {
         require(vehicleClass in 1..CLASS_COUNT) { "Unknown vehicle class $vehicleClass" }
-        var amount = 0.0
-        var priced = 0
-        var unpriced = 0
-        var lastKey = ""
-        var lastDistance = Double.NEGATIVE_INFINITY
+        val stops = ArrayList<TollStop>()
         for (booth in booths.sortedBy { it.distanceAlongRouteM }) {
-            val key = normalizeBoothName(booth.name)
-            val duplicate = key == lastKey && booth.distanceAlongRouteM - lastDistance <= DEDUPE_DISTANCE_M
-            lastKey = key
-            lastDistance = booth.distanceAlongRouteM
-            if (duplicate) continue
             val plaza = find(booth.name)
-            if (plaza == null) {
-                unpriced++
-            } else {
-                priced++
-                amount += plaza.price(vehicleClass)
-            }
+            addStop(stops, TollStop(normalizeBoothName(plaza?.name ?: booth.name), plaza, booth.distanceAlongRouteM))
         }
-        return RouteTollTotal(amount, priced, unpriced)
+        val plazas = stops.mapNotNull { it.plaza }
+        return RouteTollTotal(plazas.sumOf { it.price(vehicleClass) }, plazas.size, stops.size - plazas.size)
     }
+
+    private fun addStop(stops: MutableList<TollStop>, stop: TollStop) {
+        val samePlaza = stops.lastOrNull { it.key == stop.key && stop.distanceM - it.distanceM <= DEDUPE_DISTANCE_M }
+        val beside = stops.lastOrNull()?.takeIf { stop.distanceM - it.distanceM <= SAME_PLAZA_DISTANCE_M }
+        when {
+            samePlaza != null -> samePlaza.distanceM = stop.distanceM
+            beside != null && stop.key.isEmpty() -> beside.distanceM = stop.distanceM
+            beside != null && beside.key.isEmpty() -> stops[stops.lastIndex] = stop
+            else -> stops.add(stop)
+        }
+    }
+
+    /** A plaza the route crosses; [key] is empty for a booth with no usable name. */
+    private class TollStop(val key: String, val plaza: TollPlaza?, var distanceM: Double)
 
     companion object {
         const val CLASS_CAR = 1
         const val CLASS_COUNT = 5
         const val DEDUPE_DISTANCE_M = 1500.0
+        const val SAME_PLAZA_DISTANCE_M = 200.0
 
         private val NOISE_WORDS = setOf("plaza", "tol", "toll", "tempat", "pungutan")
 

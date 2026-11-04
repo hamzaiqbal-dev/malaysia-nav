@@ -94,6 +94,49 @@ class TollTableTest {
     }
 
     @Test
+    fun spellingsOfOnePlazaCountOnce() {
+        val booths = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("Plaza Tol Sunway Arah Klang", 1020.0),
+            RouteTollBooth("Penchala Toll Plaza", 9000.0),
+            RouteTollBooth("Plaza Tol Bukit Lanjan", 9030.0),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(2.00 + 2.10, total.amountRm, 1e-9)
+        assertEquals(2, total.pricedBooths)
+        assertEquals(0, total.unpricedBooths)
+    }
+
+    @Test
+    fun unnamedLaneOfANamedPlazaAddsNothing() {
+        val after = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 1020.0))
+        val before = listOf(RouteTollBooth("", 1000.0), RouteTollBooth("Plaza Tol Sunway", 1020.0))
+        val between = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("", 1010.0),
+            RouteTollBooth("Plaza Tol Sunway", 1020.0),
+        )
+        for (booths in listOf(after, before, between)) {
+            val total = table.priceRoute(booths)
+            assertEquals(2.00, total.amountRm, 1e-9)
+            assertEquals(1, total.boothCount)
+        }
+    }
+
+    @Test
+    fun unnamedBoothFarFromAPlazaStaysUnpriced() {
+        val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 2000.0)))
+        assertEquals(1, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun differentPlazasCloseTogetherBothCount() {
+        val booths = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("Plaza Tol Penchala", 1100.0))
+        assertEquals(2.00 + 2.10, table.priceRoute(booths).amountRm, 1e-9)
+    }
+
+    @Test
     fun hasPriceOnlyWithAPricedBooth() {
         assertFalse(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Ayer Keroh", 0.0))).hasPrice)
         assertTrue(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 0.0))).hasPrice)
