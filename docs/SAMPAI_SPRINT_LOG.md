@@ -171,3 +171,33 @@ Lessons:
 
 External repos: `tools/python/twine` and `tools/kothic` are submodules cloned from `organicmaps/*` at the commits this repo pins, read-only, because the
 required generators need them. Nothing else outside this repo was read.
+
+## Run 5: Thu 5 Nov, 01:47 MYT
+
+Status of the data licence blocker: unchanged. No reply from Hamza on GitHub, and #30 has no comments. The rules from run 2 still apply. The brief still says the
+Apache notices and OSM credit are enough; that is wrong for the data files and must not be repeated.
+
+Checked first: rollup #42 passed everything on its first full run, including Android, iOS and all Linux and Windows jobs, with unit and drape tests. Only the two
+macOS CMake jobs were cancelled (no runner). So all open sprint PRs build and pass together. No open issues.
+
+### PRs opened
+- #43 `fix/toll-plaza-identity` (base #36): a plaza's lanes with different spellings, aliases, directions or no name no longer charge it twice or add a false "+";
+  booths on another expressway (NKVE's Damansara and Bukit Raja) no longer get the SPRINT or NNKSB price. `TollBooth` JNI signature changed.
+- #44 `rebrand/desktop-packaging` (base #33): upstream screenshots, upstream changelog and upstream search keywords gone from the Linux metadata.
+- #42: both merged in, so the rollup now has 20 PRs. Merge order adds: #36 before #43, #33 before #44.
+
+Checked and found fine, don't redo: every chip query is a Malay category synonym (`ExploreChipsTest` guards it). No quoted "Organic Maps" text is left in app code
+or resources; what remains is class names, `app.organicmaps` package names, the Android `omaps.app` intent host kept for incoming links, code comments, Xcode project
+metadata, the dev-only `routing_quality_tool` help text, `qt/res/windows/windows.rc.in` LegalCopyright and `data/copyright.html` (the last two are licence text: leave them).
+
+Left to do:
+- #43 is unverified on real map data: how booths and road refs are tagged in OSM wasn't checked, and `FindRoadRefs` has no test on a real map. Needs a phone check on
+  NKVE Damansara and SPRINT Damansara.
+- `Route-color` #0087FF vs `my_route` #2E8BFF: left, the two blues are hard to tell apart and changing it means a full style regeneration.
+- Polish needs a device from here on: there is no way to see a layout in these runs, so further UI work would be blind. Report sheet needs Hamza's hosting decision
+  (docs/REPORTS.md section 6) first; without a back-end the button would do nothing.
+
+Lessons:
+- OSM isn't reachable: `overpass-api.de` via WebFetch needs a permission nobody can answer in a scheduled run, and curl must not be used to get around that.
+- Add the road number or other data checks so a wrong guess degrades to "RM x+", since nothing can be checked against real map data here.
+- `actions_list` with `list_workflow_runs` or `list_workflow_jobs` returns very long output; read one job with `actions_get` `get_workflow_job` instead.
