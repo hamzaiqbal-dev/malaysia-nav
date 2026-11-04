@@ -201,3 +201,7 @@ Lessons:
 - OSM isn't reachable: `overpass-api.de` via WebFetch needs a permission nobody can answer in a scheduled run, and curl must not be used to get around that.
 - Add the road number or other data checks so a wrong guess degrades to "RM x+", since nothing can be checked against real map data here.
 - `actions_list` with `list_workflow_runs` or `list_workflow_jobs` returns very long output; read one job with `actions_get` `get_workflow_job` instead.
+
+Run 5 follow-up (02:30 MYT, from run 4's PR watch): #44 failed `Validate appstream metadata xml` on the rollup with `releases-info-missing`, because the file
+must keep a `<releases>` tag. Added one development entry to #44 and merged it into #42. `appstreamcli` can't be installed here, so only CI can confirm it, and
+its pedantic step ran for the first time on this push. Next run: check that job first.
