@@ -44683,6 +44683,8 @@ tags = android-wear
 en = Open Sampai on your phone to start navigation.
 cy = Agorwch Sampai ar eich ffôn i ddechrau llywio.
 ms = Buka Sampai pada telefon anda untuk mula bernavigasi.
+zh-Hans = 在手机上打开 Sampai 以开始导航。
+zh-Hant = 在手機上開啟 Sampai 以開始導航。
 
 [wear_navigation_active_message]
 comment = Displayed in the Wear OS app when navigation is active on the phone.
@@ -44690,6 +44692,8 @@ tags = android-wear
 en = Navigation is running on your phone.
 cy = Mae llywio yn rhedeg ar eich ffôn.
 ms = Navigasi sedang berjalan pada telefon anda.
+zh-Hans = 导航正在手机上运行。
+zh-Hant = 導航正在手機上運行。
 
 [voice_search]
 comment = Accessibility label for the voice-search mic button in the search bar
@@ -45531,111 +45535,149 @@ comment = Accessibility label of the big turn arrow in the navigation HUD.
 tags = android-app
 en = Next turn
 ms = Belokan seterusnya
+zh-Hans = 下一个转弯
+zh-Hant = 下一個轉彎
 
 [my_nav_then]
 comment = Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short.
 tags = android-app
 en = Then
 ms = Kemudian
+zh-Hans = 然后
+zh-Hant = 然後
 
 [my_nav_end]
 comment = Button that ends navigation. Keep very short.
 tags = android-app
 en = End
 ms = Tamat
+zh-Hans = 结束
+zh-Hant = 結束
 
 [my_nav_voice]
 comment = Accessibility label of the voice guidance on/off button in the navigation HUD.
 tags = android-app
 en = Voice guidance
 ms = Panduan suara
+zh-Hans = 语音导航
+zh-Hant = 語音導航
 
 [my_nav_eta_minutes]
 comment = Remaining travel time in minutes, e.g. "14 min". Keep very short.
 tags = android-app
 en = %d min
 ms = %d min
+zh-Hans = %d 分钟
+zh-Hant = %d 分鐘
 
 [my_nav_eta_hours]
 comment = Remaining travel time in whole hours, e.g. "2 h". Keep very short.
 tags = android-app
 en = %d h
 ms = %d j
+zh-Hans = %d 小时
+zh-Hant = %d 小時
 
 [my_nav_eta_hours_minutes]
 comment = Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short.
 tags = android-app
 en = %1$d h %2$d min
 ms = %1$d j %2$d min
+zh-Hans = %1$d 小时 %2$d 分钟
+zh-Hant = %1$d 小時 %2$d 分鐘
 
 [my_nav_eta_subtitle]
 comment = Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time.
 tags = android-app
 en = %1$s · arrive %2$s
 ms = %1$s · tiba %2$s
+zh-Hans = %1$s · %2$s 到达
+zh-Hant = %1$s · %2$s 到達
 
 [my_nav_toll]
 comment = Label of the toll total in the navigation ETA sheet. Keep very short.
 tags = android-app
 en = Toll
 ms = Tol
+zh-Hans = 过路费
+zh-Hant = 過路費
 
 [my_nav_toll_amount]
 comment = Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet.
 tags = android-app
 en = RM %s
 ms = RM %s
+zh-Hans = RM %s
+zh-Hant = RM %s
 
 [my_chip_fuel]
 comment = Quick search chip on the map (petrol stations). Keep to one short word.
 tags = android-app
 en = Petrol
 ms = Minyak
+zh-Hans = 油站
+zh-Hant = 油站
 
 [my_chip_surau]
 comment = Quick search chip on the map (mosques and prayer rooms). Keep to one short word.
 tags = android-app
 en = Surau
 ms = Surau
+zh-Hans = 祈祷室
+zh-Hant = 祈禱室
 
 [my_chip_mamak]
 comment = Quick search chip on the map (restaurants). Keep to one short word.
 tags = android-app
 en = Mamak
 ms = Mamak
+zh-Hans = 嘛嘛档
+zh-Hant = 嘛嘛檔
 
 [my_chip_parking]
 comment = Quick search chip on the map (parking). Keep to one short word.
 tags = android-app
 en = Parking
 ms = Parkir
+zh-Hans = 停车
+zh-Hant = 停車
 
 [my_chip_ev]
 comment = Quick search chip on the map (EV chargers). Keep to one short word.
 tags = android-app
 en = EV
 ms = EV
+zh-Hans = 充电
+zh-Hant = 充電
 
 [my_chip_clinic]
 comment = Quick search chip on the map (clinics). Keep to one short word.
 tags = android-app
 en = Clinic
 ms = Klinik
+zh-Hans = 诊所
+zh-Hant = 診所
 
 [my_chip_rest_area]
 comment = Quick search chip on the map (highway rest areas). Keep to one short word.
 tags = android-app
 en = R&R
 ms = R&R
+zh-Hans = 休息站
+zh-Hant = 休息站
 
 [my_chip_toilet]
 comment = Quick search chip on the map (toilets). Keep to one short word.
 tags = android-app
 en = Toilets
 ms = Tandas
+zh-Hans = 厕所
+zh-Hant = 廁所
 
 [my_chip_atm]
 comment = Quick search chip on the map (ATMs). Keep to one short word.
 tags = android-app
 en = ATM
 ms = ATM
+zh-Hans = ATM
+zh-Hant = ATM
