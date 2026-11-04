@@ -1055,7 +1055,7 @@
 "map" = "الخريطة";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Sampai لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم الخرائط العضوية!";
+"bugreport_alert_message" = "هل ترغب في إرسال تقرير عن الأخطاء إلى المطورين؟\nنحن نعتمد على مستخدمينا لأن تطبيق Sampai لا يجمع أي معلومات عن الأخطاء تلقائيًا. شكرًا لك مقدمًا على دعم Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "تمكين مزامنة iCloud";
