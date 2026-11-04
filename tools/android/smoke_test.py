@@ -20,6 +20,7 @@ BOUNDS = re.compile(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]")
 DIALOG_BUTTONS = r"^(Accept|Agree|Continue|OK|Next|Done|Got it|Terima|Setuju|Teruskan|Seterusnya|Selesai|Allow.*)$"
 UI_TIMEOUT_S = 40
 MONKEY_ROUNDS = ((1234, 1500), (5678, 1500))
+KUALA_LUMPUR = ("101.6869", "3.1390")
 
 
 def adb(*args, check=False, timeout=UI_TIMEOUT_S):
@@ -145,6 +146,7 @@ def main():
     package = packages[0]
 
     adb("shell", "cmd", "connectivity", "airplane-mode", "enable")
+    adb("emu", "geo", "fix", *KUALA_LUMPUR)
     adb("logcat", "-c")
 
     hits = []
