@@ -2,7 +2,8 @@
 """Drives a built route on an emulator: route preview, navigation HUD, tolls, rotation, arrival.
 
 Needs a connected emulator, the app installed, and the map from route_test_map.py built by generator_tool. The GPS is
-faked along the made-up road. Exits with 1 when the app crashed or the toll total is wrong. Offline like smoke_test.py.
+faked along the made-up road. Exits with 1 when the app crashed, the toll
+total is wrong or the speed covers a map button. The second language runs in night mode. Offline like smoke_test.py.
 """
 
 import argparse
@@ -12,7 +13,7 @@ import time
 from pathlib import Path
 
 from route_test_map import COUNTRY, FINISH, ROUTE, START, TOLL_TEXT
-from smoke_test import ATTR, DIALOG_BUTTONS, NODE, Walker, adb, crashes
+from smoke_test import ATTR, BOUNDS, DIALOG_BUTTONS, NODE, Walker, adb, crashes
 
 # Older than "v" in data/countries.json: a map of the current version must have the published size, and Debug aborts.
 MAPS_VERSION = "260101"
@@ -29,6 +30,19 @@ def text_of(xml, resource_id):
     return None
 
 
+def bounds_of(xml, resource_id):
+    for node in NODE.findall(xml):
+        attrs = dict(ATTR.findall(node))
+        if attrs.get("resource-id", "").endswith(f":id/{resource_id}"):
+            return tuple(map(int, BOUNDS.search(attrs["bounds"]).groups()))
+    return None
+
+
+def overlap(xml, first, second):
+    a, b = bounds_of(xml, first), bounds_of(xml, second)
+    return bool(a and b and a[0] < b[2] and b[0] < a[2] and a[1] < b[3] and b[1] < a[3])
+
+
 def gps(point):
     adb("emu", "geo", "fix", str(point[1]), str(point[0]), "30", "8", KNOTS_90_KMH)
 
@@ -40,9 +54,15 @@ def install_map(package, mwm):
 
 
 class Driver(Walker):
+    def __init__(self, package, out):
+        super().__init__(package, out)
+        self.overlaps = []
+
     def read(self, name, *ids):
         self.shot(name)
         xml = (self.out / f"{self.step:02d}_{name}.xml").read_text(encoding="utf-8")
+        if overlap(xml, "my_speed_pill", "btn_bookmarks") or overlap(xml, "my_speed_pill", "btn_search"):
+            self.overlaps.append(name)
         return {resource_id: text_of(xml, resource_id) for resource_id in ids}
 
     def build_route(self):
@@ -112,11 +132,16 @@ def main():
     adb("logcat", "-c", "-b", "crash")
 
     results = []
+    overlaps = []
+    first_locale = args.locales.split(",")[0]
     for locale in args.locales.split(","):
         out = args.out / locale
         out.mkdir(parents=True, exist_ok=True)
         adb("shell", "cmd", "locale", "set-app-locales", package, "--locales", locale)
-        results.append((locale, Driver(package, out).run()))
+        adb("shell", "cmd", "uimode", "night", "yes" if locale != first_locale else "no")
+        driver = Driver(package, out)
+        results.append((locale, driver.run()))
+        overlaps += [f"{locale}/{name}" for name in driver.overlaps]
 
     crash_log = adb("logcat", "-d", "-b", "crash", timeout=120)
     full_log = adb("logcat", "-d", "-b", "all", timeout=120)
@@ -128,13 +153,13 @@ def main():
     tolls = [step.get("my_toll_amount") for _, steps in results for step in steps]
     toll_ok = TOLL_TEXT in tolls
     report = ["# Android route test", f"- Crashes: {len(crash_lines)}", f"- ANRs: {len(anrs)}",
-              f"- Expected toll {TOLL_TEXT} shown: {toll_ok}"]
+              f"- Expected toll {TOLL_TEXT} shown: {toll_ok}", f"- Speed over map buttons: {overlaps}"]
     for locale, steps in results:
         report += [f"- {locale}:", *[f"  - {step}" for step in steps]]
     report += [f"  - {line}" for line in crash_lines[:20]]
     (args.out / "report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
-    return 1 if crash_lines or not toll_ok else 0
+    return 1 if crash_lines or overlaps or not toll_ok else 0
 
 
 if __name__ == "__main__":
