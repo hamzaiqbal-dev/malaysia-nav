@@ -132,10 +132,10 @@
     android:id="@+id/my_speed_frame"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/my_hud_margin"
+    android:layout_marginStart="@dimen/my_hud_speed_margin_start"
     android:layout_marginBottom="@dimen/my_hud_margin"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
+    android:gravity="center"
+    android:orientation="@integer/my_hud_speed_orientation"
     app:layout_constraintBottom_toTopOf="@id/my_eta_sheet"
     app:layout_constraintStart_toStartOf="parent">
 
@@ -184,7 +184,7 @@
       style="@style/MwmWidget.SpeedLimit"
       android:layout_width="@dimen/my_speed_limit_size"
       android:layout_height="@dimen/my_speed_limit_size"
-      android:layout_marginStart="@dimen/my_hud_gap"
+      android:layout_margin="4dp"
       android:elevation="@dimen/my_hud_elevation"
       android:visibility="gone"
       tools:visibility="visible" />
