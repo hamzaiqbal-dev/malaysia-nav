@@ -96,7 +96,7 @@ def network():
         if point[1] in BOOTHS:
             osm.node(point, {"barrier": "toll_booth", **BOOTHS[point[1]]})
     before_exit = [p for p in points if p[1] <= EXIT]
-    osm.way(before_exit[:-3], EXPRESSWAY_TAGS)
+    osm.way(before_exit[:-2], EXPRESSWAY_TAGS)
     osm.way(before_exit[-3:], {**EXPRESSWAY_TAGS, "turn:lanes": "through|through|right", "destination": "Bangsar"})
     osm.way([p for p in points if p[1] >= EXIT], EXPRESSWAY_TAGS)
     osm.way([(LAT, EXIT), SLIP_END], {"highway": "motorway_link", "oneway": "yes", "destination": "Bangsar"})
