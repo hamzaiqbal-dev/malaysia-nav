@@ -282,3 +282,5 @@ Lessons:
 - `get_job_logs` tails are all cleanup. `route_smoke.py` output is now in `run.log` on `ci/route-screens`.
 
 Next run: read #42's result on 4e4b6b99 first (`Drive a route on an emulator`, and the licences screen in `ci/smoke-screens-42`), check the stacked speed in `ci/route-screens`, then write `docs/SAMPAI_FRIDAY_REVIEW.md`.
+
+Note from run 6's PR watch (Fri 06:26 MYT): #45's smoke run on bbf8dca7 had a real native crash, the first seen, in monkey at event 1055: Debug `ASSERT(mark, ...)` at `libs/map/framework.cpp:2481`, in `BuildPlacePageInfo`. It looks like a tap on a user mark that was already gone (read from the stack, not reproduced). Release compiles the assert out and falls back to `FindUserMarkInTapPosition`. Timing-dependent, so the smoke job can go red at random on any branch. If it repeats on the rollup, find which marks are removed between tap and task. Don't delete the assert to get green. Details in the #45 comment.
