@@ -1,8 +1,6 @@
 Sampai ialah aplikasi navigasi buatan Malaysia untuk rakyat Malaysia: Bahasa Melayu dahulu, dibina supaya boleh diharap, dan direka untuk keperluan sebenar pemandu di sini.
 
-TOL DALAM RM: Lihat jumlah tol laluan anda semasa memandu. Plaza tol di LDP, SPRINT, KESAS, DUKE, MEX, SMART, NPE, Besraya, SILK, Guthrie, SUKE, AKLEH, LATAR, KLK dan lain-lain dikira setiap kali melintas; kadar PLUS dan LPT sedang ditambah.
-
-BAHASA MELAYU DAHULU: Menu, carian dan panduan suara dalam Bahasa Melayu; Bahasa Inggeris, 中文 dan தமிழ் hanya satu ketikan.
+BAHASA MELAYU DAHULU: Menu, carian dan panduan suara dalam Bahasa Melayu; Bahasa Inggeris dan 中文 hanya satu ketikan.
 
 BERFUNGSI LUAR TALIAN: Peta Malaysia, Singapura dan rantau ini disimpan dalam telefon anda. Carian, laluan dan navigasi belokan demi belokan terus berfungsi di Sabah, Sarawak, jalan kampung dan di mana sahaja isyarat hilang. Tiada pelan data diperlukan.
 
