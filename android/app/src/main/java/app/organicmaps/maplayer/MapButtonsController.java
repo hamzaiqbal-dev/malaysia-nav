@@ -64,6 +64,9 @@ public class MapButtonsController extends Fragment
   @Nullable
   private MyPositionButton mNavMyPosition;
   private SearchWheel mSearchWheel;
+  // Portrait only: the landscape bottom row has no room for it.
+  @Nullable
+  private View mSearchPill;
   private BadgeDrawable mBadgeDrawable;
   @Nullable
   private ObjectAnimator mBlinkingAnimator;
@@ -165,6 +168,9 @@ public class MapButtonsController extends Fragment
                             -> mMapButtonClickListener.onMapButtonClick(MapButtons.search),
                         (v) -> mMapButtonClickListener.onSearchCanceled(), mMapButtonsViewModel, mSearchPageViewModel);
     final View searchButton = mFrame.findViewById(R.id.btn_search);
+    mSearchPill = mFrame.findViewById(R.id.my_search_pill);
+    if (mSearchPill != null)
+      mSearchPill.setOnClickListener((v) -> searchButton.performClick());
 
     // Used to get the maximum height the buttons will evolve in
     mFrame.addOnLayoutChangeListener(new MapButtonsController.ContentViewLayoutChangeListener(mFrame));
@@ -210,7 +216,10 @@ public class MapButtonsController extends Fragment
       if (mNavMyPosition != null)
         mNavMyPosition.showButton(show);
       break;
-    case search: mSearchWheel.show(show);
+    case search:
+      mSearchWheel.show(show);
+      if (mSearchPill != null)
+        UiUtils.showIf(show, mSearchPill);
     case bookmarks:
     case menu: UiUtils.showIf(show, buttonView); break;
     case trackRecordingStatus:

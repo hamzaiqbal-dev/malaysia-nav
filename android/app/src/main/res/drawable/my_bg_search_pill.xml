@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Matches MwmWidget.MapButton.Square, so the search button on top of it doesn't show as a separate shape. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle">
+  <solid android:color="?menuBackground" />
+  <corners android:radius="@dimen/corner_radius_medium" />
+</shape>
