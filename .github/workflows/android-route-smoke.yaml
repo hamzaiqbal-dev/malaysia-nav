@@ -1,0 +1,173 @@
+name: Android Route Smoke
+on:
+  workflow_dispatch: # Manual trigger
+  pull_request:
+    paths:
+      - .github/workflows/android-route-smoke.yaml
+      - tools/android/route_smoke.py
+      - tools/android/route_test_map.py
+
+env:
+  JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64  # Java 21 is required by Android Gradle plugin lint
+  MAP_DIR: route-map
+
+permissions:
+  contents: read
+
+jobs:
+  map:
+    name: Build the made-up test map
+    runs-on: ubuntu-24.04
+    outputs:
+      key: ${{ steps.key.outputs.key }}
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v6
+
+      - name: Name the map
+        id: key
+        run: echo "key=route-map-${{ hashFiles('tools/android/route_test_map.py', 'libs/platform/mwm_version.*', 'libs/indexer/data_header.*', 'data/countries.json') }}" >> "$GITHUB_OUTPUT"
+
+      - name: Reuse the map
+        id: cache
+        uses: actions/cache@v5
+        with:
+          path: ${{ env.MAP_DIR }}/Malaysia_West.mwm
+          key: ${{ steps.key.outputs.key }}
+
+      - name: Install build tools and dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build libgl1-mesa-dev libglvnd-dev libharfbuzz-dev qt6-base-dev qt6-positioning-dev
+
+      - name: Parallel submodules checkout
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure ccache
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}-generator
+
+      - name: Build generator_tool
+        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: |
+          cmake -S . -B build-generator -G Ninja -DCMAKE_BUILD_TYPE=Release \
+            -DSKIP_QT_GUI=ON -DBUILD_DEV_SANDBOX=OFF -DBUILD_TESTING=OFF -DCMAKE_UNITY_BUILD=ON
+          cmake --build build-generator --target generator_tool
+
+      - name: Generate the map
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          python3 tools/android/route_test_map.py --out "$MAP_DIR"
+          mkdir -p "$MAP_DIR/intermediate"
+          generate() {
+            build-generator/generator_tool --data_path="$MAP_DIR/" --user_resource_path=data/ \
+              --intermediate_data_path="$MAP_DIR/intermediate/" --node_storage=map "$@"
+          }
+          generate --preprocess --osm_file_type=xml --osm_file_name="$MAP_DIR/route.osm"
+          generate --generate_features --osm_file_type=xml --osm_file_name="$MAP_DIR/route.osm" \
+            --cities_boundaries_data="$MAP_DIR/intermediate/cities.bin"
+          generate --output=Malaysia_West --generate_geometry --generate_index
+          generate --output=Malaysia_West --generate_search_index
+          generate --output=Malaysia_West --make_routing_index --make_cross_mwm --generate_maxspeed
+          ls -la "$MAP_DIR"
+
+      - name: Keep the map for the emulator job
+        uses: actions/upload-artifact@v7
+        with:
+          name: route-map
+          path: ${{ env.MAP_DIR }}/Malaysia_West.mwm
+          if-no-files-found: error
+          retention-days: 3
+
+  route:
+    name: Drive a route on an emulator
+    needs: map
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Only to publish screenshots to the ci/route-screens branch
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Install build tools and dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build
+
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 200 # Needed for versioning script
+
+      - name: Parallel submodules checkout
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure ccache
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}-android
+
+      - name: Compile
+        working-directory: android
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: ./gradlew -Px86_64 assembleGoogleDebug
+
+      - name: Download the map
+        uses: actions/download-artifact@v8
+        with:
+          name: route-map
+          path: ${{ env.MAP_DIR }}
+
+      - name: Free disk space for emulator
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force > /dev/null
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Drive the route
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          script: >-
+            adb install -g $(find android/app/build/outputs/apk -name '*.apk' | head -1) &&
+            mkdir -p route-out &&
+            { python3 tools/android/route_smoke.py --out route-out --map "$MAP_DIR/Malaysia_West.mwm" > route-out/run.log 2>&1; status=$?; cat route-out/run.log; exit $status; }
+
+      - name: Add the report to the job summary
+        if: always()
+        run: cat route-out/report.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      # Artifacts need a login to open; a branch can be browsed on GitHub and read by later CI work.
+      - name: Publish screenshots to a branch
+        if: always()
+        continue-on-error: true
+        working-directory: route-out
+        env:
+          TOKEN: ${{ github.token }}
+          BRANCH: ci/route-screens
+        run: |
+          grep -E 'sampai|Sampai|MWM|Routing|routing|AndroidRuntime|FATAL' logcat.txt 2>/dev/null | tail -3000 > logcat-excerpt.txt || true
+          find . -name logcat.txt -delete
+          git init -q -b screens
+          git -c user.name=ci -c user.email=ci@localhost add -A
+          git -c user.name=ci -c user.email=ci@localhost commit -qm "Route test screenshots of ${GITHUB_SHA}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}" "screens:refs/heads/${BRANCH}"
