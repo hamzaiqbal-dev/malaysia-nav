@@ -14,7 +14,8 @@ from pathlib import Path
 from route_test_map import COUNTRY, FINISH, ROUTE, START, TOLL_TEXT
 from smoke_test import ATTR, DIALOG_BUTTONS, NODE, Walker, adb, crashes
 
-MAPS_VERSION = "260714"  # Top-level "v" of data/countries.json.
+# Older than "v" in data/countries.json: a map of the current version must have the published size, and Debug aborts.
+MAPS_VERSION = "260101"
 KNOTS_90_KMH = "49"
 DRIVE_STEP_S = 2
 SHOT_EVERY_POINTS = 12
