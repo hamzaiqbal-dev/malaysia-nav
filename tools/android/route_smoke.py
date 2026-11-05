@@ -66,11 +66,12 @@ class Driver(Walker):
         gps(START)
         self.build_route()
         seen.append(self.read("route_preview", "my_toll_amount", "time", "dot"))
-        if not self.tap("start"):
-            print("no start button", flush=True)
-            return seen
-        time.sleep(3)
-        self.tap(text=DIALOG_BUTTONS)
+        # The first tap offers to start from the real position and rebuilds the route.
+        for _ in range(3):
+            if not self.tap("start"):
+                break
+            self.tap(text=DIALOG_BUTTONS)
+            time.sleep(8)
         self.shot("navigation")
         seen.append(self.read("navigation_hud", "my_toll_amount", "my_eta", "my_turn_street"))
         adb("shell", "wm", "user-rotation", "lock", "1")
