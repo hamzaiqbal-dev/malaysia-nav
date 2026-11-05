@@ -1,8 +1,6 @@
 Sampai is a navigation app made in Malaysia for Malaysians: Bahasa Melayu first, built to be reliable, and designed around the things drivers here actually need.
 
-TOLLS IN RM: See the toll total of your route while you drive. Toll plazas on LDP, SPRINT, KESAS, DUKE, MEX, SMART, NPE, Besraya, SILK, Guthrie, SUKE, AKLEH, LATAR, KLK and more are priced per crossing; PLUS and LPT fares are being added.
-
-BAHASA MELAYU FIRST: Menu, search and voice guidance in Bahasa Melayu, with English, 中文 and தமிழ் one tap away.
+BAHASA MELAYU FIRST: Menu, search and voice guidance in Bahasa Melayu, with English and 中文 one tap away.
 
 WORKS OFFLINE: Maps of Malaysia, Singapore and the region are stored on your phone. Search, routing and turn-by-turn navigation keep working in Sabah, Sarawak, on kampung roads and anywhere the signal drops. No data plan needed.
 

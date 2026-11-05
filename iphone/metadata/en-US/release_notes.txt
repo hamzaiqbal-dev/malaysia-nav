@@ -1,1 +1,1 @@
-First release of Sampai: offline maps of Malaysia, turn-by-turn navigation and toll totals in RM.
+First release of Sampai: offline maps of Malaysia and turn-by-turn navigation.
