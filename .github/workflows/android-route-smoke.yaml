@@ -152,7 +152,8 @@ jobs:
           profile: pixel_6
           script: >-
             adb install -g $(find android/app/build/outputs/apk -name '*.apk' | head -1) &&
-            python3 tools/android/route_smoke.py --out route-out --map "$MAP_DIR/Malaysia_West.mwm"
+            mkdir -p route-out &&
+            { python3 tools/android/route_smoke.py --out route-out --map "$MAP_DIR/Malaysia_West.mwm" > route-out/run.log 2>&1; status=$?; cat route-out/run.log; exit $status; }
 
       - name: Add the report to the job summary
         if: always()
@@ -167,7 +168,7 @@ jobs:
           TOKEN: ${{ github.token }}
           BRANCH: ci/route-screens
         run: |
-          grep -E 'sampai|Sampai|MWM|Routing|routing|AndroidRuntime|FATAL' logcat.txt | tail -3000 > logcat-excerpt.txt || true
+          grep -E 'sampai|Sampai|MWM|Routing|routing|AndroidRuntime|FATAL' logcat.txt 2>/dev/null | tail -3000 > logcat-excerpt.txt || true
           find . -name logcat.txt -delete
           git init -q -b screens
           git -c user.name=ci -c user.email=ci@localhost add -A
