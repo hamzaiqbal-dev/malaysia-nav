@@ -141,6 +141,7 @@ class Walker:
             ("licences", r"licen[cs]e|lesen"),
         ))
         self.visit("search", "btn_search")
+        self.visit("search_from_bar", "my_search_pill")
         self.visit("bookmarks", "btn_bookmarks")
         self.visit("layers", "layers_button")
         if self.tap("menu_button"):
