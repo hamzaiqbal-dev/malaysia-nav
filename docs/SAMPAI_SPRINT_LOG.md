@@ -282,3 +282,35 @@ Lessons:
 - `get_job_logs` tails are all cleanup. `route_smoke.py` output is now in `run.log` on `ci/route-screens`.
 
 Next run: read #42's result on 4e4b6b99 first (`Drive a route on an emulator`, and the licences screen in `ci/smoke-screens-42`), check the stacked speed in `ci/route-screens`, then write `docs/SAMPAI_FRIDAY_REVIEW.md`.
+
+## Run 8: Fri 6 Nov, 04:47 MYT (last run)
+
+Status of the data licence blocker: unchanged. No reply from Hamza on GitHub, and #30 has no comments. It's section 1 of `SAMPAI_FRIDAY_REVIEW.md`, and the brief's "this is enough" line is still wrong for the data files.
+
+Checked first: run 7's "read it on the rollup" couldn't have worked. #45's last commit was never in #50 or #42, so the FAQ and licences walk had never run on the combined app. Merged, and read below. Rollup route run failed twice on 4e4b6b99 with "Pixel Launcher isn't responding" covering every screen: an emulator fault, not Sampai.
+
+### PRs opened
+- #51 `polish/first-view`: with no saved view the map opens on Malaysia, not the world. Core change, with a unit test.
+- #52 `polish/search-pill` (base #47): a wide "Search" / "Cari" bar in the portrait bottom row. It's a bar behind the unchanged `btn_search`, so `SearchWheel` is untouched. The row's 300 dp cap had to go up to 480 dp: first attempt showed only "Sear…".
+
+### Updated PRs
+- #45: taps Wait on system "isn't responding" dialogs; opens search from the new bar; licences credit no longer counted as old brand; monkey runs through other apps' ANRs (`--ignore-timeouts`, because Google Search timed out and stopped it) and fails on a Sampai `NOT RESPONDING`.
+- #50: reroute and walking paths added; preview toll now read from `time_vehicle`, because `time` doesn't exist on car routes.
+- #13: retargeted to `integration/m1`. Its last commit, a `.gitignore` comment, was the only stack commit missing from M1.
+- #42: merged all of the above.
+
+### First results on the combined app (14154a84)
+- Route: preview and HUD both "RM 4.50+", English by day and Malay by night. Leaving the route rebuilds it and removes the toll chip. Walking route has the HUD and no toll. 0 crashes, 0 ANRs.
+- Screens seen and fine: licences page with Organic Maps and OpenStreetMap credits, FAQ, search bar in both languages, stacked speed pill (clear of the buttons, day, night, landscape), Malaysia first view.
+
+Not fixed: monkey on #45's own branch aborted on the debug-only `ASSERT(mark, ...)` at `framework.cpp:2481`, upstream code, once in about 8 rounds. Release falls through to `FindUserMarkInTapPosition`. CLAUDE.md says no defensive code for it.
+
+Checked and found fine, don't redo: `RouteTolls.requestId` shared by the preview and the HUD can't drop a result, because the preview only computes while planning.
+
+Lessons:
+- After a push, check `git merge-base --is-ancestor` for every PR head against the rollup, instead of trusting the log.
+- A smoke walk that prints "not found" passes silently. Read the step list, not just the exit code.
+- `ci/route-screens` is shared by #42 and #50, whichever finished last. Check the SHA in its commit message; #50's run fails on its own because it has no #32 or #49.
+- Pushing to the rollup cancels every running job on it. Hold small test changes until the running jobs finish.
+- A session that opened a PR stays subscribed: run 7's session pushed the same reroute fix 90 seconds before this run tried to. Read what landed, keep theirs, add only the difference.
+- Check that a commit message's claim is true in the code: "our ANRs still fail the run" wasn't, until the follow-up commit.
