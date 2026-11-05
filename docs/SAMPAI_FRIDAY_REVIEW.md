@@ -32,7 +32,7 @@ Whatever you choose, keep `LICENSE`, `NOTICE`, the per-file headers, the Open-so
 - Click **Delete branch** after each merge: GitHub then retargets the PRs stacked on it. Don't delete `integration/m1` before #23.
 - Check a PR's base before you press merge. Stacked ones show `integration/m1` only once their parent is merged and its branch deleted.
 
-The order below was test-merged: the whole list merged with no conflict, and the result matches rollup #42 apart from #13's `.gitignore` comment.
+The order below was test-merged: the whole list merged with no conflict. The result differs from the tested rollup (#42 at 14154a84) only by #13's `.gitignore` comment and two lines in #45's `smoke_test.py`, which went in too late for one more full run. Those two commits ran only on #45's own branch.
 
 ## 3. Merge order
 
@@ -53,7 +53,7 @@ The order below was test-merged: the whole list merged with no conflict, and the
 | 24 | Spacing, contrast, touch targets, Malay text fit | |
 | 47 | Chips bar no longer fills the screen and pushes the scale and credit under the status bar | |
 | 49 | Speed pill no longer covers the bookmarks button | Stacked speed pill seen on the emulator: clear of the buttons, day and night, portrait and landscape. |
-| 52 | New search bar in the map's bottom row (portrait) | **New.** Seen on the emulator in English and Malay. Worth a look on your phone, because it's the biggest visible change. To undo it, leave #52 out. |
+| 52 | New search bar in the map's bottom row (portrait) | **New.** Its base is #47. Seen on the emulator in English and Malay. Worth a look on your phone, because it's the biggest visible change. To undo it, leave #52 out. |
 
 ### Rebrand
 
@@ -104,9 +104,9 @@ The order below was test-merged: the whole list merged with no conflict, and the
 
 ## 4. What was tested
 
-All of this ran on rollup #42, which combines every PR above:
+All of this ran on rollup #42 at 14154a84, which combines every PR above except the two small items in section 2:
 
-- **CI:** Android, iOS, Linux, Windows, style, lint, translations and metadata jobs pass. The two macOS jobs were cancelled with no runner.
+- **CI:** Android, iOS, Windows, style, lint, translations and metadata jobs pass, and 6 of 8 Linux jobs. When this was written, `ubuntu-26.04 gcc-15 Debug` and `ubuntu-26.04-arm clang-22 Release` hadn't finished: both spent over an hour in the runner's package install, before any of our code. Check they ended green on #42. The two macOS jobs were cancelled with no runner; macOS passed on #51 alone and on the earlier rollup 47647cb9.
 - **PR by PR:** no failed check on any PR's latest commit. The only unfinished jobs are macOS ones cancelled for lack of a runner. #13, #25 and #39 are docs-only and have no checks.
 - **App walk on an emulator, English and Malay:** map, About, FAQ, Open-source licences, search, bookmarks, layers, menu, settings, downloader. 0 Sampai crashes or ANRs. No old brand except the licence credit, which must stay. Monkey ran 3,000 random taps across two rounds with no Sampai crash.
 - **A full drive on a made-up road, English by day and Malay by night:** route preview "Toll RM 4.50+", HUD total, turn banner, lanes, speed, rotation, arrival.

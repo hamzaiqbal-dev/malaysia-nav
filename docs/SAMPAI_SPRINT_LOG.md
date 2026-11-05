@@ -312,6 +312,10 @@ Lessons:
 - A smoke walk that prints "not found" passes silently. Read the step list, not just the exit code.
 - `ci/route-screens` is shared by #42 and #50, whichever finished last. Check the SHA in its commit message; #50's run fails on its own because it has no #32 or #49.
 - Pushing to the rollup cancels every running job on it. Hold small test changes until the running jobs finish.
-- A session that opened a PR stays subscribed: run 7's session pushed the same reroute fix 90 seconds before this run tried to. Read what landed, keep theirs, add only the difference.
+- A session that opened a PR stays subscribed: an earlier run's session pushed the same reroute fix seconds before this run tried to. Read what landed, keep theirs, add only the difference.
 - Check that a commit message's claim is true in the code: "our ANRs still fail the run" wasn't, until the follow-up commit.
 Note from run 6's PR watch (Fri 06:26 MYT): #45's smoke run on bbf8dca7 had a real native crash, the first seen, in monkey at event 1055: Debug `ASSERT(mark, ...)` at `libs/map/framework.cpp:2481`, in `BuildPlacePageInfo`. It looks like a tap on a user mark that was already gone (read from the stack, not reproduced). Release compiles the assert out and falls back to `FindUserMarkInTapPosition`. Timing-dependent, so the smoke job can go red at random on any branch. If it repeats on the rollup, find which marks are removed between tap and task. Don't delete the assert to get green. Details in the #45 comment.
+
+Run 8 close: #52's WebDebug failed in 21 s in "Run tests" and passed on re-run, so it was setup. Smoke on 14154a84 went red once (Google Search ANR stopped monkey), then green on a re-run by another session: 0 crashes, 0 ANRs, no old brand. #42 stays at 14154a84 on purpose: a push would cancel its last Linux jobs and a new run wouldn't finish inside this run. It lacks only #45's two monkey commits, b7e7b0e0 and bbf8dca7. Close #42 after the review; no sprint run follows this one.
+
+At 07:05 MYT two #42 Linux jobs were unfinished: gcc-15 Debug compiling after 70 minutes in apt, arm clang-22 Release still in apt. Not read to the end. #51 19 of 19 and #52 5 of 5 green. #45 and #50 are red on their own branches, as expected: read them on #42.
