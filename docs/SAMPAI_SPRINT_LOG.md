@@ -248,3 +248,37 @@ Left to do:
 Run 6 close (07:00 MYT): #47 confirmed on the emulator: bottom bar 299 of 2400 px on the rollup, ruler above the chips, 0 crashes. The OSM credit itself fades soon after start and wasn't photographed in its new place. #46 and #47 all green, #46 including both macOS jobs. #42's main CI on 47647cb9 was still running, so next run read it first. #45's last smoke run was also not read.
 
 #45's smoke job is red on its own branch on purpose: bar 2209 px, because it doesn't contain #47. Commented on #45. Merge order adds #24, #47 before #45.
+
+## Run 7: Fri 6 Nov, 01:47 MYT
+
+Status of the data licence blocker: unchanged. No reply from Hamza on GitHub, and #30 has no comments. The rules from run 2 still apply.
+
+Checked first: rollup #42 (47647cb9) fully green, including both macOS jobs and the smoke walk. No open issues.
+
+### Routing, HUD and tolls ran for the first time
+- #50 `ci/route-smoke` (base #45): `Android Route Smoke` builds `generator_tool`, makes a tiny `Malaysia_West.mwm` from invented roads (`tools/android/route_test_map.py`), then drives a route on the emulator with fake GPS: English by day, Malay by night. No map data downloaded, so the blocker isn't touched.
+- Result on the rollup before the #49 stack change (cbc05e4d): 0 crashes, 0 ANRs, preview "Toll RM 4.50+" and HUD `RM 4.50+` both correct, including the "+" for the unnamed booth. Turn banner, lanes, speed, limit, progress, rotation, arrival, End, BM text and night mode all work. The HUD looks close to `design/concept-3d`.
+- Screens: `git fetch origin ci/route-screens`, then `git archive`. Overwritten by each run.
+- Still not proven: real OSM tagging of booths (#43), Malaysian real roads, a real GPS, voice output, rerouting off-route, a walking route.
+- First-start ANR seen in 2 of 6 route runs: `DownloadResourcesActivity`, about 6 s of core init on the main thread on a just-booted emulator in a Debug build. Not new code and not fixed; check it on a phone.
+
+### PRs opened
+- #48 `polish/my-region-names`: "Peninsular Malaysia" / "Semenanjung Malaysia" instead of "Malaysia — West", new `countries-strings/ms.json`. A missing key shows the raw id with no fallback, so `ms.json` must stay a full copy of `en`.
+- #49 `fix/hud-speed-overlap` (base #24): the emulator showed the speed pill covering the bookmarks button. Moved clear of the buttons; stacked in portrait, because the limit sign then touched the arrow. The stacked version hasn't been photographed yet.
+- Merge order adds: #24 before #49, #45 before #50.
+
+### Updated PRs
+- #29: the iOS listing sold toll totals, but tolls exist only in the Android app (subtitle, promo, description, release notes). Removed. Tamil voice claim removed everywhere; Tamil menu claimed on Android only, so #46 should go in with it.
+- #45: smoke walk now reaches the English FAQ and scrolls to the licences row. That row only exists with #26, so read it on the rollup.
+- #42: merged #29, #48, #49, #50. Pushed as 4e4b6b99 at 04:15 MYT.
+
+Checked and found fine, don't redo: "Purple downloaded regions" is an upstream setting. "Asia / 亚洲" on Malay looks like one `name:ms` string in the bundled World map rather than code; not verified, and fixing it means regenerating World.mwm.
+
+Lessons:
+- A map of the current `countries.json` version must have the published size or Debug aborts; install the test map in an older version folder.
+- The router rejects islands under 250 segments, hence the street grids in the test map.
+- `git clean` is blocked by the permission classifier. `check_store_metadata.py ios` recreates locale folders that then block `git checkout`; run it never, use `files <path>`. This run moved them to the scratchpad rather than deleting them.
+- The `map` job's cache means editing `route_test_map.py` costs 3 minutes, not a rebuild. A full route run is about 15 minutes.
+- `get_job_logs` tails are all cleanup. `route_smoke.py` output is now in `run.log` on `ci/route-screens`.
+
+Next run: read #42's result on 4e4b6b99 first (`Drive a route on an emulator`, and the licences screen in `ci/smoke-screens-42`), check the stacked speed in `ci/route-screens`, then write `docs/SAMPAI_FRIDAY_REVIEW.md`.
