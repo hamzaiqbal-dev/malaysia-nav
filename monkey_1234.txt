@@ -1,0 +1,436 @@
+  bash arg: -p
+  bash arg: my.sampai.app.debug
+  bash arg: -s
+  bash arg: 1234
+  bash arg: --throttle
+  bash arg: 150
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: --pct-appswitch
+  bash arg: 5
+  bash arg: -v
+  bash arg: 1500
+:Monkey: seed=1234 count=1500
+:AllowPackage: my.sampai.app.debug
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 14.84375%
+//   1: 9.895833%
+//   2: 1.9791666%
+//   3: 14.84375%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 24.739582%
+//   7: 14.84375%
+//   8: -0.0%
+//   9: 5.0%
+//   10: 0.9895833%
+//   11: 12.864583%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(1013.0,1020.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,995.34766)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesLegacyActivity } in package my.sampai.app.debug
+    // activityResuming(my.sampai.app.debug)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.MwmActivity } in package my.sampai.app.debug
+    // activityResuming(my.sampai.app.debug)
+:Sending Touch (ACTION_DOWN): 0:(917.0,1700.0)
+:Sending Touch (ACTION_UP): 0:(905.29785,1686.8594)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(542.0,1143.0)
+:Sending Touch (ACTION_UP): 0:(497.33008,1184.2861)
+:Sending Touch (ACTION_DOWN): 0:(316.0,1551.0)
+:Sending Touch (ACTION_UP): 0:(325.99707,1550.9619)
+:Sending Touch (ACTION_DOWN): 0:(68.0,491.0)
+:Sending Touch (ACTION_UP): 0:(67.60449,481.87793)
+:Sending Touch (ACTION_DOWN): 0:(201.0,1696.0)
+:Sending Touch (ACTION_UP): 0:(201.72852,1697.1094)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(454.0,1051.0)
+:Sending Touch (ACTION_UP): 0:(450.72363,1049.916)
+:Sending Touch (ACTION_DOWN): 0:(204.0,887.0)
+:Sending Touch (ACTION_UP): 0:(234.6582,950.1338)
+:Sending Touch (ACTION_DOWN): 0:(623.0,1948.0)
+:Sending Touch (ACTION_UP): 0:(613.35547,1953.8389)
+:Sending Touch (ACTION_DOWN): 0:(1005.0,2100.0)
+:Sending Touch (ACTION_UP): 0:(993.8047,2105.4316)
+:Sending Touch (ACTION_DOWN): 0:(275.0,1896.0)
+:Sending Touch (ACTION_UP): 0:(294.11523,1895.3428)
+:Sending Touch (ACTION_DOWN): 0:(459.0,1844.0)
+:Sending Touch (ACTION_UP): 0:(478.0088,1847.5352)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(991.0,2018.0)
+:Sending Touch (ACTION_UP): 0:(1000.56055,2003.1621)
+    // Rejecting start of Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=geo: cmp=android/com.android.internal.app.ResolverActivity } in package android
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+    //[calendar_time:2026-11-05 22:15:51.105  system_uptime:485655]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(454.0,1577.0)
+:Sending Touch (ACTION_UP): 0:(446.11133,1572.6523)
+:Sending Touch (ACTION_DOWN): 0:(203.0,2210.0)
+:Sending Touch (ACTION_UP): 0:(192.59668,2215.4072)
+:Sending Touch (ACTION_DOWN): 0:(988.0,765.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,692.61816)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(63.0,45.0)
+:Sending Touch (ACTION_UP): 0:(52.362305,34.39258)
+:Sending Touch (ACTION_DOWN): 0:(912.0,2221.0)
+:Sending Touch (ACTION_UP): 0:(930.9053,2202.2686)
+:Sending Touch (ACTION_DOWN): 0:(1017.0,2184.0)
+:Sending Touch (ACTION_UP): 0:(963.0996,2181.668)
+:Sending Touch (ACTION_DOWN): 0:(135.0,2198.0)
+:Sending Touch (ACTION_UP): 0:(133.39453,2193.6826)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(959.0,2271.0)
+:Sending Touch (ACTION_UP): 0:(958.76074,2272.3936)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+    //[calendar_time:2026-11-05 22:15:58.030  system_uptime:492547]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(710.0,1639.0)
+:Sending Touch (ACTION_UP): 0:(700.91406,1647.8281)
+:Sending Touch (ACTION_DOWN): 0:(311.0,1971.0)
+:Sending Touch (ACTION_UP): 0:(370.62988,1955.3281)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1023.0,645.0)
+:Sending Touch (ACTION_UP): 0:(1035.0996,636.5029)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(490.0,506.0)
+:Sending Touch (ACTION_UP): 0:(476.9082,575.0713)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(670.0,2165.0)
+:Sending Touch (ACTION_UP): 0:(653.3076,2155.0615)
+:Sending Touch (ACTION_DOWN): 0:(927.0,1648.0)
+:Sending Touch (ACTION_UP): 0:(934.6494,1646.5137)
+:Sending Touch (ACTION_DOWN): 0:(642.0,1796.0)
+:Sending Touch (ACTION_UP): 0:(653.6387,1800.376)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(685.0,1975.0)
+    //[calendar_time:2026-11-05 22:16:03.766  system_uptime:498283]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(774.20996,1991.6855)
+:Sending Touch (ACTION_DOWN): 0:(795.0,1786.0)
+:Sending Touch (ACTION_UP): 0:(792.9082,1794.041)
+:Sending Touch (ACTION_DOWN): 0:(688.0,2372.0)
+:Sending Touch (ACTION_UP): 0:(687.8379,2369.6396)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+    // Rejecting start of Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=geo: cmp=android/com.android.internal.app.ResolverActivity } in package android
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(623.0,2389.0)
+:Sending Touch (ACTION_UP): 0:(627.11523,2387.9756)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(994.0,678.0)
+:Sending Touch (ACTION_UP): 0:(997.03125,674.1836)
+:Sending Touch (ACTION_DOWN): 0:(270.0,1772.0)
+:Sending Touch (ACTION_UP): 0:(266.09375,1784.1318)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.Main } in package com.android.chrome
+:Sending Touch (ACTION_DOWN): 0:(877.0,1706.0)
+:Sending Touch (ACTION_UP): 0:(937.7588,1710.8428)
+:Sending Touch (ACTION_DOWN): 0:(393.0,1134.0)
+:Sending Touch (ACTION_UP): 0:(404.51074,1132.2979)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(337.0,130.0)
+:Sending Touch (ACTION_UP): 0:(342.99902,132.73145)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(698.0,987.0)
+:Sending Touch (ACTION_UP): 0:(697.18066,999.9131)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+    //[calendar_time:2026-11-05 22:16:09.429  system_uptime:503945]
+    // Sending event #400
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1002.0,822.0)
+:Sending Touch (ACTION_UP): 0:(1004.6338,809.98145)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(190.0,1919.0)
+:Sending Touch (ACTION_UP): 0:(181.8711,1893.4795)
+:Sending Touch (ACTION_DOWN): 0:(1029.0,1702.0)
+:Sending Touch (ACTION_UP): 0:(1023.63477,1702.1367)
+:Sending Touch (ACTION_DOWN): 0:(723.0,411.0)
+:Sending Touch (ACTION_UP): 0:(792.9883,369.29004)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(793.0,1554.0)
+:Sending Touch (ACTION_UP): 0:(807.8662,1554.9961)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(840.0,1101.0)
+:Sending Touch (ACTION_UP): 0:(840.0742,1059.6992)
+:Sending Touch (ACTION_DOWN): 0:(23.0,1158.0)
+:Sending Touch (ACTION_UP): 0:(34.439453,1161.71)
+:Sending Touch (ACTION_DOWN): 0:(816.0,1195.0)
+:Sending Touch (ACTION_UP): 0:(817.6846,1194.5273)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+    //[calendar_time:2026-11-05 22:16:14.170  system_uptime:508686]
+    // Sending event #500
+:Sending Touch (ACTION_DOWN): 0:(284.0,1926.0)
+:Sending Touch (ACTION_UP): 0:(291.7207,1907.1836)
+:Sending Touch (ACTION_DOWN): 0:(458.0,1455.0)
+:Sending Touch (ACTION_UP): 0:(458.89355,1443.4531)
+:Sending Touch (ACTION_DOWN): 0:(502.0,1163.0)
+:Sending Touch (ACTION_UP): 0:(503.667,1160.7432)
+:Sending Touch (ACTION_DOWN): 0:(26.0,1825.0)
+:Sending Touch (ACTION_UP): 0:(41.90039,1850.8047)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(545.0,527.0)
+:Sending Touch (ACTION_UP): 0:(550.88184,510.08398)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(705.0,1668.0)
+:Sending Touch (ACTION_UP): 0:(707.55176,1668.1572)
+:Sending Touch (ACTION_DOWN): 0:(844.0,2155.0)
+:Sending Touch (ACTION_UP): 0:(801.01074,2114.4336)
+:Sending Touch (ACTION_DOWN): 0:(544.0,1359.0)
+:Sending Touch (ACTION_UP): 0:(541.5947,1359.291)
+:Sending Touch (ACTION_DOWN): 0:(736.0,1744.0)
+:Sending Touch (ACTION_UP): 0:(731.00977,1749.2305)
+    //[calendar_time:2026-11-05 22:16:20.145  system_uptime:514662]
+    // Sending event #600
+    //[calendar_time:2026-11-05 22:16:20.301  system_uptime:514817]
+    // Sending event #600
+:Sending Touch (ACTION_DOWN): 0:(115.0,2287.0)
+:Sending Touch (ACTION_UP): 0:(126.43652,2288.8271)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(113.0,680.0)
+:Sending Touch (ACTION_UP): 0:(121.87109,679.3301)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(189.0,1542.0)
+:Sending Touch (ACTION_UP): 0:(198.3164,1553.4424)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Touch (ACTION_DOWN): 0:(287.0,913.0)
+:Sending Touch (ACTION_UP): 0:(289.54004,927.75684)
+:Sending Touch (ACTION_DOWN): 0:(134.0,1060.0)
+:Sending Touch (ACTION_UP): 0:(126.35449,1065.2744)
+:Sending Touch (ACTION_DOWN): 0:(394.0,70.0)
+:Sending Touch (ACTION_UP): 0:(408.38477,62.518555)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+    //[calendar_time:2026-11-05 22:16:26.326  system_uptime:520842]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(831.0,1929.0)
+:Sending Touch (ACTION_UP): 0:(778.2002,1839.9229)
+:Sending Touch (ACTION_DOWN): 0:(270.0,721.0)
+:Sending Touch (ACTION_UP): 0:(251.97363,735.1904)
+:Sending Touch (ACTION_DOWN): 0:(641.0,868.0)
+:Sending Touch (ACTION_UP): 0:(644.4297,852.3789)
+:Sending Touch (ACTION_DOWN): 0:(660.0,423.0)
+:Sending Touch (ACTION_UP): 0:(654.14453,435.76562)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(149.0,206.0)
+:Sending Touch (ACTION_UP): 0:(149.8584,208.5664)
+:Sending Touch (ACTION_DOWN): 0:(574.0,142.0)
+:Sending Touch (ACTION_UP): 0:(563.35547,142.08789)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+    //[calendar_time:2026-11-05 22:16:32.411  system_uptime:526928]
+    // Sending event #800
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(1010.0,1854.0)
+:Sending Touch (ACTION_UP): 0:(1006.09863,1845.4482)
+:Sending Touch (ACTION_DOWN): 0:(405.0,266.0)
+:Sending Touch (ACTION_UP): 0:(402.1631,266.44727)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(295.0,484.0)
+:Sending Touch (ACTION_UP): 0:(290.63574,492.97852)
+:Sending Touch (ACTION_DOWN): 0:(185.0,881.0)
+:Sending Touch (ACTION_UP): 0:(178.64551,881.30273)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+    //[calendar_time:2026-11-05 22:16:36.777  system_uptime:531293]
+    // Sending event #900
+:Sending Touch (ACTION_DOWN): 0:(416.0,104.0)
+:Sending Touch (ACTION_UP): 0:(415.34668,108.555664)
+:Sending Touch (ACTION_DOWN): 0:(1069.0,2137.0)
+:Sending Touch (ACTION_UP): 0:(1067.541,2132.954)
+:Sending Touch (ACTION_DOWN): 0:(733.0,1288.0)
+:Sending Touch (ACTION_UP): 0:(731.11914,1288.7324)
+:Sending Touch (ACTION_DOWN): 0:(515.0,725.0)
+:Sending Touch (ACTION_UP): 0:(513.6387,727.6963)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(625.0,2309.0)
+:Sending Touch (ACTION_UP): 0:(602.3906,2312.5742)
+:Sending Touch (ACTION_DOWN): 0:(73.0,503.0)
+:Sending Touch (ACTION_UP): 0:(173.27148,468.3994)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+    //[calendar_time:2026-11-05 22:16:43.291  system_uptime:537807]
+    // Sending event #1000
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(327.0,221.0)
+:Sending Touch (ACTION_UP): 0:(332.8545,220.48535)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(142.0,1674.0)
+:Sending Touch (ACTION_UP): 0:(130.32324,1681.8457)
+:Sending Touch (ACTION_DOWN): 0:(386.0,1308.0)
+:Sending Touch (ACTION_UP): 0:(369.12012,1317.4463)
+:Sending Touch (ACTION_DOWN): 0:(629.0,1942.0)
+:Sending Touch (ACTION_UP): 0:(629.7998,1940.7188)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+    //[calendar_time:2026-11-05 22:16:49.083  system_uptime:543599]
+    // Sending event #1100
+    //[calendar_time:2026-11-05 22:16:49.237  system_uptime:543754]
+    // Sending event #1100
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,716.0)
+:Sending Touch (ACTION_UP): 0:(416.57715,668.9951)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(871.0,1527.0)
+:Sending Touch (ACTION_UP): 0:(878.81055,1534.3711)
+:Sending Touch (ACTION_DOWN): 0:(162.0,1230.0)
+:Sending Touch (ACTION_UP): 0:(158.42285,1230.2695)
+:Sending Touch (ACTION_DOWN): 0:(224.0,1873.0)
+:Sending Touch (ACTION_UP): 0:(209.7998,1879.1572)
+:Sending Touch (ACTION_DOWN): 0:(433.0,1363.0)
+:Sending Touch (ACTION_UP): 0:(430.7461,1362.9365)
+:Sending Touch (ACTION_DOWN): 0:(62.0,98.0)
+:Sending Touch (ACTION_UP): 0:(70.25195,88.825195)
+:Sending Touch (ACTION_DOWN): 0:(852.0,1567.0)
+:Sending Touch (ACTION_UP): 0:(771.3213,1632.8232)
+:Sending Touch (ACTION_DOWN): 0:(541.0,678.0)
+:Sending Touch (ACTION_UP): 0:(523.7285,699.0254)
+:Sending Touch (ACTION_DOWN): 0:(1065.0,1425.0)
+:Sending Touch (ACTION_UP): 0:(1076.4658,1422.9756)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=my.sampai.app.debug/app.organicmaps.DownloadResourcesActivity } in package my.sampai.app.debug
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(925.0,837.0)
+:Sending Touch (ACTION_UP): 0:(933.3281,822.3037)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1074.0,2020.0)
+    //[calendar_time:2026-11-05 22:16:54.842  system_uptime:549359]
+    // Sending event #1200
+:Sending Touch (ACTION_UP): 0:(1018.13965,1981.0957)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(821.0,2019.0)
+:Sending Touch (ACTION_UP): 0:(833.1836,2013.458)
+:Sending Touch (ACTION_DOWN): 0:(298.0,1868.0)
+:Sending Touch (ACTION_UP): 0:(293.60938,1830.7031)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(502.0,2256.0)
+:Sending Touch (ACTION_UP): 0:(504.42285,2283.4883)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(219.0,2311.0)
+:Sending Touch (ACTION_UP): 0:(218.92188,2304.543)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+    //[calendar_time:2026-11-05 22:16:59.248  system_uptime:553764]
+    // Sending event #1300
+:Sending Touch (ACTION_DOWN): 0:(611.0,1071.0)
+:Sending Touch (ACTION_UP): 0:(608.01953,1082.1328)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(285.0,1475.0)
+:Sending Touch (ACTION_UP): 0:(287.4668,1479.9727)
+:Sending Touch (ACTION_DOWN): 0:(220.0,1718.0)
+:Sending Touch (ACTION_UP): 0:(279.1172,1697.5635)
+:Sending Touch (ACTION_DOWN): 0:(600.0,1869.0)
+:Sending Touch (ACTION_UP): 0:(600.2949,1870.4258)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(632.0,795.0)
+:Sending Touch (ACTION_UP): 0:(640.2881,795.8828)
+:Sending Touch (ACTION_DOWN): 0:(664.0,1428.0)
+:Sending Touch (ACTION_UP): 0:(660.61523,1439.2861)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(174.0,1868.0)
+:Sending Touch (ACTION_UP): 0:(163.8457,1866.4941)
+:Sending Touch (ACTION_DOWN): 0:(257.0,348.0)
+    //[calendar_time:2026-11-05 22:17:06.601  system_uptime:561118]
+    // Sending event #1400
+:Sending Touch (ACTION_UP): 0:(308.91406,415.82422)
+:Sending Touch (ACTION_DOWN): 0:(608.0,1119.0)
+:Sending Touch (ACTION_UP): 0:(608.22754,1102.7295)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(626.0,290.0)
+:Sending Touch (ACTION_UP): 0:(607.13477,289.68262)
+:Sending Touch (ACTION_DOWN): 0:(171.0,750.0)
+:Sending Touch (ACTION_UP): 0:(176.75684,750.3252)
+:Sending Touch (ACTION_DOWN): 0:(620.0,515.0)
+:Sending Touch (ACTION_UP): 0:(625.18945,511.8916)
+:Sending Touch (ACTION_DOWN): 0:(574.0,1631.0)
+:Sending Touch (ACTION_UP): 0:(599.958,1604.6455)
+:Sending Touch (ACTION_DOWN): 0:(964.0,894.0)
+:Sending Touch (ACTION_UP): 0:(945.7617,850.00586)
+:Sending Touch (ACTION_DOWN): 0:(57.0,805.0)
+:Sending Touch (ACTION_UP): 0:(57.561523,822.6328)
+:Sending Touch (ACTION_DOWN): 0:(802.0,802.0)
+:Sending Touch (ACTION_UP): 0:(826.4717,813.0742)
+:Sending Touch (ACTION_DOWN): 0:(539.0,602.0)
+:Sending Touch (ACTION_UP): 0:(533.33594,603.27734)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+Events injected: 1500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=4 rotations=0
+## Network stats: elapsed time=88305ms (0ms mobile, 0ms wifi, 88305ms not connected)
+// Monkey finished
+args: [-p, my.sampai.app.debug, -s, 1234, --throttle, 150, --pct-syskeys, 0, --pct-appswitch, 5, -v, 1500]
+ arg: "-p"
+ arg: "my.sampai.app.debug"
+ arg: "-s"
+ arg: "1234"
+ arg: "--throttle"
+ arg: "150"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "--pct-appswitch"
+ arg: "5"
+ arg: "-v"
+ arg: "1500"
+data="my.sampai.app.debug"
+data="1234"
+arg="--throttle" mCurArgData="null" mNextArg=5 argwas="--throttle" nextarg="150"
+data="150"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=7 argwas="--pct-syskeys" nextarg="0"
+data="0"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=9 argwas="--pct-appswitch" nextarg="5"
+data="5"
