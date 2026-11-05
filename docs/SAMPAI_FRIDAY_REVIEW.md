@@ -106,7 +106,7 @@ The order below was test-merged: the whole list merged with no conflict. The res
 
 All of this ran on rollup #42 at 14154a84, which combines every PR above except the two small items in section 2:
 
-- **CI:** Android, iOS, Windows, style, lint, translations and metadata jobs pass, and 6 of 8 Linux jobs. When this was written, `ubuntu-26.04 gcc-15 Debug` and `ubuntu-26.04-arm clang-22 Release` hadn't finished: both spent over an hour in the runner's package install, before any of our code. Check they ended green on #42. The two macOS jobs were cancelled with no runner; macOS passed on #51 alone and on the earlier rollup 47647cb9.
+- **CI:** Android, iOS, Windows, all 8 Linux jobs, style, lint, translations and metadata jobs pass. The two macOS jobs were cancelled with no runner; macOS passed on #51 alone and on the earlier rollup 47647cb9.
 - **PR by PR:** no failed check on any PR's latest commit. The only unfinished jobs are macOS ones cancelled for lack of a runner. #13, #25 and #39 are docs-only and have no checks.
 - **App walk on an emulator, English and Malay:** map, About, FAQ, Open-source licences, search, bookmarks, layers, menu, settings, downloader. 0 Sampai crashes or ANRs. No old brand except the licence credit, which must stay. Monkey ran 3,000 random taps across two rounds with no Sampai crash.
 - **A full drive on a made-up road, English by day and Malay by night:** route preview "Toll RM 4.50+", HUD total, turn banner, lanes, speed, rotation, arrival.

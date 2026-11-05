@@ -319,3 +319,5 @@ Note from run 6's PR watch (Fri 06:26 MYT): #45's smoke run on bbf8dca7 had a re
 Run 8 close: #52's WebDebug failed in 21 s in "Run tests" and passed on re-run, so it was setup. Smoke on 14154a84 went red once (Google Search ANR stopped monkey), then green on a re-run by another session: 0 crashes, 0 ANRs, no old brand. #42 stays at 14154a84 on purpose: a push would cancel its last Linux jobs and a new run wouldn't finish inside this run. It lacks only #45's two monkey commits, b7e7b0e0 and bbf8dca7. Close #42 after the review; no sprint run follows this one.
 
 At 07:05 MYT two #42 Linux jobs were unfinished: gcc-15 Debug compiling after 70 minutes in apt, arm clang-22 Release still in apt. Not read to the end. #51 19 of 19 and #52 5 of 5 green. #45 and #50 are red on their own branches, as expected: read them on #42.
+
+Check-in (07:55 MYT): both slow #42 jobs ended green on 14154a84, tests and drape tests included, so the rollup has no failed job. #51 and #52 unchanged and mergeable.
