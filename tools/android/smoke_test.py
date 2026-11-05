@@ -77,7 +77,7 @@ class Walker:
         for node in NODE.findall(xml):
             attrs = dict(ATTR.findall(node))
             for text in (attrs.get("text", ""), attrs.get("content-desc", "")):
-                if BRAND.search(text):
+                if BRAND.search(text) and name != "licences":  # That credit must stay.
                     self.brand_hits.append(f"{stem}: {text[:120]}")
         print(f"step {stem}", flush=True)
 

@@ -23,7 +23,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:maxWidth="@dimen/my_bottom_row_max_width">
     <include
       layout="@layout/map_buttons_help"
       android:layout_width="wrap_content"
