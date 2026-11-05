@@ -201,10 +201,10 @@ def main():
     for seed, events in MONKEY_ROUNDS:
         run = subprocess.run(
             ["adb", "shell", "monkey", "-p", package, "-s", str(seed), "--throttle", "150", "--pct-syskeys", "0",
-             "--pct-appswitch", "5", "-v", str(events)],
+             "--pct-appswitch", "5", "--ignore-timeouts", "-v", str(events)],
             capture_output=True, text=True, timeout=600, check=False)
         (args.out / f"monkey_{seed}.txt").write_text(run.stdout + run.stderr, encoding="utf-8")
-        if "Monkey finished" not in run.stdout:
+        if "Monkey finished" not in run.stdout or f"NOT RESPONDING: {package}" in run.stdout:
             monkey_failed = True
 
     crash_log = adb("logcat", "-d", "-b", "crash", timeout=120)
