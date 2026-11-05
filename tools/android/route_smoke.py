@@ -2,8 +2,9 @@
 """Drives a built route on an emulator: route preview, navigation HUD, tolls, rotation, arrival.
 
 Needs a connected emulator, the app installed, and the map from route_test_map.py built by generator_tool. The GPS is
-faked along the made-up road. Exits with 1 when the app crashed, the toll
-total is wrong or the speed covers a map button. The second language runs in night mode. Offline like smoke_test.py.
+faked along the made-up road. Exits with 1 when the app crashed, the toll total is wrong or stale after a reroute, a
+walking route shows a toll, or the speed covers a map button. The second language runs in night mode. Offline like
+smoke_test.py.
 """
 
 import argparse
@@ -12,7 +13,7 @@ import sys
 import time
 from pathlib import Path
 
-from route_test_map import COUNTRY, FINISH, ROUTE, START, TOLL_TEXT
+from route_test_map import COUNTRY, FINISH, OFF_ROUTE, ROUTE, SLIP_END, START, TOLL_TEXT, WALK_FINISH, WALK_START
 from smoke_test import ATTR, BOUNDS, DIALOG_BUTTONS, NODE, Walker, adb, crashes
 
 # Older than "v" in data/countries.json: a map of the current version must have the published size, and Debug aborts.
@@ -20,6 +21,7 @@ MAPS_VERSION = "260101"
 KNOTS_90_KMH = "49"
 DRIVE_STEP_S = 2
 SHOT_EVERY_POINTS = 12
+REROUTE_FIXES = 8
 
 
 def text_of(xml, resource_id):
@@ -65,9 +67,9 @@ class Driver(Walker):
             self.overlaps.append(name)
         return {resource_id: text_of(xml, resource_id) for resource_id in ids}
 
-    def build_route(self):
-        url = (f"om://route?sll={START[0]},{START[1]}&saddr=Mula"
-               f"&dll={FINISH[0]},{FINISH[1]}&daddr=Tiba&type=vehicle")
+    def build_route(self, start=START, finish=FINISH, router="vehicle"):
+        url = (f"om://route?sll={start[0]},{start[1]}&saddr=Mula"
+               f"&dll={finish[0]},{finish[1]}&daddr=Tiba&type={router}")
         adb("shell", f"am start -a android.intent.action.VIEW -d '{url}' {self.package}")
         time.sleep(15)
         self.tap(text=DIALOG_BUTTONS)
@@ -79,6 +81,44 @@ class Driver(Walker):
             if index and index % SHOT_EVERY_POINTS == 0:
                 seen.append(self.read(f"drive_{index}", "my_toll_amount", "my_eta", "my_turn_street"))
 
+    def start_navigation(self):
+        # The first tap offers to start from the real position and rebuilds the route.
+        for _ in range(3):
+            if not self.tap("start"):
+                break
+            self.tap(text=DIALOG_BUTTONS)
+            time.sleep(8)
+
+    def stop_navigation(self):
+        self.tap("my_end")
+        self.tap(text=DIALOG_BUTTONS)
+
+    def reroute(self):
+        """Leaves the route after the booths: the rebuilt route has no toll, so the chip must go."""
+        gps(START)
+        self.build_route()
+        self.start_navigation()
+        before = self.read("before_reroute", "my_toll_amount", "my_eta")
+        for point in [SLIP_END, *OFF_ROUTE]:
+            gps(point)
+            time.sleep(DRIVE_STEP_S)
+        for _ in range(REROUTE_FIXES):
+            gps(OFF_ROUTE[-1])
+            time.sleep(DRIVE_STEP_S)
+        after = self.read("after_reroute", "my_toll_amount", "my_eta")
+        self.stop_navigation()
+        return before, after
+
+    def walk(self):
+        """A walking route: the HUD must come up with no toll chip."""
+        gps(WALK_START)
+        self.build_route(WALK_START, WALK_FINISH, "pedestrian")
+        preview = self.read("walk_preview", "my_toll_amount", "time")
+        self.start_navigation()
+        hud = self.read("walk_hud", "my_toll_amount", "my_eta", "my_turn_street")
+        self.stop_navigation()
+        return preview, hud
+
     def run(self):
         seen = []
         self.launch()
@@ -86,12 +126,7 @@ class Driver(Walker):
         gps(START)
         self.build_route()
         seen.append(self.read("route_preview", "my_toll_amount", "time", "dot"))
-        # The first tap offers to start from the real position and rebuilds the route.
-        for _ in range(3):
-            if not self.tap("start"):
-                break
-            self.tap(text=DIALOG_BUTTONS)
-            time.sleep(8)
+        self.start_navigation()
         self.shot("navigation")
         seen.append(self.read("navigation_hud", "my_toll_amount", "my_eta", "my_turn_street"))
         adb("shell", "wm", "user-rotation", "lock", "1")
@@ -102,8 +137,7 @@ class Driver(Walker):
         self.drive(seen)
         time.sleep(4)
         self.shot("arrived")
-        self.tap("my_end")
-        self.tap(text=DIALOG_BUTTONS)
+        self.stop_navigation()
         self.shot("after_stop")
         return seen
 
@@ -141,6 +175,9 @@ def main():
         adb("shell", "cmd", "uimode", "night", "yes" if locale != first_locale else "no")
         driver = Driver(package, out)
         results.append((locale, driver.run()))
+        if locale == first_locale:
+            rerouted = driver.reroute()
+            walked = driver.walk()
         overlaps += [f"{locale}/{name}" for name in driver.overlaps]
 
     crash_log = adb("logcat", "-d", "-b", "crash", timeout=120)
@@ -152,14 +189,18 @@ def main():
 
     tolls = [step.get("my_toll_amount") for _, steps in results for step in steps]
     toll_ok = TOLL_TEXT in tolls
+    reroute_ok = rerouted[0]["my_toll_amount"] == TOLL_TEXT and rerouted[1]["my_toll_amount"] is None
+    walk_ok = bool(walked[1]["my_eta"]) and not any(step["my_toll_amount"] for step in walked)
     report = ["# Android route test", f"- Crashes: {len(crash_lines)}", f"- ANRs: {len(anrs)}",
-              f"- Expected toll {TOLL_TEXT} shown: {toll_ok}", f"- Speed over map buttons: {overlaps}"]
+              f"- Expected toll {TOLL_TEXT} shown: {toll_ok}", f"- Speed over map buttons: {overlaps}",
+              f"- Toll follows a reroute: {reroute_ok} {rerouted}",
+              f"- Walking route has HUD, no toll: {walk_ok} {walked}"]
     for locale, steps in results:
         report += [f"- {locale}:", *[f"  - {step}" for step in steps]]
     report += [f"  - {line}" for line in crash_lines[:20]]
     (args.out / "report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
-    return 1 if crash_lines or overlaps or not toll_ok else 0
+    return 1 if crash_lines or overlaps or not (toll_ok and reroute_ok and walk_ok) else 0
 
 
 if __name__ == "__main__":

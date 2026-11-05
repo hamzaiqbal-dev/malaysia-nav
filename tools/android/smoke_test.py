@@ -19,6 +19,7 @@ NODE = re.compile(r"<node [^>]*>")
 ATTR = re.compile(r'([a-z-]+)="([^"]*)"')
 BOUNDS = re.compile(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]")
 DIALOG_BUTTONS = r"^(Accept|Agree|Continue|OK|Next|Done|Got it|Terima|Setuju|Teruskan|Seterusnya|Selesai|Allow.*)$"
+SYSTEM_ANR = re.compile(r"isn.{1,6}t responding")
 UI_TIMEOUT_S = 40
 MONKEY_ROUNDS = ((1234, 1500), (5678, 1500))
 KUALA_LUMPUR = ("101.6869", "3.1390")
@@ -52,17 +53,26 @@ class Walker:
     def nodes(self):
         for _ in range(3):
             output = adb("shell", "uiautomator dump /sdcard/ui.xml >/dev/null && cat /sdcard/ui.xml")
-            if "<hierarchy" in output:
+            if "<hierarchy" in output and not SYSTEM_ANR.search(output):
                 return output
+            self.wait_on_dialog(output)
             time.sleep(2)
         return ""
+
+    def wait_on_dialog(self, xml):
+        """A slow emulator's launcher can raise this dialog over everything. The app's own ANRs are read from logcat."""
+        for node in NODE.findall(xml):
+            attrs = dict(ATTR.findall(node))
+            if attrs.get("text") == "Wait":
+                self.tap_node(attrs)
+                return
 
     def shot(self, name):
         self.step += 1
         stem = f"{self.step:02d}_{name}"
+        xml = self.nodes()
         with open(self.out / f"{stem}.png", "wb") as image:
             subprocess.run(["adb", "exec-out", "screencap", "-p"], stdout=image, timeout=UI_TIMEOUT_S, check=False)
-        xml = self.nodes()
         (self.out / f"{stem}.xml").write_text(xml, encoding="utf-8")
         for node in NODE.findall(xml):
             attrs = dict(ATTR.findall(node))
@@ -78,11 +88,14 @@ class Walker:
             by_id = resource_id and attrs.get("resource-id", "").endswith(f":id/{resource_id}")
             by_text = text and re.search(text, attrs.get("text", "") or attrs.get("content-desc", ""), re.I)
             if by_id or by_text:
-                x1, y1, x2, y2 = map(int, BOUNDS.search(attrs["bounds"]).groups())
-                adb("shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2))
-                time.sleep(3)
+                self.tap_node(attrs)
                 return True
         return False
+
+    def tap_node(self, attrs):
+        x1, y1, x2, y2 = map(int, BOUNDS.search(attrs["bounds"]).groups())
+        adb("shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2))
+        time.sleep(3)
 
     def back(self):
         adb("shell", "input", "keyevent", "KEYCODE_BACK")
@@ -106,10 +119,17 @@ class Walker:
             return
         self.shot(name)
         for child_name, child_text in then:
-            if self.tap(text=child_text):
+            if self.tap(text=child_text) or self.scroll_and_tap(child_text):
                 self.shot(child_name)
                 self.back()
+            else:
+                print(f"step {child_name}: not found", flush=True)
         self.back()
+
+    def scroll_and_tap(self, text):
+        adb("shell", "input", "swipe", "500", "1800", "500", "600", "400")
+        time.sleep(1)
+        return self.tap(text=text)
 
     def walk(self):
         self.launch()
@@ -117,7 +137,7 @@ class Walker:
         self.shot("map")
         self.bar_height = self.bottom_bar_height()
         self.visit("about", "help_button", then=(
-            ("faq", r"FAQ|Soalan"),
+            ("faq", r"FAQ|Frequently|Soalan"),
             ("licences", r"licen[cs]e|lesen"),
         ))
         self.visit("search", "btn_search")

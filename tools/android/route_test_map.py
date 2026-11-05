@@ -28,6 +28,9 @@ START = (3.1, 101.59)
 FEEDER = (LAT, 101.596)
 SLIP_END = (3.094, 101.704)
 FINISH = (3.088, 101.71)
+OFF_ROUTE = [(3.096, 101.708), (3.096, 101.714), (3.096, 101.72)]  # A street in the east town, 300 m from the route.
+WALK_START = START
+WALK_FINISH = (3.092, 101.59)  # Same town.
 EXPRESSWAY_TAGS = {"highway": "motorway", "ref": "E23", "name": "Lebuhraya SPRINT", "maxspeed": "90", "lanes": "3",
                    "oneway": "yes", "toll": "yes"}
 
