@@ -1,9 +1,6 @@
 name: Android Route Smoke
 on:
   workflow_dispatch: # Manual trigger
-  push:
-    branches:
-      - ci/route-test
   pull_request:
     paths:
       - .github/workflows/android-route-smoke.yaml
