@@ -23,7 +23,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:maxWidth="@dimen/my_bottom_row_max_width">
     <include
       layout="@layout/map_buttons_help"
       android:layout_width="wrap_content"
@@ -31,20 +32,40 @@
       android:layout_marginStart="@dimen/margin_half"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
+    <!-- The map buttons are flat and the same colour, so this bar and the search button on it read as one pill. -->
+    <TextView
+      android:id="@+id/my_search_pill"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/map_button_size"
+      android:layout_marginStart="@dimen/margin_half"
+      android:layout_marginEnd="@dimen/margin_half"
+      android:background="@drawable/my_bg_search_pill"
+      android:ellipsize="end"
+      android:foreground="?selectableItemBackground"
+      android:gravity="center_vertical"
+      android:importantForAccessibility="no"
+      android:maxLines="1"
+      android:paddingStart="@dimen/map_button_size"
+      android:paddingEnd="@dimen/margin_half"
+      android:text="@string/search"
+      android:textColor="?android:textColorSecondary"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btn_bookmarks"
+      app:layout_constraintStart_toEndOf="@+id/help_button" />
     <include
       layout="@layout/map_buttons_search_square"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/btn_bookmarks"
-      app:layout_constraintStart_toEndOf="@+id/help_button" />
+      app:layout_constraintStart_toStartOf="@+id/my_search_pill" />
     <include
       layout="@layout/map_buttons_bookmarks_square"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/margin_half"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/menu_button"
-      app:layout_constraintStart_toEndOf="@+id/btn_search" />
+      app:layout_constraintEnd_toStartOf="@+id/menu_button" />
     <include
       layout="@layout/map_buttons_menu"
       android:layout_width="wrap_content"
