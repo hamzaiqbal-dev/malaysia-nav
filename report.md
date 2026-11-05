@@ -1,0 +1,25 @@
+# Android route test
+- Crashes: 0
+- ANRs: 0
+- Expected toll RM 4.50+ shown: False
+- Speed over map buttons: ['en/navigation_hud', 'en/navigation_landscape', 'en/drive_12', 'en/drive_24', 'en/drive_36', 'en/drive_48', 'en/drive_60', 'en/before_reroute', 'en/after_reroute', 'en/walk_hud', 'ms/navigation_hud', 'ms/navigation_landscape', 'ms/drive_12', 'ms/drive_24', 'ms/drive_36', 'ms/drive_48', 'ms/drive_60']
+- Toll follows a reroute: False ({'my_toll_amount': 'RM 4.50', 'my_eta': '17 min'}, {'my_toll_amount': None, 'my_eta': '8 min'})
+- Walking route has HUD, no toll: True ({'my_toll_amount': None, 'time': '10\xa0min\xa0• 890\xa0m'}, {'my_toll_amount': None, 'my_eta': '11 min', 'my_turn_street': 'Jalan Mula 2'})
+- en:
+  - {'time_vehicle': '16\xa0min\xa0• 14\xa0km'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '17 min', 'my_turn_street': 'Jalan Mula 6'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '17 min'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '12 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '11 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '9 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '7 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '1 min', 'my_turn_street': None}
+- ms:
+  - {'time_vehicle': '16\xa0min\xa0• 14\xa0km'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '17 min', 'my_turn_street': 'Jalan Mula 6'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '17 min'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '12 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '11 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '9 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '7 min', 'my_turn_street': '&gt; Bangsar'}
+  - {'my_toll_amount': 'RM 4.50', 'my_eta': '1 min', 'my_turn_street': None}
