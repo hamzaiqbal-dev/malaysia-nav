@@ -539,6 +539,8 @@ public:
 
   /// Show all model by it's world rect.
   void ShowAll();
+  /// The view with no saved viewport: Peninsular Malaysia, Sabah and Sarawak, rather than the whole world.
+  static m2::RectD GetFirstStartRect();
 
   m2::PointD GetVisiblePixelCenter() const;
 
