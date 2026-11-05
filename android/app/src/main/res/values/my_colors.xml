@@ -9,18 +9,24 @@
   <color name="my_line">#14000000</color>
   <color name="my_route">#FF2E8BFF</color>
   <color name="my_accent">#FFFFC43D</color>
+  <!-- Accent as text: the yellow fails WCAG AA on light panels (1.4:1), so day uses a dark amber. -->
+  <color name="my_accent_text">#FF8A5A00</color>
   <color name="my_ok">#FF1E9E5A</color>
   <color name="my_warn">#FFE56A33</color>
-  <color name="my_danger">#FFE03548</color>
+  <!-- Dark enough for white 14sp text on top (End button, speed camera pill): 5.1:1. -->
+  <color name="my_danger">#FFD32638</color>
+  <!-- Progress track; the route blue keeps 3:1 against it. -->
+  <color name="my_track">#FFF1F4F9</color>
 
   <!-- Turn banner: the same green in both themes, white text on top of it. -->
-  <color name="my_turn_banner_start">#FF1C8C4E</color>
+  <color name="my_turn_banner_start">#FF197F47</color>
   <color name="my_turn_banner_end">#FF13703C</color>
   <color name="my_on_banner">#FFFFFFFF</color>
   <color name="my_on_banner_muted">#CCFFFFFF</color>
   <color name="my_banner_icon_bg">#24FFFFFF</color>
+  <color name="my_ripple_on_dark">#33FFFFFF</color>
 
   <!-- Translucent pills floating over the map (lanes, speed). -->
   <color name="my_pill_bg">#E6FFFFFF</color>
-  <color name="my_lane_inactive">#FF8A96AA</color>
+  <color name="my_lane_inactive">#FF7A8699</color>
 </resources>

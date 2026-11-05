@@ -27,7 +27,10 @@ class ExploreChipsView @JvmOverloads constructor(context: Context, attrs: Attrib
         val inflater = LayoutInflater.from(context)
         for (chip in ExploreChips.ALL) {
             val view = inflater.inflate(R.layout.my_explore_chip, row, false) as TextView
-            view.text = chip.emoji + " " + context.getString(chip.labelRes)
+            val label = context.getString(chip.labelRes)
+            view.text = chip.emoji + " " + label
+            // Screen readers get the place type only, not the emoji name.
+            view.contentDescription = label
             view.setOnClickListener {
                 listener?.onChipClicked(ExploreChips.searchQuery(chip), ExploreChips.QUERY_LOCALE)
             }
@@ -35,7 +38,7 @@ class ExploreChipsView @JvmOverloads constructor(context: Context, attrs: Attrib
         }
         addView(row, LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Gravity.CENTER_VERTICAL))
         val gutter = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, GUTTER_DP, resources.displayMetrics).toInt()
-        setPadding(gutter, 0, gutter, 0)
+        setPaddingRelative(gutter, 0, gutter, 0)
     }
 
     private companion object {

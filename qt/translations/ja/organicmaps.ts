@@ -47,8 +47,8 @@
 <translation>ダウンロードに失敗しました</translation>
 </message>
 <message id="about_menu_title">
-<source>About Organic Maps</source>
-<translation>Organic Mapsについて</translation>
+<source>About Sampai</source>
+<translation>Sampaiについて</translation>
 </message>
 <message id="close">
 <source>Close</source>
@@ -200,28 +200,28 @@
 </message>
 <message id="share_my_position">
 <extracomment>Text shown before a shared &quot;my position&quot; link, and the email subject when sharing the current location.</extracomment>
-<source>I am here on Organic Maps</source>
-<translation>Organic Mapsでここにいます</translation>
+<source>I am here on Sampai</source>
+<translation>Sampaiでここにいます</translation>
 </message>
 <message id="share_place_subject">
 <extracomment>Email subject when sharing a place. %1$@ is the place name or address.</extracomment>
-<source>%1 on Organic Maps</source>
-<translation>%1 - Organic Maps</translation>
+<source>%1 on Sampai</source>
+<translation>%1 - Sampai</translation>
 </message>
 <message id="share_place_subject_default">
 <extracomment>Email subject when sharing a place that has no name or address.</extracomment>
-<source>A place on Organic Maps</source>
-<translation>Organic Mapsの場所</translation>
+<source>A place on Sampai</source>
+<translation>Sampaiの場所</translation>
 </message>
 <message id="share_open_in_om_or_browser">
-<extracomment>Shared email link text; opens the shared place in Organic Maps or in a web browser.</extracomment>
-<source>Open in Organic Maps or in a browser</source>
-<translation>Organic Mapsまたはブラウザーで開く</translation>
+<extracomment>Shared email link text; opens the shared place in Sampai or in a web browser.</extracomment>
+<source>Open in Sampai or in a browser</source>
+<translation>Sampaiまたはブラウザーで開く</translation>
 </message>
 <message id="share_get_om">
-<extracomment>Shared email link text; leads to the Organic Maps download page.</extracomment>
-<source>Get Organic Maps</source>
-<translation>Organic Mapsを入手</translation>
+<extracomment>Shared email link text; leads to the Sampai download page.</extracomment>
+<source>Get Sampai</source>
+<translation>Sampaiを入手</translation>
 </message>
 <message id="open_in_app">
 <extracomment>Title for the &quot;Open in Another App&quot; button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app.</extracomment>
@@ -304,8 +304,8 @@
 </message>
 <message id="version">
 <extracomment>Prints version number in About dialog</extracomment>
-<source>Organic Maps version: %1</source>
-<translation>Organic Mapsバージョン: %1</translation>
+<source>Sampai version: %1</source>
+<translation>Sampaiバージョン: %1</translation>
 </message>
 <message id="bookmark">
 <extracomment>bookmark button text</extracomment>
@@ -680,11 +680,6 @@
 <extracomment>Current language of the map!</extracomment>
 <source>Map language</source>
 <translation>マップ言語</translation>
-</message>
-<message id="translated_om_site_url">
-<extracomment>Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content</extracomment>
-<source>https://organicmaps.app/</source>
-<translation>https://organicmaps.app/</translation>
 </message>
 <message id="button_layer_outdoor">
 <extracomment>Outdoors/hiking map style (activity) name in the Styles and Layers dialog</extracomment>

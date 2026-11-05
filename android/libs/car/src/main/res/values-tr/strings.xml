@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">İndiriliyor</string>
     <string name="download_map_title">Dünya genel görünüm haritasını indir</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto\'daki Organic Maps etkin çalışmak için konum iznine gereksiniyor</string>
+    <string name="aa_request_permission_activity_text">Android Auto\'daki Sampai etkin çalışmak için konum iznine gereksiniyor</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">İzinleri Verin</string>
 </resources>

@@ -164,7 +164,7 @@ private extension AboutController {
       termsOfUseAndPrivacyPolicyView.addButton(title: L("terms_of_use"), didTapHandler: { [weak self] in
         self?.openUrl(L("translated_om_site_url") + "terms/")
       })
-      termsOfUseAndPrivacyPolicyView.addButton(title: L("copyright"), didTapHandler: { [weak self] in
+      termsOfUseAndPrivacyPolicyView.addButton(title: L("open_source_licences"), didTapHandler: { [weak self] in
         self?.showCopyright()
       })
     }
@@ -254,15 +254,15 @@ private extension AboutController {
   }
 
   func buildInfoTableViewData() -> [AboutInfoTableViewCellModel] {
-    let infoContent: [AboutInfo] = [.faq, .reportMapDataProblem, .reportABug, .news, .volunteer, .rateTheApp]
+    let infoContent: [AboutInfo] = [.faq, .reportMapDataProblem, .reportABug, .rateTheApp]
     return infoContent.map { [weak self] aboutInfo in
       AboutInfoTableViewCellModel(title: aboutInfo.title, image: aboutInfo.image, didTapHandler: {
         switch aboutInfo {
         case .faq:
           self?.navigationController?.pushViewController(FaqController(), animated: true)
         case .reportABug:
-          MailComposer.sendBugReportWith(title: "Organic Maps Bug Report")
-        case .reportMapDataProblem, .volunteer, .news:
+          MailComposer.sendBugReportWith(title: "Sampai Bug Report")
+        case .reportMapDataProblem:
           self?.openUrl(aboutInfo.link)
         case .rateTheApp:
           RateUsManager.shared.showAppStoreReviewRequest()
@@ -277,23 +277,7 @@ private extension AboutController {
     let socialMediaContent = SocialMedia.allCases
     return socialMediaContent.map { [weak self] socialMedia in
       SocialMediaCollectionViewCellModel(image: socialMedia.image, didTapHandler: {
-        switch socialMedia {
-        case .telegram: fallthrough
-        case .github: fallthrough
-        case .reddit: fallthrough
-        case .matrix: fallthrough
-        case .fosstodon: fallthrough
-        case .facebook: fallthrough
-        case .twitter: fallthrough
-        case .instagram: fallthrough
-        case .linkedin: fallthrough
-        case .tiktok: fallthrough
-        case .threads: fallthrough
-        case .bluesky:
-          self?.openUrl(socialMedia.link, externally: true)
-        case .organicMapsEmail:
-          MailComposer.sendEmail(toRecipients: [socialMedia.link])
-        }
+        MailComposer.sendEmail(toRecipients: [socialMedia.link])
       })
     }
   }
@@ -322,7 +306,7 @@ private extension AboutController {
   func showCopyright() {
     let path = Bundle.main.path(forResource: "copyright", ofType: "html")!
     let html = try! String(contentsOfFile: path, encoding: String.Encoding.utf8)
-    let webViewController = WebViewController(html: html, baseUrl: nil, title: L("copyright"))!
+    let webViewController = WebViewController(html: html, baseUrl: nil, title: L("open_source_licences"))!
     webViewController.openInSafari = true
     navigationController?.pushViewController(webViewController, animated: true)
   }

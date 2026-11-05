@@ -10,9 +10,9 @@
 
   <color name="cursor_edit_field">@color/text_dark</color>
 
-  <color name="base_accent">#FF249CF2</color>
-  <color name="base_accent_pressed">#FF1C85D6</color>
-  <color name="base_accent_transparent">#1E249CF2</color>
+  <color name="base_accent">#FF1A6FE0</color>
+  <color name="base_accent_pressed">#FF1459B8</color>
+  <color name="base_accent_transparent">#1E1A6FE0</color>
 
   <color name="base_red">#FFF54137</color>
   <color name="dark_red">#F51E30</color>
@@ -61,18 +61,18 @@
 
   <!-- Backgrounds -->
   <color name="bg_window">#FFEEEEEE</color>
-  <color name="bg_primary">#006C35</color>
+  <color name="bg_primary">#0B1220</color>
   <color name="bg_cards">@android:color/white</color>
   <color name="bg_panel">@color/bg_window</color>
   <color name="notes_fade_start">#00FFFFFF</color>
-  <color name="bg_primary_dark">#197841</color>
+  <color name="bg_primary_dark">#16233A</color>
 
   <color name="bg_dialog_translucent">#BB000000</color>
   <color name="bg_text_translucent">#99FFFFFF</color>
 
   <color name="bg_menu">#CCFFFFFF</color>
 
-  <color name="bg_statusbar">#004120</color>
+  <color name="bg_statusbar">#060B14</color>
   <color name="bg_statusbar_translucent">#66000000</color>
 
   <!-- Buttons -->
@@ -121,18 +121,13 @@
   <color name="material_calendar_surface_dark">#929292</color>
   <color name="notification_warning">#FFC22219</color>
 
-  <color name="donation_bg_light">#537E4C</color>
-  <color name="donation_bg_dark">#063100</color>
-  <color name="donation_highlight">#1F000000</color>
-  <color name="donation_action_light">#FFE082</color>
-  <color name="donation_action_dark">#FFB300</color>
   <!-- Shimmer -->
   <color name="shimmer_bar">#1E000000</color>
   <color name="shimmer_highlight">#44FFFFFF</color>
   <!-- Search sheet -->
   <color name="bg_search">#14000000</color>
   <color name="ripple_search_action">#1F000000</color>
-  <color name="widget_accent">#FF006C35</color>
+  <color name="widget_accent">#FF0B1220</color>
   <color name="widget_text_primary">@color/black_primary</color>
   <color name="widget_text_secondary">@color/black_secondary</color>
 </resources>

@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Duke shkarkuar</string>
     <string name="download_map_title">Shkarko hartën e përgjithshme të botës</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps në Android Auto ka nevojë për leje vendndodhjeje për të punuar me efikasitet</string>
+    <string name="aa_request_permission_activity_text">Sampai në Android Auto ka nevojë për leje vendndodhjeje për të punuar me efikasitet</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Jepni Lejet</string>
 </resources>

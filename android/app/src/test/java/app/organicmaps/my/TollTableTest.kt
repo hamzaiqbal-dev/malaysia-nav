@@ -2,6 +2,7 @@ package app.organicmaps.my
 
 import java.io.File
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -23,6 +24,7 @@ class TollTableTest {
         val penchala = table.plazas[0]
         assertEquals("Penchala", penchala.name)
         assertEquals("LDP", penchala.highway)
+        assertEquals("E11", penchala.roadRef)
         assertEquals(listOf("Bukit Lanjan"), penchala.aliases)
         assertEquals(2.10, penchala.price(TollTable.CLASS_CAR), 0.0)
         assertEquals(1.60, penchala.price(5), 0.0)
@@ -38,17 +40,26 @@ class TollTableTest {
     }
 
     @Test
-    fun findsByNameAliasAndContainedName() {
+    fun findsByNameAliasAndDirection() {
         assertEquals("Penchala", table.find("Plaza Tol Penchala")?.name)
         assertEquals("Penchala", table.find("Bukit Lanjan Toll Plaza")?.name)
         assertEquals("Sunway", table.find("Plaza Tol Sunway Arah Klang")?.name)
+        assertEquals("Sunway", table.find("Sunway Toll Plaza to Klang")?.name)
+    }
+
+    @Test
+    fun otherPlazasWithAPricedWordInTheirNameAreNotPriced() {
+        val batu = TollTable.parse(sequenceOf("Batu,DUKE,E33,Ekovest,,2.50,3.80,5.00,1.30,1.30,https://example.org,x"))
+        assertEquals("Batu", batu.find("Plaza Tol Batu")?.name)
+        assertNull(batu.find("Plaza Tol Batu Pahat"))
+        assertNull(batu.find("Plaza Tol Batu Kawan Arah Pulau Pinang"))
+        assertNull(table.find("Plaza Tol Kota Sunway"))
     }
 
     @Test
     fun ambiguousOrUnknownNamesAreNotPriced() {
-        // "sungai besi tambahan" contains both PLUS plazas by name: the exact key wins.
+        // Both PLUS plazas start with "sungai besi": the whole name decides.
         assertEquals("Sungai Besi Tambahan", table.find("Plaza Tol Sungai Besi Tambahan")?.name)
-        // Nothing contains "sungai besi" uniquely once a direction suffix is added without an exact key.
         assertNull(table.find("Plaza Tol Sungai Besi Tambahan Utara"))
         assertNull(table.find("Plaza Tol Jalan Duta"))
         assertNull(table.find("Toll Plaza"))
@@ -71,6 +82,111 @@ class TollTableTest {
     }
 
     @Test
+    fun unnamedBoothsCountOnceAsUnpriced() {
+        val booths = listOf(
+            RouteTollBooth("", 1000.0),
+            RouteTollBooth("", 1020.0),
+            RouteTollBooth("Plaza Tol Sunway", 9000.0),
+            RouteTollBooth("", 20000.0),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(1, total.pricedBooths)
+        assertEquals(2, total.unpricedBooths)
+    }
+
+    @Test
+    fun spellingsOfOnePlazaCountOnce() {
+        val booths = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("Plaza Tol Sunway Arah Klang", 1020.0),
+            RouteTollBooth("Penchala Toll Plaza", 9000.0),
+            RouteTollBooth("Plaza Tol Bukit Lanjan", 9030.0),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(2.00 + 2.10, total.amountRm, 1e-9)
+        assertEquals(2, total.pricedBooths)
+        assertEquals(0, total.unpricedBooths)
+    }
+
+    @Test
+    fun unnamedLaneOfANamedPlazaAddsNothing() {
+        val after = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 1020.0))
+        val before = listOf(RouteTollBooth("", 1000.0), RouteTollBooth("Plaza Tol Sunway", 1020.0))
+        val between = listOf(
+            RouteTollBooth("Plaza Tol Sunway", 1000.0),
+            RouteTollBooth("", 1010.0),
+            RouteTollBooth("Plaza Tol Sunway", 1020.0),
+        )
+        for (booths in listOf(after, before, between)) {
+            val total = table.priceRoute(booths)
+            assertEquals(2.00, total.amountRm, 1e-9)
+            assertEquals(1, total.boothCount)
+        }
+    }
+
+    @Test
+    fun unnamedBoothFarFromAPlazaStaysUnpriced() {
+        val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("", 2000.0)))
+        assertEquals(1, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun differentPlazasCloseTogetherBothCount() {
+        val booths = listOf(RouteTollBooth("Plaza Tol Sunway", 1000.0), RouteTollBooth("Plaza Tol Penchala", 1100.0))
+        assertEquals(2.00 + 2.10, table.priceRoute(booths).amountRm, 1e-9)
+    }
+
+    @Test
+    fun parsesRoadRefs() {
+        assertEquals(listOf("E23", "AH2"), TollTable.parseRoadRefs("E 23;ah2"))
+        assertEquals(listOf("E1", "FT2"), TollTable.parseRoadRefs("E1/FT2"))
+        assertEquals(emptyList<String>(), TollTable.parseRoadRefs(""))
+    }
+
+    @Test
+    fun plazaOfTheSameNameOnAnotherExpresswayIsNotPriced() {
+        val onLdp = RouteTollBooth("Plaza Tol Penchala", 0.0, listOf("E11"))
+        val onNkve = RouteTollBooth("Plaza Tol Penchala", 0.0, listOf("E1"))
+        assertEquals(1, table.priceRoute(listOf(onLdp)).pricedBooths)
+        val total = table.priceRoute(listOf(onNkve))
+        assertEquals(0, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun boothWithNoExpresswayNumberKeepsItsPlaza() {
+        for (refs in listOf(emptyList(), listOf("FT54"), listOf("E11", "E1"))) {
+            val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Penchala", 0.0, refs)))
+            assertEquals(refs.toString(), 1, total.pricedBooths)
+        }
+    }
+
+    @Test
+    fun oneLaneOnAnotherExpresswayUnpricesThePlaza() {
+        val booths = listOf(
+            RouteTollBooth("Plaza Tol Penchala", 1000.0),
+            RouteTollBooth("Plaza Tol Penchala", 1020.0, listOf("E1")),
+        )
+        val total = table.priceRoute(booths)
+        assertEquals(0, total.pricedBooths)
+        assertEquals(1, total.unpricedBooths)
+    }
+
+    @Test
+    fun hasPriceOnlyWithAPricedBooth() {
+        assertFalse(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Ayer Keroh", 0.0))).hasPrice)
+        assertTrue(table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 0.0))).hasPrice)
+    }
+
+    @Test
+    fun abbreviatedNamesMatch() {
+        assertEquals(TollTable.normalizeBoothName("Sungai Ramal"), TollTable.normalizeBoothName("Sg. Ramal"))
+        assertEquals("bukit kajang", TollTable.normalizeBoothName("Plaza Tol Bkt Kajang"))
+        assertEquals("sungai besi tambahan", TollTable.normalizeBoothName("PLAZA TOL SG BESI TAMBAHAN (ARAH KL)"))
+    }
+
+    @Test
     fun priceRouteUsesVehicleClass() {
         val total = table.priceRoute(listOf(RouteTollBooth("Plaza Tol Sunway", 0.0)), vehicleClass = 3)
         assertEquals(4.00, total.amountRm, 0.0)
@@ -84,6 +200,7 @@ class TollTableTest {
         for (plaza in shipped.plazas) {
             assertEquals(TollTable.CLASS_COUNT, plaza.prices.size)
             assertTrue("${plaza.name} has no source", plaza.source.startsWith("https://"))
+            assertTrue("${plaza.name} has road ${plaza.roadRef}", TollTable.EXPRESSWAY_REF.matches(plaza.roadRef))
         }
         assertEquals("Penchala", shipped.find("Plaza Tol Penchala")?.name)
     }

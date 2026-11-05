@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Завантаження</string>
     <string name="download_map_title">Завантажити оглядову мапу світу</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Для ефективної роботи Organic Maps в Android Auto потрібні дозвіли на розташування</string>
+    <string name="aa_request_permission_activity_text">Для ефективної роботи Sampai в Android Auto потрібні дозвіли на розташування</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Надавати дозволи</string>
 </resources>

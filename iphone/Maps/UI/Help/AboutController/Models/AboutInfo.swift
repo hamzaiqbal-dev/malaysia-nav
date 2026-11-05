@@ -2,8 +2,6 @@ enum AboutInfo {
   case faq
   case reportABug
   case reportMapDataProblem
-  case volunteer
-  case news
   case rateTheApp
   case noTracking
   case noWifi
@@ -17,10 +15,6 @@ enum AboutInfo {
       return L("report_a_bug")
     case .reportMapDataProblem:
       return L("report_incorrect_map_bug")
-    case .volunteer:
-      return L("volunteer")
-    case .news:
-      return L("news")
     case .rateTheApp:
       return L("rate_the_app")
     case .noTracking:
@@ -40,10 +34,6 @@ enum AboutInfo {
       return UIImage(named: "ic_about_report_bug")!
     case .reportMapDataProblem:
       return UIImage(named: "ic_about_report_osm")!
-    case .volunteer:
-      return UIImage(named: "ic_about_volunteer")!
-    case .news:
-      return UIImage(named: "ic_about_news")!
     case .rateTheApp:
       return UIImage(named: "ic_about_rate_app")!
     case .noTracking, .noWifi, .community:
@@ -61,10 +51,6 @@ enum AboutInfo {
       return AppConstants.contactEmail
     case .reportMapDataProblem:
       return "https://www.openstreetmap.org/fixthemap"
-    case .volunteer:
-      return L("translated_om_site_url") + "support-us/"
-    case .news:
-      return L("translated_om_site_url") + "news/"
     }
   }
 }

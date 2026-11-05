@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,7 +37,6 @@ import app.organicmaps.search.SearchPageViewModel;
 import app.organicmaps.search.SearchRequest;
 import app.organicmaps.util.ThemeUtils;
 import app.organicmaps.util.UiUtils;
-import app.organicmaps.util.Utils;
 import app.organicmaps.util.WindowInsetUtils;
 import app.organicmaps.widget.menu.MyPositionButton;
 import app.organicmaps.widget.placepage.PlacePageViewModel;
@@ -64,6 +62,9 @@ public class MapButtonsController extends Fragment
   @Nullable
   private MyPositionButton mNavMyPosition;
   private SearchWheel mSearchWheel;
+  // Portrait only: the landscape bottom row has no room for it.
+  @Nullable
+  private View mSearchPill;
   private BadgeDrawable mBadgeDrawable;
   @Nullable
   private ObjectAnimator mBlinkingAnimator;
@@ -165,6 +166,9 @@ public class MapButtonsController extends Fragment
                             -> mMapButtonClickListener.onMapButtonClick(MapButtons.search),
                         (v) -> mMapButtonClickListener.onSearchCanceled(), mMapButtonsViewModel, mSearchPageViewModel);
     final View searchButton = mFrame.findViewById(R.id.btn_search);
+    mSearchPill = mFrame.findViewById(R.id.my_search_pill);
+    if (mSearchPill != null)
+      mSearchPill.setOnClickListener((v) -> searchButton.performClick());
 
     // Used to get the maximum height the buttons will evolve in
     mFrame.addOnLayoutChangeListener(new MapButtonsController.ContentViewLayoutChangeListener(mFrame));
@@ -210,7 +214,10 @@ public class MapButtonsController extends Fragment
       if (mNavMyPosition != null)
         mNavMyPosition.showButton(show);
       break;
-    case search: mSearchWheel.show(show);
+    case search:
+      mSearchWheel.show(show);
+      if (mSearchPill != null)
+        UiUtils.showIf(show, mSearchPill);
     case bookmarks:
     case menu: UiUtils.showIf(show, buttonView); break;
     case trackRecordingStatus:
@@ -311,23 +318,10 @@ public class MapButtonsController extends Fragment
     if (!(view instanceof FloatingActionButton helpButton))
       return;
 
-    if (Framework.nativeCanShowCrowdfundingPromo() && !TextUtils.isEmpty(Utils.getDonateUrl(requireContext())))
-    {
-      helpButton.setImageResource(R.drawable.ic_crowdfunding);
+    helpButton.setImageResource(app.organicmaps.branding.R.drawable.logo);
+    // Keep this button colorful in normal theme.
+    if (!ThemeUtils.isDarkTheme(requireContext()))
       helpButton.getDrawable().setTintList(null);
-    }
-    else if (Config.isNY() && !TextUtils.isEmpty(Utils.getDonateUrl(requireContext())))
-    {
-      helpButton.setImageResource(R.drawable.ic_christmas_tree);
-      helpButton.getDrawable().setTintList(null);
-    }
-    else
-    {
-      helpButton.setImageResource(app.organicmaps.branding.R.drawable.logo);
-      // Keep this button colorful in normal theme.
-      if (!ThemeUtils.isDarkTheme(requireContext()))
-        helpButton.getDrawable().setTintList(null);
-    }
   }
 
   public void updateLayerButton()

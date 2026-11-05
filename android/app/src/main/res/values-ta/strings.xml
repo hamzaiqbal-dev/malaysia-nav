@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SECTION: Strings -->
+    <!-- Button text (should be short) -->
+    <string name="back">பின்செல்</string>
+    <!-- Button text (should be short) -->
+    <string name="cancel">ரத்துசெய்</string>
+    <!-- Button which deletes downloaded country -->
+    <string name="delete">நீக்கு</string>
+    <string name="download_maps">வரைபடங்களைப் பதிவிறக்கு</string>
+    <!-- Settings/Downloader - info for country when download fails -->
+    <string name="download_has_failed">பதிவிறக்கம் தோல்வியடைந்தது. மீண்டும் முயல தட்டவும்.</string>
+    <!-- Settings/Downloader - info for country which started downloading -->
+    <string name="downloading">பதிவிறக்கப்படுகிறது…</string>
+    <!-- Choose measurement on first launch alert - choose metric system button -->
+    <string name="kilometres">கிலோமீட்டர்</string>
+    <!-- Choose measurement on first launch alert - choose imperial system button -->
+    <string name="miles">மைல்</string>
+    <!-- Update maps later button text -->
+    <string name="later">பிறகு</string>
+    <!-- View and button titles for accessibility. Also used in iPhone home screen quick actions. -->
+    <string name="search">தேடு</string>
+    <!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
+    <string name="search_map">வரைபடத்தில் தேடு</string>
+    <!-- Location services are disabled by user alert - message -->
+    <string name="location_is_disabled_long_text">இந்தச் சாதனத்திற்கோ செயலிக்கோ இருப்பிடச் சேவைகள் அனைத்தும் அணைக்கப்பட்டுள்ளன. தயவுசெய்து அமைப்புகளில் அவற்றை இயக்கவும்.</string>
+    <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
+    <string name="limited_accuracy">குறைந்த துல்லியம்</string>
+    <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
+    <string name="precise_location_is_disabled_long_text">துல்லியமான வழிசெலுத்தலுக்கு, அமைப்புகளில் துல்லியமான இருப்பிடத்தை இயக்கவும்.</string>
+    <!-- View and button titles for accessibility -->
+    <string name="zoom_to_country">வரைபடத்தில் காட்டு</string>
+    <!-- Message to display at the center of the screen when the country download has failed -->
+    <string name="country_status_download_failed">பதிவிறக்கம் தோல்வியடைந்தது</string>
+    <!-- Button text for the button under the country_status_download_failed message -->
+    <string name="try_again">மீண்டும் முயல்</string>
+    <string name="about_menu_title">Sampai பற்றி</string>
+    <!-- Text in About screen -->
+    <string name="about_headline">மலேசியாவில் உருவாக்கப்பட்டது, மலேசியர்களுக்காக</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_1">• விளம்பரம் இல்லை, கண்காணிப்பு இல்லை, தரவு சேகரிப்பு இல்லை</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_2">• பேட்டரியை வீணாக்காது, ஆஃப்லைனில் இயங்கும்</string>
+    <!-- Text in About screen -->
+    <string name="about_proposition_3">• வேகமானது, எளிமையானது, மலாய் மொழிக்கு முன்னுரிமை</string>
+    <!-- Text in About screen -->
+    <string name="about_developed_by_enthusiasts">கிள்ளான் பள்ளத்தாக்கு முதல் சபா, சரவாக் வரை மலேசியாவின் ஒவ்வொரு சாலைக்கும் வழிசெலுத்தல்.</string>
+    <!-- The button that opens system location settings -->
+    <string name="location_settings">இருப்பிட அமைப்புகள்</string>
+    <string name="close">மூடு</string>
+    <string name="unsupported_phone">இந்தச் செயலிக்கு வன்பொருள் முடுக்கம் கொண்ட OpenGL தேவை. மன்னிக்கவும், உங்கள் சாதனம் ஆதரிக்கப்படவில்லை.</string>
+    <string name="download">பதிவிறக்கு</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disconnect_usb_cable">Sampai-யைப் பயன்படுத்த USB கேபிளைத் துண்டிக்கவும் அல்லது மெமரி கார்டைச் செருகவும்</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="not_enough_free_space_on_sdcard">செயலியைப் பயன்படுத்த, முதலில் SD கார்டு/USB சேமிப்பகத்தில் சிறிது இடத்தைக் காலி செய்யவும்</string>
+    <string name="download_resources">செயலியைப் பயன்படுத்தத் தொடங்கும் முன், உலக மேலோட்ட வரைபடத்தை உங்கள் சாதனத்தில் பதிவிறக்கவும்.\nஇது %s இடத்தைப் பயன்படுத்தும்.</string>
+    <string name="download_resources_continue">வரைபடத்திற்குச் செல்</string>
+    <string name="downloading_country_can_proceed">%s பதிவிறக்கப்படுகிறது. இப்போது\nவரைபடத்திற்குச் செல்லலாம்.</string>
+    <string name="download_country_ask">%s பதிவிறக்கவா?</string>
+    <string name="update_country_ask">%s புதுப்பிக்கவா?</string>
+    <!-- REMOVE THIS STRING AFTER REFACTORING -->
+    <string name="pause">இடைநிறுத்து</string>
+    <!-- REMOVE THIS STRING AFTER REFACTORING -->
+    <string name="continue_button">தொடர்</string>
+    <!-- Show popup notification on top of the map when country download has failed. -->
+    <string name="download_country_failed">%s பதிவிறக்கம் தோல்வியடைந்தது</string>
+    <!-- "Add new bookmark list" dialog title -->
+    <string name="add_new_set">புதிய பட்டியலைச் சேர்</string>
+    <!-- Add Bookmark list dialog - hint when the list name is empty -->
+    <string name="bookmark_set_name">புக்மார்க் பட்டியல் பெயர்</string>
+    <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
+    <string name="bookmarks">புக்மார்க்குகள்</string>
+    <!-- "Bookmarks and Tracks" dialog title. Also used in iPhone home screen quick actions. -->
+    <string name="bookmarks_and_tracks">புக்மார்க்குகளும் தடங்களும்</string>
+    <!-- Add bookmark dialog - bookmark name -->
+    <string name="name">பெயர்</string>
+    <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
+    <string name="address">முகவரி</string>
+    <!-- Add Bookmark dialog/Bookmark list; Bookmarks dialog/Bookmark list cell. -->
+    <string name="list">பட்டியல்</string>
+    <!-- Settings button in system menu -->
+    <string name="settings">அமைப்புகள்</string>
+    <!-- Header of settings activity where user defines storage path -->
+    <string name="maps_storage">வரைபடச் சேமிப்பிடம்</string>
+    <!-- Detailed description of Maps Storage settings button -->
+    <string name="maps_storage_summary">வரைபடங்களைப் பதிவிறக்க வேண்டிய கோப்புறையைத் தேர்ந்தெடுக்கவும்.</string>
+    <!-- E.g. "Downloaded maps: 500Mb" in Maps Storage settings -->
+    <string name="maps_storage_downloaded">பதிவிறக்கிய வரைபடங்கள்</string>
+    <!-- Free space out of total storage size in Maps Storage settings, e.g. "300 MB free of 2 GB" -->
+    <string name="maps_storage_free_size">%2$s இல் %1$s காலி</string>
+    <!-- Question dialog for transferring maps from one storage to another -->
+    <string name="move_maps">வரைபடங்களை நகர்த்தவா?</string>
+    <!-- Error moving map files from one storage to another -->
+    <string name="move_maps_error">வரைபடக் கோப்புகளை நகர்த்துவதில் பிழை</string>
+    <!-- Ask user to wait several minutes (some long process in modal dialog). -->
+    <string name="wait_several_minutes">இதற்குச் சில நிமிடங்கள் ஆகலாம்.\nதயவுசெய்து காத்திருக்கவும்…</string>
+    <!-- Measurement units title in settings activity -->
+    <string name="measurement_units">அளவீட்டு அலகுகள்</string>
+    <!-- Detailed description of Measurement Units settings button -->
+    <string name="measurement_units_summary">மைல் அல்லது கிலோமீட்டரைத் தேர்ந்தெடுக்கவும்</string>
+
+    <!-- SECTION: Search categories -->
+    <!-- Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! -->
+    <string name="category_eat">உணவகங்கள்</string>
+    <!-- Search category for grocery stores; any changes should be duplicated in categories.txt @category_food! -->
+    <string name="category_food">மளிகைக் கடைகள்</string>
+    <!-- Search category for public transport; any changes should be duplicated in categories.txt @category_transport! -->
+    <string name="category_transport">போக்குவரத்து</string>
+    <!-- Search category for fuel stations; any changes should be duplicated in categories.txt @category_fuel! -->
+    <string name="category_fuel">பெட்ரோல்</string>
+    <!-- Search category for parking lots; any changes should be duplicated in categories.txt @category_parking! -->
+    <string name="category_parking">பார்க்கிங்</string>
+    <!-- Search category for malls/clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @category_shopping! -->
+    <string name="category_shopping">ஷாப்பிங்</string>
+    <!-- Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @category_secondhand! -->
+    <string name="category_secondhand">பழைய பொருட்கள்</string>
+    <!-- Search category for places to stay; any changes should be duplicated in categories.txt @category_hotel! -->
+    <string name="category_hotel">ஹோட்டல்</string>
+    <!-- Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @category_tourism! -->
+    <string name="category_tourism">சுற்றுலா இடங்கள்</string>
+    <!-- Search category for entertainment; any changes should be duplicated in categories.txt @category_entertainment! Also a bookmarks list group header when sorting by type. -->
+    <string name="category_entertainment">பொழுதுபோக்கு</string>
+    <!-- Search category for ATMs; any changes should be duplicated in categories.txt @category_atm! -->
+    <string name="category_atm">ATM</string>
+    <!-- Search category for nightclubs/bars; any changes should be duplicated in categories.txt @category_nightlife! -->
+    <string name="category_nightlife">இரவுப் பொழுதுபோக்கு</string>
+    <!-- Search category for water park/disneyland/playground/toys store; any changes should be duplicated in categories.txt @category_children! -->
+    <string name="category_children">குடும்ப விடுமுறை</string>
+    <!-- Search category for banks; any changes should be duplicated in categories.txt @category_bank! -->
+    <string name="category_bank">வங்கி</string>
+    <!-- Search category for pharmacies; any changes should be duplicated in categories.txt @category_pharmacy! -->
+    <string name="category_pharmacy">மருந்தகம்</string>
+    <!-- Search category for hospitals; any changes should be duplicated in categories.txt @category_hospital! -->
+    <string name="category_hospital">மருத்துவமனை</string>
+    <!-- Search category for toilets; any changes should be duplicated in categories.txt @category_toilet! -->
+    <string name="category_toilet">கழிப்பறை</string>
+    <!-- Search category for post offices; any changes should be duplicated in categories.txt @category_post! -->
+    <string name="category_post">அஞ்சல்</string>
+    <!-- Search category for police; any changes should be duplicated in categories.txt @category_police! -->
+    <string name="category_police">போலீஸ்</string>
+    <!-- Search category for recycling; any changes should be duplicated in categories.txt @category_recycling! -->
+    <string name="category_recycling">மறுசுழற்சி</string>
+    <!-- Search category for water; any changes should be duplicated in categories.txt @category_water! Also a bookmarks list group header when sorting by type. -->
+    <string name="category_water">தண்ணீர்</string>
+    <!-- Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! -->
+    <string name="category_rv">RV வசதிகள்</string>
+
+    <!-- SECTION: Other translations -->
+    <!-- Notes field in Bookmarks view -->
+    <string name="description">குறிப்புகள்</string>
+    <!-- Email Subject when sharing bookmark list -->
+    <string name="share_bookmarks_email_subject">Sampai புக்மார்க்குகள் உங்களுடன் பகிரப்பட்டன</string>
+    <string name="share_bookmarks_email_body">வணக்கம்!\n\nஎன் புக்மார்க்குகளை இணைத்துள்ளேன்; அவற்றை Sampai-யில் திறக்கவும். உங்களிடம் Sampai இல்லையென்றால் இங்கே பதிவிறக்கலாம்: https://sampai.my/\n\nSampai-யுடன் இனிய பயணம்!</string>
+    <!-- message title of loading file -->
+    <string name="load_kmz_title">புக்மார்க்குகள் ஏற்றப்படுகின்றன</string>
+    <!-- Kmz file successful loading -->
+    <string name="load_kmz_successful">புக்மார்க்குகள் வெற்றிகரமாக ஏற்றப்பட்டன! அவற்றை வரைபடத்திலோ புக்மார்க் மேலாளர் திரையிலோ காணலாம்.</string>
+    <!-- Kml file loading failed -->
+    <string name="load_kmz_failed">புக்மார்க்குகளை ஏற்ற முடியவில்லை. கோப்பு சேதமடைந்திருக்கலாம் அல்லது தவறாக இருக்கலாம்.</string>
+    <!-- Failed to recognize the format of a bookmarks or tracks file. -->
+    <string name="unknown_file_type">இந்தக் கோப்பு வகையைச் செயலி அடையாளம் காணவில்லை:\n%1$s</string>
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
+    <string name="failed_to_open_file">%1$s கோப்பைத் திறக்க முடியவில்லை\n\n%2$s</string>
+    <!-- resource for context menu -->
+    <string name="edit">திருத்து</string>
+    <!-- Warning message when doing search around current position -->
+    <string name="unknown_current_position">உங்கள் இருப்பிடம் இன்னும் கண்டறியப்படவில்லை</string>
+    <!-- Alert message that we can't run Map Storage settings due to some reasons. -->
+    <string name="cant_change_this_setting">மன்னிக்கவும், வரைபடச் சேமிப்பக அமைப்புகள் தற்போது முடக்கப்பட்டுள்ளன.</string>
+    <!-- Alert message that downloading is in progress. -->
+    <string name="downloading_is_active">வரைபடப் பதிவிறக்கம் நடந்துகொண்டிருக்கிறது.</string>
+    <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
+    <string name="share">பகிர்</string>
+    <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
+    <string name="share_place_subject">Sampai-யில் %1$s</string>
+    <!-- Email subject when sharing a place that has no name or address. -->
+    <string name="share_place_subject_default">Sampai-யில் ஓர் இடம்</string>
+    <!-- Share by email button text, also used in editor and About. -->
+    <string name="email">மின்னஞ்சல்</string>
+    <!-- Text for message when used successfully copied something -->
+    <string name="copied_to_clipboard">கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது: %s</string>
+    <!-- Used for bookmark editing -->
+    <string name="done">முடிந்தது</string>
+    <!-- Data version in «About» screen, %@ is replaced by a local, human readable date. -->
+    <string name="data_version">OpenStreetMap தரவு: %s</string>
+    <!-- Confirmation for OpenStreetMap log out. -->
+    <string name="osm_log_out_confirmation">உங்கள் OpenStreetMap கணக்கிலிருந்து நிச்சயமாக வெளியேற விரும்புகிறீர்களா?</string>
+    <!-- Title for tracks category in bookmarks manager -->
+    <string name="tracks_title">தடங்கள்</string>
+    <!-- Length of track in cell that describes route -->
+    <string name="length">நீளம்</string>
+    <string name="share_my_location">என் இருப்பிடத்தைப் பகிர்</string>
+    <!-- Settings general group in settings screen -->
+    <string name="prefs_group_general">பொது அமைப்புகள்</string>
+    <!-- Settings information group in settings screen -->
+    <string name="prefs_group_information">தகவல்</string>
+    <string name="prefs_group_route">வழிசெலுத்தல்</string>
+    <!-- Setting name which enables or disables zoom buttons on the map screen. -->
+    <string name="pref_zoom_title">வரைபடத்தில் “+”, “-” பொத்தான்கள்</string>
+    <string name="pref_zoom_summary">வரைபடத்தில் காட்டு</string>
+    <string name="pref_auto_night_in_navigation_title">இருட்டில் வழிசெலுத்தும்போது இரவுப் பாணி</string>
+    <!-- Settings «Map» category: «Night style» title -->
+    <string name="pref_map_style_title">இரவுப் பயன்முறை</string>
+    <!-- Generic «Off» string -->
+    <string name="off">ஆஃப்</string>
+    <!-- Generic «On» string -->
+    <string name="on">ஆன்</string>
+    <!-- Generic «Auto» string -->
+    <string name="auto">தானியங்கி</string>
+    <!-- Settings «Map» category: «Perspective view» title -->
+    <string name="pref_map_3d_title">முப்பரிமாணக் காட்சி</string>
+    <!-- Settings «Map» category: «3D buildings» title -->
+    <string name="pref_map_3d_buildings_title">3D கட்டிடங்கள்</string>
+    <!-- A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled -->
+    <string name="pref_map_3d_buildings_disabled_summary">மின் சேமிப்புப் பயன்முறையில் 3D கட்டிடங்கள் அணைக்கப்பட்டிருக்கும்</string>
+    <!-- Settings: title of the satellite imagery (custom raster tiles) screen -->
+    <string name="pref_bg_tiles_title">செயற்கைக்கோள் படங்கள்</string>
+    <!-- Settings «Satellite Imagery»: title of the tile server URL input field -->
+    <string name="pref_bg_tiles_url_title">சேவையக URL</string>
+    <!-- Settings «Satellite Imagery»: shown under the Server URL field when its value is malformed (must start with http(s):// and contain the {z}/{x}/{y} placeholders) -->
+    <string name="pref_bg_tiles_url_error">{z}/{x}/{y} உடன் சரியான URL-ஐ உள்ளிடவும்</string>
+    <!-- Settings «Satellite Imagery»: title of the on-disk tile cache size limit (in megabytes) -->
+    <string name="pref_bg_tiles_size_title">கேச் அளவு (MB)</string>
+    <!-- Settings «Satellite Imagery»: opacity of vector area objects drawn over the imagery (0% hides them) -->
+    <string name="pref_bg_tiles_opacity_title">பகுதிப் பொருட்களின் ஒளிபுகாமை</string>
+    <!-- Settings «Satellite Imagery»: legal note that the user is responsible for the custom tile source they configure -->
+    <string name="pref_bg_tiles_disclaimer">தனிப்பயன் டைல் மூலங்களை நீங்களே வழங்குகிறீர்கள். உங்களுக்கு அனுமதி உள்ள சேவைகளை மட்டுமே பயன்படுத்தவும். மூலக் குறிப்பு, உரிம விதிமுறைகள், API விசைகள், ஒதுக்கீடுகள், பயன்பாட்டு வரம்புகள் ஆகியவற்றுக்கு நீங்களே பொறுப்பு.</string>
+    <!-- Settings «Route» category: «Tts enabled» title -->
+    <string name="pref_tts_enable_title">குரல் அறிவுறுத்தல்கள்</string>
+    <!-- Settings «Route» category: «Tts announce street names» title -->
+    <string name="pref_tts_street_names_title">தெருப் பெயர்களை அறிவி</string>
+    <!-- Settings «Route» category: «Tts announce street names» description -->
+    <string name="pref_tts_street_names_description">இயக்கியிருந்தால், திரும்ப வேண்டிய தெரு அல்லது வெளியேறும் வழியின் பெயர் சத்தமாகச் சொல்லப்படும்.</string>
+    <!-- Settings «Route» category: «Tts language» title -->
+    <string name="pref_tts_language_title">குரல் மொழி</string>
+    <!-- Settings «Route» category: «Test Voice Directions» title -->
+    <string name="pref_tts_test_voice_title">குரல் அறிவுறுத்தல்களைச் சோதி (TTS, உரையிலிருந்து பேச்சு)</string>
+    <!-- Settings «Route» category: Pop-up message when clicking «Test Voice Directions» -->
+    <string name="pref_tts_playing_test_voice">இப்போது குரல் கேட்கவில்லை என்றால், ஒலியளவையோ சிஸ்டத்தின் உரையிலிருந்து பேச்சு அமைப்புகளையோ சரிபார்க்கவும்.</string>
+    <!-- Settings «Route» category: «Tts unavailable» subtitle. Also used as a CarToast in Android Auto when the user taps the muted voice icon. -->
+    <string name="pref_tts_unavailable">கிடைக்கவில்லை</string>
+    <string name="pref_map_auto_zoom">தானியங்கி ஜூம்</string>
+    <string name="placepage_distance">தூரம்</string>
+    <string name="search_show_on_map">வரைபடத்தில் பார்</string>
+    <!-- Menu button -->
+    <string name="menu">மெனு</string>
+    <!-- Text in menu -->
+    <string name="website">இணையதளம்</string>
+    <!-- Settings: Send feedback button and dialog title -->
+    <string name="feedback">கருத்து</string>
+    <!-- Text in menu -->
+    <string name="rate_the_app">செயலியை மதிப்பிடு</string>
+    <!-- Text in menu -->
+    <string name="help">உதவி</string>
+    <!-- Button in the main Help dialog -->
+    <string name="faq">அடிக்கடி கேட்கப்படும் கேள்விகள்</string>
+    <string name="already_donated">ஏற்கெனவே நன்கொடை அளித்தேன்</string>
+    <string name="remind_me_later">பிறகு நினைவூட்டு</string>
+    <string name="support_organic_maps">Sampai-யை ஆதரி</string>
+    <!-- Button in the main Help dialog; opens the list of open-source components and their licences -->
+    <string name="open_source_licences">திறந்த மூல உரிமங்கள்</string>
+    <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
+    <string name="report_a_bug">பிழையைப் புகாரளி</string>
+    <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+    <string name="compass_calibration_recommended">திசைகாட்டியை அளவீடு செய்ய தொலைபேசியை எட்டு வடிவில் நகர்த்தி, அம்புக்குறியின் திசையை மேம்படுத்தவும்.</string>
+    <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+    <string name="compass_calibration_required">திசைகாட்டியை அளவீடு செய்து வரைபடத்தில் அம்புக்குறியின் திசையைச் சரிசெய்ய, தொலைபேசியை எட்டு வடிவில் நகர்த்தவும்.</string>
+    <!-- Toast text when user hides UI with a long tap anywhere on the map -->
+    <string name="long_tap_toast">இடைமுகத்தைக் காண வரைபடத்தில் மீண்டும் நீண்ட நேரம் தட்டவும்</string>
+    <!-- Update all button text -->
+    <string name="downloader_update_all_button">அனைத்தையும் புதுப்பி</string>
+    <!-- Cancel all button text -->
+    <string name="downloader_cancel_all">அனைத்தையும் ரத்துசெய்</string>
+    <!-- Downloaded maps list header -->
+    <string name="downloader_downloaded_subtitle">பதிவிறக்கப்பட்டவை</string>
+    <!-- Country queued for download -->
+    <string name="downloader_queued">வரிசையில் உள்ளது</string>
+    <string name="downloader_near_me_subtitle">எனக்கு அருகில்</string>
+    <!-- In maps downloader and country place page shows how many maps are downloaded / to download, e.g. "Maps: 3 of 10" -->
+    <string name="downloader_status_maps">வரைபடங்கள்</string>
+    <string name="downloader_download_all_button">அனைத்தையும் பதிவிறக்கு</string>
+    <string name="downloader_downloading">பதிவிறக்கப்படுகிறது:</string>
+    <!-- Displayed in a dialog that appears when a user tries to delete a map while the app is in the follow route mode -->
+    <string name="downloader_delete_map_while_routing_dialog">வரைபடத்தை நீக்க, தயவுசெய்து வழிசெலுத்தலை நிறுத்தவும்.</string>
+    <!-- Context menu item for downloader. -->
+    <string name="downloader_download_map">வரைபடத்தைப் பதிவிறக்கு</string>
+    <!-- Item status in downloader. -->
+    <string name="downloader_retry">மீண்டும் முயல்</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_delete_map">வரைபடத்தை நீக்கு</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_update_map">வரைபடத்தைப் புதுப்பி</string>
+    <!-- Preference title -->
+    <string name="google_play_services">Google Play இருப்பிடச் சேவைகள்</string>
+    <!-- Preference text -->
+    <string name="pref_use_google_play">Bluetooth, WiFi அல்லது மொபைல் நெட்வொர்க்கைப் பயன்படுத்தி உங்கள் தோராயமான இருப்பிடத்தை விரைவாகக் கண்டறியவும்</string>
+    <!-- Text for routing error dialog -->
+    <string name="routing_not_enough_space">போதுமான இடம் இல்லை</string>
+    <!-- location service disabled -->
+    <string name="enable_location_services">தயவுசெய்து இருப்பிடச் சேவைகளை இயக்கவும்</string>
+    <string name="save">சேமி</string>
+    <string name="create">உருவாக்கு</string>
+    <!-- Settings «Map» category: «Appearance» title -->
+    <string name="pref_appearance_title">தோற்றம்</string>
+    <!-- Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_light">வெளிர்</string>
+    <!-- Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_dark">அடர்</string>
+    <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_scheduled">விடியல் முதல் அந்தி வரை வெளிர்</string>
+
+    <!-- SECTION: Routing dialogs strings -->
+    <string name="dialog_routing_disclaimer_title">பாதையைப் பின்பற்றும்போது இவற்றை நினைவில் கொள்ளவும்:</string>
+    <string name="dialog_routing_disclaimer_priority">— வழிசெலுத்தல் குறிப்புகளை விட சாலை நிலைமை, போக்குவரத்துச் சட்டங்கள், சாலைப் பலகைகள் ஆகியவற்றுக்கே எப்போதும் முன்னுரிமை கொடுக்கவும்;</string>
+    <string name="dialog_routing_disclaimer_precision">— வரைபடம் துல்லியமற்றதாக இருக்கலாம், பரிந்துரைக்கப்படும் பாதை சேருமிடத்தை அடைவதற்கான சிறந்த வழியாக எப்போதும் இருக்காது;</string>
+    <string name="dialog_routing_disclaimer_recommendations">— பரிந்துரைக்கப்படும் பாதைகளைப் பரிந்துரைகளாக மட்டுமே கருதவும்;</string>
+    <string name="dialog_routing_disclaimer_borders">— எல்லைப் பகுதிகளில் உள்ள பாதைகளில் கவனமாக இருக்கவும்: எங்கள் செயலி உருவாக்கும் பாதைகள் சில நேரங்களில் அனுமதிக்கப்படாத இடங்களில் நாட்டு எல்லையைக் கடக்கக்கூடும்.</string>
+    <string name="dialog_routing_disclaimer_beware">சாலையில் விழிப்புடனும் பாதுகாப்பாகவும் இருங்கள்!</string>
+    <string name="dialog_routing_location_turn_wifi">உங்கள் GPS சிக்னலைச் சரிபார்க்கவும். Wi-Fi-ஐ இயக்கினால் இருப்பிடத் துல்லியம் மேம்படும்.</string>
+    <string name="dialog_routing_system_error">சிஸ்டம் பிழை</string>
+    <string name="not_now">இப்போது வேண்டாம்</string>
+
+    <!-- SECTION: Strings for downloading map from search -->
+    <string name="search_without_internet_advertisement">தேடவும் பாதைகளை உருவாக்கவும் வரைபடத்தைப் பதிவிறக்கவும். அதன் பிறகு இணைய இணைப்பு தேவையில்லை.</string>
+    <string name="search_select_map">வரைபடத்தைத் தேர்ந்தெடு</string>
+    <!-- «Show» context menu -->
+    <string name="show">காட்டு</string>
+    <!-- «Hide» context menu -->
+    <string name="hide">மறை</string>
+    <string name="categories">வகைகள்</string>
+    <string name="history">வரலாறு</string>
+    <string name="search_not_found">அடடா, முடிவுகள் எதுவும் கிடைக்கவில்லை.</string>
+    <!-- The message when user did not find anything in the search. -->
+    <string name="search_not_found_query">நீங்கள் தேடும் பகுதியைப் பதிவிறக்கவும் அல்லது அருகிலுள்ள நகரம்/கிராமத்தின் பெயரைச் சேர்த்துப் பார்க்கவும்.</string>
+    <string name="search_history_title">தேடல் வரலாறு</string>
+    <!-- Tracks are recorded or imported GPS paths. -->
+    <string name="bookmarks_backup_title">புக்மார்க்குகள், தடங்களின் காப்புப்பிரதி</string>
+    <!-- Tracks are recorded or imported GPS paths. -->
+    <string name="bookmarks_backup_description">இந்தச் சாதனத்தில் காப்புப்பிரதி இயக்கப்பட்டிருந்து, அதன் அளவு வரம்புக்குள் இருந்தால், புக்மார்க்குகளையும் தடங்களையும் Android சிஸ்டம் காப்புப்பிரதியில் சேர்க்கலாம்.</string>
+    <string name="search_history_text">உங்கள் சமீபத்திய தேடல்களைப் பார்க்கவும்.</string>
+    <string name="clear_search">தேடல் வரலாற்றை அழி</string>
+    <!-- Place Page link to Wikipedia article (if map object has it). -->
+    <string name="read_in_wikipedia">Wikipedia</string>
+    <!-- Source attribution for Wikipedia articles displayed in the place description screen. -->
+    <string name="article_from_wikipedia">wikipedia.org-இலிருந்து கட்டுரை</string>
+    <!-- Place Page link to Wikimedia Commons. -->
+    <string name="wikimedia_commons">Wikimedia Commons</string>
+    <string name="p2p_your_location">உங்கள் இருப்பிடம்</string>
+    <string name="p2p_start">தொடங்கு</string>
+    <string name="p2p_from_here">இங்கிருந்து பாதை</string>
+    <string name="p2p_to_here">இங்கு வரை பாதை</string>
+    <string name="p2p_only_from_current">உங்கள் தற்போதைய இருப்பிடத்திலிருந்து மட்டுமே வழிசெலுத்தல் கிடைக்கும்.</string>
+    <string name="p2p_reroute_from_current">உங்கள் தற்போதைய இருப்பிடத்திலிருந்து பாதையைத் திட்டமிட விரும்புகிறீர்களா?</string>
+    <!-- Edit open hours/set time and minutes dialog -->
+    <string name="next_button">அடுத்து</string>
+    <!-- Tab title in the Edit Opening Hours time picker -->
+    <string name="editor_time_from">முதல்</string>
+    <!-- Tab title in the Edit Opening Hours time picker -->
+    <string name="editor_time_to">வரை</string>
+    <string name="editor_time_add">அட்டவணையைச் சேர்</string>
+    <string name="editor_time_delete">அட்டவணையை நீக்கு</string>
+    <!-- Text for allday switch. -->
+    <string name="editor_time_allday">நாள் முழுவதும் (24 மணி நேரம்)</string>
+    <string name="editor_time_open">திறப்பு</string>
+    <string name="editor_time_close">மூடல்</string>
+    <string name="editor_time_add_closed">மூடிய நேரத்தைச் சேர்</string>
+    <string name="editor_time_title">வணிக நேரம்</string>
+    <string name="editor_time_advanced">மேம்பட்ட பயன்முறை</string>
+    <string name="editor_time_simple">எளிய பயன்முறை</string>
+    <string name="editor_hours_closed">மூடிய நேரம்</string>
+    <string name="editor_example_values">எடுத்துக்காட்டு மதிப்புகள்</string>
+    <string name="editor_correct_mistake">தவறைத் திருத்து</string>
+    <string name="editor_add_select_location">இருப்பிடத்தைத் தேர்ந்தெடு</string>
+    <string name="editor_report_problem_send_button">அனுப்பு</string>
+    <string name="autodownload">வரைபடங்களைத் தானாகப் பதிவிறக்கு</string>
+    <!-- Place Page opening hours text -->
+    <string name="daily">தினமும்</string>
+    <string name="twentyfour_seven">24/7</string>
+    <string name="day_off_today">இன்று மூடப்பட்டுள்ளது</string>
+    <string name="day_off">மூடப்பட்டுள்ளது</string>
+    <string name="midnight">நள்ளிரவு</string>
+    <string name="noon">நண்பகல்</string>
+    <string name="opens_in">%s கழித்துத் திறக்கும்</string>
+    <string name="closes_in">%s கழித்து மூடும்</string>
+    <string name="closed">மூடப்பட்டுள்ளது</string>
+    <string name="edit_opening_hours">வணிக நேரத்தைத் திருத்து</string>
+    <string name="no_osm_account">OpenStreetMap கணக்கு இல்லையா?</string>
+    <string name="register_at_openstreetmap">OpenStreetMap-இல் பதிவுசெய்</string>
+    <string name="login">உள்நுழை</string>
+    <!-- Status message indicating that user did not login to OSM profile yet. -->
+    <string name="not_signed_in">உள்நுழையவில்லை</string>
+    <string name="login_osm">OpenStreetMap-இல் உள்நுழை</string>
+    <string name="password">கடவுச்சொல்</string>
+    <string name="forgot_password">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</string>
+    <string name="logout">வெளியேறு</string>
+    <string name="edit_place">இடத்தைத் திருத்து</string>
+    <string name="add_language">மொழியைச் சேர்</string>
+    <string name="street">தெரு</string>
+    <!-- Editable House Number text field (in address block). -->
+    <string name="house_number">கட்டிட எண்</string>
+    <string name="details">விவரங்கள்</string>
+    <string name="social_media">சமூக ஊடகங்கள்</string>
+    <string name="building">கட்டிடம்</string>
+    <!-- Text field to enter non-existing street name, below list of known streets around -->
+    <string name="add_street">தெருவைச் சேர்</string>
+    <!-- Error to display when a new street name is not entered in the New street dialog -->
+    <string name="empty_street_name_error">தெருப் பெயரை உள்ளிடவும்</string>
+    <string name="choose_language">மொழியைத் தேர்ந்தெடு</string>
+    <string name="choose_street">தெருவைத் தேர்ந்தெடு</string>
+    <string name="cuisine">உணவு வகை</string>
+    <string name="select_cuisine">உணவு வகையைத் தேர்ந்தெடு</string>
+    <!-- login text field -->
+    <string name="email_or_username">மின்னஞ்சல் அல்லது பயனர் பெயர்</string>
+    <string name="editor_add_phone">தொலைபேசியைச் சேர்</string>
+    <string name="level">தளம்</string>
+    <!-- Building level -->
+    <string name="level_value_generic">தளம்: %s</string>
+    <string name="downloader_delete_map_dialog">உங்கள் வரைபடத் திருத்தங்கள் அனைத்தும் வரைபடத்துடன் நீக்கப்படும்.</string>
+    <string name="downloader_update_maps">வரைபடங்களைப் புதுப்பி</string>
+    <string name="downloader_search_field_hint">வரைபடத்தைத் தேடு</string>
+    <string name="common_check_internet_connection_dialog">உங்கள் சாதனம் இணையத்துடன் இணைக்கப்பட்டுள்ளதா எனச் சரிபார்க்கவும்.</string>
+    <string name="downloader_no_space_title">போதுமான இடம் இல்லை</string>
+    <!-- Message shown when there is not enough space to download maps -->
+    <string name="downloader_no_space_message">தேவையற்ற தரவுகளை நீக்கவும்</string>
+    <string name="editor_profile_changes">சரிபார்க்கப்பட்ட மாற்றங்கள்</string>
+    <string name="editor_focus_map_on_location">வரைபடத்தை இழுத்து, குறுக்குக் குறியை அந்த இடம் அல்லது வணிகத்தின் இருப்பிடத்தில் வைக்கவும்.</string>
+    <string name="editor_edit_place_title">திருத்துதல்</string>
+    <string name="editor_add_place_title">சேர்த்தல்</string>
+    <string name="editor_edit_place_name_hint">இடத்தின் பெயர்</string>
+    <!-- The second part of the editor_edit_place_name_hint to explain that name should be entered in a local language, see https://wiki.openstreetmap.org/wiki/Key:name -->
+    <string name="editor_default_language_hint">உள்ளூர் மொழியில் எழுதப்பட்டுள்ளபடி</string>
+    <string name="editor_edit_place_category_title">வகை</string>
+    <string name="placepage_add_business_button">வணிகத்தைச் சேர்</string>
+    <string name="message_invalid_feature_position">இங்கே எந்தப் பொருளையும் வைக்க முடியாது</string>
+    <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
+    <string name="osm_presentation">%s நிலவரப்படி சமூகம் உருவாக்கிய OpenStreetMap தரவு. வரைபடத்தைத் திருத்துவது, புதுப்பிப்பது பற்றி OpenStreetMap.org-இல் மேலும் அறிந்துகொள்ளவும்</string>
+    <!-- OSM explanation on Android login screen -->
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) என்பது இலவசமான, திறந்த வரைபடத்தை உருவாக்கும் ஒரு சமூகத் திட்டம். இது Sampai-யின் முக்கிய வரைபடத் தரவு மூலம்; Wikipedia போலவே செயல்படுகிறது. நீங்கள் இடங்களைச் சேர்க்கலாம் அல்லது திருத்தலாம்; அவை உலகம் முழுவதும் உள்ள லட்சக்கணக்கான பயனர்களுக்குக் கிடைக்கும்.\nசமூகத்தில் இணைந்து அனைவருக்கும் சிறந்த வரைபடத்தை உருவாக்க உதவுங்கள்!</string>
+    <string name="login_to_make_edits_visible">உங்கள் வரைபடத் திருத்தங்களை உலகுக்கு வெளியிட OpenStreetMap கணக்கை உருவாக்கவும் அல்லது உள்நுழையவும்.</string>
+    <!-- Downloaded 10 **of** 20 <- it is that "of" -->
+    <string name="downloader_of">%2$d இல் %1$d</string>
+    <string name="download_over_mobile_header">மொபைல் நெட்வொர்க்கில் பதிவிறக்கவா?</string>
+    <string name="download_over_mobile_message">சில திட்டங்களில் அல்லது ரோமிங்கில் இதற்கு அதிகச் செலவாகலாம்.</string>
+    <string name="error_enter_correct_house_number">சரியான கட்டிட எண்ணை உள்ளிடவும்</string>
+    <string name="editor_storey_number">தளங்களின் எண்ணிக்கை (அதிகபட்சம் %d)</string>
+    <!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+    <string name="error_enter_correct_storey_number">தளங்களின் எண்ணிக்கை %d-ஐ மீறக்கூடாது</string>
+    <string name="editor_zip_code">அஞ்சல் குறியீடு</string>
+    <string name="error_enter_correct_zip_code">சரியான அஞ்சல் குறியீட்டை உள்ளிடவும்</string>
+    <!-- Title for OSM note section in the editor -->
+    <string name="editor_other_info">OpenStreetMap தன்னார்வலர்களுக்கான குறிப்பு (விருப்பத்தேர்வு)</string>
+    <!-- Hint of the input field in the OSM note section of the editor -->
+    <string name="editor_note_hint">வரைபடத்தில் உள்ள பிழைகளையோ Sampai-யில் திருத்த முடியாதவற்றையோ விவரிக்கவும்</string>
+    <!-- Information about OSM at the top of the editing page -->
+    <string name="editor_about_osm">உங்கள் திருத்தங்கள் பொதுவான <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> தரவுத்தளத்தில் பதிவேற்றப்படும். தனிப்பட்ட அல்லது பதிப்புரிமை உள்ள தகவல்களைச் சேர்க்க வேண்டாம்.</string>
+    <string name="editor_more_about_osm">OpenStreetMap பற்றி மேலும்</string>
+    <string name="editor_osm_history">உங்கள் திருத்த வரலாறு</string>
+    <string name="editor_osm_notes">உங்கள் வரைபடத் தரவுக் குறிப்புகள்</string>
+    <string name="editor_operator">இயக்குபவர்</string>
+    <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
+    <string name="operator">இயக்குபவர்: %s</string>
+    <string name="editor_category_unsuitable_title">பொருத்தமான வகை கிடைக்கவில்லையா?</string>
+    <string name="editor_category_unsuitable_text">Sampai-யில் எளிய புள்ளி வகைகளை மட்டுமே சேர்க்க முடியும்; அதாவது நகரங்கள், சாலைகள், ஏரிகள், கட்டிட வெளிக்கோடுகள் போன்றவற்றைச் சேர்க்க முடியாது. அத்தகைய வகைகளை நேரடியாக <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>-இல் சேர்க்கவும். படிப்படியான விரிவான அறிவுறுத்தல்களுக்கு எங்கள் <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">வழிகாட்டியைப்</a> பார்க்கவும்.</string>
+    <string name="downloader_no_downloaded_maps_title">நீங்கள் எந்த வரைபடத்தையும் பதிவிறக்கவில்லை</string>
+    <string name="downloader_no_downloaded_maps_message">ஆஃப்லைனில் தேடவும் வழிசெலுத்தவும் வரைபடங்களைப் பதிவிறக்கவும்.</string>
+    <string name="current_location_unknown_error_title">தற்போதைய இருப்பிடம் தெரியவில்லை.</string>
+    <!-- abbreviation for kilometers per hour -->
+    <string name="kilometers_per_hour">கி.மீ/மணி</string>
+    <string name="miles_per_hour">மைல்/மணி</string>
+    <string name="hour">மணி</string>
+    <string name="minute">நிமிடம்</string>
+    <string name="day">நாள்</string>
+    <string name="second">வினாடி</string>
+    <string name="placepage_more_button">மேலும்</string>
+    <!-- Toolbar title of the Edit Bookmark screen. -->
+    <string name="placepage_edit_bookmark_button">புக்மார்க்கைத் திருத்து</string>
+    <string name="placepage_personal_notes_hint">தனிப்பட்ட குறிப்புகள் (உரை அல்லது html)</string>
+    <string name="editor_comment_hint">கருத்து…</string>
+    <string name="editor_reset_edits_message">உள்ளூர் மாற்றங்கள் அனைத்தையும் நிராகரிக்கவா?</string>
+    <string name="editor_reset_edits_button">நிராகரி</string>
+    <string name="editor_remove_place_message">சேர்த்த இடத்தை நீக்கவா?</string>
+    <string name="editor_remove_place_button">நீக்கு</string>
+    <string name="editor_place_doesnt_exist">இந்த இடம் இல்லை</string>
+    <!-- Error message for "Place doesn't exist" dialog when comment is empty -->
+    <string name="delete_place_empty_comment_error">இடத்தை நீக்குவதற்கான காரணத்தைக் குறிப்பிடவும்</string>
+    <!-- Phone number error message -->
+    <string name="error_enter_correct_phone">சரியான தொலைபேசி எண்ணை உள்ளிடவும்</string>
+    <string name="error_enter_correct_web">சரியான இணைய முகவரியை உள்ளிடவும்</string>
+    <string name="error_enter_correct_email">சரியான மின்னஞ்சலை உள்ளிடவும்</string>
+    <string name="error_enter_correct_facebook_page">சரியான Facebook இணைய முகவரி, கணக்கு அல்லது பக்கப் பெயரை உள்ளிடவும்</string>
+    <string name="error_enter_correct_instagram_page">சரியான Instagram பயனர் பெயர் அல்லது இணைய முகவரியை உள்ளிடவும்</string>
+    <string name="error_enter_correct_twitter_page">சரியான Twitter பயனர் பெயர் அல்லது இணைய முகவரியை உள்ளிடவும்</string>
+    <string name="error_enter_correct_vk_page">சரியான VK பயனர் பெயர் அல்லது இணைய முகவரியை உள்ளிடவும்</string>
+    <string name="error_enter_correct_line_page">சரியான LINE ID அல்லது இணைய முகவரியை உள்ளிடவும்</string>
+    <string name="placepage_add_place_button">OpenStreetMap-இல் இடத்தைச் சேர்</string>
+    <string name="osm_note_hint">அல்லது, வேறு யாராவது இங்கே இடத்தைச் சேர்க்கவோ சரிசெய்யவோ OpenStreetMap சமூகத்திற்கு ஒரு குறிப்பை விடவும்.</string>
+    <string name="osm_note_toast">குறிப்பு OpenStreetMap-க்கு அனுப்பப்படும்</string>
+    <!-- Displayed when saving some edits to the map to warn against publishing personal data -->
+    <string name="editor_share_to_all_dialog_title">இதை எல்லாப் பயனர்களுக்கும் அனுப்ப விரும்புகிறீர்களா?</string>
+    <!-- Dialog before publishing the modifications to the public map. -->
+    <string name="editor_share_to_all_dialog_message_1">தனிப்பட்ட தரவு எதையும் உள்ளிடவில்லை என்பதை உறுதிசெய்யவும்.</string>
+    <string name="editor_share_to_all_dialog_message_2">OpenStreetMap பங்களிப்பாளர்கள் மாற்றங்களைச் சரிபார்த்து, கேள்விகள் இருந்தால் உங்களைத் தொடர்புகொள்வார்கள்.</string>
+    <string name="navigation_stop_button">நிறுத்து</string>
+    <!-- Shown while a track is being recorded: the start toast, the notification title and the home screen widget status. -->
+    <string name="track_recording">தடம் பதிவாகிறது</string>
+    <!-- For the first routing -->
+    <string name="accept">ஏற்கிறேன்</string>
+    <!-- For the first routing -->
+    <string name="decline">மறுக்கிறேன்</string>
+    <string name="mobile_data_dialog">விரிவான தகவலைக் காட்ட மொபைல் இணையத்தைப் பயன்படுத்தவா?</string>
+    <string name="mobile_data_option_always">எப்போதும் பயன்படுத்து</string>
+    <string name="mobile_data_option_today">இன்று மட்டும்</string>
+    <string name="mobile_data_option_not_today">இன்று வேண்டாம்</string>
+    <string name="mobile_data">மொபைல் இணையம்</string>
+    <!-- NOTE to translators: please synchronize your translation with the English one. -->
+    <string name="mobile_data_description">வரைபடப் புதுப்பிப்பு அறிவிப்புகளுக்கும் திருத்தங்களைப் பதிவேற்றவும் மொபைல் இணையம் தேவை.</string>
+    <string name="mobile_data_option_never">ஒருபோதும் வேண்டாம்</string>
+    <string name="mobile_data_option_ask">எப்போதும் கேள்</string>
+    <string name="big_font">வரைபட லேபிள்களின் அளவை அதிகரி</string>
+    <string name="enable_logging">பதிவுசெய்தலை இயக்கு</string>
+    <!-- Settings: "Send general feedback" button -->
+    <string name="feedback_general">பொதுக் கருத்து</string>
+    <string name="prefs_languages_information">குரல் அறிவுறுத்தல்களுக்கு நாங்கள் சிஸ்டம் TTS-ஐப் பயன்படுத்துகிறோம். பல Android சாதனங்கள் Google TTS-ஐப் பயன்படுத்துகின்றன; அதை Google Play-இலிருந்து பதிவிறக்கலாம் அல்லது புதுப்பிக்கலாம்</string>
+    <string name="prefs_languages_information_off">சில மொழிகளுக்கு, செயலிக் கடையிலிருந்து (Google Play, Galaxy Store, App Gallery, FDroid) பேச்சு உருவாக்கியையோ கூடுதல் மொழித் தொகுப்பையோ நிறுவ வேண்டும்.\nஉங்கள் சாதன அமைப்புகளைத் திறக்கவும் → Language and input → Speech → Text to speech output.\nஇங்கே பேச்சு உருவாக்க அமைப்புகளை நிர்வகிக்கலாம் (எடுத்துக்காட்டாக, ஆஃப்லைன் பயன்பாட்டுக்கு மொழித் தொகுப்பைப் பதிவிறக்கலாம்), வேறு உரையிலிருந்து பேச்சு இயந்திரத்தையும் தேர்ந்தெடுக்கலாம்.</string>
+    <string name="prefs_languages_information_off_link">மேலும் தகவலுக்கு இந்த வழிகாட்டியைப் பார்க்கவும்.</string>
+    <string name="transliteration_title">லத்தீன் எழுத்துகளில் ஒலிபெயர்</string>
+    <string name="learn_more">மேலும் அறிக</string>
+    <string name="placepage_remove_stop">நிறுத்தத்தை நீக்கு</string>
+    <!-- Keep it short: route planner button below the destination, PlacePage button, search field hint and full-screen map point picker title shown while choosing another destination. The picked place becomes the new destination, the previous one becomes a stop. -->
+    <string name="route_add_destination">சேருமிடம் சேர்</string>
+    <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
+    <string name="placepage_add_stop">நிறுத்தம் சேர்</string>
+    <string name="drag_to_reorder">மறுவரிசைப்படுத்து</string>
+    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
+    <string name="alert_reauth_message">உங்கள் வரைபடத் திருத்தங்கள் அனைத்தையும் தானாகப் பதிவேற்ற OpenStreetMap-இல் உள்நுழையவும்.</string>
+    <string name="dialog_error_storage_title">சேமிப்பக அணுகல் சிக்கல்</string>
+    <string name="dialog_error_storage_message">வெளிப்புறச் சேமிப்பகத்தை அணுக முடியவில்லை. SD கார்டு அகற்றப்பட்டிருக்கலாம், சேதமடைந்திருக்கலாம், அல்லது கோப்பு முறைமை படிக்க மட்டுமே கூடியதாக இருக்கலாம். உங்கள் SD கார்டைச் சரிபார்க்கவும் அல்லது support\@sampai.my என்ற முகவரியில் எங்களைத் தொடர்புகொள்ளவும்</string>
+    <string name="setting_emulate_bad_storage">பழுதான சேமிப்பகத்தை ஒப்புருவாக்கு</string>
+    <string name="error_enter_correct_name">சரியான பெயரை உள்ளிடவும்</string>
+    <string name="bookmark_lists">பட்டியல்கள்</string>
+    <!-- Do not display all bookmark lists on the map -->
+    <string name="bookmark_lists_hide_all">அனைத்தையும் மறை</string>
+    <string name="bookmark_lists_show_all">அனைத்தையும் காட்டு</string>
+    <string name="bookmarks_create_new_group">புதிய பட்டியலை உருவாக்கு</string>
+    <!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
+    <string name="bookmarks_import">புக்மார்க்குகளையும் தடங்களையும் இறக்குமதி செய்</string>
+    <string name="bookmarks_error_message_share_general">செயலிப் பிழை காரணமாகப் பகிர முடியவில்லை</string>
+    <string name="bookmarks_error_title_share_empty">பகிர்வுப் பிழை</string>
+    <string name="bookmarks_error_message_share_empty">காலியான பட்டியலைப் பகிர முடியாது</string>
+    <string name="bookmarks_error_title_empty_list_name">பெயர் காலியாக இருக்கக்கூடாது</string>
+    <string name="bookmarks_error_message_empty_list_name">பட்டியலின் பெயரை உள்ளிடவும்</string>
+    <string name="bookmarks_new_list_hint">புதிய பட்டியல்</string>
+    <string name="bookmarks_error_title_list_name_already_taken">இந்தப் பெயர் ஏற்கெனவே பயன்பாட்டில் உள்ளது</string>
+    <string name="bookmarks_error_message_list_name_already_taken">வேறு பெயரைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="please_wait">காத்திருக்கவும்…</string>
+    <string name="phone_number">தொலைபேசி எண்</string>
+    <string name="profile">OpenStreetMap சுயவிவரம்</string>
+    <string name="restore">மீட்டமை</string>
+    <!-- Settings privacy group in settings screen -->
+    <string name="privacy">தனியுரிமை</string>
+    <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="terms_of_use">பயன்பாட்டு விதிமுறைகள்</string>
+    <string name="button_layer_traffic">போக்குவரத்து</string>
+    <!-- Hiking routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_hiking">மலையேற்றம்</string>
+    <!-- Cycling routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_cycling">சைக்கிள்</string>
+    <!-- Map layers menu: toggle button for the satellite imagery layer -->
+    <string name="button_layer_satellite">செயற்கைக்கோள்</string>
+    <string name="button_layer_subway">ரயில்</string>
+    <string name="layers_title">வரைபடப் பாணிகளும் அடுக்குகளும்</string>
+    <string name="bookmarks_empty_list_title">இந்தப் பட்டியல் காலியாக உள்ளது</string>
+    <string name="bookmarks_empty_list_message">புக்மார்க் சேர்க்க, வரைபடத்தில் ஓர் இடத்தைத் தட்டி, பிறகு நட்சத்திர ஐகானைத் தட்டவும்</string>
+    <!-- Button to change the color of all bookmarks in the current list -->
+    <string name="change_all_bookmarks_color">எல்லா புக்மார்க்குகளின் வண்ணத்தையும் மாற்று</string>
+    <!-- Button to change the color of all tracks in the current list -->
+    <string name="change_all_tracks_color">எல்லா தடங்களின் வண்ணத்தையும் மாற்று</string>
+    <string name="category_desc_more">…மேலும்</string>
+    <!-- Menu title for exporting a file in the default KMZ format -->
+    <string name="export_file">KMZ ஏற்றுமதி</string>
+    <!-- Menu title for exporting a file in GPX format -->
+    <string name="export_file_gpx">GPX ஏற்றுமதி</string>
+    <!-- Menu title for exporting a file in GeoJSON format -->
+    <string name="export_file_geojson">GeoJSON ஏற்றுமதி</string>
+    <string name="delete_list">பட்டியலை நீக்கு</string>
+    <string name="speedcams_alert_title">வேகக் கேமராக்கள்</string>
+    <string name="place_description_title">இடத்தின் விவரம்</string>
+    <!-- this text will be shown in application notification preferences opposite checkbox which enable/disable downloader notifications. Devices on Android 8+ are affected. -->
+    <string name="notification_channel_downloader">வரைபடப் பதிவிறக்கி</string>
+    <!-- "Speed cameras" settings menu option (should be short! no more than 47-50 chars) to warn a driver if there is a risk of exceeding the speed limit -->
+    <string name="pref_tts_speedcams_auto">வேகமாகச் சென்றால் எச்சரி</string>
+    <!-- Speed camera settings menu option - Always warn (about speedcams) -->
+    <string name="pref_tts_speedcams_always">எப்போதும் எச்சரி</string>
+    <!-- Speed camera settings menu option - Never warn (about speedcams) -->
+    <string name="pref_tts_speedcams_never">எச்சரிக்க வேண்டாம்</string>
+    <string name="power_managment_title">மின் சேமிப்புப் பயன்முறை</string>
+    <string name="power_managment_description">சில அம்சங்களைக் குறைத்து மின் பயன்பாட்டைக் குறைக்க முயலும்.</string>
+    <string name="power_managment_setting_never">ஒருபோதும் இல்லை</string>
+    <string name="power_managment_setting_auto">பேட்டரி குறைவாக இருக்கும்போது</string>
+    <string name="power_managment_setting_manual_max">எப்போதும்</string>
+    <!-- Settings/Bookmark Text Placement -->
+    <string name="bookmarks_text_placement_title">வரைபடத்தில் புக்மார்க் பெயர்கள்</string>
+    <string name="bookmarks_text_placement_description">புக்மார்க்குகள் மிக அதிகமாக இருந்தால், அவற்றின் பெயர்களை வரைபடத்தில் காட்டுவது செயலியை மெதுவாக்கலாம்.</string>
+    <string name="show_to_the_right">வலது பக்கம் காட்டு</string>
+    <string name="show_at_the_bottom">கீழே காட்டு</string>
+    <string name="enable_logging_warning_message">உங்கள் சிக்கல் பற்றிய விரிவான கண்டறிதல் பதிவுகளைப் பதிவுசெய்து, உதவிப் பிரிவில் உள்ள \"பிழையைப் புகாரளி\" மூலம் எங்களுக்கு நீங்களே அனுப்ப, இந்த விருப்பத்தைத் தற்காலிகமாக இயக்கவும். பதிவுகளில் இருப்பிடத் தகவல் இருக்கலாம்.</string>
+    <!-- Driving profile in routing options settings. -->
+    <string name="routing_options_driving">வாகனம்</string>
+    <!-- Cycling profile in routing options settings. -->
+    <string name="routing_options_cycling">சைக்கிள்</string>
+    <!-- Walking profile in routing options settings. -->
+    <string name="routing_options_walking">நடை</string>
+    <!-- Section heading for routing settings shared by every routing mode. -->
+    <string name="routing_options_all_modes">எல்லாப் பாதை முறைகளும்</string>
+    <string name="driving_options_title">பாதை விருப்பங்கள்</string>
+    <!-- Routing setting that automatically reorders intermediate stops -->
+    <string name="route_optimization">பாதை மேம்படுத்தல்</string>
+    <!-- Explains that route optimization automatically reorders intermediate stops -->
+    <string name="route_optimization_description">சிறந்த பாதையை உருவாக்க இடைநிறுத்தங்களைத் தானாக மறுவரிசைப்படுத்தும்.</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_tolls">டோலைத் தவிர்</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_unpaved">மண் சாலைகளைத் தவிர்</string>
+    <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
+    <string name="avoid_ferry">படகுச் சேவைகளைத் தவிர்</string>
+    <string name="avoid_motorways">நெடுஞ்சாலைகளைத் தவிர்</string>
+    <string name="unable_to_calc_alert_title">பாதையைக் கணக்கிட முடியவில்லை</string>
+    <string name="unable_to_calc_alert_subtitle">பாதை கிடைக்கவில்லை. உங்கள் பாதை விருப்பங்கள் அல்லது முழுமையற்ற OpenStreetMap தரவு இதற்குக் காரணமாக இருக்கலாம். பாதை விருப்பங்களை மாற்றி மீண்டும் முயலவும்.</string>
+    <string name="toll_road">டோல் சாலை</string>
+    <string name="unpaved_road">மண் சாலை</string>
+    <string name="ferry_crossing">படகுச் சேவை</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_steps">படிகள்</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_gate">வாயில்</string>
+    <!-- Route warning shown on the map for this obstacle type. -->
+    <string name="road_warning_lift_gate">தடுப்புக் கம்பம்</string>
+    <!-- A generic "Yes" button in dialogs -->
+    <string name="yes">ஆம்</string>
+    <!-- A generic "No" button in dialogs -->
+    <string name="no">இல்லை</string>
+    <!-- E.g. "WiFi:Yes" -->
+    <string name="yes_available">ஆம்</string>
+    <!-- E.g. "WiFi:No" -->
+    <string name="no_available">இல்லை</string>
+    <!-- To indicate the capacity of car parkings, bicycle parkings, electric vehicle charging stations… -->
+    <string name="capacity">கொள்ளளவு: %s</string>
+    <!-- To indicate the network of ATMs, bicycle rentals, electric vehicle charging stations… -->
+    <string name="network">நெட்வொர்க்: %s</string>
+    <string name="trip_finished">நீங்கள் வந்துவிட்டீர்கள்!</string>
+    <string name="ok">சரி</string>
+    <!-- max. 10 symbols, both iOS and Android -->
+    <string name="sort">வரிசை…</string>
+    <!-- Android, title, max 20-22 symbols -->
+    <string name="sort_bookmarks">புக்மார்க் வரிசை</string>
+    <!-- Android -->
+    <string name="by_default">இயல்பாக</string>
+    <!-- Android -->
+    <string name="by_type">வகைப்படி</string>
+    <!-- Android -->
+    <string name="by_distance">தூரப்படி</string>
+    <!-- Android -->
+    <string name="by_date">தேதிப்படி</string>
+    <!-- Android -->
+    <string name="by_name">பெயர்ப்படி</string>
+    <string name="week_ago_sorttype">ஒரு வாரம் முன்பு</string>
+    <string name="month_ago_sorttype">ஒரு மாதம் முன்பு</string>
+    <string name="moremonth_ago_sorttype">ஒரு மாதத்திற்கு மேல் முன்பு</string>
+    <string name="moreyear_ago_sorttype">ஓர் ஆண்டுக்கு மேல் முன்பு</string>
+    <string name="near_me_sorttype">எனக்கு அருகில்</string>
+    <string name="others_sorttype">மற்றவை</string>
+    <!-- Place Page opening hours text -->
+    <string name="closed_now">இப்போது மூடப்பட்டுள்ளது</string>
+    <string name="opens_tomorrow_at">நாளை %s மணிக்குத் திறக்கும்</string>
+    <string name="opens_dayoftheweek_at">%1$s %2$s மணிக்குத் திறக்கும்</string>
+    <string name="opens_at">%s மணிக்குத் திறக்கும்</string>
+    <string name="closes_at">%s மணிக்கு மூடும்</string>
+    <string name="editor_add_select_category_all_subtitle">எல்லா வகைகளும்</string>
+    <string name="placepage_replace_stop">நிறுத்தத்தை மாற்று</string>
+
+    <!-- SECTION: Bookmark types used for sorting -->
+    <string name="food_places">உணவு</string>
+    <string name="tourist_places">சுற்றுலா இடங்கள்</string>
+    <string name="museums">அருங்காட்சியகங்கள்</string>
+    <string name="parks">பூங்காக்கள்</string>
+    <string name="swim_places">நீச்சல்</string>
+    <string name="mountains">மலைகள்</string>
+    <string name="animals">விலங்குகள்</string>
+    <string name="hotels">ஹோட்டல்கள்</string>
+    <string name="buildings">கட்டிடங்கள்</string>
+    <string name="money">பணம்</string>
+    <string name="shops">கடைகள்</string>
+    <string name="parkings">பார்க்கிங்</string>
+    <string name="fuel_places">பெட்ரோல் நிலையங்கள்</string>
+    <string name="medicine">மருத்துவம்</string>
+    <string name="search_in_the_list">பட்டியலில் தேடு</string>
+    <string name="religious_places">வழிபாட்டுத் தலங்கள்</string>
+    <!-- Button that starts multi-selection in a bookmark list. -->
+    <string name="select">தேர்ந்தெடு</string>
+    <!-- Action that selects every bookmark and track in a bookmark list. -->
+    <string name="select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <!-- Action that clears the multi-selection in a bookmark list. -->
+    <string name="deselect_all">தேர்வை நீக்கு</string>
+    <string name="select_list">பட்டியலைத் தேர்ந்தெடு</string>
+    <string name="button_layer_isolines">சம உயரக் கோடுகள்</string>
+    <string name="isolines_activation_error_dialog">சம உயரக் கோடுகளை இயக்க இந்தப் பகுதியின் வரைபடத் தரவைப் பதிவிறக்க வேண்டும்</string>
+    <string name="isolines_location_error_dialog">இந்தப் பகுதியில் சம உயரக் கோடுகள் இன்னும் கிடைக்கவில்லை</string>
+    <string name="elevation_profile_ascent">ஏற்றம்</string>
+    <string name="elevation_profile_descent">இறக்கம்</string>
+    <string name="elevation_profile_min_elevation">குறைந்த உயரம்</string>
+    <string name="elevation_profile_max_elevation">அதிக உயரம்</string>
+    <string name="elevation_profile_difficulty">சிரமம்</string>
+    <string name="isolines_toast_zooms_1_10">சம உயரக் கோடுகளைக் காண பெரிதாக்கவும்</string>
+    <string name="downloader_loading_ios">பதிவிறக்கப்படுகிறது</string>
+    <string name="download_map_title">உலக மேலோட்ட வரைபடத்தைப் பதிவிறக்கு</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disk_error">சாதன நினைவகத்திலோ SD கார்டிலோ கோப்புறையை உருவாக்கவும் கோப்புகளை நகர்த்தவும் முடியவில்லை</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disk_error_title">வட்டுப் பிழை</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="connection_failure">இணைப்பு தோல்வியடைந்தது</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="disconnect_usb_cable_title">USB கேபிளைத் துண்டிக்கவும்</string>
+    <string name="enable_keep_screen_on">திரையை ஆனில் வை</string>
+    <!-- Description in preferences -->
+    <string name="enable_keep_screen_on_description">இயக்கியிருந்தால், வரைபடம் காட்டப்படும்போது திரை எப்போதும் ஆனில் இருக்கும்.</string>
+    <!-- A preference title; keep short! -->
+    <string name="enable_show_on_lock_screen">பூட்டுத் திரையில் காட்டு</string>
+    <!-- Description in preferences -->
+    <string name="enable_show_on_lock_screen_description">இயக்கியிருந்தால், சாதனம் பூட்டப்பட்டிருக்கும்போதும் பூட்டுத் திரையில் செயலி இயங்கும்.</string>
+    <!-- Current language of the map! -->
+    <string name="change_map_locale">வரைபட மொழி</string>
+    <!-- OpenStreetMap text on splash screen -->
+    <string name="splash_subtitle">OpenStreetMap-இலிருந்து வரைபடத் தரவு</string>
+    <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
+    <string name="comma_separated_pair">%1$s, %2$s</string>
+    <!-- App Tip #00 -->
+    <string name="app_tip_00">சமூகம் உருவாக்கிய எங்கள் வரைபடங்களைப் பயன்படுத்துவதற்கு நன்றி!</string>
+    <!-- App tip #04 -->
+    <string name="app_tip_04">எதையும் தேர்ந்தெடுக்க வரைபடத்தில் எங்கும் தட்டவும். இடைமுகத்தை மறைக்கவும் காட்டவும் நீண்ட நேரம் தட்டவும்.</string>
+    <!-- App tip #05 -->
+    <string name="app_tip_05">வரைபடத்தில் உங்கள் தற்போதைய இருப்பிடத்தையும் தேர்ந்தெடுக்கலாம் என்பது தெரியுமா?</string>
+    <!-- App tip #08 -->
+    <string name="app_tip_08">வரைபடத் தரவை நீங்கள் எளிதாகத் திருத்தி மேம்படுத்தலாம்.</string>
+    <!-- App tip #09 -->
+    <string name="app_tip_09">வேகமான, தனியுரிமையைப் பாதுகாக்கும், எளிதாகப் பயன்படுத்தக்கூடிய, நீங்கள் விரும்பும் வரைபடங்களை உருவாக்குவதே எங்கள் முக்கிய இலக்கு.</string>
+    <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
+    <string name="car_used_on_the_phone_screen">இப்போது நீங்கள் தொலைபேசித் திரையில் Sampai-யைப் பயன்படுத்துகிறீர்கள்</string>
+    <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
+    <string name="car_used_on_the_car_screen">இப்போது நீங்கள் கார் திரையில் Sampai-யைப் பயன்படுத்துகிறீர்கள்</string>
+    <!-- Displayed on the phone screen. Android Auto connected -->
+    <string name="aa_connected_title">நீங்கள் Android Auto-வுடன் இணைக்கப்பட்டுள்ளீர்கள்</string>
+    <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
+    <string name="car_continue_on_the_phone">தொலைபேசியில் தொடர்</string>
+    <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
+    <string name="car_continue_in_the_car">கார் திரைக்கு</string>
+    <!-- Ask user to grant location permissions -->
+    <string name="aa_location_permissions_request">Sampai-க்கு இருப்பிட அணுகல் தேவை. பாதுகாப்பாக இருக்கும்போது, உங்கள் தொலைபேசியில் உள்ள அறிவிப்பைப் பார்க்கவும்.</string>
+    <!-- Notification title for permission request from AA. -->
+    <string name="aa_request_permission_notification">இந்தச் செயலிக்கு உங்கள் அனுமதி தேவை</string>
+    <!-- Grant Permissions button. -->
+    <string name="aa_grant_permissions">அனுமதி வழங்கு</string>
+    <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
+    <string name="button_layer_outdoor">வெளிப்புறம்</string>
+    <!-- Text displayed when a webview or a browser are disabled, and external links can't be opened. -->
+    <string name="browser_not_available">இணைய உலாவி கிடைக்கவில்லை</string>
+    <string name="volume">ஒலியளவு</string>
+    <!-- Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks -->
+    <string name="bookmarks_export">எல்லா புக்மார்க்குகளையும் தடங்களையும் ஏற்றுமதி செய்</string>
+    <!-- button in (app) TTS settings, to open the system TTS settings. -->
+    <string name="pref_tts_open_system_settings">பேச்சு உருவாக்க சிஸ்டம் அமைப்புகள்</string>
+    <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
+    <string name="pref_tts_no_system_tts">பேச்சு உருவாக்க அமைப்புகள் கிடைக்கவில்லை. உங்கள் சாதனம் இதை ஆதரிக்கிறதா?</string>
+    <string name="drive_through">டிரைவ்-த்ரூ</string>
+    <string name="clear_the_search">தேடலை அழி</string>
+    <!-- Accessibility text for the zoom-in button on the map and visible title for the CarPlay dashboard button. Keep it short. -->
+    <string name="zoom_in">பெரிதாக்கு</string>
+    <!-- Accessibility text for the zoom-out button on the map and visible title for the CarPlay dashboard button. Keep it short. -->
+    <string name="zoom_out">சிறிதாக்கு</string>
+    <!-- Restaurant or other food place's menu URL field in the Editor -->
+    <string name="website_menu">மெனு இணைப்பு</string>
+    <!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
+    <string name="view_menu">மெனுவைப் பார்</string>
+    <!-- To indicate if the place proposed self service… -->
+    <string name="self_service">சுய சேவை</string>
+    <string name="select_option">விருப்பத்தைத் தேர்ந்தெடு</string>
+    <!-- To indicate if restaurant or other place has outdoor seating -->
+    <string name="outdoor_seating">வெளிப்புற இருக்கைகள்</string>
+    <!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+    <string name="power_save_dialog_summary">மிகத் துல்லியமான வழிசெலுத்தலுக்கு, தொலைபேசியின் பேட்டரி அமைப்புகளில் மின் சேமிப்புப் பயன்முறையை அணைக்கப் பரிந்துரைக்கிறோம்.</string>
+    <!-- Prompt to start recording a track. -->
+    <string name="start_track_recording">தடத்தைப் பதிவுசெய்</string>
+    <!-- Prompt for stopping a track recording. -->
+    <string name="stop_track_recording">தடப் பதிவை நிறுத்து</string>
+    <!-- Subtitle of the place page of the track being recorded, and the name and title of the home screen widget. -->
+    <string name="track_recording_title">தடப் பதிவு</string>
+    <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
+    <string name="track_recording_toast_nothing_to_save">தடம் காலியாக உள்ளது - சேமிக்க எதுவும் இல்லை</string>
+    <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->
+    <string name="error_no_file_manager_app">உங்கள் சாதனத்தில் பொருத்தமான செயலி நிறுவப்படாததால் கோப்புறைத் தேர்வு உரையாடலைக் காட்ட முடியவில்லை. கோப்பு மேலாளர் செயலியை நிறுவி மீண்டும் முயலவும்.</string>
+    <string name="choose_color">வண்ணத்தைத் தேர்ந்தெடு</string>
+    <string name="edit_track">தடத்தைத் திருத்து</string>
+    <string name="uri_open_location_failed">இந்த இருப்பிடத்தைத் திறக்கக்கூடிய செயலி எதுவும் நிறுவப்படவில்லை</string>
+    <!-- Setting option to sync the app's theme with the operating system's dark/light mode -->
+    <string name="follow_system">சிஸ்டத்தைப் பின்பற்று</string>
+    <!-- Title of the bottom sheet when sharing the track -->
+    <string name="share_track">தடத்தைப் பகிர்</string>
+    <!-- Title for the dialog when deleting a track with the track name passed in %@ -->
+    <string name="delete_track_dialog_title">%s நீக்கவா?</string>
+    <!-- move track or bookmark from the list button text -->
+    <string name="move">நகர்த்து</string>
+    <!-- Text for the editing the Track's color button. -->
+    <string name="change_color">வண்ணத்தை மாற்று</string>
+    <!-- Text for the hiding track. -->
+    <string name="hide_track">தடத்தை மறை</string>
+    <!-- Text for the showing track. -->
+    <string name="show_track">தடத்தைக் காட்டு</string>
+
+    <!-- SECTION: Uncategorized -->
+    <!-- Short label of the user's position marker on the elevation profile chart. Where a bare pronoun would be unnatural or gendered, a location noun ("My location") is preferred. -->
+    <string name="you">நீங்கள்</string>
+
+    <!-- SECTION: gps strings -->
+    <!-- Editor section title that shows recently used categories (types of objects) when adding a place on the map -->
+    <string name="editor_add_select_category_recent_subtitle">சமீபத்தில் பயன்படுத்தியவை</string>
+    <!-- Toast message shown when bookmark colors are changed in category settings -->
+    <string name="toast_bookmarks_color_changed">புக்மார்க் வண்ணம் மாற்றப்பட்டது</string>
+    <!-- Toast message shown when track colors are changed in category settings -->
+    <string name="toast_tracks_color_changed">தட வண்ணம் மாற்றப்பட்டது</string>
+    <!-- Tab label for the spectrum color picker mode -->
+    <string name="color_picker_spectrum">நிறமாலை</string>
+    <!-- Tab label for the RGB sliders color picker mode -->
+    <string name="color_picker_sliders">ஸ்லைடர்கள்</string>
+    <!-- Label for the red channel slider in the color picker -->
+    <string name="color_picker_red">சிவப்பு</string>
+    <!-- Label for the green channel slider in the color picker -->
+    <string name="color_picker_green">பச்சை</string>
+    <!-- Label for the blue channel slider in the color picker -->
+    <string name="color_picker_blue">நீலம்</string>
+    <!-- Label for the hex color input field in the color picker -->
+    <string name="color_picker_hex_label">sRGB Hex வண்ணம் #</string>
+    <!-- Tab label for the grid color picker mode -->
+    <string name="color_picker_grid">கட்டம்</string>
+    <!-- Accessibility label for the voice-search mic button in the search bar -->
+    <string name="voice_search">குரல் தேடல்</string>
+    <!-- Accessibility label of the icon-only button beside the search field, shown while choosing or replacing a route point; it opens a full-screen map picker with a crosshair -->
+    <string name="choose_on_map">வரைபடத்தில் தேர்ந்தெடு</string>
+    <!-- Search field hint and full-screen map point picker title shown while choosing the starting point of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="choose_start_location">தொடக்கப் புள்ளி</string>
+    <!-- Search field hint and full-screen map point picker title shown while choosing the destination of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="choose_destination">சேருமிடம்</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing the already set starting point of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_start_location">தொடக்கத்தை மாற்று</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing the already set destination of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_destination">சேருமிடத்தை மாற்று</string>
+    <!-- Search field hint and full-screen map point picker title shown while replacing an already added intermediate stop of a route. Kept short because shortcut and voice-search buttons narrow the field -->
+    <string name="change_stop_along_route">நிறுத்தத்தை மாற்று</string>
+    <!-- Toast shown when the user tries to add one more intermediate stop to a route that already holds the maximum allowed number -->
+    <string name="routing_max_stops_reached">நிறுத்தங்களின் அதிகபட்ச எண்ணிக்கையை எட்டிவிட்டீர்கள்</string>
+    <!-- Hint under the title of the full-screen route point picker: a crosshair stays fixed in the centre of the screen while the user moves the map under it -->
+    <string name="choose_point_on_map_hint">குறுக்குக் குறியை வைக்க வரைபடத்தை நகர்த்தி ஜூம் செய்யவும்</string>
+    <!-- Track recording notification button: stops the recording and saves the recorded track. -->
+    <string name="track_recording_stop_and_save">நிறுத்தி சேமி</string>
+    <!-- Track recording home screen widget button: opens the app to save or delete the recorded track. -->
+    <string name="track_recording_finish">நிறைவுசெய்</string>
+    <!-- Accessibility label for the button that reverses the complete planned route, including intermediate stops. -->
+    <string name="reverse_route">பாதையைத் திருப்பு</string>
+
+    <!-- SECTION: Malaysia Nav navigation HUD -->
+    <!-- Accessibility label of the big turn arrow in the navigation HUD. -->
+    <string name="my_nav_next_turn">அடுத்த திருப்பம்</string>
+    <!-- Label above the small arrow showing the turn after the next one, e.g. "Then ↱". Keep very short. -->
+    <string name="my_nav_then">பிறகு</string>
+    <!-- Button that ends navigation. Keep very short. -->
+    <string name="my_nav_end">நிறுத்து</string>
+    <!-- Accessibility label of the voice guidance on/off button in the navigation HUD. -->
+    <string name="my_nav_voice">குரல் வழிகாட்டல்</string>
+    <!-- Remaining travel time in minutes, e.g. "14 min". Keep very short. -->
+    <string name="my_nav_eta_minutes">%d நிமிடம்</string>
+    <!-- Remaining travel time in whole hours, e.g. "2 h". Keep very short. -->
+    <string name="my_nav_eta_hours">%d மணி</string>
+    <!-- Remaining travel time in hours and minutes, e.g. "1 h 5 min". Keep very short. -->
+    <string name="my_nav_eta_hours_minutes">%1$d மணி %2$d நிமிடம்</string>
+    <!-- Line under the remaining time: %1$s is the remaining distance (e.g. 6.4 km), %2$s the arrival clock time. -->
+    <string name="my_nav_eta_subtitle">%1$s · வருகை %2$s</string>
+    <!-- Label of the toll total in the navigation ETA sheet. Keep very short. -->
+    <string name="my_nav_toll">டோல்</string>
+    <!-- Toll total in Malaysian ringgit; %s is the amount, e.g. "RM 2.10". A trailing + means some booths on the route have no price yet. -->
+    <string name="my_nav_toll_amount">RM %s</string>
+    <!-- Quick search chip on the map (petrol stations). Keep to one short word. -->
+    <string name="my_chip_fuel">பெட்ரோல்</string>
+    <!-- Quick search chip on the map (mosques and prayer rooms). Keep to one short word. -->
+    <string name="my_chip_surau">Surau</string>
+    <!-- Quick search chip on the map (restaurants). Keep to one short word. -->
+    <string name="my_chip_mamak">Mamak</string>
+    <!-- Quick search chip on the map (parking). Keep to one short word. -->
+    <string name="my_chip_parking">பார்க்கிங்</string>
+    <!-- Quick search chip on the map (EV chargers). Keep to one short word. -->
+    <string name="my_chip_ev">EV</string>
+    <!-- Quick search chip on the map (clinics). Keep to one short word. -->
+    <string name="my_chip_clinic">கிளினிக்</string>
+    <!-- Quick search chip on the map (highway rest areas). Keep to one short word. -->
+    <string name="my_chip_rest_area">R&amp;R</string>
+    <!-- Quick search chip on the map (toilets). Keep to one short word. -->
+    <string name="my_chip_toilet">கழிப்பறை</string>
+    <!-- Quick search chip on the map (ATMs). Keep to one short word. -->
+    <string name="my_chip_atm">ATM</string>
+</resources>

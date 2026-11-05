@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SECTION: Other translations -->
+    <!-- Text shown before a shared "my position" link, and the email subject when sharing the current location. -->
+    <string name="share_my_position">நான் Sampai-யில் இங்கே இருக்கிறேன்</string>
+    <!-- Shared email link text; opens the shared place in Sampai or in a web browser. -->
+    <string name="share_open_in_om_or_browser">Sampai-யில் அல்லது உலாவியில் திற</string>
+    <!-- Shared email link text; leads to the Sampai download page. -->
+    <string name="share_get_om">Sampai-யைப் பெறு</string>
+    <!-- Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. -->
+    <string name="open_in_app">வேறு செயலியில் திற</string>
+
+    <!-- SECTION: Uncategorized -->
+    <!-- Settings/Downloader - size string, only strings different from English should be translated -->
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <!-- A text for current gps location point/arrow selected on the map -->
+    <string name="core_my_position">என் இருப்பிடம்</string>
+    <!-- Default bookmark list name -->
+    <string name="core_my_places">என் இடங்கள்</string>
+    <!-- Internal storage type in Maps Storage settings (not accessible by the user) -->
+    <string name="maps_storage_internal">உள் தனிப்பட்ட சேமிப்பகம்</string>
+    <!-- Shared storage type in Maps Storage settings (a primary storage usually) -->
+    <string name="maps_storage_shared">உள் பகிரப்பட்ட சேமிப்பகம்</string>
+    <!-- Removable external storage type in Maps Storage settings, e.g. an SD card -->
+    <string name="maps_storage_removable">SD கார்டு</string>
+    <!-- Generic external storage type in Maps Storage settings -->
+    <string name="maps_storage_external">வெளிப்புறப் பகிரப்பட்ட சேமிப்பகம்</string>
+    <!-- Search category for WiFi access; any changes should be duplicated in categories.txt @category_wifi! -->
+    <string name="category_wifi">WiFi</string>
+    <string name="postal_code">அஞ்சல் குறியீடு</string>
+    <!-- Place Page title for long tap -->
+    <string name="core_placepage_unknown_place">வரைபடப் புள்ளி</string>
+    <!-- abbreviation for meters -->
+    <string name="m">மீ</string>
+    <!-- abbreviation for kilometers -->
+    <string name="km">கி.மீ</string>
+    <!-- abbreviation for mile(s) -->
+    <string name="mi">மைல்</string>
+    <!-- A unit of measure -->
+    <string name="ft">அடி</string>
+    <!-- Toast text when the maps version should be updated to display the OSM hiking and cycling routes -->
+    <string name="routes_update_maps_text">பாதைகளைக் காட்ட வரைபடங்களைப் புதுப்பிக்க வேண்டும்.</string>
+    <!-- Subway exits for public transport marks on the map -->
+    <string name="core_exit">வெளியேறும் வழி</string>
+    <string name="core_entrance">நுழைவாயில்</string>
+    <string name="subway_data_unavailable">ரயில் வரைபடம் கிடைக்கவில்லை</string>
+    <!-- Settings/Highlight downloaded regions on the map -->
+    <string name="show_downloaded_regions">பதிவிறக்கிய பகுதிகளை ஊதா நிறத்தில் காட்டு</string>
+</resources>

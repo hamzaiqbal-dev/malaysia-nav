@@ -9,15 +9,18 @@
   <color name="my_line">#14FFFFFF</color>
   <color name="my_route">#FF2E8BFF</color>
   <color name="my_accent">#FFFFC43D</color>
+  <color name="my_accent_text">#FFFFC43D</color>
   <color name="my_ok">#FF2ECC71</color>
   <color name="my_warn">#FFFF7A45</color>
-  <color name="my_danger">#FFFF4D5E</color>
+  <color name="my_danger">#FFD32638</color>
+  <color name="my_track">#FF2A3A55</color>
 
-  <color name="my_turn_banner_start">#FF1C8C4E</color>
+  <color name="my_turn_banner_start">#FF197F47</color>
   <color name="my_turn_banner_end">#FF13703C</color>
   <color name="my_on_banner">#FFFFFFFF</color>
   <color name="my_on_banner_muted">#CCFFFFFF</color>
   <color name="my_banner_icon_bg">#24FFFFFF</color>
+  <color name="my_ripple_on_dark">#33FFFFFF</color>
 
   <color name="my_pill_bg">#BF0A1020</color>
   <color name="my_lane_inactive">#FF6B7890</color>

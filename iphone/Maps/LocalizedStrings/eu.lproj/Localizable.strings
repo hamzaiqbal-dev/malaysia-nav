@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Deskargak huts egin du";
 
 /* Text in About screen */
-"about_headline" = "Denontzat doan, maitasunez egina";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Ez iragarkirik, ez jarraipenik, ez datu-bilketarik";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Ez da bateria deskargatzen, konexiorik gabe funtzionatzen du";
 
 /* Text in About screen */
-"about_proposition_3" = "• Azkarra, minimalista, komunitateak garatua";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Itxi";
 "download" = "Deskargatu";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Kaixo!\nNire markagailuak Organic Maps aplikazioan erantsi ditut. Mesedez, ireki itzazu Organic Maps instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://omaps.app/get?kmz\n\nGozatu bidaiatzen Organic Maps-ekin!";
+"share_bookmarks_email_body" = "Kaixo!\nNire markagailuak Sampai aplikazioan erantsi ditut. Mesedez, ireki itzazu Sampai instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://sampai.my/\n\nGozatu bidaiatzen Sampai-ekin!";
 
 /* message title of loading file */
 "load_kmz_title" = "Markagailuak kargatzen";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Zure kokapena ez da oraindik zehaztu";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Hemen nago Organic Maps-en";
+"share_my_position" = "Hemen nago Sampai-en";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ Organic Maps-en";
+"share_place_subject" = "%1$@ Sampai-en";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Leku bat Organic Maps-en";
+"share_place_subject_default" = "Leku bat Sampai-en";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Ireki Organic Maps-en edo arakatzailean";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Ireki Sampai-en edo arakatzailean";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Eskuratu Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Eskuratu Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Ireki beste aplikazio batean";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Webgunea";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Albisteak";
-
 /* Text in menu */
 "rate_the_app" = "Baloratu aplikazioa";
 
@@ -295,10 +292,10 @@
 "donate" = "Dohaintza eman";
 "already_donated" = "Dohaintza jada emana";
 "remind_me_later" = "Gogoratu geroago";
-"support_organic_maps" = "Sustatu Organic Maps";
+"support_organic_maps" = "Sustatu Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Egile eskubideak";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Errore baten berri eman";
@@ -393,7 +390,7 @@
 "blue_gray" = "Gris urdinxka";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps bertsioa: %@";
+"version" = "Sampai bertsioa: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Itxura";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Salatu edo konpondu maparen datu okerrak";
-
-/* Button in the About screen */
-"volunteer" = "Boluntario izateko";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Jarraitu eta jarri gurekin harremanetan:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operadorea: %@";
 "editor_category_unsuitable_title" = "Ezin duzu kategoria egokirik aurkitu?";
-"editor_category_unsuitable_text" = "Organic Maps-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Begiratu gure <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">gida</a> urratsez urrats argibide zehatzak lortzeko.";
+"editor_category_unsuitable_text" = "Sampai-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Begiratu gure <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">gida</a> urratsez urrats argibide zehatzak lortzeko.";
 "downloader_no_downloaded_maps_title" = "Ez duzu maparik deskargatu";
 "downloader_no_downloaded_maps_message" = "Deskargatu mapak kokapena aurkitzeko eta lineaz kanpo nabigatzeko.";
 "current_location_unknown_error_title" = "Uneko kokapena ezezaguna da.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "Laster-marka gehiegi badaude, mapan laster-markak bistaratzeak aplikazioa moteldu dezake.";
 "show_to_the_right" = "Erakutsi eskuinean";
 "show_at_the_bottom" = "Erakutsi behean";
-"enable_logging_warning_message" = "Aukera hau diagnostiko helburua duten erregistro ekintzetarako gaituta dago. Honek gure taldeari aplikazioarekin arazoak identifikatzen laguntzen dio. Gaitu aukera Organic Maps laguntzari eskatuta soilik.";
+"enable_logging_warning_message" = "Aukera hau diagnostiko helburua duten erregistro ekintzetarako gaituta dago. Honek gure taldeari aplikazioarekin arazoak identifikatzen laguntzen dio. Gaitu aukera Sampai laguntzari eskatuta soilik.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "Autoz";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Leku gehiago behar duzu deskargatzeko. Ezabatu beharrezkoak ez diren datuak.";
-"editor_sharing_title" = "Organic Maps mapak hobetu ditut";
+"editor_sharing_title" = "Sampai mapak hobetu ditut";
 "editor_detailed_description_hint" = "Iruzkin zehatza";
-"editor_detailed_description" = "Zure proposatutako mapen aldaketak OpenStreetMap komunitateari bidaliko zaizkio. Mesedez, azaldu Organic Maps-en editatu ezin diren bestelako xehetasun guztiak.";
+"editor_detailed_description" = "Zure proposatutako mapen aldaketak OpenStreetMap komunitateari bidaliko zaizkio. Mesedez, azaldu Sampai-en editatu ezin diren bestelako xehetasun guztiak.";
 "current_location_unknown_error_message" = "Errore bat gertatu da zure kokapena bilatzean. Egiaztatu gailua behar bezala dabilela eta saiatu berriro geroago.";
 "location_services_disabled_header" = "Kokapen zerbitzuak desaktibatuta daude";
 "location_services_disabled_message" = "Aktibatu geokokapenerako sarbidea gailuaren ezarpenetan";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Hautatu Pribatutasuna";
 "location_services_disabled_on_device_3" = "3. Hautatu Kokapen zerbitzuak";
 "location_services_disabled_on_device_4" = "4. Aktibatu Kokapen Zerbitzuak";
-"location_services_disabled_on_device_additional_message" = "Edo jarraitu kokapenik gabeko Organic Maps erabiltzen";
+"location_services_disabled_on_device_additional_message" = "Edo jarraitu kokapenik gabeko Sampai erabiltzen";
 "placepage_call_button" = "Deitu";
 "placepage_bookmark_name_hint" = "Markagailuaren izena";
 "placepage_delete_bookmark_button" = "Ezabatu markagailua";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Bidaiatutako azken ibilbidearen grabaketa desaktibatu nahi duzu?";
 "off_recent_track_background_button" = "Desgaitu";
-"recent_track_background_dialog_message" = "Organic Maps-ek zure geokokapena erabiltzen du atzeko planoan egindako azken ibilbidea erregistratzeko.";
+"recent_track_background_dialog_message" = "Sampai-ek zure geokokapena erabiltzen du atzeko planoan egindako azken ibilbidea erregistratzeko.";
 "general_settings" = "Ezarpen orokorrak";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Aldatu telefonora laster-mark guztiak ikusteko";
 "speedcams_alert_title_carplay_1" = "Abiadura kamerak.";
 "speedcams_alert_title_carplay_2" = "Abiadura alertak.";
-"download_map_carplay" = "Deskargatu mapak zure gailuko Organic Maps aplikazioan";
+"download_map_carplay" = "Deskargatu mapak zure gailuko Sampai aplikazioan";
 "carplay_roundabout_exit" = "%@ irteera";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Handitu mapa sestra kurbak ikusteko";
 "downloader_loading_ios" = "Deskargatzen";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/eu/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Eskerrik asko gure komunitateak eraikitako mapak erabiltzeagatik!";
 
-/* App tip #01 */
-"app_tip_01" = "Zure dohaintza eta laguntzarekin, Munduko mapa onenak sor ditzakegu!";
-
-/* App tip #02 */
-"app_tip_02" = "Gure aplikazioa gustatzen zaizu? Mesedez, eman dohaintza garapena laguntzeko! Oraindik ez al zaizu gustatzen? Mesedez, jakinarazi iezaguzu, eta konponduko dugu!";
-
-/* App tip #03 */
-"app_tip_03" = "Software garatzaile bat ezagutzen baduzu, behar duzun funtzio bat ezartzeko eska diezaiokezu.";
-
 /* App tip #04 */
 "app_tip_04" = "Sakatu mapako edozein tokitan edozer hautatzeko. Luze sakatu interfazea ezkutatzeko eta berriro erakusteko.";
 
 /* App tip #05 */
 "app_tip_05" = "Ba al dakizu zure uneko kokapena mapan hauta dezakezula?";
-
-/* App tip #06 */
-"app_tip_06" = "Gure aplikazioa zure hizkuntzara itzultzen lagun dezakezu.";
-
-/* App tip #07 */
-"app_tip_07" = "Gure aplikazioa zale gutxi batzuek eta komunitateak garatzen dute.";
 
 /* App tip #08 */
 "app_tip_08" = "Maparen datuak erraz konpondu eta hobetu ditzakezu.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Gure helburu nagusia maite dituzun mapa azkarrak, pribatutasunari begira eta erabilerrazak sortzea da.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Organic Maps telefonoaren pantailan erabiltzen ari zara";
+"car_used_on_the_phone_screen" = "Sampai telefonoaren pantailan erabiltzen ari zara";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Organic Maps autoaren pantailan erabiltzen ari zara";
+"car_used_on_the_car_screen" = "Sampai autoaren pantailan erabiltzen ari zara";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Jarraitu telefonoan";
@@ -1082,7 +1055,7 @@
 "map" = "Mapa";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Akatsen txostena bidali nahi diezu garatzaileei?\nGure erabiltzaileengan oinarritzen gara Organic Maps-ek ez baitu automatikoki akatsen informaziorik biltzen. Eskerrik asko aldez aurretik Organic Maps laguntzeagatik!";
+"bugreport_alert_message" = "Akatsen txostena bidali nahi diezu garatzaileei?\nGure erabiltzaileengan oinarritzen gara Sampai-ek ez baitu automatikoki akatsen informaziorik biltzen. Eskerrik asko aldez aurretik Sampai laguntzeagatik!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Gaitu iCloud sinkronizazioa";

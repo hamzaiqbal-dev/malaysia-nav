@@ -30,7 +30,7 @@
     <string name="location_settings">Ajustes de ubicación</string>
     <string name="unsupported_phone">La aplicación requiere OpenGL acelerado por hardware. Lamentablemente, tu dispositivo no es compatible.</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Desconecta el cable USB o inserta la tarjeta de memoria para utilizar Organic Maps.</string>
+    <string name="disconnect_usb_cable">Desconecta el cable USB o inserta la tarjeta de memoria para utilizar Sampai.</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Por favor, libera espacio en la tarjeta SD/USB para poder utilizar la aplicación.</string>
     <string name="download_resources">Antes de empezar a utilizar la aplicación, descarga el mapa general del mundo en tu dispositivo. \nUsará %s de almacenamiento.</string>
@@ -73,15 +73,15 @@
 
     <!-- SECTION: Other translations -->
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Los favoritos de Organic Maps se han compartido contigo</string>
-    <string name="share_bookmarks_email_body">Hola!\n\Adjunto mis marcadores de la aplicación Organic Maps. Por favor, ábralos si tiene instalado Organic Maps. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://omaps.app/get?kmz\n¡Disfrute viajando con Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Los favoritos de Sampai se han compartido contigo</string>
+    <string name="share_bookmarks_email_body">Hola!\n\Adjunto mis marcadores de la aplicación Sampai. Por favor, ábralos si tiene instalado Sampai. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://sampai.my/\n¡Disfrute viajando con Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Cargando favoritos</string>
     <!-- Kmz file successful loading -->
     <string name="load_kmz_successful">¡Marcadores cargados correctamente! Puedes encontrarlos en el mapa o en la pantalla del Gestor de favoritos.</string>
     <!-- Kml file loading failed -->
     <string name="load_kmz_failed">La carga de marcadores ha fallado. El archivo puede estar corrupto o ser defectuoso.</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Fallo al abrir el archivo %1$s\n\n%2$s</string>
     <!-- Warning message when doing search around current position -->
     <string name="unknown_current_position">Su ubicación aún no ha sido determinada</string>
@@ -122,8 +122,6 @@
     <!-- Text in menu -->
     <string name="rate_the_app">Valora la aplicación</string>
     <string name="already_donated">Ya donado</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Apoyar el proyecto</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Informar de un error</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -221,7 +219,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Datos de OpenStreetMap creados por la comunidad a fecha de %s. Obtenga más información sobre cómo editar y actualizar el mapa en OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) es un proyecto comunitario para construir un mapa libre y abierto. Es la principal fuente de datos cartográficos de Organic Maps y funciona de forma similar a Wikipedia. Puedes añadir o editar lugares y se ponen a disposición de millones de usuarios de todo el mundo.\N¡Únete a la comunidad y ayuda a hacer un mapa mejor para todos!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) es un proyecto comunitario para construir un mapa libre y abierto. Es la principal fuente de datos cartográficos de Sampai y funciona de forma similar a Wikipedia. Puedes añadir o editar lugares y se ponen a disposición de millones de usuarios de todo el mundo.\N¡Únete a la comunidad y ayuda a hacer un mapa mejor para todos!</string>
     <string name="login_to_make_edits_visible">Crea una cuenta OpenStreetMap o inicia sesión para publicar tus ediciones de mapas en todo el mundo.</string>
     <string name="download_over_mobile_header">¿Descargar a través de una conexión de red celular?</string>
     <string name="download_over_mobile_message">Esto podría resultar considerablemente caro con algunos planes o en caso de itinerancia.</string>
@@ -229,14 +227,14 @@
     <string name="editor_storey_number">Número de plantas (máximo de %d)</string>
     <string name="error_enter_correct_zip_code">Introduzca el código postal correcto</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Describe errores en el mapa o cosas que no se pueden editar con Organic Maps</string>
+    <string name="editor_note_hint">Describe errores en el mapa o cosas que no se pueden editar con Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Sus ediciones se cargan en la base de datos pública <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Por favor, no añadas información personal o protegida por derechos de autor.</string>
     <string name="editor_more_about_osm">Más información sobre OpenStreetMap</string>
     <string name="editor_osm_history">Tu historial de edición</string>
     <string name="editor_osm_notes">Sus notas de datos cartográficos</string>
     <string name="editor_category_unsuitable_title">¿No encuentra una categoría adecuada?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obtener instrucciones detalladas paso a paso.</string>
+    <string name="editor_category_unsuitable_text">Sampai permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">guía</a> para obtener instrucciones detalladas paso a paso.</string>
     <string name="downloader_no_downloaded_maps_title">No has descargado ningún mapa</string>
     <string name="downloader_no_downloaded_maps_message">Descarga mapas para buscar y navegar sin conexión.</string>
     <string name="current_location_unknown_error_title">La ubicación actual es desconocida.</string>
@@ -291,7 +289,7 @@
     <string name="placepage_add_stop">Agregar parada</string>
     <string name="drag_to_reorder">Reordenar</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Inicie sesión en OpenStreetMap para cargar automáticamente todas las ediciones de su mapa. Obtenga más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.</string>
+    <string name="alert_reauth_message">Inicie sesión en OpenStreetMap para cargar automáticamente todas las ediciones de su mapa.</string>
     <string name="dialog_error_storage_message">El almacenamiento externo no está disponible. Es posible que se haya quitado o dañado la tarjeta SD, o que el sistema de archivos solo permita la lectura. Revíselo y escríbanos a support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Emular el almacenamiento dañado</string>
     <string name="error_enter_correct_name">Introduzca un nombre correcto</string>
@@ -398,28 +396,18 @@
     <string name="enable_show_on_lock_screen_description">Si está activada, la aplicación funcionará en la pantalla de bloqueo aunque el dispositivo esté bloqueado.</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Gracias por utilizar nuestros mapas comunitarios.</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Con sus donaciones y su apoyo, ¡podremos crear los mejores mapas del mundo!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">¿Le gusta nuestra aplicación? ¡Por favor done para apoyar su desarrollo! ¿Todavía no le gusta? ¡Díganos por qué y lo arreglaremos!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Si conoces a un desarrollador de software, puedes pedirle que implemente una función que necesites.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Pulse en cualquier lugar del mapa para seleccionar cualquier cosa. Un toque prolongado sirve para ocultar y mostrar la interfaz.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">¿Sabías que puedes seleccionar tu ubicación actual en el mapa?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Puedes ayudar a traducir nuestra aplicación a tu idioma.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Nuestra aplicación ha sido desarrollada por unos cuantos entusiastas y la comunidad.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Puedes corregir y mejorar fácilmente los datos del mapa.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Nuestro principal objetivo es construir mapas rápidos, respetuosos con la privacidad y fáciles de usar que te encanten.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Ahora estás utilizando Organic Maps en la pantalla del teléfono</string>
+    <string name="car_used_on_the_phone_screen">Ahora estás utilizando Sampai en la pantalla del teléfono</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Ahora usa Organic Maps en la pantalla del automóvil</string>
+    <string name="car_used_on_the_car_screen">Ahora usa Sampai en la pantalla del automóvil</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Estás conectado a Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -427,7 +415,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">A la pantalla del auto</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps necesita acceder a la ubicación. Cuando sea seguro, revise la notificación en el teléfono.</string>
+    <string name="aa_location_permissions_request">Sampai necesita acceder a la ubicación. Cuando sea seguro, revise la notificación en el teléfono.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Esta aplicación necesita tu permiso</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->

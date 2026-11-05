@@ -32,7 +32,7 @@
 "country_status_download_failed" = "डाउनलोड अयशस्वी";
 
 /* Text in About screen */
-"about_headline" = "सर्वांसाठी विनामूल्य, आवडीने तयार केलेले";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• जाहिराती नाही, माहितीचा मागोवा नाही, डेटा संग्रहण नाही";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• बॅटरी संपत नाही, ऑफलाइन कार्य करते";
 
 /* Text in About screen */
-"about_proposition_3" = "• जलद, मिनिमलिस्ट, समुदायाद्वारे विकसित";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "बंद";
 "download" = "डाउनलोड करा";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "नमस्कार!\n\nOrganic Maps ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही Organic Maps इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://omaps.app/get?kmz\n\nOrganic Maps सह प्रवासाचा आनंद घ्या!";
+"share_bookmarks_email_body" = "नमस्कार!\n\nSampai ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही Sampai इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://sampai.my/\n\nSampai सह प्रवासाचा आनंद घ्या!";
 
 /* message title of loading file */
 "load_kmz_title" = "खूणपत्रे वाचत आहे";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "तुमचे स्थान अद्याप निश्चित केलेले नाही";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "मी Organic Maps वर येथे आहे";
+"share_my_position" = "मी Sampai वर येथे आहे";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ Organic Maps वर";
+"share_place_subject" = "%1$@ Sampai वर";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Organic Maps वरील ठिकाण";
+"share_place_subject_default" = "Sampai वरील ठिकाण";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Organic Maps किंवा ब्राउझरमध्ये उघडा";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Sampai किंवा ब्राउझरमध्ये उघडा";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Organic Maps मिळवा";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sampai मिळवा";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "दुसऱ्या ॲपमध्ये उघडा";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "संकेतस्थळ";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "बातम्या";
-
 /* Text in menu */
 "rate_the_app" = "ऍप मानांकित करा";
 
@@ -295,10 +292,10 @@
 "donate" = "दान करा";
 "already_donated" = "आधीच दान केले";
 "remind_me_later" = "नंतर आठवण करून द्या";
-"support_organic_maps" = "Organic Maps ला समर्थन द्या";
+"support_organic_maps" = "Sampai ला समर्थन द्या";
 
-/* Button in the main Help dialog */
-"copyright" = "प्रकाशन अधिकार (कॉपीराईट)";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "त्रुटी कळवा";
@@ -393,7 +390,7 @@
 "blue_gray" = "निळा राखाडी";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps आवृत्ती: %@";
+"version" = "Sampai आवृत्ती: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "दर्शनी रूप";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "चुकीच्या नकाशा डेटाचा अहवाल द्या किंवा त्याचे निराकरण करा";
-
-/* Button in the About screen */
-"volunteer" = "स्वयंसेवक करण्यासाठी";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "अनुसरण करा आणि आमच्याशी संपर्क साधा:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "ऑपरेटर: %@";
 "editor_category_unsuitable_title" = "योग्य श्रेणी शोधू शकत नाही?";
-"editor_category_unsuitable_text" = "Organic Maps फक्त साध्या बिंदू श्रेण्या जोडण्याची परवानगी देते, म्हणजे शहरं, रस्ते, तलाव, इमारतींच्या रूपरेषा इत्यादी नाहीत. कृपया अशा श्रेण्या थेट <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> वर जोडा. सविस्तर टप्प्याटप्प्याच्या सूचनांसाठी आमचे <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">मार्गदर्शक</a> तपासा.";
+"editor_category_unsuitable_text" = "Sampai फक्त साध्या बिंदू श्रेण्या जोडण्याची परवानगी देते, म्हणजे शहरं, रस्ते, तलाव, इमारतींच्या रूपरेषा इत्यादी नाहीत. कृपया अशा श्रेण्या थेट <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> वर जोडा. सविस्तर टप्प्याटप्प्याच्या सूचनांसाठी आमचे <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">मार्गदर्शक</a> तपासा.";
 "downloader_no_downloaded_maps_title" = "तुम्ही कोणतेही नकाशे डाउनलोड केलेले नाहीत";
 "downloader_no_downloaded_maps_message" = "स्थान शोधण्यासाठी नकाशे डाउनलोड करा आणि ऑफलाइन मार्गनिर्देशन वापरा.";
 "current_location_unknown_error_title" = "वर्तमान स्थान अज्ञात आहे.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "डाउनलोड करण्यासाठी तुम्हाला अधिक जागा आवश्यक आहे. कृपया अनावश्यक डेटा पुसून टाका.";
-"editor_sharing_title" = "मी Organic Maps नकाशे सुधारित केले";
+"editor_sharing_title" = "मी Sampai नकाशे सुधारित केले";
 "editor_detailed_description_hint" = "तपशीलवार टिप्पणी";
-"editor_detailed_description" = "तुम्ही सुचवलेले नकाशातील बदल OpenStreetMap समुदायाला पाठवले जातील. Organic Maps मध्ये संपादित न करता येणाऱ्या अधिक तपशीलांचे वर्णन करा.";
+"editor_detailed_description" = "तुम्ही सुचवलेले नकाशातील बदल OpenStreetMap समुदायाला पाठवले जातील. Sampai मध्ये संपादित न करता येणाऱ्या अधिक तपशीलांचे वर्णन करा.";
 "current_location_unknown_error_message" = "तुमचे स्थान शोधत असताना एक त्रुटी आढळली. तुमचे उपकरण योग्यरितीने काम करत असल्याचे तपासा आणि नंतर पुन्हा प्रयत्न करा.";
 "location_services_disabled_header" = "स्थान सेवा बंद आहे";
 "location_services_disabled_message" = "उपकरणाच्या सेटिंगमध्ये भूस्थानाची उपलब्धता चालू करा";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. गोपनीयता निवडा";
 "location_services_disabled_on_device_3" = "3. स्थान सेवा निवडा";
 "location_services_disabled_on_device_4" = "4. स्थान सेवा चालू करा";
-"location_services_disabled_on_device_additional_message" = "किंवा स्थानशिवाय Organic Maps वापरणे सुरू ठेवा";
+"location_services_disabled_on_device_additional_message" = "किंवा स्थानशिवाय Sampai वापरणे सुरू ठेवा";
 "placepage_call_button" = "फोन करा";
 "placepage_bookmark_name_hint" = "खूणपत्राचे नाव";
 "placepage_delete_bookmark_button" = "खूणपत्र पुसा";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "तुम्ही अलीकडे प्रवास केलेल्या मार्गाचे रेकॉर्डिंग बंद करायचे?";
 "off_recent_track_background_button" = "बंद करा";
-"recent_track_background_dialog_message" = "तुम्ही अलीकडे प्रवास केलेला मार्ग रेकॉर्ड करण्यासाठी Organic Maps पार्श्वभूमीत तुमचे स्थान वापरते.";
+"recent_track_background_dialog_message" = "तुम्ही अलीकडे प्रवास केलेला मार्ग रेकॉर्ड करण्यासाठी Sampai पार्श्वभूमीत तुमचे स्थान वापरते.";
 "general_settings" = "सामान्य सेटिंग";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "सर्व बुकमार्क पाहण्यासाठी फोनवर स्विच करा";
 "speedcams_alert_title_carplay_1" = "वेगकॅमेरा";
 "speedcams_alert_title_carplay_2" = "गती चेतावणी";
-"download_map_carplay" = "कृपया तुमच्या उपकरणावर Organic Maps ऍप मध्ये नकाशे डाउनलोड करा";
+"download_map_carplay" = "कृपया तुमच्या उपकरणावर Sampai ऍप मध्ये नकाशे डाउनलोड करा";
 "carplay_roundabout_exit" = "%@ बाहेर पडा";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "समोच्च रेषा पाहायला नकाशा विशाल (झूम) करा";
 "downloader_loading_ios" = "डाउनलोड करत आहे";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/mr/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "आमचे समुदाय-निर्मित नकाशे वापरल्याबद्दल धन्यवाद!";
 
-/* App tip #01 */
-"app_tip_01" = "तुमच्या देणग्या आणि समर्थनासह, आम्ही जगातील सर्वोत्तम नकाशे तयार करू शकतो!";
-
-/* App tip #02 */
-"app_tip_02" = "तुम्हाला आमचे अॅप आवडते का? कृपया विकासाला पाठिंबा देण्यासाठी देणगी द्या! अजून आवडत नाही? कृपया आम्हाला कळवा आणि आम्ही त्याचे निराकरण करू!";
-
-/* App tip #03 */
-"app_tip_03" = "तुम्हाला सॉफ्टवेअर डेव्हलपर माहीत असल्यास, तुम्ही त्याला किंवा तिला तुम्हाला आवश्यक असलेले वैशिष्ट्य लागू करण्यास सांगू शकता.";
-
 /* App tip #04 */
 "app_tip_04" = "काहीही निवडण्यासाठी नकाशावर कुठेही टॅप करा. इंटरफेस लपवण्यासाठी आणि परत दर्शविण्यासाठी दीर्घ-टॅप करा.";
 
 /* App tip #05 */
 "app_tip_05" = "तुम्हाला माहीत आहे का की तुम्ही नकाशावर तुमचे वर्तमान स्थान निवडू शकता?";
-
-/* App tip #06 */
-"app_tip_06" = "तुम्ही आमच्या अॅपचे तुमच्या भाषेत भाषांतर करण्यात मदत करू शकता.";
-
-/* App tip #07 */
-"app_tip_07" = "आमचे अॅप काही उत्साही आणि समुदायाने विकसित केले आहे.";
 
 /* App tip #08 */
 "app_tip_08" = "तुम्ही नकाशा डेटा सहजपणे दुरुस्त करू शकता आणि सुधारू शकता.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "आमचे मुख्य ध्येय जलद, गोपनीयता-केंद्रित, वापरण्यास-सुलभ नकाशे तयार करणे आहे जे तुम्हाला आवडतील.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "आपण आता फोन स्क्रीनवर Organic Maps वापरत आहात";
+"car_used_on_the_phone_screen" = "आपण आता फोन स्क्रीनवर Sampai वापरत आहात";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "तुम्ही आता कार स्क्रीनवर Organic Maps वापरत आहात";
+"car_used_on_the_car_screen" = "तुम्ही आता कार स्क्रीनवर Sampai वापरत आहात";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "फोनवर सुरू ठेवा";
@@ -1082,7 +1055,7 @@
 "map" = "नकाशा";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "तुम्हाला विकासकांना बग रिपोर्ट पाठवायचा आहे का?\nआम्ही आमच्या वापरकर्त्यांवर अवलंबून आहोत कारण Organic Maps आपोआप कोणतीही त्रुटीची माहिती गोळा करत नाही. Organic Maps ला पाठिंबा दिल्याबद्दल आगाऊ धन्यवाद!";
+"bugreport_alert_message" = "तुम्हाला विकासकांना बग रिपोर्ट पाठवायचा आहे का?\nआम्ही आमच्या वापरकर्त्यांवर अवलंबून आहोत कारण Sampai आपोआप कोणतीही त्रुटीची माहिती गोळा करत नाही. Sampai ला पाठिंबा दिल्याबद्दल आगाऊ धन्यवाद!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "iCloud सिंक्रोनाइझेशन सक्षम करा";

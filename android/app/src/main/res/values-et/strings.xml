@@ -35,24 +35,18 @@
     <string name="country_status_download_failed">Allalaadimine ei õnnestunud</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Proovi uuesti</string>
-    <string name="about_menu_title">Organic Mapsi teave</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Tasuta ja vaba kõigi jaoks, tehtud armastusega</string>
+    <string name="about_menu_title">Sampaii teave</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Pole reklaame, jälitamist ega andmekogumist</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Ei tühjenda akut, töötab võrguühenduseta</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Kiire, minimalistlik, kogukonna poolt väljatöötatud</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Huviliste ja vabatahtlike poolt loodud avatud lähtekoodil põhinev rakendus.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Asukoha seadistused</string>
     <string name="close">Sulge</string>
     <string name="unsupported_phone">Rakendus vajab riistvaralist OpenGLi tuge. Kahjuks sinu nutiseade ei ole toetatud.</string>
     <string name="download">Laadi alla</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Organic Maps kasutamiseks palun ühenda USB kaabel lahti või sisesta mälukaart</string>
+    <string name="disconnect_usb_cable">Sampai kasutamiseks palun ühenda USB kaabel lahti või sisesta mälukaart</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Rakenduse kasutamiseks palun vabasta kõigepealt piisavalt ruumi mälukaardil/USB salvestusseadmel</string>
     <string name="download_resources">Enne rakenduse kasutamise alustamist luba meil laadida seadmesse alla maailma üldkaart. \nSee kasutab %s mälumahtu.</string>
@@ -151,8 +145,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Märkmed</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps järjehoidjaid jagati Sinuga</string>
-    <string name="share_bookmarks_email_body">Tere!\n\nManuses on minu järjehoidjad rakendusest Organic Maps. Palun ava need kui Sul on Organic Maps paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https:omaps.appget?kmz\n\nNaudi reisimist Organic Mapsiga!</string>
+    <string name="share_bookmarks_email_subject">Sampai järjehoidjaid jagati Sinuga</string>
+    <string name="share_bookmarks_email_body">Tere!\n\nManuses on minu järjehoidjad rakendusest Sampai. Palun ava need kui Sul on Sampai paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https://sampai.my/\n\nNaudi reisimist Sampaiiga!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Järjehoidjate laadimine</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +155,7 @@
     <string name="load_kmz_failed">Järjehoidjate laadimine ei õnnestunud. Fail võib olla vigane.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Rakendus ei tunnista failitüüpi:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">„%1$s“ faili avamine ei õnnestunud\n \n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Muuda</string>
@@ -174,9 +168,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Jaga</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s Organic Mapsis</string>
+    <string name="share_place_subject">%1$s Sampaiis</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">Koht Organic Mapsis</string>
+    <string name="share_place_subject_default">Koht Sampaiis</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">E-post</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,8 +242,6 @@
     <string name="menu">Menüü</string>
     <!-- Text in menu -->
     <string name="website">Veebisait</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">Uudised</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Tagasiside</string>
     <!-- Text in menu -->
@@ -258,15 +250,9 @@
     <string name="help">Abiteave</string>
     <!-- Button in the main Help dialog -->
     <string name="faq">Korduma kippuvad küsimused</string>
-    <!-- Button in the main menu -->
-    <string name="donate">Anneta</string>
     <string name="already_donated">Juba annetasin</string>
     <string name="remind_me_later">Meenuta hiljem</string>
-    <string name="support_organic_maps">Toeta Organic Mapsi</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Toeta meie projekti</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Autoriõigused</string>
+    <string name="support_organic_maps">Toeta Sampaii</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Teata veast</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -316,8 +302,6 @@
     <string name="pref_appearance_dark">Tume kujundus</string>
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Hele hommikust kuni õhtuhämaruni</string>
-    <!-- Tex label above the Donate button -->
-    <string name="donate_description">Kingi miljonitele kasutajatele tasuta ja reklaamideta kaardid!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Teekonda järgides palun pea meeles:</string>
@@ -445,7 +429,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Kogukonna loodud OpenStreetMapi andmed seisuga %s. Lisateavet kaardi muutmise ja uuendamise kohta leiad OpenStreetMap.org saidist</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) on kogukonna projekt, mille eesmärk on luua vaba, tasuta ja avatud kaart. See on Organic Mapsi peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) on kogukonna projekt, mille eesmärk on luua vaba, tasuta ja avatud kaart. See on Sampaii peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!</string>
     <string name="login_to_make_edits_visible">Loo OpenStreetMapi konto või logi sisse, et avaldada oma kaardimuudatused kogu maailmale.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
@@ -460,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Märkus OpenStreetMapi vabatahtlikele (valikuline)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Kirjelda kaardil olevaid vigu või objekte, mida ei saa Organic Mapsiga muuta</string>
+    <string name="editor_note_hint">Kirjelda kaardil olevaid vigu või objekte, mida ei saa Sampaiiga muuta</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Sinu muudatused laaditakse üles avalikku <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> andmebaasi. Palun ära lisa isiklikku või autoriõigusega kaitstud teavet.</string>
     <string name="editor_more_about_osm">Lisateave OpenStreetMapi kohta</string>
@@ -470,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Käitaja: %s</string>
     <string name="editor_category_unsuitable_title">Ei leia sobivat kategooriat?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saidis. Vaata meie <a href="https://organicmaps.app/faq/editing/advanced-map-editing">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.</string>
+    <string name="editor_category_unsuitable_text">Sampai võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saidis. Vaata meie <a href="https://wiki.openstreetmap.org/wiki/Beginners%27_guide">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.</string>
     <string name="downloader_no_downloaded_maps_title">Sa ei ole kaarte alla laadinud</string>
     <string name="downloader_no_downloaded_maps_message">Laadi alla kaardid asukoha otsimiseks ja võrguühenduseta tee juhatamiseks.</string>
     <string name="current_location_unknown_error_title">Hetkeasukoht on teadmata.</string>
@@ -542,7 +526,7 @@
     <string name="placepage_add_stop">Lisa peatus</string>
     <string name="drag_to_reorder">Järjestuse muutmine</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Oma kaastöö automaatseks üleslaadimiseks palun logi OpenStreetMappi sisse. Lisateave <a href="https://github.com/organicmaps/organicmaps/issues/6144">leidub siin</a>.</string>
+    <string name="alert_reauth_message">Oma kaastöö automaatseks üleslaadimiseks palun logi OpenStreetMappi sisse.</string>
     <string name="dialog_error_storage_title">Andmeruumi ligipääsu probleem</string>
     <string name="dialog_error_storage_message">Väline andmeruum pole juurdepääsetav. SD-kaart võib olla eemaldatud, kahjustatud või failisüsteem on kirjutuskaitstud. Palun kontrolli oma SD-kaarti või võta meiega ühendust aadressil support\@sampai.my</string>
     <string name="setting_emulate_bad_storage">Imiteeri vigast andmeruumi</string>
@@ -757,38 +741,24 @@
     <string name="change_map_locale">Kaardi keel</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMapi kaardiandmed</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/et/faq/voice/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/et/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Aitäh, et kasutad meie kogukonna koostatud kaarte!</string>
-    <!-- App tip #01 -->
-    <string name="app_tip_01">Sinu annetuste ja toetusega saame luua maailma parimaid kaarte!</string>
-    <!-- App tip #02 -->
-    <string name="app_tip_02">Kas sulle meeldib meie rakendus? Palun anneta arendustöö toetamiseks! Ei meeldi veel? Palun anna põhjusest meile teada ja me parandame selle!</string>
-    <!-- App tip #03 -->
-    <string name="app_tip_03">Kui tead mõnda tarkvaraarendajat, võid paluda tal osaleda vajaliku funktsionaalsuse loomisel.</string>
     <!-- App tip #04 -->
     <string name="app_tip_04">Puuduta kaardil ükskõik kus, et valida midagi. Pika puudutusega saad peita ja kuvada kasutajaliidest.</string>
     <!-- App tip #05 -->
     <string name="app_tip_05">Kas tead, et saad kaardil valida oma praeguse asukoha?</string>
-    <!-- App tip #06 -->
-    <string name="app_tip_06">Saad aidata meie rakendust oma keelde tõlkida.</string>
-    <!-- App tip #07 -->
-    <string name="app_tip_07">Meie rakenduse on loonud mõned entusiastid ja kogukond.</string>
     <!-- App tip #08 -->
     <string name="app_tip_08">Saad hõlpsasti kaardiandmeid parandada ja täiustada.</string>
     <!-- App tip #09 -->
     <string name="app_tip_09">Meie põhieesmärk on luua kiireid, privaatsusele keskenduvaid ja hõlpsasti kasutatavaid kaarte, mis sulle meeldivad.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Nüüd kasutad telefoni ekraanil Organic Mapsi</string>
+    <string name="car_used_on_the_phone_screen">Nüüd kasutad telefoni ekraanil Sampaii</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Nüüd kasutad auto ekraanil Organic Mapsi</string>
+    <string name="car_used_on_the_car_screen">Nüüd kasutad auto ekraanil Sampaii</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Oled ühendatud Android Auto\'ga</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -796,7 +766,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Auto ekraanile</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps vajab juurdepääsu asukohale. Kui see on turvaline, kontrolli oma telefonis olevat teadet.</string>
+    <string name="aa_location_permissions_request">Sampai vajab juurdepääsu asukohale. Kui see on turvaline, kontrolli oma telefonis olevat teadet.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">See rakendus vajab sinu luba</string>
     <!-- Grant Permissions button. -->

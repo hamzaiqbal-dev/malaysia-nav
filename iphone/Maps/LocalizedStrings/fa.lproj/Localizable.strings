@@ -32,7 +32,7 @@
 "country_status_download_failed" = "دانلود با شکست مواجه شد";
 
 /* Text in About screen */
-"about_headline" = "رایگان برای همه ، ساخته شده با عشق";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• بدون تبلیغات، ردیابی، جمع‌آوری داده‌ها";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• بدون تخلیه باتری، آفلاین کار می کند";
 
 /* Text in About screen */
-"about_proposition_3" = "• سریع، ساده‌گرایی، توسعه‌یافته توسط اجتماع";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "بستن";
 "download" = "دانلود";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "سلام!\n\nنشانک‌های من ضمیمه شده‌اند؛ لطفا آن‌ها را در Organic Maps باز کنید. اگر برنامه نصب نشده است، می‌توانید آن را از اینجا دانلود کنید: https://omaps.app/get?kmz \n\nاز سفر با Organic Maps لذت ببرید!";
+"share_bookmarks_email_body" = "سلام!\n\nنشانک‌های من ضمیمه شده‌اند؛ لطفا آن‌ها را در Sampai باز کنید. اگر برنامه نصب نشده است، می‌توانید آن را از اینجا دانلود کنید: https://sampai.my/ \n\nاز سفر با Sampai لذت ببرید!";
 
 /* message title of loading file */
 "load_kmz_title" = "در حال بارگیری نشانک‌ها";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "مکان شما هنوز مشخص نشده است";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "من اینجا در Organic Maps هستم";
+"share_my_position" = "من اینجا در Sampai هستم";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ در Organic Maps";
+"share_place_subject" = "%1$@ در Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "مکانی در Organic Maps";
+"share_place_subject_default" = "مکانی در Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "در Organic Maps یا مرورگر باز کنید";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "در Sampai یا مرورگر باز کنید";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Organic Maps را دریافت کنید";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sampai را دریافت کنید";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "در یک برنامه دیگر باز کنید";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "وبگاه";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "اخبار";
-
 /* Text in menu */
 "rate_the_app" = "به برنامه امتیاز دهید";
 
@@ -295,10 +292,10 @@
 "donate" = "حمایت مالی";
 "already_donated" = "قبلاً اهدا شده";
 "remind_me_later" = "بعداً یادآوری کن";
-"support_organic_maps" = "پشتیبانی از Organic Maps";
+"support_organic_maps" = "پشتیبانی از Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "حق نشر و کپی رایت";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "گزارش خطا";
@@ -393,7 +390,7 @@
 "blue_gray" = "خاکستری کبود";
 
 /* Prints version number in About dialog */
-"version" = "نسخه Organic Maps: %@";
+"version" = "نسخه Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "ظاهری";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "داده های نقشه نادرست را گزارش یا اصلاح کنید";
-
-/* Button in the About screen */
-"volunteer" = "داوطلب شدن";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "دنبال کنید و با ما تماس بگیرید:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "اپراتور: %@";
 "editor_category_unsuitable_title" = "آیا نمی توانید یک دسته بندی مناسب پیدا کنید؟";
-"editor_category_unsuitable_text" = "Organic Maps اجازه میu200cدهد فقط دستهu200cهای نقطهu200cای ساده را اضافه کند، یعنی هیچ شهر، جاده، دریاچه، طرح کلی ساختمان و غیره وجود ندارد. لطفاً این دستهu200cها را مستقیماً به <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> اضافه کنید. برای دستورالعملu200cهای گام به گام، <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">راهنمای</a> ما را بررسی کنید.";
+"editor_category_unsuitable_text" = "Sampai اجازه میu200cدهد فقط دستهu200cهای نقطهu200cای ساده را اضافه کند، یعنی هیچ شهر، جاده، دریاچه، طرح کلی ساختمان و غیره وجود ندارد. لطفاً این دستهu200cها را مستقیماً به <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> اضافه کنید. برای دستورالعملu200cهای گام به گام، <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">راهنمای</a> ما را بررسی کنید.";
 "downloader_no_downloaded_maps_title" = "شما هیچ نقشه دانلود شده ای ندارید";
 "downloader_no_downloaded_maps_message" = "برای جست وجو یک مکان و استفاده از قابلیت ناوبری، نقشه‌ها را دانلود کنید.";
 "current_location_unknown_error_title" = "مکان فعلیتان ناشناس است.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "اگر نشانک‌ها زیاد باشند، نمایش نام آن‌ها روی نقشه ممکن است باعث کند شدن برنامه شود.";
 "show_to_the_right" = "در سمت راست نمایش دهید";
 "show_at_the_bottom" = "در پایین نمایش دهید";
-"enable_logging_warning_message" = "این گزینه ثبت گزارش را برای اهداف تشخیصی فعال می‌کند. برای کارکنان بخش پشتیبانی که مشکلات برنامه را عیب یابی می‌کنند، مفید باشد. این گزینه را تنها در صورت درخواست پشتیبانی Organic Maps فعال کنید.";
+"enable_logging_warning_message" = "این گزینه ثبت گزارش را برای اهداف تشخیصی فعال می‌کند. برای کارکنان بخش پشتیبانی که مشکلات برنامه را عیب یابی می‌کنند، مفید باشد. این گزینه را تنها در صورت درخواست پشتیبانی Sampai فعال کنید.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "رانندگی";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "برای دانلود، شما نیازمند فضای ذخیره سازی بیشتری هستید.لطفا داده‌های غیر ضروری خود را حذف کنید.";
-"editor_sharing_title" = "من نقشه‌های Organic Maps را بهبود بخشیدم";
+"editor_sharing_title" = "من نقشه‌های Sampai را بهبود بخشیدم";
 "editor_detailed_description_hint" = "اظهار نظر بیشتر";
-"editor_detailed_description" = "شما یک سری تغییرات در نقشه را برای انجمن OpenStreetMap ارسال کردید.جزئیات اضافی را که نتوانستید در Organic Maps ویرایش کنید را برایشان بنویسید.";
+"editor_detailed_description" = "شما یک سری تغییرات در نقشه را برای انجمن OpenStreetMap ارسال کردید.جزئیات اضافی را که نتوانستید در Sampai ویرایش کنید را برایشان بنویسید.";
 "current_location_unknown_error_message" = "خطایی در هنگام جست وجوی مکان شمارخ داده است.بررسی کنیید دستگاهتان به درستی کار می کند و دوباره تلاش کنید.";
 "location_services_disabled_header" = "سرویس موقعیت مکانی شما غیرفعال است";
 "location_services_disabled_message" = "دسترسی به موقعیت جغرافیایی را در تنظیمات دستگاه فعال کنید";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Privacy را انتخاب کنید";
 "location_services_disabled_on_device_3" = "3. Location Services را انتخاب کنید";
 "location_services_disabled_on_device_4" = "4. Location Services را روشن کنید";
-"location_services_disabled_on_device_additional_message" = "یا به استفاده از Organic Maps بدون موقعیت مکانی ادامه دهید";
+"location_services_disabled_on_device_additional_message" = "یا به استفاده از Sampai بدون موقعیت مکانی ادامه دهید";
 "placepage_call_button" = "تماس";
 "placepage_bookmark_name_hint" = "نام نشانک";
 "placepage_delete_bookmark_button" = "حذف نشانه";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "ضبط مسیر طی‌شده اخیر، غیرفعال شود؟";
 "off_recent_track_background_button" = "غیرفعال";
-"recent_track_background_dialog_message" = "Organic Maps از اطلاعات موقعیت مکانی شما در پس ضمینه برای ذخیره مسیر‌هایی که اخیرا سفر کرده اید استفاده می کند.";
+"recent_track_background_dialog_message" = "Sampai از اطلاعات موقعیت مکانی شما در پس ضمینه برای ذخیره مسیر‌هایی که اخیرا سفر کرده اید استفاده می کند.";
 "general_settings" = "تنظیمات عمومی";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "برای دیدن همه نشانکu200cها به تلفن بروید";
 "speedcams_alert_title_carplay_1" = "دوربین سرعت";
 "speedcams_alert_title_carplay_2" = "هشدارهای سرعت";
-"download_map_carplay" = "لطفا نقشه‌ها را در نرم افزار Organic Maps روی دستگاه خود دانلود کنید";
+"download_map_carplay" = "لطفا نقشه‌ها را در نرم افزار Sampai روی دستگاه خود دانلود کنید";
 "carplay_roundabout_exit" = "خروجی %@";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "برای بررسی خطوط تراز زوم کنید";
 "downloader_loading_ios" = "در حال دانلود";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/fa-IR/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Fa:About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "از شما برای استفاده از نقشه های ساخته شده توسط جامعه سپاسگزاریم!";
 
-/* App tip #01 */
-"app_tip_01" = "با کمک های مالی و حمایت شما، ما می توانیم بهترین نقشه های جهان را ایجاد کنیم!";
-
-/* App tip #02 */
-"app_tip_02" = "آیا برنامه ما را دوست دارید؟ لطفا برای حمایت از توسعه کمک مالی کنید! هنوز آن را دوست ندارید؟ لطفا به ما اطلاع دهید، و ما آن را تعمیر خواهیم کرد!";
-
-/* App tip #03 */
-"app_tip_03" = "اگر یک توسعه‌دهنده نرم‌افزار را می‌شناسید، می‌توانید از او بخواهید ویژگی مورد نیاز خود را پیاده‌سازی کند.";
-
 /* App tip #04 */
 "app_tip_04" = "برای انتخاب هر چیزی روی هر نقطه از نقشه ضربه بزنید. برای مخفی کردن و نشان دادن رابط، ضربه طولانی بزنید.";
 
 /* App tip #05 */
 "app_tip_05" = "آیا می دانید که می توانید مکان فعلی خود را روی نقشه انتخاب کنید؟";
-
-/* App tip #06 */
-"app_tip_06" = "شما می توانید به ترجمه برنامه ما به زبان خود کمک کنید.";
-
-/* App tip #07 */
-"app_tip_07" = "برنامه ما توسط تعدادی از علاقه مندان و جامعه توسعه یافته است.";
 
 /* App tip #08 */
 "app_tip_08" = "شما به راحتی می توانید داده های نقشه را اصلاح و بهبود دهید.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "هدف اصلی ما ساختن نقشه هایی سریع، متمرکز بر حریم خصوصی و با کاربری آسان است که شما عاشق آن خواهید شد.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "شما اکنون در حال استفاده از Organic Maps بر روی صفحهٔ تلفن همراه هستید";
+"car_used_on_the_phone_screen" = "شما اکنون در حال استفاده از Sampai بر روی صفحهٔ تلفن همراه هستید";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "شما اکنون در حال استفاده از Organic Maps بر روی صفحهٔ خودرو هستید";
+"car_used_on_the_car_screen" = "شما اکنون در حال استفاده از Sampai بر روی صفحهٔ خودرو هستید";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "با تلفن ادامه دهید";
@@ -1082,7 +1055,7 @@
 "map" = "نقشه";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "آیا مایلید گزارش باگ را برای توسعه‌دهندگان ارسال کنید؟ ما به کاربران خود اتکا می‌کنیم زیرا Organic Maps هیچ‌گونه اطلاعات خطایی را به‌طور خودکار جمع‌آوری نمی‌کند. پیشاپیش از حمایت شما از Organic Maps سپاسگزاریم!";
+"bugreport_alert_message" = "آیا مایلید گزارش باگ را برای توسعه‌دهندگان ارسال کنید؟ ما به کاربران خود اتکا می‌کنیم زیرا Sampai هیچ‌گونه اطلاعات خطایی را به‌طور خودکار جمع‌آوری نمی‌کند. پیشاپیش از حمایت شما از Sampai سپاسگزاریم!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "همگام سازی iCloud را فعال کنید";

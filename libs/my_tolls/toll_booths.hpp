@@ -19,6 +19,8 @@ struct TollBooth
   ms::LatLon m_latLon;
   // Distance from the route start to the booth's projection on the route, in meters.
   double m_distanceAlongRouteM = 0.0;
+  // Road numbers of the ways at the booth, ';'-separated: the name alone can't tell plazas of two highways apart.
+  std::string m_roadRefs;
 };
 
 // Projection of |point| on |polyline| (both in mercator): the polyline length before the nearest
@@ -30,8 +32,8 @@ struct Projection
 };
 Projection ProjectOnPolyline(std::vector<m2::PointD> const & polyline, m2::PointD const & point);
 
-// Named toll booths of the loaded maps lying within |maxDistanceM| of |polyline| (mercator), ordered
-// from the route start. Unnamed booths are skipped: they cannot be priced. Safe to call from any
+// Toll booths of the loaded maps lying within |maxDistanceM| of |polyline| (mercator), ordered from
+// the route start. |m_name| is the local name, empty for an unnamed booth. Safe to call from any
 // thread; reads only the map data.
 std::vector<TollBooth> FindTollBoothsAlongRoute(DataSource const & dataSource, std::vector<m2::PointD> const & polyline,
                                                 double maxDistanceM);

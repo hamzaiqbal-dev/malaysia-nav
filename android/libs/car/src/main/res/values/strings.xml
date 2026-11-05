@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Downloading</string>
     <string name="download_map_title">Download the world overview map</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps in Android Auto needs location permissions to work effectively</string>
+    <string name="aa_request_permission_activity_text">Sampai in Android Auto needs location permissions to work effectively</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Grant Permissions</string>
 </resources>

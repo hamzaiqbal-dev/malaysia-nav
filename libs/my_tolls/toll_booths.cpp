@@ -3,7 +3,10 @@
 #include "indexer/classificator.hpp"
 #include "indexer/data_source.hpp"
 #include "indexer/feature.hpp"
+#include "indexer/feature_algo.hpp"
 #include "indexer/feature_data.hpp"
+#include "indexer/ftypes_matcher.hpp"
+#include "indexer/scales.hpp"
 
 #include "geometry/mercator.hpp"
 #include "geometry/parametrized_segment.hpp"
@@ -23,6 +26,8 @@ int constexpr kTollBoothScale = 12;
 // Querying the whole route's bounding box at once would read every feature of a long trip, so the
 // polyline is cut into chunks of at most this many segments and each chunk's box is queried alone.
 size_t constexpr kSegmentsPerChunk = 32;
+// A booth node sits on its road; the plaza's lanes may fan out around the mapped way.
+double constexpr kRoadSearchRadiusM = 40.0;
 
 m2::RectD ExpandedBoundingRect(std::vector<m2::PointD> const & polyline, size_t first, size_t last, double marginM)
 {
@@ -32,6 +37,23 @@ m2::RectD ExpandedBoundingRect(std::vector<m2::PointD> const & polyline, size_t 
   double const margin = mercator::MetersToMercator(marginM);
   rect.Inflate(margin, margin);
   return rect;
+}
+
+std::string FindRoadRefs(DataSource const & dataSource, m2::PointD const & center)
+{
+  std::string refs;
+  dataSource.ForEachInRect([&](FeatureType & ft)
+  {
+    if (ft.GetGeomType() != feature::GeomType::Line || !ftypes::IsWayChecker::Instance()(ft))
+      return;
+    std::string const & ref = ft.GetRef();
+    if (ref.empty() || feature::GetMinDistanceMeters(ft, center) > kRoadSearchRadiusM)
+      return;
+    if (!refs.empty())
+      refs += ';';
+    refs += ref;
+  }, mercator::RectByCenterXYAndSizeInMeters(center, kRoadSearchRadiusM), scales::GetUpperScale());
+  return refs;
 }
 }  // namespace
 
@@ -83,18 +105,24 @@ std::vector<TollBooth> FindTollBoothsAlongRoute(DataSource const & dataSource, s
       if (!seen.insert(ft.GetID()).second)
         return;
 
-      std::string name(ft.GetReadableName());
+      // Prices are keyed by the local name, which the user's language must not replace. A booth with
+      // no name stays in: the route still pays it, so the total has to read as a lower bound.
+      std::string name(ft.GetDefaultName());
       if (name.empty())
-        return;
+        name = ft.GetReadableName();
 
       m2::PointD const center = ft.GetCenter();
       Projection const projection = ProjectOnPolyline(polyline, center);
       if (projection.m_distanceM > maxDistanceM)
         return;
 
-      result.push_back({std::move(name), mercator::ToLatLon(center), projection.m_alongM});
+      result.push_back({std::move(name), mercator::ToLatLon(center), projection.m_alongM, {}});
     }, rect, kTollBoothScale);
   }
+
+  // Not inside the search above: only the booths on the route are worth reading the roads for.
+  for (auto & booth : result)
+    booth.m_roadRefs = FindRoadRefs(dataSource, mercator::FromLatLon(booth.m_latLon));
 
   std::sort(result.begin(), result.end(), [](TollBooth const & lhs, TollBooth const & rhs)
   { return lhs.m_distanceAlongRouteM < rhs.m_distanceAlongRouteM; });

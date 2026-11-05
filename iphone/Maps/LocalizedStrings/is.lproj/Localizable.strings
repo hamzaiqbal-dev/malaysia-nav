@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Mistókst að sækja";
 
 /* Text in About screen */
-"about_headline" = "Ókeypis fyrir alla, unnið af alúð";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Engar auglýsingar, engar njósnir, engin gagnasöfnun";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Tæmir ekki rafhlöðuna, virkar án nettengingar";
 
 /* Text in About screen */
-"about_proposition_3" = "• Hraðvirkt, mínímalískt, hannað af notendunum";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Loka";
 "download" = "Sækja";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Halló!\n\nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í Organic Maps forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://omaps.app/get?kmz \n\nNjóttu ferðarinnar með Organic Maps!";
+"share_bookmarks_email_body" = "Halló!\n\nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í Sampai forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://sampai.my/ \n\nNjóttu ferðarinnar með Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Hleð inn bókamerkjum";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Ekki er enn búið að ákvarða staðsetninguna þína";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Ég er hér í Organic Maps";
+"share_my_position" = "Ég er hér í Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ í Organic Maps";
+"share_place_subject" = "%1$@ í Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Staður í Organic Maps";
+"share_place_subject_default" = "Staður í Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Opna í Organic Maps eða vafra";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Opna í Sampai eða vafra";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Sækja Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sækja Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Opna í öðru forriti";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Vefsvæði";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Fréttir";
-
 /* Text in menu */
 "rate_the_app" = "Gefðu forritinu einkunn";
 
@@ -295,10 +292,10 @@
 "donate" = "Styrkja";
 "already_donated" = "Hef þegar styrkt verkefnið";
 "remind_me_later" = "Áminna mig síðar";
-"support_organic_maps" = "Styddu við Organic Maps";
+"support_organic_maps" = "Styddu við Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Höfundarréttur";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Tilkynna um villu";
@@ -393,7 +390,7 @@
 "blue_gray" = "Blágrátt";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps útgáfa: %@";
+"version" = "Sampai útgáfa: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Útlit";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Tilkynntu eða lagaðu röng kortagögn";
-
-/* Button in the About screen */
-"volunteer" = "Bjóða sig fram";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Fylgjast með okkur og hafa samband:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Rekstraraðili: %@";
 "editor_category_unsuitable_title" = "Finnurðu ekki hentugan flokk?";
-"editor_category_unsuitable_text" = "Organic Maps leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Skoðaðu <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.";
+"editor_category_unsuitable_text" = "Sampai leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Skoðaðu <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.";
 "downloader_no_downloaded_maps_title" = "Þú hefur ekki sótt nein kort";
 "downloader_no_downloaded_maps_message" = "Sæktu landakort til að leita og rata um án nettengingar.";
 "current_location_unknown_error_title" = "Fyrirliggjandi staðsetning er óþekkt.";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Til að sækja þarftu meira pláss. Eyddu öllum ónauðsynlegum gögnum.";
-"editor_sharing_title" = "Ég hef bætt landakort Organic Maps";
+"editor_sharing_title" = "Ég hef bætt landakort Sampai";
 "editor_detailed_description_hint" = "Ítarleg athugasemd";
-"editor_detailed_description" = "Breytingarnar á kortinu sem þú hefur stungið upp á verða sendar til þátttakenda í OpenStreetMap-verkefninu. Lýstu öllum nánari smáatriðum sem ekki er hægt að breyta í Organic Maps.";
+"editor_detailed_description" = "Breytingarnar á kortinu sem þú hefur stungið upp á verða sendar til þátttakenda í OpenStreetMap-verkefninu. Lýstu öllum nánari smáatriðum sem ekki er hægt að breyta í Sampai.";
 "current_location_unknown_error_message" = "Villa kom upp við að ákvarða staðsetninguna þína. Athugaðu hvort tækið þitt virki rétt og reyndu aftur síðar.";
 "location_services_disabled_header" = "Staðsetningarþjónustur eru óvirkar";
 "location_services_disabled_message" = "Virkjaðu aðgang að hnattstaðsetningu í stillingum tækisins";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Veldu meðferð persónuupplýsinga";
 "location_services_disabled_on_device_3" = "3. Veldu staðsetningarþjónustur";
 "location_services_disabled_on_device_4" = "4. Kveiktu á staðsetningarþjónustum";
-"location_services_disabled_on_device_additional_message" = "Eða haltu áfram að nota Organic Maps án staðsetningar";
+"location_services_disabled_on_device_additional_message" = "Eða haltu áfram að nota Sampai án staðsetningar";
 "placepage_call_button" = "Hringja";
 "placepage_bookmark_name_hint" = "Heiti bókamerkis";
 "placepage_delete_bookmark_button" = "Eyða bókamerki";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Gera óvirka upptöku af leiðinni sem þú varst að ferðast eftir?";
 "off_recent_track_background_button" = "Gera óvirkt";
-"recent_track_background_dialog_message" = "Organic Maps notar staðsetningu þína í bakgrunni til að skrá leiðina sem þú varst að ferðast eftir.";
+"recent_track_background_dialog_message" = "Sampai notar staðsetningu þína í bakgrunni til að skrá leiðina sem þú varst að ferðast eftir.";
 "general_settings" = "Almennar stillingar";
 
 /* "traffic" as in road congestion */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Renndu að til að skoða hæðarlínur";
 "downloader_loading_ios" = "Sæki";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Takk fyrir að nota landakortin frá samfélaginu okkar!";
 
-/* App tip #01 */
-"app_tip_01" = "Með framlögum þínum og stuðningi getum við búið til bestu landakortin í heiminum!";
-
-/* App tip #02 */
-"app_tip_02" = "Líkar þér forritið okkar? Styrktu okkur til að styðja áframhaldandi þróun þess! Líkar þér ekki eitthvað? Láttu okkur vita og við munum laga það!";
-
-/* App tip #03 */
-"app_tip_03" = "Ef þú þekkir einhvern hforritara/ugbúnaðarhönnuð, þá geturðu beðið hana/hann um að búa til einhvern eiginleika sem þér finnst vanta.";
-
 /* App tip #04 */
 "app_tip_04" = "Ýttu einhversstaðar á kortið til að velja atriði. Að ýta lengi er notað til að sýna viðmótið.";
 
 /* App tip #05 */
 "app_tip_05" = "Veist þú hvernig hægt er að velja núverandi staðsetningu þína?";
-
-/* App tip #06 */
-"app_tip_06" = "Hjálpaðu við að þýða þetta forrit yfir á tungumálið þitt.";
-
-/* App tip #07 */
-"app_tip_07" = "Forritið er hannað af nokkrum áhugasömum notendum og samfélaginu í kringum þá.";
 
 /* App tip #08 */
 "app_tip_08" = "Þú getur auðveldlega lagfært og bætt kortagögnin.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Meginmarkmið okkar er að byggja hraðvirk og auðveld landakort sm þú kannt að meta og sem passa upp á persónuupplýsingar þínar.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Þú ert núna að nota Organic Maps á símaskjánum";
+"car_used_on_the_phone_screen" = "Þú ert núna að nota Sampai á símaskjánum";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Þú ert núna að nota Organic Maps á bílskjánum";
+"car_used_on_the_car_screen" = "Þú ert núna að nota Sampai á bílskjánum";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Halda áfram í símanum";
@@ -1082,7 +1055,7 @@
 "map" = "Landakort";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Myndirðu vilja senda villuskýrslu til hönnuðanna?\nVið reiðum okkur á notendurna þar sem Organic Maps safnar ekki sjálfkrafa neinum villuupplýsingum. Fyrirfram þakkir fyrir að styðja við Organic Maps!";
+"bugreport_alert_message" = "Myndirðu vilja senda villuskýrslu til hönnuðanna?\nVið reiðum okkur á notendurna þar sem Sampai safnar ekki sjálfkrafa neinum villuupplýsingum. Fyrirfram þakkir fyrir að styðja við Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Virkja samstillingu við iCloud";

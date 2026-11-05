@@ -32,7 +32,7 @@
 "country_status_download_failed" = "다운로드에 실패하였습니다";
 
 /* Text in About screen */
-"about_headline" = "사랑으로 만든 모든 사람에게 무료";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• 광고 없음, 추적 없음, 데이터 수집 없음";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• 배터리 소모 없음, 오프라인에서 작동";
 
 /* Text in About screen */
-"about_proposition_3" = "• 빠르고 미니멀한, 커뮤니티가 개발한";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "닫기";
 "download" = "다운로드";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "안녕하세요!\n\n제 북마크를 첨부했습니다. Organic Maps에서 열어주세요. 설치되어 있지 않다면 여기에서 다운로드할 수 있습니다: https://omaps.app/get?kmz\n\nOrganic Maps와 함께 즐거운 여행 되세요!";
+"share_bookmarks_email_body" = "안녕하세요!\n\n제 북마크를 첨부했습니다. Sampai에서 열어주세요. 설치되어 있지 않다면 여기에서 다운로드할 수 있습니다: https://sampai.my/\n\nSampai와 함께 즐거운 여행 되세요!";
 
 /* message title of loading file */
 "load_kmz_title" = "즐겨찾기 로드";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "귀하의 위치를 아직 알아내지 못 했습니다";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Organic Maps에서 여기에 있습니다";
+"share_my_position" = "Sampai에서 여기에 있습니다";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ - Organic Maps";
+"share_place_subject" = "%1$@ - Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Organic Maps의 장소";
+"share_place_subject_default" = "Sampai의 장소";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Organic Maps 또는 브라우저에서 열기";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Sampai 또는 브라우저에서 열기";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Organic Maps 받기";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Sampai 받기";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "다른 앱에서 열기";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "웹사이트";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "소식";
-
 /* Text in menu */
 "rate_the_app" = "앱 평가";
 
@@ -295,10 +292,10 @@
 "donate" = "기부";
 "already_donated" = "기부완료";
 "remind_me_later" = "나중에 알림";
-"support_organic_maps" = "Organic Maps를 지원해주세요";
+"support_organic_maps" = "Sampai를 지원해주세요";
 
-/* Button in the main Help dialog */
-"copyright" = "저작권";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "오류 신고";
@@ -393,7 +390,7 @@
 "blue_gray" = "청회색";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps 버전: %@";
+"version" = "Sampai 버전: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "모양";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "잘못된 지도 데이터 신고 또는 수정";
-
-/* Button in the About screen */
-"volunteer" = "자원봉사에 참여하려면";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "팔로우하고 문의하세요:";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "연산자: %@";
 "editor_category_unsuitable_title" = "적합한 카테고리를 찾을 수 없나요?";
-"editor_category_unsuitable_text" = "Organic Maps 단순한 지점 카테고리만 추가할 수 있습니다. 즉, 도시, 도로, 호수, 건물 윤곽선 등은 추가할 수 없습니다. 이러한 카테고리는 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>에 직접 추가해 주십시오. 자세한 단계별 안내는 <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">가이드를</a> 확인해 주세요.";
+"editor_category_unsuitable_text" = "Sampai 단순한 지점 카테고리만 추가할 수 있습니다. 즉, 도시, 도로, 호수, 건물 윤곽선 등은 추가할 수 없습니다. 이러한 카테고리는 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>에 직접 추가해 주십시오. 자세한 단계별 안내는 <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">가이드를</a> 확인해 주세요.";
 "downloader_no_downloaded_maps_title" = "지도를 다운로드하지 않았습니다";
 "downloader_no_downloaded_maps_message" = "오프라인으로 위치를 검색하려면 지도를 다운로드하세요.";
 "current_location_unknown_error_title" = "현재 위치를 알 수 없습니다.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "북마크가 너무 많을 경우 지도에 북마크 이름을 표시하면 앱 속도가 느려질 수 있습니다.";
 "show_to_the_right" = "오른쪽에 표시";
 "show_at_the_bottom" = "하단에 표시";
-"enable_logging_warning_message" = "이 옵션은 진단을 목적으로 로그를 엽니다 이를 통해 앱에 대한 문제를 분석하는 우리의 스탭을 도울 수 있습니다 이 옵션은 오직 Organic Maps 지원 요청에서만 가능합니다.";
+"enable_logging_warning_message" = "이 옵션은 진단을 목적으로 로그를 엽니다 이를 통해 앱에 대한 문제를 분석하는 우리의 스탭을 도울 수 있습니다 이 옵션은 오직 Sampai 지원 요청에서만 가능합니다.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "자동차";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "다운로드하려면, 더 많은 여유 공간이 필요합니다. 불필요한 데이터를 삭제하십시오.";
-"editor_sharing_title" = "나는 Organic Maps 지도를 향상함";
+"editor_sharing_title" = "나는 Sampai 지도를 향상함";
 "editor_detailed_description_hint" = "상세 설명";
-"editor_detailed_description" = "귀하가 제안한 변경 사항은 OpenStreetMap 커뮤니티로 전송됩니다. Organic Maps에서 편집할 수 없는 세부정보를 작성해 주세요.";
+"editor_detailed_description" = "귀하가 제안한 변경 사항은 OpenStreetMap 커뮤니티로 전송됩니다. Sampai에서 편집할 수 없는 세부정보를 작성해 주세요.";
 "current_location_unknown_error_message" = "위치 검색 중 오류가 발생했습니다. 장치가 올바르게 작동되는지 확인하고 다시 시도하세요.";
 "location_services_disabled_header" = "위치 식별 사용할 수 없음";
 "location_services_disabled_message" = "장치 설정에서 위치 정보에 액세스할 수 있음";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. 개인정보 보호 선택";
 "location_services_disabled_on_device_3" = "3. 위치 서비스 선택";
 "location_services_disabled_on_device_4" = "4. 위치 서비스 켜기";
-"location_services_disabled_on_device_additional_message" = "또는 위치 정보 없이 Organic Maps을 계속 사용하세요";
+"location_services_disabled_on_device_additional_message" = "또는 위치 정보 없이 Sampai을 계속 사용하세요";
 "placepage_call_button" = "전화";
 "placepage_bookmark_name_hint" = "즐겨찾기 이름";
 "placepage_delete_bookmark_button" = "즐겨찾기 삭제";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "최근 여행한 경로 녹음을 비활성화하시겠습니까?";
 "off_recent_track_background_button" = "비활성화";
-"recent_track_background_dialog_message" = "Organic Maps는 최근 여행한 경로를 녹음하기 위해 배경 화면에서 지역 위치 서비스를 사용합니다.";
+"recent_track_background_dialog_message" = "Sampai는 최근 여행한 경로를 녹음하기 위해 배경 화면에서 지역 위치 서비스를 사용합니다.";
 "general_settings" = "일반 설정";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "모든 북마크를 보려면 휴대폰으로 전환하세요.";
 "speedcams_alert_title_carplay_1" = "과속 경고";
 "speedcams_alert_title_carplay_2" = "속도단속 카메라";
-"download_map_carplay" = "Organic Maps 앱 안의 지도들을 디바이스에 다운로드하세요";
+"download_map_carplay" = "Sampai 앱 안의 지도들을 디바이스에 다운로드하세요";
 "carplay_roundabout_exit" = "%@번 출구";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "등치선 탐색을 위한 확대";
 "downloader_loading_ios" = "다운로드 중";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/Ko:OpenStreetMap_소개";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "커뮤니티에서 제작한 지도를 이용해 주셔서 감사합니다!";
 
-/* App tip #01 */
-"app_tip_01" = "여러분의 기부와 지원으로 우리는 세계 최고의 지도를 만들 수 있습니다!";
-
-/* App tip #02 */
-"app_tip_02" = "우리 앱이 마음에 드시나요? 발전을 위해 기부해주세요! 아직 마음에 들지 않으세요? 알려주시면 수정하겠습니다!";
-
-/* App tip #03 */
-"app_tip_03" = "소프트웨어 개발자를 알고 있다면 필요한 기능을 구현하도록 요청할 수 있습니다.";
-
 /* App tip #04 */
 "app_tip_04" = "지도의 아무 곳이나 탭하여 원하는 항목을 선택합니다. 길게 탭하면 인터페이스를 숨기고 다시 표시할 수 있습니다.";
 
 /* App tip #05 */
 "app_tip_05" = "지도에서 현재 위치를 선택할 수 있다는 것을 알고 계셨나요?";
-
-/* App tip #06 */
-"app_tip_06" = "우리 앱을 귀하의 언어로 번역하는 데 도움을 줄 수 있습니다.";
-
-/* App tip #07 */
-"app_tip_07" = "우리 앱은 소수의 열성팬과 커뮤니티에 의해 개발되었습니다.";
 
 /* App tip #08 */
 "app_tip_08" = "지도 데이터를 쉽게 수정하고 개선할 수 있습니다.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "우리의 주요 목표는 귀하가 좋아할 빠르고 개인 정보 보호에 중점을 두고 사용하기 쉬운 지도를 구축하는 것입니다.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "현재 휴대폰 화면에서 Organic Maps을 이용 중입니다";
+"car_used_on_the_phone_screen" = "현재 휴대폰 화면에서 Sampai을 이용 중입니다";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "현재 차량 화면에서 Organic Maps을 이용 중입니다";
+"car_used_on_the_car_screen" = "현재 차량 화면에서 Sampai을 이용 중입니다";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "전화기에서 계속";
@@ -1082,7 +1055,7 @@
 "map" = "지도";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "개발자에게 버그 보고서를 보내시겠습니까?\nOrganic Maps는 오류 정보를 자동으로 수집하지 않으므로, 저희는 사용자 여러분의 협조에 의존하고 있습니다. Organic Maps을 이용해 주셔서 미리 감사드립니다!";
+"bugreport_alert_message" = "개발자에게 버그 보고서를 보내시겠습니까?\nSampai는 오류 정보를 자동으로 수집하지 않으므로, 저희는 사용자 여러분의 협조에 의존하고 있습니다. Sampai을 이용해 주셔서 미리 감사드립니다!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "iCloud 동기화 활성화";

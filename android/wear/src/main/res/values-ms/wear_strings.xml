@@ -3,7 +3,7 @@
 
     <!-- SECTION: gps strings -->
     <!-- Displayed in the Wear OS app when no navigation is active on the phone. -->
-    <string name="wear_no_navigation_message">Buka Organic Maps pada telefon anda untuk mula bernavigasi.</string>
+    <string name="wear_no_navigation_message">Buka Sampai pada telefon anda untuk mula bernavigasi.</string>
     <!-- Displayed in the Wear OS app when navigation is active on the phone. -->
     <string name="wear_navigation_active_message">Navigasi sedang berjalan pada telefon anda.</string>
 </resources>

@@ -4,7 +4,10 @@ import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import androidx.annotation.MainThread
+import app.organicmaps.R
 import app.organicmaps.sdk.my.MyTolls
+import app.organicmaps.sdk.routing.RoutingController
+import java.util.Locale
 import java.util.concurrent.Executors
 
 /**
@@ -24,25 +27,37 @@ object RouteTolls {
     private var requestId = 0
 
     /**
-     * Prices the route currently built; [onResult] gets null when there is no route. A newer call
-     * cancels the delivery of an older one, so a rerouted trip never shows the previous total.
+     * Prices the route currently built; [onResult] gets null without a car route, since walkers
+     * and cyclists pay no toll. A newer call cancels the delivery of an older one, so a rerouted trip
+     * never shows the previous total.
      */
     @MainThread
     fun compute(context: Context, onResult: (RouteTollTotal?) -> Unit) {
-        val polyline = MyTolls.nativeGetRoutePolyline()
+        val id = ++requestId
+        val polyline = if (RoutingController.get().isVehicleRouterType) MyTolls.nativeGetRoutePolyline() else null
         if (polyline == null) {
             onResult(null)
             return
         }
-        val id = ++requestId
         val appContext = context.applicationContext
         executor.execute {
             val tollTable = table ?: loadTable(appContext).also { table = it }
             val booths = MyTolls.nativeFindTollBooths(polyline, MAX_DISTANCE_M)
-                .map { RouteTollBooth(it.mName, it.mDistanceAlongRouteM) }
+                .map { RouteTollBooth(it.mName, it.mDistanceAlongRouteM, TollTable.parseRoadRefs(it.mRoadRefs)) }
             val total = tollTable.priceRoute(booths)
             mainHandler.post { if (id == requestId) onResult(total) }
         }
+    }
+
+    /** The amount with its currency, e.g. "RM 4.20+". */
+    fun amountText(context: Context, total: RouteTollTotal): String =
+        context.getString(R.string.my_nav_toll_amount, NavHudFormat.tollAmount(total, Locale.getDefault()))
+
+    /** Route summary text: "Toll RM 4.20", only "Toll" with no priced booth, null on a toll-free route. */
+    fun summary(context: Context, total: RouteTollTotal?): String? {
+        if (total == null || total.boothCount == 0) return null
+        val label = context.getString(R.string.my_nav_toll)
+        return if (total.hasPrice) "$label ${amountText(context, total)}" else label
     }
 
     private fun loadTable(context: Context): TollTable =

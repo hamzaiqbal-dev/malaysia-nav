@@ -125,8 +125,6 @@ std::string_view constexpr kDonationTapCountKey = "DonationTapCount";
 
 // The gift box is shown from 00:00 UTC of the start date until 00:00 UTC of the end date,
 // i.e. the end date is the first day without it. Update both dates to run the next campaign.
-auto const kCrowdfundingStartTime = base::YYMMDDToSecondsSinceEpoch(251220);
-auto const kCrowdfundingEndTime = base::YYMMDDToSecondsSinceEpoch(260120);
 
 auto constexpr kLargeFontsScaleFactor = 1.6;
 size_t constexpr kMaxTrafficCacheSizeBytes = 64 /* Mb */ * 1024 * 1024;
@@ -362,9 +360,9 @@ Framework::Framework(FrameworkParams const & params, bool loadMaps)
   m_stringsBundle.SetDefaultString("open_in_app", "Open in Another App");
   m_stringsBundle.SetDefaultString("postal_code", "Postal Code");
   // Placeholder-free labels used by GetShareData; platforms override with localized values.
-  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Organic Maps");
-  m_stringsBundle.SetDefaultString("share_open_in_om_or_browser", "Open in Organic Maps or in a browser");
-  m_stringsBundle.SetDefaultString("share_get_om", "Get Organic Maps");
+  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Sampai");
+  m_stringsBundle.SetDefaultString("share_open_in_om_or_browser", "Open in Sampai or in a browser");
+  m_stringsBundle.SetDefaultString("share_get_om", "Get Sampai");
 
   m_featuresFetcher.InitClassificator();
   m_featuresFetcher.SetOnMapDeregisteredCallback(std::bind(&Framework::OnMapDeregistered, this, _1));
@@ -1144,8 +1142,15 @@ void Framework::LoadViewport()
   }
   else
   {
-    ShowAll();
+    if (m_drapeEngine != nullptr)
+      m_drapeEngine->SetModelViewAnyRect(m2::AnyRectD(GetFirstStartRect()), false /* isAnim */,
+                                         false /* useVisibleViewport */);
   }
+}
+
+m2::RectD Framework::GetFirstStartRect()
+{
+  return {mercator::FromLatLon(0.85, 99.6), mercator::FromLatLon(7.4, 119.3)};
 }
 
 void Framework::ShowAll()
@@ -3914,35 +3919,6 @@ void Framework::OnPowerSchemeChanged(power_management::Scheme const actualScheme
 
 bool Framework::ShouldShowProducts() const
 {
-  auto const connectionStatus = Platform::ConnectionStatus();
-  if (connectionStatus == Platform::EConnectionType::CONNECTION_NONE)
-    return false;
-
-  std::string donateUrl;
-  if (!settings::Get(settings::kDonateUrl, donateUrl))  // donation is disabled
-    return false;
-
-  if (!m_usageStats.IsLoyalUser())
-    return false;
-
-  if (!HasPlacePageInfo())  // happens after the POI is deleted via the editor
-    return false;
-
-  if (!storage::IsPointCoveredByDownloadedMaps(GetCurrentPlacePageInfo().GetMercator(), m_storage, *m_infoGetter))
-    return false;
-
-  uint64_t popupCloseTime;
-  std::string productCloseReason;
-  if (!settings::Get(kPlacePageProductsPopupCloseTime, popupCloseTime) ||
-      !settings::Get(kPlacePageProductsPopupCloseReason, productCloseReason))
-    return true;  // The popup was never closed.
-
-  auto const now = base::SecondsSinceEpoch();
-  auto const timeout = GetTimeoutForReason(FromString(productCloseReason));
-  bool const timeoutExpired = popupCloseTime + timeout < now;
-  if (timeoutExpired)
-    return true;
-
   return false;
 }
 
@@ -4060,23 +4036,12 @@ void Framework::DidShowRateUsRequest() const
 
 std::string Framework::GetDonateUrl() const
 {
-  std::string url;
-  UNUSED_VALUE(settings::Get(settings::kDonateUrl, url));
-  if (url.ends_with("organicmaps.app/donate/"))
-    return platform::GetLocalizedString("translated_om_site_url") + "donate/";
-  return url;
+  return {};
 }
 
 bool Framework::CanShowCrowdfundingPromo() const
 {
-  auto const now = base::SecondsSinceEpoch();
-  if (now < kCrowdfundingStartTime || now > kCrowdfundingEndTime)
-    return false;
-
-  // Don't nag users who have already opened the donation page during this campaign.
-  uint64_t lastDonationTapTime = 0;
-  settings::TryGet(kDonationTapTimeKey, lastDonationTapTime);
-  return lastDonationTapTime < kCrowdfundingStartTime;
+  return false;
 }
 
 void Framework::DidShowDonationPage() const

@@ -32,7 +32,7 @@
 "country_status_download_failed" = "Échec lors du téléchargement";
 
 /* Text in About screen */
-"about_headline" = "Gratuit pour tout le monde, fait avec amour";
+"about_headline" = "Made in Malaysia, for Malaysians";
 
 /* Text in About screen */
 "about_proposition_1" = "• Pas de pub, pas de suivi, pas de collecte de données";
@@ -41,7 +41,7 @@
 "about_proposition_2" = "• Préserve la batterie, fonctionne hors ligne";
 
 /* Text in About screen */
-"about_proposition_3" = "• Rapide, minimaliste, développé par la communauté";
+"about_proposition_3" = "• Fast, simple, Bahasa Melayu first";
 "close" = "Fermer";
 "download" = "Télécharger";
 
@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Bonjour !\n\nVous trouverez ci-joint mes signets de l'appli Organic Maps. Veuillez les ouvrir si vous avez installé Organic Maps. Si vous ne l'avez pas, téléchargez l'application pour votre appareil iOS ou Android en suivant ce lien : https://omaps.app/get?kmz\n\nBon voyage avec Organic Maps !";
+"share_bookmarks_email_body" = "Bonjour !\n\nVous trouverez ci-joint mes signets de l'appli Sampai. Veuillez les ouvrir si vous avez installé Sampai. Si vous ne l'avez pas, téléchargez l'application pour votre appareil iOS ou Android en suivant ce lien : https://sampai.my/\n\nBon voyage avec Sampai !";
 
 /* message title of loading file */
 "load_kmz_title" = "Chargement des signets";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Votre position n'a pas encore été déterminée";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Je suis ici sur Organic Maps";
+"share_my_position" = "Je suis ici sur Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ sur Organic Maps";
+"share_place_subject" = "%1$@ sur Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Un lieu sur Organic Maps";
+"share_place_subject_default" = "Un lieu sur Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Ouvrir dans Organic Maps ou dans un navigateur";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Ouvrir dans Sampai ou dans un navigateur";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Télécharger Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Télécharger Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Ouvrir dans une autre application";
@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Site internet";
 
-/* Text in About menu, opens Organic Maps news website */
-"news" = "Nouvelles";
-
 /* Text in menu */
 "rate_the_app" = "Évaluer l'appli";
 
@@ -295,10 +292,10 @@
 "donate" = "Faire un don";
 "already_donated" = "Déjà donné";
 "remind_me_later" = "Rappeler plus tard";
-"support_organic_maps" = "Soutenir Organic Maps";
+"support_organic_maps" = "Soutenir Sampai";
 
-/* Button in the main Help dialog */
-"copyright" = "Tous droits réservés";
+/* Button in the main Help dialog; opens the list of open-source components and their licences */
+"open_source_licences" = "Open-source licences";
 
 /* Text in menu + Button in the main Help dialog. Used in home screen quick actions. */
 "report_a_bug" = "Signaler un bug";
@@ -393,7 +390,7 @@
 "blue_gray" = "Gris-bleu";
 
 /* Prints version number in About dialog */
-"version" = "Version d'Organic Maps : %@";
+"version" = "Version de Sampai : %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Apparence";
@@ -409,9 +406,6 @@
 
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Signaler ou corriger des données cartographiques incorrectes";
-
-/* Button in the About screen */
-"volunteer" = "Se porter volontaire";
 
 /* "Social media" section header in the About screen */
 "follow_us" = "Suivez et contactez-nous :";
@@ -591,7 +585,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Opérateur : %@";
 "editor_category_unsuitable_title" = "Vous ne trouvez pas de catégorie appropriée ?";
-"editor_category_unsuitable_text" = "Organic Maps ne permet d'ajouter que des catégories de points simples, c'est-à-dire pas de villes, de routes, de lacs, de contours de bâtiments, etc. Merci d'ajouter ces catégories directement sur <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Consultez notre <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">guide</a> pour obtenir des instructions détaillées étape par étape.";
+"editor_category_unsuitable_text" = "Sampai ne permet d'ajouter que des catégories de points simples, c'est-à-dire pas de villes, de routes, de lacs, de contours de bâtiments, etc. Merci d'ajouter ces catégories directement sur <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Consultez notre <a href=\"https://wiki.openstreetmap.org/wiki/Beginners%27_guide\">guide</a> pour obtenir des instructions détaillées étape par étape.";
 "downloader_no_downloaded_maps_title" = "Vous n'avez téléchargé aucune carte";
 "downloader_no_downloaded_maps_message" = "Téléchargez des cartes pour rechercher un lieu et utiliser la navigation hors ligne";
 "current_location_unknown_error_title" = "L'emplacement actuel est inconnu.";
@@ -726,7 +720,7 @@
 "bookmarks_text_placement_description" = "S'il y a trop de signets, l'affichage de leurs noms sur la carte peut ralentir l'application.";
 "show_to_the_right" = "Afficher à droite";
 "show_at_the_bottom" = "Afficher en bas";
-"enable_logging_warning_message" = "Cette option est activée pour l'identification des actions à des fins de diagnostic. Cela aide l’équipe à identifier les problèmes liés à l’application. Activez cette option uniquement à la demande du support Organic Maps.";
+"enable_logging_warning_message" = "Cette option est activée pour l'identification des actions à des fins de diagnostic. Cela aide l’équipe à identifier les problèmes liés à l’application. Activez cette option uniquement à la demande du support Sampai.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "En voiture";
@@ -833,9 +827,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Pour télécharger, vous avez besoin de plus d'espace. Veuillez supprimer les données non nécessaires.";
-"editor_sharing_title" = "J'ai amélioré les cartes de Organic Maps";
+"editor_sharing_title" = "J'ai amélioré les cartes de Sampai";
 "editor_detailed_description_hint" = "Commentaire détaillé";
-"editor_detailed_description" = "Vos modifications suggérées seront envoyées à la communauté OpenStreetMap. Décrivez les détails qui ne peuvent pas être modifiés dans Organic Maps.";
+"editor_detailed_description" = "Vos modifications suggérées seront envoyées à la communauté OpenStreetMap. Décrivez les détails qui ne peuvent pas être modifiés dans Sampai.";
 "current_location_unknown_error_message" = "Une erreur est survenue lors de la recherche de votre emplacement. Vérifiez que votre appareil fonctionne correctement et réessayez ultérieurement.";
 "location_services_disabled_header" = "L'identification de la localisation est désactivée";
 "location_services_disabled_message" = "Permettre l'accès à la géolocalisation dans les paramètres de l'appareil";
@@ -847,7 +841,7 @@
 "location_services_disabled_on_device_2" = "2. Sélectionner Privacy";
 "location_services_disabled_on_device_3" = "3. Sélectionner les services de localisation";
 "location_services_disabled_on_device_4" = "4. Activer les services de localisation";
-"location_services_disabled_on_device_additional_message" = "Ou continuer à utiliser Organic Maps sans Location";
+"location_services_disabled_on_device_additional_message" = "Ou continuer à utiliser Sampai sans Location";
 "placepage_call_button" = "Appeler";
 "placepage_bookmark_name_hint" = "Nom du signet";
 "placepage_delete_bookmark_button" = "Supprimer le signet";
@@ -858,7 +852,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Souhaitez-vous désactiver l'enregistrement de vos itinéraires récents ?";
 "off_recent_track_background_button" = "Désactiver";
-"recent_track_background_dialog_message" = "Organic Maps utilise votre géolocalisation en arrière-plan pour enregistrer vos itinéraires récents.";
+"recent_track_background_dialog_message" = "Sampai utilise votre géolocalisation en arrière-plan pour enregistrer vos itinéraires récents.";
 "general_settings" = "Paramètres généraux";
 
 /* "traffic" as in road congestion */
@@ -902,7 +896,7 @@
 "switch_to_phone_bookmarks_carplay" = "Passez au téléphone pour voir tous les signets";
 "speedcams_alert_title_carplay_1" = "Radars de vitesse";
 "speedcams_alert_title_carplay_2" = "Avertissements radars de vitesse";
-"download_map_carplay" = "Téléchargez des cartes dans l'application Organic Maps sur votre appareil";
+"download_map_carplay" = "Téléchargez des cartes dans l'application Sampai sur votre appareil";
 "carplay_roundabout_exit" = "%@ sortie";
 
 /* iOS */
@@ -956,14 +950,8 @@
 "isolines_toast_zooms_1_10" = "Zoomez pour voir les courbes de niveaux";
 "downloader_loading_ios" = "Téléchargement";
 
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
-
-/* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
-"translated_om_site_url" = "https://organicmaps.app/fr/";
+/* Base URL of the Sampai website */
+"translated_om_site_url" = "https://sampai.my/";
 
 /* Link to OSM wiki for Editor, Profile and About pages */
 "osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/FR:About_OpenStreetMap";
@@ -971,26 +959,11 @@
 /* App Tip #00 */
 "app_tip_00" = "Merci d'utiliser nos cartes créées par la communauté !";
 
-/* App tip #01 */
-"app_tip_01" = "Avec vos dons et votre soutien, nous pouvons créer les meilleures cartes du monde !";
-
-/* App tip #02 */
-"app_tip_02" = "Aimez-vous notre application ? Veuillez faire un don pour soutenir le développement ! Vous ne l'aimez pas encore ? S'il vous plaît laissez-nous savoir et nous y remédierons !";
-
-/* App tip #03 */
-"app_tip_03" = "Si vous connaissez un développeur de logiciels, vous pouvez lui demander d'implémenter une fonctionnalité dont vous avez besoin.";
-
 /* App tip #04 */
 "app_tip_04" = "Tapez n'importe où sur la carte pour sélectionner quelque chose. Touchez longuement pour masquer et réafficher l'interface.";
 
 /* App tip #05 */
 "app_tip_05" = "Savez-vous que vous pouvez sélectionner votre position actuelle sur la carte ?";
-
-/* App tip #06 */
-"app_tip_06" = "Vous pouvez nous aider à traduire notre application dans votre langue.";
-
-/* App tip #07 */
-"app_tip_07" = "Notre application est développée par quelques passionnés et la communauté.";
 
 /* App tip #08 */
 "app_tip_08" = "Vous pouvez facilement corriger et améliorer les données cartographiques.";
@@ -999,10 +972,10 @@
 "app_tip_09" = "Notre objectif principal est de créer des cartes rapides, axées sur la confidentialité et faciles à utiliser que vous allez adorer.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Vous utilisez maintenant Organic Maps sur le téléphone";
+"car_used_on_the_phone_screen" = "Vous utilisez maintenant Sampai sur le téléphone";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Vous utilisez maintenant Organic Maps dans la voiture";
+"car_used_on_the_car_screen" = "Vous utilisez maintenant Sampai dans la voiture";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Aller sur le téléphone";
@@ -1082,7 +1055,7 @@
 "map" = "Carte";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Voulez-vous envoyer un rapport de bogue aux développeurs ?\nNous comptons sur nos utilisateurs, car Organic Maps ne recueille pas automatiquement d'informations sur les erreurs. Merci d'avance de soutenir Organic Maps !";
+"bugreport_alert_message" = "Voulez-vous envoyer un rapport de bogue aux développeurs ?\nNous comptons sur nos utilisateurs, car Sampai ne recueille pas automatiquement d'informations sur les erreurs. Merci d'avance de soutenir Sampai !";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Activer la synchronisation iCloud";
