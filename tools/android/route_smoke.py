@@ -22,6 +22,7 @@ KNOTS_90_KMH = "49"
 DRIVE_STEP_S = 2
 SHOT_EVERY_POINTS = 12
 REROUTE_FIXES = 8
+REROUTE_STEP_DEG = 0.0001  # About 11 m, so the last fix stays on the street.
 
 
 def text_of(xml, resource_id):
@@ -102,8 +103,9 @@ class Driver(Walker):
         for point in [SLIP_END, *OFF_ROUTE]:
             gps(point)
             time.sleep(DRIVE_STEP_S)
-        for _ in range(REROUTE_FIXES):
-            gps(OFF_ROUTE[-1])
+        for fix in range(REROUTE_FIXES):
+            # The core ignores a fix at the same distance from the route, so keep moving along the street.
+            gps((OFF_ROUTE[-1][0], OFF_ROUTE[-1][1] + fix * REROUTE_STEP_DEG))
             time.sleep(DRIVE_STEP_S)
         after = self.read("after_reroute", "my_toll_amount", "my_eta")
         self.stop_navigation()
