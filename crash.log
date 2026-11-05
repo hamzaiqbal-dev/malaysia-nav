@@ -1,0 +1,79 @@
+--------- beginning of crash
+11-05 22:21:38.679  4982  4982 F libc    : /home/runner/work/malaysia-nav/malaysia-nav/libs/map/framework.cpp:2481: place_page::Info Framework::BuildPlacePageInfo(const place_page::BuildInfo &): assertion "false" failed
+11-05 22:21:39.716  4982  4982 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4982 (ampai.app.debug), pid 4982 (ampai.app.debug)
+11-05 22:21:40.624  6088  6088 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-05 22:21:40.624  6088  6088 F DEBUG   : Build fingerprint: 'google/sdk_gphone64_x86_64/emu64xa:15/AE3A.240806.043/12960925:userdebug/dev-keys'
+11-05 22:21:40.628  6088  6088 F DEBUG   : Revision: '0'
+11-05 22:21:40.629  6088  6088 F DEBUG   : ABI: 'x86_64'
+11-05 22:21:40.629  6088  6088 F DEBUG   : Timestamp: 2026-11-05 22:21:39.936876010+0000
+11-05 22:21:40.629  6088  6088 F DEBUG   : Process uptime: 279s
+11-05 22:21:40.629  6088  6088 F DEBUG   : Cmdline: my.sampai.app.debug
+11-05 22:21:40.629  6088  6088 F DEBUG   : pid: 4982, tid: 4982, name: ampai.app.debug  >>> my.sampai.app.debug <<<
+11-05 22:21:40.629  6088  6088 F DEBUG   : uid: 10209
+11-05 22:21:40.629  6088  6088 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-05 22:21:40.629  6088  6088 F DEBUG   : Abort message: '/home/runner/work/malaysia-nav/malaysia-nav/libs/map/framework.cpp:2481: place_page::Info Framework::BuildPlacePageInfo(const place_page::BuildInfo &): assertion "false" failed'
+11-05 22:21:40.629  6088  6088 F DEBUG   :     rax 0000000000000000  rbx 00007fff6cdcd3d8  rcx 000073fa98893b90  rdx 0000000000000006
+11-05 22:21:40.629  6088  6088 F DEBUG   :     r8  00000000000009b1  r9  00000000000009b1  r10 00007fff6cdcd3e0  r11 0000000000000203
+11-05 22:21:40.630  6088  6088 F DEBUG   :     r12 000000001413d808  r13 000000001439e108  r14 0000000000001376  r15 0000000000001376
+11-05 22:21:40.630  6088  6088 F DEBUG   :     rdi 0000000000001376  rsi 0000000000001376
+11-05 22:21:40.630  6088  6088 F DEBUG   :     rbp 00007fff6cdce170  rsp 00007fff6cdcd3d0  rip 000073fa98893b90
+11-05 22:21:40.630  6088  6088 F DEBUG   : 58 total frames
+11-05 22:21:40.630  6088  6088 F DEBUG   : backtrace:
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #00 pc 000000000005cb90  /apex/com.android.runtime/lib64/bionic/libc.so (abort+192) (BuildId: eb58b4d427279994f00c0e1818477e4f)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #01 pc 000000000005d3ae  /apex/com.android.runtime/lib64/bionic/libc.so (__assert2+30) (BuildId: eb58b4d427279994f00c0e1818477e4f)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #02 pc 0000000000c20994  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #03 pc 0000000000c30caf  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #04 pc 0000000000e43e7a  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #05 pc 0000000000e43e24  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #06 pc 0000000000e43e04  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #07 pc 0000000000e43de4  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #08 pc 0000000000e43dc4  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #09 pc 0000000000e438e8  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #10 pc 0000000000bc549d  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #11 pc 0000000000b58bb4  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #12 pc 0000000000b58b0a  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #13 pc 0000000000b0ca1c  /data/app/~~ti5m-E61Sx2l3xj1Swq-gw==/my.sampai.app.debug-bVU_Cs0xjw6k7uAeCrGQ-g==/lib/x86_64/liborganicmaps.so (Java_app_organicmaps_sdk_util_concurrency_UiThread_nativeProcessTask+28) (BuildId: bb3dd7d8a382fb433209866ec41fb343fb733b25)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #14 pc 000000000022b5eb  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+219) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #15 pc 000000000096d0f1  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (app.organicmaps.sdk.util.concurrency.UiThread.lambda$forwardToMainThread$0+145)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #16 pc 000000000072c8d9  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (app.organicmaps.sdk.util.concurrency.UiThread$$ExternalSyntheticLambda0.run+153)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #17 pc 000000000023b340  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (android.os.Handler.handleCallback+160)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #18 pc 000000000006ec00  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (android.os.Handler.dispatchMessage+160)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #19 pc 0000000000047a5b  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (android.os.Looper.loopOnce+1147)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #20 pc 00000000005e67a2  [anon_shmem:dalvik-jit-code-cache] (offset 0x2000000) (android.os.Looper.loop+306)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #21 pc 000000000022cffb  /apex/com.android.art/lib64/libart.so (art_quick_osr_stub+27) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #22 pc 0000000000630588  /apex/com.android.art/lib64/libart.so (art::jit::Jit::MaybeDoOnStackReplacement(art::Thread*, art::ArtMethod*, unsigned int, int, art::JValue*)+472) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #23 pc 00000000002340cb  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>(art::interpreter::SwitchImplContext*)+18955) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #24 pc 000000000022d2e5  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #25 pc 000000000020c024  /system/framework/framework.jar (android.os.Looper.loop+0)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #26 pc 00000000005f1de9  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.__uniq.112435418011751916792819755956732575238)+505) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #27 pc 00000000005f85f7  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame*, art::JValue*)+103) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #28 pc 00000000005f92d9  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, bool, art::JValue*)+2313) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #29 pc 0000000000233364  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>(art::interpreter::SwitchImplContext*)+15524) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #30 pc 000000000022d2e5  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #31 pc 00000000001d6138  /system/framework/framework.jar (android.app.ActivityThread.main+0)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #32 pc 00000000005f1de9  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.__uniq.112435418011751916792819755956732575238)+505) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #33 pc 0000000000987e6e  /apex/com.android.art/lib64/libart.so (artQuickToInterpreterBridge+958) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #34 pc 000000000022b77c  /apex/com.android.art/lib64/libart.so (art_quick_to_interpreter_bridge+140) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #35 pc 00000000002124b6  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+806) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #36 pc 0000000000474c24  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+228) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #37 pc 00000000008745ea  /apex/com.android.art/lib64/libart.so (_jobject* art::InvokeMethod<(art::PointerSize)8>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)+2218) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #38 pc 00000000007d00b7  /apex/com.android.art/lib64/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*) (.__uniq.165753521025965369065708152063621506277)+39) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #39 pc 000000000022b5eb  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+219) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #40 pc 0000000000212154  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+756) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #41 pc 0000000000474bf5  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+181) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #42 pc 00000000005f92f3  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, bool, art::JValue*)+2339) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #43 pc 0000000000233101  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>(art::interpreter::SwitchImplContext*)+14913) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #44 pc 000000000022d2e5  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+5) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #45 pc 00000000001d226c  /system/framework/framework.jar (com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run+0)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #46 pc 00000000005f1de9  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.__uniq.112435418011751916792819755956732575238)+505) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #47 pc 0000000000987e6e  /apex/com.android.art/lib64/libart.so (artQuickToInterpreterBridge+958) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #48 pc 000000000022b77c  /apex/com.android.art/lib64/libart.so (art_quick_to_interpreter_bridge+140) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #49 pc 00000000008196f0  /system/framework/x86_64/boot-framework.oat (com.android.internal.os.ZygoteInit.main+2704) (BuildId: bc047a67a4076b80992fbdfabdfba12acbd1924a)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #50 pc 00000000002124b6  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+806) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.630  6088  6088 F DEBUG   :       #51 pc 0000000000474c24  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+228) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #52 pc 0000000000875126  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeWithVarArgs<_jmethodID*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, __va_list_tag*)+518) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #53 pc 0000000000726e9a  /apex/com.android.art/lib64/libart.so (art::JNI<true>::CallStaticVoidMethodV(_JNIEnv*, _jclass*, _jmethodID*, __va_list_tag*)+586) (BuildId: 62338b1c62e3991543c9b8b8bae2b361)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #54 pc 00000000000dcf68  /system/lib64/libandroid_runtime.so (_JNIEnv::CallStaticVoidMethod(_jclass*, _jmethodID*, ...)+136) (BuildId: 74e467b22a4c3107eac51948743c9977)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #55 pc 00000000000f2fb0  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&, bool)+928) (BuildId: 74e467b22a4c3107eac51948743c9977)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #56 pc 0000000000004706  /system/bin/app_process64 (main+1638) (BuildId: 2919fb70658f9ff2e805cbbbdd33a33b)
+11-05 22:21:40.641  6088  6088 F DEBUG   :       #57 pc 0000000000057c82  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+114) (BuildId: eb58b4d427279994f00c0e1818477e4f)
