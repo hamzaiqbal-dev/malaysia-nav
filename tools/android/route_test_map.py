@@ -4,9 +4,9 @@
 The roads are invented, so the test needs no map data from any server. One toll expressway runs east with two priced
 booths and one unnamed booth, then leaves by a slip road with turn lanes:
 
-  Jalan Mula -> E23 [Damansara] [Pantai] [no name] -> slip road -> Jalan Tujuan
+  town -> Jalan Mula -> E23 [Damansara] [Pantai] [no name] -> slip road -> town
 
-Writes <out>/route.osm and <out>/borders/Malaysia_West.poly for generator_tool. START, FINISH, ROUTE and TOLL_TEXT are
+The router refuses to start or finish in a road island under 250 segments, hence the two street grids. Writes <out>/route.osm and <out>/borders/Malaysia_West.poly for generator_tool. START, FINISH, ROUTE and TOLL_TEXT are
 what tools/android/route_smoke.py checks against.
 """
 
@@ -21,9 +21,13 @@ STEP = 0.002
 BOOTHS = {101.624: {"name": "Plaza Tol Damansara"}, 101.648: {"name": "Plaza Tol Pantai"}, 101.672: {}}
 TOLL_TEXT = "RM 4.50+"  # Damansara 2.00 + Pantai 2.50 in data/my_tolls.csv; + for the unnamed booth.
 
-START = (3.105, 101.595)
-SLIP_END = (3.095, 101.704)
-FINISH = (3.09, 101.706)
+GRID_SIZE = 10
+WEST_TOWN = (3.09, 101.578)  # South-west corners.
+EAST_TOWN = (3.08, 101.704)
+START = (3.1, 101.59)
+FEEDER = (LAT, 101.596)
+SLIP_END = (3.094, 101.704)
+FINISH = (3.088, 101.71)
 EXPRESSWAY_TAGS = {"highway": "motorway", "ref": "E23", "name": "Lebuhraya SPRINT", "maxspeed": "90", "lanes": "3",
                    "oneway": "yes", "toll": "yes"}
 
@@ -34,7 +38,8 @@ def expressway_points():
 
 
 # The way the car drives, for the fake GPS.
-ROUTE = [START, *[p for p in expressway_points() if p[1] <= EXIT], SLIP_END, FINISH]
+ROUTE = [START, (LAT, 101.592), (LAT, 101.594), FEEDER, *[p for p in expressway_points() if p[1] <= EXIT], SLIP_END,
+         (3.092, 101.704), (3.09, 101.704), (3.088, 101.704), (3.088, 101.706), (3.088, 101.708), FINISH]
 
 
 class Osm:
@@ -75,6 +80,15 @@ class Osm:
         return [f"<tag k={quoteattr(k)} v={quoteattr(v)}/>" for k, v in tags.items()]
 
 
+def add_town(osm, corner, name):
+    def point(row, column):
+        return (round(corner[0] + row * STEP, 6), round(corner[1] + column * STEP, 6))
+
+    for i in range(GRID_SIZE):
+        osm.way([point(i, j) for j in range(GRID_SIZE)], {"highway": "residential", "name": f"Jalan {name} {i + 1}"})
+        osm.way([point(j, i) for j in range(GRID_SIZE)], {"highway": "residential", "name": f"Lorong {name} {i + 1}"})
+
+
 def network():
     osm = Osm()
     points = expressway_points()
@@ -86,8 +100,9 @@ def network():
     osm.way(before_exit[-3:], {**EXPRESSWAY_TAGS, "turn:lanes": "through|through|right", "destination": "Bangsar"})
     osm.way([p for p in points if p[1] >= EXIT], EXPRESSWAY_TAGS)
     osm.way([(LAT, EXIT), SLIP_END], {"highway": "motorway_link", "oneway": "yes", "destination": "Bangsar"})
-    osm.way([SLIP_END, FINISH], {"highway": "residential", "name": "Jalan Tujuan"})
-    osm.way([START, (LAT, WEST)], {"highway": "tertiary", "name": "Jalan Mula"})
+    osm.way([FEEDER, (LAT, WEST)], {"highway": "tertiary", "name": "Jalan Mula"})
+    add_town(osm, WEST_TOWN, "Mula")
+    add_town(osm, EAST_TOWN, "Tujuan")
     return osm
 
 
