@@ -127,7 +127,7 @@ class Driver(Walker):
         self.get_past_first_start()
         gps(START)
         self.build_route()
-        seen.append(self.read("route_preview", "my_toll_amount", "time", "dot"))
+        seen.append(self.read("route_preview", "time_vehicle"))
         self.start_navigation()
         self.shot("navigation")
         seen.append(self.read("navigation_hud", "my_toll_amount", "my_eta", "my_turn_street"))
@@ -190,7 +190,8 @@ def main():
     anrs = [line for line in full_log.splitlines() if f"ANR in {package}" in line]
 
     tolls = [step.get("my_toll_amount") for _, steps in results for step in steps]
-    toll_ok = TOLL_TEXT in tolls
+    previews = [steps[0]["time_vehicle"] or "" for _, steps in results]
+    toll_ok = TOLL_TEXT in tolls and all(TOLL_TEXT in preview for preview in previews)
     reroute_ok = rerouted[0]["my_toll_amount"] == TOLL_TEXT and rerouted[1]["my_toll_amount"] is None
     walk_ok = bool(walked[1]["my_eta"]) and not any(step["my_toll_amount"] for step in walked)
     report = ["# Android route test", f"- Crashes: {len(crash_lines)}", f"- ANRs: {len(anrs)}",
