@@ -106,10 +106,17 @@ class Walker:
             return
         self.shot(name)
         for child_name, child_text in then:
-            if self.tap(text=child_text):
+            if self.tap(text=child_text) or self.scroll_and_tap(child_text):
                 self.shot(child_name)
                 self.back()
+            else:
+                print(f"step {child_name}: not found", flush=True)
         self.back()
+
+    def scroll_and_tap(self, text):
+        adb("shell", "input", "swipe", "500", "1800", "500", "600", "400")
+        time.sleep(1)
+        return self.tap(text=text)
 
     def walk(self):
         self.launch()
@@ -117,7 +124,7 @@ class Walker:
         self.shot("map")
         self.bar_height = self.bottom_bar_height()
         self.visit("about", "help_button", then=(
-            ("faq", r"FAQ|Soalan"),
+            ("faq", r"FAQ|Frequently|Soalan"),
             ("licences", r"licen[cs]e|lesen"),
         ))
         self.visit("search", "btn_search")
