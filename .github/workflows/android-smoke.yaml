@@ -1,0 +1,104 @@
+name: Android Smoke
+on:
+  workflow_dispatch: # Manual trigger
+  pull_request:
+    paths:
+      - .github/workflows/android-smoke.yaml
+      - tools/android/smoke_test.py
+
+env:
+  JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64  # Java 21 is required by Android Gradle plugin lint
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Walk the app on an emulator
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Only to publish screenshots to a ci/smoke-screens-* branch
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Install build tools and dependencies
+        shell: bash
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build
+
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 200 # Needed for versioning script
+
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure ccache
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}
+          save: false
+
+      - name: Compile
+        shell: bash
+        working-directory: android
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: ./gradlew -Px86_64 assembleGoogleDebug
+
+      - name: Free disk space for emulator
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force > /dev/null
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run the walk and monkey
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          script: >-
+            adb install -g $(find android/app/build/outputs/apk -name '*.apk' | head -1) &&
+            python3 tools/android/smoke_test.py --out smoke-out
+
+      - name: Add the report to the job summary
+        if: always()
+        run: cat smoke-out/report.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Upload screenshots and logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: android-smoke
+          path: smoke-out
+          if-no-files-found: warn
+          retention-days: 14
+
+      # Artifacts need a login to open; a branch can be browsed on GitHub and read by later CI work.
+      - name: Publish screenshots to a branch
+        if: always() && github.event.pull_request.head.repo.full_name == github.repository
+        continue-on-error: true
+        working-directory: smoke-out
+        env:
+          TOKEN: ${{ github.token }}
+          BRANCH: ci/smoke-screens-${{ github.event.pull_request.number }}
+        run: |
+          find . -name logcat.txt -delete
+          git init -q -b screens
+          git -c user.name=ci -c user.email=ci@localhost add -A
+          git -c user.name=ci -c user.email=ci@localhost commit -qm "Smoke test screenshots of ${GITHUB_SHA}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}" "screens:refs/heads/${BRANCH}"
