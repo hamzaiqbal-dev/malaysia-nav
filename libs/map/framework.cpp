@@ -1144,8 +1144,15 @@ void Framework::LoadViewport()
   }
   else
   {
-    ShowAll();
+    if (m_drapeEngine != nullptr)
+      m_drapeEngine->SetModelViewAnyRect(m2::AnyRectD(GetFirstStartRect()), false /* isAnim */,
+                                         false /* useVisibleViewport */);
   }
+}
+
+m2::RectD Framework::GetFirstStartRect()
+{
+  return {mercator::FromLatLon(0.85, 99.6), mercator::FromLatLon(7.4, 119.3)};
 }
 
 void Framework::ShowAll()
