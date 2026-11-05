@@ -6,6 +6,8 @@
   <bool name="my_explore_chips_enabled">true</bool>
 
   <dimen name="my_hud_margin">12dp</dimen>
+  <!-- Clears the map buttons column: the speed would cover the bookmarks button. -->
+  <dimen name="my_hud_speed_margin_start">72dp</dimen>
   <!-- Portrait phones fill the width; in landscape and on tablets the HUD stays a start-aligned column. -->
   <dimen name="my_hud_max_width">400dp</dimen>
   <!-- Corner radii: sheet 24, banner 20, pill = half height, control 12. -->
