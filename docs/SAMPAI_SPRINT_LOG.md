@@ -257,7 +257,7 @@ Checked first: rollup #42 (47647cb9) fully green, including both macOS jobs and 
 
 ### Routing, HUD and tolls ran for the first time
 - #50 `ci/route-smoke` (base #45): `Android Route Smoke` builds `generator_tool`, makes a tiny `Malaysia_West.mwm` from invented roads (`tools/android/route_test_map.py`), then drives a route on the emulator with fake GPS: English by day, Malay by night. No map data downloaded, so the blocker isn't touched.
-- Result on the rollup before the #49 stack change (cbc05e4d): 0 crashes, 0 ANRs, preview "Toll RM 4.50+" and HUD `RM 4.50+` both correct, including the "+" for the unnamed booth. Turn banner, lanes, speed, limit, progress, rotation, arrival, End, BM text and night mode all work. The HUD looks close to `design/concept-3d`.
+- Result on the rollup before the #49 stack change (cbc05e4d): 0 crashes, 0 ANRs, preview "Toll RM 4.50+" and HUD `RM 4.50+` both correct, including the "+" for the unnamed booth. Turn banner, lanes, speed, limit, progress, rotation, arrival, BM text and night mode all showed on screen. Not compared side by side with `design/concept-3d`.
 - Screens: `git fetch origin ci/route-screens`, then `git archive`. Overwritten by each run.
 - Still not proven: real OSM tagging of booths (#43), Malaysian real roads, a real GPS, voice output, rerouting off-route, a walking route.
 - First-start ANR seen in 2 of 6 route runs: `DownloadResourcesActivity`, about 6 s of core init on the main thread on a just-booted emulator in a Debug build. Not new code and not fixed; check it on a phone.
