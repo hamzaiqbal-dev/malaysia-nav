@@ -34,15 +34,9 @@ def gps(point):
 
 
 def install_map(package, mwm):
-    log = adb("logcat", "-d", timeout=120)
-    found = re.findall(r"Writable path = (\S+)", log)
-    if not found:
-        sys.exit("The app didn't log its writable path")
-    folder = f"{found[-1].rstrip('/')}/{MAPS_VERSION}"
-    print(f"map folder {folder}", flush=True)
+    folder = f"/storage/emulated/0/Android/data/{package}/files/{MAPS_VERSION}"
     adb("shell", "mkdir", "-p", folder)
-    adb("push", str(mwm), f"{folder}/{COUNTRY}.mwm", timeout=120)
-    print(adb("shell", "ls", "-la", folder), flush=True)
+    print(adb("push", str(mwm), f"{folder}/{COUNTRY}.mwm", timeout=120), flush=True)
 
 
 class Driver(Walker):
