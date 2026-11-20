@@ -321,3 +321,16 @@ Run 8 close: #52's WebDebug failed in 21 s in "Run tests" and passed on re-run, 
 At 07:05 MYT two #42 Linux jobs were unfinished: gcc-15 Debug compiling after 70 minutes in apt, arm clang-22 Release still in apt. Not read to the end. #51 19 of 19 and #52 5 of 5 green. #45 and #50 are red on their own branches, as expected: read them on #42.
 
 Check-in (07:55 MYT): both slow #42 jobs ended green on 14154a84, tests and drape tests included, so the rollup has no failed job. #51 and #52 unchanged and mergeable.
+
+## Nightly run 1: Sat 21 Nov, 01:47 MYT
+
+First run of the nightly routine (set up 20 Nov). Since 6 Nov: no merges, no comments, no new issues; all branches unchanged. 52 PRs open. Rollup #42 at 14154a84 still the latest full build: all green except two macOS jobs cancelled (no runner).
+
+APK: rollup run 42114121588, artifact `android-WebDebug` (arm64), https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/42114121588 . Expires 5 Dec. The run-41220342185 APK in the launch plan expires 30 Nov. Android Check already uploads APKs on PRs and master pushes, so no new workflow was needed.
+
+### PR opened
+- #53 `docs/launch-checklist` -> master: `docs/SAMPAI_LAUNCH_CHECKLIST.md`. Update it on that branch each night while open. Docs only, so no CI checks run.
+
+Launch plan schedule has slipped: Phase 0 and 1 not started; 19 Jan holds only if the Play closed test starts by about 7 Dec.
+
+Next run: if still nothing merged, no new code PRs. Before 5 Dec re-run Android Check on `ci/sprint-rollup` so an APK stays downloadable. Small useful items that don't need Hamza: privacy policy draft (placeholders for domain), Play Data safety answers draft.
