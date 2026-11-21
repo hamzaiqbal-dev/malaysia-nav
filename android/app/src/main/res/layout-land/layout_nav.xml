@@ -8,6 +8,12 @@
 
   <include layout="@layout/layout_nav_top" />
 
+  <app.organicmaps.my.NavHudView
+    android:id="@+id/nav_hud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+
   <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:id="@+id/nav_bottom_sheet_coordinator"
     android:layout_width="match_parent"

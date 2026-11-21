@@ -110,6 +110,8 @@
     <string name="pref_tts_playing_test_voice">Semak kelantangan atau tetapan teks-ke-pertuturan sistem jika anda tidak mendengar suara sekarang.</string>
     <!-- Settings «Route» category: «Tts unavailable» subtitle. Also used as a CarToast in Android Auto when the user taps the muted voice icon. -->
     <string name="pref_tts_unavailable">Tidak tersedia</string>
+    <!-- Settings, Navigation group: switch for the Sampai heads-up display (turn card and ETA bar) -->
+    <string name="pref_nav_hud_title">Paparan navigasi Sampai</string>
     <string name="pref_map_auto_zoom">Zum automatik</string>
     <string name="placepage_distance">Jarak</string>
     <string name="search_show_on_map">Lihat di peta</string>
