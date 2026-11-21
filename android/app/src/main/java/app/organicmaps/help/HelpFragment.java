@@ -117,7 +117,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     else if (id == R.id.news)
       Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "news/");
     else if (id == R.id.email)
-      Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Organic Maps");
+      Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Sampai");
     else if (id == R.id.github)
       Utils.openUrl(requireActivity(), Constants.Url.GITHUB);
     else if (id == R.id.telegram)

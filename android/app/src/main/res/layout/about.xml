@@ -37,6 +37,15 @@
         android:textAppearance="@style/MwmTextAppearance.Body3"
         android:textIsSelectable="true"
         tools:text="2021.10.15-15-Google" />
+    
+    <TextView
+        android:id="@+id/attribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:gravity="center_horizontal"
+        android:text="@string/about_attribution"
+        android:textAppearance="@style/MwmTextAppearance.Body3" />
 
     <TextView
         android:layout_width="match_parent"
