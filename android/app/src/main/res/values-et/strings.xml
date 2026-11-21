@@ -246,8 +246,6 @@
     <string name="already_donated">Juba annetasin</string>
     <string name="remind_me_later">Meenuta hiljem</string>
     <string name="support_organic_maps">Toeta Sampaii</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Autoriõigused</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Teata veast</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -560,6 +558,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privaatsus</string>
+    <string name="privacy_policy">Andmekaitsepõhimõtted</string>
+    <string name="terms_of_use">Kasutustingimused</string>
     <string name="button_layer_traffic">Liiklus</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Matkamine</string>

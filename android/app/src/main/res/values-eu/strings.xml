@@ -246,8 +246,6 @@
     <string name="already_donated">Dohaintza jada emana</string>
     <string name="remind_me_later">Gogoratu geroago</string>
     <string name="support_organic_maps">Sustatu Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Egile eskubideak</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Errore baten berri eman</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -557,6 +555,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Pribatutasuna</string>
+    <string name="privacy_policy">Pribatutasun politika</string>
+    <string name="terms_of_use">Erabilera baldintzak</string>
     <string name="button_layer_traffic">Trafikoa</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Mendi-ibilaldiak</string>

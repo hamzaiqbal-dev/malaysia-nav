@@ -246,8 +246,6 @@
     <string name="already_donated">기부완료</string>
     <string name="remind_me_later">나중에 알림</string>
     <string name="support_organic_maps">Sampai를 지원해주세요</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">저작권</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">오류 신고</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -555,6 +553,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">개인정보 보호</string>
+    <string name="privacy_policy">개인정보 보호 방침</string>
+    <string name="terms_of_use">사용 약관</string>
     <string name="button_layer_traffic">트래픽</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">하이킹</string>

@@ -82,7 +82,7 @@
     <TextView
         android:id="@+id/openstreetmap"
         style="@style/MwmWidget.TextView.Item"
-        android:text="@string/openstreetmap"
+        android:text="@string/osm_credit"
         android:textAlignment="viewStart"
         app:drawableStartCompat="@drawable/ic_openstreetmap" />
 
@@ -97,7 +97,19 @@
         android:id="@+id/copyright"
         style="@style/MwmWidget.TextView.Item"
         android:textAlignment="viewStart"
-        android:text="@string/copyright" />
+        android:text="@string/about_licences" />
+
+    <TextView
+        android:id="@+id/privacy_policy"
+        style="@style/MwmWidget.TextView.Item"
+        android:textAlignment="viewStart"
+        android:text="@string/privacy_policy" />
+
+    <TextView
+        android:id="@+id/term_of_use_link"
+        style="@style/MwmWidget.TextView.Item"
+        android:textAlignment="viewStart"
+        android:text="@string/terms_of_use" />
 
   </LinearLayout>
 </ScrollView>

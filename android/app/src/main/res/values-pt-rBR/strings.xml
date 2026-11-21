@@ -161,8 +161,6 @@
     <string name="already_donated">Já doou</string>
     <string name="remind_me_later">Lembrar mais tarde</string>
     <string name="support_organic_maps">Apoiar o Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Direitos autorais</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Relatar um problema</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -401,6 +399,7 @@
         <item quantity="many">%d trilhas</item>
         <item quantity="other">%d trilhas</item>
     </plurals>
+    <string name="terms_of_use">Termos de uso</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Caminhadas</string>
     <string name="button_layer_subway">Metrô</string>

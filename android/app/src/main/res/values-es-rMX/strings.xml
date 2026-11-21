@@ -306,6 +306,8 @@
         <item quantity="many">%d de trayectos</item>
         <item quantity="other">%d trayectos</item>
     </plurals>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="terms_of_use">Términos de uso</string>
     <!-- Map layers menu: toggle button for the satellite imagery layer -->
     <string name="button_layer_satellite">Satélite</string>
     <string name="layers_title">Estilos de mapa y capas</string>

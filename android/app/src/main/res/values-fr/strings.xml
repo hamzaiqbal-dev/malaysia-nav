@@ -246,8 +246,6 @@
     <string name="already_donated">Déjà donné</string>
     <string name="remind_me_later">Rappeler plus tard</string>
     <string name="support_organic_maps">Soutenir Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Tous droits réservés</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Signaler un bug</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -561,6 +559,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Vie privée</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="terms_of_use">Conditions d\'utilisation</string>
     <string name="button_layer_traffic">Trafic</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Itinéraires de randonnée</string>

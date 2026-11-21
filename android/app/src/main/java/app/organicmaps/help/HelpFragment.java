@@ -13,6 +13,7 @@ import app.organicmaps.BuildConfig;
 import app.organicmaps.R;
 import app.organicmaps.base.BaseMwmFragment;
 import app.organicmaps.sdk.Framework;
+import app.organicmaps.sdk.util.Constants;
 import app.organicmaps.sdk.util.DateUtils;
 import app.organicmaps.util.Graphics;
 import app.organicmaps.util.Utils;
@@ -44,6 +45,9 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     setupItem(R.id.openstreetmap, true, root);
 
     setupItem(R.id.copyright, false, root);
+    setupItem(R.id.privacy_policy, false, root);
+    setupItem(R.id.term_of_use_link, false, root);
+
     ViewCompat.setOnApplyWindowInsetsListener(root, new ScrollableContentInsetsListener(root));
 
     return root;
@@ -54,8 +58,17 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
   {
     final int id = v.getId();
     if (id == R.id.openstreetmap)
-      Utils.openUrl(requireActivity(), getString(R.string.osm_wiki_about_url));
+      Utils.openUrl(requireActivity(), Constants.Url.OSM_COPYRIGHT);
     else if (id == R.id.copyright)
-      ((HelpActivity) requireActivity()).stackFragment(CopyrightFragment.class, getString(R.string.copyright), null);
+      ((HelpActivity) requireActivity())
+          .stackFragment(CopyrightFragment.class, getString(R.string.about_licences), null);
+    else if (id == R.id.privacy_policy)
+      ((HelpActivity) requireActivity())
+          .stackFragment(LegalPageFragment.class, getString(R.string.privacy_policy),
+                         LegalPageFragment.makeArgs(Constants.Url.PRIVACY));
+    else if (id == R.id.term_of_use_link)
+      ((HelpActivity) requireActivity())
+          .stackFragment(LegalPageFragment.class, getString(R.string.terms_of_use),
+                         LegalPageFragment.makeArgs(Constants.Url.TERMS));
   }
 }
