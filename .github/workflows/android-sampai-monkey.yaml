@@ -1,0 +1,76 @@
+name: Android Sampai Monkey
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 6 * * 1' # Weekly, Monday 06:00 UTC
+
+env:
+  JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
+
+jobs:
+  monkey:
+    name: Monkey test (x86_64 emulator)
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Install build tools
+        shell: bash
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build
+
+      - name: Enable KVM
+        shell: bash
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 200 # needed by the versioning script
+
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure ccache
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}
+          save: ${{ github.ref == 'refs/heads/master' }}
+
+      - name: Assemble Google Debug (x86_64)
+        shell: bash
+        working-directory: android
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: ./gradlew -Px86_64 assembleGoogleDebug
+
+      - name: Run monkey
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          script: |
+            adb install -r android/app/build/outputs/apk/google/debug/*.apk
+            adb logcat -c
+            # 5000 random events; --kill-process-after-error stops at the first crash/ANR.
+            adb shell monkey -p com.sampai.maps.debug --throttle 200 --ignore-security-exceptions --kill-process-after-error -s 42 -v 5000 | tee monkey.log
+            adb logcat -d > logcat.txt
+            ! grep -E "// CRASH|// NOT RESPONDING" monkey.log
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: sampai-monkey-logs
+          path: |
+            monkey.log
+            logcat.txt
+          if-no-files-found: ignore
+          retention-days: 14
