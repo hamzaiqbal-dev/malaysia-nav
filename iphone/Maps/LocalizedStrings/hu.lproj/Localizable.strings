@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az Sampai alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://omaps.app/get?kmz\n\nJó utat kívánok az Sampai alkalmazással!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Könyvjelzők betöltése";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Üzemeltető: %@";
 "editor_category_unsuitable_title" = "Nem találja a megfelelő kategóriát?";
-"editor_category_unsuitable_text" = "Az Sampai csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">útmutatónkat</a>.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Még nem töltött le térképet";
 "downloader_no_downloaded_maps_message" = "Térképek letöltése az offline kereséshez és navigáláshoz.";
 "current_location_unknown_error_title" = "A jelenlegi tartózkodási hely ismeretlen.";

@@ -26,12 +26,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Tente novamente</string>
     <string name="about_menu_title">Sobre Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Livre para todos, feito com amor</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Sem anúncios, sem rastreamento, sem coleta de dados</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Sem consumo de bateria, funciona off-line</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Configurações de Localização</string>
     <string name="unsupported_phone">É necessário OpenGL acelerado por hardware. Infelizmente o seu dispositivo não é compatível.</string>
@@ -94,7 +88,6 @@
     <string name="description">Anotações</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Favoritos do Sampai foram compartilhados com você</string>
-    <string name="share_bookmarks_email_body">Olá!\n\nSegue em anexo meus favoritos do app Sampai. Se tiver instalado o Sampai, pode abri-los agora. Caso não tenha, baixe o app para o seu dispositivo iOS ou Android via o link https://omaps.app/get?kmz\n\nDisfrute viajar com o Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Carregando favoritos</string>
     <!-- Kmz file successful loading -->
@@ -163,17 +156,11 @@
     <string name="pref_map_auto_zoom">Zoom automático</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Opinião</string>
-    <!-- Text in menu -->
-    <string name="rate_the_app">Avaliar o aplicativo</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Perguntas Frequentes</string>
     <!-- Button in the main menu -->
     <string name="donate">Doação</string>
     <string name="already_donated">Já doou</string>
     <string name="remind_me_later">Lembrar mais tarde</string>
     <string name="support_organic_maps">Apoiar o Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Apoiar o projeto</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Direitos autorais</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -324,7 +311,6 @@
     <string name="editor_osm_history">Seu histórico de edição</string>
     <string name="editor_osm_notes">Suas notas de dados do mapa</string>
     <string name="editor_category_unsuitable_title">Você não encontra uma categoria adequada?</string>
-    <string name="editor_category_unsuitable_text">O Sampai permite que você adicione apenas categorias de pontos simples, o que significa que não há cidades, estradas, lagos, contornos de edifícios etc. Por favor, adicione essas categorias diretamente no <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nosso <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guia</a> para obter instruções detalhadas passo a passo.</string>
     <string name="downloader_no_downloaded_maps_title">Você não fez o download de nenhum mapa</string>
     <string name="downloader_no_downloaded_maps_message">Baixe mapas para pesquisar locais e usar navegação offline.</string>
     <string name="day">d</string>
@@ -384,9 +370,6 @@
     <string name="route_add_destination">Adicionar destino</string>
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Adicionar parada</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Faça login no OpenStreetMap para carregar automaticamente todas as edições de mapas que você fizer. Saiba mais <a href="https://github.com/organicmaps/organicmaps/issues/6144">aqui</a>.</string>
-    <string name="dialog_error_storage_message">O armazenamento externo não está disponível. É provável que o cartão SD tenha sido removido, danificado ou o sistema de arquivo seja apenas para leitura. Verifique e entre em contato conosco em support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emular memória ruim</string>
     <string name="error_enter_correct_name">Por favor, digite um nome correto</string>
     <string name="bookmark_lists_show_all">Exibir tudo</string>
@@ -418,7 +401,6 @@
         <item quantity="many">%d trilhas</item>
         <item quantity="other">%d trilhas</item>
     </plurals>
-    <string name="terms_of_use">Termos de uso</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Caminhadas</string>
     <string name="button_layer_subway">Metrô</string>
@@ -527,8 +509,6 @@
     <string name="change_map_locale">Idioma do Mapa</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Dados do mapa do OpenStreetMap</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/pt-BR/faq/voice/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/pt-BR/</string>
     <!-- App Tip #00 -->

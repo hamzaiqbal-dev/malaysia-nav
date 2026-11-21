@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Xin chào!\n\nĐính kèm là các dấu trang của tôi; vui lòng mở chúng trong Sampai. Nếu bạn chưa cài đặt ứng dụng này, bạn có thể tải xuống tại đây: https://omaps.app/get?kmz\n\nChúc bạn có những chuyến đi thú vị cùng Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Tải Điểm đánh dấu";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Toán tử: %@";
 "editor_category_unsuitable_title" = "Không thể tìm thấy một danh mục phù hợp?";
-"editor_category_unsuitable_text" = "Sampai chỉ cho phép thêm các loại điểm đơn giản, tức là không bao gồm các thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các loại này trực tiếp vào <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Hãy tham khảo <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">hướng dẫn</a> của chúng tôi để biết các bước thực hiện chi tiết.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Bạn chưa tải về bất kỳ bản đồ nào";
 "downloader_no_downloaded_maps_message" = "Tải về bản đồ để tìm địa điểm và định hướng ngoại tuyến.";
 "current_location_unknown_error_title" = "Chưa biết địa điểm hiện tại.";

@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Reyndu aftur</string>
     <string name="about_menu_title">Um Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Ókeypis fyrir alla, unnið af alúð</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Engar auglýsingar, engar njósnir, engin gagnasöfnun</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Tæmir ekki rafhlöðuna, virkar án nettengingar</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Hraðvirkt, mínímalískt, hannað af notendunum</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Forrit með opinn grunnkóða sem útbúið er af áhugafólki og sjálfboðaliðum.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Staðsetningarstillingar</string>
     <string name="close">Loka</string>
@@ -152,7 +142,6 @@
     <string name="description">Minnispunktar</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai bókamerkjum var deilt með þér</string>
-    <string name="share_bookmarks_email_body">Halló!\n\nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í Sampai forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://omaps.app/get?kmz \n\nNjóttu ferðarinnar með Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Hleð inn bókamerkjum</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Valmynd</string>
     <!-- Text in menu -->
     <string name="website">Vefsvæði</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Fréttir</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Umsagnir</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Gefðu forritinu einkunn</string>
-    <!-- Text in menu -->
     <string name="help">Hjálp</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Algengar spurningar (FAQ)</string>
     <!-- Button in the main menu -->
     <string name="donate">Styrkja</string>
     <string name="already_donated">Hef þegar styrkt verkefnið</string>
     <string name="remind_me_later">Áminna mig síðar</string>
     <string name="support_organic_maps">Styddu við Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Styddu við verkefnið</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Höfundarréttur</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Rekstraraðili: %s</string>
     <string name="editor_category_unsuitable_title">Finnurðu ekki hentugan flokk?</string>
-    <string name="editor_category_unsuitable_text">Sampai leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Skoðaðu <a href="https://organicmaps.app/faq/editing/advanced-map-editing">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.</string>
     <string name="downloader_no_downloaded_maps_title">Þú hefur ekki sótt nein kort</string>
     <string name="downloader_no_downloaded_maps_message">Sæktu landakort til að leita og rata um án nettengingar.</string>
     <string name="current_location_unknown_error_title">Fyrirliggjandi staðsetning er óþekkt.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Bæta við stoppi</string>
     <string name="drag_to_reorder">Endurraða</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Skráðu þig inn á OpenStreetMap til að senda sjálfkrafa inn allar breytingar þínar á kortinu. Kannaðu þetta nánar <a href="https://github.com/organicmaps/organicmaps/issues/6144">hér</a>.</string>
     <string name="dialog_error_storage_title">Vandamál við aðgang að gagnageymslu</string>
-    <string name="dialog_error_storage_message">Ytra geymsluminnið er ekki aðgengilegt. SD-minniskortið gæti hafa verið fjarlægt, það skemmst eða að skráakerfið sé skrifvarið. Athugaðu SD-minniskortið þitt eða hafðu samband á support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Herma eftir skemmdu geymslurými</string>
     <string name="error_enter_correct_name">Settu inn rétt nafn</string>
     <string name="bookmark_lists">Listar</string>
@@ -583,8 +560,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Friðhelgi</string>
-    <string name="privacy_policy">Meðferð persónuupplýsinga</string>
-    <string name="terms_of_use">Notkunarskilmálar</string>
     <string name="button_layer_traffic">Umferð</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Gönguleiðir</string>
@@ -757,12 +732,6 @@
     <string name="change_map_locale">Tungumál korts</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Kortagögn frá OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->

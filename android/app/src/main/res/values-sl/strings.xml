@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Poskusi znova</string>
     <string name="about_menu_title">O Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Brezplačno za vse, narejeno z ljubeznijo</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Brez oglasov, brez sledenja, brez zbiranja podatkov</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Ne prazni baterije, deluje brez povezave</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Hitro, minimalistično, razvito s strani skupnosti</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Odprtokodna aplikacija, ki so jo ustvarili navdušenci in prostovoljci.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Nastavitve lokacije</string>
     <string name="close">Zapri</string>
@@ -152,7 +142,6 @@
     <string name="description">Opombe</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Z vami so bili deljeni zaznamki Sampai</string>
-    <string name="share_bookmarks_email_body">Živjo!\n\nV priponki so moji zaznamki; odprite jih v Sampai. Če aplikacije nimate nameščene, jo lahko prenesete tukaj: https://omaps.app/get?kmz\n\nUživajte v potovanju z Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Nalaganje zaznamkov</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Meni</string>
     <!-- Text in menu -->
     <string name="website">Spletna stran</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Novice</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Povratne informacije</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Oceni aplikacijo</string>
-    <!-- Text in menu -->
     <string name="help">Pomoč</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Pogosto zastavljena vprašanja</string>
     <!-- Button in the main menu -->
     <string name="donate">Doniraj</string>
     <string name="already_donated">Že donirano</string>
     <string name="remind_me_later">Opomni me kasneje</string>
     <string name="support_organic_maps">Podprite Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Podprite projekt</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Avtorske pravice</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Upravljavec: %s</string>
     <string name="editor_category_unsuitable_title">Ne najdete primerne kategorije?</string>
-    <string name="editor_category_unsuitable_text">Sampai omogoča dodajanje samo preprostih točkovnih kategorij, kar pomeni, da ni mest, cest, jezer, obrisov zgradb itd. Takšne kategorije dodajte neposredno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Preverite naš <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vodnik</a> za podrobna navodila po korakih.</string>
     <string name="downloader_no_downloaded_maps_title">Niste prenesli nobenega zemljevida</string>
     <string name="downloader_no_downloaded_maps_message">Prenesite zemljevide za iskanje in navigacijo brez povezave.</string>
     <string name="current_location_unknown_error_title">Trenutna lokacija ni znana.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Dodaj postanek</string>
     <string name="drag_to_reorder">Preuredi</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Prijavite se v OpenStreetMap, da samodejno naložite vsa svoja urejanja zemljevida. Več o tem <a href="https://github.com/organicmaps/organicmaps/issues/6144">tukaj</a>.</string>
     <string name="dialog_error_storage_title">Težava z dostopom do shrambe</string>
-    <string name="dialog_error_storage_message">Zunanja shramba ni dostopna. Kartica SD je morda bila odstranjena, poškodovana ali pa je datotečni sistem samo za branje. Preverite svojo kartico SD ali nas kontaktirajte na support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emuliraj slabo shrambo</string>
     <string name="error_enter_correct_name">Vnesite pravilno ime</string>
     <string name="bookmark_lists">Seznami</string>
@@ -586,8 +563,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Zasebnost</string>
-    <string name="privacy_policy">Politika zasebnosti</string>
-    <string name="terms_of_use">Pogoji uporabe</string>
     <string name="button_layer_traffic">Promet</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Pohodništvo</string>
@@ -760,12 +735,6 @@
     <string name="change_map_locale">Jezik zemljevida</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Podatki zemljevida iz OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

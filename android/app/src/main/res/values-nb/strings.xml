@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Prøv på nytt</string>
     <string name="about_menu_title">Om Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratis for alle, laget med kjærlighet</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Ingen annonser, ingen sporing, ingen datainnsamling</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Ingen batterislitasje, fungerer offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Rask, minimalistisk, utviklet av fellesskapet</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Open source-applikasjon opprettet av entusiaster og frivillige.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Innstillinger for plassering</string>
     <string name="close">Lukk</string>
@@ -152,7 +142,6 @@
     <string name="description">Merknader</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Delte Sampai-bokmerker</string>
-    <string name="share_bookmarks_email_body">Hei!\n\nVedlagt er mine bokmerker fra Sampai-appen. Åpne de dersom du har Sampai installert. Har du ikke har det, last ned appen til iOS eller Android ved å trykke på denne linken: https://omaps.app/get?kmz\n\nNyt reisen med Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Laster inn bokmerker</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Meny</string>
     <!-- Text in menu -->
     <string name="website">Nettside</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Nyheter</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Tilbakemelding</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Ranger appen</string>
-    <!-- Text in menu -->
     <string name="help">Hjelp</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Spørsmål og svar</string>
     <!-- Button in the main menu -->
     <string name="donate">Donere</string>
     <string name="already_donated">Allerede donert</string>
     <string name="remind_me_later">Påminn senere</string>
     <string name="support_organic_maps">Støtt Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Støtt prosjektet</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Opphavsrett</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operatør: %s</string>
     <string name="editor_category_unsuitable_title">Finner du ikke en passende kategori?</string>
-    <string name="editor_category_unsuitable_text">Sampai tillater kun å legge til enkle punktkategorier, det vil si ingen byer, veier, innsjøer, bygningsomriss osv. Vennligst legg til slike kategorier direkte til <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Sjekk vår <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detaljerte trinnvise instruksjoner.</string>
     <string name="downloader_no_downloaded_maps_title">Du har ikke lastet ned noen kart</string>
     <string name="downloader_no_downloaded_maps_message">Last ned kart for å finne plasseringen og navigere frakoblet.</string>
     <string name="current_location_unknown_error_title">Gjeldende plassering er ukjent.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Legg til stopp</string>
     <string name="drag_to_reorder">Omorganiser</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Logg inn på OpenStreetMap for automatisk å laste opp alle kartredigeringene dine. Finn ut mer <a href="https://github.com/organicmaps/organicmaps/issues/6144">her</a>.</string>
     <string name="dialog_error_storage_title">Problemer med tilgang til lagring</string>
-    <string name="dialog_error_storage_message">Ekstern lagring er ikke tilgjengelig. Sannsynligvis er SD-kortet fjernet eller skadet eller så er filsystemet skrivebeskyttet. Undersøk og kontakt oss på support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emulere skadet lagring</string>
     <string name="error_enter_correct_name">Skriv inn korrekt navn</string>
     <string name="bookmark_lists">Lister</string>
@@ -580,8 +557,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Personvern</string>
-    <string name="privacy_policy">Personvernpolitikk</string>
-    <string name="terms_of_use">Bruksbetingelser</string>
     <string name="button_layer_traffic">Trafikk</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Vandring</string>

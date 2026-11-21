@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Вітаю!\n\nУ далучаным файле мае закладкі, яны адкрываюцца праграмай Sampai. Калі такая праграма ў вас не ўсталявана, яе можна спампаваць тут: https://omaps.app/get?kmz\n\nПрыемных падарожжаў з Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Загрузка закладак";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Аператар: %@";
 "editor_category_unsuitable_title" = "Няма прыдатнай катэгорыі?";
-"editor_category_unsuitable_text" = "Sampai дазваляе дадаваць на мапу толькі простыя тыпы аб'ектаў, гэта значыць без гарадоў, дарог, азёр і будынкаў. Калі ласка, дадавайце такія катэгорыі на сайце <a href=\"https://www.openstreetmap.org/\">OpenStreetMap.org </a>. Мы таксама рэкамендуем азнаёміцца з <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing/\">падрабязнымі інструкцыямі і іншымі праграмамі для рэдагавання мапы</a>.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Вы не спампавалі ніводнай мапы";
 "downloader_no_downloaded_maps_message" = "Спампуйце мапы, каб шукаць месцы і карыстацца навігацыяй без інтэрнэту.";
 "current_location_unknown_error_title" = "Месцазнаходжанне невядома.";

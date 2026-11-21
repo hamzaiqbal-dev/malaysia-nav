@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Sampai. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://omaps.app/get?kmz\n\nתהנו לנווט עם Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "טוען סימניות";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "מַפעִיל: %@";
 "editor_category_unsuitable_title" = "לא מוצאים קטגוריה מתאימה?";
-"editor_category_unsuitable_text" = "באמצעות Sampai ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. עיינו <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">במדריך</a> שלנו לקבלת הוראות מפורטות.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "לא הורדת אף מפה";
 "downloader_no_downloaded_maps_message" = "הורד מפה כדי לחפש ולנווט ללא חיבור לאינטרנט.";
 "current_location_unknown_error_title" = "המיקום הנוכחי לא ידוע.";

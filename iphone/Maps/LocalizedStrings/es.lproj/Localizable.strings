@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "¡Hola!\n\nAdjunto mis marcadores; ábralos en Sampai. Si no lo ha instalado, puede descargarlo aquí: https://omaps.app/get?kmz\n\n¡Disfrute viajando con Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Cargando marcadores";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operador: %@";
 "editor_category_unsuitable_title" = "¿No halla una categoría adecuada?";
-"editor_category_unsuitable_text" = "Sampai permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Añada dichas categorías directamente a <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Consulte nuestra <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">guía</a> para obtener instrucciones detalladas paso a paso.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "No ha descargado ningún mapa";
 "downloader_no_downloaded_maps_message" = "Descargue mapas para encontrar la ubicación y navegar sin conexión.";
 "current_location_unknown_error_title" = "Se desconoce la ubicación actual.";

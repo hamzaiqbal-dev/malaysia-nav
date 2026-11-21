@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">再試一次</string>
     <string name="about_menu_title">關於 Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">對每個人都免費，用愛製成</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• 沒有廣告，不會跟蹤您，更不會收集您的數據</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• 無需耗費太多電量，可離線工作</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• 快速且簡約，由社群開發</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">由愛好者和志願者開發的開源應用程式。</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">位置設定</string>
     <string name="close">關閉</string>
@@ -152,7 +142,6 @@
     <string name="description">註釋</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">已與您分享 Sampai 書籤</string>
-    <string name="share_bookmarks_email_body">您好！\n\n附件是我的書籤，請在 Sampai 中打開。如果您沒有安裝 Sampai，可以在這裡下載: https://omaps.app/get?kmz\n\n祝您使用 Sampai 旅行愉快！</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">正在載入書籤</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">菜單</string>
     <!-- Text in menu -->
     <string name="website">網站</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">新聞</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">回饋</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">為我們評分</string>
-    <!-- Text in menu -->
     <string name="help">幫助</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">問題和解答</string>
     <!-- Button in the main menu -->
     <string name="donate">捐助我們</string>
     <string name="already_donated">已捐贈</string>
     <string name="remind_me_later">稍後提醒</string>
     <string name="support_organic_maps">支援 Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">支持本項目</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">版權</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">運營方: %s</string>
     <string name="editor_category_unsuitable_title">找不到合適的類別？</string>
-    <string name="editor_category_unsuitable_text">Sampai 只允許添加簡單的點類別，即無法添加城鎮、道路、湖泊、建築輪廓等類別。請直接向 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> 新增此類類別。請查看我們的<a href="https://organicmaps.app/faq/editing/advanced-map-editing">指南</a>，以了解詳細的步驟說明。</string>
     <string name="downloader_no_downloaded_maps_title">您尚未下載任何地圖</string>
     <string name="downloader_no_downloaded_maps_message">下載地圖來尋找位置和離線瀏覽。</string>
     <string name="current_location_unknown_error_title">目前位置未知。</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">新增途經點</string>
     <string name="drag_to_reorder">重新排序</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">請登入 OpenStreetMap 以自動上傳您的所有地圖編輯。若要了解更多資訊請點擊<a href="https://github.com/organicmaps/organicmaps/issues/6144">這裡</a>。</string>
     <string name="dialog_error_storage_title">儲存空間存儲問題</string>
-    <string name="dialog_error_storage_message">外部儲存空間不可用，很可能是因為 SD 卡已移除、毀損，或檔案系統處於唯讀狀態。請進行檢查，然後透過 support\@organicmaps.app 聯絡我們</string>
     <string name="setting_emulate_bad_storage">模擬不良儲存空間</string>
     <string name="error_enter_correct_name">請輸入正確的名稱</string>
     <string name="bookmark_lists">列表</string>
@@ -581,8 +558,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">隱私</string>
-    <string name="privacy_policy">隱私政策</string>
-    <string name="terms_of_use">使用條款</string>
     <string name="button_layer_traffic">路況</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">登山</string>
@@ -755,12 +730,6 @@
     <string name="change_map_locale">地圖語言</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">地圖數據來自 OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/zh-Hans/faq/voice/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/zh-Hans/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->

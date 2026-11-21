@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Yenidən cəhd et</string>
     <string name="about_menu_title">Sampai Haqqında</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Hər kəs üçün ödənişsiz və sevgi ilə hazırlanmış xəritə</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Reklam yoxdur, izləmə yoxdur, məlumatların toplanması yoxdur</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Batareyanın boşalması yoxdur, oflayn işləyir</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Sürətli, minimalist, icma tərəfindən hazırlanmışdır</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Həvəskarlar və könüllülər tərəfindən yaradılan açıq mənbə proqramı.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Məkan parametrləri</string>
     <string name="close">Yaxın</string>
@@ -152,7 +142,6 @@
     <string name="description">Qeydlər</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai əlfəcinləri sizinlə paylaşıldı</string>
-    <string name="share_bookmarks_email_body">Salam!\n\nSampai əlfəcinlərim əlavə olunub. Zəhmət olmasa Sampai-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://omaps.app/get?kmz\n\nSampai ilə səyahətdən həzz alın!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Əlfəcinlər yüklənir</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Menyu</string>
     <!-- Text in menu -->
     <string name="website">Veb sayt</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Xəbərlər</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Rəy</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Proqramı qiymətləndirin</string>
-    <!-- Text in menu -->
     <string name="help">Yardım</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Tez-tez soruşulan suallar</string>
     <!-- Button in the main menu -->
     <string name="donate">Bağışlamaq</string>
     <string name="already_donated">Artıq ianə edildi</string>
     <string name="remind_me_later">Daha sonra xatırlat</string>
     <string name="support_organic_maps">Sampai-i dəstəkləmək</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Bu layihəni dəstəkləyin</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Müəllif hüququ</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Uyğun kateqoriya tapa bilmirsiniz?</string>
-    <string name="editor_category_unsuitable_text">Sampai yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href="https://organicmaps.app/faq/editing/advanced-map-editing">bələdç</a>imizə baxın.</string>
     <string name="downloader_no_downloaded_maps_title">Siz heç bir xəritə endirməmisiniz</string>
     <string name="downloader_no_downloaded_maps_message">Ünvanları tapmaq və oflayn naviqasiya etmək üçün xəritələri endirin.</string>
     <string name="current_location_unknown_error_title">Cari yer məlum deyil.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Dayanacaq əlavə et</string>
     <string name="drag_to_reorder">Yenidən sırala</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Bütün xəritə redaktələrinizi avtomatik yükləmək üçün OpenStreetMap-a daxil olun. <a href="https://github.com/organicmaps/organicmaps/issues/6144">burada</a> ətraflı məlumat əldə edin.</string>
     <string name="dialog_error_storage_title">Yaddaş giriş problemi</string>
-    <string name="dialog_error_storage_message">Xarici yaddaş mövcud deyil, ola bilsin ki, SD Kart çıxarılıb, zədələnib və ya fayl sistemi yalnız oxunur. Zəhmət olmasa yoxlayın və ya support\@organicmaps.app ünvanında bizimlə əlaqə saxlayın</string>
     <string name="setting_emulate_bad_storage">Zədələnmiş yaddaşı təqlid edin</string>
     <string name="error_enter_correct_name">Düzgün ad daxil edin</string>
     <string name="bookmark_lists">Siyahılar</string>
@@ -580,8 +557,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Məxfilik</string>
-    <string name="privacy_policy">Gizlilik Siyasəti</string>
-    <string name="terms_of_use">İstifadə qaydaları</string>
     <string name="button_layer_traffic">Nəqliyyat</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Piyada gəzinti</string>
@@ -754,8 +729,6 @@
     <string name="change_map_locale">Xəritə dili</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMap-dan xəritə məlumatları</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsTR</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Tr:About</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
