@@ -2,6 +2,7 @@ package app.organicmaps.my.report;
 
 import android.content.Context;
 import android.location.Location;
+import android.os.SystemClock;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
@@ -93,7 +94,7 @@ public final class ReportSheet
   private static void save(@NonNull Context context, @NonNull ReportType type)
   {
     final Location loc = MwmApplication.from(context).getLocationHelper().getSavedLocation();
-    if (loc == null)
+    if (loc == null || !Report.isFixFresh(SystemClock.elapsedRealtime() - loc.getElapsedRealtimeNanos() / 1_000_000))
     {
       Toast.makeText(context, R.string.current_location_unknown_error_title, Toast.LENGTH_SHORT).show();
       return;

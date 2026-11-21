@@ -1,6 +1,7 @@
 package app.organicmaps.my.report;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
@@ -43,6 +44,16 @@ public class ReportStoreTest
     final File f = mTmp.newFile("r.csv");
     new ReportStore(f).add(new Report(5L, ReportType.FLOOD, 1, 2));
     assertEquals(1, new ReportStore(f).readAll().size());
+  }
+
+  @Test
+  public void onlyRecentFixesAreFresh()
+  {
+    assertTrue(Report.isFixFresh(0));
+    assertTrue(Report.isFixFresh(Report.MAX_FIX_AGE_MS));
+    assertFalse(Report.isFixFresh(Report.MAX_FIX_AGE_MS + 1));
+    assertFalse(Report.isFixFresh(10 * 60 * 1000));
+    assertFalse(Report.isFixFresh(-1));
   }
 
   @Test
