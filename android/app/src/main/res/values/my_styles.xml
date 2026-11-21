@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
   <!-- Typography tokens: Plus Jakarta Sans (SIL OFL, see docs/licenses). -->
-  <style name="TextAppearance.Sampai.Body">
+  <style name="TextAppearance.Sampai.Body" parent="">
     <item name="android:fontFamily">@font/plus_jakarta_sans</item>
     <item name="fontFamily">@font/plus_jakarta_sans</item>
   </style>
 
-  <style name="TextAppearance.Sampai.Label">
+  <style name="TextAppearance.Sampai.Label" parent="">
     <item name="android:fontFamily">@font/plus_jakarta_sans</item>
     <item name="fontFamily">@font/plus_jakarta_sans</item>
     <item name="android:textStyle">bold</item>
