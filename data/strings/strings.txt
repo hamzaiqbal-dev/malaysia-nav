@@ -1073,7 +1073,7 @@ zh-Hant = 關於 Sampai
 
 [about_headline]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = Free for everyone, made with love
 af = Gratis vir almal, gemaak met liefde
 ar = مجاني للجميع ، مصنوع من الحب
@@ -1131,7 +1131,7 @@ zh-Hant = 對每個人都免費，用愛製成
 
 [about_proposition_1]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • No ads, no tracking, no data collection
 af = • Geen advertensies, geen nasporing, geen dataversameling
 ar = • لا إعلانات ، لا تتبع ، لا جمع البيانات
@@ -1190,7 +1190,7 @@ zh-Hant = • 沒有廣告，不會跟蹤您，更不會收集您的數據
 
 [about_proposition_2]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • No battery drain, works offline
 af = • Geen battery dreineer, werk vanlyn
 ar = • لا يوجد استنزاف للبطارية، يعمل دون اتصال بالإنترنت
@@ -1249,7 +1249,7 @@ zh-Hant = • 無需耗費太多電量，可離線工作
 
 [about_proposition_3]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • Fast, minimalist, developed by the community
 af = • Vinnig, minimalisties, ontwikkel deur die gemeenskap
 ar = • سريع وبسيط، تم تطويره بواسطة المجتمع
@@ -1303,63 +1303,6 @@ uk = • Швидкий, мінімалістичний, розроблений 
 vi = • Nhanh chóng, tối giản, được phát triển bởi cộng đồng
 zh-Hans = • 快速且简约，由社区开发
 zh-Hant = • 快速且簡約，由社群開發
-
-[about_developed_by_enthusiasts]
-comment = Text in About screen
-tags = android-app
-en = Open-source application created by enthusiasts and volunteers.
-af = Oopbrontoepassing geskep deur entoesiaste en vrywilligers.
-ar = تطبيق مفتوح المصدر الذي أنشأه المتحمسون والمتطوعون.
-az = Həvəskarlar və könüllülər tərəfindən yaradılan açıq mənbə proqramı.
-be = Праграма з адкрытым зыходным кодам, створаная энтузіястамі і валанцёрамі.
-bg = Приложение с отворен код, създадено от ентусиасти и доброволци.
-ca = Aplicació de codi obert creada per entusiastes i voluntaris.
-cs = Otevřená aplikace vytvořená nadšenci a dobrovolníky.
-cy = Rhaglen cod agored wedi'i chreu gan selogion a gwirfoddolwyr.
-da = Open source-applikation skabt af entusiaster og frivillige.
-de = Open-Source-Anwendung, entwickelt von Enthusiasten und Freiwilligen.
-el = Εφαρμογή ανοιχτού κώδικα που δημιουργήθηκε από θιασώτες και εθελοντές.
-es = Aplicación de código abierto creada por entusiastas y voluntarios.
-et = Huviliste ja vabatahtlike poolt loodud avatud lähtekoodil põhinev rakendus.
-eu = Zale eta bolondresek sortutako kode irekiko aplikazioa.
-fa = برنامه منبع باز ایجاد شده توسط علاقه مندان و داوطلبان.
-fi = Harrastajien ja vapaaehtoisten luoma avoimen lähdekoodin sovellus.
-fr = Application open source créée par des amateurs et des bénévoles.
-gl = Aplicación de código aberto creada por entusiastas e voluntarios.
-he = אפליקציית קוד פתוח שנוצרה על ידי חובבים ומתנדבים.
-hi = उत्साही और स्वयंसेवकों द्वारा बनाया गया ओपन-सोर्स एप्लिकेशन।
-hr = Otvorenog koda aplikacija napravljena od entuzijasta i volontera.
-hu = A rajongók és az önkéntesek által létrehozott nyílt forráskódú alkalmazás.
-hy = Էնտուզիաստների և կամավորների կողմից ստեղծված բաց կոդով հավելված:
-id = Aplikasi open-source yang dibuat oleh penggemar dan sukarelawan.
-is = Forrit með opinn grunnkóða sem útbúið er af áhugafólki og sjálfboðaliðum.
-it = Applicazione open-source creata da appassionati e volontari.
-ja = 愛好家とボランティアによって作成されたオープンソースアプリケーション。
-ko = 애호가와 자원 봉사자가 만든 오픈 소스 응용 프로그램.
-lo = ແອັບພລິເຄຊັນໂອເພັນຊອດທີ່ສ້າງໂດຍຜູ້ມີໃຈຮັກ ແລະ ອາສາສະໝັກ.
-lt = Atvirojo kodo programėlė, sukurta entuziastų ir savanorių.
-lv = Atvērtā pirmkoda programma, ko veidojuši entuziasti un brīvprātīgie.
-mr = उत्साही आणि स्वयंसेवकांनी तयार केलेले मुक्त-स्रोत अनुप्रयोग.
-mt = Apliażżjoni tas-sors miftuħ magħmula min dilettanti u il-voluntiera
-nb = Open source-applikasjon opprettet av entusiaster og frivillige.
-nl = Open-source applicatie gemaakt door enthousiastelingen en vrijwilligers.
-pa = ਉਤਸ਼ਾਹੀਆਂ ਅਤੇ ਵਲੰਟੀਅਰਾਂ ਦੁਆਰਾ ਬਣਾਈ ਗਈ ਓਪਨ-ਸੋਰਸ ਐਪਲੀਕੇਸ਼ਨ।
-pl = Aplikacja typu open source stworzona przez entuzjastów i wolontariuszy.
-pt = Aplicativo de código aberto criado por entusiastas e voluntários.
-ro = Aplicație open-source creată de entuziaști și voluntari.
-ru = Приложение с открытым исходным кодом, созданное энтузиастами и волонтёрами.
-sk = Aplikácia s otvoreným zdrojovým kódom vytvorená nadšencami a dobrovoľníkmi.
-sl = Odprtokodna aplikacija, ki so jo ustvarili navdušenci in prostovoljci.
-sq = Aplikacion me burim të hapur i krijuar nga entuziastë dhe vullnetarë.
-sr = Апликација отвореног кода, направљена од ентузијаста и волонтера.
-sv = Öppen källkod-app skapad av entusiaster och frivilliga.
-sw = Maombi ya chanzo-wazi iliyoundwa na wanaovutia na wanaojitolea.
-th = แอปพลิเคชันโอเพนซอร์ซที่สร้างขึ้นโดยผู้ที่ชื่นชอบและอาสาสมัคร
-tr = Teknoloji tutkunları ve gönüllülerce oluşturulan açık kaynaklı uygulama.
-uk = Програма з відкритим кодом, створена ентузіастами та волонтерами.
-vi = Ứng dụng nguồn mở được tạo bởi những người đam mê và tình nguyện viên.
-zh-Hans = 由爱好者和志愿者开发的开源应用程序。
-zh-Hant = 由愛好者和志願者開發的開源應用程式。
 
 [location_settings]
 comment = The button that opens system location settings
@@ -8138,7 +8081,7 @@ zh-Hant = 網站
 
 [news]
 comment = Text in About menu, opens Sampai news website
-tags = android-app,apple-maps
+tags = apple-maps
 en = News
 af = Nuus
 ar = أخبار
@@ -8252,7 +8195,7 @@ zh-Hant = 回饋
 
 [rate_the_app]
 comment = Text in menu
-tags = android-app,apple-maps
+tags = apple-maps
 en = Rate the app
 af = Gradeer die toep
 ar = قيّم التطبيق
@@ -8367,7 +8310,7 @@ zh-Hant = 幫助
 
 [faq]
 comment = Button in the main Help dialog
-tags = android-app,apple-maps
+tags = apple-maps
 en = Frequently Asked Questions
 af = Gereelde vrae
 ar = اسئلة مكررة
@@ -8648,64 +8591,6 @@ uk = Підтримати Sampai
 vi = Hỗ trợ Sampai
 zh-Hans = 支持 Sampai
 zh-Hant = 支援 Sampai
-
-[how_to_support_us]
-comment = Button in the main Help dialog
-tags = android-app
-en = Support the project
-af = Ondersteun die projek
-ar = دعم المشروع
-az = Bu layihəni dəstəkləyin
-be = Падтрымаць праект
-bg = Подкрепете проекта
-ca = Doneu suport al projecte
-cs = Podpořte projekt
-cy = Cefnogi'r prosiect
-da = Støt projektet
-de = Unterstütze das Projekt
-el = Στηρίξτε αυτό το πρότζεκτ
-es = Apoye el proyecto
-es-MX = Apoyar el proyecto
-et = Toeta meie projekti
-eu = Proiektuari laguntza eman
-fa = از پروژه حمایت کنید
-fi = Tue projektia
-fr = Soutenir le projet
-gl = Apoie o proxecto
-he = תמכו בפרויקט
-hi = परियोजना का समर्थन करें
-hr = Podrži projekt
-hu = Támogatás
-hy = Աջակցել նախագծին
-id = Mendukung proyek
-is = Styddu við verkefnið
-it = Sostieni il progetto
-ja = プロジェクトを支援する
-ko = 프로젝트 지원
-lo = ສະໜັບສະໜູນໂຄງການ
-lt = Paremti projektą
-lv = Atbalstiet projektu
-mr = प्रकल्पाला पाठठिंबा द्या
-mt = Appoġġja lill-proġett
-nb = Støtt prosjektet
-nl = Steun het project
-pl = Wesprzyj projekt
-pt = Apoie o projeto
-pt-BR = Apoiar o projeto
-ro = Susține proiectul
-ru = Помочь проекту
-sk = Podporte projekt
-sl = Podprite projekt
-sq = Mbështet projektin
-sr = Подржи пројекат
-sv = Stöd projektet
-sw = Saidia mradi
-th = สนับสนุนโครงการ
-tr = Bu projeyi destekleyin
-uk = Підтримайте проект
-vi = Hỗ trợ dự án
-zh-Hans = 支持本项目
-zh-Hant = 支持本項目
 
 [about_attribution]
 comment = About screen: product name and author line
@@ -25278,7 +25163,7 @@ zh-Hans = 隐私
 zh-Hant = 隱私
 
 [privacy_policy]
-tags = android-app,apple-maps
+tags = apple-maps
 en = Privacy policy
 af = Privaatheidsbeleid
 ar = سياسة الخصوصية
@@ -25334,7 +25219,7 @@ zh-Hans = 隐私政策
 zh-Hant = 隱私政策
 
 [terms_of_use]
-tags = android-app,apple-maps
+tags = apple-maps
 en = Terms of use
 af = Gebruiksvoorwaardes
 ar = شروط الاستخدام
@@ -37202,7 +37087,7 @@ zh-Hant = https://www.instagram.com/organicmaps.app
 
 [translated_om_site_url]
 comment = Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content
-tags = apple-maps,qt
+tags = android-app,apple-maps,qt
 en = https://organicmaps.app/
 af = https://organicmaps.app/af/
 ar = https://organicmaps.app/ar/
