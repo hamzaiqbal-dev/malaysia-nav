@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 6 * * 1' # Weekly, Monday 06:00 UTC
 
+permissions:
+  contents: read
+
 env:
   JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
 
