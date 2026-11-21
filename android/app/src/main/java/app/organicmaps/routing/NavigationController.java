@@ -66,6 +66,7 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   private final NavHudView mHud;
   private final View mBottomSheetCoordinator;
   private boolean mHudEnabled;
+  private int mHudEtaBarHeight;
   View.OnClickListener mOnSettingsClickListener;
   View.OnClickListener mOnVoiceSettingsClickListener;
 
@@ -81,6 +82,19 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     mBottomSheetCoordinator = mFrame.findViewById(R.id.nav_bottom_sheet_coordinator);
     mHud.setOnEndClickListener(v -> onStopClicked());
     mHud.setOnSettingsClickListener(v -> onSettingsClicked());
+    mHud.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
+      // Lanes and speed limit are laid out below the hidden street banner: stretch it to clear the HUD card.
+      final int topCardBottom = mHud.getTopCardBottom();
+      if (mStreetFrame.getMinimumHeight() != topCardBottom)
+        mStreetFrame.setMinimumHeight(topCardBottom);
+      // Keep the OSM credit, scale and routing position arrow above the ETA bar.
+      final int etaBarHeight = mHud.getEtaBarHeight();
+      if (mHudEtaBarHeight != etaBarHeight)
+      {
+        mHudEtaBarHeight = etaBarHeight;
+        onMenuSizeChangedListener.OnMenuSizeChange();
+      }
+    });
     mOnSettingsClickListener = onSettingsClickListener;
     mOnVoiceSettingsClickListener = onVoiceSettingsClickListener;
 
@@ -204,6 +218,14 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     UiUtils.showIf(!mHudEnabled, mBottomSheetCoordinator, mNextTurnContainer);
     if (mHudEnabled)
       UiUtils.invisible(mStreetFrame);
+    else
+      mStreetFrame.setMinimumHeight(0);
+  }
+
+  /** Height the HUD's ETA bar covers at the bottom of the map, 0 when the HUD is not shown. */
+  public int getHudBottomHeight()
+  {
+    return mHudEnabled && UiUtils.isVisible(mFrame) ? mHudEtaBarHeight : 0;
   }
 
   private void updateHud(@NonNull RoutingInfo info)
