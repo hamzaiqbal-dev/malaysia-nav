@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
+import androidx.core.widget.TextViewCompat;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
 import app.organicmaps.sdk.util.log.Logger;
@@ -60,7 +61,7 @@ public final class ReportSheet
 
     final TextView title = new TextView(context);
     title.setText(R.string.report_sheet_title);
-    title.setTextAppearance(R.style.TextAppearance_Sampai_Label);
+    TextViewCompat.setTextAppearance(title, R.style.TextAppearance_Sampai_Label);
     title.setTextSize(18);
     title.setGravity(Gravity.CENTER_HORIZONTAL);
     title.setPadding(0, 0, 0, pad);
