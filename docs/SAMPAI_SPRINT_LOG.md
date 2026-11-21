@@ -334,3 +334,27 @@ APK: rollup run 42114121588, artifact `android-WebDebug` (arm64), https://github
 Launch plan schedule has slipped: Phase 0 and 1 not started; 19 Jan holds only if the Play closed test starts by about 7 Dec.
 
 Next run: if still nothing merged, no new code PRs. Before 5 Dec re-run Android Check on `ci/sprint-rollup` so an APK stays downloadable. Small useful items that don't need Hamza: privacy policy draft (placeholders for domain), Play Data safety answers draft.
+
+## Nightly run 2: Sun 22 Nov, 01:47 MYT
+
+Found 10 PRs opened on 21 Nov after run 1 by another session, not logged here: a second stack based on `master`,
+#54 (APK workflow) <- #55 (rebrand, `com.sampai.maps`) <- #56 (BM first) <- #57 (theme tokens) <- #58 (nav HUD)
+<- #59 (toll data) <- #60 (Lapor stub) <- #61 (weekly monkey); #62 (brand sweep) <- #63 (legal pack) on #55.
+It overlaps the old stack (#1-#53, `my.sampai.app`) almost everywhere; they will conflict. 63 PRs open, 0 merged.
+Needs Hamza: which stack first, which app id.
+
+### Updated PRs
+- #57: Android Lint red on reviewdog warnings (font family had only API 26 attrs with minSdk 21; tokens unused in
+  this PR but used by #58). Added `app:` font attrs, `tools:ignore="UnusedResources"` on token files. b254c0c2:
+  Lint green. WebDebug failed on an emulator system-image download error (infra), re-run started.
+  #58-#61 don't contain the fix; fine, they get it once #57 merges and they are retargeted.
+- #53: checklist updated (two stacks, new APKs, app id choice, #56/#59/#60/#63 items).
+
+APK (newest, expires 21 Dec): rebrand + legal https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/44924461671
+artifact `sampai-google-debug-arm64`.
+
+Lessons: reviewdog in Android Lint fails on warnings, but only for files in the PR's own diff; stacked PRs can be
+green while their base is red. Force-push to amend is blocked by the classifier: set the author before the first push.
+
+Next run: confirm #57 WebDebug re-run. No new code PRs until Hamza picks a stack. Then: privacy policy hosting text,
+Play Data safety draft (check #63 first so it isn't duplicated).
