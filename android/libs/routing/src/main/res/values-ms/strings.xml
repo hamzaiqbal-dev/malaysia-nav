@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SECTION: Other translations -->
+    <!-- PointsInDifferentMWM -->
+    <string name="routing_failed_cross_mwm_building">Laluan hanya boleh dibuat jika berada sepenuhnya dalam satu peta wilayah.</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_update_map">Kemas kini peta</string>
+    <!-- Text for routing error dialog -->
+    <string name="routing_download_maps_along">Muat turun semua peta di sepanjang laluan anda</string>
+    <!-- Text for routing error dialog -->
+    <string name="routing_requires_all_map">Untuk membuat laluan, kami perlu memuat turun dan mengemas kini semua peta dari lokasi anda ke destinasi anda</string>
+
+    <!-- SECTION: Routing dialogs strings -->
+    <string name="dialog_routing_check_gps">Semak isyarat GPS</string>
+    <string name="dialog_routing_error_location_not_found">Tidak dapat membuat laluan. Koordinat GPS semasa tidak dapat dikenal pasti.</string>
+    <string name="dialog_routing_location_turn_wifi">Sila semak isyarat GPS anda. Menghidupkan Wi-Fi akan meningkatkan ketepatan lokasi anda.</string>
+    <string name="dialog_routing_location_turn_on">Hidupkan perkhidmatan lokasi</string>
+    <string name="dialog_routing_location_unknown_turn_on">Tidak dapat mengesan koordinat GPS semasa. Hidupkan perkhidmatan lokasi untuk mengira laluan.</string>
+    <string name="dialog_routing_unable_locate_route">Tidak dapat mencari laluan</string>
+    <string name="dialog_routing_cant_build_route">Tidak dapat membuat laluan.</string>
+    <string name="dialog_routing_change_start_or_end">Sila laraskan titik mula atau destinasi anda.</string>
+    <string name="dialog_routing_change_start">Laraskan titik mula</string>
+    <string name="dialog_routing_start_not_determined">Laluan tidak dibuat. Titik mula tidak dapat dikesan.</string>
+    <string name="dialog_routing_select_closer_start">Sila pilih titik mula yang lebih dekat dengan jalan.</string>
+    <string name="dialog_routing_change_end">Laraskan destinasi</string>
+    <string name="dialog_routing_end_not_determined">Laluan tidak dibuat. Destinasi tidak dapat dikesan.</string>
+    <string name="dialog_routing_select_closer_end">Sila pilih destinasi yang lebih dekat dengan jalan.</string>
+    <string name="dialog_routing_change_intermediate">Tidak dapat mengesan titik perantaraan.</string>
+    <string name="dialog_routing_intermediate_not_determined">Sila laraskan titik perantaraan anda.</string>
+    <string name="dialog_routing_system_error">Ralat sistem</string>
+    <string name="dialog_routing_application_error">Tidak dapat membuat laluan kerana ralat aplikasi.</string>
+    <string name="dialog_routing_try_again">Sila cuba lagi</string>
+    <string name="dialog_routing_download_and_build_cross_route">Adakah anda mahu memuat turun peta dan membuat laluan yang lebih baik merentasi lebih daripada satu peta?</string>
+    <string name="dialog_routing_download_cross_route">Muat turun peta tambahan untuk membuat laluan yang lebih baik yang merentasi sempadan peta ini.</string>
+
+    <!-- SECTION: Strings for downloading map from search -->
+    <string name="downloader_update_maps">Kemas kini peta</string>
+    <string name="downloader_mwm_migration_dialog">Untuk membuat laluan, anda perlu mengemas kini semua peta dan kemudian merancang laluan sekali lagi.</string>
+    <string name="navigation_stop_button">Henti</string>
+    <string name="ok">OK</string>
+</resources>
