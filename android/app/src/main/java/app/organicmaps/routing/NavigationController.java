@@ -82,19 +82,6 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     mBottomSheetCoordinator = mFrame.findViewById(R.id.nav_bottom_sheet_coordinator);
     mHud.setOnEndClickListener(v -> onStopClicked());
     mHud.setOnSettingsClickListener(v -> onSettingsClicked());
-    mHud.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
-      // Lanes and speed limit are laid out below the hidden street banner: stretch it to clear the HUD card.
-      final int topCardBottom = mHud.getTopCardBottom();
-      if (mStreetFrame.getMinimumHeight() != topCardBottom)
-        mStreetFrame.setMinimumHeight(topCardBottom);
-      // Keep the OSM credit, scale and routing position arrow above the ETA bar.
-      final int etaBarHeight = mHud.getEtaBarHeight();
-      if (mHudEtaBarHeight != etaBarHeight)
-      {
-        mHudEtaBarHeight = etaBarHeight;
-        onMenuSizeChangedListener.OnMenuSizeChange();
-      }
-    });
     mOnSettingsClickListener = onSettingsClickListener;
     mOnVoiceSettingsClickListener = onVoiceSettingsClickListener;
 
@@ -111,6 +98,20 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
 
     mStreetFrame = mTopFrame.findViewById(R.id.street_frame);
     mNextStreet = mStreetFrame.findViewById(R.id.street);
+
+    mHud.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
+      // Lanes and speed limit are laid out below the hidden street banner: stretch it to clear the HUD card.
+      final int topCardBottom = mHud.getTopCardBottom();
+      if (mStreetFrame.getMinimumHeight() != topCardBottom)
+        mStreetFrame.setMinimumHeight(topCardBottom);
+      // Keep the OSM credit, scale and routing position arrow above the ETA bar.
+      final int etaBarHeight = mHud.getEtaBarHeight();
+      if (mHudEtaBarHeight != etaBarHeight)
+      {
+        mHudEtaBarHeight = etaBarHeight;
+        onMenuSizeChangedListener.OnMenuSizeChange();
+      }
+    });
 
     mLanesView = mTopFrame.findViewById(R.id.lanes);
 
