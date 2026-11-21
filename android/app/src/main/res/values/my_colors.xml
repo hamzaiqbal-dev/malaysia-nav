@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Sampai theme tokens, see design/README.md. Light values here, dark ones in values-night. -->
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
   <color name="sampai_bg">#FFF4F6FA</color>
   <color name="sampai_panel">#FFFFFFFF</color>
   <color name="sampai_panel_glass">#E6FFFFFF</color>
