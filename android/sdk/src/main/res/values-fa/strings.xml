@@ -3,11 +3,11 @@
 
     <!-- SECTION: Other translations -->
     <!-- Text shown before a shared "my position" link, and the email subject when sharing the current location. -->
-    <string name="share_my_position">من اینجا در Organic Maps هستم</string>
-    <!-- Shared email link text; opens the shared place in Organic Maps or in a web browser. -->
-    <string name="share_open_in_om_or_browser">در Organic Maps یا مرورگر باز کنید</string>
-    <!-- Shared email link text; leads to the Organic Maps download page. -->
-    <string name="share_get_om">Organic Maps را دریافت کنید</string>
+    <string name="share_my_position">من اینجا در Sampai هستم</string>
+    <!-- Shared email link text; opens the shared place in Sampai or in a web browser. -->
+    <string name="share_open_in_om_or_browser">در Sampai یا مرورگر باز کنید</string>
+    <!-- Shared email link text; leads to the Sampai download page. -->
+    <string name="share_get_om">Sampai را دریافت کنید</string>
     <!-- Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. -->
     <string name="open_in_app">در یک برنامه دیگر باز کنید</string>
 

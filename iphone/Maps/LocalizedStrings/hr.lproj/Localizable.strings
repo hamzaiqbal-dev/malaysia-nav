@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Organic Maps. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Organic Maps!";
+"share_bookmarks_email_body" = "Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Sampai. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Učitavanje zabilješki";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Vaša lokacija još nije određena";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Ovdje sam na karti Organic Maps";
+"share_my_position" = "Ovdje sam na karti Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ na Organic Maps";
+"share_place_subject" = "%1$@ na Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Mjesto na Organic Maps";
+"share_place_subject_default" = "Mjesto na Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Otvori u Organic Maps ili u pregledniku";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Otvori u Sampai ili u pregledniku";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Preuzmi Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Preuzmi Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Otvori u drugoj aplikaciji";
@@ -279,7 +279,7 @@
 /* Text in menu */
 "website" = "Web stranica";
 
-/* Text in About menu, opens Organic Maps news website */
+/* Text in About menu, opens Sampai news website */
 "news" = "Novosti";
 
 /* Text in menu */
@@ -295,7 +295,7 @@
 "donate" = "Doniraj";
 "already_donated" = "Već si donirao/la";
 "remind_me_later" = "Podsjeti me kasnije";
-"support_organic_maps" = "Podrži Organic Maps";
+"support_organic_maps" = "Podrži Sampai";
 
 /* Button in the main Help dialog */
 "copyright" = "Autorska prava";
@@ -393,7 +393,7 @@
 "blue_gray" = "Plavo siva";
 
 /* Prints version number in About dialog */
-"version" = "Organic Maps verzija: %@";
+"version" = "Sampai verzija: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Izgled";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operater: %@";
 "editor_category_unsuitable_title" = "Ne možete pronaći odgovarajuću kategoriju?";
-"editor_category_unsuitable_text" = "Organic Maps omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Pogledajte naš <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">vodič</a> za detaljne upute.";
+"editor_category_unsuitable_text" = "Sampai omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Pogledajte naš <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">vodič</a> za detaljne upute.";
 "downloader_no_downloaded_maps_title" = "Niste preuzeli nijednu kartu";
 "downloader_no_downloaded_maps_message" = "Preuzmite karte za pretraživanje i navigaciju izvan mreže.";
 "current_location_unknown_error_title" = "Trenutna lokacija je nepoznata.";
@@ -833,9 +833,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Za preuzimanje potrebno vam je više prostora. Molimo, izbrišite sve nepotrebne podatke.";
-"editor_sharing_title" = "Poboljšao sam karte aplikacije \"Organic Maps\"";
+"editor_sharing_title" = "Poboljšao sam karte aplikacije \"Sampai\"";
 "editor_detailed_description_hint" = "Detaljan komentar";
-"editor_detailed_description" = "Vaše predložene izmjene karte bit će poslane zajednici OpenStreetMapa. Molimo opišite sve dodatne detalje koje nije moguće urediti u Organic Maps.";
+"editor_detailed_description" = "Vaše predložene izmjene karte bit će poslane zajednici OpenStreetMapa. Molimo opišite sve dodatne detalje koje nije moguće urediti u Sampai.";
 "current_location_unknown_error_message" = "Došlo je do pogreške pri određivanju vaše lokacije. Provjerite radi li vaš uređaj ispravno i pokušajte ponovno kasnije.";
 "location_services_disabled_header" = "Usluge lokacije su onemogućene";
 "location_services_disabled_message" = "Omogućite pristup geolokaciji u postavkama uređaja";
@@ -847,7 +847,7 @@
 "location_services_disabled_on_device_2" = "2. Odaberite Privatnost";
 "location_services_disabled_on_device_3" = "3. Odaberite Usluge lokacije";
 "location_services_disabled_on_device_4" = "4. Uključite usluge lokacije";
-"location_services_disabled_on_device_additional_message" = "Ili nastavite koristiti Organic Maps bez lokacije";
+"location_services_disabled_on_device_additional_message" = "Ili nastavite koristiti Sampai bez lokacije";
 "placepage_call_button" = "Pozovite";
 "placepage_bookmark_name_hint" = "Ime zabilješke";
 "placepage_delete_bookmark_button" = "Izbriši zabilješku";
@@ -858,7 +858,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Onemogućite snimanje vaše nedavno pređene rute?";
 "off_recent_track_background_button" = "Onemogući";
-"recent_track_background_dialog_message" = "Organic Maps koristi tvoju lokaciju u pozadini kako bi zabilježila tvoju nedavno pređenu rutu.";
+"recent_track_background_dialog_message" = "Sampai koristi tvoju lokaciju u pozadini kako bi zabilježila tvoju nedavno pređenu rutu.";
 "general_settings" = "Opće postavke";
 
 /* "traffic" as in road congestion */
@@ -999,10 +999,10 @@
 "app_tip_09" = "Naš glavni cilj je izraditi brze karte usmjerene na privatnost i jednostavne za korištenje koje ćete voljeti.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Sada koristiš Organic Maps na ekranu telefona";
+"car_used_on_the_phone_screen" = "Sada koristiš Sampai na ekranu telefona";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Sada koristiš Organic Maps na ekranu auta";
+"car_used_on_the_car_screen" = "Sada koristiš Sampai na ekranu auta";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Nastavi na telefonu";
@@ -1082,7 +1082,7 @@
 "map" = "Karta";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Želite li poslati izvještaj o grešci programerima?\nOslanjamo se na naše korisnike jer Organic Maps ne prikuplja automatski nikakve informacije o pogreškama. Unaprijed hvala što podržavate Organic Maps!";
+"bugreport_alert_message" = "Želite li poslati izvještaj o grešci programerima?\nOslanjamo se na naše korisnike jer Sampai ne prikuplja automatski nikakve informacije o pogreškama. Unaprijed hvala što podržavate Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Omogući sinkronizaciju s iCloudom";

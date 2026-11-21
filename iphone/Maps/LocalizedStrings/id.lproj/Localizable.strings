@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Halo!\n\nTerlampir adalah bookmark saya; silakan buka di Organic Maps. Jika Anda belum memasangnya, Anda dapat mengunduhnya di sini: https://omaps.app/get?kmz\n\nNikmati perjalanan Anda dengan Organic Maps!";
+"share_bookmarks_email_body" = "Halo!\n\nTerlampir adalah bookmark saya; silakan buka di Sampai. Jika Anda belum memasangnya, Anda dapat mengunduhnya di sini: https://omaps.app/get?kmz\n\nNikmati perjalanan Anda dengan Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Memuat Penanda";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Lokasi Anda belum ditentukan";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Saya di sini di Organic Maps";
+"share_my_position" = "Saya di sini di Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ di Organic Maps";
+"share_place_subject" = "%1$@ di Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Tempat di Organic Maps";
+"share_place_subject_default" = "Tempat di Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Buka di Organic Maps atau di browser";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Buka di Sampai atau di browser";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Dapatkan Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Dapatkan Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Buka di Aplikasi Lain";
@@ -279,7 +279,7 @@
 /* Text in menu */
 "website" = "Situs Web";
 
-/* Text in About menu, opens Organic Maps news website */
+/* Text in About menu, opens Sampai news website */
 "news" = "Berita";
 
 /* Text in menu */
@@ -295,7 +295,7 @@
 "donate" = "Menyumbangkan";
 "already_donated" = "Sudah disumbang";
 "remind_me_later" = "Ingatkan nanti";
-"support_organic_maps" = "Mendukung Organic Maps";
+"support_organic_maps" = "Mendukung Sampai";
 
 /* Button in the main Help dialog */
 "copyright" = "Hak cipta";
@@ -393,7 +393,7 @@
 "blue_gray" = "Biru Keabu-abuan";
 
 /* Prints version number in About dialog */
-"version" = "Versi Organic Maps: %@";
+"version" = "Versi Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Tampilan";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Tidak dapat menemukan kategori yang sesuai?";
-"editor_category_unsuitable_text" = "Organic Maps hanya memungkinkan untuk menambahkan kategori titik sederhana, yang berarti tidak ada kota, jalan, danau, garis besar bangunan, dll. Silahkan tambahkan kategori tersebut secara langsung ke <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Lihat <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">panduan</a> kami untuk petunjuk langkah demi langkah yang terperinci.";
+"editor_category_unsuitable_text" = "Sampai hanya memungkinkan untuk menambahkan kategori titik sederhana, yang berarti tidak ada kota, jalan, danau, garis besar bangunan, dll. Silahkan tambahkan kategori tersebut secara langsung ke <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Lihat <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">panduan</a> kami untuk petunjuk langkah demi langkah yang terperinci.";
 "downloader_no_downloaded_maps_title" = "Tidak ada peta apa pun yang diunduh";
 "downloader_no_downloaded_maps_message" = "Unduh peta untuk menemukan lokasi dan bernavigasi secara offline.";
 "current_location_unknown_error_title" = "Lokasi saat ini tidak diketahui.";
@@ -726,7 +726,7 @@
 "bookmarks_text_placement_description" = "Jika ada terlalu banyak penanda, menampilkan nama mereka di peta dapat memperlambat aplikasi.";
 "show_to_the_right" = "Tampilkan di sebelah kanan";
 "show_at_the_bottom" = "Tampilkan di bagian bawah";
-"enable_logging_warning_message" = "Opsi ini mengaktifkan pencatatan untuk tujuan diagnostik. Bisa amat membantu bagi staf dukungan kami yang memecahkan masalah dalam aplikasi. Aktifkan opsi ini hanya saat diminta oleh dukungan Organic Maps.";
+"enable_logging_warning_message" = "Opsi ini mengaktifkan pencatatan untuk tujuan diagnostik. Bisa amat membantu bagi staf dukungan kami yang memecahkan masalah dalam aplikasi. Aktifkan opsi ini hanya saat diminta oleh dukungan Sampai.";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "Mengemudi";
@@ -833,9 +833,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Untuk mengunduh, Anda perlu ruang lebih banyak. Harap menghapus data yang tidak diperlukan.";
-"editor_sharing_title" = "Saya meningkatkan peta Organic Maps";
+"editor_sharing_title" = "Saya meningkatkan peta Sampai";
 "editor_detailed_description_hint" = "Komentar mendetail";
-"editor_detailed_description" = "Saran perubahan Anda akan dikirimkan ke komunitas OpenStreetMap. Jelaskan detail yang tidak dapat diedit di Organic Maps.";
+"editor_detailed_description" = "Saran perubahan Anda akan dikirimkan ke komunitas OpenStreetMap. Jelaskan detail yang tidak dapat diedit di Sampai.";
 "current_location_unknown_error_message" = "Terjadi kesalahan saat mencari lokasi Anda. Periksa apakah perangkat Anda bekerja dengan benar dan coba lagi nanti.";
 "location_services_disabled_header" = "Identifikasi lokasi dinonaktifkan";
 "location_services_disabled_message" = "Izinkan akses ke geolokasi pada pengaturan perangkat";
@@ -847,7 +847,7 @@
 "location_services_disabled_on_device_2" = "2. Pilih Privasi";
 "location_services_disabled_on_device_3" = "3. Pilih Layanan Lokasi";
 "location_services_disabled_on_device_4" = "4. Aktifkan Layanan Lokasi";
-"location_services_disabled_on_device_additional_message" = "Atau lanjutkan menggunakan Organic Maps tanpa Lokasi";
+"location_services_disabled_on_device_additional_message" = "Atau lanjutkan menggunakan Sampai tanpa Lokasi";
 "placepage_call_button" = "Hubungi";
 "placepage_bookmark_name_hint" = "Nama Bookmark";
 "placepage_delete_bookmark_button" = "Hapus Bookmark";
@@ -858,7 +858,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Nonaktifkan rekaman dari rute yang baru Anda lalui?";
 "off_recent_track_background_button" = "Nonaktifkan";
-"recent_track_background_dialog_message" = "Organic Maps menggunakan geoposisi di latar belakang untuk merekam rute yang baru Anda lalui.";
+"recent_track_background_dialog_message" = "Sampai menggunakan geoposisi di latar belakang untuk merekam rute yang baru Anda lalui.";
 "general_settings" = "Setelan umum";
 
 /* "traffic" as in road congestion */
@@ -902,7 +902,7 @@
 "switch_to_phone_bookmarks_carplay" = "Beralih ke telepon untuk melihat semua penanda";
 "speedcams_alert_title_carplay_1" = "Speedcam";
 "speedcams_alert_title_carplay_2" = "Info kecepatan";
-"download_map_carplay" = "Silakan unduh peta di apl Organic Maps pada perangkat Anda";
+"download_map_carplay" = "Silakan unduh peta di apl Sampai pada perangkat Anda";
 "carplay_roundabout_exit" = "Jalan keluar ke %@";
 
 /* iOS */
@@ -999,10 +999,10 @@
 "app_tip_09" = "Tujuan utama kami adalah membuat peta yang cepat, berfokus pada privasi, dan mudah digunakan yang akan Anda sukai.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Anda sekarang menggunakan Organic Maps pada layar ponsel";
+"car_used_on_the_phone_screen" = "Anda sekarang menggunakan Sampai pada layar ponsel";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Anda sekarang menggunakan Organic Maps pada layar mobil";
+"car_used_on_the_car_screen" = "Anda sekarang menggunakan Sampai pada layar mobil";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Lanjutkan di telepon";
@@ -1082,7 +1082,7 @@
 "map" = "Peta";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena Organic Maps tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung Peta Organik!";
+"bugreport_alert_message" = "Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena Sampai tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung Peta Organik!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Mengaktifkan Sinkronisasi iCloud";

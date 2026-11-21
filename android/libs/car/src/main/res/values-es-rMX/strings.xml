@@ -51,5 +51,5 @@
     <string name="downloader_loading_ios">Cargando</string>
     <string name="download_map_title">Descargar el mapamundi</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps en Android Auto necesita un permiso de ubicación para funcionar de manera eficaz</string>
+    <string name="aa_request_permission_activity_text">Sampai en Android Auto necesita un permiso de ubicación para funcionar de manera eficaz</string>
 </resources>

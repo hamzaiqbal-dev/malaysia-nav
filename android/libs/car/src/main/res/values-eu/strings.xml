@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Deskargatzen</string>
     <string name="download_map_title">Deskargatu munduko aurrebista mapa</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto-ko Organic Maps-ek kokapen-baimena behar du eraginkortasunez funtzionatzeko</string>
+    <string name="aa_request_permission_activity_text">Android Auto-ko Sampai-ek kokapen-baimena behar du eraginkortasunez funtzionatzeko</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Eman baimenak</string>
 </resources>
