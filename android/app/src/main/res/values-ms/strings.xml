@@ -112,6 +112,26 @@
     <string name="pref_tts_unavailable">Tidak tersedia</string>
     <!-- Settings, Navigation group: switch for the Sampai heads-up display (turn card and ETA bar) -->
     <string name="pref_nav_hud_title">Paparan navigasi Sampai</string>
+    <!-- Button on the navigation screen that opens the road report sheet (short) -->
+    <string name="report_button">Lapor</string>
+    <!-- Title of the road report sheet -->
+    <string name="report_sheet_title">Apa yang anda mahu lapor?</string>
+    <!-- Road report type -->
+    <string name="report_jam">Kesesakan</string>
+    <!-- Road report type -->
+    <string name="report_accident">Kemalangan</string>
+    <!-- Road report type -->
+    <string name="report_police">Polis / sekatan jalan raya</string>
+    <!-- Road report type: Malaysian Automated Enforcement System speed camera -->
+    <string name="report_aes_camera">Kamera AES</string>
+    <!-- Road report type -->
+    <string name="report_pothole">Lubang jalan</string>
+    <!-- Road report type -->
+    <string name="report_flood">Banjir</string>
+    <!-- Road report type -->
+    <string name="report_road_closed">Jalan ditutup</string>
+    <!-- Toast after a road report is saved; reports are not sent anywhere yet -->
+    <string name="report_saved">Laporan disimpan pada peranti ini sahaja</string>
     <string name="pref_map_auto_zoom">Zum automatik</string>
     <string name="placepage_distance">Jarak</string>
     <string name="search_show_on_map">Lihat di peta</string>
