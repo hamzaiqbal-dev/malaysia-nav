@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and safety / Terma dan keselamatan</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: sans-serif; line-height: 1.45; padding: 0 12px 24px; }
+  h2 { margin-top: 1.6em; }
+  .draft { border: 1px solid #c80; padding: 8px; }
+  [lang="ms"] { display: none; }
+</style>
+<script>
+  // Bahasa Melayu when the phone language is Malay, English otherwise.
+  function showLang() {
+    var show = (navigator.language || "en").toLowerCase().substring(0, 2) === "ms" ? "ms" : "en";
+    var hide = show === "ms" ? "en" : "ms";
+    var a = document.querySelectorAll('[lang="' + show + '"]');
+    for (var i = 0; i < a.length; i++) a[i].style.display = "block";
+    var b = document.querySelectorAll('[lang="' + hide + '"]');
+    for (var j = 0; j < b.length; j++) b[j].style.display = "none";
+  }
+</script>
+</head>
+<body onload="showLang()">
+<div lang="en">
+<h1>Terms and safety</h1>
+<p class="draft">DRAFT dated 21 November 2026, to be confirmed by a lawyer before public release.</p>
+
+<h2>Drive safely</h2>
+<ul>
+<li>Always obey traffic laws, road signs, speed limits and the instructions of the police and other authorities. They come before anything the app says.</li>
+<li>Do not hold or operate your phone while driving. Set your route before you start, ask a passenger, or stop in a safe place.</li>
+<li>Routes, road rules, speed limits, toll prices, traffic information and camera locations may be wrong, incomplete or out of date. Use your own judgement.</li>
+</ul>
+
+<h2>Map data</h2>
+<p>Maps come from OpenStreetMap contributors and other open data and may contain errors. Roads may be closed, one-way streets may be missing and places may have moved. Toll amounts shown, if any, are indicative only; the toll operator's price applies.</p>
+
+<h2>No warranty</h2>
+<p>Sampai is provided "as is", without warranty of any kind. To the fullest extent permitted by Malaysian law, we are not liable for loss, injury, fines or damage arising from use of the app or reliance on its information.</p>
+
+<h2>Road reports</h2>
+<p>Reports you make with the Lapor button are for your own information. Do not use them to break the law or to endanger others.</p>
+
+<h2>Open source</h2>
+<p>Sampai includes open-source software and open data under their own licences; see "Open-source licences" in About. Map data © OpenStreetMap contributors.</p>
+</div>
+
+<div lang="ms">
+<h1>Terma dan keselamatan</h1>
+<p class="draft">DRAF bertarikh 21 November 2026, perlu disahkan oleh peguam sebelum dikeluarkan kepada umum. Terjemahan perlu disemak oleh penutur asli.</p>
+
+<h2>Pandu dengan selamat</h2>
+<ul>
+<li>Sentiasa patuhi undang-undang jalan raya, papan tanda, had laju dan arahan polis serta pihak berkuasa lain. Semua ini mengatasi apa sahaja yang dikatakan aplikasi.</li>
+<li>Jangan pegang atau guna telefon semasa memandu. Tetapkan laluan sebelum bergerak, minta penumpang membantu, atau berhenti di tempat yang selamat.</li>
+<li>Laluan, peraturan jalan, had laju, harga tol, maklumat trafik dan lokasi kamera mungkin salah, tidak lengkap atau lapuk. Gunakan pertimbangan anda sendiri.</li>
+</ul>
+
+<h2>Data peta</h2>
+<p>Peta datang daripada penyumbang OpenStreetMap dan data terbuka lain serta mungkin mengandungi kesilapan. Jalan mungkin ditutup, jalan sehala mungkin tiada dan tempat mungkin telah berpindah. Jumlah tol yang dipaparkan, jika ada, hanyalah petunjuk; harga pengendali tol yang terpakai.</p>
+
+<h2>Tiada jaminan</h2>
+<p>Sampai disediakan "seadanya", tanpa sebarang jaminan. Setakat yang dibenarkan undang-undang Malaysia, kami tidak bertanggungjawab atas kerugian, kecederaan, denda atau kerosakan akibat penggunaan aplikasi atau pergantungan pada maklumatnya.</p>
+
+<h2>Laporan jalan</h2>
+<p>Laporan yang anda buat dengan butang Lapor adalah untuk maklumat anda sendiri. Jangan gunakannya untuk melanggar undang-undang atau membahayakan orang lain.</p>
+
+<h2>Sumber terbuka</h2>
+<p>Sampai mengandungi perisian sumber terbuka dan data terbuka di bawah lesen masing-masing; lihat "Open-source licences" dalam Perihal. Data peta © Penyumbang OpenStreetMap.</p>
+</div>
+</body>
+</html>
