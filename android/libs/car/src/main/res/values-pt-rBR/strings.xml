@@ -69,7 +69,7 @@
     <string name="downloader_loading_ios">Baixando</string>
     <string name="download_map_title">Baixar a visão geral mundial</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">O Organic Maps no Android Auto precisa de uma permissão de localização para funcionar corretamente</string>
+    <string name="aa_request_permission_activity_text">O Sampai no Android Auto precisa de uma permissão de localização para funcionar corretamente</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Conceder permissões</string>
 </resources>

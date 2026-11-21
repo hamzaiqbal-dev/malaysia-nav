@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">در حال دانلود</string>
     <string name="download_map_title">نقشه نمای کلی جهان را دانلود کنید</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps در Android Auto برای عملکرد بهتر به مجوزهای مکان نیاز دارد</string>
+    <string name="aa_request_permission_activity_text">Sampai در Android Auto برای عملکرد بهتر به مجوزهای مکان نیاز دارد</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">اعطای مجوزها</string>
 </resources>

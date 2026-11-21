@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Lejupielādē</string>
     <string name="download_map_title">Lejupielādēt pasaules pārskata karti</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps lietotnei ir nepieciešama atrašanās vietas atļauja sekmīgai Android Auto darbībai</string>
+    <string name="aa_request_permission_activity_text">Sampai lietotnei ir nepieciešama atrašanās vietas atļauja sekmīgai Android Auto darbībai</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Atļaut piekļuvi</string>
 </resources>
