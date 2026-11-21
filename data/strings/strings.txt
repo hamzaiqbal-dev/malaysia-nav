@@ -7967,6 +7967,12 @@ vi = Không có sẵn
 zh-Hans = 不可用
 zh-Hant = 無法使用
 
+[pref_nav_hud_title]
+comment = Settings, Navigation group: switch for the Sampai heads-up display (turn card and ETA bar)
+tags = android-app
+en = Sampai navigation display
+ms = Paparan navigasi Sampai
+
 [pref_map_auto_zoom]
 tags = android-app,apple-maps
 en = Auto zoom
