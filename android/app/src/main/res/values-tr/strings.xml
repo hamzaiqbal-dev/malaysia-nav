@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Yeniden Dene</string>
     <string name="about_menu_title">Sampai Hakkında</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Sevgiyle yapılmış, herkes için ücretsiz harita</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Reklam yok, izleyici yok, veri toplama yok</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Pilinizi tüketmez, çevrim dışı çalışır</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Hızlı, minimalist, toplulukça geliştirilmiş</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Teknoloji tutkunları ve gönüllülerce oluşturulan açık kaynaklı uygulama.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Konum ayarları</string>
     <string name="close">Kapat</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menü</string>
     <!-- Text in menu -->
     <string name="website">Web Sitesi</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Haberler</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Geri Bildirim</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Uygulamayı değerlendir</string>
-    <!-- Text in menu -->
     <string name="help">Yardım</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Sıkça Sorulan Sorular</string>
     <!-- Button in the main menu -->
     <string name="donate">Bağış yap</string>
     <string name="already_donated">Zaten bağış yaptım</string>
     <string name="remind_me_later">Sonra hatırlat</string>
     <string name="support_organic_maps">Sampai’i Destekleyin</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Bu projeyi destekleyin</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Telif hakkı</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -577,8 +559,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Gizlilik</string>
-    <string name="privacy_policy">Gizlilik politikası</string>
-    <string name="terms_of_use">Kullanım koşulları</string>
     <string name="button_layer_traffic">Trafik</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Yürüyüş</string>
@@ -751,6 +731,8 @@
     <string name="change_map_locale">Harita dili</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Harita verileri OpenStreetMap\'ten</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/tr/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Tr:About</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

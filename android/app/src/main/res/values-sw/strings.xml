@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Jaribu tena</string>
     <string name="about_menu_title">Kuhusu Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Bure kwa kila mtu, iliyotengenezwa na upendo</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Hakuna matangazo, hakuna ufuatiliaji, hakuna mkusanyiko wa data</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Hakuna betri kuisha, inafanya kazi nje ya mtandao</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Haraka, minimalist, iliyotengenezwa na jumuiya</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Maombi ya chanzo-wazi iliyoundwa na wanaovutia na wanaojitolea.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Mipangilio ya mahali</string>
     <string name="close">Funga</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menyu</string>
     <!-- Text in menu -->
     <string name="website">Tovuti</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Habari</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Maoni</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Tathmini programu</string>
-    <!-- Text in menu -->
     <string name="help">Msaada</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Maswali na majibu</string>
     <!-- Button in the main menu -->
     <string name="donate">Changia</string>
     <string name="already_donated">Tayari kutoa</string>
     <string name="remind_me_later">Kumbusha baadaye</string>
     <string name="support_organic_maps">Usaidizi Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Saidia mradi</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Hakimiliki</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -572,8 +554,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Faragha</string>
-    <string name="privacy_policy">Sera ya faragha</string>
-    <string name="terms_of_use">Masharti ya matumizi</string>
     <string name="button_layer_traffic">Trafiki</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Utengenezaji wa njia za kupanda milima</string>

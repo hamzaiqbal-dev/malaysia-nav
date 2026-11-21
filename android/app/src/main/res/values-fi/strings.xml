@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Yritä uudelleen</string>
     <string name="about_menu_title">Tietoa Sampai:stä</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Ilmainen kaikille, tehty rakkaudella</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Ei mainoksia, ei seurantaa, ei tiedonkeruuta</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Ei akun tyhjenemistä, toimii offline-tilassa</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Nopea, minimalistinen, yhteisön kehittämä</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Harrastajien ja vapaaehtoisten luoma avoimen lähdekoodin sovellus.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Sijaintiasetukset</string>
     <string name="close">Sulje</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Kotisivut</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Uutiset</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Palaute</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Arvioi sovellus</string>
-    <!-- Text in menu -->
     <string name="help">Ohje</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Usein kysytyt kysymykset</string>
     <!-- Button in the main menu -->
     <string name="donate">Lahjoita</string>
     <string name="already_donated">Jo lahjoitettu</string>
     <string name="remind_me_later">Muistuta myöhemmin</string>
     <string name="support_organic_maps">Tue Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Tue projektia</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Tekijänoikeudet</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -575,8 +557,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Yksityisyys</string>
-    <string name="privacy_policy">Yksityisyyskäytäntö</string>
-    <string name="terms_of_use">Käyttöehdot</string>
     <string name="button_layer_traffic">Liikenne</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Vaellus</string>

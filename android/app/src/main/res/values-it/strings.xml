@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Riprova</string>
     <string name="about_menu_title">Informazioni su Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratuita per tutti, fatta con amore</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Nessun annuncio, nessun tracciamento, nessuna raccolta di dati</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Consuma poca batteria, funziona offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Veloce, minimalista, sviluppato dalla comunità</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Applicazione open-source creata da appassionati e volontari.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Impostazioni posizione</string>
     <string name="close">Chiudi</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Sito web</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Notizie</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Vota l\'app</string>
-    <!-- Text in menu -->
     <string name="help">Aiuto</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Domande frequenti</string>
     <!-- Button in the main menu -->
     <string name="donate">Dona</string>
     <string name="already_donated">Già donato</string>
     <string name="remind_me_later">Ricorda più tardi</string>
     <string name="support_organic_maps">Supporta Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Sostieni il progetto</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Copyright</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -580,8 +562,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">La privacy</string>
-    <string name="privacy_policy">Politica sulla privacy</string>
-    <string name="terms_of_use">Termini di utilizzo</string>
     <string name="button_layer_traffic">Traffico</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Escursionismo</string>
@@ -754,6 +734,8 @@
     <string name="change_map_locale">Lingua della mappa</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Dati della mappa da OpenStreetMap</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/it/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/IT:About</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

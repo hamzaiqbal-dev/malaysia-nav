@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">再试一次</string>
     <string name="about_menu_title">关于 Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">对每个人都免费，用爱制成</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• 没有广告，不会跟踪您，更不会收集您的数据</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• 无需耗费太多电量，可离线工作</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• 快速且简约，由社区开发</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">由爱好者和志愿者开发的开源应用程序。</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">位置设置</string>
     <string name="close">关闭</string>
@@ -247,23 +237,15 @@
     <string name="menu">菜单</string>
     <!-- Text in menu -->
     <string name="website">网站</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">新闻</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">反馈</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">为我们评分</string>
-    <!-- Text in menu -->
     <string name="help">帮助</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">问题和解答</string>
     <!-- Button in the main menu -->
     <string name="donate">捐助我们</string>
     <string name="already_donated">已捐赠</string>
     <string name="remind_me_later">稍后提醒</string>
     <string name="support_organic_maps">支持 Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">支持本项目</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">版权</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -576,8 +558,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">隐私</string>
-    <string name="privacy_policy">隐私政策</string>
-    <string name="terms_of_use">使用条款</string>
     <string name="button_layer_traffic">路况</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">徒步</string>
@@ -750,6 +730,8 @@
     <string name="change_map_locale">地图语言</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">地图数据来自 OpenStreetMap</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/zh-Hans/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Zh-hans:关于</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

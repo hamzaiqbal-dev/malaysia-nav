@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">ລອງໃໝ່</string>
     <string name="about_menu_title">ກ່ຽວກັບ Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">ຟຣີສຳລັບທຸກຄົນ, ສ້າງດ້ວຍຄວາມຮັກ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• ບໍ່ມີໂຄສະນາ, ບໍ່ມີການຕິດຕາມ, ບໍ່ມີການເກັບກຳຂໍ້ມູນ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• ບໍ່ເປືອງແບັດເຕີຣີ, ໃຊ້ງານໄດ້ແບບອອບລາຍ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• ໄວ, ງ່າຍດາຍ, ພັດທະນາໂດຍຊຸມຊົນ</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">ແອັບພລິເຄຊັນໂອເພັນຊອດທີ່ສ້າງໂດຍຜູ້ມີໃຈຮັກ ແລະ ອາສາສະໝັກ.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">ການຕັ້ງຄ່າຕຳແໜ່ງທີ່ຕັ້ງ</string>
     <string name="close">ປິດ</string>
@@ -201,23 +191,15 @@
     <string name="menu">ເມນູ</string>
     <!-- Text in menu -->
     <string name="website">ເວັບໄຊ</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">ຂ່າວສານ</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">ຄຳຕິຊົມ</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">ໃຫ້ຄະແນນແອັບ</string>
-    <!-- Text in menu -->
     <string name="help">ຊ່ວຍເຫຼືອ</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">ຄຳຖາມທີ່ພົບເລື້ອຍ</string>
     <!-- Button in the main menu -->
     <string name="donate">ບໍລິຈາກ</string>
     <string name="already_donated">ບໍລິຈາກແລ້ວ</string>
     <string name="remind_me_later">ເຕືອນພາຍຫຼັງ</string>
     <string name="support_organic_maps">ສະໜັບສະໜູນ Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">ສະໜັບສະໜູນໂຄງການ</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">ລິຂະສິດ</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -529,8 +511,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">ຄວາມເປັນສ່ວນຕົວ</string>
-    <string name="privacy_policy">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
-    <string name="terms_of_use">ເງື່ອນໄຂການໃຊ້ງານ</string>
     <string name="button_layer_traffic">ການຈະລາຈອນ</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">ການຍ່າງປ່າ</string>

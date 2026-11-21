@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Попробуйте ещё раз</string>
     <string name="about_menu_title">Про Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Бесплатно для всех, сделано с любовью</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Без рекламы, без трекинга, без слежки</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Не разряжает батарею, работает в автономном режиме</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Быстрый, минималистичный, разработанный сообществом</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Приложение с открытым исходным кодом, созданное энтузиастами и волонтёрами.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Настройки местоположения</string>
     <string name="close">Закрыть</string>
@@ -247,23 +237,15 @@
     <string name="menu">Меню</string>
     <!-- Text in menu -->
     <string name="website">Вебсайт</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Новости</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Связаться с нами</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Оценить приложение</string>
-    <!-- Text in menu -->
     <string name="help">Справка</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Вопросы и ответы</string>
     <!-- Button in the main menu -->
     <string name="donate">Поддержать деньгами</string>
     <string name="already_donated">Уже пожертвовано</string>
     <string name="remind_me_later">Напомнить позже</string>
     <string name="support_organic_maps">Поддержать Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Помочь проекту</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Копирайт</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -582,8 +564,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Приватность</string>
-    <string name="privacy_policy">Политика конфиденциальности</string>
-    <string name="terms_of_use">Условия использования</string>
     <string name="button_layer_traffic">Пробки</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Пешие маршруты</string>
@@ -756,6 +736,8 @@
     <string name="change_map_locale">Язык карты</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Картографические данные из OpenStreetMap</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/ru/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/RU:О_проекте</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

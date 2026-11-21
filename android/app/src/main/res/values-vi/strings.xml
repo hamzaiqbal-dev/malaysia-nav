@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Thử lại</string>
     <string name="about_menu_title">Giới thiệu về Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Miễn phí cho mọi người, được làm bằng tình yêu</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Không có quảng cáo, không theo dõi, không thu thập dữ liệu</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Không hao pin, hoạt động offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Nhanh chóng, tối giản, được phát triển bởi cộng đồng</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Ứng dụng nguồn mở được tạo bởi những người đam mê và tình nguyện viên.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Cài đặt vị trí</string>
     <string name="close">Đóng</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Trang web</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Tin tức</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Phản hồi</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Cho điểm ứng dụng</string>
-    <!-- Text in menu -->
     <string name="help">Trợ giúp</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Câu hỏi và trả lời</string>
     <!-- Button in the main menu -->
     <string name="donate">Quyên tặng</string>
     <string name="already_donated">Đã quyên góp</string>
     <string name="remind_me_later">Nhắc sau</string>
     <string name="support_organic_maps">Hỗ trợ Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Hỗ trợ dự án</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Bản quyền</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -573,8 +555,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Sự riêng tư</string>
-    <string name="privacy_policy">Chính sách bảo mật</string>
-    <string name="terms_of_use">Điều khoảng sử dụng</string>
     <string name="button_layer_traffic">Giao thông</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Đi bộ đường dài</string>

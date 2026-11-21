@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">다시 시도</string>
     <string name="about_menu_title">Sampai 정보</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">사랑으로 만든 모든 사람에게 무료</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• 광고 없음, 추적 없음, 데이터 수집 없음</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• 배터리 소모 없음, 오프라인에서 작동</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• 빠르고 미니멀한, 커뮤니티가 개발한</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">애호가와 자원 봉사자가 만든 오픈 소스 응용 프로그램.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">위치 설정</string>
     <string name="close">닫기</string>
@@ -247,23 +237,15 @@
     <string name="menu">메뉴</string>
     <!-- Text in menu -->
     <string name="website">웹사이트</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">소식</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">피드백</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">앱 평가</string>
-    <!-- Text in menu -->
     <string name="help">도움말</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">질문과 답변</string>
     <!-- Button in the main menu -->
     <string name="donate">기부</string>
     <string name="already_donated">기부완료</string>
     <string name="remind_me_later">나중에 알림</string>
     <string name="support_organic_maps">Sampai를 지원해주세요</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">프로젝트 지원</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">저작권</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -573,8 +555,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">개인정보 보호</string>
-    <string name="privacy_policy">개인정보 보호 방침</string>
-    <string name="terms_of_use">사용 약관</string>
     <string name="button_layer_traffic">트래픽</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">하이킹</string>

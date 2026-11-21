@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Yenidən cəhd et</string>
     <string name="about_menu_title">Sampai Haqqında</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Hər kəs üçün ödənişsiz və sevgi ilə hazırlanmış xəritə</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Reklam yoxdur, izləmə yoxdur, məlumatların toplanması yoxdur</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Batareyanın boşalması yoxdur, oflayn işləyir</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Sürətli, minimalist, icma tərəfindən hazırlanmışdır</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Həvəskarlar və könüllülər tərəfindən yaradılan açıq mənbə proqramı.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Məkan parametrləri</string>
     <string name="close">Yaxın</string>
@@ -247,23 +237,15 @@
     <string name="menu">Menyu</string>
     <!-- Text in menu -->
     <string name="website">Veb sayt</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Xəbərlər</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Rəy</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Proqramı qiymətləndirin</string>
-    <!-- Text in menu -->
     <string name="help">Yardım</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Tez-tez soruşulan suallar</string>
     <!-- Button in the main menu -->
     <string name="donate">Bağışlamaq</string>
     <string name="already_donated">Artıq ianə edildi</string>
     <string name="remind_me_later">Daha sonra xatırlat</string>
     <string name="support_organic_maps">Sampai-i dəstəkləmək</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Bu layihəni dəstəkləyin</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Müəllif hüququ</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -575,8 +557,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Məxfilik</string>
-    <string name="privacy_policy">Gizlilik Siyasəti</string>
-    <string name="terms_of_use">İstifadə qaydaları</string>
     <string name="button_layer_traffic">Nəqliyyat</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Piyada gəzinti</string>

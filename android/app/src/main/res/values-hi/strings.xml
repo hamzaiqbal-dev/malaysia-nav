@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">पुनः प्रयास करें</string>
     <string name="about_menu_title">Sampai के बारे में</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">सभी के लिए मुफ़्त, प्यार से बनाया गया</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई डेटा संग्रह नहीं</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• कोई बैटरी ख़त्म नहीं, ऑफ़लाइन काम करता है</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• तेज़, न्यूनतम, समुदाय द्वारा विकसित</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">उत्साही और स्वयंसेवकों द्वारा बनाया गया ओपन-सोर्स एप्लिकेशन।</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">स्थान सेटिंग्स</string>
     <string name="close">बंद करना</string>
@@ -247,23 +237,15 @@
     <string name="menu">मेन्यू</string>
     <!-- Text in menu -->
     <string name="website">वेबसाइट</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">समाचार</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">प्रतिक्रिया</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">एप्लिकेशन की श्रेणी बताओ</string>
-    <!-- Text in menu -->
     <string name="help">सहायता</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">अक्सर पूछे जाने वाले प्रश्नों</string>
     <!-- Button in the main menu -->
     <string name="donate">दान देना</string>
     <string name="already_donated">पहले से दान</string>
     <string name="remind_me_later">बाद में याद दिलाना</string>
     <string name="support_organic_maps">Sampai का समर्थन करें</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">परियोजना का समर्थन करें</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">कॉपीराइट</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -572,8 +554,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">निजता</string>
-    <string name="privacy_policy">गोपनीयता नीति</string>
-    <string name="terms_of_use">उपयोग की शर्तें</string>
     <string name="button_layer_traffic">यातायात</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">हाइकिंग</string>
@@ -740,6 +720,8 @@
     <string name="change_map_locale">मानचित्र भाषा</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMap से मानचित्र डेटा</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/hi/</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <!-- App Tip #00 -->

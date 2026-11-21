@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Reyndu aftur</string>
     <string name="about_menu_title">Um Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Ókeypis fyrir alla, unnið af alúð</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Engar auglýsingar, engar njósnir, engin gagnasöfnun</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Tæmir ekki rafhlöðuna, virkar án nettengingar</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Hraðvirkt, mínímalískt, hannað af notendunum</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Forrit með opinn grunnkóða sem útbúið er af áhugafólki og sjálfboðaliðum.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Staðsetningarstillingar</string>
     <string name="close">Loka</string>
@@ -247,23 +237,15 @@
     <string name="menu">Valmynd</string>
     <!-- Text in menu -->
     <string name="website">Vefsvæði</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Fréttir</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Umsagnir</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Gefðu forritinu einkunn</string>
-    <!-- Text in menu -->
     <string name="help">Hjálp</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Algengar spurningar (FAQ)</string>
     <!-- Button in the main menu -->
     <string name="donate">Styrkja</string>
     <string name="already_donated">Hef þegar styrkt verkefnið</string>
     <string name="remind_me_later">Áminna mig síðar</string>
     <string name="support_organic_maps">Styddu við Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Styddu við verkefnið</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Höfundarréttur</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -578,8 +560,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Friðhelgi</string>
-    <string name="privacy_policy">Meðferð persónuupplýsinga</string>
-    <string name="terms_of_use">Notkunarskilmálar</string>
     <string name="button_layer_traffic">Umferð</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Gönguleiðir</string>
@@ -752,6 +732,8 @@
     <string name="change_map_locale">Tungumál korts</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Kortagögn frá OpenStreetMap</string>
+    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
+    <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

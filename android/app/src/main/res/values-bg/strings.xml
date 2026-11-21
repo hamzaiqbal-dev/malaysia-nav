@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Опитайте отново</string>
     <string name="about_menu_title">За „Sampai“</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Безплатно за всички, направени с любов</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Без реклами, без проследяване, без събиране на данни</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Без източване на батерията, работи офлайн</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Бърз, прост, разработен от общността</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Приложение с отворен код, създадено от ентусиасти и доброволци.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Настройки на местоположението</string>
     <string name="close">Затваряне</string>
@@ -247,23 +237,15 @@
     <string name="menu">Меню</string>
     <!-- Text in menu -->
     <string name="website">Уебсайт</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Новини</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Обратна връзка</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Оцени приложение</string>
-    <!-- Text in menu -->
     <string name="help">Помощ</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Въпроси и отговори</string>
     <!-- Button in the main menu -->
     <string name="donate">Дарете</string>
     <string name="already_donated">Вече дарено</string>
     <string name="remind_me_later">Напомни по-късно</string>
     <string name="support_organic_maps">Подкрепи Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Подкрепете проекта</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Авторски права</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -574,8 +556,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Поверителност</string>
-    <string name="privacy_policy">Политика за поверителност</string>
-    <string name="terms_of_use">Условия за ползване</string>
     <string name="button_layer_traffic">Трафик</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Пешеходен туризъм</string>

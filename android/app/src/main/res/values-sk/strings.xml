@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Skúsiť znova</string>
     <string name="about_menu_title">O aplikácii Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Zadarmo pre každého, vyrobené s láskou</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Žiadne reklamy, žiadne sledovanie, žiadny zber údajov</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Žiadne vybíjanie batérie, funguje v režime offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Rýchly, minimalistický, vyvinutý komunitou</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplikácia s otvoreným zdrojovým kódom vytvorená nadšencami a dobrovoľníkmi.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Nastavenia polohy</string>
     <string name="close">Zavrieť</string>
@@ -247,23 +237,15 @@
     <string name="menu">Ponuka</string>
     <!-- Text in menu -->
     <string name="website">Webové stránky</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Správy</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Spätná väzba</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Ohodnotiť aplikáciu</string>
-    <!-- Text in menu -->
     <string name="help">Nápoveda</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Otázky a odpovede</string>
     <!-- Button in the main menu -->
     <string name="donate">Darovať</string>
     <string name="already_donated">Už darované</string>
     <string name="remind_me_later">Pripomeň neskôr</string>
     <string name="support_organic_maps">Podporiť Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Podporte projekt</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Autorské práva</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -576,8 +558,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Súkromie</string>
-    <string name="privacy_policy">Zásady ochrany osobných údajov</string>
-    <string name="terms_of_use">Podmienky používania</string>
     <string name="button_layer_traffic">Dopravné informácie</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Turistika</string>

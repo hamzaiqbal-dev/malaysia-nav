@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">再実行</string>
     <string name="about_menu_title">Sampaiについて</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">すべての人のために無料で、愛を込めて作られています</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• 広告、追跡なし、データ収集なし</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• バッテリーの消耗がなく、オフラインで動作する</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• 高速、ミニマリスト、コミュニティによる開発</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">愛好家とボランティアによって作成されたオープンソースアプリケーション。</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">ロケーション設定</string>
     <string name="close">閉じる</string>
@@ -247,23 +237,15 @@
     <string name="menu">メニュー</string>
     <!-- Text in menu -->
     <string name="website">ウェブサイト</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">ニュース</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">フィードバック</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">アプリを評価</string>
-    <!-- Text in menu -->
     <string name="help">ヘルプ</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">よくある質問</string>
     <!-- Button in the main menu -->
     <string name="donate">寄付</string>
     <string name="already_donated">寄付済み</string>
     <string name="remind_me_later">後でリマインド</string>
     <string name="support_organic_maps">Sampai を応援してください</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">プロジェクトを支援する</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">著作権</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -574,8 +556,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">プライバシー</string>
-    <string name="privacy_policy">プライバシーポリシー</string>
-    <string name="terms_of_use">利用規約</string>
     <string name="button_layer_traffic">交通状況</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">ハイキング</string>
