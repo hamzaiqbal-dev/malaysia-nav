@@ -152,7 +152,6 @@
     <string name="description">Ghi chú</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Điểm đánh dấu Sampai được chia sẻ</string>
-    <string name="share_bookmarks_email_body">Xin chào!\n\nĐính kèm là các dấu trang của tôi; vui lòng mở chúng trong Sampai. Nếu bạn chưa cài đặt ứng dụng này, bạn có thể tải xuống tại đây: https://omaps.app/get?kmz\n\nChúc bạn có những chuyến đi thú vị cùng Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Tải Điểm đánh dấu</string>
     <!-- Kmz file successful loading -->
@@ -470,7 +469,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Toán tử: %s</string>
     <string name="editor_category_unsuitable_title">Không thể tìm thấy một danh mục phù hợp?</string>
-    <string name="editor_category_unsuitable_text">Sampai chỉ cho phép thêm các loại điểm đơn giản, tức là không bao gồm các thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các loại này trực tiếp vào <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Hãy tham khảo <a href="https://organicmaps.app/faq/editing/advanced-map-editing">hướng dẫn</a> của chúng tôi để biết các bước thực hiện chi tiết.</string>
     <string name="downloader_no_downloaded_maps_title">Bạn chưa tải về bất kỳ bản đồ nào</string>
     <string name="downloader_no_downloaded_maps_message">Tải về bản đồ để tìm địa điểm và định hướng ngoại tuyến.</string>
     <string name="current_location_unknown_error_title">Chưa biết địa điểm hiện tại.</string>
@@ -541,10 +539,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Thêm điểm dừng</string>
     <string name="drag_to_reorder">Sắp xếp lại</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Vui lòng đăng nhập vào OpenStreetMap để tự động tải lên tất cả các chỉnh sửa bản đồ của bạn. Tìm hiểu thêm <a href="https://github.com/organicmaps/organicmaps/issues/6144">tại đây</a>.</string>
     <string name="dialog_error_storage_title">Vấn đề truy cập ổ lưu trữ</string>
-    <string name="dialog_error_storage_message">Ổ lưu trữ bên ngoài không khả dụng, có thể Thẻ SD đã bị tháo, bị hỏng hoặc hệ thống tập tin được thiết lập chỉ đọc. Hãy kiểm tra và liên hệ với chúng tôi qua support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Giả lập ổ lưu trữ hỏng</string>
     <string name="error_enter_correct_name">Vui lòng nhập một tên chính xác</string>
     <string name="bookmark_lists">Danh sách</string>

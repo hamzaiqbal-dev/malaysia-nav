@@ -79,7 +79,6 @@
     <!-- SECTION: Other translations -->
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notes</string>
-    <string name="share_bookmarks_email_body">¡Hola!\n\nLos mios marcadores tán axuntos; ábrilos n’Sampai. Si nun lu tienes instaláu, te lu puedes baxar equí: https://omaps.app/get?kmz\n\n¡Gocia viaxar con Sampai!</string>
     <!-- resource for context menu -->
     <string name="edit">Editar</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->

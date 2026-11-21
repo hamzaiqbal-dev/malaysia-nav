@@ -152,7 +152,7 @@
     <string name="description">Notes</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai bookmarks were shared with you</string>
-    <string name="share_bookmarks_email_body">Hello!\n\nAttached are my bookmarks; please open them in Sampai. If you don\'t have it installed you can download it here: https://omaps.app/get?kmz\n\nEnjoy travelling with Sampai!</string>
+    <string name="share_bookmarks_email_body">Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Loading Bookmarks</string>
     <!-- Kmz file successful loading -->
@@ -265,8 +265,8 @@
     <string name="support_organic_maps">Support Sampai</string>
     <!-- Button in the main Help dialog -->
     <string name="how_to_support_us">Support the project</string>
-    <!-- About screen: credit to the upstream open-source project (keep the name) -->
-    <string name="about_attribution">Based on Organic Maps, © Organic Maps Project. Licensed under Apache-2.0.</string>
+    <!-- About screen: product name and author line -->
+    <string name="about_attribution">Sampai — made in Malaysia by Hamza Iqbal</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Copyright</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -472,7 +472,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Can\'t find a suitable category?</string>
-    <string name="editor_category_unsuitable_text">Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detailed step by step instructions.</string>
+    <string name="editor_category_unsuitable_text">Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>.</string>
     <string name="downloader_no_downloaded_maps_title">You haven\'t downloaded any maps</string>
     <string name="downloader_no_downloaded_maps_message">Download maps to search and navigate offline.</string>
     <string name="current_location_unknown_error_title">Current location is unknown.</string>
@@ -544,9 +544,9 @@
     <string name="placepage_add_stop">Add Stop</string>
     <string name="drag_to_reorder">Reorder</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Please login to OpenStreetMap to automatically upload all your map edits. Learn more <a href="https://github.com/organicmaps/organicmaps/issues/6144">here</a>.</string>
+    <string name="alert_reauth_message">Please login to OpenStreetMap to automatically upload all your map edits.</string>
     <string name="dialog_error_storage_title">Storage access problem</string>
-    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card or contact us at support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card.</string>
     <string name="setting_emulate_bad_storage">Emulate bad storage</string>
     <string name="error_enter_correct_name">Please enter a correct name</string>
     <string name="bookmark_lists">Lists</string>
@@ -756,14 +756,6 @@
     <string name="change_map_locale">Map language</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Map data from OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
-    <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

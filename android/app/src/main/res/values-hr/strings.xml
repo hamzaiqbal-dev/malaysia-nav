@@ -152,7 +152,6 @@
     <string name="description">Bilješke</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai zabilješke su s tobom dijeljene</string>
-    <string name="share_bookmarks_email_body">Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Sampai. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Učitavanje zabilješki</string>
     <!-- Kmz file successful loading -->
@@ -468,7 +467,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operater: %s</string>
     <string name="editor_category_unsuitable_title">Ne možete pronaći odgovarajuću kategoriju?</string>
-    <string name="editor_category_unsuitable_text">Sampai omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vodič</a> za detaljne upute.</string>
     <string name="downloader_no_downloaded_maps_title">Niste preuzeli nijednu kartu</string>
     <string name="downloader_no_downloaded_maps_message">Preuzmite karte za pretraživanje i navigaciju izvan mreže.</string>
     <string name="current_location_unknown_error_title">Trenutna lokacija je nepoznata.</string>
@@ -539,10 +537,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Dodaj stajalište</string>
     <string name="drag_to_reorder">Prelagranje</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Molimo prijavite se na OpenStreetMap kako biste automatski učitali sve svoje izmjene karte. Saznajte više <a href="https://github.com/organicmaps/organicmaps/issues/6144">ovdje</a>.</string>
     <string name="dialog_error_storage_title">Problem s pristupom pohrani</string>
-    <string name="dialog_error_storage_message">Vanjska pohrana nije dostupna. SD kartica je možda uklonjena, oštećena ili je datotečni sustav samo za čitanje. Molimo provjerite svoju SD karticu ili nas kontaktirajte na support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emuliraj loše pohranjivanje</string>
     <string name="error_enter_correct_name">Molimo unesite ispravno ime</string>
     <string name="bookmark_lists">Popisi</string>
@@ -752,12 +747,6 @@
     <string name="change_map_locale">Jezik karte</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Podaci karte od OpenStreetMapa</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

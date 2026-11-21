@@ -152,7 +152,6 @@
     <string name="description">Maelezo</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai alama za ukurasa zimeshirikiwa nawe</string>
-    <string name="share_bookmarks_email_body">Habari!\n\nNimeambatanisha alamisho zangu; tafadhali zifungue kwenye Sampai. Ikiwa haujaweka, unaweza kupakua hapa: https://omaps.app/get?kmz\n\nFurahia kusafiri na Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Inapakia alamisho</string>
     <!-- Kmz file successful loading -->
@@ -468,7 +467,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Mwendeshaji: %s</string>
     <string name="editor_category_unsuitable_title">Je, huwezi kupata aina inayofaa?</string>
-    <string name="editor_category_unsuitable_text">Sampai inakuwezesha kuongeza tu aina rahisi za alama, ikimaanisha hakuna miji, barabara, maziwa, mipaka ya majengo, n.k. Tafadhali ongeza aina hizo moja kwa moja kwenye <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Angalia <a href="https://organicmaps.app/faq/editing/advanced-map-editing">mwongozo</a> wetu kwa maelekezo ya kina hatua kwa hatua.</string>
     <string name="downloader_no_downloaded_maps_title">Haujapakua ramani yoyote</string>
     <string name="downloader_no_downloaded_maps_message">Pakua ramani ili kutafuta na kuvinjari bila muunganisho.</string>
     <string name="current_location_unknown_error_title">Mahali pa sasa halijulikani.</string>
@@ -539,10 +537,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Ongeza kituo</string>
     <string name="drag_to_reorder">Panga upya</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Tafadhali ingia kwenye OpenStreetMap ili kupakia kiotomatiki hariri zako zote za ramani. Pata maelezo zaidi <a href="https://github.com/organicmaps/organicmaps/issues/6144">hapa</a>.</string>
     <string name="dialog_error_storage_title">Tatizo la kufikia hifadhi</string>
-    <string name="dialog_error_storage_message">Hifadhi ya nje haipatikani, pengine Kadi ya SD imeondolewa, imeharibika au mfumo wa faili ni wa kusoma pekee. Tafadhali ikague na uwasiliane nasi kwa kutumia support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Onyeshana hifadhi mbaya</string>
     <string name="error_enter_correct_name">Tafadhali, weka jina sahihi</string>
     <string name="bookmark_lists">Orodha</string>
