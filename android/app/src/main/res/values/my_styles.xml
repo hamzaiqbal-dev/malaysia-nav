@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Typography tokens: Plus Jakarta Sans (SIL OFL, see docs/licenses). -->
+  <style name="TextAppearance.Sampai.Body">
+    <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    <item name="fontFamily">@font/plus_jakarta_sans</item>
+  </style>
+
+  <style name="TextAppearance.Sampai.Label">
+    <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    <item name="fontFamily">@font/plus_jakarta_sans</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <!-- Shape tokens. -->
+  <style name="ShapeAppearance.Sampai.Button" parent="ShapeAppearance.Material3.MediumComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">@dimen/sampai_corner_button</item>
+  </style>
+
+  <style name="ShapeAppearance.Sampai.Sheet" parent="ShapeAppearance.Material3.LargeComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">@dimen/sampai_corner_sheet</item>
+  </style>
+
+  <!-- Route planning sheet. -->
+  <style name="MwmWidget.BottomSheet.Sampai" parent="MwmWidget.BottomSheet.Rounded">
+    <item name="backgroundTint">@color/sampai_panel</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.Sampai.Sheet</item>
+  </style>
+</resources>
