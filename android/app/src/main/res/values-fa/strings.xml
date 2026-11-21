@@ -246,8 +246,6 @@
     <string name="already_donated">قبلاً اهدا شده</string>
     <string name="remind_me_later">بعداً یادآوری کن</string>
     <string name="support_organic_maps">پشتیبانی از Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">حق نشر و کپی رایت</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">گزارش خطا</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -557,6 +555,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">حریم شخصی</string>
+    <string name="privacy_policy">سیاست حریم خصوصی</string>
+    <string name="terms_of_use">شرایط استفاده</string>
     <string name="button_layer_traffic">ترافیک</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">پیاده‌گردی</string>

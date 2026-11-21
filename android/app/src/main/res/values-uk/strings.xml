@@ -246,8 +246,6 @@
     <string name="already_donated">Вже пожертвувано</string>
     <string name="remind_me_later">Нагадати пізніше</string>
     <string name="support_organic_maps">Підтримати Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Копірайт</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Сповістити про помилку</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -564,6 +562,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Приватність</string>
+    <string name="privacy_policy">Політика конфіденційності</string>
+    <string name="terms_of_use">Умови використання</string>
     <string name="button_layer_traffic">Затор</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Піші прогулянки</string>

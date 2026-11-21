@@ -246,8 +246,6 @@
     <string name="already_donated">Už darované</string>
     <string name="remind_me_later">Pripomeň neskôr</string>
     <string name="support_organic_maps">Podporiť Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Autorské práva</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Nahlásiť chybu</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -558,6 +556,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Súkromie</string>
+    <string name="privacy_policy">Zásady ochrany osobných údajov</string>
+    <string name="terms_of_use">Podmienky používania</string>
     <string name="button_layer_traffic">Dopravné informácie</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Turistika</string>

@@ -246,8 +246,6 @@
     <string name="already_donated">Tashmë keni dhuruar</string>
     <string name="remind_me_later">Kujto më vonë</string>
     <string name="support_organic_maps">Mbështet Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">E drejta e autorit</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Raporto një problem</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -545,6 +543,8 @@
     <string name="restore">Restauro</string>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privatësia</string>
+    <string name="privacy_policy">Politika e privatësisë</string>
+    <string name="terms_of_use">Kushtet e përdorimit</string>
     <string name="button_layer_traffic">Trafiku</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Eisje në natyrë</string>

@@ -246,8 +246,6 @@
     <string name="already_donated">Deja donat</string>
     <string name="remind_me_later">Amintește mai târziu</string>
     <string name="support_organic_maps">Susține Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Drepturi de autor</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Raportează o eroare</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -557,6 +555,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Intimitate</string>
+    <string name="privacy_policy">Confidențialitate</string>
+    <string name="terms_of_use">Termeni de utilizare</string>
     <string name="button_layer_traffic">Trafic</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Drumeții</string>

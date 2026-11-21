@@ -246,8 +246,6 @@
     <string name="already_donated">Hef þegar styrkt verkefnið</string>
     <string name="remind_me_later">Áminna mig síðar</string>
     <string name="support_organic_maps">Styddu við Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Höfundarréttur</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Tilkynna um villu</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -560,6 +558,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Friðhelgi</string>
+    <string name="privacy_policy">Meðferð persónuupplýsinga</string>
+    <string name="terms_of_use">Notkunarskilmálar</string>
     <string name="button_layer_traffic">Umferð</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Gönguleiðir</string>

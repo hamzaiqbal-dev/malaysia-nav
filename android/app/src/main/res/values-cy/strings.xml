@@ -246,8 +246,6 @@
     <string name="already_donated">Wedi cyfrannu eisoes</string>
     <string name="remind_me_later">Atgoffwch fi\'n ddiweddarach</string>
     <string name="support_organic_maps">Cefnogi Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Hawlfraint</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Rhoi gwybod am fyg</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -569,6 +567,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Preifatrwydd</string>
+    <string name="privacy_policy">Polisi preifatrwydd</string>
+    <string name="terms_of_use">Telerau defnydd</string>
     <string name="button_layer_traffic">Traffig</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Heicio</string>

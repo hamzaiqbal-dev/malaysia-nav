@@ -249,8 +249,8 @@
     <string name="support_organic_maps">Support Sampai</string>
     <!-- About screen: product name and author line -->
     <string name="about_attribution">Sampai — made in Malaysia by Hamza Iqbal</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Copyright</string>
+    <!-- About screen row: open-source licences and data credits -->
+    <string name="about_licences">Open-source licences</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Report a bug</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -564,6 +564,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privacy</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_of_use">Terms of use</string>
     <string name="button_layer_traffic">Traffic</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Hiking</string>

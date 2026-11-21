@@ -246,8 +246,6 @@
     <string name="already_donated">Allerede donert</string>
     <string name="remind_me_later">Påminn senere</string>
     <string name="support_organic_maps">Støtt Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Opphavsrett</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Rapporter en feil</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -557,6 +555,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Personvern</string>
+    <string name="privacy_policy">Personvernpolitikk</string>
+    <string name="terms_of_use">Bruksbetingelser</string>
     <string name="button_layer_traffic">Trafikk</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Vandring</string>

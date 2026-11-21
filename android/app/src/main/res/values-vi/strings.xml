@@ -246,8 +246,6 @@
     <string name="already_donated">Đã quyên góp</string>
     <string name="remind_me_later">Nhắc sau</string>
     <string name="support_organic_maps">Hỗ trợ Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Bản quyền</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Báo cáo lỗi</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -555,6 +553,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Sự riêng tư</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="terms_of_use">Điều khoảng sử dụng</string>
     <string name="button_layer_traffic">Giao thông</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Đi bộ đường dài</string>
