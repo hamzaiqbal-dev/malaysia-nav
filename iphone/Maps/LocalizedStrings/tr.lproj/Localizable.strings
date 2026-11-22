@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Merhaba! \n \nEktekiler yer imlerim, lütfen bunları Sampai'te açın. Eğer uygulama kurulmamışsa, şu bağlantıyla iOS ve Android aygıtınıza kurabilirsiniz: https://omaps.app/get?kmz\n \nSampai ile gezintinin tadını çıkarın!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Yer İmleri Yükleniyor";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "İşletici: %@";
 "editor_category_unsuitable_title" = "Uygun kategori bulamıyor musunuz?";
-"editor_category_unsuitable_text" = "Sampai yalnızca basit nokta kategorilerini eklemeyi sağlar. Yani kasaba, yol, göl, bina vb. çizgi/alan verisi ekleme desteği yoktur. Lütfen bu tür kategorileri doğrudan <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> üzerinden ekleyin. Adım adım ayrıntılı yönergeler için <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">yönergemize</a> göz atabilirsiniz.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Hiç harita indirmediniz";
 "downloader_no_downloaded_maps_message" = "Çevrim dışı olarak adres bulmak ve gezinmek için haritaları indirin.";
 "current_location_unknown_error_title" = "Geçerli konum bilinmiyor.";

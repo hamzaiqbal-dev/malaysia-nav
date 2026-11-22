@@ -88,4 +88,10 @@ public class NavHudView extends FrameLayout
   {
     return mTopCard.getBottom();
   }
+
+  /** Height of the ETA bar, including the navigation bar inset it pads for. */
+  public int getEtaBarHeight()
+  {
+    return mEtaBar.getHeight();
+  }
 }

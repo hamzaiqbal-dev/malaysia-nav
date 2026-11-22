@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Habari!\n\nNimeambatanisha alamisho zangu; tafadhali zifungue kwenye Sampai. Ikiwa haujaweka, unaweza kupakua hapa: https://omaps.app/get?kmz\n\nFurahia kusafiri na Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Inapakia alamisho";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Mwendeshaji: %@";
 "editor_category_unsuitable_title" = "Je, huwezi kupata aina inayofaa?";
-"editor_category_unsuitable_text" = "Sampai inakuwezesha kuongeza tu aina rahisi za alama, ikimaanisha hakuna miji, barabara, maziwa, mipaka ya majengo, n.k. Tafadhali ongeza aina hizo moja kwa moja kwenye <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Angalia <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">mwongozo</a> wetu kwa maelekezo ya kina hatua kwa hatua.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Haujapakua ramani yoyote";
 "downloader_no_downloaded_maps_message" = "Pakua ramani ili kutafuta na kuvinjari bila muunganisho.";
 "current_location_unknown_error_title" = "Mahali pa sasa halijulikani.";

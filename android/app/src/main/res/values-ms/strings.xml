@@ -20,16 +20,6 @@
     <!-- Location services are disabled by user alert - message -->
     <string name="location_is_disabled_long_text">Semua Perkhidmatan Lokasi untuk peranti atau aplikasi ini sedang dimatikan. Sila hidupkannya dalam Tetapan.</string>
     <string name="about_menu_title">Tentang Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Percuma untuk semua, dibuat dengan penuh kasih sayang</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Tiada iklan, tiada penjejakan, tiada pengumpulan data</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Tidak membazir bateri, berfungsi tanpa internet</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Pantas, ringkas, dibangunkan oleh komuniti</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplikasi sumber terbuka yang dibina oleh peminat dan sukarelawan.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Tetapan lokasi</string>
     <string name="close">Tutup</string>
@@ -122,14 +112,8 @@
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Maklum balas</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Nilai aplikasi</string>
-    <!-- Text in menu -->
     <string name="help">Bantuan</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Soalan lazim</string>
     <string name="support_organic_maps">Sokong Sampai</string>
-    <!-- About screen: credit to the upstream open-source project (keep the name) -->
-    <string name="about_attribution">Berdasarkan Organic Maps, © Organic Maps Project. Dilesenkan di bawah Apache-2.0.</string>
     <!-- Update all button text -->
     <string name="downloader_update_all_button">Kemas kini semua</string>
     <!-- Cancel all button text -->

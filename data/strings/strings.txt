@@ -1083,7 +1083,7 @@ zh-Hant = 關於 Sampai
 
 [about_headline]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = Free for everyone, made with love
 af = Gratis vir almal, gemaak met liefde
 ar = مجاني للجميع ، مصنوع من الحب
@@ -1117,7 +1117,6 @@ lo = ຟຣີສຳລັບທຸກຄົນ, ສ້າງດ້ວຍຄວ�
 lt = Nemokama visiems, sukurta su meile
 lv = Bezmaksas, pieejama visiem un veidota ar mīlestību
 mr = सर्वांसाठी विनामूल्य, आवडीने तयार केलेले
-ms = Percuma untuk semua, dibuat dengan penuh kasih sayang
 mt = B' xejn għal kulħadd, magħmul bl-imħabba
 nb = Gratis for alle, laget med kjærlighet
 nl = Gratis voor iedereen, met liefde gemaakt
@@ -1142,7 +1141,7 @@ zh-Hant = 對每個人都免費，用愛製成
 
 [about_proposition_1]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • No ads, no tracking, no data collection
 af = • Geen advertensies, geen nasporing, geen dataversameling
 ar = • لا إعلانات ، لا تتبع ، لا جمع البيانات
@@ -1177,7 +1176,6 @@ lo = • ບໍ່ມີໂຄສະນາ, ບໍ່ມີການຕິດຕ
 lt = • Jokių reklamų, sekimo, duomenų rinkimo
 lv = • Nesatur reklāmas, izsekošanu un nevāc datus
 mr = • जाहिराती नाही, माहितीचा मागोवा नाही, डेटा संग्रहण नाही
-ms = • Tiada iklan, tiada penjejakan, tiada pengumpulan data
 mt = • Bla reklami, bla traċċar, bla kollezjoni ta' data
 nb = • Ingen annonser, ingen sporing, ingen datainnsamling
 nl = • Geen advertenties, geen tracking, geen gegevensverzameling
@@ -1202,7 +1200,7 @@ zh-Hant = • 沒有廣告，不會跟蹤您，更不會收集您的數據
 
 [about_proposition_2]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • No battery drain, works offline
 af = • Geen battery dreineer, werk vanlyn
 ar = • لا يوجد استنزاف للبطارية، يعمل دون اتصال بالإنترنت
@@ -1237,7 +1235,6 @@ lo = • ບໍ່ເປືອງແບັດເຕີຣີ, ໃຊ້ງານ
 lt = • Neiškrauna akumuliatoriaus, nes veikia neprisijungus prie interneto
 lv = • Neizlādē bateriju, darbojas bez interneta pieslēguma
 mr = • बॅटरी संपत नाही, ऑफलाइन कार्य करते
-ms = • Tidak membazir bateri, berfungsi tanpa internet
 mt = • Bla ħela ta' batterija, jaħdem offline
 nb = • Ingen batterislitasje, fungerer offline
 nl = • Geen batterijverlies, werkt offline
@@ -1262,7 +1259,7 @@ zh-Hant = • 無需耗費太多電量，可離線工作
 
 [about_proposition_3]
 comment = Text in About screen
-tags = android-app,apple-maps
+tags = apple-maps
 en = • Fast, minimalist, developed by the community
 af = • Vinnig, minimalisties, ontwikkel deur die gemeenskap
 ar = • سريع وبسيط، تم تطويره بواسطة المجتمع
@@ -1296,7 +1293,6 @@ lo = • ໄວ, ງ່າຍດາຍ, ພັດທະນາໂດຍຊຸມ�
 lt = • Sparti, minimalistinė, vystoma bendruomenės
 lv = • Ātra, minimālistiska un kopienas izstrādāta
 mr = • जलद, मिनिमलिस्ट, समुदायाद्वारे विकसित
-ms = • Pantas, ringkas, dibangunkan oleh komuniti
 mt = • Malajr, minimalista, żvillupat mill-komunità
 nb = • Rask, minimalistisk, utviklet av fellesskapet
 nl = • Snel, minimalistisch, ontwikkeld door de gemeenschap
@@ -1317,64 +1313,6 @@ uk = • Швидкий, мінімалістичний, розроблений 
 vi = • Nhanh chóng, tối giản, được phát triển bởi cộng đồng
 zh-Hans = • 快速且简约，由社区开发
 zh-Hant = • 快速且簡約，由社群開發
-
-[about_developed_by_enthusiasts]
-comment = Text in About screen
-tags = android-app
-en = Open-source application created by enthusiasts and volunteers.
-af = Oopbrontoepassing geskep deur entoesiaste en vrywilligers.
-ar = تطبيق مفتوح المصدر الذي أنشأه المتحمسون والمتطوعون.
-az = Həvəskarlar və könüllülər tərəfindən yaradılan açıq mənbə proqramı.
-be = Праграма з адкрытым зыходным кодам, створаная энтузіястамі і валанцёрамі.
-bg = Приложение с отворен код, създадено от ентусиасти и доброволци.
-ca = Aplicació de codi obert creada per entusiastes i voluntaris.
-cs = Otevřená aplikace vytvořená nadšenci a dobrovolníky.
-cy = Rhaglen cod agored wedi'i chreu gan selogion a gwirfoddolwyr.
-da = Open source-applikation skabt af entusiaster og frivillige.
-de = Open-Source-Anwendung, entwickelt von Enthusiasten und Freiwilligen.
-el = Εφαρμογή ανοιχτού κώδικα που δημιουργήθηκε από θιασώτες και εθελοντές.
-es = Aplicación de código abierto creada por entusiastas y voluntarios.
-et = Huviliste ja vabatahtlike poolt loodud avatud lähtekoodil põhinev rakendus.
-eu = Zale eta bolondresek sortutako kode irekiko aplikazioa.
-fa = برنامه منبع باز ایجاد شده توسط علاقه مندان و داوطلبان.
-fi = Harrastajien ja vapaaehtoisten luoma avoimen lähdekoodin sovellus.
-fr = Application open source créée par des amateurs et des bénévoles.
-gl = Aplicación de código aberto creada por entusiastas e voluntarios.
-he = אפליקציית קוד פתוח שנוצרה על ידי חובבים ומתנדבים.
-hi = उत्साही और स्वयंसेवकों द्वारा बनाया गया ओपन-सोर्स एप्लिकेशन।
-hr = Otvorenog koda aplikacija napravljena od entuzijasta i volontera.
-hu = A rajongók és az önkéntesek által létrehozott nyílt forráskódú alkalmazás.
-hy = Էնտուզիաստների և կամավորների կողմից ստեղծված բաց կոդով հավելված:
-id = Aplikasi open-source yang dibuat oleh penggemar dan sukarelawan.
-is = Forrit með opinn grunnkóða sem útbúið er af áhugafólki og sjálfboðaliðum.
-it = Applicazione open-source creata da appassionati e volontari.
-ja = 愛好家とボランティアによって作成されたオープンソースアプリケーション。
-ko = 애호가와 자원 봉사자가 만든 오픈 소스 응용 프로그램.
-lo = ແອັບພລິເຄຊັນໂອເພັນຊອດທີ່ສ້າງໂດຍຜູ້ມີໃຈຮັກ ແລະ ອາສາສະໝັກ.
-lt = Atvirojo kodo programėlė, sukurta entuziastų ir savanorių.
-lv = Atvērtā pirmkoda programma, ko veidojuši entuziasti un brīvprātīgie.
-mr = उत्साही आणि स्वयंसेवकांनी तयार केलेले मुक्त-स्रोत अनुप्रयोग.
-ms = Aplikasi sumber terbuka yang dibina oleh peminat dan sukarelawan.
-mt = Apliażżjoni tas-sors miftuħ magħmula min dilettanti u il-voluntiera
-nb = Open source-applikasjon opprettet av entusiaster og frivillige.
-nl = Open-source applicatie gemaakt door enthousiastelingen en vrijwilligers.
-pa = ਉਤਸ਼ਾਹੀਆਂ ਅਤੇ ਵਲੰਟੀਅਰਾਂ ਦੁਆਰਾ ਬਣਾਈ ਗਈ ਓਪਨ-ਸੋਰਸ ਐਪਲੀਕੇਸ਼ਨ।
-pl = Aplikacja typu open source stworzona przez entuzjastów i wolontariuszy.
-pt = Aplicativo de código aberto criado por entusiastas e voluntários.
-ro = Aplicație open-source creată de entuziaști și voluntari.
-ru = Приложение с открытым исходным кодом, созданное энтузиастами и волонтёрами.
-sk = Aplikácia s otvoreným zdrojovým kódom vytvorená nadšencami a dobrovoľníkmi.
-sl = Odprtokodna aplikacija, ki so jo ustvarili navdušenci in prostovoljci.
-sq = Aplikacion me burim të hapur i krijuar nga entuziastë dhe vullnetarë.
-sr = Апликација отвореног кода, направљена од ентузијаста и волонтера.
-sv = Öppen källkod-app skapad av entusiaster och frivilliga.
-sw = Maombi ya chanzo-wazi iliyoundwa na wanaovutia na wanaojitolea.
-th = แอปพลิเคชันโอเพนซอร์ซที่สร้างขึ้นโดยผู้ที่ชื่นชอบและอาสาสมัคร
-tr = Teknoloji tutkunları ve gönüllülerce oluşturulan açık kaynaklı uygulama.
-uk = Програма з відкритим кодом, створена ентузіастами та волонтерами.
-vi = Ứng dụng nguồn mở được tạo bởi những người đam mê và tình nguyện viên.
-zh-Hans = 由爱好者和志愿者开发的开源应用程序。
-zh-Hant = 由愛好者和志願者開發的開源應用程式。
 
 [location_settings]
 comment = The button that opens system location settings
@@ -4850,61 +4788,7 @@ zh-Hant = 已與您分享 Sampai 書籤
 
 [share_bookmarks_email_body]
 tags = android-app,apple-maps
-en = Hello!\n\nAttached are my bookmarks; please open them in Sampai. If you don't have it installed you can download it here: https://omaps.app/get?kmz\n\nEnjoy travelling with Sampai!
-af = Hallo!\n\nMy boekmerke is aangeheg; open dit asb. in Sampai. Indien dit nie geïnstalleer is nie, kan u dit hier aflaai: https://omaps.app/get?kmz\n\nGeniet dit om met Sampai te reis!
-ar = مرحباً! ْ\n\n تم إرفاق إشاراتي المرجعية من تطبيق Sampai. الرجاء فتحهم إذا لديك تطبيق Sampai مثبتاً. أو، إذا لم يكن مثبتاً، قم بتنزيل التطبيق لنظام iOS أو أندرويد من خلال الضغط على هذا الرابط: https://omaps.app/get?kmz \n\nاستمتع بالسفر مع Sampai!
-ast = ¡Hola!\n\nLos mios marcadores tán axuntos; ábrilos n’Sampai. Si nun lu tienes instaláu, te lu puedes baxar equí: https://omaps.app/get?kmz\n\n¡Gocia viaxar con Sampai!
-az = Salam!\n\nSampai əlfəcinlərim əlavə olunub. Zəhmət olmasa Sampai-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://omaps.app/get?kmz\n\nSampai ilə səyahətdən həzz alın!
-be = Вітаю!\n\nУ далучаным файле мае закладкі, яны адкрываюцца праграмай Sampai. Калі такая праграма ў вас не ўсталявана, яе можна спампаваць тут: https://omaps.app/get?kmz\n\nПрыемных падарожжаў з Sampai!
-bg = Здравейте!\n\nПриложени са моите отметки; моля, отворете ги в Sampai. Ако нямате инсталирана програма, можете да я изтеглите оттук: https://omaps.app/get?kmz\n\nНаслаждавайте се на пътуванията с Sampai!
-ca = Hola!\n\nAdjunto els meus marcadors de l’Sampai. Obriu-los si teniu l’Sampai instal·lat. O, si no teniu l’aplicació, baixeu-la per al vostre aparell iOS o Android seguint aquest enllaç: https://omaps.app/get?kmz\n\nGaudiu viatjant amb l’Sampai!
-cs = Ahoj!\n\nV příloze najdeš mé záložky; otevři je v aplikaci Sampai. Pokud ji nemáš nainstalovanou, můžeš si ji stáhnout zde: https://omaps.app/get?kmz \n\nUžij si cestování s Sampai!
-cy = Helo!\n\nWedi'u hatodi mae fy nodau tudalen; agorwch nhw yn Sampai. Os nad oes gennych chi'r ap gallwch ei lawrlwytho yma: https://omaps.app/get?kmz\n\nMwynhewch deithio gydag Sampai!
-da = Hej!\n\nVedhæftet er mine bogmærker; åbn dem venligst i Sampai. Hvis du ikke har den installeret, kan du downloade den her: https://omaps.app/get?kmz\n \nGod rejse med Sampai!
-de = Hallo!\n\nIm Anhang sind meine Lesezeichen der „Sampai“-App. Du kannst sie mit Sampai öffnen. Wenn du die App nicht installiert hast, kannst du sie von https://omaps.app/get?kmz herunterladen.\n\nViel Spaß beim Reisen mit Sampai!
-el = Γειa!\n\nΣου επισυνάπτω τα αγαπημένα μου. Παρακαλώ άνοιξέ τα με το Sampai. Αν δεν το έχεις εγκαταστήσει, μπορείς να το κατεβάσεις από εδώ: https://omaps.app/get?kmz\n\nΚαλή διασκέδαση ταξιδεύοντας με το Sampai!
-es = ¡Hola!\n\nAdjunto mis marcadores; ábralos en Sampai. Si no lo ha instalado, puede descargarlo aquí: https://omaps.app/get?kmz\n\n¡Disfrute viajando con Sampai!
-es-MX = Hola!\n\Adjunto mis marcadores de la aplicación Sampai. Por favor, ábralos si tiene instalado Sampai. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://omaps.app/get?kmz\n¡Disfrute viajando con Sampai!
-et = Tere!\n\nManuses on minu järjehoidjad rakendusest Sampai. Palun ava need kui Sul on Sampai paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https:omaps.appget?kmz\n\nNaudi reisimist Sampaiiga!
-eu = Kaixo!\nNire markagailuak Sampai aplikazioan erantsi ditut. Mesedez, ireki itzazu Sampai instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://omaps.app/get?kmz\n\nGozatu bidaiatzen Sampai-ekin!
-fa = سلام!\n\nنشانک‌های من ضمیمه شده‌اند؛ لطفا آن‌ها را در Sampai باز کنید. اگر برنامه نصب نشده است، می‌توانید آن را از اینجا دانلود کنید: https://omaps.app/get?kmz \n\nاز سفر با Sampai لذت ببرید!
-fi = Hei! \n\nLiitteenä ovat kirjamerkkini; Avaa ne Sampai -sovelluksessa. Mikäli sinulla ei ole vielä sovellusta asennettuna, voit ladata sen osoitteesta: https://omaps.app/get?kmz \n\nNauti matkustamisesta Sampai:n kanssa!
-fr = Bonjour !\n\nVous trouverez ci-joint mes signets de l'appli Sampai. Veuillez les ouvrir si vous avez installé Sampai. Si vous ne l'avez pas, téléchargez l'application pour votre appareil iOS ou Android en suivant ce lien : https://omaps.app/get?kmz\n\nBon voyage avec Sampai !
-gl = Ola!\n\nAdxunto os meus marcadores. Por favor, ábraos en Sampai. Se non o tes instalado podes descargalo aquí:: https://omaps.app/get?kmz\n\nGozar viaxando con Sampai!
-he = שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Sampai. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://omaps.app/get?kmz\n\nתהנו לנווט עם Sampai!
-hi = नमस्ते!\n\nसंलग्न हैं मेरे बुकमार्क; कृपया उन्हें Sampai में खोलें। यदि आपने इसे इंस्टॉल नहीं किया है तो आप इसे यहाँ डाउनलोड कर सकते हैं: https://omaps.app/get?kmz\n\nSampai के साथ यात्रा का आनंद लें!
-hr = Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Sampai. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Sampai!
-hu = Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az Sampai alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://omaps.app/get?kmz\n\nJó utat kívánok az Sampai alkalmazással!
-hy = Ողջույն!\nԿից ներկայացված են իմ էջանիշները: Խնդրում եմ բացել դրանք Sampai-ում: Եթե այն տեղադրված չէ, կարող եք ներբեռնել այստեղ՝ https://omaps.app/get?kmz\nՎայելեք ճանապարհորդությունը Sampai-ի հետ:
-id = Halo!\n\nTerlampir adalah bookmark saya; silakan buka di Sampai. Jika Anda belum memasangnya, Anda dapat mengunduhnya di sini: https://omaps.app/get?kmz\n\nNikmati perjalanan Anda dengan Sampai!
-is = Halló!\n\nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í Sampai forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://omaps.app/get?kmz \n\nNjóttu ferðarinnar með Sampai!
-it = Ciao!\n\nIn allegato ci sono i miei luoghi preferiti. Aprili se hai installato Sampai. Oppure, se non ce l'hai, scarica l'app per iOS o Android seguendo questo link: https://omaps.app/\n\nDivertiti a viaggiare con Sampai!
-ja = こんにちは！\n\n添付ファイルSampaiのお気に入りリストです。もしインストールされていない場合はここからダウンロードができます： https://omaps.app/get?kmz\n\n旅行を楽しむときはSampaiを使用してください!
-ko = 안녕하세요!\n\n제 북마크를 첨부했습니다. Sampai에서 열어주세요. 설치되어 있지 않다면 여기에서 다운로드할 수 있습니다: https://omaps.app/get?kmz\n\nSampai와 함께 즐거운 여행 되세요!
-lo = ສະບາຍດີ!\n\nນີ້ແມ່ນບຸກມາກຂອງຂ້ອຍ; ກະລຸນາເປີດໃນ Sampai. ຫາກທ່ານຍັງບໍ່ໄດ້ຕິດຕັ້ງ, ສາມາດດາວໂຫລດໄດ້ທີ່ນີ້: https://omaps.app/get?kmz\n\nຂໍໃຫ້ມ່ວນກັບການເດີນທາງດ້ວຍ Sampai!
-lt = Labas! \n \nČia prisegtas mano žymių sąrašas iš „Sampai“ programėlės. Jei jos neturi, gali ją parsisiųsti iš https://omaps.app/get?kmz \n \nSmagių kelionių su „Sampai“!
-lv = Sveiki!\n\nPielikumā ir grāmatzīmes. Lūdzu, atveriet tās „Sampai“ lietotnē. Ja Jums tā nav instalēta, instalējiet to te: https://omaps.app/get?kmz\n\nBaudiet ceļošanu ar „Oranic Maps“!
-mr = नमस्कार!\n\nSampai ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही Sampai इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://omaps.app/get?kmz\n\nSampai सह प्रवासाचा आनंद घ्या!
-mt = Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Sampai. Jekk mhuwiex installat tista tniżżlu min hawn: https://omaps.app/get?kmz\n\nĦu pjaċir ivvjaġġa ġo Sampai!
-nb = Hei!\n\nVedlagt er mine bokmerker fra Sampai-appen. Åpne de dersom du har Sampai installert. Har du ikke har det, last ned appen til iOS eller Android ved å trykke på denne linken: https://omaps.app/get?kmz\n\nNyt reisen med Sampai!
-nl = Hallo!\n\nBijgesloten zijn mijn bladwijzers uit de Sampai app. Open ze als je Sampai geïnstalleerd hebt. Of, als je dat niet hebt, download de app hier: https://omaps.app/get?kmz\n\nGeniet van het reizen met Sampai!
-pl = Cześć!\n\nZałączam moje zakładki z aplikacji Sampai. Proszę otwórz je jeżeli masz zaintalowane Sampai. Lub, jeżeli nie masz, pobierz aplikację na swoje urządzenie iOS/Android za pomocą tego linka: https://omaps.app/get?kmz\n\nMiłego podróżowania z Sampai!
-pt = Olá!\n\nSegue em anexo os meus favoritos da aplicação Sampai. Por favor abra-os se tiver o Sampai instalado. Caso não tenha, descarregue a aplicação para o seu dispositivo iOS ou Android com a hiperligação https://omaps.app/get?kmz\n\nDivirta-se a viajar com o Sampai!
-pt-BR = Olá!\n\nSegue em anexo meus favoritos do app Sampai. Se tiver instalado o Sampai, pode abri-los agora. Caso não tenha, baixe o app para o seu dispositivo iOS ou Android via o link https://omaps.app/get?kmz\n\nDisfrute viajar com o Sampai!
-ro = Bună!\n\nȚi-am atașat locurile mele preferate din aplicația Sampai. Deschide-le dacă ai instalată Sampai. Dacă nu, o poți descărca pentru iOS sau Android de aici: https://organicmaps.app/
-ru = Здравствуйте!\n\nВ прикреплённом файле мои метки из офлайновых карт Sampai. Для того чтобы открыть этот файл, вам потребуется приложение Sampai, которое можно установить по ссылке: https://omaps.app/get?kmz\n\nСпасибо!
-sk = Ahoj!\n\nV prílohe sú moje záložky z aplikácie Sampai. Ak ju nemáš nainštalovanú, môžeš si ju stiahnuť tu: https://omaps.app/get?kmz\n\nPrajem šťastnú cestu s Sampai!
-sl = Živjo!\n\nV priponki so moji zaznamki; odprite jih v Sampai. Če aplikacije nimate nameščene, jo lahko prenesete tukaj: https://omaps.app/get?kmz\n\nUživajte v potovanju z Sampai!
-sq = Përshëndetje!\n\nBashkëngjitur janë faqeshënuesit e mi; ju lutemi hapini ato në Sampai. Nëse nuk e keni të instaluar, mund ta shkarkoni këtu: https://omaps.app/get?kmz\n\nShijoni udhëtimin me Sampai!
-sr = Здраво!\n\nУ прилогу су моји маркери; молим те да их отвориш у Sampai-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://omaps.app/get?kmz\n\nУживај у путовању са Sampai-ом!
-sv = Hej! \n \nJag bifogar mina bokmärken, öppna gärna dem med Sampai. Om du inte redan har appen installerad, kan du ladda ner den här: https://omaps.app/get?kmz \n \nTrevlig resa med Sampai!
-sw = Habari!\n\nNimeambatanisha alamisho zangu; tafadhali zifungue kwenye Sampai. Ikiwa haujaweka, unaweza kupakua hapa: https://omaps.app/get?kmz\n\nFurahia kusafiri na Sampai!
-th = สวัสดีครับ\n\nแนบมาด้วยบุ๊กมาร์กของผม; กรุณาเปิดใน Sampai หากคุณยังไม่ได้ติดตั้ง คุณสามารถดาวน์โหลดได้ที่นี่: https://omaps.app/get?kmz\n\nขอให้สนุกกับการเดินทางด้วย Sampai!
-tr = Merhaba! \n \nEktekiler yer imlerim, lütfen bunları Sampai'te açın. Eğer uygulama kurulmamışsa, şu bağlantıyla iOS ve Android aygıtınıza kurabilirsiniz: https://omaps.app/get?kmz\n \nSampai ile gezintinin tadını çıkarın!
-uk = Привіт!\n\nДодаю мої мітки; відкрийте їх у Sampai. Якщо застосунок не встановлено, ви можете завантажити його тут: https://omaps.app/get?kmz\n\nНасолоджуйтесь подорожами з Sampai!
-vi = Xin chào!\n\nĐính kèm là các dấu trang của tôi; vui lòng mở chúng trong Sampai. Nếu bạn chưa cài đặt ứng dụng này, bạn có thể tải xuống tại đây: https://omaps.app/get?kmz\n\nChúc bạn có những chuyến đi thú vị cùng Sampai!
-zh-Hans = 您好！\n\n附件是我的书签，请在 Sampai 中打开。如果您没有安装 Sampai，可以在这里下载: https://omaps.app/get?kmz\n\n祝您使用 Sampai 旅行愉快！
-zh-Hant = 您好！\n\n附件是我的書籤，請在 Sampai 中打開。如果您沒有安裝 Sampai，可以在這裡下載: https://omaps.app/get?kmz\n\n祝您使用 Sampai 旅行愉快！
+en = Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!
 
 [load_kmz_title]
 comment = message title of loading file
@@ -8263,7 +8147,7 @@ zh-Hant = 網站
 
 [news]
 comment = Text in About menu, opens Sampai news website
-tags = android-app,apple-maps
+tags = apple-maps
 en = News
 af = Nuus
 ar = أخبار
@@ -8378,7 +8262,7 @@ zh-Hant = 回饋
 
 [rate_the_app]
 comment = Text in menu
-tags = android-app,apple-maps
+tags = apple-maps
 en = Rate the app
 af = Gradeer die toep
 ar = قيّم التطبيق
@@ -8413,7 +8297,6 @@ lo = ໃຫ້ຄະແນນແອັບ
 lt = Įvertinti šią programėlę
 lv = Novērtējiet lietotni
 mr = ऍप मानांकित करा
-ms = Nilai aplikasi
 mt = Għati rata lill-app
 nb = Ranger appen
 nl = Beoordeel de app
@@ -8495,7 +8378,7 @@ zh-Hant = 幫助
 
 [faq]
 comment = Button in the main Help dialog
-tags = android-app,apple-maps
+tags = apple-maps
 en = Frequently Asked Questions
 af = Gereelde vrae
 ar = اسئلة مكررة
@@ -8530,7 +8413,6 @@ lo = ຄຳຖາມທີ່ພົບເລື້ອຍ
 lt = Dažnai užduodami klausimai
 lv = Biežāk uzdotie jautājumi
 mr = वारंवार विचारलेले प्रश्न
-ms = Soalan lazim
 mt = Mistoqsijiet Frekwenti
 nb = Spørsmål og svar
 nl = Vragen en antwoorden
@@ -8779,73 +8661,19 @@ vi = Hỗ trợ Sampai
 zh-Hans = 支持 Sampai
 zh-Hant = 支援 Sampai
 
-[how_to_support_us]
-comment = Button in the main Help dialog
-tags = android-app
-en = Support the project
-af = Ondersteun die projek
-ar = دعم المشروع
-az = Bu layihəni dəstəkləyin
-be = Падтрымаць праект
-bg = Подкрепете проекта
-ca = Doneu suport al projecte
-cs = Podpořte projekt
-cy = Cefnogi'r prosiect
-da = Støt projektet
-de = Unterstütze das Projekt
-el = Στηρίξτε αυτό το πρότζεκτ
-es = Apoye el proyecto
-es-MX = Apoyar el proyecto
-et = Toeta meie projekti
-eu = Proiektuari laguntza eman
-fa = از پروژه حمایت کنید
-fi = Tue projektia
-fr = Soutenir le projet
-gl = Apoie o proxecto
-he = תמכו בפרויקט
-hi = परियोजना का समर्थन करें
-hr = Podrži projekt
-hu = Támogatás
-hy = Աջակցել նախագծին
-id = Mendukung proyek
-is = Styddu við verkefnið
-it = Sostieni il progetto
-ja = プロジェクトを支援する
-ko = 프로젝트 지원
-lo = ສະໜັບສະໜູນໂຄງການ
-lt = Paremti projektą
-lv = Atbalstiet projektu
-mr = प्रकल्पाला पाठठिंबा द्या
-mt = Appoġġja lill-proġett
-nb = Støtt prosjektet
-nl = Steun het project
-pl = Wesprzyj projekt
-pt = Apoie o projeto
-pt-BR = Apoiar o projeto
-ro = Susține proiectul
-ru = Помочь проекту
-sk = Podporte projekt
-sl = Podprite projekt
-sq = Mbështet projektin
-sr = Подржи пројекат
-sv = Stöd projektet
-sw = Saidia mradi
-th = สนับสนุนโครงการ
-tr = Bu projeyi destekleyin
-uk = Підтримайте проект
-vi = Hỗ trợ dự án
-zh-Hans = 支持本项目
-zh-Hant = 支持本項目
-
 [about_attribution]
-comment = About screen: credit to the upstream open-source project (keep the name)
+comment = About screen: product name and author line
 tags = android-app
-en = Based on Organic Maps, © Organic Maps Project. Licensed under Apache-2.0.
-ms = Berdasarkan Organic Maps, © Organic Maps Project. Dilesenkan di bawah Apache-2.0.
+en = Sampai — made in Malaysia by Hamza Iqbal
+
+[about_licences]
+comment = About screen row: open-source licences and data credits
+tags = android-app
+en = Open-source licences
 
 [copyright]
 comment = Button in the main Help dialog
-tags = android-app,apple-maps
+tags = apple-maps
 en = Copyright
 af = Kopiereg
 ar = حقوق النشر
@@ -20412,61 +20240,7 @@ zh-Hant = 找不到合適的類別？
 
 [editor_category_unsuitable_text]
 tags = android-app,apple-maps
-en = Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detailed step by step instructions.
-af = Sampai laat slegs toe om eenvoudige puntkategorieë by te voeg, dit beteken geen dorpe, paaie, mere, gebouomtrekke, ens. nie. Voeg asseblief sulke kategorieë direk by <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kyk na ons <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gids</a> vir gedetailleerde stap-vir-stap instruksies.
-ar = Sampai تسمح بإضافة فئات النقاط البسيطة فقط، وهذا يعني عدم إضافة المدن والطرق والبحيرات وخطوط المباني، إلخ. يرجى إضافة هذه الفئات مباشرة إلى <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. راجع <a href="https://organicmaps.app/faq/editing/advanced-map-editing">دليلنا</a> للحصول على إرشادات تفصيلية خطوة بخطوة.
-az = Sampai yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, yəni şəhərlər, yollar, göllər, binaların konturları və s. daxil deyil. Zəhmət olmasa belə kateqoriyaları birbaşa <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimat üçün <a href="https://organicmaps.app/faq/editing/advanced-map-editing">bələdç</a>imizə baxın.
-be = Sampai дазваляе дадаваць на мапу толькі простыя тыпы аб'ектаў, гэта значыць без гарадоў, дарог, азёр і будынкаў. Калі ласка, дадавайце такія катэгорыі на сайце <a href="https://www.openstreetmap.org/">OpenStreetMap.org </a>. Мы таксама рэкамендуем азнаёміцца з <a href="https://organicmaps.app/faq/editing/advanced-map-editing/">падрабязнымі інструкцыямі і іншымі праграмамі для рэдагавання мапы</a>.
-bg = Sampai позволява да се добавят само прости категории точки, т.е. без градове, пътища, езера, очертания на сгради и т.н. Моля, добавяйте такива категории директно в <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Вижте нашето <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ръководство</a> за подробни инструкции стъпка по стъпка.
-ca = Sampai només permet afegir categories de punts simples, això vol dir que no hi ha ciutats, carreteres, llacs, contorns d'edificis, etc. Si us plau, afegiu aquestes categories directament a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulteu la nostra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guia</a> per obtenir instruccions detallades pas a pas.
-cs = Sampai umožňuje přidávat pouze jednoduché bodové kategorie, to znamená žádná města, silnice, jezera, obrysy budov atd. Tyto kategorie prosím přidávejte přímo na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Podrobný návod krok za krokem najdete v našem <a href="https://organicmaps.app/faq/editing/advanced-map-editing">průvodci</a>.
-cy = Mae Sampai yn caniatáu ychwanegu categorïau pwynt syml yn unig, sy'n golygu dim trefi, ffyrdd, llynnoedd, amlinelliadau adeiladau, ac ati. Ychwanegwch gategorïau o'r fath yn uniongyrchol at <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Edrychwch ar ein <a href="https://organicmaps.app/faq/editing/advanced-map-editing">canllaw</a> am gyfarwyddiadau manwl cam wrth gam.
-da = Sampai giver kun mulighed for at tilføje simple punktkategorier, dvs. ingen byer, veje, søer, bygningsomrids osv. Tilføj sådanne kategorier direkte til <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Se vores <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detaljerede trin for trin-instruktioner.
-de = Mit Sampai kann man nur einfache Punktkategorien hinzufügen, daher keine Städte, Straßen, Seen, Gebäudeumrisse, etc. Bitte füge solche Kategorien direkt bei <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> hinzu. In unserem <a href="https://organicmaps.app/faq/editing/advanced-map-editing">Leitfaden</a> findest du eine detaillierte Schritt-für-Schritt-Anleitung.
-el = Sampai επιτρέπει την προσθήκη μόνο απλών κατηγοριών σημείων, δηλαδή όχι πόλεων, δρόμων, λιμνών, περιγραμμάτων κτιρίων κ.λπ. Παρακαλούμε προσθέστε τέτοιες κατηγορίες απευθείας στο <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Ανατρέξτε <a href="https://organicmaps.app/faq/editing/advanced-map-editing">στον οδηγό</a> μας για λεπτομερείς οδηγίες βήμα προς βήμα.
-en-GB = Sampai allows adding simple point categories only, which means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detailed step-by-step instructions.
-es = Sampai permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obtener instrucciones detalladas paso a paso.
-es-MX = Sampai permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obtener instrucciones detalladas paso a paso.
-et = Sampai võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saidis. Vaata meie <a href="https://organicmaps.app/faq/editing/advanced-map-editing">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.
-eu = Sampai-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Begiratu gure <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gida</a> urratsez urrats argibide zehatzak lortzeko.
-fa = Sampai اجازه میu200cدهد فقط دستهu200cهای نقطهu200cای ساده را اضافه کند، یعنی هیچ شهر، جاده، دریاچه، طرح کلی ساختمان و غیره وجود ندارد. لطفاً این دستهu200cها را مستقیماً به <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> اضافه کنید. برای دستورالعملu200cهای گام به گام، <a href="https://organicmaps.app/faq/editing/advanced-map-editing">راهنمای</a> ما را بررسی کنید.
-fi = Sampai mahdollistaa vain yksinkertaisten pisteluokkien lisäämisen, eli ei kaupunkeja, teitä, järviä, rakennusten ääriviivoja jne. Lisää tällaiset luokat suoraan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Tarkista <a href="https://organicmaps.app/faq/editing/advanced-map-editing">oppaastamme</a> yksityiskohtaiset ohjeet vaihe vaiheelta.
-fr = Sampai ne permet d'ajouter que des catégories de points simples, c'est-à-dire pas de villes, de routes, de lacs, de contours de bâtiments, etc. Merci d'ajouter ces catégories directement sur <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultez notre <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> pour obtenir des instructions détaillées étape par étape.
-gl = Sampai permite engadir unicamente categorías de puntos sinxelos, é dicir, non cidades, estradas, lagos, contornos de edificios, etc. Por favor, anada ditas categorías directamente <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nosa <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obter instrucións detalladas paso a paso.
-he = באמצעות Sampai ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. עיינו <a href="https://organicmaps.app/faq/editing/advanced-map-editing">במדריך</a> שלנו לקבלת הוראות מפורטות.
-hi = Sampai केवल सरल बिंदु श्रेणियाँ जोड़ने की अनुमति देता है, जिसका अर्थ है कि शहर, सड़कें, झीलें, इमारतों की रूपरेखा आदि नहीं। कृपया ऐसी श्रेणियाँ सीधे <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> पर जोड़ें। विस्तृत चरण-दर-चरण निर्देशों के लिए हमारी <a href="https://organicmaps.app/faq/editing/advanced-map-editing">गाइड</a> देखें।
-hr = Sampai omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vodič</a> za detaljne upute.
-hu = Az Sampai csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href="https://organicmaps.app/faq/editing/advanced-map-editing">útmutatónkat</a>.
-hy = Sampai-ը թույլ է տալիս ավելացնել միայն պարզ կետային կատեգորիաներ, այսինքն՝ ոչ քաղաքներ, ճանապարհներ, լճեր, շենքերի ուրվագծեր և այլն։ Խնդրում ենք ավելացնել նման կատեգորիաները անմիջապես <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> կայքում։ Մանրամասն քայլ առ քայլ հրահանգների համար ստուգեք մեր <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ուղեցույցը</a>:
-id = Sampai hanya memungkinkan untuk menambahkan kategori titik sederhana, yang berarti tidak ada kota, jalan, danau, garis besar bangunan, dll. Silahkan tambahkan kategori tersebut secara langsung ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lihat <a href="https://organicmaps.app/faq/editing/advanced-map-editing">panduan</a> kami untuk petunjuk langkah demi langkah yang terperinci.
-is = Sampai leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Skoðaðu <a href="https://organicmaps.app/faq/editing/advanced-map-editing">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.
-it = Sampai consente di aggiungere solo punti semplici, escludendo p.es. città, strade, laghi, planimetria edifici ecc. È possibile aggiungere tali categorie direttamente su <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulta la nostra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guida</a> per istruzioni dettagliate.
-ja = Sampai このアプリでは、シンプルな地点カテゴリのみを追加できます。つまり、町、道路、湖、建物の輪郭などは追加できません。そのようなカテゴリは、<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>に直接追加してください。詳細な手順については、<a href="https://organicmaps.app/faq/editing/advanced-map-editing">ガイド</a>をご確認ください。
-ko = Sampai 단순한 지점 카테고리만 추가할 수 있습니다. 즉, 도시, 도로, 호수, 건물 윤곽선 등은 추가할 수 없습니다. 이러한 카테고리는 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>에 직접 추가해 주십시오. 자세한 단계별 안내는 <a href="https://organicmaps.app/faq/editing/advanced-map-editing">가이드를</a> 확인해 주세요.
-lo = Sampai ອະນຸຍາດໃຫ້ເພີ່ມສະເພາະໝວດໝູ່ຈຸດທີ່ງ່າຍດາຍເທົ່ານັ້ນ, ນັ້ນໝາຍຄວາມວ່າບໍ່ລວມເຖິງ ຕົວເມືອງ, ຖະໜົນ, ໜອງນ້ຳ, ຂອບເຂດອາຄານ ແລະ ອື່ນໆ. ກະລຸນາເພີ່ມໝວດໝູ່ດັ່ງກ່າວໂດຍກົງທີ່ <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. ກວດເບິ່ງ <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ຄຳແນະນຳ</a> ຂອງພວກເຮົາສຳລັບຂັ້ນຕອນໂດຍລະອຽດ.
-lt = „Sampai“ leidžia pridėti tik paprastų kategorijas taškus – jokių miestų, kelių, ežerų, pastatų kontūrų ir pan. šia programėle pridėti negalima. Šių kategorijų objektus pridėkite naudodamiesi <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> svetaine. Žvilgtelėkite į mūsų <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vadovą</a>, kuriame rasite išsamias pažingsnines instrukcijas.
-lv = „Sampai“ ļauj pievienot tikai vienkāršu punktu kategorijas, proti, nevarat pievienot pilsētas, ceļus, ezerus, ēku aprises u.tml. Šādas kategorijas lūdzam pievienot tiešā veidā <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lai uzzinātu, kā to izdarīt, sekojiet norādēm <a href="https://organicmaps.app/faq/editing/advanced-map-editing">rokasgrāmatā</a>.
-mr = Sampai फक्त साध्या बिंदू श्रेण्या जोडण्याची परवानगी देते, म्हणजे शहरं, रस्ते, तलाव, इमारतींच्या रूपरेषा इत्यादी नाहीत. कृपया अशा श्रेण्या थेट <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> वर जोडा. सविस्तर टप्प्याटप्प्याच्या सूचनांसाठी आमचे <a href="https://organicmaps.app/faq/editing/advanced-map-editing">मार्गदर्शक</a> तपासा.
-mt = Sampai jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://organicmaps.app/faq/editing/advanced-map-editing">gwida</a> tagħna għal struzzjonijiet dettaljati.
-nb = Sampai tillater kun å legge til enkle punktkategorier, det vil si ingen byer, veier, innsjøer, bygningsomriss osv. Vennligst legg til slike kategorier direkte til <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Sjekk vår <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detaljerte trinnvise instruksjoner.
-nl = Met Sampai kun je alleen eenvoudige puntcategorieën toevoegen, dus geen steden, wegen, meren, contouren van gebouwen, enzovoort. Voeg zulke categorieën direct toe aan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Bekijk onze <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gids</a> voor gedetailleerde stap voor stap instructies.
-pl = Sampai pozwala na dodawanie tylko prostych kategorii punktów, co oznacza brak miast, dróg, jezior, obrysów budynków itp. Dodaj takie kategorie bezpośrednio do <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Sprawdź nasz <a href="https://organicmaps.app/faq/editing/advanced-map-editing">przewodnik</a>, aby uzyskać szczegółowe instrukcje krok po kroku.
-pt = O Sampai permite-lhe adicionar apenas categorias de pontos simples, ou seja, nada de cidades, estradas, lagos, contornos de edifícios etc. Por favor, adicione essas categorias diretamente ao <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte o nosso <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guia</a> para instruções detalhadas passo a passo.
-pt-BR = O Sampai permite que você adicione apenas categorias de pontos simples, o que significa que não há cidades, estradas, lagos, contornos de edifícios etc. Por favor, adicione essas categorias diretamente no <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nosso <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guia</a> para obter instruções detalhadas passo a passo.
-ro = Sampai permite adăugarea doar a unor categorii de puncte simple, ceea ce înseamnă că nu există orașe, drumuri, lacuri, contururi de clădiri, etc. Vă rugăm să adăugați astfel de categorii direct la <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultați <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ghidul nostru</a> pentru instrucțiuni detaliate pas cu pas.
-ru = Sampai позволяет добавлять на карту только простые типы объектов, то есть никаких городов, дорог, озер, контуров зданий. Пожалуйста, добавляйте такие категории на сайте <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Также рекомендуем ознакомиться с нашими <a href="https://organicmaps.app/faq/editing/advanced-map-editing">подробными пошаговыми инструкциями и другими приложениями для редактирования карты</a>.
-sk = Sampai umožňuje pridávať iba jednoduché kategórie bodov, čo znamená, že nie sú k dispozícii mestá, cesty, jazerá, obrysy budov atď. Takéto kategórie prosím pridávajte priamo na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Podrobné pokyny krok za krokom nájdete v našom <a href="https://organicmaps.app/faq/editing/advanced-map-editing">návode</a>.
-sl = Sampai omogoča dodajanje samo preprostih točkovnih kategorij, kar pomeni, da ni mest, cest, jezer, obrisov zgradb itd. Takšne kategorije dodajte neposredno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Preverite naš <a href="https://organicmaps.app/faq/editing/advanced-map-editing">vodnik</a> za podrobna navodila po korakih.
-sq = Sampai lejon shtimin e kategorive të thjeshta të pikave, që do të thotë jo qytete, rrugë, liqene, konture ndërtesash, etj. Ju lutemi shtoni kategori të tilla drejtpërdrejt në <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kontrolloni <a href="https://organicmaps.app/faq/editing/advanced-map-editing">udhëzuesin tonë</a> për udhëzime të detajuara hap pas hapi.
-sr = Sampai омогућава додавање једноставних категорија за тачке на мапи, што искључује градове, путеве, језера, тлоцрте зграда, итд. Молимо Вас да такве категорије додате директно на <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Прочитајте наше <a href="https://organicmaps.app/faq/editing/advanced-map-editing">упутство</a> за детаљне инструкције, корак-по-корак.
-sv = Sampai tillåter endast att lägga till enkla punktkategorier, det betyder inga städer, vägar, sjöar, byggnadskonturer etc. Lägg till sådana kategorier direkt till <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kontrollera vår <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> för detaljerade steg-för-steg-instruktioner.
-sw = Sampai inakuwezesha kuongeza tu aina rahisi za alama, ikimaanisha hakuna miji, barabara, maziwa, mipaka ya majengo, n.k. Tafadhali ongeza aina hizo moja kwa moja kwenye <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Angalia <a href="https://organicmaps.app/faq/editing/advanced-map-editing">mwongozo</a> wetu kwa maelekezo ya kina hatua kwa hatua.
-th = Sampai อนุญาตให้เพิ่มหมวดหมู่จุดแบบง่ายเท่านั้น ซึ่งหมายถึงไม่สามารถเพิ่มเมือง ถนน ทะเลสาบ เส้นขอบอาคาร ฯลฯ ได้ กรุณาเพิ่มหมวดหมู่ดังกล่าวโดยตรงที่ <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> โปรดตรวจสอบ<a href="https://organicmaps.app/faq/editing/advanced-map-editing">คู่มือ</a>ของเราสำหรับคำแนะนำแบบละเอียดทีละขั้นตอน
-tr = Sampai yalnızca basit nokta kategorilerini eklemeyi sağlar. Yani kasaba, yol, göl, bina vb. çizgi/alan verisi ekleme desteği yoktur. Lütfen bu tür kategorileri doğrudan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> üzerinden ekleyin. Adım adım ayrıntılı yönergeler için <a href="https://organicmaps.app/faq/editing/advanced-map-editing">yönergemize</a> göz atabilirsiniz.
-uk = Sampai дозволяють додавати до мапи лише прості типи об'єктів, тобто без міст, доріг, озер та контурів будівель. Будь ласка, додайте такі категорії на сайті <a href="https://www.openstreetmap.org/">OpenStreetMap.org</a>. Ми також рекомендуємо ознайомитися із <a href="https://organicmaps.app/faq/editing/advanced-map-editing/">детальними інструкціями та іншими додатками для редагування мапи</a>.
-vi = Sampai chỉ cho phép thêm các loại điểm đơn giản, tức là không bao gồm các thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các loại này trực tiếp vào <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Hãy tham khảo <a href="https://organicmaps.app/faq/editing/advanced-map-editing">hướng dẫn</a> của chúng tôi để biết các bước thực hiện chi tiết.
-zh-Hans = Sampai 只允许添加简单的点类别，即无法添加城镇、道路、湖泊、建筑轮廓等类别。请直接向 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> 添加此类类别。请查看我们的<a href="https://organicmaps.app/faq/editing/advanced-map-editing">指南</a>，了解详细的步骤说明。
-zh-Hant = Sampai 只允許添加簡單的點類別，即無法添加城鎮、道路、湖泊、建築輪廓等類別。請直接向 <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> 新增此類類別。請查看我們的<a href="https://organicmaps.app/faq/editing/advanced-map-editing">指南</a>，以了解詳細的步驟說明。
+en = Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>.
 
 [downloader_no_downloaded_maps_title]
 tags = android-app,apple-maps
@@ -23881,60 +23655,7 @@ zh-Hant = 重新排序
 [alert_reauth_message]
 comment = Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated.
 tags = android-app
-en = Please login to OpenStreetMap to automatically upload all your map edits. Learn more <a href="https://github.com/organicmaps/organicmaps/issues/6144">here</a>.
-af = Meld asseblief aan by OpenStreetMap om al jou kaartwysigings outomaties op te laai. Kom meer te wete <a href="https://github.com/organicmaps/organicmaps/issues/6144">hier</a>.
-ar = برجاء تسجيل الدخول إلى OpenStreetMap لتحميل جميع تعديلات الخريطة تلقائيًا. تعرف على المزيد <a href="https://github.com/organicmaps/organicmaps/issues/6144">هنا</a>.
-az = Bütün xəritə redaktələrinizi avtomatik yükləmək üçün OpenStreetMap-a daxil olun. <a href="https://github.com/organicmaps/organicmaps/issues/6144">burada</a> ətraflı məlumat əldə edin.
-be = Увайдзіце ў OpenStreetMap, каб аўтаматычна запампоўваць усе свае праўкі мапы. Даведайцеся больш <a href="https://github.com/organicmaps/organicmaps/issues/6144">тут</a>.
-bg = Моля, влезте в OpenStreetMap, за да качвате автоматично всичките си редакции на картата. Научете повече <a href="https://github.com/organicmaps/organicmaps/issues/6144">тук</a>.
-ca = Inicieu sessió a l’OpenStreetMap per a pujar automàticament totes les edicions al mapa. Llegiu <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a> més informació.
-cs = Přihlaste se do OpenStreetMap, abyste mohli automaticky nahrávat všechny své úpravy mapy. Více informací <a href="https://github.com/organicmaps/organicmaps/issues/6144">zde</a>.
-cy = Mewngofnodwch i OpenStreetMap i uwchlwytho'ch holl olygiadau map yn awtomatig. Dysgwch fwy <a href="https://github.com/organicmaps/organicmaps/issues/6144">yma</a>.
-da = Log ind på OpenStreetMap for automatisk at uploade alle dine kortredigeringer. Få mere at vide <a href="https://github.com/organicmaps/organicmaps/issues/6144">her</a>.
-de = Bitte melde dich bei OpenStreetMap an, um alle deine Kartenbearbeitungen automatisch hochzuladen. Erfahre mehr <a href="https://github.com/organicmaps/organicmaps/issues/6144">hier</a>.
-el = Παρακαλούμε συνδεθείτε στο OpenStreetMap για να ανεβάσετε αυτόματα όλες τις επεξεργασίες του χάρτη σας. Μάθετε περισσότερα <a href="https://github.com/organicmaps/organicmaps/issues/6144">εδώ</a>.
-es = Acceda a OpenStreetMap para cargar automáticamente todas sus ediciones al mapa. Más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.
-es-MX = Inicie sesión en OpenStreetMap para cargar automáticamente todas las ediciones de su mapa. Obtenga más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.
-et = Oma kaastöö automaatseks üleslaadimiseks palun logi OpenStreetMappi sisse. Lisateave <a href="https://github.com/organicmaps/organicmaps/issues/6144">leidub siin</a>.
-eu = Hasi saioa OpenStreetMap-en zure mapen aldaketa guztiak automatikoki kargatzeko. Lortu informazio gehiago <a href="https://github.com/organicmaps/organicmaps/issues/6144">hemen</a>.
-fa = لطفاً به OpenStreetMap وارد شوید تا به طور خودکار تمام ویرایش های نقشه خود را آپلود کنید. <a href="https://github.com/organicmaps/organicmaps/issues/6144">اینجا</a> بیشتر بیاموزید.
-fi = Kirjaudu sisään OpenStreetMapiin, jotta voit ladata kaikki karttamuutoksesi automaattisesti. Lisätietoja <a href="https://github.com/organicmaps/organicmaps/issues/6144">täältä</a>.
-fr = Connectez-vous à OpenStreetMap pour télécharger automatiquement toutes vos modifications de cartes. En savoir plus <a href="https://github.com/organicmaps/organicmaps/issues/6144">ici</a>.
-gl = Por favor, Inicia sesión en OpenStreetMap para cargar automaticamente todas as túas edicións de mapas. Más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.
-he = התחבר ל-OpenStreetMap כדי להעלות אוטומטית את כל עריכות המפה שלך. למידע נוסף <a href="https://github.com/organicmaps/organicmaps/issues/6144">כאן</a>.
-hi = कृपया अपने सभी मानचित्र संपादनों को स्वचालित रूप से अपलोड करने के लिए OpenStreetMap पर लॉगिन करें। अधिक जानें <a href="https://github.com/organicmaps/organicmaps/issues/6144">यहां</a>।
-hr = Molimo prijavite se na OpenStreetMap kako biste automatski učitali sve svoje izmjene karte. Saznajte više <a href="https://github.com/organicmaps/organicmaps/issues/6144">ovdje</a>.
-hu = Jelentkezzen be az OpenStreetMap rendszerébe, hogy automatikusan feltölthesse az összes térképszerkesztését. További információ <a href="https://github.com/organicmaps/organicmaps/issues/6144">itt</a>.
-hy = Խնդրում ենք մուտք գործել OpenStreetMap, որպեսզի Ձեր քարտեզի փոփոխությունները ավտոմատ վերբեռնվեն: Իմացեք ավելին <a href="https://github.com/organicmaps/organicmaps/issues/6144">այստեղ</a>:
-id = Silahkan login ke OpenStreetMap untuk mengupload semua hasil edit peta Anda secara otomatis. Pelajari lebih lanjut <a href="https://github.com/organicmaps/organicmaps/issues/6144">di sini</a>.
-is = Skráðu þig inn á OpenStreetMap til að senda sjálfkrafa inn allar breytingar þínar á kortinu. Kannaðu þetta nánar <a href="https://github.com/organicmaps/organicmaps/issues/6144">hér</a>.
-it = Accedi a OpenStreetMap per caricare automaticamente tutte le tue modifiche alla mappa. Per saperne di più clicca <a href="https://github.com/organicmaps/organicmaps/issues/6144">qui</a>.
-ja = すべてのマップ編集を自動的にアップロードするには、OpenStreetMapにログインしてください。詳しくは <a href="https://github.com/organicmaps/organicmaps/issues/6144">こちら</a>.
-ko = 모든 지도 편집 내용을 자동으로 업로드하려면 오픈스트리트맵에 로그인하세요. 자세히 알아보기 <a href="https://github.com/organicmaps/organicmaps/issues/6144">여기</a>.
-lo = ກະລຸນາເຂົ້າສູ່ລະບົບ OpenStreetMap ເພື່ອອັບໂຫລດການແກ້ໄຂແຜນທີ່ທັງໝົດຂອງທ່ານໂດຍອັດຕະໂນມັດ. ສຶກສາເພີ່ມເຕີມ <a href="https://github.com/organicmaps/organicmaps/issues/6144">ທີ່ນີ້</a>.
-lt = Prisijunkite prie „OpenStreetMap“, kad galėtumėte automatiškai įkelti visus savo žemėlapio pakeitimus. Išsamesnė informacija – <a href="https://github.com/organicmaps/organicmaps/issues/6144">čia</a>.
-lv = Ierakstieties „OpenStreetMap“, lai automātiski augšupielādētu visus kartes rediģējumus. Uzziniet vairāk <a href="https://github.com/organicmaps/organicmaps/issues/6144">te</a>.
-mr = तुमची सर्व नकाशा संपादने स्वयंचलितपणे अपलोड करण्यासाठी कृपया OpenStreetMap वर लॉग इन करा. <a href="https://github.com/organicmaps/organicmaps/issues/6144">येथे</a> अधिक जाणून घ्या.
-mt = Illoggja f’ OpenStreetMap biex awtomatikament ittella’ l-editjar kollu tal-mappa tiegħek. Tgħallem aktar <a href="https://github.com/organicmaps/organicmaps/issues/6144">hawn</a>.
-nb = Logg inn på OpenStreetMap for automatisk å laste opp alle kartredigeringene dine. Finn ut mer <a href="https://github.com/organicmaps/organicmaps/issues/6144">her</a>.
-nl = Log in op OpenStreetMap om al je kaartbewerkingen automatisch te uploaden. Meer informatie <a href="https://github.com/organicmaps/organicmaps/issues/6144">hier</a>.
-pl = Zaloguj się do OpenStreetMap, aby automatycznie przesyłać wszystkie zmiany na mapie. Dowiedz się więcej <a href="https://github.com/organicmaps/organicmaps/issues/6144">tutaj</a>.
-pt = Por favor, faz o login no OpenStreetMap para carregar automaticamente todas as tuas edições de mapas. Sabe mais <a href="https://github.com/organicmaps/organicmaps/issues/6144">aqui</a>.
-pt-BR = Faça login no OpenStreetMap para carregar automaticamente todas as edições de mapas que você fizer. Saiba mais <a href="https://github.com/organicmaps/organicmaps/issues/6144">aqui</a>.
-ro = Vă rugăm să vă conectați la OpenStreetMap pentru a încărca automat toate modificările aduse hărții. Aflați mai multe <a href="https://github.com/organicmaps/organicmaps/issues/6144">aici</a>.
-ru = Пожалуйста войдите в аккаунт OpenStreetMap.org, чтобы публиковать ваши изменения карты. Подробности по <a href="https://github.com/organicmaps/organicmaps/issues/6144">ссылке</a>.
-sk = Prihláste sa do OpenStreetMap, aby ste mohli automaticky nahrať všetky svoje úpravy mapy. Viac informácií sa dozviete <a href="https://github.com/organicmaps/organicmaps/issues/6144">tade</a>.
-sl = Prijavite se v OpenStreetMap, da samodejno naložite vsa svoja urejanja zemljevida. Več o tem <a href="https://github.com/organicmaps/organicmaps/issues/6144">tukaj</a>.
-sq = Ju lutemi hyni në OpenStreetMap për të ngarkuar automatikisht të gjitha ndryshimet tuaja të hartës. Mësoni më shumë <a href="https://github.com/organicmaps/organicmaps/issues/6144">këtu</a>.
-sr = Молим Вас да се пријавите на OpenStreetMap да бисте аутоматски послали своје промене на мапи. Сазнајте више о томе <a href="https://github.com/organicmaps/organicmaps/issues/6144">овде</a>.
-sv = Logga in på OpenStreetMap för att automatiskt ladda upp alla dina kartredigeringar. Läs mer <a href="https://github.com/organicmaps/organicmaps/issues/6144">här</a>.
-sw = Tafadhali ingia kwenye OpenStreetMap ili kupakia kiotomatiki hariri zako zote za ramani. Pata maelezo zaidi <a href="https://github.com/organicmaps/organicmaps/issues/6144">hapa</a>.
-th = กรุณาเข้าสู่ระบบ OpenStreetMap เพื่ออัปโหลดการแก้ไขแผนที่ทั้งหมดของคุณโดยอัตโนมัติ เรียนรู้เพิ่มเติม<a href="https://github.com/organicmaps/organicmaps/issues/6144">ที่นี่</a>
-tr = Tüm harita düzenlemelerinizi kendiliğinden yüklemek için lütfen OpenStreetMap'e giriş yapın. Daha çok bilgi <a href="https://github.com/organicmaps/organicmaps/issues/6144">buradadır</a>.
-uk = Будь ласка увійдіть в акаунт OpenStreetMap.org, щоб автоматично публікувати зміни до мапи. Подробиці за <a href="https://github.com/organicmaps/organicmaps/issues/6144">посиланням</a>.
-vi = Vui lòng đăng nhập vào OpenStreetMap để tự động tải lên tất cả các chỉnh sửa bản đồ của bạn. Tìm hiểu thêm <a href="https://github.com/organicmaps/organicmaps/issues/6144">tại đây</a>.
-zh-Hans = 请登录 OpenStreetMap 以自动上传您的所有地图编辑。若要了解更多信息请点击<a href="https://github.com/organicmaps/organicmaps/issues/6144">这里</a>。
-zh-Hant = 請登入 OpenStreetMap 以自動上傳您的所有地圖編輯。若要了解更多資訊請點擊<a href="https://github.com/organicmaps/organicmaps/issues/6144">這裡</a>。
+en = Please login to OpenStreetMap to automatically upload all your map edits.
 
 [dialog_error_storage_title]
 tags = android-app
@@ -23993,60 +23714,7 @@ zh-Hant = 儲存空間存儲問題
 
 [dialog_error_storage_message]
 tags = android-app
-en = External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card or contact us at support@organicmaps.app
-af = Eksterne bergspasie is nie toeganklik nie. Die SD-kaart is dalk verwyder, beskadig, of die lêerstelsel is leesalleen. Gaan u SD-kaart na of kontak ons by support@organicmaps.app
-ar = التخزين الخارجي غير متوفر، ربما تمت إزالة بطاقة SD، أو أنها تالفة أو نظام الملفات للقراءة فقط. افحصه أو راسلنا على support@organicmaps.app
-az = Xarici yaddaş mövcud deyil, ola bilsin ki, SD Kart çıxarılıb, zədələnib və ya fayl sistemi yalnız oxunur. Zəhmət olmasa yoxlayın və ya support@organicmaps.app ünvanında bizimlə əlaqə saxlayın
-be = Знешняе сховішча недаступна. Магчыма, SD-карта была вынята або пашкоджана ці файлавая сістэма даступна толькі для чытання. Праверце SD-карту або зважыцеся з намі праз support@organicmaps.app
-bg = Външната памет на устройството не е налична, SD картата може да е била извадена, повредена или файловата система е само за четене. Проверете това и се свържете с нас support@organicmaps.app
-ca = L'emmagatzematge extern no és accessible. La targeta SD pot haver estat eliminada, danyada o sigui només de lectura. Si us plau, reviseu la targeta SD o contacta amb nosaltres a support@organicmaps.app
-cs = Externí úložiště není k dispozici, pravděpodobně byla vyjmuta nebo poškozena SD karta, nebo je systém souborů pouze pro čtení. Zkontrolujte to prosím a kontaktujte nás na support@organicmaps.app
-cy = Nid yw'r storfa allanol yn hygyrch. Efallai fod y cerdyn SD wedi'i dynnu neu ei ddifrodi, neu fod y system ffeiliau'n caniatáu darllen yn unig. Gwiriwch eich cerdyn SD neu cysylltwch â ni yn support@organicmaps.app
-da = Eksternt lager er ikke tilgængeligt. SD-kortet kan være blevet fjernet eller beskadiget, eller filsystemet er skrivebeskyttet. Kontroller dit SD-kort eller kontakt os på support@organicmaps.app
-de = Der externe Speicher ist nicht verfügbar, möglicherweise wurde die SD-Karte entfernt oder sie ist beschädigt oder das Dateisystem ist schreibgeschützt. Überprüfe das bitte oder kontaktiere uns unter support@organicmaps.app
-el = Η εξωτερική αποθήκευση δεν είναι προσβάσιμη. Η κάρτα SD μπορεί να έχει αφαιρεθεί, να έχει υποστεί ζημιά ή το σύστημα αρχείων να είναι μόνο για ανάγνωση. Ελέγξτε την κάρτα SD ή επικοινωνήστε μαζί μας στο support@organicmaps.app
-es = El almacenamiento externo no está disponible; puede que se haya quitado o dañado la tarjeta SD, o el sistema de archivos solo permite lectura. Compruébelo o escríbanos a support@organicmaps.app
-es-MX = El almacenamiento externo no está disponible. Es posible que se haya quitado o dañado la tarjeta SD, o que el sistema de archivos solo permita la lectura. Revíselo y escríbanos a support@organicmaps.app
-et = Väline andmeruum pole juurdepääsetav. SD-kaart võib olla eemaldatud, kahjustatud või failisüsteem on kirjutuskaitstud. Palun kontrolli oma SD-kaarti või võta meiega ühendust aadressil support@organicmaps.app
-eu = Kanpoko biltegiratzea ez dago erabilgarri; Baliteke SD txartela kendu edo hondatuta egotea, edo fitxategi sistema irakurtzeko soilik izatea. Mesedez, begiratu edo idatzi iezaguzu support@organicmaps.app helbidera
-fa = حافظه خارجی قابل دسترسی نیست. ممکن است کارت SD برداشته شده، آسیب دیده باشد، یا سیستم پرونده فقط خواندنی باشد. لطفا کارت SD خود را بررسی کنید یا با ما در support@organicmaps.app تماس بگیرید
-fi = Ulkoinen tallennustila ei ole käytettävissä, SD-kortti on luultavasti poistettu tai vahingoittunut tai tiedostojärjestelmä on vain luku -tilassa. Tarkista SD-kortin toiminta tai ota yhteyttä osoitteeseen support@organicmaps.app
-fr = Le stockage externe n'est pas disponible. La carte SD a probablement été enlevée, endommagée ou le système est en lecture seule. Veuillez vérifier votre carte SD ou nous contacter via support@organicmaps.app
-gl = Non se pode acceder ao almacenamento externo. É posible que a tarxeta SD fose eliminada, danada ou que o sistema de ficheiros sexa só de lectura. Comprobe a súa tarxeta SD ou póñase en contacto connosco en support@organicmaps.app
-he = לא ניתן לגשת לאחסון החיצוני. ייתכן כי כרטיס הזיכרון הוסר, נפגם, או שמערכת הקבצים היא לקריאה בלבד. נא לבדוק את כרטיס הזיכרון או ליצור איתנו קשר בכתובת support@organicmaps.app
-hr = Vanjska pohrana nije dostupna. SD kartica je možda uklonjena, oštećena ili je datotečni sustav samo za čitanje. Molimo provjerite svoju SD karticu ili nas kontaktirajte na support@organicmaps.app
-hi = बाहरी भंडारण तक पहुँच नहीं मिल पा रही है। हो सकता है कि एसडी कार्ड हटा दिया गया हो, क्षतिग्रस्त हो, या फ़ाइल सिस्टम केवल-पठन (read-only) मोड में हो। कृपया अपना एसडी कार्ड जांचें या support@organicmaps.app पर हमसे संपर्क करें।
-hu = Külső tárhely nem áll rendelkezésre, valószínűleg az SD-kártyát eltávolították vagy sérült, vagy rendszerfájl csak olvasható. Ellenőrizze, és lépjen kapcsolatba velünk a support@organicmaps.app címen
-hy = Արտաքին հիշողությունը հասանելի չէ։ SD քարտը գուցե հեռացված է, վնասված, կամ ֆայլային համակարգը միայն կարդալու համար է։ Խնդրում ենք ստուգել Ձեր SD քարտը կամ կապվել մեզ հետ support@organicmaps.app հասցեով։
-id = Penyimpanan eksternal tidak tersedia, mungkin Kartu SD sudah dilepaskan, rusak, atau sistem berkasnya hanya dapat dibaca. Silakan periksa dan beri tahu kami di alamat support@ maps.me
-is = Ytra geymsluminnið er ekki aðgengilegt. SD-minniskortið gæti hafa verið fjarlægt, það skemmst eða að skráakerfið sé skrifvarið. Athugaðu SD-minniskortið þitt eða hafðu samband á support@organicmaps.app
-it = Memoria esterna non disponibile. Probabilmente la scheda SD è stata rimossa, danneggiata o il file system è di sola lettura. Controlla la tua scheda SD o contattaci a support@organicmaps.app
-ja = 外部ストレージは使用できません。おそらく SD カードが取り外されたか、破損しているか、あるいはファイルシステムが読み取り専用になっています。SD カードを確認するか、support@organicmaps.app までご連絡ください。
-ko = 외부 저장소를 사용할 수 없습니다. SD 카드가 제거되었거나 손상되었거나 파일 시스템이 읽기 전용일 수 있습니다. 확인 후 support@organicmaps.app로 문의하세요.
-lo = ບໍ່ສາມາດເຂົ້າເຖິງບ່ອນເກັບຂໍ້ມູນພາຍນອກໄດ້. SD ກາດອາດຖືກຖອດອອກ, ເສຍຫາຍ, ຫຼື ລະບົບໄຟລ໌ເປັນແບບອ່ານຢ່າງດຽວ. ກະລຸນາກວດເບິ່ງ SD ກາດຂອງທ່ານ ຫຼື ຕິດຕໍ່ຫາພວກເຮົາໄດ້ທີ່ support@organicmaps.app
-lt = Išorinė saugykla yra nepasiekiama. SD kortelė galimai yra pašalinta, pažeista, arba failų sistema joje yra nustatyta tik skaitymui. Patikrinkite SD kortelę arba susisiekite su mumis adresu support@organicmaps.app
-lv = Ārējā krātuve nav pieejama. Iespējams, ir izņemta vai bojāta SD karte, vai arī datņu sistēma ir tikai lasāma. Pārbaudiet savu SD karti vai sazinieties ar mums, rakstot uz support@organicmaps.app
-mr = बाह्य साठ्याचा प्रवेश अपयशी. SD कार्ड कदाचित काढले गेले असेल, खराब झाले असेल किंवा फाइल सिस्टम ही केवळ-वाचनीय असावी. कृपया, तुमचे SD कार्ड तपासा किंवा support@organicmaps.app वर आमच्याशी संपर्क साधा
-mt = Il-ħżin estern mhuwiex aċċessibbli. Il-kard tal-SD setgħet tneħħiet, saritilha l-ħsara, jew is-sistema tal-fajl tinqara biss. Jekk jogħġbok, iċċekkja l-karta tal-SD tiegħek jew ikkuntattjana fuq support@organicmaps.app
-nb = Ekstern lagring er ikke tilgjengelig. Sannsynligvis er SD-kortet fjernet eller skadet eller så er filsystemet skrivebeskyttet. Undersøk og kontakt oss på support@organicmaps.app
-nl = Externe opslag is niet beschikbaar, wellicht is de SD-kaart verwijderd, beschadigd of is het bestandssysteem alleen-lezen. Gelieve dit te controleren en ons te contacteren via support@organicmaps.app
-pl = Zewnętrzny nośnik pamięci masowej jest niedostępny. Prawdopodobnie usunięto lub uszkodzono kartę SD bądź jej system plików służy tylko do odczytu. Zweryfikuj to i skontaktuj się z nami pod adresem support@organicmaps.app
-pt = O armazenamento externo não está disponível. Provavelmente porque o cartão SD foi removido, danificado ou o sistema de ficheiros é apenas para leitura. Verifique e contacte-nos através do email support@organicmaps.app
-pt-BR = O armazenamento externo não está disponível. É provável que o cartão SD tenha sido removido, danificado ou o sistema de arquivo seja apenas para leitura. Verifique e entre em contato conosco em support@organicmaps.app
-ro = Spațiul de stocare extern nu este disponibil. Probabil cardul SD nu este introdus, este deteriorat sau sistemul de fișiere este doar pentru citire. Verifică sau contactează-ne la support@organicmaps.app
-ru = Внешнее хранилище устройства недоступно. Возможно SD карта была удалена, повреждена или файловая система в режиме только для чтения. Проверьте вашу SD карту или свяжитесь с нами через support@organicmaps.app
-sk = Externý úložný priestor nie je dostupný, pravdepodobne je vytiahnutá alebo poškodená SD karta alebo je systém súborov určený iba na čítanie. Skontrolujte to, prosím, a kontaktujte nás na support@organicmaps.app
-sl = Zunanja shramba ni dostopna. Kartica SD je morda bila odstranjena, poškodovana ali pa je datotečni sistem samo za branje. Preverite svojo kartico SD ali nas kontaktirajte na support@organicmaps.app
-sq = Ruajtja e jashtme nuk është e qasshme. Karta SD mund të jetë hequr, dëmtuar ose sistemi i skedarëve është vetëm për lexim. Ju lutemi verifikoni kartën tuaj SD ose na kontaktoni në support@organicmaps.app
-sr = Екстерна меморија није доступна. SD картица је можда уклоњена, оштећена, или је фајл систем само за читање. Молим Вас, проверите Вашу SD картицу или нас контактирајте на support\@organicmaps.app
-sv = Extern lagring är inte tillgänglig. SD-kortet kan vara borttaget, skadat eller så är filsystemet skrivskyddat. Kontrollera det och kontakta oss på support@organicmaps.app
-sw = Hifadhi ya nje haipatikani, pengine Kadi ya SD imeondolewa, imeharibika au mfumo wa faili ni wa kusoma pekee. Tafadhali ikague na uwasiliane nasi kwa kutumia support@organicmaps.app
-th = ที่เก็บข้อมูลภายนอกไม่พร้อมใช้งาน อาจเป็นเพราะการ์ด SD ถูกถอดออกไป ได้รับความเสียหาย หรือระบบไฟล์ให้เขียนได้อย่างเดียว กรุณาตรวจสอบและติดต่อเราได้ที่ support@organicmaps.app
-tr = Dış depolamaya erişilemiyor. Büyük olasılıkla SD Kart çıkarılmış, hasarlı ya da dosya sistemi salt okunur. Lütfen denetleyin veya support@organicmaps.app adresinden bizimle iletişime geçin
-uk = Зовнішнє сховище не доступно. Ймовірно, SD-картку пам'яті було вилучено, пошкоджено, або система файлів доступна тільки для читання. Перевірте та зв'яжіться з нами, написавши на поштову адресу support@organicmaps.app
-vi = Ổ lưu trữ bên ngoài không khả dụng, có thể Thẻ SD đã bị tháo, bị hỏng hoặc hệ thống tập tin được thiết lập chỉ đọc. Hãy kiểm tra và liên hệ với chúng tôi qua support@organicmaps.app
-zh-Hans = 外部存储空间不可用，很可能是因为 SD 卡已移除、损毁，或者文件系统为只读状态。请进行检查，然后通过 support@organicmaps.app 联系我们
-zh-Hant = 外部儲存空間不可用，很可能是因為 SD 卡已移除、毀損，或檔案系統處於唯讀狀態。請進行檢查，然後透過 support@organicmaps.app 聯絡我們
+en = External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card.
 
 [setting_emulate_bad_storage]
 tags = android-app
@@ -37535,7 +37203,7 @@ zh-Hant = 地圖數據來自 OpenStreetMap
 
 [telegram_url]
 comment = Telegram group url for the "?" About page
-tags = android-app,apple-maps
+tags = apple-maps
 en = https://t.me/OrganicMapsApp
 ar = https://t.me/OrganicMapsApp
 az = https://t.me/OrganicMapsTR
@@ -37578,7 +37246,7 @@ zh-Hant = https://t.me/OrganicMapsApp
 
 [instagram_url]
 comment = Instagram account url for the "?" About page
-tags = android-app,apple-maps
+tags = apple-maps
 en = https://www.instagram.com/organicmaps.app
 ar = https://www.instagram.com/organicmaps.app
 be = https://www.instagram.com/organicmaps.app
@@ -37617,48 +37285,6 @@ tr = https://www.instagram.com/organicmapstr
 uk = https://www.instagram.com/organicmaps.app
 zh-Hans = https://www.instagram.com/organicmaps.app
 zh-Hant = https://www.instagram.com/organicmaps.app
-
-[tts_info_link]
-comment = A link to the TTS FAQ
-tags = android-app
-en = https://organicmaps.app/faq/text-to-speech-android-tts/
-ar = https://organicmaps.app/ar/faq/voice/text-to-speech-android-tts/
-be = https://organicmaps.app/faq/text-to-speech-android-tts/
-bg = https://organicmaps.app/faq/text-to-speech-android-tts/
-ca = https://organicmaps.app/ca/faq/voice/text-to-speech-android-tts/
-cs = https://organicmaps.app/cs/faq/voice/text-to-speech-android-tts/
-cy = https://organicmaps.app/faq/text-to-speech-android-tts/
-da = https://organicmaps.app/faq/text-to-speech-android-tts/
-de = https://organicmaps.app/de/faq/voice/text-to-speech-android-tts/
-el = https://organicmaps.app/el/faq/voice/text-to-speech-android-tts/
-es = https://organicmaps.app/es/faq/voice/text-to-speech-android-tts/
-et = https://organicmaps.app/et/faq/voice/text-to-speech-android-tts/
-eu = https://organicmaps.app/eu/faq/voice/text-to-speech-android-tts/
-fa = https://organicmaps.app/fa-IR/faq/voice/text-to-speech-android-tts/
-fi = https://organicmaps.app/faq/text-to-speech-android-tts/
-fr = https://organicmaps.app/fr/faq/voice/text-to-speech-android-tts/
-gl = https://organicmaps.app/gl/faq/voice/text-to-speech-android-tts/
-hr = https://organicmaps.app/faq/text-to-speech-android-tts/
-hu = https://organicmaps.app/hu/faq/voice/text-to-speech-android-tts/
-hy = https://organicmaps.app/faq/text-to-speech-android-tts/
-is = https://organicmaps.app/faq/text-to-speech-android-tts/
-it = https://organicmaps.app/it/faq/voice/text-to-speech-android-tts/
-ja = https://organicmaps.app/faq/text-to-speech-android-tts/
-lo = https://organicmaps.app/faq/text-to-speech-android-tts/
-lt = https://organicmaps.app/lt/faq/voice/text-to-speech-android-tts/
-nl = https://organicmaps.app/nl/faq/voice/text-to-speech-android-tts/
-pl = https://organicmaps.app/pl/faq/voice/text-to-speech-android-tts/
-pt = https://organicmaps.app/pt/faq/voice/text-to-speech-android-tts/
-pt-BR = https://organicmaps.app/pt-BR/faq/voice/text-to-speech-android-tts/
-ru = https://organicmaps.app/ru/faq/voice/text-to-speech-android-tts/
-sl = https://organicmaps.app/faq/text-to-speech-android-tts/
-sq = https://organicmaps.app/faq/text-to-speech-android-tts/
-sr = https://organicmaps.app/faq/text-to-speech-android-tts/
-sv = https://organicmaps.app/sv/faq/voice/text-to-speech-android-tts/
-tr = https://organicmaps.app/tr/faq/voice/text-to-speech-android-tts/
-uk = https://organicmaps.app/uk/faq/voice/text-to-speech-android-tts/
-zh-Hans = https://organicmaps.app/zh-Hans/faq/voice/text-to-speech-android-tts/
-zh-Hant = https://organicmaps.app/zh-Hans/faq/voice/text-to-speech-android-tts/
 
 [translated_om_site_url]
 comment = Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content
