@@ -40,6 +40,9 @@ env:
 jobs:
   android-google-beta:
     name: Android Google Beta
+    # Needs the signing and Firebase/App Store secrets, which this repo doesn't have yet.
+    # Set the repository variable SAMPAI_BETA_ENABLED to true once they are added.
+    if: vars.SAMPAI_BETA_ENABLED == 'true'
     runs-on: ubuntu-latest
     environment: beta
     steps:
