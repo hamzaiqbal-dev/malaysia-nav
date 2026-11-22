@@ -8597,9 +8597,14 @@ comment = About screen: product name and author line
 tags = android-app
 en = Sampai — made in Malaysia by Hamza Iqbal
 
+[about_licences]
+comment = About screen row: open-source licences and data credits
+tags = android-app
+en = Open-source licences
+
 [copyright]
 comment = Button in the main Help dialog
-tags = android-app,apple-maps
+tags = apple-maps
 en = Copyright
 af = Kopiereg
 ar = حقوق النشر
@@ -25163,7 +25168,7 @@ zh-Hans = 隐私
 zh-Hant = 隱私
 
 [privacy_policy]
-tags = apple-maps
+tags = android-app,apple-maps
 en = Privacy policy
 af = Privaatheidsbeleid
 ar = سياسة الخصوصية
@@ -25219,7 +25224,7 @@ zh-Hans = 隐私政策
 zh-Hant = 隱私政策
 
 [terms_of_use]
-tags = apple-maps
+tags = android-app,apple-maps
 en = Terms of use
 af = Gebruiksvoorwaardes
 ar = شروط الاستخدام

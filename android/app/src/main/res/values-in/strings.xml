@@ -246,8 +246,6 @@
     <string name="already_donated">Sudah disumbang</string>
     <string name="remind_me_later">Ingatkan nanti</string>
     <string name="support_organic_maps">Mendukung Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Hak cipta</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Laporkan gangguan</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -555,6 +553,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privasi</string>
+    <string name="privacy_policy">Kebijakan privasi</string>
+    <string name="terms_of_use">Ketentuan penggunaan</string>
     <string name="button_layer_traffic">Lalu lintas</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Pendakian</string>

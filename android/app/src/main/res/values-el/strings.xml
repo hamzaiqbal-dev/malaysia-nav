@@ -246,8 +246,6 @@
     <string name="already_donated">Ήδη δωρεά</string>
     <string name="remind_me_later">Υπενθύμισε αργότερα</string>
     <string name="support_organic_maps">Υποστήριξε το Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Πνευματικά δικαιώματα</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Αναφορά σφάλματος</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -558,6 +556,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Απόρρητο</string>
+    <string name="privacy_policy">Πολιτική απορρήτου</string>
+    <string name="terms_of_use">Όροι χρήσης</string>
     <string name="button_layer_traffic">Κίνηση</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Πεζοπορία</string>

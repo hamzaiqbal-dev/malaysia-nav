@@ -246,8 +246,6 @@
     <string name="already_donated">Jau esmu ziedojis/usi</string>
     <string name="remind_me_later">Atgādināt vēlāk</string>
     <string name="support_organic_maps">Atbalstīt Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Autortiesības</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Ziņot par kļūdu</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -560,6 +558,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privātums</string>
+    <string name="privacy_policy">Privātuma politika</string>
+    <string name="terms_of_use">Lietošanas noteikumi</string>
     <string name="button_layer_traffic">Satiksme</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Pārgājieni</string>

@@ -200,8 +200,6 @@
     <string name="already_donated">ບໍລິຈາກແລ້ວ</string>
     <string name="remind_me_later">ເຕືອນພາຍຫຼັງ</string>
     <string name="support_organic_maps">ສະໜັບສະໜູນ Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">ລິຂະສິດ</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">ລາຍງານຂໍ້ຜິດພາດ</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -511,6 +509,8 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">ຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="privacy_policy">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="terms_of_use">ເງື່ອນໄຂການໃຊ້ງານ</string>
     <string name="button_layer_traffic">ການຈະລາຈອນ</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">ການຍ່າງປ່າ</string>
