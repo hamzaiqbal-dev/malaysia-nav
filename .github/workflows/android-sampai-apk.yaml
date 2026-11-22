@@ -1,0 +1,60 @@
+name: Android Sampai APK
+on:
+  workflow_dispatch: # Manual trigger
+  pull_request:
+    paths-ignore:
+      - '**/*.md'
+      - iphone/**
+      - xcode/**
+      - docs/**
+
+permissions:
+  contents: read
+
+env:
+  JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
+
+jobs:
+  apk:
+    name: Build Google Debug APK (arm64)
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Install build tools
+        shell: bash
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build
+
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 200 # needed by the versioning script
+
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure ccache
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}
+          save: ${{ github.ref == 'refs/heads/master' }}
+
+      - name: Assemble Google Debug
+        shell: bash
+        working-directory: android
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: ./gradlew -Parm64 assembleGoogleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: sampai-google-debug-arm64
+          path: android/app/build/outputs/apk/google/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30
