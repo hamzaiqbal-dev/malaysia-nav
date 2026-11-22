@@ -22,10 +22,9 @@ namespace share
 // Localized, placeholder-free labels the body builder needs, filled from the core StringsBundle.
 struct Strings
 {
-  std::string m_myPosition;         // "I am here on Organic Maps"
-  std::string m_openInOmOrBrowser;  // "Open in Organic Maps or in a browser"
+  std::string m_myPosition;         // "I am here on Sampai"
+  std::string m_openInOmOrBrowser;  // "Open in Sampai or in a browser"
   std::string m_openInMapsApp;      // "Open in Another App"
-  std::string m_getApp;             // "Get Organic Maps"
 };
 
 // A resolved place to share: name already filtered, address already reverse-geocoded if needed.

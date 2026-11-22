@@ -79,7 +79,6 @@
     <!-- SECTION: Other translations -->
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notes</string>
-    <string name="share_bookmarks_email_body">¡Hola!\n\nLos mios marcadores tán axuntos; ábrilos n’Sampai. Si nun lu tienes instaláu, te lu puedes baxar equí: https://omaps.app/get?kmz\n\n¡Gocia viaxar con Sampai!</string>
     <!-- resource for context menu -->
     <string name="edit">Editar</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
@@ -111,12 +110,8 @@
     <string name="menu">Menú</string>
     <!-- Text in menu -->
     <string name="website">Sitiu web</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Noticies</string>
     <!-- Text in menu -->
     <string name="help">Ayuda</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Entrugues frecuentes</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
     <string name="compass_calibration_recommended">Ameyora la direición de la flecha moviendo’l teléfonu en forma d’ocho pa calibrar la brúxula.</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
