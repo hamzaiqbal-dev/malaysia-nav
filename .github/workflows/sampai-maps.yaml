@@ -173,7 +173,12 @@ jobs:
             [ -f "$build$version/$r.mwm" ] || { echo "Missing $r.mwm"; exit 1; }
           done
           cp "$build$version"/*.mwm "$build$version"/countries.json "$out/"
-          [ -f "$build$version/packed_polygons.bin" ] && cp "$build$version/packed_polygons.bin" "$out/"
+          # The app's border file must list exactly the countries in countries.json.
+          packed="$RUNNER_TEMP/packed"
+          mkdir -p "$packed/borders"
+          for r in $REGIONS; do cp "data/borders/$r.poly" "$packed/borders/"; done
+          build/generator_tool --data_path="$packed/" --user_resource_path="$GITHUB_WORKSPACE/data" --generate_packed_borders
+          cp "$packed/packed_polygons.bin" "$out/"
           echo "$(cat "$RUNNER_TEMP/osm/source.txt") (OSM data as of $(cat "$RUNNER_TEMP/osm/timestamp.txt"))" > "$out/SOURCE.txt"
           cd "$out"
           sha256sum * > SHA256SUMS
