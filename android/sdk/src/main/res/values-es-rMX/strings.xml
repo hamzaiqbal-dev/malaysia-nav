@@ -2,8 +2,8 @@
 <resources>
 
     <!-- SECTION: Other translations -->
-    <!-- Shared email link text; leads to the Organic Maps download page. -->
-    <string name="share_get_om">Obtén Organic Maps</string>
+    <!-- Shared email link text; leads to the Sampai download page. -->
+    <string name="share_get_om">Obtén Sampai</string>
 
     <!-- SECTION: Uncategorized -->
     <!-- Internal storage type in Maps Storage settings (not accessible by the user) -->

@@ -156,7 +156,7 @@ public class Utils
   {
     final android.content.ClipboardManager clipboard =
         (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-    final ClipData clip = ClipData.newPlainText("Organic Maps: " + text, text);
+    final ClipData clip = ClipData.newPlainText("Sampai: " + text, text);
     clipboard.setPrimaryClip(clip);
   }
   public static Uri buildMailUri(String to, String subject, String body)
@@ -260,7 +260,7 @@ public class Utils
   public static void sendBugReport(@NonNull ActivityResultLauncher<SharingUtils.SharingIntent> launcher,
                                    @NonNull Activity activity, @NonNull String subject, @NonNull String body)
   {
-    subject = "Organic Maps Bugreport" + (TextUtils.isEmpty(subject) ? "" : ": " + subject);
+    subject = "Sampai Bugreport" + (TextUtils.isEmpty(subject) ? "" : ": " + subject);
     LogsManager.INSTANCE.zipLogs(
         new SupportInfoWithLogsCallback(launcher, activity, subject, body, BuildConfig.SUPPORT_MAIL));
   }
@@ -271,7 +271,7 @@ public class Utils
                                   @NonNull Activity activity)
   {
     LogsManager.INSTANCE.zipLogs(
-        new SupportInfoWithLogsCallback(launcher, activity, "Organic Maps Feedback", "", BuildConfig.SUPPORT_MAIL));
+        new SupportInfoWithLogsCallback(launcher, activity, "Sampai Feedback", "", BuildConfig.SUPPORT_MAIL));
   }
 
   public static void navigateToParent(@NonNull Activity activity)

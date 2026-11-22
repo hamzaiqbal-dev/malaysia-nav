@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Tải xuống</string>
     <string name="download_map_title">Tải xuống bản đồ tổng quan thế giới</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps trên Android Auto cần quyền truy cập vị trí để hoạt động hiệu quả</string>
+    <string name="aa_request_permission_activity_text">Sampai trên Android Auto cần quyền truy cập vị trí để hoạt động hiệu quả</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Cấp quyền</string>
 </resources>

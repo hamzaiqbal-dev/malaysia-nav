@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Спампоўванне</string>
     <string name="download_map_title">Спампаваць аглядную мапу свету</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Для эфектыўнай працы Organic Maps у Android Auto патрабуецца дазвол на вызначэнне месцазнаходжання</string>
+    <string name="aa_request_permission_activity_text">Для эфектыўнай працы Sampai у Android Auto патрабуецца дазвол на вызначэнне месцазнаходжання</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Дазволіць</string>
 </resources>
