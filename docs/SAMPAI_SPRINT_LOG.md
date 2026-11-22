@@ -375,6 +375,9 @@ dispatched by Hamza) still running during the run.
 - #53 checklist rewritten for the merged state (open audit findings 3, 5–10, ports needed from the old stack).
   Merges cleanly onto `master`.
 
-Next run: confirm the master Android Check / APK run, put its link in the checklist. Then small code items that
+APK from master: run 45051266794 succeeded, artifact `sampai-google-debug-arm64` (44 MB), expires 22 Dec.
+Android Check and CMake on master were still running at the end of the run.
+
+Next run: confirm master Android Check and CMake. Then small code items that
 don't need Hamza: privacy text for GitHub map hosting (finding 5, `assets/privacy.html` + `docs/my/LEGAL.md`),
 drop unused `translated_om_site_url`, then port the toll total onto #59's `TollTable` (HUD + preview).
