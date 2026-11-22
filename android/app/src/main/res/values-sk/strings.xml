@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Skúsiť znova</string>
     <string name="about_menu_title">O aplikácii Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Zadarmo pre každého, vyrobené s láskou</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Žiadne reklamy, žiadne sledovanie, žiadny zber údajov</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Žiadne vybíjanie batérie, funguje v režime offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Rýchly, minimalistický, vyvinutý komunitou</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplikácia s otvoreným zdrojovým kódom vytvorená nadšencami a dobrovoľníkmi.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Nastavenia polohy</string>
     <string name="close">Zavrieť</string>
@@ -152,7 +142,6 @@
     <string name="description">Poznámky</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Zdielané záložky Sampai</string>
-    <string name="share_bookmarks_email_body">Ahoj!\n\nV prílohe sú moje záložky z aplikácie Sampai. Ak ju nemáš nainštalovanú, môžeš si ju stiahnuť tu: https://omaps.app/get?kmz\n\nPrajem šťastnú cestu s Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Načítavanie záložiek</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Ponuka</string>
     <!-- Text in menu -->
     <string name="website">Webové stránky</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Správy</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Spätná väzba</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Ohodnotiť aplikáciu</string>
-    <!-- Text in menu -->
     <string name="help">Nápoveda</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Otázky a odpovede</string>
     <!-- Button in the main menu -->
     <string name="donate">Darovať</string>
     <string name="already_donated">Už darované</string>
     <string name="remind_me_later">Pripomeň neskôr</string>
     <string name="support_organic_maps">Podporiť Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Podporte projekt</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Autorské práva</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Prevádzkovateľ: %s</string>
     <string name="editor_category_unsuitable_title">Nemôžete nájsť vhodnú kategóriu?</string>
-    <string name="editor_category_unsuitable_text">Sampai umožňuje pridávať iba jednoduché kategórie bodov, čo znamená, že nie sú k dispozícii mestá, cesty, jazerá, obrysy budov atď. Takéto kategórie prosím pridávajte priamo na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Podrobné pokyny krok za krokom nájdete v našom <a href="https://organicmaps.app/faq/editing/advanced-map-editing">návode</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Neprevzali ste žiadne mapy</string>
     <string name="downloader_no_downloaded_maps_message">Prevziať mapy na nájdenie pozície a navigovanie off-line.</string>
     <string name="current_location_unknown_error_title">Súčasná pozícia je neznáma.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Pridať zastávku</string>
     <string name="drag_to_reorder">Zmeniť poradie</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Prihláste sa do OpenStreetMap, aby ste mohli automaticky nahrať všetky svoje úpravy mapy. Viac informácií sa dozviete <a href="https://github.com/organicmaps/organicmaps/issues/6144">tade</a>.</string>
     <string name="dialog_error_storage_title">Problém s prístupom k úložisku</string>
-    <string name="dialog_error_storage_message">Externý úložný priestor nie je dostupný, pravdepodobne je vytiahnutá alebo poškodená SD karta alebo je systém súborov určený iba na čítanie. Skontrolujte to, prosím, a kontaktujte nás na support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Imitovať poškodené úložisko</string>
     <string name="error_enter_correct_name">Prosím, zadajte správne meno</string>
     <string name="bookmark_lists">Zoznamy</string>
@@ -581,8 +558,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Súkromie</string>
-    <string name="privacy_policy">Zásady ochrany osobných údajov</string>
-    <string name="terms_of_use">Podmienky používania</string>
     <string name="button_layer_traffic">Dopravné informácie</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Turistika</string>

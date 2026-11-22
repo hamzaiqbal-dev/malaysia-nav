@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Cześć!\n\nZałączam moje zakładki z aplikacji Sampai. Proszę otwórz je jeżeli masz zaintalowane Sampai. Lub, jeżeli nie masz, pobierz aplikację na swoje urządzenie iOS/Android za pomocą tego linka: https://omaps.app/get?kmz\n\nMiłego podróżowania z Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Wczytywanie zakładek";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Nie możesz znaleźć odpowiedniej kategorii?";
-"editor_category_unsuitable_text" = "Sampai pozwala na dodawanie tylko prostych kategorii punktów, co oznacza brak miast, dróg, jezior, obrysów budynków itp. Dodaj takie kategorie bezpośrednio do <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Sprawdź nasz <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">przewodnik</a>, aby uzyskać szczegółowe instrukcje krok po kroku.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Nie pobrano żadnych map";
 "downloader_no_downloaded_maps_message" = "Aby znajdować miejsca i nawigować bez połączenia z internetem, musisz pobrać mapy.";
 "current_location_unknown_error_title" = "Aktualna lokalizacja jest nieznana.";

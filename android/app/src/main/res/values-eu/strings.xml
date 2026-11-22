@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Saiatu berriro</string>
     <string name="about_menu_title">Sampai-i buruz</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Denontzat doan, maitasunez egina</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Ez iragarkirik, ez jarraipenik, ez datu-bilketarik</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Ez da bateria deskargatzen, konexiorik gabe funtzionatzen du</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Azkarra, minimalista, komunitateak garatua</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Zale eta bolondresek sortutako kode irekiko aplikazioa.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Kokapen ezarpenak</string>
     <string name="close">Itxi</string>
@@ -152,7 +142,6 @@
     <string name="description">Oharrak</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai-eko markagailuak zurekin partekatu dira</string>
-    <string name="share_bookmarks_email_body">Kaixo!\nNire markagailuak Sampai aplikazioan erantsi ditut. Mesedez, ireki itzazu Sampai instalatuta baduzu. Edo, ez baduzu, deskargatu aplikazioa zure iOS edo Android gailurako esteka hau jarraituz: https://omaps.app/get?kmz\n\nGozatu bidaiatzen Sampai-ekin!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Markagailuak kargatzen</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Menua</string>
     <!-- Text in menu -->
     <string name="website">Webgunea</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Albisteak</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Iruzkinak</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Baloratu aplikazioa</string>
-    <!-- Text in menu -->
     <string name="help">Laguntza</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Ohiko galderak</string>
     <!-- Button in the main menu -->
     <string name="donate">Dohaintza eman</string>
     <string name="already_donated">Dohaintza jada emana</string>
     <string name="remind_me_later">Gogoratu geroago</string>
     <string name="support_organic_maps">Sustatu Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Proiektuari laguntza eman</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Egile eskubideak</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operadorea: %s</string>
     <string name="editor_category_unsuitable_title">Ezin duzu kategoria egokirik aurkitu?</string>
-    <string name="editor_category_unsuitable_text">Sampai-ek puntu kategoria soilak gehitzeko aukera ematen du, hau da, ez da herririk, errepiderik, lakurik, eraikinen eskemarik, etab. Gehitu kategoria horiek zuzenean <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Begiratu gure <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gida</a> urratsez urrats argibide zehatzak lortzeko.</string>
     <string name="downloader_no_downloaded_maps_title">Ez duzu maparik deskargatu</string>
     <string name="downloader_no_downloaded_maps_message">Deskargatu mapak kokapena aurkitzeko eta lineaz kanpo nabigatzeko.</string>
     <string name="current_location_unknown_error_title">Uneko kokapena ezezaguna da.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Gehitu geldialdia</string>
     <string name="drag_to_reorder">Berrantolatu</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Hasi saioa OpenStreetMap-en zure mapen aldaketa guztiak automatikoki kargatzeko. Lortu informazio gehiago <a href="https://github.com/organicmaps/organicmaps/issues/6144">hemen</a>.</string>
     <string name="dialog_error_storage_title">Biltegiratze sarbidearen arazoa</string>
-    <string name="dialog_error_storage_message">Kanpoko biltegiratzea ez dago erabilgarri; Baliteke SD txartela kendu edo hondatuta egotea, edo fitxategi sistema irakurtzeko soilik izatea. Mesedez, begiratu edo idatzi iezaguzu support\@organicmaps.app helbidera</string>
     <string name="setting_emulate_bad_storage">Emulatu kaltetutako biltegiratzea</string>
     <string name="error_enter_correct_name">Mesedez, idatzi baliozko izen bat</string>
     <string name="bookmark_lists">Zerrendak</string>
@@ -580,8 +557,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Pribatutasuna</string>
-    <string name="privacy_policy">Pribatutasun politika</string>
-    <string name="terms_of_use">Erabilera baldintzak</string>
     <string name="button_layer_traffic">Trafikoa</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Mendi-ibilaldiak</string>
@@ -754,12 +729,6 @@
     <string name="change_map_locale">Maparen hizkuntza</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">OpenStreetMap-eko mapa-datuak</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/eu/faq/voice/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/eu/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->

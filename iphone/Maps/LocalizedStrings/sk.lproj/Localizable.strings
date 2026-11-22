@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Ahoj!\n\nV prílohe sú moje záložky z aplikácie Sampai. Ak ju nemáš nainštalovanú, môžeš si ju stiahnuť tu: https://omaps.app/get?kmz\n\nPrajem šťastnú cestu s Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Načítavanie záložiek";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Prevádzkovateľ: %@";
 "editor_category_unsuitable_title" = "Nemôžete nájsť vhodnú kategóriu?";
-"editor_category_unsuitable_text" = "Sampai umožňuje pridávať iba jednoduché kategórie bodov, čo znamená, že nie sú k dispozícii mestá, cesty, jazerá, obrysy budov atď. Takéto kategórie prosím pridávajte priamo na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Podrobné pokyny krok za krokom nájdete v našom <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">návode</a>.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Neprevzali ste žiadne mapy";
 "downloader_no_downloaded_maps_message" = "Prevziať mapy na nájdenie pozície a navigovanie off-line.";
 "current_location_unknown_error_title" = "Súčasná pozícia je neznáma.";

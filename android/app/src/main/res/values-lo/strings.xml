@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">ລອງໃໝ່</string>
     <string name="about_menu_title">ກ່ຽວກັບ Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">ຟຣີສຳລັບທຸກຄົນ, ສ້າງດ້ວຍຄວາມຮັກ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• ບໍ່ມີໂຄສະນາ, ບໍ່ມີການຕິດຕາມ, ບໍ່ມີການເກັບກຳຂໍ້ມູນ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• ບໍ່ເປືອງແບັດເຕີຣີ, ໃຊ້ງານໄດ້ແບບອອບລາຍ</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• ໄວ, ງ່າຍດາຍ, ພັດທະນາໂດຍຊຸມຊົນ</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">ແອັບພລິເຄຊັນໂອເພັນຊອດທີ່ສ້າງໂດຍຜູ້ມີໃຈຮັກ ແລະ ອາສາສະໝັກ.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">ການຕັ້ງຄ່າຕຳແໜ່ງທີ່ຕັ້ງ</string>
     <string name="close">ປິດ</string>
@@ -106,7 +96,6 @@
     <string name="description">ບັນທຶກ</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">ມີການແບ່ງປັນບຸກມາກ Sampai ໃຫ້ທ່ານ</string>
-    <string name="share_bookmarks_email_body">ສະບາຍດີ!\n\nນີ້ແມ່ນບຸກມາກຂອງຂ້ອຍ; ກະລຸນາເປີດໃນ Sampai. ຫາກທ່ານຍັງບໍ່ໄດ້ຕິດຕັ້ງ, ສາມາດດາວໂຫລດໄດ້ທີ່ນີ້: https://omaps.app/get?kmz\n\nຂໍໃຫ້ມ່ວນກັບການເດີນທາງດ້ວຍ Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">ກຳລັງໂຫລດບຸກມາກ</string>
     <!-- Kmz file successful loading -->
@@ -202,23 +191,15 @@
     <string name="menu">ເມນູ</string>
     <!-- Text in menu -->
     <string name="website">ເວັບໄຊ</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">ຂ່າວສານ</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">ຄຳຕິຊົມ</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">ໃຫ້ຄະແນນແອັບ</string>
-    <!-- Text in menu -->
     <string name="help">ຊ່ວຍເຫຼືອ</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">ຄຳຖາມທີ່ພົບເລື້ອຍ</string>
     <!-- Button in the main menu -->
     <string name="donate">ບໍລິຈາກ</string>
     <string name="already_donated">ບໍລິຈາກແລ້ວ</string>
     <string name="remind_me_later">ເຕືອນພາຍຫຼັງ</string>
     <string name="support_organic_maps">ສະໜັບສະໜູນ Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">ສະໜັບສະໜູນໂຄງການ</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">ລິຂະສິດ</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -424,7 +405,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">ຜູ້ດຳເນີນການ: %s</string>
     <string name="editor_category_unsuitable_title">ບໍ່ພົບໝວດໝູ່ທີ່ເໝາະສົມບໍ່?</string>
-    <string name="editor_category_unsuitable_text">Sampai ອະນຸຍາດໃຫ້ເພີ່ມສະເພາະໝວດໝູ່ຈຸດທີ່ງ່າຍດາຍເທົ່ານັ້ນ, ນັ້ນໝາຍຄວາມວ່າບໍ່ລວມເຖິງ ຕົວເມືອງ, ຖະໜົນ, ໜອງນ້ຳ, ຂອບເຂດອາຄານ ແລະ ອື່ນໆ. ກະລຸນາເພີ່ມໝວດໝູ່ດັ່ງກ່າວໂດຍກົງທີ່ <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. ກວດເບິ່ງ <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ຄຳແນະນຳ</a> ຂອງພວກເຮົາສຳລັບຂັ້ນຕອນໂດຍລະອຽດ.</string>
     <string name="downloader_no_downloaded_maps_title">ທ່ານຍັງບໍ່ໄດ້ດາວໂຫລດແຜນທີ່ໃດໆ</string>
     <string name="downloader_no_downloaded_maps_message">ດາວໂຫລດແຜນທີ່ເພື່ອຄົ້ນຫາ ແລະ ນຳທາງແບບອອບລາຍ.</string>
     <string name="current_location_unknown_error_title">ບໍ່ຮູ້ຕຳແໜ່ງປັດຈຸບັນ.</string>
@@ -495,10 +475,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">ເພີ່ມຈຸດຈອດ</string>
     <string name="drag_to_reorder">ຈັດຮຽງໃໝ່</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">ກະລຸນາເຂົ້າສູ່ລະບົບ OpenStreetMap ເພື່ອອັບໂຫລດການແກ້ໄຂແຜນທີ່ທັງໝົດຂອງທ່ານໂດຍອັດຕະໂນມັດ. ສຶກສາເພີ່ມເຕີມ <a href="https://github.com/organicmaps/organicmaps/issues/6144">ທີ່ນີ້</a>.</string>
     <string name="dialog_error_storage_title">ບັນຫາການເຂົ້າເຖິງບ່ອນເກັບຂໍ້ມູນ</string>
-    <string name="dialog_error_storage_message">ບໍ່ສາມາດເຂົ້າເຖິງບ່ອນເກັບຂໍ້ມູນພາຍນອກໄດ້. SD ກາດອາດຖືກຖອດອອກ, ເສຍຫາຍ, ຫຼື ລະບົບໄຟລ໌ເປັນແບບອ່ານຢ່າງດຽວ. ກະລຸນາກວດເບິ່ງ SD ກາດຂອງທ່ານ ຫຼື ຕິດຕໍ່ຫາພວກເຮົາໄດ້ທີ່ support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">ຈຳລອງບ່ອນເກັບຂໍ້ມູນທີ່ເສຍຫາຍ</string>
     <string name="error_enter_correct_name">ກະລຸນາປ້ອນຊື່ທີ່ຖືກຕ້ອງ</string>
     <string name="bookmark_lists">ລາຍການ</string>
@@ -534,8 +511,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">ຄວາມເປັນສ່ວນຕົວ</string>
-    <string name="privacy_policy">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
-    <string name="terms_of_use">ເງື່ອນໄຂການໃຊ້ງານ</string>
     <string name="button_layer_traffic">ການຈະລາຈອນ</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">ການຍ່າງປ່າ</string>
@@ -708,12 +683,6 @@
     <string name="change_map_locale">ພາສາຂອງແຜນທີ່</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">ຂໍ້ມູນແຜນທີ່ຈາກ OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->

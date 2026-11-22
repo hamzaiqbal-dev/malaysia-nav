@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">पुनः प्रयास करें</string>
     <string name="about_menu_title">Sampai के बारे में</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">सभी के लिए मुफ़्त, प्यार से बनाया गया</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई डेटा संग्रह नहीं</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• कोई बैटरी ख़त्म नहीं, ऑफ़लाइन काम करता है</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• तेज़, न्यूनतम, समुदाय द्वारा विकसित</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">उत्साही और स्वयंसेवकों द्वारा बनाया गया ओपन-सोर्स एप्लिकेशन।</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">स्थान सेटिंग्स</string>
     <string name="close">बंद करना</string>
@@ -152,7 +142,6 @@
     <string name="description">टिप्पणियाँ</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai बुकमार्क आपके साथ साझा किए गए थे</string>
-    <string name="share_bookmarks_email_body">नमस्ते!\n\nसंलग्न हैं मेरे बुकमार्क; कृपया उन्हें Sampai में खोलें। यदि आपने इसे इंस्टॉल नहीं किया है तो आप इसे यहाँ डाउनलोड कर सकते हैं: https://omaps.app/get?kmz\n\nSampai के साथ यात्रा का आनंद लें!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">बुकमार्क लोड हो रहे हैं</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">मेन्यू</string>
     <!-- Text in menu -->
     <string name="website">वेबसाइट</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">समाचार</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">प्रतिक्रिया</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">एप्लिकेशन की श्रेणी बताओ</string>
-    <!-- Text in menu -->
     <string name="help">सहायता</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">अक्सर पूछे जाने वाले प्रश्नों</string>
     <!-- Button in the main menu -->
     <string name="donate">दान देना</string>
     <string name="already_donated">पहले से दान</string>
     <string name="remind_me_later">बाद में याद दिलाना</string>
     <string name="support_organic_maps">Sampai का समर्थन करें</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">परियोजना का समर्थन करें</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">कॉपीराइट</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">ऑपरेटर: %s</string>
     <string name="editor_category_unsuitable_title">कोई उपयुक्त श्रेणी नहीं मिल रही?</string>
-    <string name="editor_category_unsuitable_text">Sampai केवल सरल बिंदु श्रेणियाँ जोड़ने की अनुमति देता है, जिसका अर्थ है कि शहर, सड़कें, झीलें, इमारतों की रूपरेखा आदि नहीं। कृपया ऐसी श्रेणियाँ सीधे <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> पर जोड़ें। विस्तृत चरण-दर-चरण निर्देशों के लिए हमारी <a href="https://organicmaps.app/faq/editing/advanced-map-editing">गाइड</a> देखें।</string>
     <string name="downloader_no_downloaded_maps_title">आपने कोई भी नक्शा डाउनलोड नहीं किया है</string>
     <string name="downloader_no_downloaded_maps_message">ऑफ़लाइन खोज और नेविगेशन के लिए मानचित्र डाउनलोड करें।</string>
     <string name="current_location_unknown_error_title">वर्तमान स्थान अज्ञात है।</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">स्टॉप जोड़ें</string>
     <string name="drag_to_reorder">पुनःक्रमबद्ध करें</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">कृपया अपने सभी मानचित्र संपादनों को स्वचालित रूप से अपलोड करने के लिए OpenStreetMap पर लॉगिन करें। अधिक जानें <a href="https://github.com/organicmaps/organicmaps/issues/6144">यहां</a>।</string>
     <string name="dialog_error_storage_title">भंडारण पहुँच समस्या</string>
-    <string name="dialog_error_storage_message">बाहरी भंडारण तक पहुँच नहीं मिल पा रही है। हो सकता है कि एसडी कार्ड हटा दिया गया हो, क्षतिग्रस्त हो, या फ़ाइल सिस्टम केवल-पठन (read-only) मोड में हो। कृपया अपना एसडी कार्ड जांचें या support\@organicmaps.app पर हमसे संपर्क करें।</string>
     <string name="setting_emulate_bad_storage">खराब स्टोरेज का अनुकरण करें</string>
     <string name="error_enter_correct_name">कृपया एक सही नाम दर्ज करें</string>
     <string name="bookmark_lists">सूचियों</string>
@@ -577,8 +554,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">निजता</string>
-    <string name="privacy_policy">गोपनीयता नीति</string>
-    <string name="terms_of_use">उपयोग की शर्तें</string>
     <string name="button_layer_traffic">यातायात</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">हाइकिंग</string>

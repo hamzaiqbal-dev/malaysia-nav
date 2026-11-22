@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "नमस्ते!\n\nसंलग्न हैं मेरे बुकमार्क; कृपया उन्हें Sampai में खोलें। यदि आपने इसे इंस्टॉल नहीं किया है तो आप इसे यहाँ डाउनलोड कर सकते हैं: https://omaps.app/get?kmz\n\nSampai के साथ यात्रा का आनंद लें!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "बुकमार्क लोड हो रहे हैं";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "ऑपरेटर: %@";
 "editor_category_unsuitable_title" = "कोई उपयुक्त श्रेणी नहीं मिल रही?";
-"editor_category_unsuitable_text" = "Sampai केवल सरल बिंदु श्रेणियाँ जोड़ने की अनुमति देता है, जिसका अर्थ है कि शहर, सड़कें, झीलें, इमारतों की रूपरेखा आदि नहीं। कृपया ऐसी श्रेणियाँ सीधे <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> पर जोड़ें। विस्तृत चरण-दर-चरण निर्देशों के लिए हमारी <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">गाइड</a> देखें।";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "आपने कोई भी नक्शा डाउनलोड नहीं किया है";
 "downloader_no_downloaded_maps_message" = "ऑफ़लाइन खोज और नेविगेशन के लिए मानचित्र डाउनलोड करें।";
 "current_location_unknown_error_title" = "वर्तमान स्थान अज्ञात है।";

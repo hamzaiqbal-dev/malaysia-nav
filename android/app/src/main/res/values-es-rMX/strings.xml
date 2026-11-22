@@ -22,10 +22,6 @@
     <string name="country_status_download_failed">La descarga ha fallado</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Inténtelo de nuevo</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Sin anuncios, sin seguimiento, sin recopilación de datos</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• No consume batería, funciona sin conexión</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Ajustes de ubicación</string>
     <string name="unsupported_phone">La aplicación requiere OpenGL acelerado por hardware. Lamentablemente, tu dispositivo no es compatible.</string>
@@ -74,7 +70,6 @@
     <!-- SECTION: Other translations -->
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Los favoritos de Sampai se han compartido contigo</string>
-    <string name="share_bookmarks_email_body">Hola!\n\Adjunto mis marcadores de la aplicación Sampai. Por favor, ábralos si tiene instalado Sampai. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://omaps.app/get?kmz\n¡Disfrute viajando con Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Cargando favoritos</string>
     <!-- Kmz file successful loading -->
@@ -119,11 +114,7 @@
     <string name="pref_tts_playing_test_voice">Verifique el volumen o la configuración de texto a voz del sistema si no escucha la voz ahora.</string>
     <!-- Text in menu -->
     <string name="website">Página web</string>
-    <!-- Text in menu -->
-    <string name="rate_the_app">Valora la aplicación</string>
     <string name="already_donated">Ya donado</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Apoyar el proyecto</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Informar de un error</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -236,7 +227,6 @@
     <string name="editor_osm_history">Tu historial de edición</string>
     <string name="editor_osm_notes">Sus notas de datos cartográficos</string>
     <string name="editor_category_unsuitable_title">¿No encuentra una categoría adecuada?</string>
-    <string name="editor_category_unsuitable_text">Sampai permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obtener instrucciones detalladas paso a paso.</string>
     <string name="downloader_no_downloaded_maps_title">No has descargado ningún mapa</string>
     <string name="downloader_no_downloaded_maps_message">Descarga mapas para buscar y navegar sin conexión.</string>
     <string name="current_location_unknown_error_title">La ubicación actual es desconocida.</string>
@@ -290,9 +280,6 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Agregar parada</string>
     <string name="drag_to_reorder">Reordenar</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Inicie sesión en OpenStreetMap para cargar automáticamente todas las ediciones de su mapa. Obtenga más información <a href="https://github.com/organicmaps/organicmaps/issues/6144">aquí</a>.</string>
-    <string name="dialog_error_storage_message">El almacenamiento externo no está disponible. Es posible que se haya quitado o dañado la tarjeta SD, o que el sistema de archivos solo permita la lectura. Revíselo y escríbanos a support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emular el almacenamiento dañado</string>
     <string name="error_enter_correct_name">Introduzca un nombre correcto</string>
     <plurals name="bookmarks_places">
@@ -319,8 +306,6 @@
         <item quantity="many">%d de trayectos</item>
         <item quantity="other">%d trayectos</item>
     </plurals>
-    <string name="privacy_policy">Política de Privacidad</string>
-    <string name="terms_of_use">Términos de uso</string>
     <!-- Map layers menu: toggle button for the satellite imagery layer -->
     <string name="button_layer_satellite">Satélite</string>
     <string name="layers_title">Estilos de mapa y capas</string>

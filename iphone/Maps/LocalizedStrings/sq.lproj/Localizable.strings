@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Përshëndetje!\n\nBashkëngjitur janë faqeshënuesit e mi; ju lutemi hapini ato në Sampai. Nëse nuk e keni të instaluar, mund ta shkarkoni këtu: https://omaps.app/get?kmz\n\nShijoni udhëtimin me Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Duke ngarkuar Faqeshënuesit";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operatori: %@";
 "editor_category_unsuitable_title" = "Nuk mund të gjeni një kategori të përshtatshme?";
-"editor_category_unsuitable_text" = "Sampai lejon shtimin e kategorive të thjeshta të pikave, që do të thotë jo qytete, rrugë, liqene, konture ndërtesash, etj. Ju lutemi shtoni kategori të tilla drejtpërdrejt në <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Kontrolloni <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">udhëzuesin tonë</a> për udhëzime të detajuara hap pas hapi.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Nuk keni shkarkuar asnjë hartë";
 "downloader_no_downloaded_maps_message" = "Shkarkoni harta për të kërkuar dhe lundruar jashtë linje.";
 "current_location_unknown_error_title" = "Vendndodhja aktuale është e panjohur.";

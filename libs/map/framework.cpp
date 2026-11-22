@@ -362,9 +362,8 @@ Framework::Framework(FrameworkParams const & params, bool loadMaps)
   m_stringsBundle.SetDefaultString("open_in_app", "Open in Another App");
   m_stringsBundle.SetDefaultString("postal_code", "Postal Code");
   // Placeholder-free labels used by GetShareData; platforms override with localized values.
-  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Organic Maps");
-  m_stringsBundle.SetDefaultString("share_open_in_om_or_browser", "Open in Organic Maps or in a browser");
-  m_stringsBundle.SetDefaultString("share_get_om", "Get Organic Maps");
+  m_stringsBundle.SetDefaultString("share_my_position", "I am here on Sampai");
+  m_stringsBundle.SetDefaultString("share_open_in_om_or_browser", "Open in Sampai or in a browser");
 
   m_featuresFetcher.InitClassificator();
   m_featuresFetcher.SetOnMapDeregisteredCallback(std::bind(&Framework::OnMapDeregistered, this, _1));
@@ -743,8 +742,7 @@ share::Strings GetShareStrings(StringsBundle const & bundle)
 {
   return {.m_myPosition = bundle.GetString("share_my_position"),
           .m_openInOmOrBrowser = bundle.GetString("share_open_in_om_or_browser"),
-          .m_openInMapsApp = bundle.GetString("open_in_app"),
-          .m_getApp = bundle.GetString("share_get_om")};
+          .m_openInMapsApp = bundle.GetString("open_in_app")};
 }
 }  // namespace
 

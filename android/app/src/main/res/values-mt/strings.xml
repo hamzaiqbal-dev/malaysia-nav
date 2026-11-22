@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Erġa prova</string>
     <string name="about_menu_title">Dwar Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">B\' xejn għal kulħadd, magħmul bl-imħabba</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Bla reklami, bla traċċar, bla kollezjoni ta\' data</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Bla ħela ta\' batterija, jaħdem offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Malajr, minimalista, żvillupat mill-komunità</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Apliażżjoni tas-sors miftuħ magħmula min dilettanti u il-voluntiera</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Settings tal-lokażżjoni</string>
     <string name="close">Ġħalaq</string>
@@ -152,7 +142,6 @@
     <string name="description">Noti</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai bookmarks maqsuma miegħek</string>
-    <string name="share_bookmarks_email_body">Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Sampai. Jekk mhuwiex installat tista tniżżlu min hawn: https://omaps.app/get?kmz\n\nĦu pjaċir ivvjaġġa ġo Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Tgħobijja tal-bookmarks</string>
     <!-- Kmz file successful loading -->
@@ -248,23 +237,15 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Websajt</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Aħbarijiet</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Għati rata lill-app</string>
-    <!-- Text in menu -->
     <string name="help">Għajnuna</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Mistoqsijiet Frekwenti</string>
     <!-- Button in the main menu -->
     <string name="donate">Donazzjoni</string>
     <string name="already_donated">Ġa mogħtija id-donazzjoni</string>
     <string name="remind_me_later">Fakkar aktar tard</string>
     <string name="support_organic_maps">Appoġġja lill-Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Appoġġja lill-proġett</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Drittijiet tal-awtur</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -470,7 +451,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operatur: %s</string>
     <string name="editor_category_unsuitable_title">Ma tistax isib kategorija adattata?</string>
-    <string name="editor_category_unsuitable_text">Sampai jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://organicmaps.app/faq/editing/advanced-map-editing">gwida</a> tagħna għal struzzjonijiet dettaljati.</string>
     <string name="downloader_no_downloaded_maps_title">Ma niżżilt l-ebda mapep</string>
     <string name="downloader_no_downloaded_maps_message">Niżżel mapep biex tfittex u tinnaviga mingħajr l-użu tal-Internet.</string>
     <string name="current_location_unknown_error_title">Il-post attwali mhux magħruf.</string>
@@ -541,10 +521,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Żid waqfa</string>
     <string name="drag_to_reorder">Irranġa mill-ġdid</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Illoggja f’ OpenStreetMap biex awtomatikament ittella’ l-editjar kollu tal-mappa tiegħek. Tgħallem aktar <a href="https://github.com/organicmaps/organicmaps/issues/6144">hawn</a>.</string>
     <string name="dialog_error_storage_title">Problema tal-aċċess għall-ħażna</string>
-    <string name="dialog_error_storage_message">Il-ħżin estern mhuwiex aċċessibbli. Il-kard tal-SD setgħet tneħħiet, saritilha l-ħsara, jew is-sistema tal-fajl tinqara biss. Jekk jogħġbok, iċċekkja l-karta tal-SD tiegħek jew ikkuntattjana fuq support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Imita ħażna ħażina</string>
     <string name="error_enter_correct_name">Daħħal isem korrett</string>
     <string name="bookmark_lists">Listi</string>
@@ -589,8 +566,6 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privatezza</string>
-    <string name="privacy_policy">Politika dwar il-privatezza</string>
-    <string name="terms_of_use">Termini tal-użu</string>
     <string name="button_layer_traffic">Traffiku</string>
     <!-- Hiking routes layer name in the Styles and Layers dialog -->
     <string name="button_layer_hiking">Mixi</string>
