@@ -3,13 +3,13 @@
 </div>
 <h1 align="center">Sampai</h1>
 
-**Sampai** is an offline navigation app made for Malaysia. Bahasa Melayu first, with toll prices in RM.
+**Sampai** is an offline navigation app made for Malaysia, with Bahasa Melayu first.
 
 ## Features
 
 - Offline maps and turn-by-turn navigation, built on [OpenStreetMap](https://openstreetmap.org) data
-- Bahasa Melayu interface and voice guidance, plus English, Chinese and Tamil
-- Toll total in RM in the route preview and during navigation, for plazas with a fixed price (see `data/my_tolls.csv`)
+- Bahasa Melayu interface by default on Malaysian phones, plus English and Chinese
+- Malaysian toll plaza price table with cited sources (see `data/my/tolls.csv`); the in-app toll total is still to come
 - Quick search for Malaysian places: fuel, surau, mamak, parking, EV chargers, clinics, rest areas
 - No account needed
 
