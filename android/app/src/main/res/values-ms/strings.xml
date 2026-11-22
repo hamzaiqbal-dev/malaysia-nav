@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SECTION: Strings -->
+    <!-- Button text (should be short) -->
+    <string name="back">Kembali</string>
+    <!-- Button text (should be short) -->
+    <string name="cancel">Batal</string>
+    <string name="download_maps">Muat turun peta</string>
+    <!-- Settings/Downloader - info for country when download fails -->
+    <string name="download_has_failed">Muat turun gagal. Ketik untuk cuba lagi.</string>
+    <!-- Settings/Downloader - info for country which started downloading -->
+    <string name="downloading">Memuat turun…</string>
+    <!-- Choose measurement on first launch alert - choose imperial system button -->
+    <string name="miles">Batu</string>
+    <!-- View and button titles for accessibility. Also used in iPhone home screen quick actions. -->
+    <string name="search">Cari</string>
+    <!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
+    <string name="search_map">Cari di peta</string>
+    <!-- Location services are disabled by user alert - message -->
+    <string name="location_is_disabled_long_text">Semua Perkhidmatan Lokasi untuk peranti atau aplikasi ini sedang dimatikan. Sila hidupkannya dalam Tetapan.</string>
+    <string name="about_menu_title">Tentang Sampai</string>
+    <!-- The button that opens system location settings -->
+    <string name="location_settings">Tetapan lokasi</string>
+    <string name="close">Tutup</string>
+    <string name="download">Muat turun</string>
+    <!-- Used in DownloadResources startup screen -->
+    <string name="not_enough_free_space_on_sdcard">Sila kosongkan ruang pada kad SD/storan USB dahulu untuk menggunakan aplikasi ini</string>
+    <string name="download_resources">Sebelum mula menggunakan aplikasi, sila muat turun peta ikhtisar dunia ke peranti anda.\nIa akan menggunakan %s storan.</string>
+    <string name="download_resources_continue">Ke peta</string>
+    <string name="downloading_country_can_proceed">Memuat turun %s. Anda boleh\nteruskan ke peta sekarang.</string>
+    <string name="download_country_ask">Muat turun %s?</string>
+    <!-- REMOVE THIS STRING AFTER REFACTORING -->
+    <string name="continue_button">Teruskan</string>
+    <!-- Show popup notification on top of the map when country download has failed. -->
+    <string name="download_country_failed">Muat turun %s gagal</string>
+    <!-- Settings button in system menu -->
+    <string name="settings">Tetapan</string>
+    <!-- Header of settings activity where user defines storage path -->
+    <string name="maps_storage">Simpan peta ke</string>
+    <!-- Detailed description of Maps Storage settings button -->
+    <string name="maps_storage_summary">Pilih folder untuk memuat turun peta.</string>
+    <!-- E.g. "Downloaded maps: 500Mb" in Maps Storage settings -->
+    <string name="maps_storage_downloaded">Peta yang dimuat turun</string>
+    <!-- Free space out of total storage size in Maps Storage settings, e.g. "300 MB free of 2 GB" -->
+    <string name="maps_storage_free_size">%1$s kosong daripada %2$s</string>
+    <!-- Measurement units title in settings activity -->
+    <string name="measurement_units">Unit ukuran</string>
+    <!-- Detailed description of Measurement Units settings button -->
+    <string name="measurement_units_summary">Pilih antara batu dan kilometer</string>
+
+    <!-- SECTION: Other translations -->
+    <!-- Alert message that downloading is in progress. -->
+    <string name="downloading_is_active">Muat turun peta sedang berjalan.</string>
+    <!-- Used for bookmark editing -->
+    <string name="done">Selesai</string>
+    <string name="share_my_location">Kongsi lokasi saya</string>
+    <!-- Settings general group in settings screen -->
+    <string name="prefs_group_general">Tetapan umum</string>
+    <!-- Settings information group in settings screen -->
+    <string name="prefs_group_information">Maklumat</string>
+    <string name="prefs_group_route">Navigasi</string>
+    <!-- Setting name which enables or disables zoom buttons on the map screen. -->
+    <string name="pref_zoom_title">Butang “+” dan “-” pada peta</string>
+    <string name="pref_zoom_summary">Papar pada peta</string>
+    <string name="pref_auto_night_in_navigation_title">Gaya malam ketika menavigasi dalam gelap</string>
+    <!-- Settings «Map» category: «Night style» title -->
+    <string name="pref_map_style_title">Mod malam</string>
+    <!-- Generic «Auto» string -->
+    <string name="auto">Auto</string>
+    <!-- Settings «Map» category: «Perspective view» title -->
+    <string name="pref_map_3d_title">Pandangan perspektif</string>
+    <!-- Settings «Map» category: «3D buildings» title -->
+    <string name="pref_map_3d_buildings_title">Bangunan 3D</string>
+    <!-- A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled -->
+    <string name="pref_map_3d_buildings_disabled_summary">Bangunan 3D dimatikan dalam mod jimat kuasa</string>
+    <!-- Settings: title of the satellite imagery (custom raster tiles) screen -->
+    <string name="pref_bg_tiles_title">Imej satelit</string>
+    <!-- Settings «Satellite Imagery»: title of the tile server URL input field -->
+    <string name="pref_bg_tiles_url_title">URL pelayan</string>
+    <!-- Settings «Satellite Imagery»: shown under the Server URL field when its value is malformed (must start with http(s):// and contain the {z}/{x}/{y} placeholders) -->
+    <string name="pref_bg_tiles_url_error">Masukkan URL yang sah dengan {z}/{x}/{y}</string>
+    <!-- Settings «Satellite Imagery»: title of the on-disk tile cache size limit (in megabytes) -->
+    <string name="pref_bg_tiles_size_title">Saiz cache (MB)</string>
+    <!-- Settings «Satellite Imagery»: opacity of vector area objects drawn over the imagery (0% hides them) -->
+    <string name="pref_bg_tiles_opacity_title">Kelegapan objek kawasan</string>
+    <!-- Settings «Satellite Imagery»: legal note that the user is responsible for the custom tile source they configure -->
+    <string name="pref_bg_tiles_disclaimer">Sumber jubin tersuai disediakan oleh anda. Gunakan hanya perkhidmatan yang anda dibenarkan akses. Anda bertanggungjawab terhadap atribusi, terma lesen, kunci API, kuota dan had penggunaan.</string>
+    <!-- Settings «Route» category: «Tts enabled» title -->
+    <string name="pref_tts_enable_title">Arahan suara</string>
+    <!-- Settings «Route» category: «Tts announce street names» title -->
+    <string name="pref_tts_street_names_title">Umumkan nama jalan</string>
+    <!-- Settings «Route» category: «Tts announce street names» description -->
+    <string name="pref_tts_street_names_description">Apabila diaktifkan, nama jalan atau susur keluar yang perlu dimasuki akan disebut dengan lantang.</string>
+    <!-- Settings «Route» category: «Tts language» title -->
+    <string name="pref_tts_language_title">Bahasa suara</string>
+    <!-- Settings «Route» category: «Test Voice Directions» title -->
+    <string name="pref_tts_test_voice_title">Uji arahan suara (TTS, teks-ke-pertuturan)</string>
+    <!-- Settings «Route» category: Pop-up message when clicking «Test Voice Directions» -->
+    <string name="pref_tts_playing_test_voice">Semak kelantangan atau tetapan teks-ke-pertuturan sistem jika anda tidak mendengar suara sekarang.</string>
+    <!-- Settings «Route» category: «Tts unavailable» subtitle. Also used as a CarToast in Android Auto when the user taps the muted voice icon. -->
+    <string name="pref_tts_unavailable">Tidak tersedia</string>
+    <string name="pref_map_auto_zoom">Zum automatik</string>
+    <string name="placepage_distance">Jarak</string>
+    <string name="search_show_on_map">Lihat di peta</string>
+    <!-- Menu button -->
+    <string name="menu">Menu</string>
+    <!-- Text in menu -->
+    <string name="website">Laman web</string>
+    <!-- Settings: Send feedback button and dialog title -->
+    <string name="feedback">Maklum balas</string>
+    <!-- Text in menu -->
+    <string name="help">Bantuan</string>
+    <string name="support_organic_maps">Sokong Sampai</string>
+    <!-- Update all button text -->
+    <string name="downloader_update_all_button">Kemas kini semua</string>
+    <!-- Cancel all button text -->
+    <string name="downloader_cancel_all">Batalkan semua</string>
+    <!-- Downloaded maps list header -->
+    <string name="downloader_downloaded_subtitle">Dimuat turun</string>
+    <!-- Country queued for download -->
+    <string name="downloader_queued">Dalam barisan</string>
+    <string name="downloader_near_me_subtitle">Berhampiran saya</string>
+    <!-- In maps downloader and country place page shows how many maps are downloaded / to download, e.g. "Maps: 3 of 10" -->
+    <string name="downloader_status_maps">Peta</string>
+    <string name="downloader_download_all_button">Muat turun semua</string>
+    <string name="downloader_downloading">Memuat turun:</string>
+    <!-- Displayed in a dialog that appears when a user tries to delete a map while the app is in the follow route mode -->
+    <string name="downloader_delete_map_while_routing_dialog">Untuk memadam peta, sila hentikan navigasi.</string>
+    <!-- Context menu item for downloader. -->
+    <string name="downloader_download_map">Muat turun peta</string>
+    <!-- Item status in downloader. -->
+    <string name="downloader_retry">Cuba lagi</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_delete_map">Padam peta</string>
+    <!-- Item in context menu. -->
+    <string name="downloader_update_map">Kemas kini peta</string>
+    <!-- Preference text -->
+    <string name="pref_use_google_play">Tentukan lokasi anggaran anda dengan pantas menggunakan Bluetooth, Wi-Fi atau rangkaian mudah alih</string>
+    <!-- Text for routing error dialog -->
+    <string name="routing_not_enough_space">Ruang tidak mencukupi</string>
+    <!-- location service disabled -->
+    <string name="enable_location_services">Sila hidupkan Perkhidmatan Lokasi</string>
+    <!-- Settings «Map» category: «Appearance» title -->
+    <string name="pref_appearance_title">Rupa</string>
+    <!-- Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_light">Cerah</string>
+    <!-- Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_dark">Gelap</string>
+    <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
+    <string name="pref_appearance_scheduled">Cerah dari subuh hingga senja</string>
+
+    <!-- SECTION: Routing dialogs strings -->
+    <string name="dialog_routing_disclaimer_title">Semasa mengikuti laluan, sila ingat:</string>
+    <string name="dialog_routing_disclaimer_priority">— Keadaan jalan, undang-undang lalu lintas dan papan tanda jalan sentiasa lebih utama daripada petunjuk navigasi;</string>
+    <string name="dialog_routing_disclaimer_precision">— Peta mungkin tidak tepat, dan laluan yang dicadangkan mungkin bukan sentiasa cara terbaik untuk sampai ke destinasi;</string>
+    <string name="dialog_routing_disclaimer_recommendations">— Laluan yang dicadangkan hanyalah cadangan;</string>
+    <string name="dialog_routing_disclaimer_borders">— Berhati-hati dengan laluan di kawasan sempadan: laluan yang dibuat oleh aplikasi kami kadangkala melintasi sempadan negara di tempat yang tidak dibenarkan.</string>
+    <string name="dialog_routing_disclaimer_beware">Sentiasa berwaspada dan selamat di jalan raya!</string>
+    <string name="dialog_routing_location_turn_wifi">Sila semak isyarat GPS anda. Menghidupkan Wi-Fi akan meningkatkan ketepatan lokasi anda.</string>
+    <string name="dialog_routing_system_error">Ralat sistem</string>
+    <string name="not_now">Bukan sekarang</string>
+
+    <!-- SECTION: Strings for downloading map from search -->
+    <string name="search_without_internet_advertisement">Untuk mula mencari dan membuat laluan, sila muat turun peta. Selepas itu anda tidak lagi memerlukan sambungan internet.</string>
+    <string name="search_select_map">Pilih peta</string>
+    <string name="search_not_found">Maaf, tiada hasil ditemui.</string>
+    <!-- The message when user did not find anything in the search. -->
+    <string name="search_not_found_query">Muat turun wilayah tempat anda mencari atau cuba tambah nama bandar/kampung berhampiran.</string>
+    <string name="search_history_title">Sejarah carian</string>
+    <string name="search_history_text">Lihat carian terbaru anda.</string>
+    <string name="clear_search">Kosongkan sejarah carian</string>
+    <string name="p2p_your_location">Lokasi anda</string>
+    <string name="p2p_start">Mula</string>
+    <string name="p2p_from_here">Laluan dari sini</string>
+    <string name="p2p_to_here">Laluan ke sini</string>
+    <string name="p2p_only_from_current">Navigasi hanya tersedia dari lokasi semasa anda.</string>
+    <string name="p2p_reroute_from_current">Adakah anda mahu merancang laluan dari lokasi semasa anda?</string>
+    <!-- Edit open hours/set time and minutes dialog -->
+    <string name="next_button">Seterusnya</string>
+    <string name="autodownload">Muat turun peta secara automatik</string>
+    <string name="day_off_today">Tutup hari ini</string>
+    <string name="day_off">Tutup</string>
+    <string name="midnight">Tengah malam</string>
+    <string name="noon">Tengah hari</string>
+    <string name="closes_in">Tutup dalam %s</string>
+    <string name="closed">Tutup</string>
+    <string name="downloader_delete_map_dialog">Semua suntingan peta anda akan dipadam bersama peta.</string>
+    <string name="downloader_update_maps">Kemas kini peta</string>
+    <string name="downloader_search_field_hint">Cari peta</string>
+    <string name="downloader_no_space_title">Ruang tidak mencukupi</string>
+    <!-- Message shown when there is not enough space to download maps -->
+    <string name="downloader_no_space_message">Sila padam data yang tidak diperlukan</string>
+    <!-- Downloaded 10 **of** 20 <- it is that "of" -->
+    <string name="downloader_of">%1$d daripada %2$d</string>
+    <string name="download_over_mobile_header">Muat turun melalui sambungan rangkaian mudah alih?</string>
+    <string name="download_over_mobile_message">Ini mungkin agak mahal bergantung pada pelan anda atau ketika perayauan.</string>
+    <string name="downloader_no_downloaded_maps_title">Anda belum memuat turun sebarang peta</string>
+    <string name="downloader_no_downloaded_maps_message">Muat turun peta untuk mencari dan menavigasi tanpa internet.</string>
+    <string name="current_location_unknown_error_title">Lokasi semasa tidak diketahui.</string>
+    <!-- abbreviation for kilometers per hour -->
+    <string name="kilometers_per_hour">km/j</string>
+    <string name="miles_per_hour">bsj</string>
+    <string name="hour">j</string>
+    <string name="minute">min</string>
+    <string name="day">h</string>
+    <string name="placepage_more_button">Lagi</string>
+    <string name="navigation_stop_button">Henti</string>
+    <!-- Keep it short: route planner button below the destination, PlacePage button, search field hint and full-screen map point picker title shown while choosing another destination. The picked place becomes the new destination, the previous one becomes a stop. -->
+    <string name="route_add_destination">Tambah destinasi</string>
+    <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
+    <string name="placepage_add_stop">Tambah perhentian</string>
+    <!-- Settings privacy group in settings screen -->
+    <string name="privacy">Privasi</string>
+    <string name="privacy_policy">Dasar privasi</string>
+    <string name="button_layer_traffic">Trafik</string>
+    <!-- Hiking routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_hiking">Mendaki</string>
+    <!-- Cycling routes layer name in the Styles and Layers dialog -->
+    <string name="button_layer_cycling">Berbasikal</string>
+    <!-- Map layers menu: toggle button for the satellite imagery layer -->
+    <string name="button_layer_satellite">Satelit</string>
+    <string name="button_layer_subway">Kereta api bawah tanah</string>
+    <string name="speedcams_alert_title">Kamera kelajuan</string>
+    <!-- "Speed cameras" settings menu option (should be short! no more than 47-50 chars) to warn a driver if there is a risk of exceeding the speed limit -->
+    <string name="pref_tts_speedcams_auto">Beri amaran jika melebihi had laju</string>
+    <!-- Speed camera settings menu option - Always warn (about speedcams) -->
+    <string name="pref_tts_speedcams_always">Sentiasa beri amaran</string>
+    <!-- Speed camera settings menu option - Never warn (about speedcams) -->
+    <string name="pref_tts_speedcams_never">Jangan beri amaran</string>
+    <string name="power_managment_title">Mod jimat kuasa</string>
+    <string name="power_managment_description">Cuba kurangkan penggunaan kuasa dengan mengorbankan beberapa fungsi.</string>
+    <string name="power_managment_setting_never">Tidak sekali</string>
+    <string name="power_managment_setting_auto">Apabila bateri rendah</string>
+    <string name="power_managment_setting_manual_max">Sentiasa</string>
+    <!-- Driving profile in routing options settings. -->
+    <string name="routing_options_driving">Memandu</string>
+    <!-- Cycling profile in routing options settings. -->
+    <string name="routing_options_cycling">Berbasikal</string>
+    <!-- Walking profile in routing options settings. -->
+    <string name="routing_options_walking">Berjalan kaki</string>
+    <!-- Section heading for routing settings shared by every routing mode. -->
+    <string name="routing_options_all_modes">Semua mod laluan</string>
+    <!-- Routing setting that automatically reorders intermediate stops -->
+    <string name="route_optimization">Pengoptimuman laluan</string>
+    <!-- Explains that route optimization automatically reorders intermediate stops -->
+    <string name="route_optimization_description">Menyusun semula perhentian perantaraan secara automatik untuk laluan yang lebih cekap.</string>
+    <!-- A generic "Yes" button in dialogs -->
+    <string name="yes">Ya</string>
+    <!-- A generic "No" button in dialogs -->
+    <string name="no">Tidak</string>
+    <!-- E.g. "WiFi:Yes" -->
+    <string name="yes_available">Ya</string>
+    <!-- E.g. "WiFi:No" -->
+    <string name="no_available">Tidak</string>
+    <string name="trip_finished">Anda telah sampai!</string>
+    <string name="ok">OK</string>
+    <!-- Android -->
+    <string name="by_distance">Mengikut jarak</string>
+    <!-- Place Page opening hours text -->
+    <string name="closed_now">Tutup sekarang</string>
+    <string name="closes_at">Tutup pada %s</string>
+
+    <!-- SECTION: Bookmark types used for sorting -->
+    <string name="search_in_the_list">Cari dalam senarai</string>
+    <string name="button_layer_isolines">Garis kontur</string>
+    <string name="download_map_title">Muat turun peta ikhtisar dunia</string>
+    <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
+    <string name="button_layer_outdoor">Luar bandar</string>
+    <!-- button in (app) TTS settings, to open the system TTS settings. -->
+    <string name="pref_tts_open_system_settings">Tetapan sintesis pertuturan sistem</string>
+    <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
+    <string name="pref_tts_no_system_tts">Tetapan sintesis pertuturan tidak ditemui, adakah anda pasti peranti anda menyokongnya?</string>
+    <string name="clear_the_search">Kosongkan carian</string>
+    <!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+    <string name="power_save_dialog_summary">Untuk navigasi paling tepat, kami mengesyorkan mematikan mod jimat kuasa dalam tetapan bateri telefon.</string>
+    <!-- Prompt to start recording a track. -->
+    <string name="start_track_recording">Rakam trek</string>
+    <!-- Prompt for stopping a track recording. -->
+    <string name="stop_track_recording">Henti rakaman trek</string>
+
+    <!-- SECTION: gps strings -->
+    <!-- Toast shown when the user tries to add one more intermediate stop to a route that already holds the maximum allowed number -->
+    <string name="routing_max_stops_reached">Bilangan maksimum perhentian dicapai</string>
+</resources>
