@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">נסה שוב</string>
     <string name="about_menu_title">אודות Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">חינם לכולם, מיוצרים באהבה</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• ללא מודעות, ללא מעקב, ללא איסוף נתונים</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• אין ריקון סוללה, עובד במצב לא מקוון</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• מהיר, מינימליסטי, שפותח על ידי הקהילה</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">אפליקציית קוד פתוח שנוצרה על ידי חובבים ומתנדבים.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">הגדרות מיקום</string>
     <string name="close">סגור</string>
@@ -152,7 +142,6 @@
     <string name="description">הערות</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">סימניות של Sampai שותפו איתך</string>
-    <string name="share_bookmarks_email_body">שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Sampai. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://omaps.app/get?kmz\n\nתהנו לנווט עם Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">טוען סימניות</string>
     <!-- Kmz file successful loading -->
@@ -248,25 +237,15 @@
     <string name="menu">תפריט</string>
     <!-- Text in menu -->
     <string name="website">אתר</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">חדשות</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">משוב</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">דרגו את האפליקציה</string>
-    <!-- Text in menu -->
     <string name="help">עזרה</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">שאלות ותשובות</string>
     <!-- Button in the main menu -->
     <string name="donate">לתרום</string>
     <string name="already_donated">כבר נתרם</string>
     <string name="remind_me_later">הזכר מאוחר יותר</string>
     <string name="support_organic_maps">לתמוך ב-Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">תמכו בפרויקט</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">זכויות יוצרים</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">דווח על באג</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -470,7 +449,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">מַפעִיל: %s</string>
     <string name="editor_category_unsuitable_title">לא מוצאים קטגוריה מתאימה?</string>
-    <string name="editor_category_unsuitable_text">באמצעות Sampai ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו\'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. עיינו <a href="https://organicmaps.app/faq/editing/advanced-map-editing">במדריך</a> שלנו לקבלת הוראות מפורטות.</string>
     <string name="downloader_no_downloaded_maps_title">לא הורדת אף מפה</string>
     <string name="downloader_no_downloaded_maps_message">הורד מפה כדי לחפש ולנווט ללא חיבור לאינטרנט.</string>
     <string name="current_location_unknown_error_title">המיקום הנוכחי לא ידוע.</string>
@@ -541,10 +519,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">הוספת עצירה</string>
     <string name="drag_to_reorder">סידור מחדש</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">התחבר ל-OpenStreetMap כדי להעלות אוטומטית את כל עריכות המפה שלך. למידע נוסף <a href="https://github.com/organicmaps/organicmaps/issues/6144">כאן</a>.</string>
     <string name="dialog_error_storage_title">בעיית גישה לאחסון</string>
-    <string name="dialog_error_storage_message">לא ניתן לגשת לאחסון החיצוני. ייתכן כי כרטיס הזיכרון הוסר, נפגם, או שמערכת הקבצים היא לקריאה בלבד. נא לבדוק את כרטיס הזיכרון או ליצור איתנו קשר בכתובת support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">בצע אמולציה לאחסון רע</string>
     <string name="error_enter_correct_name">נא להזין שם תקין</string>
     <string name="bookmark_lists">רשימות</string>

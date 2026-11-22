@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Some tokens are only used by later screens (navigation HUD); keep the full set. -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="UnusedResources">
   <!-- Typography tokens: Plus Jakarta Sans (SIL OFL, see docs/licenses). -->
   <style name="TextAppearance.Sampai.Body" parent="">
     <item name="android:fontFamily">@font/plus_jakarta_sans</item>
