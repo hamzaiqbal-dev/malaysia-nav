@@ -31,9 +31,13 @@ One place: `private.h`.
 - `METASERVER_URL` is empty, so the app uses `DEFAULT_URLS_JSON` directly.
 - `DEFAULT_URLS_JSON` is `https://github.com/hamzaiqbal-dev/malaysia-nav/releases/download/`. The app asks
   for `<server>maps/<version>/<file>.mwm`, which is the release tag `maps/<version>`.
-- `<version>` comes from `data/countries.json` inside the app, so a new map release reaches users only
-  when the app ships that release's `countries.json`, `World.mwm`, `WorldCoasts.mwm` and
-  `packed_polygons.bin` in `data/`.
+- `<version>` comes from the `countries.json` bundled in the app. The Android app bundles
+  `data/my/maps/` (`countries.json`, `World.mwm`, `WorldCoasts.mwm`, `packed_polygons.bin`; the asset
+  symlinks in `android/sdk/` point there), so a new map release reaches users only when those four files
+  are replaced with the release's copies and a new app is shipped. `data/` keeps the upstream world files
+  for the engine tests and the desktop app.
+- `packed_polygons.bin` must list exactly the countries in `countries.json` (otherwise the app hits a
+  `CHECK`); `CountryInfoGetter_Sampai_Countries_And_Polygons` in `storage_tests` checks this.
 
 To move to another host later: upload the same files under `<host>/maps/<version>/` and change
 `DEFAULT_URLS_JSON`.
