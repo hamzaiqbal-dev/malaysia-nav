@@ -309,7 +309,7 @@ JNIEXPORT void Java_app_organicmaps_sdk_editor_Editor_nativeUploadChanges(JNIEnv
 
   switch (Editor::Instance().UploadChanges(
       jni::ToNativeString(env, token),
-      {{"created_by", "Organic Maps " OMIM_OS_NAME " " + jni::ToNativeString(env, appVersion)},
+      {{"created_by", "Sampai " OMIM_OS_NAME " " + jni::ToNativeString(env, appVersion)},
        {"bundle_id", jni::ToNativeString(env, appId)}},
       notify))
   {

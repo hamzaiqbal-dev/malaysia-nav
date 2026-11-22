@@ -3,7 +3,7 @@ package app.organicmaps.my;
 import android.content.Context;
 import android.content.SharedPreferences;
 import androidx.annotation.NonNull;
-import app.organicmaps.MwmApplication;
+import androidx.preference.PreferenceManager;
 import app.organicmaps.R;
 
 /**
@@ -17,7 +17,8 @@ public final class NavHudSettings
 
   public static boolean isEnabled(@NonNull Context context)
   {
-    final SharedPreferences prefs = MwmApplication.prefs(context);
+    // The Settings screen saves its switches in the default preferences file, not in MwmApplication.prefs().
+    final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
     return prefs.getBoolean(context.getString(R.string.pref_nav_hud), DEFAULT);
   }
 }

@@ -2,6 +2,7 @@ package app.organicmaps.my.report;
 
 import android.content.Context;
 import android.location.Location;
+import android.os.SystemClock;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
+import androidx.core.widget.TextViewCompat;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
 import app.organicmaps.sdk.util.log.Logger;
@@ -60,7 +62,7 @@ public final class ReportSheet
 
     final TextView title = new TextView(context);
     title.setText(R.string.report_sheet_title);
-    title.setTextAppearance(R.style.TextAppearance_Sampai_Label);
+    TextViewCompat.setTextAppearance(title, R.style.TextAppearance_Sampai_Label);
     title.setTextSize(18);
     title.setGravity(Gravity.CENTER_HORIZONTAL);
     title.setPadding(0, 0, 0, pad);
@@ -92,7 +94,7 @@ public final class ReportSheet
   private static void save(@NonNull Context context, @NonNull ReportType type)
   {
     final Location loc = MwmApplication.from(context).getLocationHelper().getSavedLocation();
-    if (loc == null)
+    if (loc == null || !Report.isFixFresh(SystemClock.elapsedRealtime() - loc.getElapsedRealtimeNanos() / 1_000_000))
     {
       Toast.makeText(context, R.string.current_location_unknown_error_title, Toast.LENGTH_SHORT).show();
       return;

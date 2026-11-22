@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Probeer weer</string>
     <string name="about_menu_title">Oor Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratis vir almal, gemaak met liefde</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Geen advertensies, geen nasporing, geen dataversameling</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Geen battery dreineer, werk vanlyn</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Vinnig, minimalisties, ontwikkel deur die gemeenskap</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Oopbrontoepassing geskep deur entoesiaste en vrywilligers.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Liggingsinstellings</string>
     <string name="close">Sluit</string>
@@ -152,7 +142,6 @@
     <string name="description">Notas</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Sampai-boekmerke is met u gedeel</string>
-    <string name="share_bookmarks_email_body">Hallo!\n\nMy boekmerke is aangeheg; open dit asb. in Sampai. Indien dit nie geïnstalleer is nie, kan u dit hier aflaai: https://omaps.app/get?kmz\n\nGeniet dit om met Sampai te reis!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Laai tans boekmerke</string>
     <!-- Kmz file successful loading -->
@@ -248,25 +237,15 @@
     <string name="menu">Kieslys</string>
     <!-- Text in menu -->
     <string name="website">Webwerf</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Nuus</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Terugvoer</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Gradeer die toep</string>
-    <!-- Text in menu -->
     <string name="help">Help</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Gereelde vrae</string>
     <!-- Button in the main menu -->
     <string name="donate">Skenk</string>
     <string name="already_donated">Reeds geskenk</string>
     <string name="remind_me_later">Herinner later</string>
     <string name="support_organic_maps">Ondersteun Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Ondersteun die projek</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Kopiereg</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Rapporteer ’n fout</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -470,7 +449,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operateur: %s</string>
     <string name="editor_category_unsuitable_title">Kan u nie \'n geskikte kategorie vind nie?</string>
-    <string name="editor_category_unsuitable_text">Sampai laat slegs toe om eenvoudige puntkategorieë by te voeg, dit beteken geen dorpe, paaie, mere, gebouomtrekke, ens. nie. Voeg asseblief sulke kategorieë direk by <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kyk na ons <a href="https://organicmaps.app/faq/editing/advanced-map-editing">gids</a> vir gedetailleerde stap-vir-stap instruksies.</string>
     <string name="downloader_no_downloaded_maps_title">U het geen kaarte afgelaai nie</string>
     <string name="downloader_no_downloaded_maps_message">Laai kaarte af om die ligging te soek en vanlyn te navigeer.</string>
     <string name="current_location_unknown_error_title">Huidige ligging is onbekend.</string>
@@ -541,10 +519,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Voeg stop by</string>
     <string name="drag_to_reorder">Herordening</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Meld asseblief aan by OpenStreetMap om al jou kaartwysigings outomaties op te laai. Kom meer te wete <a href="https://github.com/organicmaps/organicmaps/issues/6144">hier</a>.</string>
     <string name="dialog_error_storage_title">Bergtoegangprobleem</string>
-    <string name="dialog_error_storage_message">Eksterne bergspasie is nie toeganklik nie. Die SD-kaart is dalk verwyder, beskadig, of die lêerstelsel is leesalleen. Gaan u SD-kaart na of kontak ons by support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Emuleer slegte bergspasie</string>
     <string name="error_enter_correct_name">Voer asb. ’n korrekte naam in</string>
     <string name="bookmark_lists">Lyste</string>

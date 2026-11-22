@@ -351,6 +351,35 @@ UNIT_TEST(CountryInfoGetter_Countries_And_Polygons)
   }
 }
 
+// The Sampai Android app ships data/my/maps instead of data/ (see docs/my/MAPS.md). A country in
+// packed_polygons.bin but not in countries.json makes Storage::GetNodeAttrs() fail a CHECK.
+UNIT_TEST(CountryInfoGetter_Sampai_Countries_And_Polygons)
+{
+  struct SampaiReader : CountryInfoReader
+  {
+    SampaiReader() : CountryInfoReader(GetPlatform().GetReader("my/maps/" PACKED_POLYGONS_FILE)) {}
+  };
+  SampaiReader const reader;
+  Storage const storage("my/maps/" COUNTRIES_FILE);
+
+  set<CountryId> storageLeaves;
+  storage.ForEachCountry([&](platform::CountryFile const & country) { storageLeaves.insert(country.GetName()); });
+
+  set<CountryId> polygons;
+  for (auto const & country : reader.GetCountries())
+    polygons.insert(country.m_countryId);
+
+  set<CountryId> const expected = {"Brunei", "Malaysia_East", "Malaysia_West", "Singapore"};
+  TEST_EQUAL(storageLeaves, expected, ());
+  TEST_EQUAL(polygons, expected, ());
+
+  // Kuala Lumpur, Kota Kinabalu, Singapore and a point in Thailand.
+  TEST_EQUAL(reader.GetRegionCountryId(mercator::FromLatLon(3.139, 101.687)), "Malaysia_West", ());
+  TEST_EQUAL(reader.GetRegionCountryId(mercator::FromLatLon(5.980, 116.073)), "Malaysia_East", ());
+  TEST_EQUAL(reader.GetRegionCountryId(mercator::FromLatLon(1.290, 103.852)), "Singapore", ());
+  TEST_EQUAL(reader.GetRegionCountryId(mercator::FromLatLon(13.756, 100.502)), "", ());
+}
+
 BENCHMARK_TEST(CountryInfoGetter_RegionsByRect)
 {
   auto reader = CountryInfoReader::CreateCountryInfoReader(GetPlatform());

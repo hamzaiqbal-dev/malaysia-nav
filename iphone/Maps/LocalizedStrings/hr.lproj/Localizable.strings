@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Zdravo! \n \nU privitku su moje zabilješke; otvori ih u aplikaciji Sampai. Ako nije instalirana, možeš je preuzeti na: https://omaps.app/get?kmz \n \nUživaj u putovanju s Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Učitavanje zabilješki";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operater: %@";
 "editor_category_unsuitable_title" = "Ne možete pronaći odgovarajuću kategoriju?";
-"editor_category_unsuitable_text" = "Sampai omogućuje dodavanje samo jednostavnih kategorija točaka, znači bez navođenja gradova, cesta, jezera, obrisa zgrada itd. Dodajte takve kategorije izravno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Pogledajte naš <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">vodič</a> za detaljne upute.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Niste preuzeli nijednu kartu";
 "downloader_no_downloaded_maps_message" = "Preuzmite karte za pretraživanje i navigaciju izvan mreže.";
 "current_location_unknown_error_title" = "Trenutna lokacija je nepoznata.";

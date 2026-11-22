@@ -38,7 +38,6 @@ import app.organicmaps.BuildConfig;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
-import app.organicmaps.sdk.util.Config;
 import app.organicmaps.sdk.util.Constants;
 import app.organicmaps.sdk.util.Distance;
 import app.organicmaps.sdk.util.StringUtils;
@@ -195,20 +194,6 @@ public class Utils
 
     // Check that an app exists to open URL
     return intent.resolveActivity(context.getPackageManager()) != null;
-  }
-
-  public static void showFacebookPage(Activity activity)
-  {
-    try
-    {
-      // Exception is thrown if we don't have installed Facebook application.
-      getPackageInfo(activity.getPackageManager(), Constants.Package.FB_PACKAGE, 0);
-      activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.Url.FB_OM_COMMUNITY_NATIVE)));
-    }
-    catch (final Exception e)
-    {
-      activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.Url.FB_OM_COMMUNITY_HTTP)));
-    }
   }
 
   public static void openUrl(@NonNull Context context, @Nullable String url)
@@ -467,16 +452,10 @@ public class Utils
     return StringUtils.formatUsingUsLocale("%d:%02d", time.getHour(), time.getMinute());
   }
 
+  // Sampai has no donation page; every donation entry point hides itself when this is empty.
   @NonNull
   public static String getDonateUrl(@NonNull Context context)
   {
-    // The same l11n logic as in Framework::GetDonateUrl()
-
-    final String url = Config.getDonateUrl();
-    // Enable donations by default if not Google or Huawei. Replace organicmaps.app/donate/ with localized page.
-    if ((url.isEmpty() && !BuildConfig.FLAVOR.equals("google") && !BuildConfig.FLAVOR.equals("huawei"))
-        || url.endsWith("organicmaps.app/donate/"))
-      return context.getString(R.string.translated_om_site_url) + "donate/";
-    return url;
+    return "";
   }
 }

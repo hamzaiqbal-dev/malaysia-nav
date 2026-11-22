@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "สวัสดีครับ\n\nแนบมาด้วยบุ๊กมาร์กของผม; กรุณาเปิดใน Sampai หากคุณยังไม่ได้ติดตั้ง คุณสามารถดาวน์โหลดได้ที่นี่: https://omaps.app/get?kmz\n\nขอให้สนุกกับการเดินทางด้วย Sampai!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "กำลังโหลดบุ๊กมาร์ก";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "ตัวดำเนินการ: %@";
 "editor_category_unsuitable_title" = "ไม่พบหมวดหมู่ที่เหมาะสมใช่ไหม?";
-"editor_category_unsuitable_text" = "Sampai อนุญาตให้เพิ่มหมวดหมู่จุดแบบง่ายเท่านั้น ซึ่งหมายถึงไม่สามารถเพิ่มเมือง ถนน ทะเลสาบ เส้นขอบอาคาร ฯลฯ ได้ กรุณาเพิ่มหมวดหมู่ดังกล่าวโดยตรงที่ <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> โปรดตรวจสอบ<a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">คู่มือ</a>ของเราสำหรับคำแนะนำแบบละเอียดทีละขั้นตอน";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "คุณยังไม่ได้ดาวน์โหลดแผนที่";
 "downloader_no_downloaded_maps_message" = "ดาวน์โหลดแผนที่เพื่อค้นหาสถานที่ และนำทางแบบออฟไลน์";
 "current_location_unknown_error_title" = "ไม่ทราบชื่อของที่ตั้งปัจจุบัน";
