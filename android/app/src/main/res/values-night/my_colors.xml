@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="sampai_bg">#FF0B1220</color>
+  <color name="sampai_panel">#FF121C2E</color>
+  <color name="sampai_panel_glass">#E6121C2E</color>
+  <color name="sampai_panel_alt">#FF1A2740</color>
+  <color name="sampai_ink">#FFF3F6FB</color>
+  <color name="sampai_muted">#FF9AA8C0</color>
+  <color name="sampai_line">#14FFFFFF</color>
+</resources>

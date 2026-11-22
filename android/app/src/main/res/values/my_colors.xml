@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sampai theme tokens, see design/README.md. Light values here, dark ones in values-night. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+  <color name="sampai_bg">#FFF4F6FA</color>
+  <color name="sampai_panel">#FFFFFFFF</color>
+  <color name="sampai_panel_glass">#E6FFFFFF</color>
+  <color name="sampai_panel_alt">#FFEAEFF7</color>
+  <color name="sampai_ink">#FF0B1220</color>
+  <color name="sampai_muted">#FF5A6A85</color>
+  <color name="sampai_line">#14000000</color>
+
+  <!-- Same in both themes. -->
+  <color name="sampai_route">#FF2E8BFF</color>
+  <color name="sampai_accent">#FFFFC43D</color>
+  <color name="sampai_ok">#FF2ECC71</color>
+  <color name="sampai_warn">#FFFF7A45</color>
+  <color name="sampai_danger">#FFFF4D5E</color>
+</resources>
