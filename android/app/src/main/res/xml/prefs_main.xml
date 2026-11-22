@@ -153,16 +153,22 @@
       android:title="@string/pref_map_auto_zoom"
       app:singleLineTitle="false"
       android:order="3" />
+    <SwitchPreferenceCompat
+      android:key="@string/pref_nav_hud"
+      android:title="@string/pref_nav_hud_title"
+      android:defaultValue="true"
+      app:singleLineTitle="false"
+      android:order="4" />
     <Preference
       android:key="@string/pref_tts_screen"
       android:title="@string/pref_tts_enable_title"
       app:singleLineTitle="false"
       android:persistent="false"
-      android:order="4">
+      android:order="5">
     </Preference>
     <PreferenceScreen
       android:key="@string/prefs_routing"
-      android:order="5"
+      android:order="6"
       android:title="@string/driving_options_title">
     </PreferenceScreen>
   </androidx.preference.PreferenceCategory>

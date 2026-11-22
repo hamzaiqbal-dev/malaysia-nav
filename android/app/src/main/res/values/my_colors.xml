@@ -10,6 +10,8 @@
   <color name="sampai_line">#14000000</color>
 
   <!-- Same in both themes. -->
+  <color name="sampai_nav_card_start">#FF1C8C4E</color>
+  <color name="sampai_nav_card_end">#FF13703C</color>
   <color name="sampai_route">#FF2E8BFF</color>
   <color name="sampai_accent">#FFFFC43D</color>
   <color name="sampai_ok">#FF2ECC71</color>
