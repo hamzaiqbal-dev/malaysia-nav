@@ -31,10 +31,15 @@ bool MatchLatLonZoom(std::string const & s, std::regex const & re, size_t lati, 
   if (!std::regex_search(s, m, re) || m.size() != 4)
     return false;
 
+  // The regex matches some strings strings::to_double rejects (e.g. a leading '+'), so a match does
+  // not guarantee a parse. On attacker-controlled URLs this must reject, not assert or read garbage.
   double lat, lon, zoom;
-  VERIFY(strings::to_double(ToView(m[lati]), lat), ());
-  VERIFY(strings::to_double(ToView(m[loni]), lon), ());
-  VERIFY(strings::to_double(ToView(m[zoomi]), zoom), ());
+  if (!strings::to_double(ToView(m[lati]), lat) || !strings::to_double(ToView(m[loni]), lon) ||
+      !strings::to_double(ToView(m[zoomi]), zoom))
+  {
+    LOG(LWARNING, ("Unparsable coordinates in url:", s));
+    return false;
+  }
   if (info.SetLat(lat) && info.SetLon(lon))
   {
     info.SetZoom(zoom);
@@ -94,9 +99,11 @@ void LatLonParser::operator()(std::string name, std::string const & value)
     std::smatch m;
     if (std::regex_search(value, m, m_regexp) && m.size() == 3)
     {
+      // A regex match does not guarantee strings::to_double accepts the text (e.g. a leading '+'),
+      // so give up on this parameter rather than assert or use an unparsed value.
       double lat, lon;
-      VERIFY(strings::to_double(ToView(m[1]), lat), ());
-      VERIFY(strings::to_double(ToView(m[2]), lon), ());
+      if (!strings::to_double(ToView(m[1]), lat) || !strings::to_double(ToView(m[2]), lon))
+        return;
 
       if (m_swapLatLon)
         std::swap(lat, lon);
@@ -218,10 +225,11 @@ bool GeoParser::Parse(std::string const & raw, GeoURLInfo & info) const
       }
     }
 
+    // A regex match does not guarantee strings::to_double accepts the text (e.g. a leading '+'), so
+    // reject rather than assert or use an unparsed value on attacker-controlled input.
     double lat, lon;
-    VERIFY(strings::to_double(ToView(m[1]), lat), ());
-    VERIFY(strings::to_double(ToView(m[2]), lon), ());
-    if (!mercator::ValidLat(lat) || !mercator::ValidLon(lon))
+    if (!strings::to_double(ToView(m[1]), lat) || !strings::to_double(ToView(m[2]), lon) || !mercator::ValidLat(lat) ||
+        !mercator::ValidLon(lon))
     {
       LOG(LWARNING, ("Invalid lat,lon in", raw));
       return false;
@@ -240,10 +248,11 @@ bool GeoParser::Parse(std::string const & raw, GeoURLInfo & info) const
     std::smatch m;
     if (std::regex_match(*q, m, m_latlonRe))
     {
+      // A regex match does not guarantee strings::to_double accepts the text (e.g. a leading '+'),
+      // so a parse failure falls back to treating q= as a free-text query.
       double lat, lon;
-      VERIFY(strings::to_double(ToView(m[1]), lat), ());
-      VERIFY(strings::to_double(ToView(m[2]), lon), ());
-      if (!mercator::ValidLat(lat) || !mercator::ValidLon(lon))
+      if (!strings::to_double(ToView(m[1]), lat) || !strings::to_double(ToView(m[2]), lon) ||
+          !mercator::ValidLat(lat) || !mercator::ValidLon(lon))
       {
         LOG(LWARNING, ("Invalid lat,lon after q=", raw));
         info.m_query = *q;
@@ -278,9 +287,12 @@ bool GeoParser::Parse(std::string const & raw, GeoURLInfo & info) const
     std::smatch m;
     if (std::regex_match(*z, m, m_zoomRe) && m.size() == 2)
     {
+      // m_zoomRe can match text strings::to_double rejects (e.g. a trailing '.'); ignore z= then.
       double zoom;
-      VERIFY(strings::to_double(ToView(m[0]), zoom), ());
-      info.SetZoom(zoom);
+      if (strings::to_double(ToView(m[0]), zoom))
+        info.SetZoom(zoom);
+      else
+        LOG(LWARNING, ("Invalid z=", *z));
     }
     else
     {

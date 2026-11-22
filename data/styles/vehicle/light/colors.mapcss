@@ -1,6 +1,6 @@
 /* BASE */
 
-@background: #E3E1D2;
+@background: #E2E5EA;
 
 /* BOUNDARIES */
 @border_country: #63635C;
@@ -16,10 +16,10 @@
 @primary1: #FFAD57;
 @primary2: #FFAD57;
 @secondary0: #FFBF52;
-@residential: #FCFCFC;
+@residential: #FFFFFF;
 @unclassified: #FCFCFC;
-@pedestrian: #FCFCFC;
-@footway: #FCFCFC;
+@pedestrian: #FBFBFC;
+@footway: #FBFBFC;
 @cycleway: #5654FF;
 @construction: #BBBBAA;
 @track: #635730;
@@ -28,9 +28,9 @@
 
 
 /* bridges */
-@bridge_background: #E5E4D5;
+@bridge_background: #E2E5EA;
 @bridge_casing: #808080;
-@casing_road:  #F5F3E4;
+@casing_road:  #F3F4F6;
 
 /* tunnels */
 
@@ -65,52 +65,52 @@
 
 /* NATURAL */
 @glacier: #FFFFFF;
-@water: #8BD3E0;
-@water_bad: #9dc7c1;
-@water_intermittent: #C4E9EF;
-@river: #36B0BF;
-@wetland: #c9ddd6;
-@forest:  #C8DBAD;
+@water: #A3CDF5;
+@water_bad: #B4CFE6;
+@water_intermittent: #CFE3F7;
+@river: #5BA3E6;
+@wetland: #7F9FB8;
+@forest:  #B8D9AB;
 /*
-@park: #C8DBAD;
-@natpark: #C8DBAD;
+@park: #C8E6C0;
+@natpark: #BDDBB0;
 */
-@beach: #FCEC7E;
-@barerock: #D9D2BF;
-@desert: #EEE5B2;
+@beach: #F6EBC2;
+@barerock: #DADCDF;
+@desert: #EFE8CD;
 
 /*forest-park*/
-@green0: #C6D9AB;
-@green1: #C6D9AB;
-@green2: #C6D9AB;
-@green3: #C6D9AB;
-@green4: #C6D9AB;
-@green5: #C6D9AB;
+@green0: #D9EBCF;
+@green1: #D2E7C7;
+@green2: #C8E1BC;
+@green3: #C2DEB6;
+@green4: #BDDBB0;
+@green5: #BFDCB3;
 @green6: #888C38;
 
-@leisure: #FAEFE1;
+@leisure: #E4EFDD;
 
 /* BUILDINGS */
 @housenumber: #65655E;
 @building_label: #61615A;
-@building0: #D4D3CA;
-@building1: #C7C6BF;
-@building_border0: #D4D3CA;
+@building0: #D5D8DE;
+@building1: #CDD1D8;
+@building_border0: #B6BBC4;
 
 /* LANDUSE */
 
 /*
 @unversity: #F8E4BA;
-@hospital: #F8D9D9;
+@hospital: #F7DEDE;
 */
-@industrial: #E1DCE3;
+@industrial: #DFE1E7;
 @sport: #C8DBAD;
-@parking: #F2F2CE;
-@parking_l: #FCFCC2;
+@parking: #DFE2E8;
+@parking_l: #DFE2E8;
 @military: #E53935;
 @prison: #727272;
-@farmland: #ededc3;
-@farmyard: #e8dabb;
+@farmland: #E6EAD3;
+@farmyard: #E6E6CF;
 
 /* BARRIERS */
 @fence: #888888;
@@ -123,7 +123,7 @@
 @label_medium: #333333;
 @label_light: #444444;
 
-@label_halo_medium: #EDEBDB;
+@label_halo_medium: #E2E5EA;
 @label_halo_light: #FFFFFF;
 
 
@@ -151,6 +151,6 @@
 @label_light: #444444;
 
 /* NATURAL LABELS */
-@water_label: #4499Bb;
+@water_label: #2B6CA8;
 @park_label: #3A7921;
 @halo_park_label: #FFFFFF;

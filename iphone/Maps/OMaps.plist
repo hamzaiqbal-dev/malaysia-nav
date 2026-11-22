@@ -333,7 +333,7 @@
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>ANY</string>
 			<key>NSUbiquitousContainerName</key>
-			<string>OrganicMaps</string>
+			<string>Sampai</string>
 		</dict>
 		<key>iCloud.app.organicmaps.debug</key>
 		<dict>
@@ -342,7 +342,7 @@
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>ANY</string>
 			<key>NSUbiquitousContainerName</key>
-			<string>OrganicMapsDEBUG</string>
+			<string>SampaiDEBUG</string>
 		</dict>
 	</dict>
 	<key>NSSupportsLiveActivities</key>

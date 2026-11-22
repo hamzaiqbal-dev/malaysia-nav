@@ -41,6 +41,10 @@ target_link_libraries(${PROJECT_NAME}
 
 omim_add_test_subdirectory(kml_tests)
 
+if (USE_LIBFUZZER)
+  add_subdirectory(kml_fuzz_tests)
+endif()
+
 if(PLATFORM_DESKTOP)
   omim_add_tool_subdirectory(kmb_to_kml)
   omim_add_tool_subdirectory(kml_to_kmb)

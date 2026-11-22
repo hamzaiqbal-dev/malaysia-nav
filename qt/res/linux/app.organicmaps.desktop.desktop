@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Organic Maps
+Name=Sampai
 Comment=Detailed Offline Maps of the World
 Comment[ast]=Mapes detallaos del mundu ensin conexón
 Comment[ca]=Mapes detallats del món sense connexió
@@ -13,5 +13,5 @@ Icon=organicmaps
 TryExec=OrganicMaps
 Exec=OrganicMaps
 Categories=Maps;Education;Geography;Geoscience;Qt;
-Keywords=Map;Maps;Offline Maps;OMaps;Organic Maps;OrganicMaps;OSM;OpenStreetMap;
+Keywords=Map;Maps;Offline Maps;Navigation;Malaysia;Sampai;OSM;OpenStreetMap;
 X-KDE-FormFactor=desktop;tablet;handset;

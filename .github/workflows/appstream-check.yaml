@@ -6,6 +6,9 @@ on:
       - packaging/app.organicmaps.desktop.metainfo.xml
       - .github/workflows/appstream-check.yaml  # Run check on self change
 
+permissions:
+  contents: read
+
 jobs:
   validate-appstream:
     name: Validate appstream metadata xml
