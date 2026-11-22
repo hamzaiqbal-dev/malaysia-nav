@@ -5,12 +5,12 @@
   {
    "id": "World",
    "s": 249433,
-   "h": "ALUz2MUcDbIW"
+   "h": "5MmeISVzKpSl"
   },
   {
    "id": "WorldCoasts",
-   "s": 71811,
-   "h": "YOvYF4H32px8"
+   "s": 71803,
+   "h": "k86pAB6goVKm"
   },
   {
    "id": "Brunei",
@@ -20,8 +20,8 @@
    "affiliations": [
     "Brunei Darussalam"
    ],
-   "s": 5351484,
-   "h": "vUN8M7lBaWEZ"
+   "s": 5351444,
+   "h": "V4M6rW4H6u/v"
   },
   {
    "id": "Malaysia",
@@ -39,8 +39,8 @@
       "Sabah",
       "Sarawak"
      ],
-     "s": 42992393,
-     "h": "+WwZ/2yUNN9k"
+     "s": 42992337,
+     "h": "kH6JacL+OwIx"
     },
     {
      "id": "Malaysia_West",
@@ -79,8 +79,8 @@
       "Selangor",
       "Singapura"
      ],
-     "s": 150136512,
-     "h": "Qbt0+IErGYDN"
+     "s": 150136368,
+     "h": "ggr7jEr+HPrT"
     }
    ]
   },
@@ -94,8 +94,8 @@
     "Malaysia",
     "Singapura"
    ],
-   "s": 27175739,
-   "h": "B0fpp4n4Cxal"
+   "s": 27175667,
+   "h": "2IjE4HecHSKx"
   }
  ]
 }
