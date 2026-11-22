@@ -20,7 +20,8 @@ permissions:
   contents: write # To publish the release
 
 env:
-  REGION_URL: https://download.geofabrik.de/asia/malaysia-singapore-brunei-latest.osm.pbf
+  REGION_DIR: https://download.geofabrik.de/asia/malaysia-singapore-brunei
+  REGION_NAME: malaysia-singapore-brunei
   LAND_URL: https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip
   REGIONS: Malaysia_West Malaysia_East Singapore Brunei
   SKIP_STAGES: MwmDiffs,Srtm,IsolinesInfo,RoutingTransit,Popularity,PopularityWorld,Statistics,MwmStatistics
@@ -79,9 +80,21 @@ jobs:
       - name: Download and verify the OpenStreetMap extract
         run: |
           mkdir -p "$RUNNER_TEMP/osm" && cd "$RUNNER_TEMP/osm"
-          curl -fsSL --retry 8 --retry-all-errors --retry-delay 60 -o region.osm.pbf "$REGION_URL"
-          curl -fsSL --retry 8 --retry-all-errors --retry-delay 60 -o region.osm.pbf.md5 "$REGION_URL.md5"
-          echo "$(cut -d ' ' -f 1 region.osm.pbf.md5)  region.osm.pbf" | md5sum -c -
+          # Geofabrik's "latest" link sometimes points at a file still being published,
+          # so take the newest dated extract that downloads and matches its .md5.
+          dated=$(curl -fsSL --retry 5 --retry-all-errors --retry-delay 30 "$REGION_DIR/" \
+            | grep -oE "$REGION_NAME-[0-9]{6}\.osm\.pbf\.md5" | sort -u -r | head -n 4 | sed 's/\.md5$//')
+          for f in $dated; do
+            echo "Trying $f"
+            if curl -fsSL --retry 3 --retry-all-errors --retry-delay 60 -o region.osm.pbf.md5 "$REGION_DIR/$f.md5" &&
+               curl -fsSL --retry 3 --retry-all-errors --retry-delay 60 -o region.osm.pbf "$REGION_DIR/$f" &&
+               echo "$(cut -d ' ' -f 1 region.osm.pbf.md5)  region.osm.pbf" | md5sum -c -; then
+              echo "$REGION_DIR/$f" > source.txt
+              break
+            fi
+            rm -f region.osm.pbf region.osm.pbf.md5
+          done
+          [ -f source.txt ] || { echo "No extract could be downloaded and verified"; exit 1; }
           osmium fileinfo -e -g header.option.osmosis_replication_timestamp region.osm.pbf | tee timestamp.txt
 
       # A regional extract has cut coastlines; replace them with closed rings from the land polygons.
@@ -140,6 +153,7 @@ jobs:
           mkdir -p "$out"
           cp "$build$version"/*.mwm "$build$version"/countries.json "$out/"
           [ -f "$build$version/packed_polygons.bin" ] && cp "$build$version/packed_polygons.bin" "$out/"
+          echo "$(cat "$RUNNER_TEMP/osm/source.txt") (OSM data as of $(cat "$RUNNER_TEMP/osm/timestamp.txt"))" > "$out/SOURCE.txt"
           cd "$out"
           sha256sum * > SHA256SUMS
           echo "version=$version" >> "$GITHUB_OUTPUT"
@@ -180,7 +194,7 @@ jobs:
         run: |
           cat > "$RUNNER_TEMP/notes.md" <<EOF
           Sampai offline maps, version $VERSION: Malaysia (West and East), Singapore, Brunei, World and WorldCoasts.
-          Built from the Geofabrik extract $REGION_URL ($(cat "$RUNNER_TEMP/osm/timestamp.txt")) by $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID.
+          Built from the Geofabrik extract $(cat "$DIR/SOURCE.txt") by $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID.
           Coastline from $LAND_URL. Checksums in SHA256SUMS.
 
           Map data © OpenStreetMap contributors, ODbL. https://www.openstreetmap.org/copyright

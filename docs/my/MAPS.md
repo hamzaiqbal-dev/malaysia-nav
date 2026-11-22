@@ -7,7 +7,7 @@ its own from OpenStreetMap (ODbL). Map data © OpenStreetMap contributors.
 Workflow: `.github/workflows/sampai-maps.yaml` (Actions tab → "Sampai map files" → Run workflow; also runs
 monthly on the 3rd). It:
 1. builds `generator_tool`, `world_roads_builder_tool`, `mwm_diff_tool` on Ubuntu;
-2. downloads the Geofabrik extract `asia/malaysia-singapore-brunei-latest.osm.pbf` and checks its `.md5`;
+2. downloads the newest dated Geofabrik extract `asia/malaysia-singapore-brunei/…-YYMMDD.osm.pbf` and checks its `.md5`;
 3. closes the coastline (`tools/my/maps/coastline_fix.py`, see below);
 4. runs `tools/python/maps_generator` with the repo's own `data/` (borders, classificator, styles) for
    `World, WorldCoasts, Malaysia_West, Malaysia_East, Singapore, Brunei`;
