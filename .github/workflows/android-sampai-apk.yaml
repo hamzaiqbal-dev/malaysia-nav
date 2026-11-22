@@ -8,6 +8,9 @@ on:
       - xcode/**
       - docs/**
 
+permissions:
+  contents: read
+
 env:
   JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
 

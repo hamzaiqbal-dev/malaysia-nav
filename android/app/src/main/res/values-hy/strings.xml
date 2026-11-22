@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Փորձել նորից</string>
     <string name="about_menu_title">Sampai-ի մասին</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Անվճար բոլորի համար՝ պատրաստված սիրով</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Ոչ մի գովազդ, հետևում կամ տվյալների հավաքագրում</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Չի սպառում մարտկոցը, աշխատում է օֆլայն</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Արագ, մինիմալիստական, մշակված համայնքի կողմից</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Էնտուզիաստների և կամավորների կողմից ստեղծված բաց կոդով հավելված:</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Տեղորոշման կարգավորումներ</string>
     <string name="close">Փակել</string>
@@ -152,7 +142,6 @@
     <string name="description">Նշումներ</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Ձեզ հետ կիսվել են Sampai-ի էջանիշներով</string>
-    <string name="share_bookmarks_email_body">Ողջույն!\nԿից ներկայացված են իմ էջանիշները: Խնդրում եմ բացել դրանք Sampai-ում: Եթե այն տեղադրված չէ, կարող եք ներբեռնել այստեղ՝ https://omaps.app/get?kmz\nՎայելեք ճանապարհորդությունը Sampai-ի հետ:</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Էջանիշների բեռնում</string>
     <!-- Kmz file successful loading -->
@@ -248,25 +237,15 @@
     <string name="menu">Մենյու</string>
     <!-- Text in menu -->
     <string name="website">Կայք</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Նորություններ</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Հետադարձ կապ</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Գնահատել հավելվածը</string>
-    <!-- Text in menu -->
     <string name="help">Օգնություն</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Հաճախ տրվող հարցեր</string>
     <!-- Button in the main menu -->
     <string name="donate">Նվիրաբերել</string>
     <string name="already_donated">Արդեն նվիրաբերել եմ</string>
     <string name="remind_me_later">Հիշեցնել ավելի ուշ</string>
     <string name="support_organic_maps">Աջակցել Sampai-ին</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Աջակցել նախագծին</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Հեղինակային իրավունք</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Հայտնել սխալի մասին</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -470,7 +449,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Օպերատոր՝ %s</string>
     <string name="editor_category_unsuitable_title">Չե՞ք գտնում համապատասխան կատեգորիա:</string>
-    <string name="editor_category_unsuitable_text">Sampai-ը թույլ է տալիս ավելացնել միայն պարզ կետային կատեգորիաներ, այսինքն՝ ոչ քաղաքներ, ճանապարհներ, լճեր, շենքերի ուրվագծեր և այլն։ Խնդրում ենք ավելացնել նման կատեգորիաները անմիջապես <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> կայքում։ Մանրամասն քայլ առ քայլ հրահանգների համար ստուգեք մեր <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ուղեցույցը</a>:</string>
     <string name="downloader_no_downloaded_maps_title">Դուք դեռ քարտեզներ չեք ներբեռնել</string>
     <string name="downloader_no_downloaded_maps_message">Ներբեռնեք քարտեզներ՝ օֆլայն որոնման և նավիգացիայի համար:</string>
     <string name="current_location_unknown_error_title">Ընթացիկ դիրքն անհայտ է:</string>
@@ -541,10 +519,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Ավելացնել կանգառ</string>
     <string name="drag_to_reorder">Վերակարգավորել</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Խնդրում ենք մուտք գործել OpenStreetMap, որպեսզի Ձեր քարտեզի փոփոխությունները ավտոմատ վերբեռնվեն: Իմացեք ավելին <a href="https://github.com/organicmaps/organicmaps/issues/6144">այստեղ</a>:</string>
     <string name="dialog_error_storage_title">Հիշողության հասանելիության խնդիր</string>
-    <string name="dialog_error_storage_message">Արտաքին հիշողությունը հասանելի չէ։ SD քարտը գուցե հեռացված է, վնասված, կամ ֆայլային համակարգը միայն կարդալու համար է։ Խնդրում ենք ստուգել Ձեր SD քարտը կամ կապվել մեզ հետ support\@organicmaps.app հասցեով։</string>
     <string name="setting_emulate_bad_storage">Նմանակել վատ հիշողությունը</string>
     <string name="error_enter_correct_name">Խնդրում ենք մուտքագրել ճիշտ անուն</string>
     <string name="bookmark_lists">Ցուցակներ</string>
@@ -754,12 +729,6 @@
     <string name="change_map_locale">Քարտեզի լեզուն</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Քարտեզի տվյալները՝ OpenStreetMap-ից</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->

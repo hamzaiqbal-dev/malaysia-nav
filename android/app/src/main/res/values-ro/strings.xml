@@ -36,16 +36,6 @@
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Mai încearcă</string>
     <string name="about_menu_title">Despre Sampai</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Gratuit pentru toată lumea, făcut cu dragoste</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• Fără reclame, fără urmărire, fără colectare de date</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• Nu consumă baterie, funcționează offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Rapid, minimalist, dezvoltat de comunitate</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Aplicație open-source creată de entuziaști și voluntari.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Setări de locație</string>
     <string name="close">Închide</string>
@@ -152,7 +142,6 @@
     <string name="description">Detalii</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Îți trimit locurile mele preferate din Sampai</string>
-    <string name="share_bookmarks_email_body">Bună!\n\nȚi-am atașat locurile mele preferate din aplicația Sampai. Deschide-le dacă ai instalată Sampai. Dacă nu, o poți descărca pentru iOS sau Android de aici: https://organicmaps.app/</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Se încarcă locurile preferate</string>
     <!-- Kmz file successful loading -->
@@ -248,25 +237,15 @@
     <string name="menu">Meniu</string>
     <!-- Text in menu -->
     <string name="website">Site web</string>
-    <!-- Text in About menu, opens Sampai news website -->
-    <string name="news">Știri</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Părere</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Evaluează aplicația</string>
-    <!-- Text in menu -->
     <string name="help">Ajutor</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Întrebări frecvente</string>
     <!-- Button in the main menu -->
     <string name="donate">Donează</string>
     <string name="already_donated">Deja donat</string>
     <string name="remind_me_later">Amintește mai târziu</string>
     <string name="support_organic_maps">Susține Sampai</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Susține proiectul</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Drepturi de autor</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Raportează o eroare</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -470,7 +449,6 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Nu găsiți o categorie potrivită?</string>
-    <string name="editor_category_unsuitable_text">Sampai permite adăugarea doar a unor categorii de puncte simple, ceea ce înseamnă că nu există orașe, drumuri, lacuri, contururi de clădiri, etc. Vă rugăm să adăugați astfel de categorii direct la <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultați <a href="https://organicmaps.app/faq/editing/advanced-map-editing">ghidul nostru</a> pentru instrucțiuni detaliate pas cu pas.</string>
     <string name="downloader_no_downloaded_maps_title">Nu ai descărcat nicio hartă</string>
     <string name="downloader_no_downloaded_maps_message">Descarcă hărți pentru a căuta un loc și a naviga fără conectare la internet.</string>
     <string name="current_location_unknown_error_title">Poziția actuală este necunoscută.</string>
@@ -541,10 +519,7 @@
     <!-- Keep it short: PlacePage button, search field hint and full-screen map point picker title shown while choosing a new intermediate stop of a route. -->
     <string name="placepage_add_stop">Adaugă oprire</string>
     <string name="drag_to_reorder">Reordonare</string>
-    <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Vă rugăm să vă conectați la OpenStreetMap pentru a încărca automat toate modificările aduse hărții. Aflați mai multe <a href="https://github.com/organicmaps/organicmaps/issues/6144">aici</a>.</string>
     <string name="dialog_error_storage_title">Problemă de acces la spațiul de stocare</string>
-    <string name="dialog_error_storage_message">Spațiul de stocare extern nu este disponibil. Probabil cardul SD nu este introdus, este deteriorat sau sistemul de fișiere este doar pentru citire. Verifică sau contactează-ne la support\@organicmaps.app</string>
     <string name="setting_emulate_bad_storage">Simulare arhivă deteriorată</string>
     <string name="error_enter_correct_name">Introdu un nume corect</string>
     <string name="bookmark_lists">Liste</string>
