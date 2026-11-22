@@ -17,8 +17,9 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 
 ## Install it on your phone
 
-- [x] Workflow "Android Sampai APK" builds a debug APK from `master` (artifact `sampai-google-debug-arm64`). Run
-  started from `master` on 23 Nov: [45051266794](https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45051266794).
+- [x] Workflow "Android Sampai APK" builds a debug APK from `master` (artifact `sampai-google-debug-arm64`). Latest
+  from `master` (23 Nov, succeeded): [45051266794](https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45051266794),
+  expires 22 Dec 2026.
   Download while signed in to GitHub, unzip, install the `.apk`. Artifacts expire after 30 days, so re-run the
   workflow (Actions → Android Sampai APK → Run workflow) for a fresh one.
 - Debug builds are signed with the repo's public debug key: fine for you and friends, never for a store.
