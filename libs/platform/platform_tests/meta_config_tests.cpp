@@ -3,6 +3,8 @@
 #include "platform/products.hpp"
 #include "platform/servers_list.hpp"
 
+#include "private.h"
+
 namespace meta_config_tests
 {
 using downloader::ParseMetaConfig;
@@ -99,6 +101,16 @@ UNIT_TEST(MetaConfig_JSONParser_NewFormatWithProducts)
   TEST(productsConfig.HasProducts(), ());
 
   TEST_EQUAL(productsConfig.products.size(), 2, ());
+}
+
+// Sampai must never download maps from the upstream project's servers.
+UNIT_TEST(MetaConfig_DefaultServersAreSampai)
+{
+  TEST_EQUAL(std::string_view(METASERVER_URL), "", ());
+  auto const config = ParseMetaConfig(DEFAULT_URLS_JSON);
+  TEST(config, ());
+  TEST_EQUAL(config->servers.size(), 1, ());
+  TEST_EQUAL(config->servers[0], "https://github.com/hamzaiqbal-dev/malaysia-nav/releases/download/", ());
 }
 
 }  // namespace meta_config_tests

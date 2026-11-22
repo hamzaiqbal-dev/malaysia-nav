@@ -1,0 +1,101 @@
+{
+ "v": 261122,
+ "id": "Countries",
+ "g": [
+  {
+   "id": "World",
+   "s": 249433,
+   "h": "5MmeISVzKpSl"
+  },
+  {
+   "id": "WorldCoasts",
+   "s": 71803,
+   "h": "k86pAB6goVKm"
+  },
+  {
+   "id": "Brunei",
+   "old": [
+    "Brunei"
+   ],
+   "affiliations": [
+    "Brunei Darussalam"
+   ],
+   "s": 5351444,
+   "h": "V4M6rW4H6u/v"
+  },
+  {
+   "id": "Malaysia",
+   "g": [
+    {
+     "id": "Malaysia_East",
+     "old": [
+      "Malaysia"
+     ],
+     "affiliations": [
+      "Labuan",
+      "Pulau Rusukan Besar",
+      "Pulau Rusukan Kecil",
+      "Pulau Kuraman",
+      "Sabah",
+      "Sarawak"
+     ],
+     "s": 42992337,
+     "h": "kH6JacL+OwIx"
+    },
+    {
+     "id": "Malaysia_West",
+     "old": [
+      "Malaysia"
+     ],
+     "affiliations": [
+      "Terengganu / ترڠڬانو",
+      "Johor",
+      "Kedah / قدح",
+      "Kelantan / کلنتن دار النعيم",
+      "Kuala Lumpur",
+      "Putrajaya",
+      "Negeri Sembilan",
+      "Melaka",
+      "Perak / ڨيرق",
+      "Perlis",
+      "Pahang",
+      "Pulau Bidong",
+      "Pulau Burung",
+      "Pulau Susu Dara Kecil",
+      "Pulau Tenggol",
+      "Pulau Tikus",
+      "Pulau Aman",
+      "Pulau Betong",
+      "Pulau Daat",
+      "Pulau Gedung",
+      "Pulau Gemia",
+      "Pulau Jerejak",
+      "Pulau Kapas",
+      "Pulau Kendi",
+      "Pulau Papan",
+      "Pulau Pinang",
+      "Pulau Rhu",
+      "Pulau Rimau",
+      "Selangor",
+      "Singapura"
+     ],
+     "s": 150136368,
+     "h": "ggr7jEr+HPrT"
+    }
+   ]
+  },
+  {
+   "id": "Singapore",
+   "old": [
+    "Singapore"
+   ],
+   "affiliations": [
+    "Johor",
+    "Malaysia",
+    "Singapura"
+   ],
+   "s": 27175667,
+   "h": "2IjE4HecHSKx"
+  }
+ ]
+}

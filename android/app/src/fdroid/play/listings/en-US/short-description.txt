@@ -1,1 +1,1 @@
-Get reliable offline maps with GPS navigation for hiking, cycling, and travel.
+Offline maps and turn-by-turn navigation for Malaysia, built on OpenStreetMap.

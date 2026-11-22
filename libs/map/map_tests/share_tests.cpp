@@ -13,8 +13,7 @@ using feature::Metadata;
 
 Strings TestStrings()
 {
-  return {"I am here on Organic Maps", "Open in Organic Maps or in a browser", "Open in Another App",
-          "Get Organic Maps"};
+  return {"I am here on Sampai", "Open in Sampai or in a browser", "Open in Another App"};
 }
 
 // Counts non-overlapping occurrences of |what| in |where|.
@@ -61,9 +60,8 @@ UNIT_TEST(Share_Build_Poi)
   TEST(r.m_html.find("<a href=\"https://toureiffel.paris\">toureiffel.paris</a>") != std::string::npos, (r.m_html));
   TEST(r.m_html.find("<a href=\"https://menu.toureiffel.paris\">menu.toureiffel.paris</a>") != std::string::npos,
        (r.m_html));
-  TEST(r.m_html.find("Open in Organic Maps or in a browser") != std::string::npos, (r.m_html));
+  TEST(r.m_html.find("Open in Sampai or in a browser") != std::string::npos, (r.m_html));
   TEST(r.m_html.find("<a href=\"geo:") != std::string::npos, (r.m_html));
-  TEST(r.m_html.find("https://omaps.app/get") != std::string::npos, (r.m_html));
 }
 
 UNIT_TEST(Share_Build_MyPosition)
@@ -81,10 +79,10 @@ UNIT_TEST(Share_Build_MyPosition)
   // No name, so the subject basis falls back to the address.
   TEST_EQUAL(r.m_subjectBasis, "5 Av. Anatole France", ());
   TEST_EQUAL(r.m_text,
-             "I am here on Organic Maps\n5 Av. Anatole France\n"
+             "I am here on Sampai\n5 Av. Anatole France\n"
              "48.858093, 2.294694\nhttps://omaps.app/04CNuoc9QN",
              ());
-  TEST(r.m_html.find("<b>I am here on Organic Maps</b>") != std::string::npos, (r.m_html));
+  TEST(r.m_html.find("<b>I am here on Sampai</b>") != std::string::npos, (r.m_html));
   TEST(r.m_isMyPosition, ());
 }
 

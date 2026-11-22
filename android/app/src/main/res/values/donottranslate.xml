@@ -80,4 +80,5 @@
   <string name="twitter" translatable="false">X (Twitter)</string>
   <string name="vk" translatable="false">VK</string>
 
+  <string name="osm_credit" translatable="false">© OpenStreetMap contributors</string>
 </resources>
