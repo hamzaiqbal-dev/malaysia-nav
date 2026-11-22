@@ -24,6 +24,7 @@ import app.organicmaps.maplayer.MapButtonsViewModel;
 import app.organicmaps.my.NavHudFormat;
 import app.organicmaps.my.NavHudSettings;
 import app.organicmaps.my.NavHudView;
+import app.organicmaps.my.report.ReportSheet;
 import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.maplayer.traffic.TrafficManager;
 import app.organicmaps.sdk.routing.RoutingController;
@@ -79,6 +80,7 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     mFrame = activity.findViewById(R.id.navigation_frame);
     mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
     mHud = mFrame.findViewById(R.id.nav_hud);
+    mFrame.findViewById(R.id.nav_report).setOnClickListener(v -> ReportSheet.show(activity));
     mBottomSheetCoordinator = mFrame.findViewById(R.id.nav_bottom_sheet_coordinator);
     mHud.setOnEndClickListener(v -> onStopClicked());
     mHud.setOnSettingsClickListener(v -> onSettingsClicked());

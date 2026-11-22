@@ -233,6 +233,26 @@
     <string name="pref_tts_unavailable">Not Available</string>
     <!-- Settings, Navigation group: switch for the Sampai heads-up display (turn card and ETA bar) -->
     <string name="pref_nav_hud_title">Sampai navigation display</string>
+    <!-- Button on the navigation screen that opens the road report sheet (short) -->
+    <string name="report_button">Report</string>
+    <!-- Title of the road report sheet -->
+    <string name="report_sheet_title">What do you want to report?</string>
+    <!-- Road report type -->
+    <string name="report_jam">Traffic jam</string>
+    <!-- Road report type -->
+    <string name="report_accident">Accident</string>
+    <!-- Road report type -->
+    <string name="report_police">Police / roadblock</string>
+    <!-- Road report type: Malaysian Automated Enforcement System speed camera -->
+    <string name="report_aes_camera">AES camera</string>
+    <!-- Road report type -->
+    <string name="report_pothole">Pothole</string>
+    <!-- Road report type -->
+    <string name="report_flood">Flood</string>
+    <!-- Road report type -->
+    <string name="report_road_closed">Road closed</string>
+    <!-- Toast after a road report is saved; reports are not sent anywhere yet -->
+    <string name="report_saved">Report saved on this device only</string>
     <string name="pref_map_auto_zoom">Auto zoom</string>
     <string name="placepage_distance">Distance</string>
     <string name="search_show_on_map">View on map</string>

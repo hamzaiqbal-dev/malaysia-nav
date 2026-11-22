@@ -7857,6 +7857,66 @@ tags = android-app
 en = Sampai navigation display
 ms = Paparan navigasi Sampai
 
+[report_button]
+comment = Button on the navigation screen that opens the road report sheet (short)
+tags = android-app
+en = Report
+ms = Lapor
+
+[report_sheet_title]
+comment = Title of the road report sheet
+tags = android-app
+en = What do you want to report?
+ms = Apa yang anda mahu lapor?
+
+[report_jam]
+comment = Road report type
+tags = android-app
+en = Traffic jam
+ms = Kesesakan
+
+[report_accident]
+comment = Road report type
+tags = android-app
+en = Accident
+ms = Kemalangan
+
+[report_police]
+comment = Road report type
+tags = android-app
+en = Police / roadblock
+ms = Polis / sekatan jalan raya
+
+[report_aes_camera]
+comment = Road report type: Malaysian Automated Enforcement System speed camera
+tags = android-app
+en = AES camera
+ms = Kamera AES
+
+[report_pothole]
+comment = Road report type
+tags = android-app
+en = Pothole
+ms = Lubang jalan
+
+[report_flood]
+comment = Road report type
+tags = android-app
+en = Flood
+ms = Banjir
+
+[report_road_closed]
+comment = Road report type
+tags = android-app
+en = Road closed
+ms = Jalan ditutup
+
+[report_saved]
+comment = Toast after a road report is saved; reports are not sent anywhere yet
+tags = android-app
+en = Report saved on this device only
+ms = Laporan disimpan pada peranti ini sahaja
+
 [pref_map_auto_zoom]
 tags = android-app,apple-maps
 en = Auto zoom
