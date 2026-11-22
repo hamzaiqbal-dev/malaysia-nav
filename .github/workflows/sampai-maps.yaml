@@ -79,8 +79,8 @@ jobs:
       - name: Download and verify the OpenStreetMap extract
         run: |
           mkdir -p "$RUNNER_TEMP/osm" && cd "$RUNNER_TEMP/osm"
-          curl -fsSL -o region.osm.pbf "$REGION_URL"
-          curl -fsSL -o region.osm.pbf.md5 "$REGION_URL.md5"
+          curl -fsSL --retry 8 --retry-all-errors --retry-delay 60 -o region.osm.pbf "$REGION_URL"
+          curl -fsSL --retry 8 --retry-all-errors --retry-delay 60 -o region.osm.pbf.md5 "$REGION_URL.md5"
           echo "$(cut -d ' ' -f 1 region.osm.pbf.md5)  region.osm.pbf" | md5sum -c -
           osmium fileinfo -e -g header.option.osmosis_replication_timestamp region.osm.pbf | tee timestamp.txt
 
@@ -88,7 +88,7 @@ jobs:
       - name: Close the coastline
         run: |
           cd "$RUNNER_TEMP/osm"
-          curl -fsSL -o land.zip "$LAND_URL"
+          curl -fsSL --retry 8 --retry-all-errors --retry-delay 60 -o land.zip "$LAND_URL"
           polys=(); for r in $REGIONS; do polys+=("$GITHUB_WORKSPACE/data/borders/$r.poly"); done
           bbox=$(python "$GITHUB_WORKSPACE/tools/my/maps/coastline_fix.py" bbox "${polys[@]}")
           echo "Clip box: $bbox"
