@@ -1,0 +1,188 @@
+# Builds Sampai's own map files (MWM) from OpenStreetMap for Malaysia, Singapore and Brunei,
+# plus World/WorldCoasts for the same region, and publishes them as a GitHub Release.
+# See docs/my/MAPS.md.
+name: Sampai map files
+
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 20 3 * *' # Monthly, on the 3rd at 20:00 UTC
+  pull_request: # Test build only (artifact, no release)
+    paths:
+      - .github/workflows/sampai-maps.yaml
+      - tools/my/maps/**
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write # To publish the release
+
+env:
+  REGION_URL: https://download.geofabrik.de/asia/malaysia-singapore-brunei-latest.osm.pbf
+  LAND_URL: https://osmdata.openstreetmap.de/download/land-polygons-complete-4326.zip
+  REGIONS: Malaysia_West Malaysia_East Singapore Brunei
+  SKIP_STAGES: MwmDiffs,Srtm,IsolinesInfo,RoutingTransit,Popularity,PopularityWorld,Statistics,MwmStatistics
+
+jobs:
+  maps:
+    name: Generate MWMs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/share/boost
+          df -h /
+
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Parallel submodules checkout
+        run: git submodule update --depth 1 --init --recursive --jobs=20
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build qt6-base-dev osmium-tool gdal-bin zlib1g-dev
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Python packages
+        run: pip install -r tools/python/maps_generator/requirements.txt "osmium>=4,<5"
+
+      - name: Unit tests for the coastline fix
+        working-directory: tools/my/maps
+        run: python -m unittest -v coastline_fix_test
+
+      - name: Configure ccache
+        uses: hendrikmuhs/ccache-action@v1.2.24
+        with:
+          key: ${{ github.workflow }}
+          max-size: 1G
+
+      - name: Build generator tools
+        run: |
+          cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DSKIP_QT_GUI=ON -DBUILD_TESTING=OFF \
+            -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+          cmake --build build --target generator_tool world_roads_builder_tool mwm_diff_tool
+
+      - name: Download and verify the OpenStreetMap extract
+        run: |
+          mkdir -p "$RUNNER_TEMP/osm" && cd "$RUNNER_TEMP/osm"
+          curl -fsSL -o region.osm.pbf "$REGION_URL"
+          curl -fsSL -o region.osm.pbf.md5 "$REGION_URL.md5"
+          echo "$(cut -d ' ' -f 1 region.osm.pbf.md5)  region.osm.pbf" | md5sum -c -
+          osmium fileinfo -e -g header.option.osmosis_replication_timestamp region.osm.pbf | tee timestamp.txt
+
+      # A regional extract has cut coastlines; replace them with closed rings from the land polygons.
+      - name: Close the coastline
+        run: |
+          cd "$RUNNER_TEMP/osm"
+          curl -fsSL -o land.zip "$LAND_URL"
+          polys=(); for r in $REGIONS; do polys+=("$GITHUB_WORKSPACE/data/borders/$r.poly"); done
+          bbox=$(python "$GITHUB_WORKSPACE/tools/my/maps/coastline_fix.py" bbox "${polys[@]}")
+          echo "Clip box: $bbox"
+          ogr2ogr -f GeoJSON -spat $bbox -clipsrc spat_extent -explodecollections land.geojson \
+            /vsizip/land.zip/land-polygons-complete-4326/land_polygons.shp
+          rm land.zip
+          osmium tags-filter -R -o coast_ways.osm.pbf region.osm.pbf w/natural=coastline
+          python "$GITHUB_WORKSPACE/tools/my/maps/coastline_fix.py" changes coast_ways.osm.pbf land.geojson changes.osc \
+            "$(osmium fileinfo -e -g data.maxid.nodes region.osm.pbf)" \
+            "$(osmium fileinfo -e -g data.maxid.ways region.osm.pbf)"
+          osmium apply-changes -o planet.osm.pbf region.osm.pbf changes.osc
+          md5sum planet.osm.pbf > planet.osm.pbf.md5
+          rm region.osm.pbf land.geojson changes.osc coast_ways.osm.pbf
+          df -h /
+
+      - name: Generate maps
+        run: |
+          work="$RUNNER_TEMP/maps_build"
+          cat > tools/python/maps_generator/var/etc/map_generator.ini <<EOF
+          [Developer]
+          OMIM_PATH: $GITHUB_WORKSPACE
+          BUILD_PATH: $GITHUB_WORKSPACE/build
+          [Main]
+          MAIN_OUT_PATH: $work
+          [Generator tool]
+          USER_RESOURCE_PATH: $GITHUB_WORKSPACE/data
+          [Osm tools]
+          OSM_TOOLS_PATH: $RUNNER_TEMP/osmctools
+          OSM_TOOLS_SRC_PATH: $GITHUB_WORKSPACE/tools/osmctools
+          [Logging]
+          LOG_FILE_PATH: $work/generation.log
+          [External]
+          PLANET_URL: file://$RUNNER_TEMP/osm/planet.osm.pbf
+          PLANET_MD5_URL: file://$RUNNER_TEMP/osm/planet.osm.pbf.md5
+          NEED_BUILD_WORLD_ROADS: false
+          [Stages]
+          NEED_PLANET_UPDATE: 0
+          EOF
+          countries="World, WorldCoasts, $(echo $REGIONS | sed 's/ /, /g')"
+          cd tools/python
+          python -m maps_generator --countries="$countries" --skip="$SKIP_STAGES"
+
+      - name: Collect files and checksums
+        id: collect
+        run: |
+          build=$(ls -d "$RUNNER_TEMP"/maps_build/*/ | sort | tail -n 1)
+          version=$(basename "$(ls -d "$build"[0-9]*/ | tail -n 1)")
+          out="$RUNNER_TEMP/release"
+          mkdir -p "$out"
+          cp "$build$version"/*.mwm "$build$version"/countries.json "$out/"
+          [ -f "$build$version/packed_polygons.bin" ] && cp "$build$version/packed_polygons.bin" "$out/"
+          cd "$out"
+          sha256sum * > SHA256SUMS
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "dir=$out" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Sampai maps $version"
+            echo '```'
+            ls -l --block-size=K
+            du -ch *.mwm | tail -n 1
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload generation logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: sampai-maps-logs
+          path: |
+            ${{ runner.temp }}/maps_build/generation.log
+            ${{ runner.temp }}/maps_build/*/logs/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Upload map files
+        uses: actions/upload-artifact@v6
+        with:
+          name: sampai-maps-${{ steps.collect.outputs.version }}
+          path: ${{ steps.collect.outputs.dir }}
+          retention-days: 14
+
+      # The app downloads <server>/maps/<version>/<file>.mwm, so the tag is maps/<version>.
+      - name: Publish the release
+        if: ${{ github.event_name != 'pull_request' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.collect.outputs.version }}
+          DIR: ${{ steps.collect.outputs.dir }}
+        run: |
+          cat > "$RUNNER_TEMP/notes.md" <<EOF
+          Sampai offline maps, version $VERSION: Malaysia (West and East), Singapore, Brunei, World and WorldCoasts.
+          Built from the Geofabrik extract $REGION_URL ($(cat "$RUNNER_TEMP/osm/timestamp.txt")) by $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID.
+          Coastline from $LAND_URL. Checksums in SHA256SUMS.
+
+          Map data © OpenStreetMap contributors, ODbL. https://www.openstreetmap.org/copyright
+          EOF
+          gh release create "maps/$VERSION" "$DIR"/* --target "$GITHUB_SHA" \
+            --title "Sampai maps $VERSION" --notes-file "$RUNNER_TEMP/notes.md"
