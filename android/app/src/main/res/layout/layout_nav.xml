@@ -8,6 +8,23 @@
 
   <include layout="@layout/layout_nav_top" />
 
+  <app.organicmaps.my.NavHudView
+    android:id="@+id/nav_hud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/nav_report"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|center_vertical"
+    android:layout_marginEnd="@dimen/margin_base"
+    android:backgroundTint="@color/sampai_accent"
+    android:text="@string/report_button"
+    android:textAllCaps="false"
+    android:textColor="#FF1A1200" />
+
   <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:id="@+id/nav_bottom_sheet_coordinator"
     android:layout_width="match_parent"

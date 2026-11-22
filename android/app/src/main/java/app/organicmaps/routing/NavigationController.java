@@ -2,9 +2,12 @@ package app.organicmaps.routing;
 
 import static app.organicmaps.sdk.util.Utils.dimen;
 
+import android.content.Context;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.location.Location;
 import android.text.TextUtils;
+import android.text.format.DateFormat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -18,6 +21,10 @@ import androidx.lifecycle.ViewModelProvider;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
 import app.organicmaps.maplayer.MapButtonsViewModel;
+import app.organicmaps.my.NavHudFormat;
+import app.organicmaps.my.NavHudSettings;
+import app.organicmaps.my.NavHudView;
+import app.organicmaps.my.report.ReportSheet;
 import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.maplayer.traffic.TrafficManager;
 import app.organicmaps.sdk.routing.RoutingController;
@@ -32,6 +39,7 @@ import app.organicmaps.util.WindowInsetUtils;
 import app.organicmaps.util.WindowInsetUtils.BaselinePaddingInsetsListener;
 import app.organicmaps.widget.menu.NavMenu;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import java.time.LocalTime;
 
 public class NavigationController implements TrafficManager.TrafficCallback, NavMenu.NavMenuListener
 {
@@ -56,6 +64,10 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   private final View mNextTurnContainer;
 
   private final NavMenu mNavMenu;
+  private final NavHudView mHud;
+  private final View mBottomSheetCoordinator;
+  private boolean mHudEnabled;
+  private int mHudEtaBarHeight;
   View.OnClickListener mOnSettingsClickListener;
   View.OnClickListener mOnVoiceSettingsClickListener;
 
@@ -67,6 +79,11 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
 
     mFrame = activity.findViewById(R.id.navigation_frame);
     mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
+    mHud = mFrame.findViewById(R.id.nav_hud);
+    mFrame.findViewById(R.id.nav_report).setOnClickListener(v -> ReportSheet.show(activity));
+    mBottomSheetCoordinator = mFrame.findViewById(R.id.nav_bottom_sheet_coordinator);
+    mHud.setOnEndClickListener(v -> onStopClicked());
+    mHud.setOnSettingsClickListener(v -> onSettingsClicked());
     mOnSettingsClickListener = onSettingsClickListener;
     mOnVoiceSettingsClickListener = onVoiceSettingsClickListener;
 
@@ -83,6 +100,20 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
 
     mStreetFrame = mTopFrame.findViewById(R.id.street_frame);
     mNextStreet = mStreetFrame.findViewById(R.id.street);
+
+    mHud.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
+      // Lanes and speed limit are laid out below the hidden street banner: stretch it to clear the HUD card.
+      final int topCardBottom = mHud.getTopCardBottom();
+      if (mStreetFrame.getMinimumHeight() != topCardBottom)
+        mStreetFrame.setMinimumHeight(topCardBottom);
+      // Keep the OSM credit, scale and routing position arrow above the ETA bar.
+      final int etaBarHeight = mHud.getEtaBarHeight();
+      if (mHudEtaBarHeight != etaBarHeight)
+      {
+        mHudEtaBarHeight = etaBarHeight;
+        onMenuSizeChangedListener.OnMenuSizeChange();
+      }
+    });
 
     mLanesView = mTopFrame.findViewById(R.id.lanes);
 
@@ -141,7 +172,8 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
         turnAndSpeedHeight += mSpeedLimit.getHeight();
     }
     final int lanesHeight = UiUtils.isVisible(mLanesView) ? mLanesView.getHeight() : 0;
-    return mStreetFrame.getHeight() + Math.max(turnAndSpeedHeight, lanesHeight);
+    final int headerHeight = mHudEnabled ? mHud.getTopCardBottom() : mStreetFrame.getHeight();
+    return headerHeight + Math.max(turnAndSpeedHeight, lanesHeight);
   }
 
   private void updateVehicle(@NonNull RoutingInfo info)
@@ -177,6 +209,41 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
 
     updateStreetView(info);
     mNavMenu.update(info);
+    if (mHudEnabled)
+      updateHud(info);
+  }
+
+  // The Sampai HUD replaces the street banner, next-turn column and bottom menu while it is enabled.
+  private void applyHudMode()
+  {
+    mHudEnabled = NavHudSettings.isEnabled(mFrame.getContext());
+    UiUtils.showIf(mHudEnabled, mHud);
+    UiUtils.showIf(!mHudEnabled, mBottomSheetCoordinator, mNextTurnContainer);
+    if (mHudEnabled)
+      UiUtils.invisible(mStreetFrame);
+    else
+      mStreetFrame.setMinimumHeight(0);
+  }
+
+  /** Height the HUD's ETA bar covers at the bottom of the map, 0 when the HUD is not shown. */
+  public int getHudBottomHeight()
+  {
+    return mHudEnabled && UiUtils.isVisible(mFrame) ? mHudEtaBarHeight : 0;
+  }
+
+  private void updateHud(@NonNull RoutingInfo info)
+  {
+    final Context context = mFrame.getContext();
+    final int turnRes = Router.get() == Router.Pedestrian ? info.pedestrianDirection.getTurnRes()
+                                                          : info.carDirection.getTurnRes(info.exitNum);
+    mHud.setTurn(turnRes, info.distToTurn.toString(context), info.nextStreet);
+
+    final Resources res = context.getResources();
+    final String arrival =
+        NavHudFormat.arrival(LocalTime.now(), info.totalTimeInSeconds, DateFormat.is24HourFormat(context));
+    mHud.setEta(
+        NavHudFormat.timeLeft(info.totalTimeInSeconds, res.getString(R.string.hour), res.getString(R.string.minute)),
+        info.distToTarget.toString(context) + " · " + arrival);
   }
 
   private void updateStreetView(@NonNull RoutingInfo info)
@@ -184,12 +251,14 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     boolean hasStreet = !TextUtils.isEmpty(info.nextStreet);
     // Sic: don't use UiUtils.showIf() here because View.GONE breaks layout
     // https://github.com/organicmaps/organicmaps/issues/3732
-    UiUtils.visibleIf(hasStreet, mStreetFrame);
+    UiUtils.visibleIf(hasStreet && !mHudEnabled, mStreetFrame);
     if (!TextUtils.isEmpty(info.nextStreet))
       mNextStreet.setText(RoadShieldUtils.createStreetTextWithShields(info.nextStreet, info.nextStreetRoadShields,
                                                                       mNextStreet.getTextSize()));
     int margin = dimen(mFrame.getContext(), R.dimen.nav_frame_padding);
-    if (hasStreet)
+    if (mHudEnabled)
+      margin += mHud.getTopCardBottom();
+    else if (hasStreet)
       margin += mStreetFrame.getHeight();
     mMapButtonsViewModel.setTopButtonsMarginTop(margin);
   }
@@ -198,6 +267,7 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   {
     if (show && !UiUtils.isVisible(mFrame))
     {
+      applyHudMode();
       collapseNavMenu();
       // Seed the panel from the already-built route so it isn't empty until the first GPS fix arrives.
       update(RoutingController.get().getCachedRoutingInfo());

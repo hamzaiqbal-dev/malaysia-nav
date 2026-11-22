@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+  <dimen name="sampai_corner_button">14dp</dimen>
+  <dimen name="sampai_corner_search">18dp</dimen>
+  <dimen name="sampai_corner_sheet">24dp</dimen>
+  <dimen name="sampai_corner_chip">100dp</dimen>
+</resources>

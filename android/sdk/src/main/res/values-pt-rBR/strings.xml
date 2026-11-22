@@ -2,10 +2,10 @@
 <resources>
 
     <!-- SECTION: Other translations -->
-    <!-- Shared email link text; opens the shared place in Organic Maps or in a web browser. -->
-    <string name="share_open_in_om_or_browser">Abrir no Organic Maps ou em um navegador</string>
-    <!-- Shared email link text; leads to the Organic Maps download page. -->
-    <string name="share_get_om">Baixar Organic Maps</string>
+    <!-- Shared email link text; opens the shared place in Sampai or in a web browser. -->
+    <string name="share_open_in_om_or_browser">Abrir no Sampai ou em um navegador</string>
+    <!-- Shared email link text; leads to the Sampai download page. -->
+    <string name="share_get_om">Baixar Sampai</string>
     <!-- Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. -->
     <string name="open_in_app">Abrir em outro aplicativo</string>
 

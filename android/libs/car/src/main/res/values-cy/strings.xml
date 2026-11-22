@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Wrthi\'n lawrlwytho</string>
     <string name="download_map_title">Lawrlwythwch fap trosolwg y byd</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Mae angen caniatâd lleoliad ar Organic Maps yn Android Auto i weithio\'n effeithiol</string>
+    <string name="aa_request_permission_activity_text">Mae angen caniatâd lleoliad ar Sampai yn Android Auto i weithio\'n effeithiol</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Rhoi caniatadau</string>
 </resources>

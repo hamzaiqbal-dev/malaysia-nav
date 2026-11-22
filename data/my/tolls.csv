@@ -1,0 +1,78 @@
+# Toll plazas operated by PLUS Expressways. Coordinates: OpenStreetMap contributors (ODbL), Overpass snapshot 2026-05-31.
+# Rates (RM, vehicle class 1-5) are TBC until sourced from the concessionaire or the LLM (Lembaga Lebuhraya Malaysia) gazette; never guess. TODO(tolls): fill from https://www.plus.com.my
+plaza,highway,lat,lon,class1_rm,class2_rm,class3_rm,class4_rm,class5_rm,source_url,as_of_date
+Plaza Tol Ayer Hitam,TBC,1.93045,103.18626,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/2297827130,2026-05-31
+Plaza Tol Ayer Keroh,TBC,2.30036,102.31042,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/262332927,2026-05-31
+Plaza Tol Bandar Cassia (A),TBC,5.23340,100.45342,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/2866477743,2026-05-31
+Plaza Tol Bandar Cassia (B),TBC,5.23302,100.45359,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3221625176,2026-05-31
+Plaza Tol Bandar Cassia (C),TBC,5.23381,100.45329,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3221625182,2026-05-31
+Plaza Tol Bandar Saujana Putra,TBC,2.95598,101.57995,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/839749238,2026-05-31
+Plaza Tol Bangi,TBC,2.93292,101.76014,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/139849067,2026-05-31
+Plaza Tol Behrang,TBC,3.73994,101.45929,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1788035810,2026-05-31
+Plaza Tol Bertam,TBC,5.51951,100.44278,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/595497482,2026-05-31
+Plaza Tol Bidor,TBC,4.10702,101.29794,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1858318069,2026-05-31
+Plaza Tol Bukit Beruntung,TBC,3.42437,101.55339,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/587752956,2026-05-31
+Plaza Tol Bukit Gambir,TBC,2.19409,102.62203,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3261763646,2026-05-31
+Plaza Tol Bukit Merah,TBC,4.99624,100.65407,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/718369972,2026-05-31
+Plaza Tol Bukit Raja,TBC,3.07346,101.47501,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/33375621,2026-05-31
+Plaza Tol Bukit Tagar,TBC,3.49423,101.52189,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/632282420,2026-05-31
+Plaza Tol Bukit Tambun Selatan,TBC,5.27673,100.45688,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3221533532,2026-05-31
+Plaza Tol Bukit Tambun Utara,TBC,5.27609,100.45316,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3221533533,2026-05-31
+Plaza Tol Changkat Jering,TBC,4.78213,100.71943,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3237514002,2026-05-31
+Plaza Tol Damansara,TBC,3.13402,101.60403,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/251017902,2026-05-31
+Plaza Tol Ebor Selatan,TBC,3.05662,101.55927,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/32686379,2026-05-31
+Plaza Tol Ebor Utara,TBC,3.06505,101.55739,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/254309764,2026-05-31
+Plaza Tol Gopeng,TBC,4.45320,101.16752,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/2187969903,2026-05-31
+Plaza Tol Hospital Sungai Buloh,TBC,3.22308,101.58056,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/206201899,2026-05-31
+Plaza Tol Ipoh Selatan,TBC,4.58424,101.14421,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1058858936,2026-05-31
+Plaza Tol Ipoh Utara,TBC,4.66390,101.07954,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/301423671,2026-05-31
+Plaza Tol Jalan Duta,TBC,3.17551,101.65581,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/300590193,2026-05-31
+Plaza Tol Jasin,TBC,2.26416,102.43388,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/302776760,2026-05-31
+Plaza Tol Jelapang,TBC,4.66638,101.07268,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/301782374,2026-05-31
+Plaza Tol Juru,TBC,5.32382,100.43675,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3221497041,2026-05-31
+Plaza Tol KLIA,TBC,2.83245,101.66060,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/158777046,2026-05-31
+Plaza Tol Kajang,TBC,2.98548,101.74412,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/139771094,2026-05-31
+Plaza Tol Kempas,TBC,1.55420,103.70120,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1548423324,2026-05-31
+Plaza Tol Kota Damansara,TBC,3.15567,101.58904,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/251017197,2026-05-31
+Plaza Tol Kulai,TBC,1.64992,103.55556,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/2119446185,2026-05-31
+Plaza Tol Lembah Beringin,TBC,3.57408,101.52753,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1580749257,2026-05-31
+Plaza Tol Lima Kedai,TBC,1.50592,103.60734,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/290398308,2026-05-31
+Plaza Tol Machap,TBC,1.88394,103.24188,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/358484914,2026-05-31
+Plaza Tol Nilai,TBC,2.83301,101.79784,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/36365909,2026-05-31
+Plaza Tol Pagoh,TBC,2.13095,102.73136,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/36359405,2026-05-31
+Plaza Tol Pedas,TBC,2.56671,102.04481,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/677322209,2026-05-31
+Plaza Tol Perling,TBC,1.48839,103.67195,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1328497648,2026-05-31
+Plaza Tol Port Dickson,TBC,2.69007,101.93323,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/268015623,2026-05-31
+Plaza Tol Putra Heights,TBC,2.98970,101.57696,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/364128398,2026-05-31
+Plaza Tol Putra Mahkota,TBC,2.88200,101.78879,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/36420202,2026-05-31
+Plaza Tol Putrajaya,TBC,2.92506,101.61277,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/32685631,2026-05-31
+Plaza Tol Rawang,TBC,3.30439,101.54864,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/264168466,2026-05-31
+Plaza Tol Rawang Selatan,TBC,3.27495,101.54959,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/206201433,2026-05-31
+Plaza Tol Rawang Selatan (Plaza 'A'),TBC,3.27444,101.55026,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/12912162449,2026-05-31
+Plaza Tol Rawang Selatan (Plaza B),TBC,3.27483,101.54973,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/206201608,2026-05-31
+Plaza Tol Seafield,TBC,3.05350,101.56834,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1484203243,2026-05-31
+Plaza Tol Sedenak,TBC,1.71026,103.44908,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/358487589,2026-05-31
+Plaza Tol Senai Utara,TBC,1.60008,103.61402,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/290398362,2026-05-31
+Plaza Tol Senawang,TBC,2.68572,101.96555,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/2110298943,2026-05-31
+Plaza Tol Seremban,TBC,2.71512,101.91632,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/579629904,2026-05-31
+Plaza Tol Setia Alam,TBC,3.09179,101.48621,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1755683475,2026-05-31
+Plaza Tol Shah Alam,TBC,3.09775,101.54524,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/33372372,2026-05-31
+Plaza Tol Simpang Ampat,TBC,2.44705,102.18391,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/33703676,2026-05-31
+Plaza Tol Simpang Pulai,TBC,4.52556,101.13285,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/485865934,2026-05-31
+Plaza Tol Simpang Renggam,TBC,1.79589,103.32334,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1679572865,2026-05-31
+Plaza Tol Skudai,TBC,1.58218,103.64570,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1679571159,2026-05-31
+Plaza Tol Slim River,TBC,3.84666,101.39637,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1495060789,2026-05-31
+Plaza Tol Subang,TBC,3.10290,101.59054,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/270861235,2026-05-31
+Plaza Tol Sungai Besi,TBC,3.03919,101.70581,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/34423874,2026-05-31
+Plaza Tol Sungai Buaya,TBC,3.37306,101.54968,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/3253694109,2026-05-31
+Plaza Tol Sungai Dua,TBC,5.45864,100.41906,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/413876576,2026-05-31
+Plaza Tol Sungkai,TBC,3.98926,101.31570,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1754782432,2026-05-31
+Plaza Tol Taiping Utara,TBC,4.89524,100.66991,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/613347610,2026-05-31
+Plaza Tol Tangkak,TBC,2.24497,102.53347,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/260330533,2026-05-31
+Plaza Tol Tanjung Kupang,TBC,1.38211,103.59358,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/370321522,2026-05-31
+Plaza Tol Tanjung Malim,TBC,3.65939,101.53460,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1723784987,2026-05-31
+Plaza Tol Tapah,TBC,4.21416,101.26927,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/608261306,2026-05-31
+Plaza Tol UPM,TBC,3.00068,101.72767,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/way/168947860,2026-05-31
+Plaza Tol USJ,TBC,3.02552,101.57911,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/33353639,2026-05-31
+Plaza Tol Yong Peng Selatan,TBC,1.99848,103.07812,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/1878668537,2026-05-31
+Plaza Tol Yong Peng Utara,TBC,2.00310,103.04564,TBC,TBC,TBC,TBC,TBC,https://www.openstreetmap.org/node/331521125,2026-05-31

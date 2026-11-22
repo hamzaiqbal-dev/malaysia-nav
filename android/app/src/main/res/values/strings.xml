@@ -35,24 +35,14 @@
     <string name="country_status_download_failed">Download has failed</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Try Again</string>
-    <string name="about_menu_title">About Organic Maps</string>
-    <!-- Text in About screen -->
-    <string name="about_headline">Free for everyone, made with love</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_1">• No ads, no tracking, no data collection</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_2">• No battery drain, works offline</string>
-    <!-- Text in About screen -->
-    <string name="about_proposition_3">• Fast, minimalist, developed by the community</string>
-    <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Open-source application created by enthusiasts and volunteers.</string>
+    <string name="about_menu_title">About Sampai</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Location Settings</string>
     <string name="close">Close</string>
     <string name="unsupported_phone">The app requires hardware accelerated OpenGL. Unfortunately, your device is not supported.</string>
     <string name="download">Download</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Please disconnect USB cable or insert memory card to use Organic Maps</string>
+    <string name="disconnect_usb_cable">Please disconnect USB cable or insert memory card to use Sampai</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Please free up some space on the SD card/USB storage first in order to use the app</string>
     <string name="download_resources">Before you start using the app, please download the world overview map to your device.\nIt will use %s of storage.</string>
@@ -151,8 +141,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notes</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Organic Maps bookmarks were shared with you</string>
-    <string name="share_bookmarks_email_body">Hello!\n\nAttached are my bookmarks; please open them in Organic Maps. If you don\'t have it installed you can download it here: https://omaps.app/get?kmz\n\nEnjoy travelling with Organic Maps!</string>
+    <string name="share_bookmarks_email_subject">Sampai bookmarks were shared with you</string>
+    <string name="share_bookmarks_email_body">Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Loading Bookmarks</string>
     <!-- Kmz file successful loading -->
@@ -161,7 +151,7 @@
     <string name="load_kmz_failed">Failed to load bookmarks. The file may be corrupted or defective.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">The file type is not recognized by the app:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in Sampai. -->
     <string name="failed_to_open_file">Failed to open file %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Edit</string>
@@ -174,9 +164,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Share</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s on Organic Maps</string>
+    <string name="share_place_subject">%1$s on Sampai</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">A place on Organic Maps</string>
+    <string name="share_place_subject_default">A place on Sampai</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">Email</string>
     <!-- Text for message when used successfully copied something -->
@@ -241,6 +231,28 @@
     <string name="pref_tts_playing_test_voice">Check the volume or system Text-To-Speech settings if you don\'t hear the voice now.</string>
     <!-- Settings «Route» category: «Tts unavailable» subtitle. Also used as a CarToast in Android Auto when the user taps the muted voice icon. -->
     <string name="pref_tts_unavailable">Not Available</string>
+    <!-- Settings, Navigation group: switch for the Sampai heads-up display (turn card and ETA bar) -->
+    <string name="pref_nav_hud_title">Sampai navigation display</string>
+    <!-- Button on the navigation screen that opens the road report sheet (short) -->
+    <string name="report_button">Report</string>
+    <!-- Title of the road report sheet -->
+    <string name="report_sheet_title">What do you want to report?</string>
+    <!-- Road report type -->
+    <string name="report_jam">Traffic jam</string>
+    <!-- Road report type -->
+    <string name="report_accident">Accident</string>
+    <!-- Road report type -->
+    <string name="report_police">Police / roadblock</string>
+    <!-- Road report type: Malaysian Automated Enforcement System speed camera -->
+    <string name="report_aes_camera">AES camera</string>
+    <!-- Road report type -->
+    <string name="report_pothole">Pothole</string>
+    <!-- Road report type -->
+    <string name="report_flood">Flood</string>
+    <!-- Road report type -->
+    <string name="report_road_closed">Road closed</string>
+    <!-- Toast after a road report is saved; reports are not sent anywhere yet -->
+    <string name="report_saved">Report saved on this device only</string>
     <string name="pref_map_auto_zoom">Auto zoom</string>
     <string name="placepage_distance">Distance</string>
     <string name="search_show_on_map">View on map</string>
@@ -248,25 +260,19 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Website</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
-    <string name="news">News</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
     <!-- Text in menu -->
-    <string name="rate_the_app">Rate the app</string>
-    <!-- Text in menu -->
     <string name="help">Help</string>
-    <!-- Button in the main Help dialog -->
-    <string name="faq">Frequently Asked Questions</string>
     <!-- Button in the main menu -->
     <string name="donate">Donate</string>
     <string name="already_donated">Already donated</string>
     <string name="remind_me_later">Remind later</string>
-    <string name="support_organic_maps">Support Organic Maps</string>
-    <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Support the project</string>
-    <!-- Button in the main Help dialog -->
-    <string name="copyright">Copyright</string>
+    <string name="support_organic_maps">Support Sampai</string>
+    <!-- About screen: product name and author line -->
+    <string name="about_attribution">Sampai — made in Malaysia by Hamza Iqbal</string>
+    <!-- About screen row: open-source licences and data credits -->
+    <string name="about_licences">Open-source licences</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
     <string name="report_a_bug">Report a bug</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
@@ -445,7 +451,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Community-created OpenStreetMap data as of %s. Learn more about how to edit and update the map at OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) is a community project to build a free and open map. It\'s the main source of map data in Organic Maps and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) is a community project to build a free and open map. It\'s the main source of map data in Sampai and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!</string>
     <string name="login_to_make_edits_visible">Create an OpenStreetMap account or log in to publish your map edits to the world.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d of %2$d</string>
@@ -460,7 +466,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Note to OpenStreetMap volunteers (optional)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Describe errors on the map or things that cannot be edited with Organic Maps</string>
+    <string name="editor_note_hint">Describe errors on the map or things that cannot be edited with Sampai</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Your edits are uploaded to the public <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> database. Please do not add personal or copyrighted information.</string>
     <string name="editor_more_about_osm">More about OpenStreetMap</string>
@@ -470,7 +476,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Can\'t find a suitable category?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detailed step by step instructions.</string>
+    <string name="editor_category_unsuitable_text">Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>.</string>
     <string name="downloader_no_downloaded_maps_title">You haven\'t downloaded any maps</string>
     <string name="downloader_no_downloaded_maps_message">Download maps to search and navigate offline.</string>
     <string name="current_location_unknown_error_title">Current location is unknown.</string>
@@ -542,9 +548,9 @@
     <string name="placepage_add_stop">Add Stop</string>
     <string name="drag_to_reorder">Reorder</string>
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
-    <string name="alert_reauth_message">Please login to OpenStreetMap to automatically upload all your map edits. Learn more <a href="https://github.com/organicmaps/organicmaps/issues/6144">here</a>.</string>
+    <string name="alert_reauth_message">Please login to OpenStreetMap to automatically upload all your map edits.</string>
     <string name="dialog_error_storage_title">Storage access problem</string>
-    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card or contact us at support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card.</string>
     <string name="setting_emulate_bad_storage">Emulate bad storage</string>
     <string name="error_enter_correct_name">Please enter a correct name</string>
     <string name="bookmark_lists">Lists</string>
@@ -754,12 +760,6 @@
     <string name="change_map_locale">Map language</string>
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Map data from OpenStreetMap</string>
-    <!-- Telegram group url for the "?" About page -->
-    <string name="telegram_url">https://t.me/OrganicMapsApp</string>
-    <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
-    <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
@@ -787,9 +787,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Our main goal is to build fast, privacy-focused, easy-to-use maps that you will love.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">You are now using Organic Maps on the phone screen</string>
+    <string name="car_used_on_the_phone_screen">You are now using Sampai on the phone screen</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">You are now using Organic Maps on the car screen</string>
+    <string name="car_used_on_the_car_screen">You are now using Sampai on the car screen</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">You are connected to Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -797,7 +797,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">To the car screen</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps needs location access. When it\'s safe, check the notification on your phone.</string>
+    <string name="aa_location_permissions_request">Sampai needs location access. When it\'s safe, check the notification on your phone.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">This app needs your permission</string>
     <!-- Grant Permissions button. -->

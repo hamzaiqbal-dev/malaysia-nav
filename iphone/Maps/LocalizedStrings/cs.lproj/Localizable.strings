@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "Ahoj!\n\nV příloze najdeš mé záložky; otevři je v aplikaci Organic Maps. Pokud ji nemáš nainstalovanou, můžeš si ji stáhnout zde: https://omaps.app/get?kmz \n\nUžij si cestování s Organic Maps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "Nahrávání záložek";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "Vaše poloha zatím nebyla určena";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "Jsem tady na mapě Organic Maps";
+"share_my_position" = "Jsem tady na mapě Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ v Organic Maps";
+"share_place_subject" = "%1$@ v Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "Místo v Organic Maps";
+"share_place_subject_default" = "Místo v Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "Otevřít v Organic Maps nebo v prohlížeči";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "Otevřít v Sampai nebo v prohlížeči";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "Získat Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "Získat Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "Otevřít v jiné aplikaci";
@@ -279,7 +279,7 @@
 /* Text in menu */
 "website" = "Webové stránky";
 
-/* Text in About menu, opens Organic Maps news website */
+/* Text in About menu, opens Sampai news website */
 "news" = "Novinky";
 
 /* Text in menu */
@@ -295,7 +295,7 @@
 "donate" = "Darovat";
 "already_donated" = "Již darováno";
 "remind_me_later" = "Připomeň později";
-"support_organic_maps" = "Podpořit Organic Maps";
+"support_organic_maps" = "Podpořit Sampai";
 
 /* Button in the main Help dialog */
 "copyright" = "Autorská práva";
@@ -393,7 +393,7 @@
 "blue_gray" = "Modrošedá";
 
 /* Prints version number in About dialog */
-"version" = "Verze Organic Maps: %@";
+"version" = "Verze Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Vzhled";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "Operátor: %@";
 "editor_category_unsuitable_title" = "Nemůžete najít vhodnou kategorii?";
-"editor_category_unsuitable_text" = "Organic Maps umožňuje přidávat pouze jednoduché bodové kategorie, to znamená žádná města, silnice, jezera, obrysy budov atd. Tyto kategorie prosím přidávejte přímo na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Podrobný návod krok za krokem najdete v našem <a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">průvodci</a>.";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "Nemáte stažené žádné mapy";
 "downloader_no_downloaded_maps_message" = "Stáhněte si mapy a hledejte cestu a její cíl, i když jste offline.";
 "current_location_unknown_error_title" = "Současná poloha nezjištěna.";
@@ -833,9 +833,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "Ke stažení potřebujete více volného místa. Odstraňte prosím nepotřebná data.";
-"editor_sharing_title" = "Vylepšil jsem mapy Organic Maps";
+"editor_sharing_title" = "Vylepšil jsem mapy Sampai";
 "editor_detailed_description_hint" = "Podrobný komentář";
-"editor_detailed_description" = "Vámi navržené změny odešleme do komunity OpenStreetMap. Popište podrobnosti, které nelze upravit v Organic Maps.";
+"editor_detailed_description" = "Vámi navržené změny odešleme do komunity OpenStreetMap. Popište podrobnosti, které nelze upravit v Sampai.";
 "current_location_unknown_error_message" = "Při zjišťování současné polohy došlo k chybě. Zkontrolujte, že nedošlo k chybě zařízení a pokus prosím opakujte později.";
 "location_services_disabled_header" = "Určení polohy je zakázáno";
 "location_services_disabled_message" = "Povolte přístup ke geolokaci v nastavení přístroje";
@@ -847,7 +847,7 @@
 "location_services_disabled_on_device_2" = "2. Vyberte možnost Soukromí";
 "location_services_disabled_on_device_3" = "3. Vyberte možnost Služby určování polohy";
 "location_services_disabled_on_device_4" = "4. Zapnutí služeb určování polohy";
-"location_services_disabled_on_device_additional_message" = "Nebo pokračujte v používání aplikace Organic Maps bez polohy";
+"location_services_disabled_on_device_additional_message" = "Nebo pokračujte v používání aplikace Sampai bez polohy";
 "placepage_call_button" = "Volat";
 "placepage_bookmark_name_hint" = "Název záložky";
 "placepage_delete_bookmark_button" = "Smazat záložku";
@@ -858,7 +858,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "Zakázat zaznamenávání vaší nedávno ujeté trasy?";
 "off_recent_track_background_button" = "Zakázat";
-"recent_track_background_dialog_message" = "Organic Maps používají geopozici na pozadí, aby se zaznamenala vaše nedávno ujetá trasa.";
+"recent_track_background_dialog_message" = "Sampai používají geopozici na pozadí, aby se zaznamenala vaše nedávno ujetá trasa.";
 "general_settings" = "Obecná nastavení";
 
 /* "traffic" as in road congestion */
@@ -902,7 +902,7 @@
 "switch_to_phone_bookmarks_carplay" = "Přepnutí do telefonu pro zobrazení všech záložek";
 "speedcams_alert_title_carplay_1" = "Rych. kam.";
 "speedcams_alert_title_carplay_2" = "Rych. varování";
-"download_map_carplay" = "Stáhněte si prosím mapy do aplikace Organic Maps ve vašem zařízení";
+"download_map_carplay" = "Stáhněte si prosím mapy do aplikace Sampai ve vašem zařízení";
 "carplay_roundabout_exit" = "%@ výjezd";
 
 /* iOS */
@@ -999,10 +999,10 @@
 "app_tip_09" = "Naším hlavním cílem je vytvářet rychlé, na soukromí zaměřené a snadno použitelné mapy, které si zamilujete.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Na obrazovce telefonu nyní používáte aplikaci Organic Maps";
+"car_used_on_the_phone_screen" = "Na obrazovce telefonu nyní používáte aplikaci Sampai";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Na obrazovce auta nyní používáte aplikaci Organic Maps";
+"car_used_on_the_car_screen" = "Na obrazovce auta nyní používáte aplikaci Sampai";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Pokračujte v telefonu";
@@ -1082,7 +1082,7 @@
 "map" = "Mapa";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Chcete poslat vývojářům hlášení o chybě?\nSpoléháme na naše uživatele, protože společnost Organic Maps neshromažďuje žádné informace o chybách automaticky. Předem vám děkujeme za podporu Organic Maps!";
+"bugreport_alert_message" = "Chcete poslat vývojářům hlášení o chybě?\nSpoléháme na naše uživatele, protože společnost Sampai neshromažďuje žádné informace o chybách automaticky. Předem vám děkujeme za podporu Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "Povolení synchronizace s iCloudem";

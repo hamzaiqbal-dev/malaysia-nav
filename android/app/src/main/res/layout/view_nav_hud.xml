@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:parentTag="android.widget.FrameLayout">
+
+  <LinearLayout
+    android:id="@+id/hud_top_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginStart="@dimen/margin_base"
+    android:layout_marginEnd="@dimen/margin_base"
+    android:layout_marginTop="@dimen/margin_half"
+    android:background="@drawable/bg_nav_hud_card"
+    android:clickable="true"
+    android:elevation="@dimen/nav_elevation"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_base">
+
+    <ImageView
+      android:id="@+id/hud_turn"
+      android:layout_width="56dp"
+      android:layout_height="56dp"
+      android:contentDescription="@null"
+      app:tint="@color/white_primary"
+      tools:src="@drawable/ic_roundabout_exit_12" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/margin_base"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/hud_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Sampai.Label"
+        android:textColor="@color/white_primary"
+        android:textSize="28sp"
+        tools:text="350 m" />
+
+      <TextView
+        android:id="@+id/hud_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.Sampai.Body"
+        android:textColor="@color/white_primary"
+        android:textSize="16sp"
+        tools:text="Jalan Tun Razak" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/hud_eta_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_nav_hud_eta"
+    android:clickable="true"
+    android:elevation="@dimen/nav_elevation"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_base">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/hud_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Sampai.Label"
+        android:textColor="@color/sampai_ok"
+        android:textSize="22sp"
+        tools:text="1 h 5 min" />
+
+      <TextView
+        android:id="@+id/hud_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Sampai.Body"
+        android:textColor="@color/sampai_muted"
+        android:textSize="14sp"
+        tools:text="42 km · 14:35" />
+    </LinearLayout>
+
+    <ImageView
+      android:id="@+id/hud_settings"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:contentDescription="@string/settings"
+      android:padding="@dimen/margin_half"
+      app:srcCompat="@drawable/ic_settings"
+      app:tint="@color/sampai_ink" />
+
+    <Button
+      android:id="@+id/hud_end"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/margin_half"
+      android:backgroundTint="@color/sampai_danger"
+      android:text="@string/navigation_stop_button"
+      android:textColor="@color/white_primary" />
+  </LinearLayout>
+</merge>

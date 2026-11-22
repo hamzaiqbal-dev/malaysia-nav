@@ -157,7 +157,7 @@
 
 /********** Other translations **********/
 
-"share_bookmarks_email_body" = "สวัสดีครับ\n\nแนบมาด้วยบุ๊กมาร์กของผม; กรุณาเปิดใน Organic Maps หากคุณยังไม่ได้ติดตั้ง คุณสามารถดาวน์โหลดได้ที่นี่: https://omaps.app/get?kmz\n\nขอให้สนุกกับการเดินทางด้วย Organic Maps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Sampai.\n\nEnjoy travelling with Sampai!";
 
 /* message title of loading file */
 "load_kmz_title" = "กำลังโหลดบุ๊กมาร์ก";
@@ -175,19 +175,19 @@
 "unknown_current_position" = "ตำแหน่งที่ตั้งของคุณยังไม่ได้รับการกำหนด";
 
 /* Text shown before a shared "my position" link, and the email subject when sharing the current location. */
-"share_my_position" = "ฉันอยู่ที่นี่บน Organic Maps";
+"share_my_position" = "ฉันอยู่ที่นี่บน Sampai";
 
 /* Email subject when sharing a place. %1$@ is the place name or address. */
-"share_place_subject" = "%1$@ บน Organic Maps";
+"share_place_subject" = "%1$@ บน Sampai";
 
 /* Email subject when sharing a place that has no name or address. */
-"share_place_subject_default" = "สถานที่บน Organic Maps";
+"share_place_subject_default" = "สถานที่บน Sampai";
 
-/* Shared email link text; opens the shared place in Organic Maps or in a web browser. */
-"share_open_in_om_or_browser" = "เปิดใน Organic Maps หรือในเบราว์เซอร์";
+/* Shared email link text; opens the shared place in Sampai or in a web browser. */
+"share_open_in_om_or_browser" = "เปิดใน Sampai หรือในเบราว์เซอร์";
 
-/* Shared email link text; leads to the Organic Maps download page. */
-"share_get_om" = "รับ Organic Maps";
+/* Shared email link text; leads to the Sampai download page. */
+"share_get_om" = "รับ Sampai";
 
 /* Title for the "Open in Another App" button on the PlacePage; also shared email link text: opens the shared place in another (geo:) maps app. */
 "open_in_app" = "เปิดในแอปอื่น";
@@ -279,7 +279,7 @@
 /* Text in menu */
 "website" = "เว็บไซต์";
 
-/* Text in About menu, opens Organic Maps news website */
+/* Text in About menu, opens Sampai news website */
 "news" = "ข่าว";
 
 /* Text in menu */
@@ -295,7 +295,7 @@
 "donate" = "บริจาค";
 "already_donated" = "บริจาคแล้ว";
 "remind_me_later" = "เตือนภายหลัง";
-"support_organic_maps" = "สนับสนุน Organic Maps";
+"support_organic_maps" = "สนับสนุน Sampai";
 
 /* Button in the main Help dialog */
 "copyright" = "ลิขสิทธิ์";
@@ -393,7 +393,7 @@
 "blue_gray" = "สีฟ้าอมเทา";
 
 /* Prints version number in About dialog */
-"version" = "เวอร์ชัน Organic Maps: %@";
+"version" = "เวอร์ชัน Sampai: %@";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "รูปแบบ";
@@ -591,7 +591,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… */
 "operator" = "ตัวดำเนินการ: %@";
 "editor_category_unsuitable_title" = "ไม่พบหมวดหมู่ที่เหมาะสมใช่ไหม?";
-"editor_category_unsuitable_text" = "Organic Maps อนุญาตให้เพิ่มหมวดหมู่จุดแบบง่ายเท่านั้น ซึ่งหมายถึงไม่สามารถเพิ่มเมือง ถนน ทะเลสาบ เส้นขอบอาคาร ฯลฯ ได้ กรุณาเพิ่มหมวดหมู่ดังกล่าวโดยตรงที่ <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> โปรดตรวจสอบ<a href=\"https://organicmaps.app/faq/editing/advanced-map-editing\">คู่มือ</a>ของเราสำหรับคำแนะนำแบบละเอียดทีละขั้นตอน";
+"editor_category_unsuitable_text" = "Sampai allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>.";
 "downloader_no_downloaded_maps_title" = "คุณยังไม่ได้ดาวน์โหลดแผนที่";
 "downloader_no_downloaded_maps_message" = "ดาวน์โหลดแผนที่เพื่อค้นหาสถานที่ และนำทางแบบออฟไลน์";
 "current_location_unknown_error_title" = "ไม่ทราบชื่อของที่ตั้งปัจจุบัน";
@@ -726,7 +726,7 @@
 "bookmarks_text_placement_description" = "หากมีบุ๊กมาร์กมากเกินไป การแสดงชื่อของบุ๊กมาร์กบนแผนที่อาจทำให้แอปทำงานช้าลง";
 "show_to_the_right" = "แสดงทางขวา";
 "show_at_the_bottom" = "แสดงที่ด้านล่าง";
-"enable_logging_warning_message" = "ออปชันเพื่อเปิดการบันทึกประวัติการทำงานเพื่อการวินิจฉัย ประวัติดังกล่าวอาจเป็นประโยชน์กับทีมงานช่วยเหลือของเราที่คอยจัดการกับปัญหาที่เจอระหว่างแอปทำงาน โปรดเปิดออปชันดังกล่าวจากการร้องข้อการสนับสนุนจาก Organic Maps เท่านั้น";
+"enable_logging_warning_message" = "ออปชันเพื่อเปิดการบันทึกประวัติการทำงานเพื่อการวินิจฉัย ประวัติดังกล่าวอาจเป็นประโยชน์กับทีมงานช่วยเหลือของเราที่คอยจัดการกับปัญหาที่เจอระหว่างแอปทำงาน โปรดเปิดออปชันดังกล่าวจากการร้องข้อการสนับสนุนจาก Sampai เท่านั้น";
 
 /* Driving profile in routing options settings. */
 "routing_options_driving" = "ขับรถ";
@@ -833,9 +833,9 @@
 
 /* Error dialog no space */
 "migration_no_space_message" = "ในการดาวน์โหลด คุณต้องมีพื้นที่มากขึ้น กรุณาลบเนื้อหาที่ไม่จำเป็นออกไป";
-"editor_sharing_title" = "ฉันได้ปรับปรุงแผนที่ Organic Maps";
+"editor_sharing_title" = "ฉันได้ปรับปรุงแผนที่ Sampai";
 "editor_detailed_description_hint" = "ข้อคิดเห็นอย่างละเอียด";
-"editor_detailed_description" = "คำแนะนำการเปลี่ยนแปลงของคุณจะถูกส่งไปยังกลุ่ม OpenStreetMap โปรดอธิบายรายละเอียดที่ Organic Maps ไม่สามารถแก้ไขได้";
+"editor_detailed_description" = "คำแนะนำการเปลี่ยนแปลงของคุณจะถูกส่งไปยังกลุ่ม OpenStreetMap โปรดอธิบายรายละเอียดที่ Sampai ไม่สามารถแก้ไขได้";
 "current_location_unknown_error_message" = "มีข้อผิดพลาดเกิดขึ้นในขณะที่กำลังหาที่ตั้งที่คุณอยู่ โปรดตรวจสอบอุปกรณ์ของคุณว่าทำงานถูกต้อง และลองใหม่อีกครั้ง";
 "location_services_disabled_header" = "ปิดการใช้งานการระบุตำแหน่งที่ตั้งแล้ว";
 "location_services_disabled_message" = "เปิดใช้งานการเข้าถึงตำแหน่งภูมิศาสตร์ในการตั้งค่าอุปกรณ์";
@@ -847,7 +847,7 @@
 "location_services_disabled_on_device_2" = "2. เลือกความเป็นส่วนตัว";
 "location_services_disabled_on_device_3" = "3. เลือกบริการระบุตำแหน่ง";
 "location_services_disabled_on_device_4" = "4. เปิดบริการระบุตำแหน่ง";
-"location_services_disabled_on_device_additional_message" = "หรือใช้ต่อที่ Organic Maps โดยไม่ต้องระบุตำแหน่ง";
+"location_services_disabled_on_device_additional_message" = "หรือใช้ต่อที่ Sampai โดยไม่ต้องระบุตำแหน่ง";
 "placepage_call_button" = "โทร";
 "placepage_bookmark_name_hint" = "ชื่อของ Bookmark";
 "placepage_delete_bookmark_button" = "ลบ Bookmark";
@@ -858,7 +858,7 @@
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
 "recent_track_background_dialog_title" = "ปิดการใช้งานการบันทึกเส้นทางที่คุณเดินทางเมื่อเร็ว ๆ นี้?";
 "off_recent_track_background_button" = "ปิดการใช้งาน";
-"recent_track_background_dialog_message" = "Organic Maps ใช้ตำแหน่งทางภูมิศาสตร์ของคุณในพื้นหลังเพื่อบันทึกเส้นทางที่คุณเดินทางเมื่อเร็ว ๆ นี้";
+"recent_track_background_dialog_message" = "Sampai ใช้ตำแหน่งทางภูมิศาสตร์ของคุณในพื้นหลังเพื่อบันทึกเส้นทางที่คุณเดินทางเมื่อเร็ว ๆ นี้";
 "general_settings" = "การตั้งค่าทั่วไป";
 
 /* "traffic" as in road congestion */
@@ -902,7 +902,7 @@
 "switch_to_phone_bookmarks_carplay" = "สลับไปที่โทรศัพท์เพื่อดูบุ๊กมาร์กทั้งหมด";
 "speedcams_alert_title_carplay_1" = "จับความเร็ว";
 "speedcams_alert_title_carplay_2" = "เตือนความเร็ว";
-"download_map_carplay" = "โปรดดาวน์โหลดแผนที่ในแอพฯ Organic Maps บนอุปกรณ์ของคุณ";
+"download_map_carplay" = "โปรดดาวน์โหลดแผนที่ในแอพฯ Sampai บนอุปกรณ์ของคุณ";
 "carplay_roundabout_exit" = "ทางออกที่ %@";
 
 /* iOS */
@@ -999,10 +999,10 @@
 "app_tip_09" = "เป้าหมายหลักของเราคือการสร้างแผนที่ที่รวดเร็ว เน้นความเป็นส่วนตัว และใช้งานง่ายที่คุณจะหลงรัก";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "ขณะนี้คุณกำลังใช้ Organic Maps บนหน้าจอโทรศัพท์";
+"car_used_on_the_phone_screen" = "ขณะนี้คุณกำลังใช้ Sampai บนหน้าจอโทรศัพท์";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "ขณะนี้คุณกำลังใช้ Organic Maps บนหน้าจอรถยนต์";
+"car_used_on_the_car_screen" = "ขณะนี้คุณกำลังใช้ Sampai บนหน้าจอรถยนต์";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "ดำเนินการต่อบนโทรศัพท์";
@@ -1082,7 +1082,7 @@
 "map" = "แผนที่";
 
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "คุณต้องการส่งรายงานข้อผิดพลาดไปยังนักพัฒนาหรือไม่?\nเราไว้วางใจผู้ใช้ของเราเนื่องจาก Organic Maps จะไม่รวบรวมข้อมูลข้อผิดพลาดใด ๆ โดยอัตโนมัติ ขอขอบคุณล่วงหน้าสำหรับการสนับสนุน Organic Maps!";
+"bugreport_alert_message" = "คุณต้องการส่งรายงานข้อผิดพลาดไปยังนักพัฒนาหรือไม่?\nเราไว้วางใจผู้ใช้ของเราเนื่องจาก Sampai จะไม่รวบรวมข้อมูลข้อผิดพลาดใด ๆ โดยอัตโนมัติ ขอขอบคุณล่วงหน้าสำหรับการสนับสนุน Sampai!";
 
 /* Title for the "Enable iCloud Syncronization" alert. */
 "enable_icloud_synchronization_title" = "เปิดใช้งานการซิงโครไนซ์ iCloud";

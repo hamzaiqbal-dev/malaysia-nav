@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">Ներբեռնում</string>
     <string name="download_map_title">Ներբեռնել աշխարհի ընդհանուր քարտեզը</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto-ում Organic Maps-ի արդյունավետ աշխատանքի համար անհրաժեշտ է տեղադիրքի թույլտվություն</string>
+    <string name="aa_request_permission_activity_text">Android Auto-ում Sampai-ի արդյունավետ աշխատանքի համար անհրաժեշտ է տեղադիրքի թույլտվություն</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Տալ թույլտվություններ</string>
 </resources>

@@ -105,7 +105,7 @@
     <string name="downloader_loading_ios">डाउनलोड हो रहा है</string>
     <string name="download_map_title">विश्व मानचित्र डाउनलोड करें</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Organic Maps Android Auto में प्रभावी ढंग से काम करने के लिए इसे स्थान अनुमतियों की आवश्यकता होती है</string>
+    <string name="aa_request_permission_activity_text">Sampai Android Auto में प्रभावी ढंग से काम करने के लिए इसे स्थान अनुमतियों की आवश्यकता होती है</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">अनुमतियाँ प्रदान करें</string>
 </resources>
