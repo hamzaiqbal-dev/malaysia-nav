@@ -358,3 +358,23 @@ green while their base is red. Force-push to amend is blocked by the classifier:
 
 Next run: confirm #57 WebDebug re-run. No new code PRs until Hamza picks a stack. Then: privacy policy hosting text,
 Play Data safety draft (check #63 first so it isn't duplicated).
+
+## Nightly run 3: Mon 23 Nov, 01:47 MYT
+
+Hamza merged the second stack into `master` at 00:49–01:45 MYT: #55, #62, #63, #64, #56–#61, #65 (audit), #66
+(final audit fixes). App id is now `com.sampai.maps`. The old stack (#1–#53) is superseded; 42 of those PRs are
+still open and will conflict. Don't rebase them; port single pieces only if Hamza asks.
+
+`master` CI on d8dcdb74: strings check green; Android Beta and iOS Beta red on every push (upstream Firebase /
+TestFlight jobs without secrets); Android Check, CMake, iOS Check and Android Sampai APK (run 45051266794,
+dispatched by Hamza) still running during the run.
+
+### PRs
+- #67 `ci/skip-beta-without-secrets` -> master: gate both beta jobs on repo variable `SAMPAI_BETA_ENABLED`.
+  Only `.github/**` changed, so no checks run on the PR itself.
+- #53 checklist rewritten for the merged state (open audit findings 3, 5–10, ports needed from the old stack).
+  Merges cleanly onto `master`.
+
+Next run: confirm the master Android Check / APK run, put its link in the checklist. Then small code items that
+don't need Hamza: privacy text for GitHub map hosting (finding 5, `assets/privacy.html` + `docs/my/LEGAL.md`),
+drop unused `translated_om_site_url`, then port the toll total onto #59's `TollTable` (HUD + preview).
