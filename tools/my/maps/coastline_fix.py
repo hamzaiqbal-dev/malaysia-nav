@@ -18,6 +18,8 @@ import sys
 
 kMarginDeg = 0.5
 kCoastTag = ("natural", "coastline")
+# OSM API limit; osmconvert rejects ways with more than 100000 nodes.
+kMaxWayNodes = 2000
 
 
 def poly_bbox(poly_paths, margin=kMarginDeg):
@@ -77,6 +79,17 @@ def rings_from_geojson(geojson):
     return rings
 
 
+def split_ring(refs, max_nodes=kMaxWayNodes):
+    """Splits a closed ring of node refs into chained ways sharing end nodes."""
+    ways = []
+    start = 0
+    while start < len(refs) - 1:
+        end = min(start + max_nodes - 1, len(refs) - 1)
+        ways.append(refs[start : end + 1])
+        start = end
+    return ways
+
+
 def write_changes(coast_ways_path, rings, out_path, max_node_id, max_way_id):
     """Writes an osmChange file; libosmium writes version 1 as create, others as modify."""
     import osmium
@@ -99,8 +112,10 @@ def write_changes(coast_ways_path, rings, out_path, max_node_id, max_way_id):
                 writer.add_node(osmium.osm.mutable.Node(id=node_id, version=1, visible=True, location=(lon, lat)))
                 refs.append(node_id)
             refs.append(refs[0])
-            way_id += 1
-            writer.add_way(osmium.osm.mutable.Way(id=way_id, version=1, visible=True, nodes=refs, tags=dict([kCoastTag])))
+            # The generator merges chained coastline ways back into the ring.
+            for part in split_ring(refs):
+                way_id += 1
+                writer.add_way(osmium.osm.mutable.Way(id=way_id, version=1, visible=True, nodes=part, tags=dict([kCoastTag])))
     finally:
         writer.close()
     return modified, len(rings)

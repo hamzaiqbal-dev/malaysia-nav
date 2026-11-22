@@ -68,6 +68,19 @@ class RingsTest(unittest.TestCase):
         self.assertEqual(cf.rings_from_geojson(geojson), [])
 
 
+class SplitRingTest(unittest.TestCase):
+    def test_small_ring_is_one_way(self):
+        self.assertEqual(cf.split_ring([1, 2, 3, 1], max_nodes=4), [[1, 2, 3, 1]])
+
+    def test_long_ring_is_chained(self):
+        ring = list(range(1, 11)) + [1]
+        parts = cf.split_ring(ring, max_nodes=4)
+        self.assertEqual(parts, [[1, 2, 3, 4], [4, 5, 6, 7], [7, 8, 9, 10], [10, 1]])
+        for part in parts:
+            self.assertLessEqual(len(part), 4)
+            self.assertGreaterEqual(len(part), 2)
+
+
 class WriteChangesTest(unittest.TestCase):
     def test_untags_cut_ways_and_adds_rings(self):
         try:
