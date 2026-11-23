@@ -381,3 +381,26 @@ Android Check and CMake on master were still running at the end of the run.
 Next run: confirm master Android Check and CMake. Then small code items that
 don't need Hamza: privacy text for GitHub map hosting (finding 5, `assets/privacy.html` + `docs/my/LEGAL.md`),
 drop unused `translated_om_site_url`, then port the toll total onto #59's `TollTable` (HUD + preview).
+
+## Nightly run 4: Tue 24 Nov, 01:47 MYT
+
+Hamza merged #67 (beta jobs skipped) and #68 (map palette, region names, search categories and brands, README, last
+upstream links) on 23 Nov. #53 closed (checklist is on `master` via #68). 18 old-stack PRs still open (#2–#50);
+not touched, they overlap `master`.
+
+`master` CI at 22e36f3c all green: Android Check, CMake, iOS Check, strings; betas skipped; weekly Android Sampai
+Monkey (first scheduled run, 45222202072) passed.
+
+APK: Android Sampai APK run 45057814862 on master at #68, artifact `sampai-google-debug-arm64`, expires 22 Dec:
+https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45057814862
+
+### PR opened
+- #69 `docs/privacy-github-maps` -> master: privacy policy (EN + BM) and `docs/my/LEGAL.md` name GitHub as the map
+  host and the transfer outside Malaysia (audit finding 5); launch checklist updated for 23 Nov.
+
+Found: iOS About still opens organicmaps.app for privacy, terms, news, support-us (`translated_om_site_url`),
+`Common.contactEmail` is `ios@organicmaps.app`, and SocialMedia.swift has Organic Maps' Threads. Android is clean.
+
+Next run: iOS About leftovers (point privacy/terms at the bundled pages or drop the rows; remove news/support-us and
+the Threads link; then drop `translated_om_site_url` via Twine in a separate `[strings] Regenerated` commit). Then
+port the toll total onto #59's `TollTable` if Hamza hasn't said which old PRs to keep.
