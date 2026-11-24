@@ -1,6 +1,6 @@
 # Sampai launch checklist
 
-Updated by the nightly run. Last update: Tue 24 Nov 2026.
+Updated by the nightly run. Last update: Wed 25 Nov 2026.
 Goal: a Google Play closed test, then a public launch. Background: `docs/my/AUDIT-2026-11-22.md` on `master`.
 
 Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
@@ -32,9 +32,11 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
   the map; `LICENSE`/`NOTICE` untouched (#63).
 - [ ] **(Hamza)** Support email: `SUPPORT_MAIL` is empty in `android/app/build.gradle`, and
   `android/app/src/*/play/contact-email.txt` still say `googleplay@organicmaps.app` (audit finding 8).
-- [ ] iOS About still opens organicmaps.app for privacy, terms, news and support-us (`translated_om_site_url` in
-  `AboutController.swift` and `AboutInfo.swift`), the contact email is `ios@organicmaps.app` (`Common.swift`) and
-  one social link points at Organic Maps' Threads. Android is clean.
+- [ ] iOS About: fixed in #70 (bundled privacy/terms, no Organic Maps links, social, news, donation or
+  `ios@organicmaps.app`). Merge #70. Then move `privacy.html`/`terms.html` to `data/` for both platforms.
+  `translated_om_site_url` is still used by core `Framework::GetDonateUrl` (dormant: our server sends no DonateUrl).
+- [ ] **(Hamza)** iOS support address: `AppConstants.supportEmails` is empty (bug reports open with no recipient),
+  same as Android `SUPPORT_MAIL`.
 - [ ] **(Hamza)** Confirm the logo or send final art.
 - [ ] Left in code on purpose, not on screen: `app.organicmaps` package names.
 
