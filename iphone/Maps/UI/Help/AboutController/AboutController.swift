@@ -7,17 +7,8 @@ final class AboutController: MWMViewController {
     let didTapHandler: (() -> Void)?
   }
 
-  fileprivate struct SocialMediaCollectionViewCellModel {
-    let image: UIImage
-    let didTapHandler: (() -> Void)?
-  }
-
   private enum Constants {
     static let infoTableViewCellHeight: CGFloat = 40
-    static let socialMediaCollectionViewCellMaxWidth: CGFloat = 50
-    static let socialMediaCollectionViewSpacing: CGFloat = 25
-    static let socialMediaCollectionNumberOfItemsInRowCompact: CGFloat = 5
-    static let socialMediaCollectionNumberOfItemsInRowRegular: CGFloat = 10
   }
 
   private let scrollView = UIScrollView()
@@ -25,15 +16,10 @@ final class AboutController: MWMViewController {
   private let logoImageView = UIImageView()
   private let headerTitleLabel = UILabel()
   private let additionalInfoStackView = UIStackView()
-  private var donationView: DonationView?
   private let osmView = OSMView()
   private let infoTableView = UITableView(frame: .zero, style: .plain)
-  private let socialMediaHeaderLabel = UILabel()
-  private let socialMediaCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-  private lazy var socialMediaCollectionViewHeighConstraint = socialMediaCollectionView.heightAnchor.constraint(equalToConstant: .zero)
   private let termsOfUseAndPrivacyPolicyView = ButtonsStackView()
   private var infoTableViewData = [AboutInfoTableViewCellModel]()
-  private var socialMediaCollectionViewData = [SocialMediaCollectionViewCellModel]()
   private var onDidAppearCompletionHandler: (() -> Void)?
 
   init(onDidAppearCompletionHandler: (() -> Void)? = nil) {
@@ -55,22 +41,12 @@ final class AboutController: MWMViewController {
     layoutViews()
   }
 
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    updateCollection()
-  }
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     if let completionHandler = onDidAppearCompletionHandler {
       completionHandler()
       onDidAppearCompletionHandler = nil
     }
-  }
-
-  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    super.traitCollectionDidChange(previousTraitCollection)
-    updateCollection()
   }
 }
 
@@ -118,15 +94,6 @@ private extension AboutController {
       [AboutInfo.noTracking, .noWifi, .community].forEach { additionalInfoStackView.addArrangedSubview(InfoView(image: nil, title: $0.title)) }
     }
 
-    func setupDonation() {
-      guard let donationUrl = Settings.donateUrl() else { return }
-      donationView = DonationView(onTap: { [weak self] in
-        if let self, openUrl(donationUrl, externally: true) {
-          Settings.didShowDonationPage()
-        }
-      })
-    }
-
     func setupOSM() {
       osmView.setMapDate(Self.formattedMapsDataVersion())
       osmView.didTapHandler = { [weak self] in
@@ -145,24 +112,12 @@ private extension AboutController {
       infoTableView.register(cell: InfoTableViewCell.self)
     }
 
-    func setupSocialMediaCollection() {
-      socialMediaHeaderLabel.setFontStyle(.regular16, color: .blackPrimary)
-      socialMediaHeaderLabel.text = L("follow_us")
-      socialMediaHeaderLabel.configureSingleLineAutoScaling()
-
-      socialMediaCollectionView.backgroundColor = .clear
-      socialMediaCollectionView.isScrollEnabled = false
-      socialMediaCollectionView.dataSource = self
-      socialMediaCollectionView.delegate = self
-      socialMediaCollectionView.register(cell: SocialMediaCollectionViewCell.self)
-    }
-
     func setupTermsAndPrivacy() {
       termsOfUseAndPrivacyPolicyView.addButton(title: L("privacy_policy"), didTapHandler: { [weak self] in
-        self?.openUrl(L("translated_om_site_url") + "privacy/")
+        self?.showBundledPage("privacy", title: L("privacy_policy"))
       })
       termsOfUseAndPrivacyPolicyView.addButton(title: L("terms_of_use"), didTapHandler: { [weak self] in
-        self?.openUrl(L("translated_om_site_url") + "terms/")
+        self?.showBundledPage("terms", title: L("terms_of_use"))
       })
       termsOfUseAndPrivacyPolicyView.addButton(title: L("copyright"), didTapHandler: { [weak self] in
         self?.showCopyright()
@@ -176,14 +131,11 @@ private extension AboutController {
     setupLogo()
     setupHeaderTitle()
     setupAdditionalInfo()
-    setupDonation()
     setupOSM()
     setupInfoTable()
-    setupSocialMediaCollection()
     setupTermsAndPrivacy()
 
     infoTableViewData = buildInfoTableViewData()
-    socialMediaCollectionViewData = buildSocialMediaCollectionViewData()
   }
 
   func arrangeViews() {
@@ -192,13 +144,8 @@ private extension AboutController {
     stackView.addArrangedSubview(logoImageView)
     stackView.addArrangedSubview(headerTitleLabel)
     stackView.addArrangedSubviewWithSeparator(additionalInfoStackView)
-    if let donationView {
-      stackView.addArrangedSubviewWithSeparator(donationView)
-    }
     stackView.addArrangedSubviewWithSeparator(osmView)
     stackView.addArrangedSubviewWithSeparator(infoTableView)
-    stackView.addArrangedSubviewWithSeparator(socialMediaHeaderLabel)
-    stackView.addArrangedSubview(socialMediaCollectionView)
     stackView.addArrangedSubviewWithSeparator(termsOfUseAndPrivacyPolicyView)
   }
 
@@ -208,7 +155,6 @@ private extension AboutController {
     logoImageView.translatesAutoresizingMaskIntoConstraints = false
     additionalInfoStackView.translatesAutoresizingMaskIntoConstraints = false
     infoTableView.translatesAutoresizingMaskIntoConstraints = false
-    socialMediaCollectionView.translatesAutoresizingMaskIntoConstraints = false
     termsOfUseAndPrivacyPolicyView.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
@@ -233,66 +179,25 @@ private extension AboutController {
       infoTableView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
       infoTableView.heightAnchor.constraint(equalToConstant: Constants.infoTableViewCellHeight * CGFloat(infoTableViewData.count)),
 
-      socialMediaHeaderLabel.leadingAnchor.constraint(equalTo: socialMediaCollectionView.leadingAnchor),
-
-      socialMediaCollectionView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-      socialMediaCollectionView.contentLayoutGuide.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-      socialMediaCollectionViewHeighConstraint,
-
       termsOfUseAndPrivacyPolicyView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
     ])
-    donationView?.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = donationView != nil
-  }
-
-  func updateCollection() {
-    socialMediaCollectionView.collectionViewLayout.invalidateLayout()
-    // The actual collectionView layout update may not occur during the current layout update cycle.
-    // So constraints update should be performed on the next layout update cycle.
-    DispatchQueue.main.async {
-      self.socialMediaCollectionViewHeighConstraint.constant = self.socialMediaCollectionView.collectionViewLayout.collectionViewContentSize.height
-    }
   }
 
   func buildInfoTableViewData() -> [AboutInfoTableViewCellModel] {
-    let infoContent: [AboutInfo] = [.faq, .reportMapDataProblem, .reportABug, .news, .volunteer, .rateTheApp]
+    let infoContent: [AboutInfo] = [.faq, .reportMapDataProblem, .reportABug, .rateTheApp]
     return infoContent.map { [weak self] aboutInfo in
       AboutInfoTableViewCellModel(title: aboutInfo.title, image: aboutInfo.image, didTapHandler: {
         switch aboutInfo {
         case .faq:
           self?.navigationController?.pushViewController(FaqController(), animated: true)
         case .reportABug:
-          MailComposer.sendBugReportWith(title: "Organic Maps Bug Report")
-        case .reportMapDataProblem, .volunteer, .news:
+          MailComposer.sendBugReportWith(title: "Sampai Bug Report")
+        case .reportMapDataProblem:
           self?.openUrl(aboutInfo.link)
         case .rateTheApp:
           RateUsManager.shared.showAppStoreReviewRequest()
         default:
           break
-        }
-      })
-    }
-  }
-
-  func buildSocialMediaCollectionViewData() -> [SocialMediaCollectionViewCellModel] {
-    let socialMediaContent = SocialMedia.allCases
-    return socialMediaContent.map { [weak self] socialMedia in
-      SocialMediaCollectionViewCellModel(image: socialMedia.image, didTapHandler: {
-        switch socialMedia {
-        case .telegram: fallthrough
-        case .github: fallthrough
-        case .reddit: fallthrough
-        case .matrix: fallthrough
-        case .fosstodon: fallthrough
-        case .facebook: fallthrough
-        case .twitter: fallthrough
-        case .instagram: fallthrough
-        case .linkedin: fallthrough
-        case .tiktok: fallthrough
-        case .threads: fallthrough
-        case .bluesky:
-          self?.openUrl(socialMedia.link, externally: true)
-        case .organicMapsEmail:
-          MailComposer.sendEmail(toRecipients: [socialMedia.link])
         }
       })
     }
@@ -320,9 +225,14 @@ private extension AboutController {
   }
 
   func showCopyright() {
-    let path = Bundle.main.path(forResource: "copyright", ofType: "html")!
+    showBundledPage("copyright", title: L("copyright"))
+  }
+
+  /// Legal pages ship with the app, so they open offline and match the Android ones.
+  func showBundledPage(_ name: String, title: String) {
+    let path = Bundle.main.path(forResource: name, ofType: "html")!
     let html = try! String(contentsOfFile: path, encoding: String.Encoding.utf8)
-    let webViewController = WebViewController(html: html, baseUrl: nil, title: L("copyright"))!
+    let webViewController = WebViewController(html: html, baseUrl: nil, title: title)!
     webViewController.openInSafari = true
     navigationController?.pushViewController(webViewController, animated: true)
   }
@@ -372,56 +282,6 @@ extension AboutController: UITableViewDataSource {
     let aboutInfo = infoTableViewData[indexPath.row]
     cell.set(image: aboutInfo.image, title: aboutInfo.title)
     return cell
-  }
-}
-
-// MARK: - UICollectionViewDataSource
-
-extension AboutController: UICollectionViewDataSource {
-  func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-    socialMediaCollectionViewData.count
-  }
-
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(cell: SocialMediaCollectionViewCell.self, indexPath: indexPath)
-    cell.setImage(socialMediaCollectionViewData[indexPath.row].image)
-    return cell
-  }
-}
-
-// MARK: - UICollectionViewDelegate
-
-extension AboutController: UICollectionViewDelegate {
-  func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let model = socialMediaCollectionViewData[indexPath.row]
-    model.didTapHandler?()
-  }
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension AboutController: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
-    let spacing = Constants.socialMediaCollectionViewSpacing
-    let numberOfItemsInRowCompact = Constants.socialMediaCollectionNumberOfItemsInRowCompact
-    let numberOfItemsInRowRegular = Constants.socialMediaCollectionNumberOfItemsInRowRegular
-    var totalSpacing = (Constants.socialMediaCollectionNumberOfItemsInRowCompact - 1) * spacing
-    var width = (collectionView.bounds.width - totalSpacing) / numberOfItemsInRowCompact
-    if traitCollection.verticalSizeClass == .compact || traitCollection.horizontalSizeClass == .regular {
-      totalSpacing = (numberOfItemsInRowRegular - 1) * spacing
-      width = (collectionView.bounds.width - totalSpacing) / numberOfItemsInRowRegular
-    }
-    let maxWidth = Constants.socialMediaCollectionViewCellMaxWidth
-    width = min(width, maxWidth)
-    return CGSize(width: width, height: width)
-  }
-
-  func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumLineSpacingForSectionAt _: Int) -> CGFloat {
-    Constants.socialMediaCollectionViewSpacing
-  }
-
-  func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumInteritemSpacingForSectionAt _: Int) -> CGFloat {
-    Constants.socialMediaCollectionViewSpacing
   }
 }
 
