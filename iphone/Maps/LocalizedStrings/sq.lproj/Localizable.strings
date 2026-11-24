@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Faqja e internetit";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Lajme";
-
 /* Text in menu */
 "rate_the_app" = "Vlerësoni aplikacionin";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Errësirë";
 
-/* Tex label above the Donate button */
-"donate_description" = "Dhuroni harta falas pa reklama për miliona përdorues!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Raporto ose rregullo të dhënat e gabuara të hartës";
-
-/* Button in the About screen */
-"volunteer" = "Vullnetar";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Na ndiqni dhe na kontaktoni:";
 
 /* Alert text */
 "email_error_body" = "Klienti i emailit nuk është konfiguruar. Ju lutemi konfigurojeni ose na kontaktoni në %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Filloni të lëvizni për të parë profilin e lartësisë";
 "isolines_toast_zooms_1_10" = "Zmadhoni për të eksploruar izolinat";
 "downloader_loading_ios" = "Duke shkarkuar";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

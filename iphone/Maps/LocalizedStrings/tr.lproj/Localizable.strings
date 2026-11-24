@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Web Sitesi";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Haberler";
-
 /* Text in menu */
 "rate_the_app" = "Uygulamayı değerlendir";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Koyu";
 
-/* Tex label above the Donate button */
-"donate_description" = "Milyonlarca kullanıcıya reklamsız ve ücretsiz haritalar hediye edin!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Haritadaki hataları bildir ya da düzelt";
-
-/* Button in the About screen */
-"volunteer" = "Gönüllü ol";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Bizi izle ve iletişime geç:";
 
 /* Alert text */
 "email_error_body" = "E-posta istemcisi henüz kurulmamış. Lütfen e-posta istemcisini yapılandırın veya bize %@ adresinden ulaşmak için başka bir yöntem deneyin";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Yükseklik profilini görmek için hareket etmeye başlayın";
 "isolines_toast_zooms_1_10" = "İzohipsleri görmek için haritayı büyütün";
 "downloader_loading_ios" = "İndiriliyor";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsTR";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmapstr";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/tr/";

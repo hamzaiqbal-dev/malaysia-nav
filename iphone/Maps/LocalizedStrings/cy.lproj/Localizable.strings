@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Gwefan";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Newyddion";
-
 /* Text in menu */
 "rate_the_app" = "Rhoi sgôr i'r ap";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Tywyll";
 
-/* Tex label above the Donate button */
-"donate_description" = "Rhowch fapiau am ddim heb hysbysebion i filiynau o ddefnyddwyr!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Rhoi gwybod am ddata map anghywir neu ei gywiro";
-
-/* Button in the About screen */
-"volunteer" = "Gwirfoddoli";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Dilyn a chysylltu â ni:";
 
 /* Alert text */
 "email_error_body" = "Nid yw'r cleient e-bost wedi'i ffurfweddu. Ffurfweddwch ef neu cysylltwch â ni yn %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Dechreuwch symud i weld proffil yr uchder";
 "isolines_toast_zooms_1_10" = "Chwyddwch i mewn i archwilio'r llinellau cyfuchlin";
 "downloader_loading_ios" = "Wrthi'n lawrlwytho";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/cy/";

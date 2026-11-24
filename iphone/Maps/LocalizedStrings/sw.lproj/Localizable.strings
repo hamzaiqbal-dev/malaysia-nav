@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Tovuti";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Habari";
-
 /* Text in menu */
 "rate_the_app" = "Tathmini programu";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Giza";
 
-/* Tex label above the Donate button */
-"donate_description" = "Zawadia mamilioni ya watumiaji ramani za bure bila matangazo!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Ripoti au urekebishe data isiyo sahihi ya ramani";
-
-/* Button in the About screen */
-"volunteer" = "Kujitolea";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Fuata na uwasiliane nasi:";
 
 /* Alert text */
 "email_error_body" = "Mteja wa barua pepe haujaanzishwa. Tafadhali usanidi au wasiliana nasi kwa %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Anza kusonga ili kuona wasifu wa mwinuko";
 "isolines_toast_zooms_1_10" = "Vuta karibu kutalii mistari ya kontua";
 "downloader_loading_ios" = "Inapakua";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Webgunea";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Albisteak";
-
 /* Text in menu */
 "rate_the_app" = "Baloratu aplikazioa";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Iluna";
 
-/* Tex label above the Donate button */
-"donate_description" = "Oparitu doako mapak iragarkirik gabe milioika erabiltzaileri!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Salatu edo konpondu maparen datu okerrak";
-
-/* Button in the About screen */
-"volunteer" = "Boluntario izateko";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Jarraitu eta jarri gurekin harremanetan:";
 
 /* Alert text */
 "email_error_body" = "Posta elektronikoko bezeroa ez da konfiguratu. Mesedez, konfigura ezazu edo erabili beste moduren bat gurekin harremanetan jartzeko %@ helbidean";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Hasi mugitzen altitude-profila ikusteko";
 "isolines_toast_zooms_1_10" = "Handitu mapa sestra kurbak ikusteko";
 "downloader_loading_ios" = "Deskargatzen";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/eu/";

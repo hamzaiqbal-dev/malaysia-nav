@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Websajt";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Aħbarijiet";
-
 /* Text in menu */
 "rate_the_app" = "Għati rata lill-app";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Skur";
 
-/* Tex label above the Donate button */
-"donate_description" = "Agħti mapep b'xejn u bla reklami lil miljuni ta' utenti!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Irrapporta jew sewwi informazzjoni żbaljata tal-mappa";
-
-/* Button in the About screen */
-"volunteer" = "Voluntier";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Segwi u kkuntattjana:";
 
 /* Alert text */
 "email_error_body" = "Il-klijent tal-posta elettronika ma ġiex ikkonfigurat. Jekk jogħġbok ikkonfiguraha jew ikkuntattjana fuq %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Ibda ċċaqlaq biex tara l-profil tal-elevazzjoni";
 "isolines_toast_zooms_1_10" = "Iżżumja ’l ġewwa biex tesplora l-isolines";
 "downloader_loading_ios" = "Tniżżil";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

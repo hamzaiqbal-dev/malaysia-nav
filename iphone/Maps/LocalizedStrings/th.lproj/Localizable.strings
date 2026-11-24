@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "เว็บไซต์";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "ข่าว";
-
 /* Text in menu */
 "rate_the_app" = "ให้คะแนนแอป";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "มืด";
 
-/* Tex label above the Donate button */
-"donate_description" = "มอบแผนที่ฟรีไม่มีโฆษณาให้แก่ผู้ใช้นับล้าน!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "รายงานหรือแก้ไขข้อมูลแผนที่ที่ไม่ถูกต้อง";
-
-/* Button in the About screen */
-"volunteer" = "อาสาสมัคร";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "ติดตามและติดต่อเรา:";
 
 /* Alert text */
 "email_error_body" = "อีเมลลูกค้ายังไม่ได้รับการจัดตั้งขึ้น กรุณาตั้งค่าหรือใช้วิธีอื่นที่จะติดต่อเราที่ %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "เริ่มเคลื่อนที่เพื่อดูโปรไฟล์ระดับความสูง";
 "isolines_toast_zooms_1_10" = "ขยายเข้าเพื่อสำรวจเส้นชั้นความสูง";
 "downloader_loading_ios" = "การดาวน์โหลด";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

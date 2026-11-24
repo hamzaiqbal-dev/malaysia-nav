@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Vefsvæði";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Fréttir";
-
 /* Text in menu */
 "rate_the_app" = "Gefðu forritinu einkunn";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Dökkt";
 
-/* Tex label above the Donate button */
-"donate_description" = "Gefðu milljónum notenda ókeypis kort án auglýsinga!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Tilkynntu eða lagaðu röng kortagögn";
-
-/* Button in the About screen */
-"volunteer" = "Bjóða sig fram";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Fylgjast með okkur og hafa samband:";
 
 /* Alert text */
 "email_error_body" = "Tölvupóstforrit hefur ekki verið sett upp. Stilltu það eða hafðu samband við okkur á %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Byrjaðu að hreyfa þig til að sjá hæðarsniðið";
 "isolines_toast_zooms_1_10" = "Renndu að til að skoða hæðarlínur";
 "downloader_loading_ios" = "Sæki";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";
