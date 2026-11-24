@@ -404,3 +404,22 @@ Found: iOS About still opens organicmaps.app for privacy, terms, news, support-u
 Next run: iOS About leftovers (point privacy/terms at the bundled pages or drop the rows; remove news/support-us and
 the Threads link; then drop `translated_om_site_url` via Twine in a separate `[strings] Regenerated` commit). Then
 port the toll total onto #59's `TollTable` if Hamza hasn't said which old PRs to keep.
+
+## Nightly run 5: Wed 25 Nov, 01:47 MYT
+
+No merges or comments since run 4. `master` (22e36f3c) still all green. #69 (privacy text) green, waiting for Hamza.
+
+### PRs
+- #70 `fix/ios-about-leftovers` -> master: iOS About opens the bundled privacy/terms pages (referenced from the
+  Android assets so #69 doesn't conflict), drops News, Volunteer, the Organic Maps social links, donation button
+  and `ios@organicmaps.app` (bug reports with logs went there). Unused strings removed, separate
+  `[strings] Regenerated` commit.
+- #69: launch checklist updated for 25 Nov.
+
+APK: still run 45057814862 on master (expires 22 Dec); #70 also builds one.
+
+Left on purpose: `translated_om_site_url` (core `GetDonateUrl`, dormant), `app.organicmaps.3daction.*` quick-action
+ids (not visible), tab-bar crowdfunding icon (only shows with a server DonateUrl).
+
+Next run: after #69 and #70 merge, move `privacy.html`/`terms.html` to `data/` with Android symlinks. Then port the
+toll total onto `TollTable` (HUD + route preview) if Hamza hasn't said which old toll PRs to keep.
