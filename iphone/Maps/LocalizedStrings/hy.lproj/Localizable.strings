@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Կայք";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Նորություններ";
-
 /* Text in menu */
 "rate_the_app" = "Գնահատել հավելվածը";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Մուգ";
 
-/* Tex label above the Donate button */
-"donate_description" = "Նվիրեք անվճար և առանց գովազդի քարտեզներ միլիոնավոր օգտատերերի:";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Հայտնել կամ ուղղել քարտեզի սխալ տվյալները";
-
-/* Button in the About screen */
-"volunteer" = "Կամավոր";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Հետևեք և կապվեք մեզ հետ՝";
 
 /* Alert text */
 "email_error_body" = "Էլ. փոստի հավելվածը կարգավորված չէ: Խնդրում ենք կարգավորել այն կամ կապվել մեզ հետ՝ %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Սկսեք շարժվել՝ բարձրության պրոֆիլը տեսնելու համար";
 "isolines_toast_zooms_1_10" = "Մեծացրեք մասշտաբը՝ հորիզոնականները տեսնելու համար";
 "downloader_loading_ios" = "Ներբեռնում";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

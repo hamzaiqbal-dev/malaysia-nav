@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Lloc web";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Notícies";
-
 /* Text in menu */
 "rate_the_app" = "Puntua l'aplicació";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Fosc";
 
-/* Tex label above the Donate button */
-"donate_description" = "Regala mapes gratuïts sense anuncis a milions d'usuaris!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Informa o corregeix dades de mapa incorrectes";
-
-/* Button in the About screen */
-"volunteer" = "Fer-se voluntari";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Segueix i contacta amb nosaltres:";
 
 /* Alert text */
 "email_error_body" = "No s'ha configurat cap client de correu electrònic. Configureu-lo o useu un altra via per contactar amb nosaltres a %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Comença a moure't per veure el perfil d'elevació";
 "isolines_toast_zooms_1_10" = "Apropeu el mapa per a explorar les isolínies";
 "downloader_loading_ios" = "S’està baixant";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/ca/";

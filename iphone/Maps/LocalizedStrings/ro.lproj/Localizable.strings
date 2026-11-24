@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Site web";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Știri";
-
 /* Text in menu */
 "rate_the_app" = "Evaluează aplicația";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Întunecat";
 
-/* Tex label above the Donate button */
-"donate_description" = "Oferiți hărți gratuite fără reclame pentru milioane de utilizatori!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Raportați sau remediați datele incorecte de pe hartă";
-
-/* Button in the About screen */
-"volunteer" = "Pentru a fi voluntar";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Urmăriți-ne și contactați-ne:";
 
 /* Alert text */
 "email_error_body" = "Aplicația de email nu a fost stabilită. Stabilește-o sau utilizează alt mod de a ne contacta la %@.";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Începeți să vă deplasați pentru a vedea profilul altitudinii";
 "isolines_toast_zooms_1_10" = "Mărește harta pentru a vedea izoliniile";
 "downloader_loading_ios" = "Se descarcă";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

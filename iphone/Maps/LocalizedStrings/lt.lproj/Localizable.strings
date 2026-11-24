@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Svetainė";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Naujienos";
-
 /* Text in menu */
 "rate_the_app" = "Įvertinti šią programėlę";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Tamsi";
 
-/* Tex label above the Donate button */
-"donate_description" = "Padovanokite nemokamus žemėlapius be skelbimų milijonams vartotojų!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Ištaisyti arba pranešti apie neteisingus duomenis žemėlapyje";
-
-/* Button in the About screen */
-"volunteer" = "Prisidėti";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Sekite ar susisiekite su mumis:";
 
 /* Alert text */
 "email_error_body" = "El. pašto programa nenustatyta. Sukonfigūruokite ją arba susisiekite su mumis adresu %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Pradėkite judėti, kad matytumėte aukščio profilį";
 "isolines_toast_zooms_1_10" = "Priartinkite, jei norite patyrinėti izolinijas";
 "downloader_loading_ios" = "Atsiunčiama";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/lt/";

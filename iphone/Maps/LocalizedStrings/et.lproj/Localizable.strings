@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Veebisait";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Uudised";
-
 /* Text in menu */
 "rate_the_app" = "Hinda rakendust";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Tume kujundus";
 
-/* Tex label above the Donate button */
-"donate_description" = "Kingi miljonitele kasutajatele tasuta ja reklaamideta kaardid!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Paranda vigaseid kaardiandmeid või teata neist";
-
-/* Button in the About screen */
-"volunteer" = "Vabatahtlik kaastöö";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Jälgi ja võta meiega ühendust:";
 
 /* Alert text */
 "email_error_body" = "E-posti klienti ei ole seadistatud. Palun seadista see või kasuta mõnda muud võimalust meiega ühenduse võtmiseks aadressil %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Alusta liikumist, et näha kõrgusprofiili";
 "isolines_toast_zooms_1_10" = "Samakõrgusjoonte sirvimiseks suurenda kaarti";
 "downloader_loading_ios" = "Allalaadimisel";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/et/";

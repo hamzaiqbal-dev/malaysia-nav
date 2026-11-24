@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "网站";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "新闻";
-
 /* Text in menu */
 "rate_the_app" = "为我们评分";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "深色";
 
-/* Tex label above the Donate button */
-"donate_description" = "向数百万用户赠送无广告的免费地图！";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "报告或修复不正确的地图数据";
-
-/* Button in the About screen */
-"volunteer" = "志愿者";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "关注并联系我们：";
 
 /* Alert text */
 "email_error_body" = "尚未设置电子邮件客户端。请进行配置或通过 %@ 联系我们";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "开始移动以查看海拔剖面";
 "isolines_toast_zooms_1_10" = "放大地图以查看等高线";
 "downloader_loading_ios" = "正在下载";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/zh-Hans/";

@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "वेबसाइट";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "समाचार";
-
 /* Text in menu */
 "rate_the_app" = "एप्लिकेशन की श्रेणी बताओ";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "गहरा";
 
-/* Tex label above the Donate button */
-"donate_description" = "लाखों उपयोगकर्ताओं को बिना विज्ञापनों वाले मुफ़्त नक्शे उपहार में दें!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "गलत मानचित्र डेटा की रिपोर्ट करें या उसे ठीक करें";
-
-/* Button in the About screen */
-"volunteer" = "स्वयंसेवक";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "फ़ॉलो करें और हमसे संपर्क करें:";
 
 /* Alert text */
 "email_error_body" = "ईमेल क्लाइंट सेट अप नहीं किया गया है. कृपया इसे कॉन्फ़िगर करें या %@ पर हमसे संपर्क करें";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "ऊँचाई प्रोफ़ाइल देखने के लिए चलना शुरू करें";
 "isolines_toast_zooms_1_10" = "इज़ोलाइन्स का अन्वेषण करने के लिए ज़ूम इन करें";
 "downloader_loading_ios" = "डाउनलोड हो रहा है";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/hi/";

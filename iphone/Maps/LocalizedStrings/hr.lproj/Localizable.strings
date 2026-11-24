@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Web stranica";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Novosti";
-
 /* Text in menu */
 "rate_the_app" = "Ocijeni aplikaciju";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Tamna";
 
-/* Tex label above the Donate button */
-"donate_description" = "Poklonite besplatne karte bez oglasa milijunima korisnika!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Prijavite ili ispravite netočne podatke karte";
-
-/* Button in the About screen */
-"volunteer" = "Volonter";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Pratite nas i kontaktirajte nas:";
 
 /* Alert text */
 "email_error_body" = "Klijent e-pošte nije postavljen. Molimo konfigurirajte ga ili nas kontaktirajte na %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Počnite se kretati za prikaz visinskog profila";
 "isolines_toast_zooms_1_10" = "Uvećaj prikaz karte za prikaz izohipsa";
 "downloader_loading_ios" = "Preuzimanje";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

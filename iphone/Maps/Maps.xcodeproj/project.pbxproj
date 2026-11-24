@@ -31,6 +31,8 @@
 		6741A95D1BF340DE002C974C /* types.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA64D9A813F975AD00350ECF /* types.txt */; };
 		6741A9681BF340DE002C974C /* faq.html in Resources */ = {isa = PBXBuildFile; fileRef = 978D4A30199A11E600D72CA7 /* faq.html */; };
 		6741A9711BF340DE002C974C /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 97A5967E19B9CD47007A963F /* copyright.html */; };
+		5A3D10012F9A000100C0FFEE /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D10022F9A000100C0FFEE /* privacy.html */; };
+		5A3D10032F9A000100C0FFEE /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D10042F9A000100C0FFEE /* terms.html */; };
 		6741A9751BF340DE002C974C /* WorldCoasts.mwm in Resources */ = {isa = PBXBuildFile; fileRef = FA459EB314327AF700B5BB3C /* WorldCoasts.mwm */; };
 		6741A9761BF340DE002C974C /* packed_polygons.bin in Resources */ = {isa = PBXBuildFile; fileRef = FA85F632145DDDC20090E1A0 /* packed_polygons.bin */; };
 		6741A97D1BF340DE002C974C /* synonyms.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAAEA7D0161BD26600CCD661 /* synonyms.txt */; };
@@ -214,13 +216,10 @@
 		ED82C55B2F90180300FA103D /* MWMObjectsCategorySelectorController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3782F90180300FA103D /* MWMObjectsCategorySelectorController.mm */; };
 		ED82C55C2F90180300FA103D /* MWMObjectsCategorySelectorDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED82C37A2F90180300FA103D /* MWMObjectsCategorySelectorDataSource.mm */; };
 		ED82C55D2F90180300FA103D /* AboutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C37C2F90180300FA103D /* AboutInfo.swift */; };
-		ED82C55E2F90180300FA103D /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C37D2F90180300FA103D /* SocialMedia.swift */; };
 		ED82C55F2F90180300FA103D /* ButtonsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C37F2F90180300FA103D /* ButtonsStackView.swift */; };
-		ED82C5602F90180300FA103D /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3802F90180300FA103D /* DonationView.swift */; };
 		ED82C5612F90180300FA103D /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3812F90180300FA103D /* InfoTableViewCell.swift */; };
 		ED82C5622F90180300FA103D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3822F90180300FA103D /* InfoView.swift */; };
 		ED82C5632F90180300FA103D /* OSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3832F90180300FA103D /* OSMView.swift */; };
-		ED82C5642F90180300FA103D /* SocialMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3842F90180300FA103D /* SocialMediaCollectionViewCell.swift */; };
 		ED82C5652F90180300FA103D /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3862F90180300FA103D /* AboutController.swift */; };
 		ED82C5662F90180300FA103D /* FaqController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C3882F90180300FA103D /* FaqController.swift */; };
 		ED82C5672F90180300FA103D /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82C38A2F90180300FA103D /* MailComposer.swift */; };
@@ -859,6 +858,8 @@
 		8D1107310486CEB800E47090 /* OMaps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OMaps.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		978D4A30199A11E600D72CA7 /* faq.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = faq.html; path = ../../data/faq.html; sourceTree = "<group>"; };
 		97A5967E19B9CD47007A963F /* copyright.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = copyright.html; path = ../../data/copyright.html; sourceTree = "<group>"; };
+		5A3D10022F9A000100C0FFEE /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = privacy.html; path = ../../android/app/src/main/assets/privacy.html; sourceTree = "<group>"; };
+		5A3D10042F9A000100C0FFEE /* terms.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = terms.html; path = ../../android/app/src/main/assets/terms.html; sourceTree = "<group>"; };
 		A10000000000000000000006 /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
 		A10000000000000000000007 /* RootSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSettingsInteractor.swift; sourceTree = "<group>"; };
 		A10000000000000000000008 /* RootSettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSettingsModels.swift; sourceTree = "<group>"; };
@@ -1166,13 +1167,10 @@
 		ED82C3792F90180300FA103D /* MWMObjectsCategorySelectorDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMObjectsCategorySelectorDataSource.h; sourceTree = "<group>"; };
 		ED82C37A2F90180300FA103D /* MWMObjectsCategorySelectorDataSource.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMObjectsCategorySelectorDataSource.mm; sourceTree = "<group>"; };
 		ED82C37C2F90180300FA103D /* AboutInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInfo.swift; sourceTree = "<group>"; };
-		ED82C37D2F90180300FA103D /* SocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
 		ED82C37F2F90180300FA103D /* ButtonsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStackView.swift; sourceTree = "<group>"; };
-		ED82C3802F90180300FA103D /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
 		ED82C3812F90180300FA103D /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		ED82C3822F90180300FA103D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		ED82C3832F90180300FA103D /* OSMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSMView.swift; sourceTree = "<group>"; };
-		ED82C3842F90180300FA103D /* SocialMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED82C3862F90180300FA103D /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		ED82C3882F90180300FA103D /* FaqController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqController.swift; sourceTree = "<group>"; };
 		ED82C38A2F90180300FA103D /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
@@ -2705,7 +2703,6 @@
 			isa = PBXGroup;
 			children = (
 				ED82C37C2F90180300FA103D /* AboutInfo.swift */,
-				ED82C37D2F90180300FA103D /* SocialMedia.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2714,11 +2711,9 @@
 			isa = PBXGroup;
 			children = (
 				ED82C37F2F90180300FA103D /* ButtonsStackView.swift */,
-				ED82C3802F90180300FA103D /* DonationView.swift */,
 				ED82C3812F90180300FA103D /* InfoTableViewCell.swift */,
 				ED82C3822F90180300FA103D /* InfoView.swift */,
 				ED82C3832F90180300FA103D /* OSMView.swift */,
-				ED82C3842F90180300FA103D /* SocialMediaCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -4193,6 +4188,8 @@
 				EE026F0511D6AC0D00645242 /* classificator.txt */,
 				452FCA3A1B6A3DF7007019AB /* colors.txt */,
 				97A5967E19B9CD47007A963F /* copyright.html */,
+				5A3D10022F9A000100C0FFEE /* privacy.html */,
+				5A3D10042F9A000100C0FFEE /* terms.html */,
 				FA46DA2B12D4166E00968C36 /* countries.json */,
 				DB05F1BC1BF340DE002C974C /* drules_default.bin */,
 				DB05F1BD1BF340DE002C974C /* drules_outdoors.bin */,
@@ -4433,6 +4430,8 @@
 				6741A9451BF340DE002C974C /* classificator.txt in Resources */,
 				676507611C10559B00830BB3 /* colors.txt in Resources */,
 				6741A9711BF340DE002C974C /* copyright.html in Resources */,
+				5A3D10012F9A000100C0FFEE /* privacy.html in Resources */,
+				5A3D10032F9A000100C0FFEE /* terms.html in Resources */,
 				4A300ED51C6DCFD400140018 /* countries-strings in Resources */,
 				6741A9491BF340DE002C974C /* countries.json in Resources */,
 				DB05F1CC1BF340DE002C974C /* drules_default.bin in Resources */,
@@ -4663,13 +4662,10 @@
 				ED82C55B2F90180300FA103D /* MWMObjectsCategorySelectorController.mm in Sources */,
 				ED82C55C2F90180300FA103D /* MWMObjectsCategorySelectorDataSource.mm in Sources */,
 				ED82C55D2F90180300FA103D /* AboutInfo.swift in Sources */,
-				ED82C55E2F90180300FA103D /* SocialMedia.swift in Sources */,
 				ED82C55F2F90180300FA103D /* ButtonsStackView.swift in Sources */,
-				ED82C5602F90180300FA103D /* DonationView.swift in Sources */,
 				ED82C5612F90180300FA103D /* InfoTableViewCell.swift in Sources */,
 				ED82C5622F90180300FA103D /* InfoView.swift in Sources */,
 				ED82C5632F90180300FA103D /* OSMView.swift in Sources */,
-				ED82C5642F90180300FA103D /* SocialMediaCollectionViewCell.swift in Sources */,
 				ED82C5652F90180300FA103D /* AboutController.swift in Sources */,
 				ED82C5662F90180300FA103D /* FaqController.swift in Sources */,
 				ED82C5672F90180300FA103D /* MailComposer.swift in Sources */,

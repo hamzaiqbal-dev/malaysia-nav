@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Nettside";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Nyheter";
-
 /* Text in menu */
 "rate_the_app" = "Ranger appen";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Mørke";
 
-/* Tex label above the Donate button */
-"donate_description" = "Gi gratis kart uten reklame til millioner av brukere!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Rapportere eller korrigere feil kartdata";
-
-/* Button in the About screen */
-"volunteer" = "Frivillig arbeid";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Følg og kontakt oss:";
 
 /* Alert text */
 "email_error_body" = "E-postklienten har ikke blitt konfigurert. Konfigurer den eller bruk en annen måte å kontakte oss på %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Begynn å bevege deg for å se høydeprofilen";
 "isolines_toast_zooms_1_10" = "Forstørr kartet for å se høydekurver";
 "downloader_loading_ios" = "Nedlasting";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

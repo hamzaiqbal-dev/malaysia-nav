@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "ເວັບໄຊ";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "ຂ່າວສານ";
-
 /* Text in menu */
 "rate_the_app" = "ໃຫ້ຄະແນນແອັບ";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "ມືດ";
 
-/* Tex label above the Donate button */
-"donate_description" = "ມອບແຜນທີ່ຟຣີທີ່ບໍ່ມີໂຄສະນາໃຫ້ກັບຜູ້ໃຊ້ຫຼາຍລ້ານຄົນ!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "ແຈ້ງ ຫຼື ແກ້ໄຂຂໍ້ມູນແຜນທີ່ທີ່ບໍ່ຖືກຕ້ອງ";
-
-/* Button in the About screen */
-"volunteer" = "ອາສາສະໝັກ";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "ຕິດຕາມ ແລະ ຕິດຕໍ່ພວກເຮົາ:";
 
 /* Alert text */
 "email_error_body" = "ຍັງບໍ່ທັນໄດ້ຕັ້ງຄ່າແອັບອີເມລ. ກະລຸນາຕັ້ງຄ່າ ຫຼື ຕິດຕໍ່ພວກເຮົາທີ່ %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "ເລີ່ມເຄື່ອນທີ່ເພື່ອເບິ່ງໂປຣໄຟລ໌ລະດັບຄວາມສູງ";
 "isolines_toast_zooms_1_10" = "ຊູມເຂົ້າເພື່ອເບິ່ງເສັ້ນລະດັບຄວາມສູງ";
 "downloader_loading_ios" = "ກຳລັງດາວໂຫລດ";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";

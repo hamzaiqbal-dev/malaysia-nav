@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "وبگاه";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "اخبار";
-
 /* Text in menu */
 "rate_the_app" = "به برنامه امتیاز دهید";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "تیره";
 
-/* Tex label above the Donate button */
-"donate_description" = "نقشه‌های رایگان و بدون تبلیغات را به میلیون‌ها کاربر هدیه دهید!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "داده های نقشه نادرست را گزارش یا اصلاح کنید";
-
-/* Button in the About screen */
-"volunteer" = "داوطلب شدن";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "دنبال کنید و با ما تماس بگیرید:";
 
 /* Alert text */
 "email_error_body" = "کلاینت ایمیل شما پیکربندی نشده است.لطفا آن را پیکربندی کنید یا از طریق دیگر با ما تماس بگیرید %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "برای دیدن نمایه ارتفاع حرکت را شروع کنید";
 "isolines_toast_zooms_1_10" = "برای بررسی خطوط تراز زوم کنید";
 "downloader_loading_ios" = "در حال دانلود";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/fa-IR/";

@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Honlap";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Hírek";
-
 /* Text in menu */
 "rate_the_app" = "Értékelje az alkalmazást";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Sötét";
 
-/* Tex label above the Donate button */
-"donate_description" = "Ajándékozzon ingyenes, hirdetésmentes térképeket felhasználók millióinak!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Hibás térképadatok jelentése vagy javítása";
-
-/* Button in the About screen */
-"volunteer" = "Önkéntes";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Kövessen és lépjen kapcsolatba velünk:";
 
 /* Alert text */
 "email_error_body" = "Az e-mail kliens nem lett beállítva. Állítsa be, vagy lépjen kapcsolatba velünk a(z) %@ címen";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Induljon el a magassági profil megtekintéséhez";
 "isolines_toast_zooms_1_10" = "Nagyítás az izovonalak felfedezéséhez";
 "downloader_loading_ios" = "Letöltés";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsApp";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/hu/";

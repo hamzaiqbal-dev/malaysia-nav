@@ -279,9 +279,6 @@
 /* Text in menu */
 "website" = "Вэб-сайт";
 
-/* Text in About menu, opens Sampai news website */
-"news" = "Навіны";
-
 /* Text in menu */
 "rate_the_app" = "Ацаніць праграму";
 
@@ -404,17 +401,8 @@
 /* Settings "Appearance" category: "Dark" title, should be consistent with the pref_appearance_title translation. */
 "pref_appearance_dark" = "Цёмны";
 
-/* Tex label above the Donate button */
-"donate_description" = "Падарыце бясплатныя мапы без рэкламы мільёнам карыстальнікаў!";
-
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Выправіць або паведаміць пра няправільныя даныя на карце";
-
-/* Button in the About screen */
-"volunteer" = "Стаць валанцёрам";
-
-/* "Social media" section header in the About screen */
-"follow_us" = "Падпісвайцеся і пішыце нам:";
 
 /* Alert text */
 "email_error_body" = "Паштовы кліент не наладжаны. Наладзьце яго альбо звяжыцеся з намі па адрасе %@";
@@ -955,12 +943,6 @@
 "elevation_profile_placeholder" = "Пачніце рухацца, каб убачыць профіль вышыні";
 "isolines_toast_zooms_1_10" = "Павялічце мапу, каб убачыць рэльеф";
 "downloader_loading_ios" = "Спампоўванне";
-
-/* Telegram group url for the "?" About page */
-"telegram_url" = "https://t.me/OrganicMapsRu";
-
-/* Instagram account url for the "?" About page */
-"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 /* Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/ru/";
