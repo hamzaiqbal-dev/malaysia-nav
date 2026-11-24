@@ -416,7 +416,8 @@ No merges or comments since run 4. `master` (22e36f3c) still all green. #69 (pri
   `[strings] Regenerated` commit.
 - #69: launch checklist updated for 25 Nov.
 
-APK: still run 45057814862 on master (expires 22 Dec); #70 also builds one.
+CI on #70 all green (strings, Swift style, iOS Check Debug+Release, Android Sampai APK run 45453362463).
+APK: master run 45057814862 (expires 22 Dec); #70 APK: https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45453362463
 
 Left on purpose: `translated_om_site_url` (core `GetDonateUrl`, dormant), `app.organicmaps.3daction.*` quick-action
 ids (not visible), tab-bar crowdfunding icon (only shows with a server DonateUrl).
