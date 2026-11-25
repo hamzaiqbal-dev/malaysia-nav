@@ -443,3 +443,6 @@ APK: master run 45057814862 (expires 22 Dec).
 
 Next run: iOS App Store texts (`iphone/metadata/en-US`, `ms-MY` first; drop or regenerate the rest), then
 `privacy.html`/`terms.html` to `data/` once #69/#70 merge.
+CI on #71 at the end of the run: Android Lint, Fdroid/Web/Google APK builds, iOS Debug and most CMake jobs green;
+iOS Release, macOS and a few CMake jobs still running. #71 APK: https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45669267174
+#69 all green after the checklist update.
