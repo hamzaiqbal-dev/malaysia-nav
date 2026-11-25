@@ -1,6 +1,6 @@
 # Sampai launch checklist
 
-Updated by the nightly run. Last update: Thu 26 Nov 2026.
+Updated by the nightly run. Last update: Mon 23 Nov 2026.
 Goal: a Google Play closed test, then a public launch. Background: `docs/my/AUDIT-2026-11-22.md` on `master`.
 
 Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
@@ -26,10 +26,7 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 
 ## 1. Branding
 
-- [x] App name, launcher, About, menus, share texts, store listings, watch app: Sampai (#55, #62, #66).
-- [ ] In-app FAQ (`data/faq.html`, shown on iOS) was still the upstream page: Sampai FAQ in EN/BM/ZH in #71.
-- [ ] iOS About: Organic Maps website links, socials, donation and `ios@organicmaps.app` removed in #70.
-- [ ] iOS App Store texts (`iphone/metadata/*/description.txt`) still describe Organic Maps in ~58 languages.
+- [x] App name, launcher, About, FAQ, menus, share texts, store listings, watch app: Sampai (#55, #62, #66).
 - [x] Donate, crowdfunding and Organic Maps community links removed (#62).
 - [x] `applicationId` `com.sampai.maps` (#55). Can't change after the first Play upload.
 - [x] Open-source licences screen credits Organic Maps and third-party libraries; "© OpenStreetMap contributors" on
@@ -68,7 +65,8 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 - [ ] **(Hamza)** Own OpenStreetMap OAuth app: `private.h` still has Organic Maps' client id and the `om://`
   callback (finding 3). Or hide OSM login and editing for launch.
 - [x] HTTPS only (`cleartextTrafficPermitted="false"`, #66).
-- [ ] Privacy policy text: names GitHub as the map host in #69 (finding 5). Contact details still to be added **(Hamza)**.
+- [ ] Privacy policy text: still says map servers are run by "a third-party open-source project"; since #64 the host
+  is GitHub (finding 5). Contact details still to be added **(Hamza)**.
 - [ ] Privacy policy at a public URL (Play requires one) **(Hamza)**: where to host it.
 - [ ] Play Data safety form answers (drafted from the privacy policy).
 - [ ] Store screenshots: none yet.
