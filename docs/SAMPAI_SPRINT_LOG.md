@@ -424,3 +424,22 @@ ids (not visible), tab-bar crowdfunding icon (only shows with a server DonateUrl
 
 Next run: after #69 and #70 merge, move `privacy.html`/`terms.html` to `data/` with Android symlinks. Then port the
 toll total onto `TollTable` (HUD + route preview) if Hamza hasn't said which old toll PRs to keep.
+
+## Nightly run 6: Thu 26 Nov, 01:47 MYT
+
+No merges or comments since run 5. `master` (22e36f3c) unchanged and green; #69 and #70 green, waiting for Hamza.
+Toll total port skipped again: every rate in `data/my/tolls.csv` is still TBC, so it would show nothing.
+
+Found: `data/faq.html` (iOS About → FAQ) was still the upstream Organic Maps FAQ; the checklist wrongly had it done.
+Android's `FaqFragment` is unreachable. `iphone/metadata/*/description.txt` (App Store texts) also still Organic Maps.
+
+### PRs
+- #71 `docs/sampai-faq` -> master: Sampai FAQ (EN/BM/ZH) ported from closed #28, without the toll question and the
+  non-existent support@sampai.my; drops `tools/unix/refresh-embedded-faq.sh`. Includes an add+revert of a
+  checklist edit (force-push blocked); squash is fine.
+- #69: launch checklist updated for 26 Nov (FAQ, iOS About, iOS store texts).
+
+APK: master run 45057814862 (expires 22 Dec).
+
+Next run: iOS App Store texts (`iphone/metadata/en-US`, `ms-MY` first; drop or regenerate the rest), then
+`privacy.html`/`terms.html` to `data/` once #69/#70 merge.
