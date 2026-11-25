@@ -446,3 +446,6 @@ Next run: iOS App Store texts (`iphone/metadata/en-US`, `ms-MY` first; drop or r
 CI on #71 at the end of the run: Android Lint, Fdroid/Web/Google APK builds, iOS Debug and most CMake jobs green;
 iOS Release, macOS and a few CMake jobs still running. #71 APK: https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/45669267174
 #69 all green after the checklist update.
+Later on 26 Nov: #71 all green except the two macOS CMake jobs, cancelled twice by GitHub ("job was not acquired
+by Runner", macOS arm64 capacity). Not caused by the PR (HTML + one script removed; macOS green on master). Not
+re-run again; Hamza can re-run them or merge without them.
