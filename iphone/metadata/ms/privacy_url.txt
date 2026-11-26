@@ -1,1 +1,1 @@
-https://organicmaps.app/privacy
+https://github.com/hamzaiqbal-dev/malaysia-nav/blob/master/android/app/src/main/assets/privacy.html
