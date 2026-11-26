@@ -449,3 +449,23 @@ iOS Release, macOS and a few CMake jobs still running. #71 APK: https://github.c
 Later on 26 Nov: #71 all green except the two macOS CMake jobs, cancelled twice by GitHub ("job was not acquired
 by Runner", macOS arm64 capacity). Not caused by the PR (HTML + one script removed; macOS green on master). Not
 re-run again; Hamza can re-run them or merge without them.
+
+## Nightly run 7: Fri 27 Nov, 01:47 MYT
+
+No merges or comments since run 6. `master` (22e36f3c) unchanged and green. #69 and #70 green; #71 green except
+the two macOS CMake jobs GitHub cancelled (runner capacity). All waiting for Hamza.
+
+### PRs
+- #72 `rebrand/ios-store-texts` -> master: iOS App Store texts (`iphone/metadata`) were still Organic Maps' in ~50
+  languages and the App Review contact was the upstream maintainer's name, email and phone. Now English + Malay only
+  (same texts as the Play listing; the metadata check fills other locales from English), repo URLs, copyright
+  `2026 Hamza Iqbal`, review contact empty, review notes without the upstream demo video.
+- #69: launch checklist updated for 27 Nov (App Store items, privacy URL).
+
+Still open for Hamza: support email (`contact-email.txt` still `googleplay@organicmaps.app`), App Store review
+contact and keywords, a public privacy-policy URL.
+
+APK: master run 45057814862 (expires 22 Dec); #71 APK run 45669304222 (expires 25 Dec).
+
+Next run: `privacy.html`/`terms.html` to `data/` once #69/#70 merge; otherwise the Android `contact-email.txt`
+can't be fixed without Hamza's address, so look at 3D perspective on by default in navigation (design step 3).
