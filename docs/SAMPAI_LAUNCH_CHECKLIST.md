@@ -1,6 +1,6 @@
 # Sampai launch checklist
 
-Updated by the nightly run. Last update: Thu 26 Nov 2026.
+Updated by the nightly run. Last update: Fri 27 Nov 2026.
 Goal: a Google Play closed test, then a public launch. Background: `docs/my/AUDIT-2026-11-22.md` on `master`.
 
 Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
@@ -28,7 +28,10 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 - [x] App name, launcher, About, menus, share texts, Play store listings, watch app: Sampai (#55, #62, #66).
 - [ ] In-app FAQ (`data/faq.html`, shown on iOS) was still the upstream page: Sampai FAQ in EN/BM/ZH in #71.
 - [ ] iOS About: Organic Maps website links, socials, donation and `ios@organicmaps.app` removed in #70.
-- [ ] iOS App Store texts (`iphone/metadata/*/description.txt`) still describe Organic Maps in ~58 languages.
+- [ ] iOS App Store texts were still Organic Maps' in ~50 languages, and the App Review contact was the upstream
+  maintainer's: Sampai texts in English and Malay, review contact emptied, in #72.
+- [ ] **(Hamza)** App Store Connect: review contact (name, email, phone), copyright holder (#72 says
+  `2026 Hamza Iqbal`; change it if a company publishes), and keywords (kept out of git, as upstream does).
 - [x] Donate, crowdfunding and Organic Maps community links removed (#62).
 - [x] `applicationId` `com.sampai.maps` (#55). Can't change after the first Play upload.
 - [x] Open-source licences screen credits Organic Maps and third-party libraries; "© OpenStreetMap contributors" on
@@ -74,7 +77,8 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 - [x] HTTPS only (`cleartextTrafficPermitted="false"`, #66).
 - [ ] Privacy policy text names GitHub as the map host and the transfer outside Malaysia (finding 5, this PR #69).
   Contact details still to be added **(Hamza)**.
-- [ ] Privacy policy at a public URL (Play requires one) **(Hamza)**: where to host it.
+- [ ] Privacy policy at a public URL (Play and the App Store require one) **(Hamza)**: where to host it. Until
+  then the iOS `privacy_url.txt` (#72) points at `privacy.html` on GitHub, which shows the HTML source.
 - [ ] Play Data safety form answers (drafted from the privacy policy).
 - [ ] Store screenshots: none yet.
 - [ ] Crash reporting: none. Firebase Crashlytics needs Hamza's own `google-services.json` **(Hamza)**.
