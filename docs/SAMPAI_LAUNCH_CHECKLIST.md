@@ -1,6 +1,6 @@
 # Sampai launch checklist
 
-Updated by the nightly run. Last update: Fri 27 Nov 2026.
+Updated by the nightly run. Last update: Sat 28 Nov 2026.
 Goal: a Google Play closed test, then a public launch. Background: `docs/my/AUDIT-2026-11-22.md` on `master`.
 
 Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
@@ -50,8 +50,11 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 
 - [x] Theme tokens and Plus Jakarta Sans (#57), navigation HUD (#58), Malay first (#56), opens on Malaysia.
 - [x] Sampai map palette, day and night (#68).
-- [ ] 3D perspective and buildings on by default in navigation (design/README.md step 3).
+- [x] 3D perspective and buildings on by default in navigation (design/README.md step 3): already the upstream
+  default (`Framework::Load3dMode` falls back to on; tilt applies in navigation follow mode). Only power saving
+  turns them off.
 - [ ] Language choice in Settings: an English (Malaysia) phone is switched to Malay on every start (finding 9).
+  Fixed in #73: Malay on the first start only, plus Settings > General > App language.
 - [ ] Malay voice guidance: `data/sound-strings/ms.json` is an empty file, spoken directions stay English (finding 6).
 
 ## 3. Malaysian features
