@@ -845,6 +845,10 @@
     <string name="uri_open_location_failed">No app installed that can open the location</string>
     <!-- Setting option to sync the app's theme with the operating system's dark/light mode -->
     <string name="follow_system">Follow the system</string>
+    <!-- Settings: title of the app interface language option. Its choices are the system language and language names. -->
+    <string name="app_language">App language</string>
+    <!-- Settings: app language option that uses the phone's language. -->
+    <string name="app_language_system">Phone language</string>
     <!-- Title of the bottom sheet when sharing the track -->
     <string name="share_track">Share Track</string>
     <!-- Title for the dialog when deleting a track with the track name passed in %@ -->

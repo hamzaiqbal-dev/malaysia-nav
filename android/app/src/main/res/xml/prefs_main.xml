@@ -15,6 +15,13 @@
     android:title="@string/prefs_group_general"
     android:order="2">
     <ListPreference
+      android:key="@string/pref_app_language"
+      android:title="@string/app_language"
+      app:singleLineTitle="false"
+      app:useSimpleSummaryProvider="true"
+      android:persistent="false"
+      android:order="-1" />
+    <ListPreference
       android:key="@string/pref_map_appearance"
       android:title="@string/pref_appearance_title"
       app:singleLineTitle="false"

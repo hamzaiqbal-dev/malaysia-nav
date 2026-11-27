@@ -300,6 +300,10 @@
     <string name="start_track_recording">Rakam trek</string>
     <!-- Prompt for stopping a track recording. -->
     <string name="stop_track_recording">Henti rakaman trek</string>
+    <!-- Settings: title of the app interface language option. Its choices are the system language and language names. -->
+    <string name="app_language">Bahasa aplikasi</string>
+    <!-- Settings: app language option that uses the phone's language. -->
+    <string name="app_language_system">Bahasa telefon</string>
 
     <!-- SECTION: gps strings -->
     <!-- Toast shown when the user tries to add one more intermediate stop to a route that already holds the maximum allowed number -->

@@ -19,6 +19,7 @@ import app.organicmaps.downloader.OnmapDownloader;
 import app.organicmaps.editor.LanguagesFragment;
 import app.organicmaps.editor.ProfileActivity;
 import app.organicmaps.help.HelpActivity;
+import app.organicmaps.my.MalayDefaultLocale;
 import app.organicmaps.sdk.Framework;
 import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.downloader.MapManager;
@@ -57,6 +58,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment implements La
     initStoragePrefCallbacks();
     initMeasureUnitsPrefsCallbacks();
     initZoomPrefsCallbacks();
+    initAppLanguagePrefsCallbacks();
     initMapStylePrefsCallbacks();
     initAutoDownloadPrefsCallbacks();
     initLargeFontSizePrefsCallbacks();
@@ -508,6 +510,24 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment implements La
     ((TwoStatePreference) pref).setChecked(Config.showZoomButtons());
     pref.setOnPreferenceChangeListener((preference, newValue) -> {
       Config.setShowZoomButtons((boolean) newValue);
+      return true;
+    });
+  }
+
+  private void initAppLanguagePrefsCallbacks()
+  {
+    final ListPreference pref = getPreference(getString(R.string.pref_app_language));
+    final String[] tags = MalayDefaultLocale.getLanguageTags();
+    final String[] names = new String[tags.length];
+    for (int i = 0; i < tags.length; i++)
+      names[i] =
+          tags[i].isEmpty() ? getString(R.string.app_language_system) : MalayDefaultLocale.getLanguageName(tags[i]);
+
+    pref.setEntries(names);
+    pref.setEntryValues(tags);
+    pref.setValue(MalayDefaultLocale.getAppLanguageTag());
+    pref.setOnPreferenceChangeListener((preference, newValue) -> {
+      MalayDefaultLocale.setAppLanguage((String) newValue);
       return true;
     });
   }
