@@ -469,3 +469,27 @@ APK: master run 45057814862 (expires 22 Dec); #71 APK run 45669304222 (expires 2
 
 Next run: `privacy.html`/`terms.html` to `data/` once #69/#70 merge; otherwise the Android `contact-email.txt`
 can't be fixed without Hamza's address, so look at 3D perspective on by default in navigation (design step 3).
+
+## Nightly run 8: Sat 28 Nov, 01:47 MYT
+
+No merges or comments since run 7. `master` (22e36f3c) unchanged and green; #69, #70, #72 green, waiting for Hamza.
+Re-ran #71's macOS CMake jobs (cancelled by GitHub runner capacity on 26 Nov).
+
+3D (design step 3): nothing to build. Perspective in navigation and 3D buildings already default to on upstream
+(`Framework::Load3dMode`); only power saving turns them off. Ticked in the checklist.
+
+### PRs
+- #73 `feat/app-language-setting` -> master: audit finding 9. Malay is set only on the first start (an English
+  (Malaysia) phone was switched back to Malay on every start), new Settings > General > App language (phone
+  language, Melayu, English, 中文), and AppCompat `autoStoreLocales` keeps the choice on Android 12 and older.
+  Two new strings via Twine, separate `[strings] Regenerated` commit. CI all green (Android Check needed one re-run:
+  Gradle plugin portal lookup failed, unrelated). APK: https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/46045268625
+- #69: launch checklist updated for 28 Nov.
+
+Found: `generate_localizations.sh` on master creates an untracked `qt/translations/ms/` (Malay strings with the `qt`
+tag); left out for now.
+
+APK: master run 45057814862 (expires 22 Dec); #73 run 46045268625.
+
+Next run: Malay voice guidance (finding 6: empty `data/sound-strings/ms.json`; check whether old #8 can be ported),
+or `privacy.html`/`terms.html` to `data/` once #69/#70 merge.
