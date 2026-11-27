@@ -40046,6 +40046,22 @@ vi = Theo hệ thống
 zh-Hans = 跟随系统
 zh-Hant = 跟隨系統
 
+[app_language]
+comment = Settings: title of the app interface language option. Its choices are the system language and language names.
+tags = android-app
+en = App language
+ms = Bahasa aplikasi
+zh-Hans = 应用语言
+zh-Hant = 應用程式語言
+
+[app_language_system]
+comment = Settings: app language option that uses the phone's language.
+tags = android-app
+en = Phone language
+ms = Bahasa telefon
+zh-Hans = 手机语言
+zh-Hant = 手機語言
+
 [share_track]
 comment = Title of the bottom sheet when sharing the track
 tags = android-app

@@ -127,7 +127,7 @@ public class MwmApplication extends Application implements Application.ActivityL
 
     sInstance = this;
 
-    MalayDefaultLocale.apply();
+    MalayDefaultLocale.apply(this);
 
     PreferenceManager.setDefaultValues(this, R.xml.prefs_main, false);
     mOrganicMaps = new OrganicMaps(getApplicationContext(), BuildConfig.FLAVOR, BuildConfig.APPLICATION_ID,
