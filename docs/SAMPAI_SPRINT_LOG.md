@@ -493,3 +493,24 @@ APK: master run 45057814862 (expires 22 Dec); #73 run 46045268625.
 
 Next run: Malay voice guidance (finding 6: empty `data/sound-strings/ms.json`; check whether old #8 can be ported),
 or `privacy.html`/`terms.html` to `data/` once #69/#70 merge.
+
+## Nightly run 9: Sun 29 Nov, 01:47 MYT
+
+No merges or comments since run 8. `master` (22e36f3c) unchanged and green; #69, #70, #72, #73 green, waiting for
+Hamza. #71's two macOS CMake jobs were cancelled again by GitHub runner capacity; not re-run.
+
+### PRs
+- #74 `feat/malay-voice` -> master: finding 6. Master's `data/sound-strings/ms.json` was an empty file, not a
+  folder, so Twine skipped it and the 68 Malay phrases already in `sound.txt` were never generated; `ms` was also
+  missing from `kLanguageList`. Now generated (separate `[strings] Regenerated` commit), Bahasa Melayu in the voice
+  list, and a `platform_tests` case reading the shipped Malay file (fails on the empty file). Supersedes the voice
+  part of stacked #8, which Hamza can close after #74 merges. APK: https://github.com/hamzaiqbal-dev/malaysia-nav/actions/runs/46172887602
+- #69: launch checklist updated for 29 Nov.
+
+Local build note: `platform_tests` builds here with `apt-get install qt6-base-dev libgl-dev`, submodules minus
+glfw/imgui, and `-DSKIP_QT_GUI=ON -DBUILD_DEV_SANDBOX=OFF`; clang-format 23 via `pip install clang-format`.
+
+APK: master run 45057814862 (expires 22 Dec); #74 run 46172887602.
+
+Next run: `privacy.html`/`terms.html` to `data/` once #69/#70 merge; otherwise port the quick search chips (#6) onto
+master as a small PR.
