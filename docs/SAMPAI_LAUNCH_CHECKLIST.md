@@ -1,6 +1,6 @@
 # Sampai launch checklist
 
-Updated by the nightly run. Last update: Sat 28 Nov 2026.
+Updated by the nightly run. Last update: Sun 29 Nov 2026.
 Goal: a Google Play closed test, then a public launch. Background: `docs/my/AUDIT-2026-11-22.md` on `master`.
 
 Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
@@ -12,7 +12,7 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
 - 23 Nov: #67 (beta jobs skipped without secrets) and #68 (map palette, Malaysian region names, search categories
   and brands, README, last upstream links) merged. `master` CI is green; the weekly monkey test passed.
 - 18 old-stack PRs are still open (#2–#50). Most overlap `master` now. **(Hamza)** close them, or name the ones you
-  still want ported: the toll total (#2/#27/#32/#35/#36/#43), Malay voice (#8), quick chips (#6), Tamil UI (#46).
+  still want ported: the toll total (#2/#27/#32/#35/#36/#43), quick chips (#6), Tamil UI (#46).
 
 ## Install it on your phone
 
@@ -55,7 +55,7 @@ Legend: [x] done, [ ] left to do, **(Hamza)** only Hamza can do it.
   turns them off.
 - [ ] Language choice in Settings: an English (Malaysia) phone is switched to Malay on every start (finding 9).
   Fixed in #73: Malay on the first start only, plus Settings > General > App language.
-- [ ] Malay voice guidance: `data/sound-strings/ms.json` is an empty file, spoken directions stay English (finding 6).
+- [ ] Malay voice guidance: fixed in #74 (generated `ms.json`, Bahasa Melayu in the voice list), waiting for merge; supersedes #8 (finding 6).
 
 ## 3. Malaysian features
 
