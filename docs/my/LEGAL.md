@@ -64,10 +64,10 @@ The upstream audit is the authority for items marked "per `copyright.html`"; the
 The draft is `android/app/src/main/assets/privacy.html`. It describes what the app does today:
 
 - On the phone only: location, searches, history, bookmarks, tracks, settings, saved reports.
-- Leaves the phone: map download requests (IP address visible to the map server operator, currently upstream's servers), optional OpenStreetMap login/edits, links the user opens, logs only if the user emails them.
+- Leaves the phone: map download requests (IP address visible to GitHub, which hosts the map files as release assets since #64; GitHub, Inc. is a US company, so this is a transfer outside Malaysia), optional OpenStreetMap login/edits, links the user opens, logs only if the user emails them.
 - No ads, analytics, crash reporting, accounts or tracking.
 
-For the lawyer: PDPA notice must be in Malay and English (done in draft); a named contact or data user and a public URL for the policy are needed (Google Play requires a web URL; the in-app copy is not enough, publish the same text, for example on GitHub Pages); whether an IP address in server logs makes upstream's hosting a cross-border transfer; the 2024 PDPA amendments (breach notification, data-protection officer thresholds, data portability) and whether they apply to a one-person app; retention (none held by Sampai today). Re-do this when Lapor reports leave the phone or any backend, analytics or crash service is added.
+For the lawyer: PDPA notice must be in Malay and English (done in draft); a named contact or data user and a public URL for the policy are needed (Google Play requires a web URL; the in-app copy is not enough, publish the same text, for example on GitHub Pages); whether an IP address in GitHub's server logs makes the GitHub map hosting a cross-border transfer under section 129 (the policy now names GitHub and says data may be stored outside Malaysia); the 2024 PDPA amendments (breach notification, data-protection officer thresholds, data portability) and whether they apply to a one-person app; retention (none held by Sampai today). Re-do this when Lapor reports leave the phone or any backend, analytics or crash service is added.
 
 ## 5. Google Play Data safety answers (matching today's build)
 
@@ -78,7 +78,7 @@ For the lawyer: PDPA notice must be in Malay and English (done in draft); a name
 | Personal info, financial, health, messages, photos, contacts, audio | Not collected |
 | App activity, web history, diagnostics | Not collected (no Crashlytics in the build; logs stay on the device unless the user emails them) |
 | Device or other IDs | Not collected |
-| Data encrypted in transit? | Yes for downloads; see `docs/my/SECURITY.md` once the security PR lands, because cleartext is still allowed in the network config |
+| Data encrypted in transit? | Yes: HTTPS only since #66 (`cleartextTrafficPermitted="false"`) |
 | Can users request data deletion? | Nothing to delete off-device; uninstalling deletes local data |
 | OpenStreetMap edits | Optional user-generated content sent to OpenStreetMap; if reviewers ask, declare as "user content, shared, optional" |
 | Ads | None |
@@ -89,7 +89,7 @@ For the lawyer: PDPA notice must be in Malay and English (done in draft); a name
 ## 6. Risks for Hamza to decide (one line each)
 
 1. Map data licence (section 1): ask permission, build own data, or keep the credit?
-2. Map-download and metadata servers still point at upstream (`cdn*.organicmaps.app`, `meta.omaps.app`): will Sampai host its own before launch?
+2. Map hosting: since #64 maps download only from Sampai's GitHub releases (no metadata server). Keep GitHub for launch or move to an own server? If it moves, update the privacy policy.
 3. Trademark: is "Sampai" free for software and navigation services at MyIPO (classes 9, 42, 39) and in Play Store/App Store names? Not searched.
 4. AES camera and police reporting via Lapor: lawyer to confirm no offence in Malaysia for showing or reporting camera and enforcement locations; consider showing fixed AES only, or leave out police.
 5. Toll prices must come from the concessionaires; disclaimer text says "indicative only".
