@@ -121,6 +121,16 @@ UNIT_TEST(GetTextByIdFrenchTest)
   TEST_EQUAL((*getFrench)(" "), "", ());
 }
 
+// Reads the shipped file: an empty data/sound-strings/ms.json once made Malay fall back to English.
+UNIT_TEST(GetTextByIdMalaySoundStrings)
+{
+  auto getMalay = platform::GetTextByIdFactory(platform::TextSource::TtsSound, "ms");
+  TEST(getMalay, ());
+  TEST_EQUAL(getMalay->GetLocale(), "ms", ());
+  TEST_EQUAL((*getMalay)("make_a_left_turn"), "Belok kiri.", ());
+  TEST_EQUAL((*getMalay)("enter_the_roundabout"), "Masuk bulatan.", ());
+}
+
 // Every language offered in the TTS picker must ship a sound-strings folder: GetTextByIdFactory
 // silently falls back to English when it is missing, so a wrong code yields English voice guidance.
 UNIT_TEST(TtsLanguageListHasSoundStrings)

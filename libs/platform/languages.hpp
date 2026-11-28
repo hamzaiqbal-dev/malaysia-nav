@@ -39,6 +39,7 @@ namespace routing::turns::sound
 auto constexpr kLanguageList = std::to_array<std::pair<std::string_view, std::string_view>>({
     {"en", "English"},
     {"id", "Bahasa Indonesia"},
+    {"ms", "Bahasa Melayu"},
     {"ca", "Català"},
     {"da", "Dansk"},
     {"de", "Deutsch"},
